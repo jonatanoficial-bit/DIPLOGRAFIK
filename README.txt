@@ -1,17 +1,13 @@
-DIPLOCRAFT v0.2.0
+DIPLOCRAFT v0.3.0
+Build: 29/04/2026 21:08
 
 Como testar:
 1. Extraia o ZIP.
 2. Abra index.html no navegador.
-3. Funciona em celular e PC. No celular, use rolagem vertical e menu inferior.
+3. No celular, pode abrir pelo navegador ou hospedar como site estático.
 
-Telas disponíveis:
-- Menu principal
-- Criação de líder
-- Lobby/dashboard
-- Eleições
-- Coletiva de imprensa
-- Sistemas: economia, diplomacia, militar, governo, inteligência, projetos, crises e tecnologia
-
-Observação:
-Esta é uma versão Web protótipo. O foco foi corrigir o visual para ficar mais fiel às imagens enviadas: fundo cinematográfico, painéis escuros, bordas douradas, cards com imagens, HUD, navegação e versão visível.
+Foco desta build:
+- Visual premium fiel às referências.
+- Seleção de partido corrigida.
+- Partidos reais do Brasil incluídos.
+- Primeira gameplay funcional.

@@ -1,52 +1,23 @@
-# Plano completo de construção — DIPLOCRAFT
+# DIPLOCRAFT — Plano de construção comercial
 
-## Objetivo
-Construir um jogo político mobile-first, também jogável no PC, com estética AAA: dark/navy, dourado premium, fundos cinematográficos, cards com bordas douradas e sistemas de simulação em tempo real.
+Build atual: v0.3.0 (29/04/2026 21:08)
 
-## Fase 1 — Protótipo visual jogável
-- Menu principal
-- Criação de líder
-- Lobby/dashboard
-- Eleições
-- Coletiva de imprensa
-- Sistema genérico para economia, diplomacia, militar, governo, inteligência, projetos, crises e tecnologia
-- Build Web responsiva com versão/data/hora visível
+## O que foi corrigido nesta build
+- Escolha de partido funcional na criação de líder.
+- Brasil com partidos reais cadastrados em lista editável em `window.BRAZIL_PARTIES`.
+- Bônus partidários usados apenas como mecânica de balanceamento, sem recomendação ou ranking político real.
+- Dashboard mais próximo das referências: dark/navy + dourado, cards, módulos, painel lateral no PC e barra inferior no mobile.
+- Gameplay inicial: decisões alteram aprovação, tesouro, economia, estabilidade, prestígio, influência e forças armadas.
+- Telas jogáveis: menu, criação de líder, lobby, eleições, coletiva, sistemas.
 
-## Fase 2 — Core gameplay real
-- Modelo de país em JSON
-- Aprovação popular 0–100
-- PIB, receita, gastos, crescimento e inflação
-- Relações diplomáticas por país
-- Forças armadas e prontidão
-- Tempo dinâmico com avanço por dias
-- Eventos aleatórios e decisões com consequência
+## Roadmap comercial
+1. **v0.4 — Core loop completo**: calendário real, eventos diários, consequências em cadeia, save/load local.
+2. **v0.5 — Eleições**: campanhas, alianças, pesquisas regionais, segundo turno, apuração interativa.
+3. **v0.6 — Economia**: orçamento setorial, impostos, inflação, desemprego, comércio exterior.
+4. **v0.7 — Diplomacia e mundo**: países reais/fictícios opcionais, tratados, sanções, blocos, ranking global.
+5. **v0.8 — Crises e imprensa**: gerador de eventos, coletiva com perguntas dinâmicas e reputação de mídia.
+6. **v0.9 — Mobile polish**: animações, sons, haptics, PWA, cache offline, performance.
+7. **v1.0 — Comercial**: monetização opcional, loja cosmética, analytics, tutorial e balanceamento.
 
-## Fase 3 — Eleições
-- Intenção de voto por região
-- Candidatos rivais
-- Campanha, alianças, gastos e debates
-- Simulação de urna
-- Apuração em tempo real
-
-## Fase 4 — Coletiva e mídia
-- Banco de perguntas por categoria
-- Respostas com tons diferentes
-- Impacto calculado em aprovação, mídia, economia, estabilidade e confiança pública
-
-## Fase 5 — Progressão
-- XP político
-- Nível do líder
-- Prestígio global
-- Ranking mundial
-- Tecnologias e decisões desbloqueáveis
-
-## Fase 6 — Polimento mobile/PC
-- Animações de cards
-- Sons de clique metálico
-- Música orquestral
-- Save/load local
-- PWA instalável
-- Ajuste fino para proporção 9:16 mobile e 16:9 desktop
-
-## Regra de build
-Toda atualização deve gerar ZIP completo com versão, data e hora no nome e visível dentro do jogo.
+## Observação sobre partidos reais
+Os partidos são usados como conteúdo de simulação. O jogo deve permanecer neutro, sem recomendar partidos reais ao jogador.

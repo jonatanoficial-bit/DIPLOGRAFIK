@@ -1,0 +1,362 @@
+[
+  {
+    "sigla": "MDB",
+    "nome": "Movimento Democrático Brasileiro",
+    "numero": 15,
+    "color": "#1e88e5",
+    "bonus": {
+      "approval": 2,
+      "stability": 4,
+      "diplomacy": 2
+    },
+    "desc": "governabilidade, diálogo federativo e capilaridade regional"
+  },
+  {
+    "sigla": "PDT",
+    "nome": "Partido Democrático Trabalhista",
+    "numero": 12,
+    "color": "#d32f2f",
+    "bonus": {
+      "education": 5,
+      "workers": 4,
+      "approval": 1
+    },
+    "desc": "trabalho, educação e desenvolvimento social"
+  },
+  {
+    "sigla": "PT",
+    "nome": "Partido dos Trabalhadores",
+    "numero": 13,
+    "color": "#c62828",
+    "bonus": {
+      "approval": 4,
+      "social": 6,
+      "economy": -1
+    },
+    "desc": "programas sociais, inclusão e mobilização popular"
+  },
+  {
+    "sigla": "PCdoB",
+    "nome": "Partido Comunista do Brasil",
+    "numero": 65,
+    "color": "#b71c1c",
+    "bonus": {
+      "social": 5,
+      "stability": 2,
+      "foreign": 2
+    },
+    "desc": "soberania, direitos sociais e organização popular"
+  },
+  {
+    "sigla": "PSB",
+    "nome": "Partido Socialista Brasileiro",
+    "numero": 40,
+    "color": "#f44336",
+    "bonus": {
+      "education": 4,
+      "approval": 3,
+      "stability": 1
+    },
+    "desc": "social-democracia, inovação pública e políticas sociais"
+  },
+  {
+    "sigla": "PSDB",
+    "nome": "Partido da Social Democracia Brasileira",
+    "numero": 45,
+    "color": "#1565c0",
+    "bonus": {
+      "economy": 3,
+      "stability": 3,
+      "education": 2
+    },
+    "desc": "gestão pública, estabilidade e modernização institucional"
+  },
+  {
+    "sigla": "AGIR",
+    "nome": "Agir",
+    "numero": 36,
+    "color": "#00acc1",
+    "bonus": {
+      "approval": 1,
+      "stability": 1,
+      "prestige": 2
+    },
+    "desc": "renovação, cidadania e pautas locais"
+  },
+  {
+    "sigla": "MOBILIZA",
+    "nome": "Mobilização Nacional",
+    "numero": 33,
+    "color": "#795548",
+    "bonus": {
+      "stability": 2,
+      "diplomacy": 1,
+      "approval": 1
+    },
+    "desc": "mobilização social e articulação política"
+  },
+  {
+    "sigla": "CIDADANIA",
+    "nome": "Cidadania",
+    "numero": 23,
+    "color": "#00a6d6",
+    "bonus": {
+      "stability": 3,
+      "education": 3,
+      "diplomacy": 1
+    },
+    "desc": "cidadania, direitos e gestão democrática"
+  },
+  {
+    "sigla": "PV",
+    "nome": "Partido Verde",
+    "numero": 43,
+    "color": "#2e7d32",
+    "bonus": {
+      "environment": 6,
+      "approval": 3,
+      "economy": -1
+    },
+    "desc": "sustentabilidade, meio ambiente e economia verde"
+  },
+  {
+    "sigla": "AVANTE",
+    "nome": "Avante",
+    "numero": 70,
+    "color": "#ff8f00",
+    "bonus": {
+      "approval": 2,
+      "economy": 2,
+      "stability": 1
+    },
+    "desc": "desenvolvimento, empreendedorismo e inclusão"
+  },
+  {
+    "sigla": "PP",
+    "nome": "Progressistas",
+    "numero": 11,
+    "color": "#1976d2",
+    "bonus": {
+      "economy": 4,
+      "stability": 2,
+      "approval": 1
+    },
+    "desc": "crescimento econômico, infraestrutura e pragmatismo"
+  },
+  {
+    "sigla": "PSTU",
+    "nome": "Partido Socialista dos Trabalhadores Unificado",
+    "numero": 16,
+    "color": "#b71c1c",
+    "bonus": {
+      "workers": 6,
+      "approval": -1,
+      "stability": -2
+    },
+    "desc": "movimentos trabalhistas e políticas de ruptura"
+  },
+  {
+    "sigla": "PCB",
+    "nome": "Partido Comunista Brasileiro",
+    "numero": 21,
+    "color": "#8e0000",
+    "bonus": {
+      "social": 5,
+      "workers": 5,
+      "economy": -2
+    },
+    "desc": "organização popular, direitos sociais e soberania"
+  },
+  {
+    "sigla": "PRTB",
+    "nome": "Partido Renovador Trabalhista Brasileiro",
+    "numero": 28,
+    "color": "#283593",
+    "bonus": {
+      "stability": 2,
+      "military": 2,
+      "economy": 1
+    },
+    "desc": "renovação nacional, trabalho e ordem institucional"
+  },
+  {
+    "sigla": "DC",
+    "nome": "Democracia Cristã",
+    "numero": 27,
+    "color": "#6d4c41",
+    "bonus": {
+      "stability": 3,
+      "approval": 2,
+      "social": 1
+    },
+    "desc": "valores comunitários, assistência social e família"
+  },
+  {
+    "sigla": "PCO",
+    "nome": "Partido da Causa Operária",
+    "numero": 29,
+    "color": "#b71c1c",
+    "bonus": {
+      "workers": 6,
+      "approval": -1,
+      "media": -2
+    },
+    "desc": "pautas operárias, mobilização e oposição ao sistema"
+  },
+  {
+    "sigla": "PODE",
+    "nome": "Podemos",
+    "numero": 20,
+    "color": "#1e88e5",
+    "bonus": {
+      "approval": 2,
+      "stability": 2,
+      "justice": 2
+    },
+    "desc": "participação cidadã, justiça e eficiência pública"
+  },
+  {
+    "sigla": "REPUBLICANOS",
+    "nome": "Republicanos",
+    "numero": 10,
+    "color": "#0d47a1",
+    "bonus": {
+      "stability": 3,
+      "social": 2,
+      "approval": 2
+    },
+    "desc": "ordem institucional, valores sociais e governabilidade"
+  },
+  {
+    "sigla": "PSOL",
+    "nome": "Partido Socialismo e Liberdade",
+    "numero": 50,
+    "color": "#e53935",
+    "bonus": {
+      "social": 5,
+      "environment": 3,
+      "economy": -1
+    },
+    "desc": "direitos sociais, participação popular e transparência"
+  },
+  {
+    "sigla": "PL",
+    "nome": "Partido Liberal",
+    "numero": 22,
+    "color": "#0d47a1",
+    "bonus": {
+      "economy": 4,
+      "military": 2,
+      "approval": 1
+    },
+    "desc": "liberdade econômica, segurança e conservadorismo"
+  },
+  {
+    "sigla": "PSD",
+    "nome": "Partido Social Democrático",
+    "numero": 55,
+    "color": "#2e7d32",
+    "bonus": {
+      "stability": 4,
+      "economy": 2,
+      "diplomacy": 1
+    },
+    "desc": "centro pragmático, articulação e gestão estadual"
+  },
+  {
+    "sigla": "SOLIDARIEDADE",
+    "nome": "Solidariedade",
+    "numero": 77,
+    "color": "#f9a825",
+    "bonus": {
+      "workers": 3,
+      "approval": 3,
+      "social": 2
+    },
+    "desc": "trabalho, assistência e representação social"
+  },
+  {
+    "sigla": "NOVO",
+    "nome": "Partido Novo",
+    "numero": 30,
+    "color": "#f57c00",
+    "bonus": {
+      "economy": 5,
+      "spending": -4,
+      "approval": -1
+    },
+    "desc": "gestão enxuta, mercado e eficiência administrativa"
+  },
+  {
+    "sigla": "REDE",
+    "nome": "Rede Sustentabilidade",
+    "numero": 18,
+    "color": "#009688",
+    "bonus": {
+      "environment": 5,
+      "diplomacy": 2,
+      "approval": 2
+    },
+    "desc": "sustentabilidade, democracia em rede e direitos"
+  },
+  {
+    "sigla": "PMB",
+    "nome": "Partido da Mulher Brasileira",
+    "numero": 35,
+    "color": "#ad1457",
+    "bonus": {
+      "social": 3,
+      "approval": 2,
+      "stability": 1
+    },
+    "desc": "representatividade, políticas sociais e cidadania"
+  },
+  {
+    "sigla": "UP",
+    "nome": "Unidade Popular",
+    "numero": 80,
+    "color": "#c62828",
+    "bonus": {
+      "social": 5,
+      "workers": 4,
+      "stability": -1
+    },
+    "desc": "mobilização popular, direitos sociais e soberania"
+  },
+  {
+    "sigla": "UNIÃO",
+    "nome": "União Brasil",
+    "numero": 44,
+    "color": "#1976d2",
+    "bonus": {
+      "economy": 3,
+      "stability": 4,
+      "diplomacy": 1
+    },
+    "desc": "ampla coalizão, governabilidade e desenvolvimento"
+  },
+  {
+    "sigla": "PRD",
+    "nome": "Partido Renovação Democrática",
+    "numero": 25,
+    "color": "#5d4037",
+    "bonus": {
+      "stability": 3,
+      "approval": 1,
+      "economy": 1
+    },
+    "desc": "renovação democrática, equilíbrio e presença municipal"
+  },
+  {
+    "sigla": "MISSÃO",
+    "nome": "Missão",
+    "numero": 14,
+    "color": "#263238",
+    "bonus": {
+      "prestige": 3,
+      "media": 2,
+      "approval": 1
+    },
+    "desc": "renovação, participação política e comunicação digital"
+  }
+]
