@@ -1,2 +1,5 @@
-DIPLOCRAFT v0.4.0
-Abra index.html após extrair. Build mobile e PC com gameplay inicial comercial.
+DIPLOCRAFT v0.5.0
+
+Abra index.html no navegador.
+Build mobile-first e jogável no PC.
+Inclui partidos reais do Brasil, orçamento, coalizão, oposição, projetos, crises, coletiva e eleição.

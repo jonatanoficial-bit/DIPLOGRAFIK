@@ -1,12 +1,14 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "0.4.0",
-  "date": "2026-04-29",
-  "time": "21:19",
-  "platforms": [
-    "mobile",
-    "pc",
-    "web"
-  ],
-  "focus": "gameplay comercial, tempo, eventos, decisões, coletiva, eleição e save local"
+  "version": "0.5.0",
+  "datetime": "2026-04-29 21:57",
+  "target": "Mobile first + PC",
+  "changes": [
+    "gameplay comercial ampliada",
+    "coalizão e oposição",
+    "orçamento mensal",
+    "leis, projetos e crises com fila",
+    "partidos reais do Brasil mantidos",
+    "visual AAA dark+dourado aprimorado"
+  ]
 }

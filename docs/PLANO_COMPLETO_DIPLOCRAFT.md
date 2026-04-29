@@ -1,19 +1,13 @@
 # DIPLOCRAFT - Plano de construção comercial
 
-Build atual: v0.4.0 - 29/04/2026 21:19
+## Fase atual v0.5.0
+- Core loop com tempo, orçamento, coalizão, oposição, crises, projetos e eleição.
+- Mobile-first com layout responsivo para PC.
+- Partidos reais do Brasil como base inicial jogável.
 
-## Entregue nesta build
-- Fluxo jogável: menu, criação, lobby, sistemas, coletiva e eleições.
-- Escolha de partido funcional com bônus iniciais.
-- Tempo manual/automático, eventos dinâmicos e decisões com impacto.
-- Coletiva com perguntas e respostas que alteram indicadores.
-- Eleição calculada por aprovação, estabilidade e economia.
-- Save/load local no navegador.
-- Visual mobile-first e jogável no PC.
-
-## Próximas etapas
-1. Balanceamento econômico e curva de dificuldade.
-2. Gabinete, ministros e Congresso.
-3. IA de oposição/mídia.
-4. Projetos com cooldown real e árvore tecnológica.
-5. PWA/Android/iOS.
+## Próximas fases
+1. v0.6 - mapa mundial, relações bilaterais e blocos econômicos.
+2. v0.7 - árvore tecnológica, obras nacionais e efeitos permanentes.
+3. v0.8 - campanha eleitoral completa, debates, pesquisas regionais e mídia.
+4. v0.9 - balanceamento, tutorial, conquistas e monetização ética.
+5. v1.0 - polish comercial, PWA, áudio, onboarding e exportação mobile.
