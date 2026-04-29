@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>DIPLOCRAFT v0.1.4</title>
+<link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+<div id="app">
+  <section class="screen active" id="menu">
+    <div class="hero">
+      <div class="brand">DIPLOCRAFT</div>
+      <div class="subtitle">Lead. Negotiate. Dominate.</div>
+      <button class="goldBtn" onclick="showScreen('create')">NOVO JOGO</button>
+      <button class="darkBtn" onclick="showScreen('dashboard')">CONTINUAR</button>
+    </div>
+    <footer class="build">Build v0.1.4 • 29/04/2026 20:00</footer>
+  </section>
+
+  <section class="screen" id="create">
+    <header class="top"><button onclick="showScreen('menu')">‹</button><b>CRIAR LÍDER</b><span>v0.1.4</span></header>
+    <main class="panel">
+      <h2>1. Escolha seu avatar</h2>
+      <div class="avatarGrid">
+        <img class="selected" src="assets/characters/char_leader_male_white_v1.png" />
+        <img src="assets/characters/char_leader_male_black_v1.png" />
+        <img src="assets/characters/char_leader_male_elder_v1.png" />
+        <img src="assets/characters/char_leader_latest_v1.png" />
+      </div>
+      <h2>2. Digite seu nome</h2>
+      <input id="leaderName" maxlength="30" value="Alexander Morgan" />
+      <h2>3. Escolha sua nação</h2>
+      <div class="selectCard">🇧🇷 BRASIL</div>
+      <h2>4. Escolha seu partido</h2>
+      <div class="party selectedParty">PARTIDO VERDE (PV) <small>+10% Apoio Popular • +5% Educação</small></div>
+      <div class="party">PARTIDO DA UNIÃO (PU) <small>+10% Aprovação Inicial</small></div>
+      <button class="goldBtn wide" onclick="startGame()">COMEÇAR JORNADA</button>
+    </main>
+  </section>
+
+  <section class="screen" id="dashboard">
+    <header class="hud">
+      <img src="assets/characters/char_leader_male_white_v1.png" />
+      <div><b id="hudName">ALEXANDER MORGAN</b><small>Presidente da República • Brasil</small></div>
+      <div class="stat">Aprovação<br><b id="approval">68%</b></div>
+    </header>
+    <main class="dash">
+      <div class="objective"><b>OBJETIVO ATUAL</b><p>Fortalecer alianças na América do Sul</p><progress value="2" max="3"></progress></div>
+      <div class="cards">
+        <button onclick="openModule('economy')"><span>ECONOMIA</span></button>
+        <button onclick="openModule('diplomacy')"><span>DIPLOMACIA</span></button>
+        <button onclick="openModule('military')"><span>MILITAR</span></button>
+        <button onclick="openModule('government')"><span>GOVERNO</span></button>
+        <button onclick="openModule('press')"><span>COLETIVA</span></button>
+        <button onclick="openModule('election')"><span>ELEIÇÕES</span></button>
+      </div>
+    </main>
+    <nav class="bottom"><button>LOBBY</button><button>MUNDO</button><button>RELATÓRIOS</button><button>MAIS</button></nav>
+  </section>
+
+  <section class="screen" id="module">
+    <header class="top"><button onclick="showScreen('dashboard')">‹</button><b id="moduleTitle">MÓDULO</b><span>v0.1.4</span></header>
+    <main class="moduleBox">
+      <img id="moduleImage" src="assets/ui/cards/card_economy_v1.png" />
+      <div class="choices">
+        <button onclick="decision(3)">Investir recursos</button>
+        <button onclick="decision(-4)">Cortar gastos</button>
+        <button onclick="decision(1)">Negociar apoio</button>
+      </div>
+    </main>
+  </section>
+</div>
+<script src="src/game.js"></script>
+</body>
+</html>
