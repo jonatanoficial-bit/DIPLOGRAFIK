@@ -1,5 +1,17 @@
-DIPLOCRAFT v0.1.4
-Build gerado em 29/04/2026 20:10
+DIPLOCRAFT v0.2.0
 
-Primeira versão jogável web/mobile com imagens organizadas e incluídas.
-Como abrir: extraia o ZIP e abra index.html no navegador.
+Como testar:
+1. Extraia o ZIP.
+2. Abra index.html no navegador.
+3. Funciona em celular e PC. No celular, use rolagem vertical e menu inferior.
+
+Telas disponíveis:
+- Menu principal
+- Criação de líder
+- Lobby/dashboard
+- Eleições
+- Coletiva de imprensa
+- Sistemas: economia, diplomacia, militar, governo, inteligência, projetos, crises e tecnologia
+
+Observação:
+Esta é uma versão Web protótipo. O foco foi corrigir o visual para ficar mais fiel às imagens enviadas: fundo cinematográfico, painéis escuros, bordas douradas, cards com imagens, HUD, navegação e versão visível.

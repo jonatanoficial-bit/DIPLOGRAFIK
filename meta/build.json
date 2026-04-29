@@ -1,6 +1,1 @@
-{
-  "project": "DIPLOCRAFT",
-  "version": "v0.1.4",
-  "datetime": "2026-04-29 20:10",
-  "asset_count": 22
-}
+{"project":"DIPLOCRAFT","version":"0.2.0","date":"2026-04-29","time":"20:50","target":"Web mobile-first + PC responsive","status":"Playable prototype faithful UI pass","notes":"Primeira versão corrigida com layout inspirado diretamente nas referências: menu, criação de líder, lobby, eleições, coletiva e sistemas."}

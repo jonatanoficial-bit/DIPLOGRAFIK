@@ -1,24 +1,130 @@
 [
-  "assets/backgrounds/bg_crisis_scene_v1.png",
-  "assets/backgrounds/bg_dashboard_city_view_v1.png",
-  "assets/backgrounds/bg_diplomacy_room_v1.png",
-  "assets/backgrounds/bg_economy_financial_center_v1.png",
-  "assets/backgrounds/bg_election_room_v1.png",
-  "assets/backgrounds/bg_global_map_v1.png",
-  "assets/backgrounds/bg_main_menu_presidential_office_v1.png",
-  "assets/backgrounds/bg_military_command_center_v1.png",
-  "assets/backgrounds/bg_parliament_v1.png",
-  "assets/backgrounds/bg_press_conference_stage_v1.png",
-  "assets/characters/char_leader_latest_v1.png",
-  "assets/characters/char_leader_male_black_v1.png",
-  "assets/characters/char_leader_male_elder_refined_v1.png",
-  "assets/characters/char_leader_male_elder_v1.png",
-  "assets/characters/char_leader_male_white_v1.png",
-  "assets/ui/cards/card_economy_v1.png",
-  "assets/ui/cards/card_diplomacy_v1.png",
-  "assets/ui/cards/card_military_v1.png",
-  "assets/ui/cards/card_government_v1.png",
-  "assets/ui/cards/card_intelligence_v1.png",
-  "assets/ui/cards/card_projects_v1.png",
-  "assets/icons/icon_set_v1.png"
+  {
+    "path": "assets/backgrounds/bg_crisis_scene_v1.png",
+    "bytes": 2371598
+  },
+  {
+    "path": "assets/backgrounds/bg_dashboard_city_view_v1.png",
+    "bytes": 2357950
+  },
+  {
+    "path": "assets/backgrounds/bg_diplomacy_room_v1.png",
+    "bytes": 2461989
+  },
+  {
+    "path": "assets/backgrounds/bg_economy_financial_center_v1.png",
+    "bytes": 2670357
+  },
+  {
+    "path": "assets/backgrounds/bg_election_room_v1.png",
+    "bytes": 2297188
+  },
+  {
+    "path": "assets/backgrounds/bg_global_map_v1.png",
+    "bytes": 2388350
+  },
+  {
+    "path": "assets/backgrounds/bg_main_menu_presidential_office_v1.png",
+    "bytes": 2556637
+  },
+  {
+    "path": "assets/backgrounds/bg_military_command_center_v1.png",
+    "bytes": 2465183
+  },
+  {
+    "path": "assets/backgrounds/bg_parliament_v1.png",
+    "bytes": 2556426
+  },
+  {
+    "path": "assets/backgrounds/bg_press_conference_stage_v1.png",
+    "bytes": 2171555
+  },
+  {
+    "path": "assets/characters/char_leader_latest_v1.png",
+    "bytes": 1829589
+  },
+  {
+    "path": "assets/characters/char_leader_male_black_v1.png",
+    "bytes": 1928388
+  },
+  {
+    "path": "assets/characters/char_leader_male_elder_refined_v1.png",
+    "bytes": 1913971
+  },
+  {
+    "path": "assets/characters/char_leader_male_elder_v1.png",
+    "bytes": 2062346
+  },
+  {
+    "path": "assets/characters/char_leader_male_white_v1.png",
+    "bytes": 1993133
+  },
+  {
+    "path": "assets/icons/icon_set_v1.png",
+    "bytes": 1799882
+  },
+  {
+    "path": "assets/ui/alert_error_v1.png",
+    "bytes": 986203
+  },
+  {
+    "path": "assets/ui/alert_info_v1.png",
+    "bytes": 957294
+  },
+  {
+    "path": "assets/ui/alert_success_v1.png",
+    "bytes": 925720
+  },
+  {
+    "path": "assets/ui/alert_warning_v1.png",
+    "bytes": 1017527
+  },
+  {
+    "path": "assets/ui/btn_primary_gold_v1.png",
+    "bytes": 1441592
+  },
+  {
+    "path": "assets/ui/btn_secondary_dark_v1.png",
+    "bytes": 1218764
+  },
+  {
+    "path": "assets/ui/card_diplomacy_v1.png",
+    "bytes": 1790724
+  },
+  {
+    "path": "assets/ui/card_economy_v1.png",
+    "bytes": 1616384
+  },
+  {
+    "path": "assets/ui/card_government_v1.png",
+    "bytes": 1890642
+  },
+  {
+    "path": "assets/ui/card_intelligence_v1.png",
+    "bytes": 1916565
+  },
+  {
+    "path": "assets/ui/card_military_v1.png",
+    "bytes": 1946395
+  },
+  {
+    "path": "assets/ui/card_panel_gold_v1.png",
+    "bytes": 2018947
+  },
+  {
+    "path": "assets/ui/card_projects_v1.png",
+    "bytes": 1984280
+  },
+  {
+    "path": "assets/ui/input_field_v1.png",
+    "bytes": 799906
+  },
+  {
+    "path": "assets/ui/progress_bar_v1.png",
+    "bytes": 636381
+  },
+  {
+    "path": "assets/ui/toggle_buttons_v1.png",
+    "bytes": 949502
+  }
 ]

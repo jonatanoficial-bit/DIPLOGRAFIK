@@ -1,76 +1,23 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>DIPLOCRAFT v0.1.4</title>
-<link rel="stylesheet" href="src/styles.css" />
-</head>
-<body>
-<div id="app">
-  <section class="screen active" id="menu">
-    <div class="hero">
-      <div class="brand">DIPLOCRAFT</div>
-      <div class="subtitle">Lead. Negotiate. Dominate.</div>
-      <button class="goldBtn" onclick="showScreen('create')">NOVO JOGO</button>
-      <button class="darkBtn" onclick="showScreen('dashboard')">CONTINUAR</button>
-    </div>
-    <footer class="build">Build v0.1.4 • 29/04/2026 20:00</footer>
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>DIPLOCRAFT v0.2.0</title><link rel="stylesheet" href="src/styles.css"></head><body>
+<div id="app" class="app" data-screen="menu">
+  <div class="version">v0.2.0 • 2026-04-29 20:50</div>
+  <section id="menu" class="screen active menu-screen">
+    <div class="bg bg-menu"></div><div class="shade"></div>
+    <div class="brand"><div class="crest">♜</div><h1>DIPLOCRAFT</h1><p>LEAD. NEGOTIATE. DOMINATE.</p></div>
+    <div class="menu-actions"><button data-go="create" class="btn gold">🌐 Novo jogo</button><button data-go="lobby" class="btn dark">♛ Continuar</button></div>
+    <footer class="menu-footer"><button class="mini">⚙ Configurações</button><button class="mini">🌐 Idioma</button></footer>
   </section>
-
-  <section class="screen" id="create">
-    <header class="top"><button onclick="showScreen('menu')">‹</button><b>CRIAR LÍDER</b><span>v0.1.4</span></header>
-    <main class="panel">
-      <h2>1. Escolha seu avatar</h2>
-      <div class="avatarGrid">
-        <img class="selected" src="assets/characters/char_leader_male_white_v1.png" />
-        <img src="assets/characters/char_leader_male_black_v1.png" />
-        <img src="assets/characters/char_leader_male_elder_v1.png" />
-        <img src="assets/characters/char_leader_latest_v1.png" />
-      </div>
-      <h2>2. Digite seu nome</h2>
-      <input id="leaderName" maxlength="30" value="Alexander Morgan" />
-      <h2>3. Escolha sua nação</h2>
-      <div class="selectCard">🇧🇷 BRASIL</div>
-      <h2>4. Escolha seu partido</h2>
-      <div class="party selectedParty">PARTIDO VERDE (PV) <small>+10% Apoio Popular • +5% Educação</small></div>
-      <div class="party">PARTIDO DA UNIÃO (PU) <small>+10% Aprovação Inicial</small></div>
-      <button class="goldBtn wide" onclick="startGame()">COMEÇAR JORNADA</button>
-    </main>
+  <section id="create" class="screen create-screen">
+    <div class="bg bg-create"></div><div class="shade"></div><header class="top compact"><button data-go="menu" class="back">‹</button><div><h2>CRIAR LÍDER</h2><p>Defina sua identidade e inicie sua jornada política.</p></div></header>
+    <main class="create-panel glass"><h3>1. Escolha seu avatar</h3><div class="avatar-row" id="avatars"></div><h3>2. Digite seu nome</h3><input id="leaderName" class="text-input" value="Alexander Morgan" maxlength="30"><h3>3. Escolha sua nação</h3><div class="select-card">🇧🇷 <b>BRASIL</b><span>⌄</span></div><h3>4. Escolha seu partido</h3><div class="party-list"><label class="party active"><b>Partido Verde (PV)</b><small>Centro-Esquerda</small><em>+10% Apoio Popular • +5% Educação</em></label><label class="party"><b>Partido da União (PU)</b><small>Centro</small><em>+10% Aprovação Inicial</em></label><label class="party"><b>Partido do Progresso (PP)</b><small>Centro-Direita</small><em>+10% Crescimento Econômico</em></label></div><button data-go="lobby" class="btn gold full">Continuar ›</button></main>
   </section>
-
-  <section class="screen" id="dashboard">
-    <header class="hud">
-      <img src="assets/characters/char_leader_male_white_v1.png" />
-      <div><b id="hudName">ALEXANDER MORGAN</b><small>Presidente da República • Brasil</small></div>
-      <div class="stat">Aprovação<br><b id="approval">68%</b></div>
-    </header>
-    <main class="dash">
-      <div class="objective"><b>OBJETIVO ATUAL</b><p>Fortalecer alianças na América do Sul</p><progress value="2" max="3"></progress></div>
-      <div class="cards">
-        <button onclick="openModule('economy')"><span>ECONOMIA</span></button>
-        <button onclick="openModule('diplomacy')"><span>DIPLOMACIA</span></button>
-        <button onclick="openModule('military')"><span>MILITAR</span></button>
-        <button onclick="openModule('government')"><span>GOVERNO</span></button>
-        <button onclick="openModule('press')"><span>COLETIVA</span></button>
-        <button onclick="openModule('election')"><span>ELEIÇÕES</span></button>
-      </div>
-    </main>
-    <nav class="bottom"><button>LOBBY</button><button>MUNDO</button><button>RELATÓRIOS</button><button>MAIS</button></nav>
-  </section>
-
-  <section class="screen" id="module">
-    <header class="top"><button onclick="showScreen('dashboard')">‹</button><b id="moduleTitle">MÓDULO</b><span>v0.1.4</span></header>
-    <main class="moduleBox">
-      <img id="moduleImage" src="assets/ui/cards/card_economy_v1.png" />
-      <div class="choices">
-        <button onclick="decision(3)">Investir recursos</button>
-        <button onclick="decision(-4)">Cortar gastos</button>
-        <button onclick="decision(1)">Negociar apoio</button>
-      </div>
-    </main>
-  </section>
-</div>
-<script src="src/game.js"></script>
-</body>
-</html>
+  <section id="lobby" class="screen game-screen active-default">
+    <div class="bg bg-lobby"></div><div class="shade heavy"></div><aside class="side"><div class="portrait"><img src="assets/characters/char_leader_male_white_v1.png"><span>32</span></div><button class="nav active" data-go="lobby">⌂ Início</button><button class="nav" data-go="system" data-system="government">▥ Governo</button><button class="nav" data-go="press">🎙 Coletiva</button><button class="nav" data-go="election">🗳 Eleições</button><button class="nav" data-system="projects" data-go="system">⚒ Projetos</button><button class="nav" data-go="system" data-system="crisis">⚡ Crises</button></aside>
+    <main class="dashboard"><header class="hud"><div><h2 id="hudName">ALEXANDER MORGAN</h2><p>Presidente da República • 🇧🇷 Brasil</p></div><div class="resources"><span>🏛 125,6B<br><small>Tesouro</small></span><span>💰 3,45T<br><small>Economia</small></span><span>👥 214,3M<br><small>População</small></span><span>🛡 85,2K<br><small>Forças Armadas</small></span><span>🏆 23.450<br><small>Prestígio</small></span></div></header>
+    <section class="hero-grid"><div class="objective panel"><h3>OBJETIVO ATUAL</h3><p>Fortalecer alianças na América do Sul</p><div class="bar"><i style="width:66%"></i></div><small>2/3 alianças estabelecidas</small></div><div class="summit panel"><h3>CÚPULA GLOBAL</h3><p>Próxima reunião em: <b>1d 14h 32m</b></p></div><div class="news panel"><h3>NOTÍCIAS</h3><p>🇮🇳 Acordo comercial firmado com Índia</p><p>⚠️ Tensão diplomática na fronteira</p><p>❄️ Nova tecnologia disponível</p></div></section>
+    <section class="cards-grid"><button data-go="system" data-system="diplomacy" class="module diplomacy"><b>DIPLOMACIA</b><small>Negocie acordos e estabeleça alianças</small></button><button data-go="system" data-system="economy" class="module economy"><b>ECONOMIA</b><small>Gerencie comércio e recursos</small></button><button data-go="system" data-system="military" class="module military"><b>MILITAR</b><small>Treine forças e proteja a nação</small></button><button data-go="system" data-system="technology" class="module technology"><b>PESQUISA & TECNOLOGIA</b><small>Desbloqueie tecnologias avançadas</small></button><button data-go="system" data-system="government" class="module government"><b>GOVERNO</b><small>Aprove leis e melhore instituições</small></button><button data-go="system" data-system="intelligence" class="module intelligence"><b>INTELIGÊNCIA</b><small>Realize operações secretas</small></button><button data-go="system" data-system="projects" class="module projects"><b>PROJETOS</b><small>Construa grandes obras</small></button><button data-go="system" data-system="crisis" class="module crisis"><b>CRISES</b><small>Gerencie decisões críticas</small></button></section>
+    <section class="bottom-stats"><div class="stat">👍 Aprovação<br><b>68%</b><div class="bar green"><i style="width:68%"></i></div></div><div class="stat">📈 PIB<br><b>US$ 2,17T</b><small>+2,6%</small></div><div class="stat">🌐 Influência<br><b>2.450</b><small>Respeitado</small></div><div class="stat">🛡 Forças<br><b>1.250.000</b><small>Prontas</small></div></section></main></section>
+  <section id="election" class="screen game-screen"><div class="bg bg-election"></div><div class="shade heavy"></div><main class="mobile-page"><header class="top"><button data-go="lobby" class="back">‹</button><div><h2>REELEIÇÃO 2026</h2><p>Sua gestão, alianças e decisões influenciam cada voto.</p></div></header><div class="panel row"><div><small>DIA DA ELEIÇÃO</small><b>26/10/2026</b><p>Faltam 23 dias</p></div><div><small>CLIMA ELEITORAL</small><div class="climate"><i></i></div><p>Favorável</p></div></div><div class="panel"><h3>SIMULADOR DE URNA ELETRÔNICA</h3><div class="urna"><div class="urna-screen"><b>PRESIDENTE DA REPÚBLICA</b><p>1 Alexander Morgan</p><p>2 Carlos Almeida</p><p>3 Renata Vieira</p><p>9 Branco</p><p>0 Nulo</p></div><div class="keypad">1234567890</div></div></div><div class="panel"><h3>INTENÇÕES DE VOTO</h3><div class="chart-lines"><span style="--y:46%"></span><span style="--y:32%"></span><span style="--y:18%"></span></div><p>Alexander Morgan 46% • Carlos Almeida 32% • Renata 18%</p></div></main></section>
+  <section id="press" class="screen game-screen"><div class="bg bg-press"></div><div class="shade heavy"></div><main class="mobile-page"><header class="top"><button data-go="lobby" class="back">‹</button><div><h2>COLETIVA DE IMPRENSA</h2><p>Responda aos jornalistas. Suas respostas impactam o país.</p></div></header><div class="press-hero"><img src="assets/characters/char_leader_male_white_v1.png"></div><div class="panel"><h3>PERGUNTA ATUAL</h3><p><b>Jornalista:</b> Como responde às críticas sobre o aumento dos gastos?</p></div><div class="answers"><button>A — Gastos estratégicos trarão resultados.</button><button>B — É preciso equilibrar as contas.</button><button>C — Herdamos uma situação difícil.</button><button>D — A crítica é política e injusta.</button></div><div class="panel"><h3>IMPACTO DA RESPOSTA</h3><div class="impact"><label>Aprovação Popular</label><span></span><label>Economia</label><span></span><label>Estabilidade</label><span></span></div></div></main></section>
+  <section id="system" class="screen game-screen"><div class="bg bg-system"></div><div class="shade heavy"></div><main class="mobile-page"><header class="top"><button data-go="lobby" class="back">‹</button><div><h2 id="systemTitle">SISTEMA</h2><p id="systemSub">Gerencie esta área do governo.</p></div></header><div id="systemCard" class="system-card panel"></div><div class="decision-list"><button>Investimento moderado <b>R$ 5,2B</b></button><button>Programa emergencial <b>+4 aprovação</b></button><button>Reforma estrutural <b>+2 estabilidade</b></button></div></main></section>
+</div><script src="src/game.js"></script></body></html>
