@@ -1,0 +1,23 @@
+PASS version_is_phase_22
+PASS status_verified
+PASS base_is_phase_21
+PASS save_schema_preserved
+PASS upload_prompt_present
+PASS data_module_exists
+PASS system_module_exists
+PASS state_factory_integrates_world_diplomacy
+PASS core_loop_monthly_cycle_integrates_world_diplomacy
+PASS game_actions_bound
+PASS render_has_world_diplomacy_panels
+PASS index_has_world_diplomacy_sections
+PASS four_doctrines_defined
+PASS six_blocs_defined
+PASS six_agendas_defined
+PASS eight_actions_defined
+PASS world_diplomacy_i18n_pt_en_es
+PASS package_script_added
+PASS quality_gate_mentions_phase_22
+PASS all_previous_phase_guides_preserved
+PASS phase_22_guides_added
+PASS no_asset_paths_changed
+OVERALL PASS 22/22 checks

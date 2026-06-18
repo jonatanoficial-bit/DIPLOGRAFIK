@@ -42,6 +42,11 @@ core_loop_2 = read_json('tests/core-loop-2-results.json')
 government_creation = read_json('tests/government-creation-results.json')
 population = read_json('tests/population-results.json')
 deep_economy = read_json('tests/deep-economy-results.json')
+budget_tax = read_json('tests/budget-tax-results.json')
+government_institutions = read_json('tests/government-institutions-results.json')
+cabinet_administration = read_json('tests/cabinet-administration-results.json')
+media_public_opinion = read_json('tests/media-public-opinion-results.json')
+world_diplomacy = read_json('tests/world-diplomacy-results.json')
 
 browser_passed = isinstance(browser,list) and len(browser)==4 and all(item.get('passed') for item in browser)
 browser_checks = sum(len(item.get('checks',{})) for item in browser or [])
@@ -68,6 +73,11 @@ steps = [
     {'name':'government-creation-audit','passed':bool(government_creation and government_creation.get('passed')),'checks':int((government_creation or {}).get('check_count') or 0)},
     {'name':'country-population-audit','passed':bool(population and population.get('passed')),'checks':int((population or {}).get('check_count') or 0)},
     {'name':'deep-economy-audit','passed':bool(deep_economy and deep_economy.get('passed')),'checks':int((deep_economy or {}).get('check_count') or 0)},
+    {'name':'budget-tax-audit','passed':bool(budget_tax and budget_tax.get('passed')),'checks':int((budget_tax or {}).get('check_count') or 0)},
+    {'name':'government-institutions-audit','passed':bool(government_institutions and government_institutions.get('passed')),'checks':int((government_institutions or {}).get('check_count') or 0)},
+    {'name':'cabinet-administration-audit','passed':bool(cabinet_administration and cabinet_administration.get('passed')),'checks':int((cabinet_administration or {}).get('check_count') or 0)},
+    {'name':'media-public-opinion-audit','passed':bool(media_public_opinion and media_public_opinion.get('passed')),'checks':int((media_public_opinion or {}).get('check_count') or 0)},
+    {'name':'world-diplomacy-audit','passed':bool(world_diplomacy and world_diplomacy.get('passed')),'checks':int((world_diplomacy or {}).get('check_count') or 0)},
 ]
 report = {
     'project':config.get('project') if config else None,

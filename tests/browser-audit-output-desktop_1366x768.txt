@@ -60,7 +60,7 @@ DONE desktop_1366x768 passed=True
       },
       "create": {
         "clientHeight": 768,
-        "scrollHeight": 3997,
+        "scrollHeight": 3998,
         "overflowY": "auto"
       }
     },

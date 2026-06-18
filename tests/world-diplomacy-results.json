@@ -1,0 +1,31 @@
+{
+  "project": "DIPLOCRAFT",
+  "version": "1.7.4",
+  "phase": "Diplomacia Mundial",
+  "check_count": 22,
+  "checks": {
+    "version_is_phase_22": true,
+    "status_verified": true,
+    "base_is_phase_21": true,
+    "save_schema_preserved": true,
+    "upload_prompt_present": true,
+    "data_module_exists": true,
+    "system_module_exists": true,
+    "state_factory_integrates_world_diplomacy": true,
+    "core_loop_monthly_cycle_integrates_world_diplomacy": true,
+    "game_actions_bound": true,
+    "render_has_world_diplomacy_panels": true,
+    "index_has_world_diplomacy_sections": true,
+    "four_doctrines_defined": true,
+    "six_blocs_defined": true,
+    "six_agendas_defined": true,
+    "eight_actions_defined": true,
+    "world_diplomacy_i18n_pt_en_es": true,
+    "package_script_added": true,
+    "quality_gate_mentions_phase_22": true,
+    "all_previous_phase_guides_preserved": true,
+    "phase_22_guides_added": true,
+    "no_asset_paths_changed": true
+  },
+  "passed": true
+}

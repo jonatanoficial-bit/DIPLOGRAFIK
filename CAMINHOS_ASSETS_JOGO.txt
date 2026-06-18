@@ -52,3 +52,9 @@ STATUS FASE 17
 - Nenhuma imagem nova foi exigida pela Economia Profunda.
 - O fundo financeiro existente bg_economy_financial_center_v1 permanece como referência visual da aba Economia.
 - Total auditado: 34 assets fonte, 98 variantes runtime, 16 assets PWA, 148 arquivos registrados.
+
+
+FASE 18 v1.7.0 — Orçamento e Tributação:
+- Nenhum caminho de asset foi alterado.
+- Nenhuma imagem nova obrigatória foi adicionada.
+- Todos os fundos, ícones, partidos e assets runtime da Fase 17 permanecem preservados.

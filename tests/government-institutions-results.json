@@ -1,0 +1,60 @@
+{
+  "project": "DIPLOCRAFT",
+  "version": "1.7.1",
+  "phase": "Governo e Instituições",
+  "static_checks": {
+    "phase19_declared": true,
+    "official_base_preserved": true,
+    "save_schema_three_preserved": true,
+    "state_factory_has_institutions": true,
+    "institution_system_has_schema": true,
+    "monthly_bridge_installed": true,
+    "ui_panels_present": true,
+    "renderer_binds_actions": true,
+    "game_actions_present": true,
+    "mobile_css_present": true,
+    "catalog_complete": true
+  },
+  "runtime": {
+    "returncode": 0,
+    "stdout": "{\n  \"checks\": {\n    \"default_state_present\": true,\n    \"snapshot_finite\": true,\n    \"reform_applies\": true,\n    \"effect_bridge\": true,\n    \"history_bounded\": true,\n    \"health_score_bounded\": true,\n    \"core_loop_integration\": true,\n    \"long_run_420_days\": true\n  },\n  \"final\": {\n    \"score\": 41.72329824409377,\n    \"health\": 42,\n    \"history\": 36,\n    \"monthly\": {\n      \"score\": 35.26004939502514,\n      \"risk\": 48.09490000000001,\n      \"governability\": 32.529159211635175\n    }\n  },\n  \"passed\": true\n}\n",
+    "stderr": "",
+    "passed": true,
+    "checks": {
+      "default_state_present": true,
+      "snapshot_finite": true,
+      "reform_applies": true,
+      "effect_bridge": true,
+      "history_bounded": true,
+      "health_score_bounded": true,
+      "core_loop_integration": true,
+      "long_run_420_days": true
+    },
+    "final": {
+      "score": 41.72329824409377,
+      "health": 42,
+      "history": 36,
+      "monthly": {
+        "score": 35.26004939502514,
+        "risk": 48.09490000000001,
+        "governability": 32.529159211635175
+      }
+    }
+  },
+  "checks": {
+    "phase19_declared": true,
+    "official_base_preserved": true,
+    "save_schema_three_preserved": true,
+    "state_factory_has_institutions": true,
+    "institution_system_has_schema": true,
+    "monthly_bridge_installed": true,
+    "ui_panels_present": true,
+    "renderer_binds_actions": true,
+    "game_actions_present": true,
+    "mobile_css_present": true,
+    "catalog_complete": true,
+    "runtime_passed": true
+  },
+  "check_count": 20,
+  "passed": true
+}

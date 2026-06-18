@@ -1,8 +1,10 @@
 import { applyEffects, normalizeState, clamp } from "./calculations.js";
 import { processDeepEconomyMonth, ensureDeepEconomyState, applyDeepEconomyActionEffects } from "./economyDeep.js";
+import { ensureBudgetTaxState, calculateBudgetTaxSnapshot, processBudgetTaxMonth } from "./budgetTax.js";
 
 export function calculateMonthlyEconomy(state) {
   ensureDeepEconomyState(state);
+  ensureBudgetTaxState(state);
   const productionPower =
     state.industry * 0.24 +
     state.agribusiness * 0.19 +
@@ -22,8 +24,9 @@ export function calculateMonthlyEconomy(state) {
     -4.5,
     5.5
   );
-  const taxIncome = 24 + state.gdp * 0.0032 + state.taxBurden * 1.22 + state.economy * 0.38;
-  const spending = 29 + state.publicSpending * 1.32 + state.crisis * 4.1 + state.debt * 0.11;
+  const budgetSnapshot = calculateBudgetTaxSnapshot(state, { productionPower, growthIndex: 0 });
+  const taxIncome = 24 + state.gdp * 0.0032 + state.taxBurden * 1.22 + state.economy * 0.38 + budgetSnapshot.primaryRevenue * 0.11;
+  const spending = 29 + state.publicSpending * 1.32 + state.crisis * 4.1 + state.debt * 0.11 + budgetSnapshot.primaryExpense * 0.075;
   const monthlyBalance = Math.round(taxIncome - spending);
 
   return { productionPower, growthIndex, taxIncome, spending, monthlyBalance };
@@ -63,9 +66,13 @@ export function monthlyEconomy(state) {
   });
 
   const deepReport = processDeepEconomyMonth(state, report);
-  if (state.governance?.reports?.monthly) state.governance.reports.monthly.deepEconomy = { growth: deepReport.annualizedGrowth, primaryResult: deepReport.primaryResult, fiscalBalance: deepReport.fiscalBalance };
+  const budgetTaxReport = processBudgetTaxMonth(state, report);
+  if (state.governance?.reports?.monthly) {
+    state.governance.reports.monthly.deepEconomy = { growth: deepReport.annualizedGrowth, primaryResult: deepReport.primaryResult, fiscalBalance: deepReport.fiscalBalance };
+    state.governance.reports.monthly.budgetTax = { primaryRevenue: budgetTaxReport.primaryRevenue, primaryExpense: budgetTaxReport.primaryExpense, primaryBalance: budgetTaxReport.primaryBalance, fiscalSpace: budgetTaxReport.fiscalSpace };
+  }
   normalizeState(state);
-  return { ...report, deep: deepReport };
+  return { ...report, deep: deepReport, budgetTax: budgetTaxReport };
 }
 
 export function applyTaxProfile(state, profile) {

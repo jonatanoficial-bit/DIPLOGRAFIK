@@ -1,19 +1,42 @@
 # Changelog — DIPLOCRAFT
 
-## v1.6.1 — Fase 17 — Economia Profunda — 18/06/2026 10:31
+## v1.7.4 — Fase 22 — Diplomacia Mundial — 18/06/2026 18:12
 
 ### Adicionado
-- Motor de economia profunda com PIB real/nominal, produtividade, investimento, setor externo e renda das famílias.
-- Regra fiscal e política monetária selecionáveis pelo jogador com efeitos reais e cooldown institucional.
-- Programas produtivos e comerciais com custo, pontos de ação, atraso e integração ao histórico econômico.
-- Painel econômico expandido com diagnóstico, saúde econômica, setor fiscal, setor externo e histórico mensal.
+- Sistema de diplomacia mundial com soft power, confiança global, acesso comercial, alavancagem negociadora, liderança regional, neutralidade, risco de segurança e escrutínio público.
+- Doutrinas diplomáticas selecionáveis com efeitos reais no país e no tabuleiro internacional.
+- Blocos globais dinâmicos com alinhamento, comércio, tensão e risco.
+- Agenda internacional por temas estratégicos e ações diplomáticas com custo, PA, cooldown e impacto atrasado.
+- Histórico mensal de diplomacia mundial e diagnóstico estratégico integrado ao relatório mensal.
 
 ### Corrigido
-- A economia era forte como painel macro, mas ainda dependia de poucos indicadores nacionais sem setor externo detalhado.
-- PIB, inflação, desemprego e dívida agora têm ponte com produtividade, investimento, câmbio, reservas e custo de vida.
+- A aba Diplomacia deixou de ser apenas lista de países/tratados e passou a funcionar como sistema estratégico profundo.
+- Ações diplomáticas avançadas agora possuem cooldown próprio, custo fiscal, consumo de capacidade e efeitos de médio prazo.
+- O risco diplomático agora considera tensão global, neutralidade, blocos, agenda internacional e credibilidade externa.
 
 ### Preservado
-- Todos os sistemas da Fase 16, incluindo população, criação de governo, Core Loop 2.0, saves schema 3, PWA, rolagem e localização.
+- Todos os sistemas da Fase 21: imprensa e opinião pública, gabinete e administração, governo e instituições, orçamento e tributação, economia profunda, população, criação de governo, Core Loop 2.0, saves schema 3, PWA, mobile, desktop, assets, localização e documento de upload Git Bash.
+
+## v1.7.3 — Fase 21 Imprensa, Mídia e Opinião Pública — 18/06/2026 17:26
+- Sistema profundo de imprensa, mídia e opinião pública com humor público, hostilidade, credibilidade, doutrinas, veículos, agendas e ações de comunicação.
+- Integração com gabinete, instituições, economia, orçamento, aprovação, estabilidade e Core Loop 2.0.
+
+## v1.7.2 — Fase 20 Gabinete e Administração — 18/06/2026 16:47
+- Sistema profundo de gabinete e administração com saúde administrativa, governabilidade, entrega e risco de execução
+- Mapa de oito portfólios ministeriais: Casa Civil, Economia, Justiça, Saúde, Educação, Infraestrutura, Relações Exteriores e Planejamento
+- Modelos de gabinete selecionáveis: equilíbrio de coalizão, gabinete técnico, pacto federativo regional e gabinete orientado a entregas
+- Ações administrativas com custo, PA, cooldown e efeitos atrasados: contratos de desempenho, triagem de nomeações, sala de situação, digitalização, escritórios regionais e reforma ministerial
+- Ciclo mensal de coordenação, competência técnica, capacidade de entrega, execução orçamentária, carga administrativa, pressão por cargos e exposição a escândalos
+- Integração direta com Core Loop 2.0, governo e instituições, orçamento e tributação, economia profunda, população, aprovação, estabilidade, coalizão, corrupção e mercado
+
+## v1.7.2 — Fase 20 Gabinete e Administração — 18/06/2026 16:47
+- Gabinete, ministérios, coordenação, capacidade administrativa, entrega de políticas, nomeações, risco de escândalo e ações administrativas profundas.
+
+## v1.7.0 — Fase 18 Orçamento e Tributação — 18/06/2026 15:18
+- Orçamento público, bases tributárias, conformidade, sonegação, qualidade do gasto e regras fiscais integradas à economia profunda.
+
+## v1.6.1 — Fase 17 Economia Profunda — 18/06/2026 10:31
+- PIB real/nominal, setor externo, produtividade, investimento, renda, custo de vida e histórico econômico conectados ao país e à população.
 
 ## v1.6.0 — Fase 16 País e População — 17/06/2026 18:03
 - País, regiões, demografia, grupos sociais, programas públicos e população integrada ao governo.

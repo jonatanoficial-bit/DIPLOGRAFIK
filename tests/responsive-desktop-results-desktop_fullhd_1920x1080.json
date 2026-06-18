@@ -1,7 +1,7 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "1.6.1",
-  "phase": "Economia Profunda",
+  "version": "1.7.1",
+  "phase": "Governo e Instituições",
   "execution_model": "one isolated browser process per desktop viewport + deterministic aggregator",
   "static_checks": {
     "desktop_module_exists": true,
@@ -73,7 +73,7 @@
         },
         "sidebar_toggle": {
           "before": 248,
-          "after": 96.96875,
+          "after": 86.75,
           "stored": "true"
         },
         "dashboard_layout": {

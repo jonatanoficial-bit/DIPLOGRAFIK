@@ -19,8 +19,12 @@ import { AVATARS } from "./data/avatars.js";
 import { DECISIONS, PROJECTS, PRESS_QUESTIONS } from "./data/content.js";
 import { ECONOMIC_MEASURES, TAX_PROFILES } from "./data/economyData.js";
 import { FISCAL_RULES, MONETARY_POLICIES, TRADE_STRATEGIES, PRODUCTIVE_PROGRAMS } from "./data/economyDeepData.js";
+import { TAX_INSTRUMENTS, SPENDING_RULES, BUDGET_TAX_ACTIONS } from "./data/budgetTaxData.js";
+import { INSTITUTIONAL_REFORMS, INSTITUTIONAL_ACTIONS } from "./data/governmentInstitutionData.js";
+import { CABINET_STYLES, CABINET_ACTIONS } from "./data/cabinetAdministrationData.js";
 import { GOVERNMENT_ACTIONS, LAW_PROJECTS } from "./data/governmentData.js";
-import { MEDIA_ACTIONS, PRESS_BRIEFINGS } from "./data/mediaData.js";
+import { MEDIA_ACTIONS, PRESS_BRIEFINGS, MEDIA_DOCTRINES } from "./data/mediaData.js";
+import { WORLD_DIPLOMACY_ACTIONS, DIPLOMACY_DOCTRINES } from "./data/worldDiplomacyData.js";
 import { CAMPAIGN_ACTIONS } from "./data/electionData.js";
 import { TREATIES, DIPLOMACY_ACTIONS } from "./data/diplomacyData.js";
 import { MILITARY_ACTIONS, INTEL_OPERATIONS } from "./data/securityData.js";
@@ -32,9 +36,13 @@ import { applyGovernmentCreation } from "./systems/governmentCreation.js";
 import { applyCampaignAction } from "./systems/elections.js";
 import { applyBudgetChange, applyBudgetPolicy, applyTaxProfile } from "./systems/economy.js";
 import { ensureDeepEconomyState, setFiscalRule as setDeepFiscalRule, setMonetaryPolicy as setDeepMonetaryPolicy, applyDeepEconomyActionEffects } from "./systems/economyDeep.js";
+import { ensureBudgetTaxState, setTaxRate as setBudgetTaxRate, setSpendingRule as setBudgetSpendingRule, applyBudgetTaxEffects } from "./systems/budgetTax.js";
+import { ensureInstitutionalState, setInstitutionalReform as setGovernmentInstitutionalReform, applyInstitutionalEffects } from "./systems/governmentInstitutions.js";
+import { ensureCabinetState, setCabinetStyle as setGovernmentCabinetStyle, applyCabinetEffects } from "./systems/cabinetAdministration.js";
 import { voteLaw as processLawVote } from "./systems/government.js";
-import { answerPressQuestion } from "./systems/media.js";
+import { answerPressQuestion, ensureMediaPublicState, setMediaDoctrine as setGovernmentMediaDoctrine, applyMediaPublicEffects } from "./systems/media.js";
 import { ensureDiplomacyState, countryReaction, applyTreaty, diplomaticAction } from "./systems/diplomacy.js";
+import { ensureWorldDiplomacyState, setWorldDiplomacyDoctrine as setWorldDiplomacyDoctrineSystem, applyWorldDiplomacyEffects } from "./systems/worldDiplomacy.js";
 import { ensureSecurityState, runMilitaryAction as processMilitaryAction, runIntelOperation as processIntelOperation } from "./systems/security.js";
 import { ensureCrisisState, runCrisisAction as processCrisisAction } from "./systems/crisis.js";
 import { ensureProgressionState, addXP, checkAchievements, checkMandateGoals, updateGlobalRank, claimDailyReward } from "./systems/progression.js";
@@ -91,6 +99,11 @@ function applyRecoveredState(restored) {
   ensureCoreLoopState(state);
   ensurePopulationState(state);
   ensureDeepEconomyState(state);
+  ensureBudgetTaxState(state);
+  ensureInstitutionalState(state);
+  ensureCabinetState(state);
+  ensureMediaPublicState(state);
+  ensureWorldDiplomacyState(state);
   updateGlobalRank(state);
   renderGame("snapshot-restored");
   updateMobileChrome();
@@ -154,6 +167,96 @@ const actions = {
     log(t("economyDeep.actionStarted", { name: t(action.titleKey || action.nameKey) }), "positive");
     renderGame("deep-economy-action");
   },
+  setTaxRate(rateKey, value) {
+    const instrument = TAX_INSTRUMENTS.find(item => item.rateKey === rateKey);
+    if (!instrument) return renderGame();
+    setBudgetTaxRate(state, rateKey, value);
+    log(t("budgetTax.taxAdjusted", { name: t(instrument.nameKey), value: Math.round(Number(value)) }), "info");
+    renderGame("budget-tax-rate");
+  },
+  setSpendingRule(id) {
+    const rule = SPENDING_RULES.find(item => item.id === id);
+    if (!rule) return renderGame();
+    if (state.budgetTax?.activeSpendingRule === id) { log(t("budgetTax.ruleAlreadyActive"), "info"); return renderGame(); }
+    if (!consumeActionCapacity(state, 1, log, t(rule.nameKey))) return renderGame();
+    const selected = setBudgetSpendingRule(state, id);
+    const legacyEffects = applyBudgetTaxEffects(state, selected.effects || {});
+    applyEffects(state, legacyEffects);
+    state.cooldowns[`budget:rule:${id}`] = 30;
+    log(t("budgetTax.ruleChanged", { name: t(selected.nameKey) }), "positive");
+    renderGame("budget-tax-rule");
+  },
+  runBudgetTaxAction(id) {
+    const action = BUDGET_TAX_ACTIONS.find(item => item.id === id);
+    if (!action) return renderGame();
+    const cooldownKey = `budget:tax:${id}`;
+    if (Number(state.cooldowns?.[cooldownKey] || 0) > 0) { log(t("budgetTax.cooldownWarning"), "warning"); return renderGame(); }
+    if (Number(state.treasury || 0) < Number(action.cost || 0)) { log(t("budgetTax.insufficientTreasury"), "negative"); return renderGame(); }
+    if (!consumeActionCapacity(state, action.actionPoints || 1, log, t(action.titleKey))) return renderGame();
+    state.treasury -= Number(action.cost || 0);
+    const legacyEffects = applyBudgetTaxEffects(state, action.effects || {});
+    applyEffects(state, legacyEffects);
+    scheduleActionConsequence(state, { id: `budget-tax-${id}`, title: t(action.titleKey), effects: legacyEffects, lagDays: action.lagDays || 60 }, t("budgetTax.phaseName"));
+    state.cooldowns[cooldownKey] = Number(action.cooldown || 60);
+    addXP(state, 9, log);
+    log(t("budgetTax.actionStarted", { name: t(action.titleKey) }), "positive");
+    renderGame("budget-tax-action");
+  },
+  setInstitutionalReform(id) {
+    const reform = INSTITUTIONAL_REFORMS.find(item => item.id === id);
+    if (!reform) return renderGame();
+    if (state.institutions?.activeReform === id) { log(t("institutions.reformAlreadyActive"), "info"); return renderGame(); }
+    if (!consumeActionCapacity(state, 1, log, t(reform.nameKey))) return renderGame();
+    const selected = setGovernmentInstitutionalReform(state, id);
+    const legacyEffects = applyInstitutionalEffects(state, selected.effects || {});
+    applyEffects(state, legacyEffects);
+    state.cooldowns[`institutions:reform:${id}`] = 30;
+    log(t("institutions.reformChanged", { name: t(selected.nameKey) }), "positive");
+    renderGame("institutions-reform");
+  },
+  runInstitutionalAction(id) {
+    const action = INSTITUTIONAL_ACTIONS.find(item => item.id === id);
+    if (!action) return renderGame();
+    const cooldownKey = `institutions:action:${id}`;
+    if (Number(state.cooldowns?.[cooldownKey] || 0) > 0) { log(t("institutions.cooldownWarning"), "warning"); return renderGame(); }
+    if (Number(state.treasury || 0) < Number(action.cost || 0)) { log(t("institutions.insufficientTreasury"), "negative"); return renderGame(); }
+    if (!consumeActionCapacity(state, action.actionPoints || 1, log, t(action.titleKey))) return renderGame();
+    state.treasury -= Number(action.cost || 0);
+    const legacyEffects = applyInstitutionalEffects(state, action.effects || {});
+    applyEffects(state, legacyEffects);
+    scheduleActionConsequence(state, { id: `institutional-${id}`, title: t(action.titleKey), effects: legacyEffects, lagDays: action.lagDays || 60 }, t("institutions.phaseName"));
+    state.cooldowns[cooldownKey] = Number(action.cooldown || 60);
+    addXP(state, 10, log);
+    log(t("institutions.actionStarted", { name: t(action.titleKey) }), "positive");
+    renderGame("institutional-action");
+  },
+  setCabinetStyle(id) {
+    const style = CABINET_STYLES.find(item => item.id === id);
+    if (!style) return renderGame();
+    if (state.cabinetAdministration?.activeStyle === id) { log(t("cabinet.styleAlreadyActive"), "info"); return renderGame(); }
+    if (!consumeActionCapacity(state, 1, log, t(style.nameKey))) return renderGame();
+    const selected = setGovernmentCabinetStyle(state, id);
+    const legacyEffects = applyCabinetEffects(state, selected.effects || {});
+    applyEffects(state, legacyEffects);
+    state.cooldowns[`cabinet:style:${id}`] = 30;
+    log(t("cabinet.styleChanged", { name: t(selected.nameKey) }), "positive");
+    renderGame("cabinet-style");
+  },
+  runCabinetAction(id) {
+    const action = CABINET_ACTIONS.find(item => item.id === id);
+    if (!action) return renderGame();
+    const cooldownKey = `cabinet:action:${id}`;
+    if (Number(state.cooldowns?.[cooldownKey] || 0) > 0) { log(t("cabinet.cooldownWarning"), "warning"); return renderGame(); }
+    if (Number(state.treasury || 0) < Number(action.cost || 0)) { log(t("cabinet.insufficientTreasury"), "negative"); return renderGame(); }
+    if (!consumeActionCapacity(state, action.actionPoints || 1, log, t(action.titleKey))) return renderGame();
+    const legacyEffects = applyCabinetEffects(state, action.effects || {});
+    applyEffects(state, legacyEffects);
+    scheduleActionConsequence(state, { id: `cabinet-${id}`, title: t(action.titleKey), effects: legacyEffects, lagDays: action.lagDays || 45 }, t("cabinet.phaseName"));
+    state.cooldowns[cooldownKey] = Number(action.cooldown || 60);
+    addXP(state, 9, log);
+    log(t("cabinet.actionStarted", { name: t(action.titleKey) }), "positive");
+    renderGame("cabinet-action");
+  },
   runGovernmentAction(id) {
     const action = GOVERNMENT_ACTIONS.find(a => a.id === id);
     executeTimedAction(action, id, "Ação de governo");
@@ -165,9 +268,60 @@ const actions = {
     if (approved) scheduleActionConsequence(state, { ...law, lagDays: 45 }, "Lei aprovada");
     renderGame();
   },
+  setMediaDoctrine(id) {
+    const doctrine = MEDIA_DOCTRINES.find(item => item.id === id);
+    if (!doctrine) return renderGame();
+    if (state.mediaPublic?.activeDoctrine === id) { log(t("media.doctrineAlreadyActive"), "info"); return renderGame(); }
+    if (!consumeActionCapacity(state, 1, log, t(doctrine.nameKey))) return renderGame();
+    const selected = setGovernmentMediaDoctrine(state, id);
+    applyEffects(state, selected.legacyEffects || {});
+    state.cooldowns[`media:doctrine:${id}`] = 30;
+    addXP(state, 5, log);
+    log(t("media.doctrineChanged", { name: t(selected.nameKey) }), "positive");
+    renderGame("media-doctrine");
+  },
   runMediaAction(id) {
     const action = MEDIA_ACTIONS.find(a => a.id === id);
-    executeTimedAction(action, id, "Ação de comunicação");
+    if (!action) return renderGame();
+    const cooldownKey = `media:action:${id}`;
+    if (Number(state.cooldowns?.[cooldownKey] || 0) > 0) { log(t("media.cooldownWarning"), "warning"); return renderGame(); }
+    if (Number(state.treasury || 0) < Number(action.cost || 0)) { log(t("media.insufficientTreasury"), "negative"); return renderGame(); }
+    if (!consumeActionCapacity(state, action.actionPoints || 1, log, t(action.titleKey || action.title))) return renderGame();
+    state.treasury -= Number(action.cost || 0);
+    const legacyEffects = applyMediaPublicEffects(state, action.effects || {});
+    applyEffects(state, legacyEffects);
+    scheduleActionConsequence(state, { id: `media-${id}`, title: t(action.titleKey || action.title), effects: legacyEffects, lagDays: action.lagDays || 15 }, t("media.phaseName"));
+    state.cooldowns[cooldownKey] = Number(action.cooldown || 45);
+    addXP(state, 7, log);
+    log(t("media.actionStarted", { name: t(action.titleKey || action.title) }), "positive");
+    renderGame("media-action");
+  },
+  setWorldDiplomacyDoctrine(id) {
+    const doctrine = DIPLOMACY_DOCTRINES.find(item => item.id === id);
+    if (!doctrine) return renderGame();
+    if (state.worldDiplomacy?.activeDoctrine === id) { log(t("worldDiplomacy.doctrineAlreadyActive"), "info"); return renderGame(); }
+    if (!consumeActionCapacity(state, 1, log, t(doctrine.nameKey))) return renderGame();
+    const selected = setWorldDiplomacyDoctrineSystem(state, id);
+    state.cooldowns[`world:diplomacy:doctrine:${id}`] = 30;
+    addXP(state, 6, log);
+    log(t("worldDiplomacy.doctrineChanged", { name: t(selected.nameKey) }), "positive");
+    renderGame("world-diplomacy-doctrine");
+  },
+  runWorldDiplomacyAction(id) {
+    const action = WORLD_DIPLOMACY_ACTIONS.find(item => item.id === id);
+    if (!action) return renderGame();
+    const cooldownKey = `world:diplomacy:action:${id}`;
+    if (Number(state.cooldowns?.[cooldownKey] || 0) > 0) { log(t("worldDiplomacy.cooldownWarning"), "warning"); return renderGame(); }
+    if (Number(state.treasury || 0) < Number(action.cost || 0)) { log(t("worldDiplomacy.insufficientTreasury"), "negative"); return renderGame(); }
+    if (!consumeActionCapacity(state, action.actionPoints || 1, log, t(action.titleKey))) return renderGame();
+    state.treasury -= Number(action.cost || 0);
+    const legacyEffects = applyWorldDiplomacyEffects(state, action.effects || {});
+    applyEffects(state, legacyEffects);
+    scheduleActionConsequence(state, { id: `world-diplomacy-${id}`, title: t(action.titleKey), effects: legacyEffects, lagDays: action.lagDays || 45 }, t("worldDiplomacy.phaseName"));
+    state.cooldowns[cooldownKey] = Number(action.cooldown || 60);
+    addXP(state, 10, log);
+    log(t("worldDiplomacy.actionStarted", { name: t(action.titleKey) }), "positive");
+    renderGame("world-diplomacy-action");
   },
   runCampaignAction(id) {
     const action = CAMPAIGN_ACTIONS.find(a => a.id === id);
@@ -351,6 +505,11 @@ function executeTimedAction(item, id, label = "Decisão") {
   ensureCoreLoopState(state);
   ensurePopulationState(state);
   ensureDeepEconomyState(state);
+  ensureBudgetTaxState(state);
+  ensureInstitutionalState(state);
+  ensureCabinetState(state);
+  ensureMediaPublicState(state);
+  ensureWorldDiplomacyState(state);
   updateGlobalRank(state);
   renderGame();
   applyTheme();
@@ -449,6 +608,11 @@ function startGame() {
   ensureCoreLoopState(state);
   ensurePopulationState(state);
   ensureDeepEconomyState(state);
+  ensureBudgetTaxState(state);
+  ensureInstitutionalState(state);
+  ensureCabinetState(state);
+  ensureMediaPublicState(state);
+  ensureWorldDiplomacyState(state);
   updateGlobalRank(state);
   log("Tutorial de posse disponível no menu inicial.", "info");
   showScreen("game");
@@ -461,7 +625,7 @@ function startGame() {
 
 function bindGlobalEvents() {
   document.addEventListener("pointerdown", e => {
-    const actionable = e.target.closest("button, [data-decision], [data-gov-action], [data-law], [data-economy-measure], [data-diplomacy-action], [data-military-action], [data-intel-operation], [data-crisis-action], [data-population-policy]");
+    const actionable = e.target.closest("button, [data-decision], [data-gov-action], [data-law], [data-economy-measure], [data-diplomacy-action], [data-military-action], [data-intel-operation], [data-crisis-action], [data-population-policy], [data-institutional-reform], [data-institutional-action]");
     if (actionable && document.getElementById("game")?.classList.contains("active")) resilience?.checkpoint(`before:${actionable.id || actionable.dataset.tab || actionable.textContent?.trim().slice(0,32) || "action"}`);
   }, { capture: true });
 
@@ -496,6 +660,12 @@ function bindGlobalEvents() {
     ensureProgressionState(state);
     ensureMonetizationState(state);
     ensureCoreLoopState(state);
+    ensurePopulationState(state);
+    ensureDeepEconomyState(state);
+    ensureBudgetTaxState(state);
+    ensureInstitutionalState(state);
+    ensureCabinetState(state);
+    ensureMediaPublicState(state);
     showScreen("game");
     showTab("dashboard");
     renderGame();

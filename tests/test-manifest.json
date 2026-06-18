@@ -1,6 +1,6 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "release_blocking": true,
   "suites": [
     "build-generator-check",
@@ -21,7 +21,8 @@
     "scroll-touch-audit",
     "localization-complete-audit",
     "core-loop-2-audit",
-    "country-population-audit"
+    "country-population-audit",
+    "budget-tax-audit"
   ],
   "mobile_profiles": [
     "320x568 portrait",
@@ -92,5 +93,12 @@
     "768x1024 tablet",
     "1366x768 desktop",
     "30-year deterministic population bounds"
+  ],
+  "budget_tax_profiles": [
+    "six tax bases",
+    "four budget rules",
+    "six structural actions",
+    "36-month bounded fiscal history",
+    "long-run integration with deep economy"
   ]
 }

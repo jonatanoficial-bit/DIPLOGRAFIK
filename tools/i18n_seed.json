@@ -7355,6 +7355,2441 @@
       "pt-BR": "Simulação econômica profunda com PIB real e nominal, política fiscal, política monetária, setor externo, investimentos, renda, custo de vida e histórico econômico conectado à população e ao Core Loop 2.0.",
       "en": "Deep economic simulation with real and nominal GDP, fiscal policy, monetary policy, external sector, investment, income, cost of living and economic history connected to population and Core Loop 2.0.",
       "es": "Simulación económica profunda con PIB real y nominal, política fiscal, política monetaria, sector externo, inversiones, ingresos, costo de vida e historial económico conectado a población y Core Loop 2.0."
+    },
+    "budgetTax.phaseName": {
+      "pt-BR": "Orçamento e Tributação",
+      "en": "Budget and Taxation",
+      "es": "Presupuesto y Tributación"
+    },
+    "budgetTax.overviewTitle": {
+      "pt-BR": "Orçamento e Tributação",
+      "en": "Budget and Taxation",
+      "es": "Presupuesto y Tributación"
+    },
+    "budgetTax.taxInstrumentsTitle": {
+      "pt-BR": "Alíquotas por base tributária",
+      "en": "Rates by tax base",
+      "es": "Tasas por base tributaria"
+    },
+    "budgetTax.spendingRulesTitle": {
+      "pt-BR": "Regras de execução orçamentária",
+      "en": "Budget execution rules",
+      "es": "Reglas de ejecución presupuestaria"
+    },
+    "budgetTax.actionsTitle": {
+      "pt-BR": "Ações fiscais estruturantes",
+      "en": "Structural fiscal actions",
+      "es": "Acciones fiscales estructurales"
+    },
+    "budgetTax.historyTitle": {
+      "pt-BR": "Histórico fiscal",
+      "en": "Fiscal history",
+      "es": "Historial fiscal"
+    },
+    "budgetTax.health": {
+      "pt-BR": "Saúde fiscal",
+      "en": "Fiscal health",
+      "es": "Salud fiscal"
+    },
+    "budgetTax.primaryBalance": {
+      "pt-BR": "Resultado primário",
+      "en": "Primary balance",
+      "es": "Resultado primario"
+    },
+    "budgetTax.fiscalSpace": {
+      "pt-BR": "Espaço fiscal",
+      "en": "Fiscal space",
+      "es": "Espacio fiscal"
+    },
+    "budgetTax.weightedRate": {
+      "pt-BR": "Alíquota efetiva",
+      "en": "Effective rate",
+      "es": "Tasa efectiva"
+    },
+    "budgetTax.taxPressure": {
+      "pt-BR": "Pressão tributária",
+      "en": "Tax pressure",
+      "es": "Presión tributaria"
+    },
+    "budgetTax.compliance": {
+      "pt-BR": "Conformidade",
+      "en": "Compliance",
+      "es": "Cumplimiento"
+    },
+    "budgetTax.evasion": {
+      "pt-BR": "Sonegação",
+      "en": "Evasion",
+      "es": "Evasión"
+    },
+    "budgetTax.revenueComposition": {
+      "pt-BR": "Composição da receita",
+      "en": "Revenue composition",
+      "es": "Composición de ingresos"
+    },
+    "budgetTax.direct": {
+      "pt-BR": "Diretos",
+      "en": "Direct",
+      "es": "Directos"
+    },
+    "budgetTax.indirect": {
+      "pt-BR": "Indiretos",
+      "en": "Indirect",
+      "es": "Indirectos"
+    },
+    "budgetTax.payroll": {
+      "pt-BR": "Folha",
+      "en": "Payroll",
+      "es": "Nómina"
+    },
+    "budgetTax.green": {
+      "pt-BR": "Verde",
+      "en": "Green",
+      "es": "Verde"
+    },
+    "budgetTax.spendingQuality": {
+      "pt-BR": "Qualidade do gasto",
+      "en": "Spending quality",
+      "es": "Calidad del gasto"
+    },
+    "budgetTax.mandatory": {
+      "pt-BR": "Obrigatório",
+      "en": "Mandatory",
+      "es": "Obligatorio"
+    },
+    "budgetTax.efficiency": {
+      "pt-BR": "Eficiência",
+      "en": "Efficiency",
+      "es": "Eficiencia"
+    },
+    "budgetTax.capitalExecution": {
+      "pt-BR": "Execução de capital",
+      "en": "Capital execution",
+      "es": "Ejecución de capital"
+    },
+    "budgetTax.returnTitle": {
+      "pt-BR": "Retorno social e produtivo",
+      "en": "Social and productive return",
+      "es": "Retorno social y productivo"
+    },
+    "budgetTax.socialReturn": {
+      "pt-BR": "Retorno social",
+      "en": "Social return",
+      "es": "Retorno social"
+    },
+    "budgetTax.investmentReturn": {
+      "pt-BR": "Retorno produtivo",
+      "en": "Productive return",
+      "es": "Retorno productivo"
+    },
+    "budgetTax.regionalBalance": {
+      "pt-BR": "Equilíbrio regional",
+      "en": "Regional balance",
+      "es": "Equilibrio regional"
+    },
+    "budgetTax.range": {
+      "pt-BR": "faixa {min}%–{max}%",
+      "en": "range {min}%–{max}%",
+      "es": "rango {min}%–{max}%"
+    },
+    "budgetTax.taxAdjusted": {
+      "pt-BR": "{name} ajustado para {value}%.",
+      "en": "{name} adjusted to {value}%.",
+      "es": "{name} ajustado a {value}%."
+    },
+    "budgetTax.ruleAlreadyActive": {
+      "pt-BR": "Essa regra orçamentária já está ativa.",
+      "en": "This budget rule is already active.",
+      "es": "Esta regla presupuestaria ya está activa."
+    },
+    "budgetTax.ruleChanged": {
+      "pt-BR": "Regra orçamentária alterada: {name}.",
+      "en": "Budget rule changed: {name}.",
+      "es": "Regla presupuestaria cambiada: {name}."
+    },
+    "budgetTax.cooldownWarning": {
+      "pt-BR": "Ação fiscal ainda está em cooldown.",
+      "en": "Fiscal action is still on cooldown.",
+      "es": "La acción fiscal aún está en enfriamiento."
+    },
+    "budgetTax.insufficientTreasury": {
+      "pt-BR": "Tesouro insuficiente para a ação fiscal.",
+      "en": "Insufficient treasury for the fiscal action.",
+      "es": "Tesoro insuficiente para la acción fiscal."
+    },
+    "budgetTax.actionStarted": {
+      "pt-BR": "Ação fiscal iniciada: {name}.",
+      "en": "Fiscal action started: {name}.",
+      "es": "Acción fiscal iniciada: {name}."
+    },
+    "budgetTax.revenue": {
+      "pt-BR": "Receita",
+      "en": "Revenue",
+      "es": "Ingresos"
+    },
+    "budgetTax.expense": {
+      "pt-BR": "Despesa",
+      "en": "Expense",
+      "es": "Gasto"
+    },
+    "budgetTax.balance": {
+      "pt-BR": "Saldo",
+      "en": "Balance",
+      "es": "Saldo"
+    },
+    "budgetTax.noHistory": {
+      "pt-BR": "Nenhum fechamento fiscal registrado ainda.",
+      "en": "No fiscal closing recorded yet.",
+      "es": "Aún no hay cierre fiscal registrado."
+    },
+    "budgetTax.grossRevenue": {
+      "pt-BR": "Receita bruta",
+      "en": "Gross revenue",
+      "es": "Ingresos brutos"
+    },
+    "budgetTax.mandatorySpending": {
+      "pt-BR": "Gasto obrigatório",
+      "en": "Mandatory spending",
+      "es": "Gasto obligatorio"
+    },
+    "budgetTax.discretionarySpace": {
+      "pt-BR": "Espaço discricionário",
+      "en": "Discretionary space",
+      "es": "Espacio discrecional"
+    },
+    "budgetTax.taxCompliance": {
+      "pt-BR": "Conformidade fiscal",
+      "en": "Tax compliance",
+      "es": "Cumplimiento fiscal"
+    },
+    "budgetTax.evasionRate": {
+      "pt-BR": "Taxa de sonegação",
+      "en": "Evasion rate",
+      "es": "Tasa de evasión"
+    },
+    "budgetTax.spendingEfficiency": {
+      "pt-BR": "Eficiência do gasto",
+      "en": "Spending efficiency",
+      "es": "Eficiencia del gasto"
+    },
+    "budgetTax.tax.income.name": {
+      "pt-BR": "Imposto de renda progressivo",
+      "en": "Progressive income tax",
+      "es": "Impuesto sobre la renta progresivo"
+    },
+    "budgetTax.tax.income.text": {
+      "pt-BR": "Eleva progressividade e reduz desigualdade, mas pressiona elites e conformidade quando exagerado.",
+      "en": "Increases progressivity and reduces inequality, but pressures elites and compliance when excessive.",
+      "es": "Aumenta la progresividad y reduce la desigualdad, pero presiona a élites y cumplimiento si es excesivo."
+    },
+    "budgetTax.tax.corporate.name": {
+      "pt-BR": "Tributação empresarial",
+      "en": "Corporate taxation",
+      "es": "Tributación empresarial"
+    },
+    "budgetTax.tax.corporate.text": {
+      "pt-BR": "Financia o Estado, mas alíquotas altas reduzem investimento e confiança empresarial.",
+      "en": "Funds the state, but high rates reduce investment and business confidence.",
+      "es": "Financia el Estado, pero tasas altas reducen inversión y confianza empresarial."
+    },
+    "budgetTax.tax.consumption.name": {
+      "pt-BR": "IVA/consumo",
+      "en": "VAT/consumption",
+      "es": "IVA/consumo"
+    },
+    "budgetTax.tax.consumption.text": {
+      "pt-BR": "Base ampla e previsível, porém pesa no custo de vida e exige compensação social.",
+      "en": "Broad and predictable base, but it weighs on living costs and requires social compensation.",
+      "es": "Base amplia y previsible, pero pesa sobre el costo de vida y requiere compensación social."
+    },
+    "budgetTax.tax.payroll.name": {
+      "pt-BR": "Encargos sobre folha",
+      "en": "Payroll charges",
+      "es": "Cargas sobre nómina"
+    },
+    "budgetTax.tax.payroll.text": {
+      "pt-BR": "Sustenta previdência e programas trabalhistas, mas pode ampliar informalidade.",
+      "en": "Supports pensions and labor programs, but can expand informality.",
+      "es": "Sostiene pensiones y programas laborales, pero puede ampliar la informalidad."
+    },
+    "budgetTax.tax.wealth.name": {
+      "pt-BR": "Patrimônio e propriedade",
+      "en": "Wealth and property",
+      "es": "Patrimonio y propiedad"
+    },
+    "budgetTax.tax.wealth.text": {
+      "pt-BR": "Aumenta justiça distributiva e receita patrimonial, com custo político nas camadas de alta renda.",
+      "en": "Increases distributive justice and property revenue, with a political cost among high-income groups.",
+      "es": "Aumenta justicia distributiva e ingresos patrimoniales, con costo político en altos ingresos."
+    },
+    "budgetTax.tax.green.name": {
+      "pt-BR": "Tributo verde",
+      "en": "Green tax",
+      "es": "Tributo verde"
+    },
+    "budgetTax.tax.green.text": {
+      "pt-BR": "Internaliza custos ambientais e gera receita, mas pode pressionar energia e transporte.",
+      "en": "Internalizes environmental costs and raises revenue, but can pressure energy and transport.",
+      "es": "Internaliza costos ambientales y genera ingresos, pero puede presionar energía y transporte."
+    },
+    "budgetTax.rule.baseline.name": {
+      "pt-BR": "Orçamento base equilibrado",
+      "en": "Balanced baseline budget",
+      "es": "Presupuesto base equilibrado"
+    },
+    "budgetTax.rule.baseline.text": {
+      "pt-BR": "Mantém teto moderado, proteção social e investimento em nível controlado.",
+      "en": "Maintains a moderate ceiling, social protection, and controlled investment.",
+      "es": "Mantiene techo moderado, protección social e inversión controlada."
+    },
+    "budgetTax.rule.social.name": {
+      "pt-BR": "Proteção social prioritária",
+      "en": "Priority social protection",
+      "es": "Protección social prioritaria"
+    },
+    "budgetTax.rule.social.text": {
+      "pt-BR": "Amplia programas sociais e transferências, com pressão fiscal maior.",
+      "en": "Expands social programs and transfers with higher fiscal pressure.",
+      "es": "Amplía programas sociales y transferencias con mayor presión fiscal."
+    },
+    "budgetTax.rule.investment.name": {
+      "pt-BR": "Orçamento de investimento",
+      "en": "Investment budget",
+      "es": "Presupuesto de inversión"
+    },
+    "budgetTax.rule.investment.text": {
+      "pt-BR": "Reserva espaço para infraestrutura, indústria e tecnologia com retorno gradual.",
+      "en": "Reserves room for infrastructure, industry, and technology with gradual returns.",
+      "es": "Reserva espacio para infraestructura, industria y tecnología con retorno gradual."
+    },
+    "budgetTax.rule.ceiling.name": {
+      "pt-BR": "Teto fiscal rígido",
+      "en": "Hard fiscal ceiling",
+      "es": "Techo fiscal rígido"
+    },
+    "budgetTax.rule.ceiling.text": {
+      "pt-BR": "Reduz déficit e melhora credibilidade, mas corta margem política e social.",
+      "en": "Reduces deficit and improves credibility, but cuts political and social room.",
+      "es": "Reduce déficit y mejora credibilidad, pero recorta margen político y social."
+    },
+    "budgetTax.action.digital.title": {
+      "pt-BR": "Receita digital integrada",
+      "en": "Integrated digital revenue service",
+      "es": "Agencia tributaria digital integrada"
+    },
+    "budgetTax.action.digital.text": {
+      "pt-BR": "Cruza dados fiscais, reduz sonegação e melhora arrecadação sem elevar alíquotas nominais.",
+      "en": "Cross-checks fiscal data, reduces evasion, and improves collection without raising headline rates.",
+      "es": "Cruza datos fiscales, reduce evasión y mejora recaudación sin subir tasas nominales."
+    },
+    "budgetTax.action.simplify.title": {
+      "pt-BR": "Simplificação tributária nacional",
+      "en": "National tax simplification",
+      "es": "Simplificación tributaria nacional"
+    },
+    "budgetTax.action.simplify.text": {
+      "pt-BR": "Reduz custo administrativo, melhora ambiente de negócios e combate informalidade.",
+      "en": "Reduces administrative cost, improves the business climate, and fights informality.",
+      "es": "Reduce costo administrativo, mejora negocios y combate informalidad."
+    },
+    "budgetTax.action.food.title": {
+      "pt-BR": "Alívio focalizado em alimentos",
+      "en": "Targeted food relief",
+      "es": "Alivio focalizado en alimentos"
+    },
+    "budgetTax.action.food.text": {
+      "pt-BR": "Desonera itens essenciais e protege famílias vulneráveis contra custo de vida.",
+      "en": "Relieves essential goods and protects vulnerable families against living costs.",
+      "es": "Alivia bienes esenciales y protege familias vulnerables contra el costo de vida."
+    },
+    "budgetTax.action.review.title": {
+      "pt-BR": "Revisão de contingenciamento",
+      "en": "Contingency review",
+      "es": "Revisión de contingencia"
+    },
+    "budgetTax.action.review.text": {
+      "pt-BR": "Corta desperdícios, melhora eficiência e preserva áreas estratégicas.",
+      "en": "Cuts waste, improves efficiency, and preserves strategic areas.",
+      "es": "Corta desperdicio, mejora eficiencia y preserva áreas estratégicas."
+    },
+    "budgetTax.action.transfers.title": {
+      "pt-BR": "Pacto de transferências regionais",
+      "en": "Regional transfers pact",
+      "es": "Pacto de transferencias regionales"
+    },
+    "budgetTax.action.transfers.text": {
+      "pt-BR": "Coordena repasses para regiões frágeis e reduz tensão federativa.",
+      "en": "Coordinates transfers to fragile regions and reduces federal tension.",
+      "es": "Coordina transferencias a regiones frágiles y reduce tensión federal."
+    },
+    "budgetTax.action.pipeline.title": {
+      "pt-BR": "Auditoria da fila de investimentos",
+      "en": "Investment pipeline audit",
+      "es": "Auditoría de cartera de inversiones"
+    },
+    "budgetTax.action.pipeline.text": {
+      "pt-BR": "Remove gargalos de obras, aumenta execução de capital e reduz corrupção em contratos.",
+      "en": "Removes project bottlenecks, raises capital execution, and reduces contract corruption.",
+      "es": "Elimina cuellos de botella, eleva ejecución de capital y reduce corrupción contractual."
+    },
+    "build.summary.v1_7_0": {
+      "pt-BR": "Sistema fiscal profundo com orçamento público, bases tributárias ajustáveis, conformidade, sonegação, qualidade do gasto, regras de execução orçamentária e efeitos mensais conectados à economia profunda, população e governabilidade.",
+      "en": "Deep fiscal system with public budget, adjustable tax bases, compliance, evasion, spending quality, budget execution rules, and monthly effects connected to the deep economy, population, and governance.",
+      "es": "Sistema fiscal profundo con presupuesto público, bases tributarias ajustables, cumplimiento, evasión, calidad del gasto, reglas de ejecución presupuestaria y efectos mensuales conectados a la economía profunda, población y gobernabilidad."
+    },
+    "institutions.phaseName": {
+      "pt-BR": "Governo e Instituições",
+      "en": "Government and Institutions",
+      "es": "Gobierno e Instituciones"
+    },
+    "institutions.overviewTitle": {
+      "pt-BR": "Governo e Instituições",
+      "en": "Government and Institutions",
+      "es": "Gobierno e Instituciones"
+    },
+    "institutions.metricsTitle": {
+      "pt-BR": "Indicadores Institucionais",
+      "en": "Institutional Indicators",
+      "es": "Indicadores Institucionales"
+    },
+    "institutions.profilesTitle": {
+      "pt-BR": "Mapa das Instituições",
+      "en": "Institution Map",
+      "es": "Mapa de Instituciones"
+    },
+    "institutions.reformsTitle": {
+      "pt-BR": "Doutrina de Governo",
+      "en": "Government Doctrine",
+      "es": "Doctrina de Gobierno"
+    },
+    "institutions.actionsTitle": {
+      "pt-BR": "Ações Institucionais",
+      "en": "Institutional Actions",
+      "es": "Acciones Institucionales"
+    },
+    "institutions.historyTitle": {
+      "pt-BR": "Histórico Institucional",
+      "en": "Institutional History",
+      "es": "Historial Institucional"
+    },
+    "institutions.health": {
+      "pt-BR": "Saúde institucional",
+      "en": "Institutional health",
+      "es": "Salud institucional"
+    },
+    "institutions.governability": {
+      "pt-BR": "Governabilidade",
+      "en": "Governability",
+      "es": "Gobernabilidad"
+    },
+    "institutions.reformCapacity": {
+      "pt-BR": "Capacidade de reforma",
+      "en": "Reform capacity",
+      "es": "Capacidad de reforma"
+    },
+    "institutions.legalSecurity": {
+      "pt-BR": "Segurança jurídica",
+      "en": "Legal certainty",
+      "es": "Seguridad jurídica"
+    },
+    "institutions.ruleOfLaw": {
+      "pt-BR": "Estado de Direito",
+      "en": "Rule of law",
+      "es": "Estado de derecho"
+    },
+    "institutions.institutionalRisk": {
+      "pt-BR": "Risco institucional",
+      "en": "Institutional risk",
+      "es": "Riesgo institucional"
+    },
+    "institutions.tension": {
+      "pt-BR": "Tensão constitucional",
+      "en": "Constitutional tension",
+      "es": "Tensión constitucional"
+    },
+    "institutions.currentDiagnosis": {
+      "pt-BR": "Diagnóstico atual",
+      "en": "Current diagnosis",
+      "es": "Diagnóstico actual"
+    },
+    "institutions.checks": {
+      "pt-BR": "Freios e contrapesos",
+      "en": "Checks and balances",
+      "es": "Controles y contrapesos"
+    },
+    "institutions.judiciary": {
+      "pt-BR": "Independência judicial",
+      "en": "Judicial independence",
+      "es": "Independencia judicial"
+    },
+    "institutions.bureaucracy": {
+      "pt-BR": "Capacidade burocrática",
+      "en": "Bureaucratic capacity",
+      "es": "Capacidad burocrática"
+    },
+    "institutions.regulatoryQuality": {
+      "pt-BR": "Qualidade regulatória",
+      "en": "Regulatory quality",
+      "es": "Calidad regulatoria"
+    },
+    "institutions.federalCoordination": {
+      "pt-BR": "Coordenação federativa",
+      "en": "Federal coordination",
+      "es": "Coordinación federal"
+    },
+    "institutions.transparency": {
+      "pt-BR": "Transparência",
+      "en": "Transparency",
+      "es": "Transparencia"
+    },
+    "institutions.oversightPressure": {
+      "pt-BR": "Pressão de controle",
+      "en": "Oversight pressure",
+      "es": "Presión de control"
+    },
+    "institutions.legislativeBacklog": {
+      "pt-BR": "Fila legislativa",
+      "en": "Legislative backlog",
+      "es": "Atraso legislativo"
+    },
+    "institutions.efficiency": {
+      "pt-BR": "Eficiência",
+      "en": "Efficiency",
+      "es": "Eficiencia"
+    },
+    "institutions.trust": {
+      "pt-BR": "Confiança",
+      "en": "Trust",
+      "es": "Confianza"
+    },
+    "institutions.risk": {
+      "pt-BR": "Risco",
+      "en": "Risk",
+      "es": "Riesgo"
+    },
+    "institutions.active": {
+      "pt-BR": "ATIVA",
+      "en": "ACTIVE",
+      "es": "ACTIVA"
+    },
+    "institutions.adopt": {
+      "pt-BR": "ADOTAR",
+      "en": "ADOPT",
+      "es": "ADOPTAR"
+    },
+    "institutions.execute": {
+      "pt-BR": "EXECUTAR",
+      "en": "EXECUTE",
+      "es": "EJECUTAR"
+    },
+    "institutions.wait": {
+      "pt-BR": "AGUARDAR",
+      "en": "WAIT",
+      "es": "ESPERAR"
+    },
+    "institutions.cooldown": {
+      "pt-BR": "cooldown {days}d",
+      "en": "cooldown {days}d",
+      "es": "cooldown {days}d"
+    },
+    "institutions.costLine": {
+      "pt-BR": "Custo ₿ {cost} bi • {ap} PA • efeitos em {days}d",
+      "en": "Cost ₿ {cost} bi • {ap} AP • effects in {days}d",
+      "es": "Costo ₿ {cost} bi • {ap} PA • efectos en {days}d"
+    },
+    "institutions.noHistory": {
+      "pt-BR": "Nenhum fechamento institucional registrado ainda.",
+      "en": "No institutional closing registered yet.",
+      "es": "Todavía no hay cierres institucionales registrados."
+    },
+    "institutions.reformAlreadyActive": {
+      "pt-BR": "Essa doutrina institucional já está ativa.",
+      "en": "This institutional doctrine is already active.",
+      "es": "Esta doctrina institucional ya está activa."
+    },
+    "institutions.reformChanged": {
+      "pt-BR": "Doutrina institucional alterada: {name}.",
+      "en": "Institutional doctrine changed: {name}.",
+      "es": "Doctrina institucional alterada: {name}."
+    },
+    "institutions.actionStarted": {
+      "pt-BR": "Ação institucional iniciada: {name}.",
+      "en": "Institutional action started: {name}.",
+      "es": "Acción institucional iniciada: {name}."
+    },
+    "institutions.cooldownWarning": {
+      "pt-BR": "Ação institucional ainda está em cooldown.",
+      "en": "Institutional action is still on cooldown.",
+      "es": "La acción institucional aún está en cooldown."
+    },
+    "institutions.insufficientTreasury": {
+      "pt-BR": "Tesouro insuficiente para a ação institucional.",
+      "en": "Treasury is insufficient for the institutional action.",
+      "es": "Tesoro insuficiente para la acción institucional."
+    },
+    "institutions.diagnosis.crisis": {
+      "pt-BR": "Crise institucional: conflito entre poderes ou controle excessivo ameaça a estabilidade.",
+      "en": "Institutional crisis: interbranch conflict or excessive oversight threatens stability.",
+      "es": "Crisis institucional: conflicto entre poderes o control excesivo amenaza la estabilidad."
+    },
+    "institutions.diagnosis.gridlock": {
+      "pt-BR": "Paralisia governamental: a fila legislativa e a baixa coordenação limitam reformas.",
+      "en": "Government gridlock: legislative backlog and weak coordination limit reforms.",
+      "es": "Parálisis gubernamental: el atraso legislativo y la baja coordinación limitan reformas."
+    },
+    "institutions.diagnosis.legal": {
+      "pt-BR": "Segurança jurídica frágil: insegurança regulatória e judicial reduz confiança.",
+      "en": "Fragile legal certainty: regulatory and judicial uncertainty reduces confidence.",
+      "es": "Seguridad jurídica frágil: la incertidumbre regulatoria y judicial reduce confianza."
+    },
+    "institutions.diagnosis.strong": {
+      "pt-BR": "Instituições sólidas sustentam governabilidade, confiança e reformas de longo prazo.",
+      "en": "Strong institutions support governability, confidence and long-term reforms.",
+      "es": "Instituciones sólidas sostienen gobernabilidad, confianza y reformas de largo plazo."
+    },
+    "institutions.diagnosis.normal": {
+      "pt-BR": "Instituições funcionam, mas exigem equilíbrio entre agenda, controle, justiça e federação.",
+      "en": "Institutions are functioning, but require balance between agenda, oversight, justice and federalism.",
+      "es": "Las instituciones funcionan, pero exigen equilibrio entre agenda, control, justicia y federalismo."
+    },
+    "institutions.profile.congress.name": {
+      "pt-BR": "Congresso Nacional",
+      "en": "National Congress",
+      "es": "Congreso Nacional"
+    },
+    "institutions.profile.congress.text": {
+      "pt-BR": "Vota leis, fiscaliza o Executivo e define a viabilidade da agenda política.",
+      "en": "Votes laws, oversees the Executive and defines the viability of the political agenda.",
+      "es": "Vota leyes, fiscaliza al Ejecutivo y define la viabilidad de la agenda política."
+    },
+    "institutions.profile.supreme.name": {
+      "pt-BR": "Supremo Tribunal",
+      "en": "Supreme Court",
+      "es": "Tribunal Supremo"
+    },
+    "institutions.profile.supreme.text": {
+      "pt-BR": "Protege a Constituição, arbitra conflitos e influencia segurança jurídica.",
+      "en": "Protects the constitution, arbitrates conflicts and shapes legal certainty.",
+      "es": "Protege la constitución, arbitra conflictos e influye en la seguridad jurídica."
+    },
+    "institutions.profile.federalism.name": {
+      "pt-BR": "Federação e Estados",
+      "en": "Federation and States",
+      "es": "Federación y Estados"
+    },
+    "institutions.profile.federalism.text": {
+      "pt-BR": "Coordena governadores, prefeitos, repasses e execução regional de políticas.",
+      "en": "Coordinates governors, mayors, transfers and regional policy execution.",
+      "es": "Coordina gobernadores, alcaldes, transferencias y ejecución regional de políticas."
+    },
+    "institutions.profile.audit.name": {
+      "pt-BR": "Tribunal de Contas",
+      "en": "Audit Court",
+      "es": "Tribunal de Cuentas"
+    },
+    "institutions.profile.audit.text": {
+      "pt-BR": "Controla contratos, orçamento e riscos de captura ou desperdício público.",
+      "en": "Controls contracts, budget and risks of capture or public waste.",
+      "es": "Controla contratos, presupuesto y riesgos de captura o desperdicio público."
+    },
+    "institutions.profile.centralBank.name": {
+      "pt-BR": "Banco Central",
+      "en": "Central Bank",
+      "es": "Banco Central"
+    },
+    "institutions.profile.centralBank.text": {
+      "pt-BR": "Sustenta credibilidade monetária e previsibilidade para inflação, crédito e mercado.",
+      "en": "Supports monetary credibility and predictability for inflation, credit and markets.",
+      "es": "Sostiene credibilidad monetaria y previsibilidad para inflación, crédito y mercado."
+    },
+    "institutions.profile.civilService.name": {
+      "pt-BR": "Serviço Público",
+      "en": "Civil Service",
+      "es": "Servicio Público"
+    },
+    "institutions.profile.civilService.text": {
+      "pt-BR": "Transforma decisões em execução real, atendimento público e capacidade administrativa.",
+      "en": "Turns decisions into real execution, public service and administrative capacity.",
+      "es": "Convierte decisiones en ejecución real, atención pública y capacidad administrativa."
+    },
+    "institutions.profile.electoral.name": {
+      "pt-BR": "Justiça Eleitoral",
+      "en": "Electoral Court",
+      "es": "Justicia Electoral"
+    },
+    "institutions.profile.electoral.text": {
+      "pt-BR": "Garante legitimidade das eleições, calendário político e aceitação dos resultados.",
+      "en": "Ensures electoral legitimacy, political calendar and acceptance of results.",
+      "es": "Garantiza legitimidad electoral, calendario político y aceptación de resultados."
+    },
+    "institutions.profile.regulators.name": {
+      "pt-BR": "Agências Reguladoras",
+      "en": "Regulatory Agencies",
+      "es": "Agencias Reguladoras"
+    },
+    "institutions.profile.regulators.text": {
+      "pt-BR": "Dão previsibilidade a energia, infraestrutura, telecomunicações, crédito e serviços.",
+      "en": "Provide predictability for energy, infrastructure, telecom, credit and services.",
+      "es": "Dan previsibilidad a energía, infraestructura, telecomunicaciones, crédito y servicios."
+    },
+    "institutions.reform.balance.name": {
+      "pt-BR": "Pacto de equilíbrio entre poderes",
+      "en": "Balance pact between branches",
+      "es": "Pacto de equilibrio entre poderes"
+    },
+    "institutions.reform.balance.text": {
+      "pt-BR": "Fortalece controle, respeito judicial e segurança institucional com ritmo moderado de agenda.",
+      "en": "Strengthens oversight, judicial respect and institutional security with a moderate agenda pace.",
+      "es": "Fortalece control, respeto judicial y seguridad institucional con ritmo moderado de agenda."
+    },
+    "institutions.reform.executive.name": {
+      "pt-BR": "Agenda executiva coordenada",
+      "en": "Coordinated executive agenda",
+      "es": "Agenda ejecutiva coordinada"
+    },
+    "institutions.reform.executive.text": {
+      "pt-BR": "Acelera projetos e reduz fila legislativa, mas aumenta atrito constitucional se usada em excesso.",
+      "en": "Accelerates projects and reduces backlog, but increases constitutional friction if overused.",
+      "es": "Acelera proyectos y reduce atrasos, pero aumenta fricción constitucional si se usa en exceso."
+    },
+    "institutions.reform.federal.name": {
+      "pt-BR": "Governança federativa cooperativa",
+      "en": "Cooperative federal governance",
+      "es": "Gobernanza federal cooperativa"
+    },
+    "institutions.reform.federal.text": {
+      "pt-BR": "Prioriza estados, municípios e execução regional, com custo fiscal e ganho social.",
+      "en": "Prioritizes states, municipalities and regional execution, with fiscal cost and social gain.",
+      "es": "Prioriza estados, municipios y ejecución regional, con costo fiscal y ganancia social."
+    },
+    "institutions.reform.anticapture.name": {
+      "pt-BR": "Reforma anticaptura institucional",
+      "en": "Anti-capture institutional reform",
+      "es": "Reforma institucional anticaptura"
+    },
+    "institutions.reform.anticapture.text": {
+      "pt-BR": "Amplia transparência e controle para reduzir corrupção, mesmo criando tensão com aliados.",
+      "en": "Expands transparency and oversight to reduce corruption, even if it creates tension with allies.",
+      "es": "Amplía transparencia y control para reducir corrupción, aunque cree tensión con aliados."
+    },
+    "institutions.action.technicalCouncil.title": {
+      "pt-BR": "Conselho técnico de Estado",
+      "en": "Technical State Council",
+      "es": "Consejo técnico de Estado"
+    },
+    "institutions.action.technicalCouncil.text": {
+      "pt-BR": "Nomeia equipe técnica para acelerar regulação, projetos e coordenação ministerial.",
+      "en": "Appoints a technical team to accelerate regulation, projects and ministerial coordination.",
+      "es": "Nombra equipo técnico para acelerar regulación, proyectos y coordinación ministerial."
+    },
+    "institutions.action.interbranch.title": {
+      "pt-BR": "Mesa de negociação entre poderes",
+      "en": "Interbranch negotiation table",
+      "es": "Mesa de negociación entre poderes"
+    },
+    "institutions.action.interbranch.text": {
+      "pt-BR": "Reduz conflito constitucional e melhora diálogo com Congresso, Judiciário e oposição.",
+      "en": "Reduces constitutional conflict and improves dialogue with Congress, Judiciary and opposition.",
+      "es": "Reduce conflicto constitucional y mejora diálogo con Congreso, Justicia y oposición."
+    },
+    "institutions.action.serviceReform.title": {
+      "pt-BR": "Reforma do serviço público",
+      "en": "Civil service reform",
+      "es": "Reforma del servicio público"
+    },
+    "institutions.action.serviceReform.text": {
+      "pt-BR": "Eleva capacidade administrativa e reduz gasto recorrente, com desgaste inicial.",
+      "en": "Raises administrative capacity and reduces recurring spending, with initial wear.",
+      "es": "Eleva capacidad administrativa y reduce gasto recurrente, con desgaste inicial."
+    },
+    "institutions.action.transparency.title": {
+      "pt-BR": "Portal nacional de transparência",
+      "en": "National transparency portal",
+      "es": "Portal nacional de transparencia"
+    },
+    "institutions.action.transparency.text": {
+      "pt-BR": "Publica dados de contratos e execução para reduzir corrupção e ampliar confiança.",
+      "en": "Publishes contract and execution data to reduce corruption and increase trust.",
+      "es": "Publica datos de contratos y ejecución para reducir corrupción y aumentar confianza."
+    },
+    "institutions.action.federative.title": {
+      "pt-BR": "Mesa federativa permanente",
+      "en": "Permanent federal roundtable",
+      "es": "Mesa federal permanente"
+    },
+    "institutions.action.federative.text": {
+      "pt-BR": "Coordena estados, municípios e repasses para evitar paralisia regional.",
+      "en": "Coordinates states, municipalities and transfers to prevent regional paralysis.",
+      "es": "Coordina estados, municipios y transferencias para evitar parálisis regional."
+    },
+    "institutions.action.judicialBacklog.title": {
+      "pt-BR": "Força-tarefa de processos",
+      "en": "Court backlog task force",
+      "es": "Fuerza de tarea procesal"
+    },
+    "institutions.action.judicialBacklog.text": {
+      "pt-BR": "Ataca acúmulo de processos, melhora segurança jurídica e ambiente de negócios.",
+      "en": "Tackles case backlog, improving legal certainty and business climate.",
+      "es": "Enfrenta acumulación de procesos, mejorando seguridad jurídica y clima de negocios."
+    },
+    "institutions.protocol.cpi.name": {
+      "pt-BR": "Onda de CPIs",
+      "en": "Wave of inquiries",
+      "es": "Ola de comisiones investigadoras"
+    },
+    "institutions.protocol.judicial.name": {
+      "pt-BR": "Conflito judicial",
+      "en": "Judicial conflict",
+      "es": "Conflicto judicial"
+    },
+    "institutions.protocol.federal.name": {
+      "pt-BR": "Impasse federativo",
+      "en": "Federal deadlock",
+      "es": "Impasse federal"
+    },
+    "institutions.protocol.gridlock.name": {
+      "pt-BR": "Engarrafamento burocrático",
+      "en": "Bureaucratic gridlock",
+      "es": "Atasco burocrático"
+    },
+    "build.summary.v1_7_1": {
+      "pt-BR": "Sistema profundo de governo e instituições com freios e contrapesos, Judiciário, Congresso, federação, burocracia, órgãos de controle, segurança jurídica, risco institucional e ações estruturantes integradas à economia, orçamento e governabilidade.",
+      "en": "Deep government and institutions system with checks and balances, judiciary, congress, federation, bureaucracy, oversight bodies, legal certainty, institutional risk, and structural actions integrated with the economy, budget, and governability.",
+      "es": "Sistema profundo de gobierno e instituciones con frenos y contrapesos, Poder Judicial, Congreso, federación, burocracia, órganos de control, seguridad jurídica, riesgo institucional y acciones estructurales integradas con la economía, el presupuesto y la gobernabilidad."
+    },
+    "cabinet.phaseName": {
+      "pt-BR": "Gabinete e Administração",
+      "en": "Cabinet and Administration",
+      "es": "Gabinete y Administración"
+    },
+    "cabinet.overviewTitle": {
+      "pt-BR": "Gabinete e Administração",
+      "en": "Cabinet and Administration",
+      "es": "Gabinete y Administración"
+    },
+    "cabinet.metricsTitle": {
+      "pt-BR": "Capacidade Administrativa",
+      "en": "Administrative Capacity",
+      "es": "Capacidad Administrativa"
+    },
+    "cabinet.portfoliosTitle": {
+      "pt-BR": "Mapa Ministerial",
+      "en": "Ministerial Map",
+      "es": "Mapa Ministerial"
+    },
+    "cabinet.stylesTitle": {
+      "pt-BR": "Modelo de Gabinete",
+      "en": "Cabinet Model",
+      "es": "Modelo de Gabinete"
+    },
+    "cabinet.actionsTitle": {
+      "pt-BR": "Ações Administrativas",
+      "en": "Administrative Actions",
+      "es": "Acciones Administrativas"
+    },
+    "cabinet.historyTitle": {
+      "pt-BR": "Histórico do Gabinete",
+      "en": "Cabinet History",
+      "es": "Historial del Gabinete"
+    },
+    "cabinet.health": {
+      "pt-BR": "Saúde administrativa",
+      "en": "Administrative health",
+      "es": "Salud administrativa"
+    },
+    "cabinet.governability": {
+      "pt-BR": "Governabilidade",
+      "en": "Governability",
+      "es": "Gobernabilidad"
+    },
+    "cabinet.coordination": {
+      "pt-BR": "Coordenação",
+      "en": "Coordination",
+      "es": "Coordinación"
+    },
+    "cabinet.delivery": {
+      "pt-BR": "Entrega",
+      "en": "Delivery",
+      "es": "Entrega"
+    },
+    "cabinet.budgetExecution": {
+      "pt-BR": "Execução orçamentária",
+      "en": "Budget execution",
+      "es": "Ejecución presupuestaria"
+    },
+    "cabinet.executionRisk": {
+      "pt-BR": "Risco de execução",
+      "en": "Execution risk",
+      "es": "Riesgo de ejecución"
+    },
+    "cabinet.scandalExposure": {
+      "pt-BR": "Exposição a escândalos",
+      "en": "Scandal exposure",
+      "es": "Exposición a escándalos"
+    },
+    "cabinet.currentDiagnosis": {
+      "pt-BR": "Diagnóstico atual",
+      "en": "Current diagnosis",
+      "es": "Diagnóstico actual"
+    },
+    "cabinet.cohesion": {
+      "pt-BR": "Coesão do gabinete",
+      "en": "Cabinet cohesion",
+      "es": "Cohesión del gabinete"
+    },
+    "cabinet.competence": {
+      "pt-BR": "Competência técnica",
+      "en": "Technical competence",
+      "es": "Competencia técnica"
+    },
+    "cabinet.deliveryCapacity": {
+      "pt-BR": "Capacidade de entrega",
+      "en": "Delivery capacity",
+      "es": "Capacidad de entrega"
+    },
+    "cabinet.bureaucraticEfficiency": {
+      "pt-BR": "Eficiência burocrática",
+      "en": "Bureaucratic efficiency",
+      "es": "Eficiencia burocrática"
+    },
+    "cabinet.administrativeLoad": {
+      "pt-BR": "Carga administrativa",
+      "en": "Administrative load",
+      "es": "Carga administrativa"
+    },
+    "cabinet.appointmentPressure": {
+      "pt-BR": "Pressão por cargos",
+      "en": "Appointment pressure",
+      "es": "Presión por cargos"
+    },
+    "cabinet.federalAlignment": {
+      "pt-BR": "Alinhamento federativo",
+      "en": "Federal alignment",
+      "es": "Alineación federativa"
+    },
+    "cabinet.performance": {
+      "pt-BR": "Desempenho",
+      "en": "Performance",
+      "es": "Desempeño"
+    },
+    "cabinet.risk": {
+      "pt-BR": "Risco",
+      "en": "Risk",
+      "es": "Riesgo"
+    },
+    "cabinet.active": {
+      "pt-BR": "ATIVO",
+      "en": "ACTIVE",
+      "es": "ACTIVO"
+    },
+    "cabinet.adopt": {
+      "pt-BR": "ADOTAR",
+      "en": "ADOPT",
+      "es": "ADOPTAR"
+    },
+    "cabinet.execute": {
+      "pt-BR": "EXECUTAR",
+      "en": "EXECUTE",
+      "es": "EJECUTAR"
+    },
+    "cabinet.wait": {
+      "pt-BR": "AGUARDAR",
+      "en": "WAIT",
+      "es": "ESPERAR"
+    },
+    "cabinet.cooldown": {
+      "pt-BR": "cooldown {days}d",
+      "en": "cooldown {days}d",
+      "es": "cooldown {days}d"
+    },
+    "cabinet.costLine": {
+      "pt-BR": "Custo ₿ {cost} bi • {ap} PA • efeitos em {days}d",
+      "en": "Cost ₿ {cost} bi • {ap} AP • effects in {days}d",
+      "es": "Costo ₿ {cost} bi • {ap} PA • efectos en {days}d"
+    },
+    "cabinet.noHistory": {
+      "pt-BR": "Nenhum fechamento administrativo registrado ainda.",
+      "en": "No administrative closing recorded yet.",
+      "es": "Aún no hay cierre administrativo registrado."
+    },
+    "cabinet.styleAlreadyActive": {
+      "pt-BR": "Esse modelo de gabinete já está ativo.",
+      "en": "This cabinet model is already active.",
+      "es": "Este modelo de gabinete ya está activo."
+    },
+    "cabinet.styleChanged": {
+      "pt-BR": "Modelo de gabinete alterado: {name}.",
+      "en": "Cabinet model changed: {name}.",
+      "es": "Modelo de gabinete cambiado: {name}."
+    },
+    "cabinet.actionStarted": {
+      "pt-BR": "Ação administrativa iniciada: {name}.",
+      "en": "Administrative action started: {name}.",
+      "es": "Acción administrativa iniciada: {name}."
+    },
+    "cabinet.cooldownWarning": {
+      "pt-BR": "Ação administrativa ainda está em cooldown.",
+      "en": "Administrative action is still on cooldown.",
+      "es": "La acción administrativa aún está en cooldown."
+    },
+    "cabinet.insufficientTreasury": {
+      "pt-BR": "Tesouro insuficiente para a ação administrativa.",
+      "en": "Insufficient treasury for the administrative action.",
+      "es": "Tesoro insuficiente para la acción administrativa."
+    },
+    "cabinet.diagnosis.normal": {
+      "pt-BR": "A máquina pública funciona, mas precisa alinhar ministros, orçamento, federação e entregas.",
+      "en": "The public machine works, but it must align ministers, budget, federation and delivery.",
+      "es": "La máquina pública funciona, pero debe alinear ministros, presupuesto, federación y entregas."
+    },
+    "cabinet.diagnosis.strong": {
+      "pt-BR": "Gabinete coordenado entrega políticas, reduz risco e sustenta a governabilidade.",
+      "en": "A coordinated cabinet delivers policies, reduces risk and supports governability.",
+      "es": "Un gabinete coordinado entrega políticas, reduce riesgos y sostiene la gobernabilidad."
+    },
+    "cabinet.diagnosis.lowCapacity": {
+      "pt-BR": "Baixa capacidade administrativa ameaça projetos, serviços públicos e estabilidade política.",
+      "en": "Low administrative capacity threatens projects, public services and political stability.",
+      "es": "La baja capacidad administrativa amenaza proyectos, servicios públicos y estabilidad política."
+    },
+    "cabinet.diagnosis.overload": {
+      "pt-BR": "Sobrecarga administrativa: muitos projetos avançam sem equipe, processo e coordenação suficientes.",
+      "en": "Administrative overload: too many projects advance without enough staff, process and coordination.",
+      "es": "Sobrecarga administrativa: demasiados proyectos avanzan sin suficiente equipo, proceso y coordinación."
+    },
+    "cabinet.diagnosis.crisis": {
+      "pt-BR": "Crise de gabinete: escândalos, nomeações e falhas de entrega podem paralisar o governo.",
+      "en": "Cabinet crisis: scandals, appointments and delivery failures may paralyze government.",
+      "es": "Crisis de gabinete: escándalos, nombramientos y fallas de entrega pueden paralizar el gobierno."
+    },
+    "build.summary.v1_7_2": {
+      "pt-BR": "Sistema profundo de gabinete e administração com ministérios, coordenação, capacidade burocrática, entregas, nomeações, risco de escândalo e ações administrativas integradas ao orçamento, instituições e governabilidade.",
+      "en": "Deep cabinet and administration system with ministries, coordination, bureaucratic capacity, delivery, appointments, scandal risk and administrative actions integrated with budget, institutions and governability.",
+      "es": "Sistema profundo de gabinete y administración con ministerios, coordinación, capacidad burocrática, entregas, nombramientos, riesgo de escándalo y acciones administrativas integradas al presupuesto, instituciones y gobernabilidad."
+    },
+    "cabinet.portfolio.civil.name": {
+      "pt-BR": "Casa Civil",
+      "en": "Civil House",
+      "es": "Casa Civil"
+    },
+    "cabinet.portfolio.civil.text": {
+      "pt-BR": "Coordena agenda, coalizão, prioridades presidenciais e a fila de decisões.",
+      "en": "Coordinates agenda, coalition, presidential priorities and the decision queue.",
+      "es": "Coordina agenda, coalición, prioridades presidenciales y la cola de decisiones."
+    },
+    "cabinet.portfolio.economy.name": {
+      "pt-BR": "Economia",
+      "en": "Economy",
+      "es": "Economía"
+    },
+    "cabinet.portfolio.economy.text": {
+      "pt-BR": "Conduz política fiscal, orçamento, mercado e reformas econômicas.",
+      "en": "Leads fiscal policy, budget, markets and economic reforms.",
+      "es": "Conduce política fiscal, presupuesto, mercado y reformas económicas."
+    },
+    "cabinet.portfolio.justice.name": {
+      "pt-BR": "Justiça",
+      "en": "Justice",
+      "es": "Justicia"
+    },
+    "cabinet.portfolio.justice.text": {
+      "pt-BR": "Cuida de legalidade, integridade, segurança jurídica e crises institucionais.",
+      "en": "Handles legality, integrity, legal security and institutional crises.",
+      "es": "Gestiona legalidad, integridad, seguridad jurídica y crisis institucionales."
+    },
+    "cabinet.portfolio.health.name": {
+      "pt-BR": "Saúde",
+      "en": "Health",
+      "es": "Salud"
+    },
+    "cabinet.portfolio.health.text": {
+      "pt-BR": "Opera serviços de saúde, prevenção, filas e respostas sociais de alta visibilidade.",
+      "en": "Runs health services, prevention, waiting lists and highly visible social responses.",
+      "es": "Opera servicios de salud, prevención, listas de espera y respuestas sociales de alta visibilidad."
+    },
+    "cabinet.portfolio.education.name": {
+      "pt-BR": "Educação",
+      "en": "Education",
+      "es": "Educación"
+    },
+    "cabinet.portfolio.education.text": {
+      "pt-BR": "Eleva capital humano, produtividade futura e confiança das famílias.",
+      "en": "Raises human capital, future productivity and household confidence.",
+      "es": "Eleva capital humano, productividad futura y confianza familiar."
+    },
+    "cabinet.portfolio.infrastructure.name": {
+      "pt-BR": "Infraestrutura",
+      "en": "Infrastructure",
+      "es": "Infraestructura"
+    },
+    "cabinet.portfolio.infrastructure.text": {
+      "pt-BR": "Transforma orçamento em obras, logística, energia e entregas regionais.",
+      "en": "Turns budget into works, logistics, energy and regional delivery.",
+      "es": "Convierte presupuesto en obras, logística, energía y entregas regionales."
+    },
+    "cabinet.portfolio.foreign.name": {
+      "pt-BR": "Relações Exteriores",
+      "en": "Foreign Affairs",
+      "es": "Relaciones Exteriores"
+    },
+    "cabinet.portfolio.foreign.text": {
+      "pt-BR": "Alinha diplomacia, comércio, imagem internacional e resposta a pressões externas.",
+      "en": "Aligns diplomacy, trade, international image and external pressure responses.",
+      "es": "Alinea diplomacia, comercio, imagen internacional y respuesta a presiones externas."
+    },
+    "cabinet.portfolio.planning.name": {
+      "pt-BR": "Planejamento",
+      "en": "Planning",
+      "es": "Planificación"
+    },
+    "cabinet.portfolio.planning.text": {
+      "pt-BR": "Monitora metas, indicadores, execução, avaliação e prioridades interministeriais.",
+      "en": "Tracks goals, indicators, execution, evaluation and interministerial priorities.",
+      "es": "Monitorea metas, indicadores, ejecución, evaluación y prioridades interministeriales."
+    },
+    "cabinet.style.coalition.name": {
+      "pt-BR": "Equilíbrio de coalizão",
+      "en": "Coalition balance",
+      "es": "Equilibrio de coalición"
+    },
+    "cabinet.style.coalition.text": {
+      "pt-BR": "Distribui espaços para manter maioria parlamentar, com maior pressão por cargos.",
+      "en": "Distributes positions to keep a parliamentary majority, with more appointment pressure.",
+      "es": "Distribuye espacios para mantener mayoría parlamentaria, con mayor presión por cargos."
+    },
+    "cabinet.style.technical.name": {
+      "pt-BR": "Gabinete técnico",
+      "en": "Technical cabinet",
+      "es": "Gabinete técnico"
+    },
+    "cabinet.style.technical.text": {
+      "pt-BR": "Prioriza especialistas, melhora confiança, mas reduz conforto de aliados.",
+      "en": "Prioritizes experts, improves confidence, but reduces allies comfort.",
+      "es": "Prioriza especialistas, mejora la confianza, pero reduce la comodidad de aliados."
+    },
+    "cabinet.style.regional.name": {
+      "pt-BR": "Pacto federativo regional",
+      "en": "Regional federal pact",
+      "es": "Pacto federativo regional"
+    },
+    "cabinet.style.regional.text": {
+      "pt-BR": "Organiza ministérios por entregas territoriais e cooperação com estados.",
+      "en": "Organizes ministries around territorial delivery and state cooperation.",
+      "es": "Organiza ministerios por entregas territoriales y cooperación con estados."
+    },
+    "cabinet.style.delivery.name": {
+      "pt-BR": "Gabinete orientado a entregas",
+      "en": "Mission delivery cabinet",
+      "es": "Gabinete orientado a entregas"
+    },
+    "cabinet.style.delivery.text": {
+      "pt-BR": "Foca metas e execução rápida, porém aumenta carga administrativa.",
+      "en": "Focuses on targets and fast execution, but raises administrative load.",
+      "es": "Enfoca metas y ejecución rápida, pero aumenta la carga administrativa."
+    },
+    "cabinet.action.contracts.title": {
+      "pt-BR": "Contratos de desempenho ministerial",
+      "en": "Ministerial performance contracts",
+      "es": "Contratos de desempeño ministerial"
+    },
+    "cabinet.action.contracts.text": {
+      "pt-BR": "Define metas, prazos e painéis de entrega para cada pasta.",
+      "en": "Sets goals, deadlines and delivery dashboards for each portfolio.",
+      "es": "Define metas, plazos y paneles de entrega para cada cartera."
+    },
+    "cabinet.action.screening.title": {
+      "pt-BR": "Triagem de integridade de nomeações",
+      "en": "Appointment integrity screening",
+      "es": "Filtro de integridad de nombramientos"
+    },
+    "cabinet.action.screening.text": {
+      "pt-BR": "Reduz risco de escândalo antes de nomeações e substituições sensíveis.",
+      "en": "Reduces scandal risk before sensitive appointments and replacements.",
+      "es": "Reduce el riesgo de escándalo antes de nombramientos y reemplazos sensibles."
+    },
+    "cabinet.action.warroom.title": {
+      "pt-BR": "Sala de situação interministerial",
+      "en": "Interministerial war room",
+      "es": "Sala de situación interministerial"
+    },
+    "cabinet.action.warroom.text": {
+      "pt-BR": "Coordena ministérios para destravar políticas críticas e crises de execução.",
+      "en": "Coordinates ministries to unblock critical policies and execution crises.",
+      "es": "Coordina ministerios para destrabar políticas críticas y crisis de ejecución."
+    },
+    "cabinet.action.digital.title": {
+      "pt-BR": "Digitalização de processos públicos",
+      "en": "Public process digitization",
+      "es": "Digitalización de procesos públicos"
+    },
+    "cabinet.action.digital.text": {
+      "pt-BR": "Corta burocracia, acelera serviços e melhora controle de execução.",
+      "en": "Cuts bureaucracy, accelerates services and improves execution control.",
+      "es": "Reduce burocracia, acelera servicios y mejora control de ejecución."
+    },
+    "cabinet.action.regional.title": {
+      "pt-BR": "Escritórios regionais de execução",
+      "en": "Regional execution offices",
+      "es": "Oficinas regionales de ejecución"
+    },
+    "cabinet.action.regional.text": {
+      "pt-BR": "Leva acompanhamento federal a obras, serviços e pactos com governadores.",
+      "en": "Brings federal monitoring to works, services and pacts with governors.",
+      "es": "Lleva seguimiento federal a obras, servicios y pactos con gobernadores."
+    },
+    "cabinet.action.reshuffle.title": {
+      "pt-BR": "Reforma ministerial estratégica",
+      "en": "Strategic cabinet reshuffle",
+      "es": "Reforma ministerial estratégica"
+    },
+    "cabinet.action.reshuffle.text": {
+      "pt-BR": "Substitui nomes frágeis, aumenta competência, mas cobra preço político.",
+      "en": "Replaces weak names, raises competence, but charges a political price.",
+      "es": "Sustituye nombres débiles, aumenta competencia, pero cobra precio político."
+    },
+    "media.phaseName": {
+      "pt-BR": "Imprensa, Mídia e Opinião Pública",
+      "en": "Press, Media and Public Opinion",
+      "es": "Prensa, Medios y Opinión Pública"
+    },
+    "media.pressBriefingTitle": {
+      "pt-BR": "Coletiva de Imprensa",
+      "en": "Press Briefing",
+      "es": "Rueda de Prensa"
+    },
+    "media.opinionTitle": {
+      "pt-BR": "Opinião Pública",
+      "en": "Public Opinion",
+      "es": "Opinión Pública"
+    },
+    "media.narrativeTitle": {
+      "pt-BR": "Narrativa e Ruído Público",
+      "en": "Narrative and Public Noise",
+      "es": "Narrativa y Ruido Público"
+    },
+    "media.doctrineTitle": {
+      "pt-BR": "Doutrina de Comunicação",
+      "en": "Communication Doctrine",
+      "es": "Doctrina de Comunicación"
+    },
+    "media.agendaTitle": {
+      "pt-BR": "Agenda Pública",
+      "en": "Public Agenda",
+      "es": "Agenda Pública"
+    },
+    "media.outletsTitle": {
+      "pt-BR": "Veículos de Mídia",
+      "en": "Media Outlets",
+      "es": "Medios de Comunicación"
+    },
+    "media.headlinesTitle": {
+      "pt-BR": "Manchetes Recentes",
+      "en": "Recent Headlines",
+      "es": "Titulares Recientes"
+    },
+    "media.actionsTitle": {
+      "pt-BR": "Ações de Comunicação",
+      "en": "Communication Actions",
+      "es": "Acciones de Comunicación"
+    },
+    "media.historyTitle": {
+      "pt-BR": "Histórico de Opinião Pública",
+      "en": "Public Opinion History",
+      "es": "Historial de Opinión Pública"
+    },
+    "media.health": {
+      "pt-BR": "Saúde da comunicação",
+      "en": "Communication health",
+      "es": "Salud de la comunicación"
+    },
+    "media.publicMood": {
+      "pt-BR": "Humor público",
+      "en": "Public mood",
+      "es": "Humor público"
+    },
+    "media.hostility": {
+      "pt-BR": "Hostilidade da mídia",
+      "en": "Media hostility",
+      "es": "Hostilidad mediática"
+    },
+    "media.credibility": {
+      "pt-BR": "Credibilidade",
+      "en": "Credibility",
+      "es": "Credibilidad"
+    },
+    "media.agendaRisk": {
+      "pt-BR": "Risco de agenda",
+      "en": "Agenda risk",
+      "es": "Riesgo de agenda"
+    },
+    "media.trust": {
+      "pt-BR": "Confiança",
+      "en": "Trust",
+      "es": "Confianza"
+    },
+    "media.pressFreedom": {
+      "pt-BR": "Liberdade de imprensa",
+      "en": "Press freedom",
+      "es": "Libertad de prensa"
+    },
+    "media.govNarrative": {
+      "pt-BR": "Narrativa do governo",
+      "en": "Government narrative",
+      "es": "Narrativa del gobierno"
+    },
+    "media.messageDiscipline": {
+      "pt-BR": "Disciplina de mensagem",
+      "en": "Message discipline",
+      "es": "Disciplina del mensaje"
+    },
+    "media.policyClarity": {
+      "pt-BR": "Clareza de políticas",
+      "en": "Policy clarity",
+      "es": "Claridad de políticas"
+    },
+    "media.socialReach": {
+      "pt-BR": "Alcance social",
+      "en": "Social reach",
+      "es": "Alcance social"
+    },
+    "media.regionalReach": {
+      "pt-BR": "Alcance regional",
+      "en": "Regional reach",
+      "es": "Alcance regional"
+    },
+    "media.polarization": {
+      "pt-BR": "Polarização",
+      "en": "Polarization",
+      "es": "Polarización"
+    },
+    "media.disinformationRisk": {
+      "pt-BR": "Risco de desinformação",
+      "en": "Disinformation risk",
+      "es": "Riesgo de desinformación"
+    },
+    "media.scandalAttention": {
+      "pt-BR": "Atenção a escândalos",
+      "en": "Scandal attention",
+      "es": "Atención a escándalos"
+    },
+    "media.currentDiagnosis": {
+      "pt-BR": "Diagnóstico atual",
+      "en": "Current diagnosis",
+      "es": "Diagnóstico actual"
+    },
+    "media.active": {
+      "pt-BR": "Ativo",
+      "en": "Active",
+      "es": "Activo"
+    },
+    "media.adopt": {
+      "pt-BR": "Adotar",
+      "en": "Adopt",
+      "es": "Adoptar"
+    },
+    "media.pressure": {
+      "pt-BR": "Pressão",
+      "en": "Pressure",
+      "es": "Presión"
+    },
+    "media.salience": {
+      "pt-BR": "Saliência",
+      "en": "Salience",
+      "es": "Relevancia"
+    },
+    "media.trend": {
+      "pt-BR": "Tendência",
+      "en": "Trend",
+      "es": "Tendencia"
+    },
+    "media.reach": {
+      "pt-BR": "Alcance",
+      "en": "Reach",
+      "es": "Alcance"
+    },
+    "media.noHeadlines": {
+      "pt-BR": "Nenhuma manchete gerada ainda.",
+      "en": "No headlines generated yet.",
+      "es": "Aún no se generaron titulares."
+    },
+    "media.noHistory": {
+      "pt-BR": "Sem histórico público suficiente.",
+      "en": "No public history yet.",
+      "es": "Aún no hay historial público suficiente."
+    },
+    "media.cooldownWarning": {
+      "pt-BR": "Ação de comunicação ainda está em cooldown.",
+      "en": "Communication action is still on cooldown.",
+      "es": "La acción de comunicación aún está en enfriamiento."
+    },
+    "media.insufficientTreasury": {
+      "pt-BR": "Tesouro insuficiente para a ação de comunicação.",
+      "en": "Not enough treasury for the communication action.",
+      "es": "Tesoro insuficiente para la acción de comunicación."
+    },
+    "media.doctrineAlreadyActive": {
+      "pt-BR": "Essa doutrina de comunicação já está ativa.",
+      "en": "This communication doctrine is already active.",
+      "es": "Esta doctrina de comunicación ya está activa."
+    },
+    "media.doctrineChanged": {
+      "pt-BR": "Doutrina de comunicação adotada: {name}.",
+      "en": "Communication doctrine adopted: {name}.",
+      "es": "Doctrina de comunicación adoptada: {name}."
+    },
+    "media.actionStarted": {
+      "pt-BR": "Ação de comunicação iniciada: {name}.",
+      "en": "Communication action started: {name}.",
+      "es": "Acción de comunicación iniciada: {name}."
+    },
+    "media.costLine": {
+      "pt-BR": "Custo ₿ {cost} bi • PA {ap} • impacto em {days} dias",
+      "en": "Cost ₿ {cost} bi • AP {ap} • impact in {days} days",
+      "es": "Costo ₿ {cost} bi • PA {ap} • impacto en {days} días"
+    },
+    "media.cooldown": {
+      "pt-BR": "cooldown {days} dias",
+      "en": "cooldown {days} days",
+      "es": "enfriamiento {days} días"
+    },
+    "media.wait": {
+      "pt-BR": "AGUARDAR",
+      "en": "WAIT",
+      "es": "ESPERAR"
+    },
+    "media.diagnosis.normal": {
+      "pt-BR": "A comunicação está estável, mas precisa de rotina, dados e presença territorial.",
+      "en": "Communication is stable, but needs routine, data and territorial presence.",
+      "es": "La comunicación está estable, pero necesita rutina, datos y presencia territorial."
+    },
+    "media.diagnosis.hostile": {
+      "pt-BR": "O ambiente público está hostil. Uma crise narrativa pode contaminar aprovação, estabilidade e agenda legislativa.",
+      "en": "The public environment is hostile. A narrative crisis may contaminate approval, stability and the legislative agenda.",
+      "es": "El entorno público está hostil. Una crisis narrativa puede contaminar aprobación, estabilidad y agenda legislativa."
+    },
+    "media.diagnosis.noise": {
+      "pt-BR": "Polarização e desinformação estão altas. Mensagens contraditórias aumentam risco de crise.",
+      "en": "Polarization and disinformation are high. Contradictory messages increase crisis risk.",
+      "es": "La polarización y la desinformación están altas. Mensajes contradictorios aumentan el riesgo de crisis."
+    },
+    "media.diagnosis.credible": {
+      "pt-BR": "A comunicação transmite credibilidade e sustenta o humor público.",
+      "en": "Communication is credible and supports public mood.",
+      "es": "La comunicación transmite credibilidad y sostiene el humor público."
+    },
+    "media.type.tv": {
+      "pt-BR": "televisão",
+      "en": "television",
+      "es": "televisión"
+    },
+    "media.type.newspaper": {
+      "pt-BR": "jornal",
+      "en": "newspaper",
+      "es": "periódico"
+    },
+    "media.type.social": {
+      "pt-BR": "redes sociais",
+      "en": "social media",
+      "es": "redes sociales"
+    },
+    "media.type.economy": {
+      "pt-BR": "economia",
+      "en": "economy",
+      "es": "economía"
+    },
+    "media.type.radio": {
+      "pt-BR": "rádio",
+      "en": "radio",
+      "es": "radio"
+    },
+    "media.type.international": {
+      "pt-BR": "internacional",
+      "en": "international",
+      "es": "internacional"
+    },
+    "media.type.factcheck": {
+      "pt-BR": "checagem",
+      "en": "fact-checking",
+      "es": "verificación"
+    },
+    "media.type.influencer": {
+      "pt-BR": "influenciadores",
+      "en": "influencers",
+      "es": "influenciadores"
+    },
+    "media.outlet.tv.name": {
+      "pt-BR": "TV Nacional",
+      "en": "National TV",
+      "es": "TV Nacional"
+    },
+    "media.outlet.tv.text": {
+      "pt-BR": "Televisão de grande alcance com peso na agenda diária.",
+      "en": "High-reach television with weight in the daily agenda.",
+      "es": "Televisión de gran alcance con peso en la agenda diaria."
+    },
+    "media.outlet.capital.name": {
+      "pt-BR": "Jornal da Capital",
+      "en": "Capital Newspaper",
+      "es": "Periódico de la Capital"
+    },
+    "media.outlet.capital.text": {
+      "pt-BR": "Jornal tradicional lido por elites políticas e formadores de opinião.",
+      "en": "Traditional newspaper read by political elites and opinion makers.",
+      "es": "Periódico tradicional leído por élites políticas y formadores de opinión."
+    },
+    "media.outlet.social.name": {
+      "pt-BR": "Rede Popular",
+      "en": "Popular Network",
+      "es": "Red Popular"
+    },
+    "media.outlet.social.text": {
+      "pt-BR": "Ecossistema social rápido, emocional e volátil.",
+      "en": "Fast, emotional and volatile social ecosystem.",
+      "es": "Ecosistema social rápido, emocional y volátil."
+    },
+    "media.outlet.market.name": {
+      "pt-BR": "Mercado News",
+      "en": "Market News",
+      "es": "Mercado News"
+    },
+    "media.outlet.market.text": {
+      "pt-BR": "Veículo econômico sensível a risco fiscal, juros e confiança.",
+      "en": "Business outlet sensitive to fiscal risk, interest rates and confidence.",
+      "es": "Medio económico sensible al riesgo fiscal, intereses y confianza."
+    },
+    "media.outlet.radio.name": {
+      "pt-BR": "Rádio Interior",
+      "en": "Countryside Radio",
+      "es": "Radio Interior"
+    },
+    "media.outlet.radio.text": {
+      "pt-BR": "Rede regional com força fora das capitais.",
+      "en": "Regional network with strength outside capitals.",
+      "es": "Red regional con fuerza fuera de las capitales."
+    },
+    "media.outlet.world.name": {
+      "pt-BR": "Mundo 24",
+      "en": "World 24",
+      "es": "Mundo 24"
+    },
+    "media.outlet.world.text": {
+      "pt-BR": "Cobertura internacional e reputacional.",
+      "en": "International and reputational coverage.",
+      "es": "Cobertura internacional y reputacional."
+    },
+    "media.outlet.facts.name": {
+      "pt-BR": "Agência Fatos",
+      "en": "Facts Agency",
+      "es": "Agencia Hechos"
+    },
+    "media.outlet.facts.text": {
+      "pt-BR": "Agência de checagem que reduz ruído quando há transparência.",
+      "en": "Fact-checking agency that reduces noise when transparency is high.",
+      "es": "Agencia de verificación que reduce ruido cuando hay transparencia."
+    },
+    "media.outlet.influencers.name": {
+      "pt-BR": "Influenciadores",
+      "en": "Influencers",
+      "es": "Influenciadores"
+    },
+    "media.outlet.influencers.text": {
+      "pt-BR": "Rede informal de criadores com alto impacto em jovens e redes.",
+      "en": "Informal creator network with high impact on youth and social platforms.",
+      "es": "Red informal de creadores con alto impacto en jóvenes y redes."
+    },
+    "media.doctrine.transparent.name": {
+      "pt-BR": "Prestação de Contas Transparente",
+      "en": "Transparent Accountability",
+      "es": "Rendición de Cuentas Transparente"
+    },
+    "media.doctrine.transparent.text": {
+      "pt-BR": "Prioriza dados abertos, entrevistas regulares e reconhecimento rápido de erros.",
+      "en": "Prioritizes open data, regular interviews and fast acknowledgement of mistakes.",
+      "es": "Prioriza datos abiertos, entrevistas regulares y reconocimiento rápido de errores."
+    },
+    "media.doctrine.technical.name": {
+      "pt-BR": "Explicação Técnica",
+      "en": "Technical Explanation",
+      "es": "Explicación Técnica"
+    },
+    "media.doctrine.technical.text": {
+      "pt-BR": "Foca detalhes de política pública, indicadores e previsibilidade para públicos técnicos.",
+      "en": "Focuses on policy details, indicators and predictability for technical audiences.",
+      "es": "Enfoca detalles de política pública, indicadores y previsibilidad para públicos técnicos."
+    },
+    "media.doctrine.regional.name": {
+      "pt-BR": "Escuta Regional",
+      "en": "Regional Listening",
+      "es": "Escucha Regional"
+    },
+    "media.doctrine.regional.text": {
+      "pt-BR": "Leva comunicação a rádios, lideranças locais e agendas fora das capitais.",
+      "en": "Takes communication to radio, local leaders and agendas outside capitals.",
+      "es": "Lleva la comunicación a radios, líderes locales y agendas fuera de capitales."
+    },
+    "media.doctrine.megaphone.name": {
+      "pt-BR": "Megafone Presidencial",
+      "en": "Presidential Megaphone",
+      "es": "Megáfono Presidencial"
+    },
+    "media.doctrine.megaphone.text": {
+      "pt-BR": "Centraliza a narrativa no líder, gera alcance rápido e aumenta polarização.",
+      "en": "Centralizes the narrative on the leader, gaining reach quickly while increasing polarization.",
+      "es": "Centraliza la narrativa en el líder, gana alcance rápido y aumenta polarización."
+    },
+    "media.agenda.economy.name": {
+      "pt-BR": "Economia e custo de vida",
+      "en": "Economy and cost of living",
+      "es": "Economía y costo de vida"
+    },
+    "media.agenda.economy.text": {
+      "pt-BR": "Inflação, emprego, renda e preço dos serviços essenciais.",
+      "en": "Inflation, jobs, income and prices of essential services.",
+      "es": "Inflación, empleo, ingresos y precios de servicios esenciales."
+    },
+    "media.agenda.integrity.name": {
+      "pt-BR": "Integridade e escândalos",
+      "en": "Integrity and scandals",
+      "es": "Integridad y escándalos"
+    },
+    "media.agenda.integrity.text": {
+      "pt-BR": "Denúncias, corrupção, aliados e resposta ética do governo.",
+      "en": "Allegations, corruption, allies and ethical government response.",
+      "es": "Denuncias, corrupción, aliados y respuesta ética del gobierno."
+    },
+    "media.agenda.security.name": {
+      "pt-BR": "Segurança pública",
+      "en": "Public security",
+      "es": "Seguridad pública"
+    },
+    "media.agenda.security.text": {
+      "pt-BR": "Crime, ordem pública, resposta emergencial e coordenação federativa.",
+      "en": "Crime, public order, emergency response and federal coordination.",
+      "es": "Crimen, orden público, respuesta emergencial y coordinación federativa."
+    },
+    "media.agenda.social.name": {
+      "pt-BR": "Agenda social",
+      "en": "Social agenda",
+      "es": "Agenda social"
+    },
+    "media.agenda.social.text": {
+      "pt-BR": "Desigualdade, serviços públicos, pobreza e grupos sociais.",
+      "en": "Inequality, public services, poverty and social groups.",
+      "es": "Desigualdad, servicios públicos, pobreza y grupos sociales."
+    },
+    "media.agenda.institutions.name": {
+      "pt-BR": "Instituições e democracia",
+      "en": "Institutions and democracy",
+      "es": "Instituciones y democracia"
+    },
+    "media.agenda.institutions.text": {
+      "pt-BR": "Tensão entre Poderes, governabilidade e segurança jurídica.",
+      "en": "Tension among branches, governability and legal certainty.",
+      "es": "Tensión entre poderes, gobernabilidad y seguridad jurídica."
+    },
+    "media.agenda.cabinet.name": {
+      "pt-BR": "Entregas do gabinete",
+      "en": "Cabinet delivery",
+      "es": "Entregas del gabinete"
+    },
+    "media.agenda.cabinet.text": {
+      "pt-BR": "Capacidade administrativa, ministérios, obras e execução de políticas.",
+      "en": "Administrative capacity, ministries, projects and policy delivery.",
+      "es": "Capacidad administrativa, ministerios, obras y ejecución de políticas."
+    },
+    "media.briefing.economy.topic": {
+      "pt-BR": "Economia",
+      "en": "Economy",
+      "es": "Economía"
+    },
+    "media.briefing.economy.question": {
+      "pt-BR": "Presidente, a inflação ainda preocupa as famílias. O governo tem controle da situação?",
+      "en": "President, inflation still worries families. Does the government have the situation under control?",
+      "es": "Presidente, la inflación aún preocupa a las familias. ¿El gobierno tiene la situación bajo control?"
+    },
+    "media.briefing.corruption.topic": {
+      "pt-BR": "Escândalos",
+      "en": "Scandals",
+      "es": "Escándalos"
+    },
+    "media.briefing.corruption.question": {
+      "pt-BR": "Há denúncias envolvendo aliados do governo. O senhor vai afastar os envolvidos?",
+      "en": "There are allegations involving government allies. Will you remove those involved?",
+      "es": "Hay denuncias que involucran a aliados del gobierno. ¿Apartará a los implicados?"
+    },
+    "media.briefing.security.topic": {
+      "pt-BR": "Segurança",
+      "en": "Security",
+      "es": "Seguridad"
+    },
+    "media.briefing.security.question": {
+      "pt-BR": "A população cobra uma resposta contra a criminalidade. Qual será a prioridade?",
+      "en": "People demand a response to crime. What will be the priority?",
+      "es": "La población exige una respuesta contra la criminalidad. ¿Cuál será la prioridad?"
+    },
+    "media.briefing.institutions.topic": {
+      "pt-BR": "Instituições",
+      "en": "Institutions",
+      "es": "Instituciones"
+    },
+    "media.briefing.institutions.question": {
+      "pt-BR": "Analistas dizem que há tensão entre Poderes. O governo aceita diálogo institucional?",
+      "en": "Analysts say there is tension among branches. Does the government accept institutional dialogue?",
+      "es": "Analistas dicen que hay tensión entre poderes. ¿El gobierno acepta diálogo institucional?"
+    },
+    "media.tone.diplomatic": {
+      "pt-BR": "diplomático",
+      "en": "diplomatic",
+      "es": "diplomático"
+    },
+    "media.tone.technical": {
+      "pt-BR": "técnico",
+      "en": "technical",
+      "es": "técnico"
+    },
+    "media.tone.aggressive": {
+      "pt-BR": "agressivo",
+      "en": "aggressive",
+      "es": "agresivo"
+    },
+    "media.tone.populist": {
+      "pt-BR": "populista",
+      "en": "populist",
+      "es": "populista"
+    },
+    "media.tone.ethical": {
+      "pt-BR": "ético",
+      "en": "ethical",
+      "es": "ético"
+    },
+    "media.tone.cautious": {
+      "pt-BR": "cauteloso",
+      "en": "cautious",
+      "es": "cauteloso"
+    },
+    "media.tone.institutional": {
+      "pt-BR": "institucional",
+      "en": "institutional",
+      "es": "institucional"
+    },
+    "media.tone.firm": {
+      "pt-BR": "duro",
+      "en": "firm",
+      "es": "firme"
+    },
+    "media.tone.social": {
+      "pt-BR": "social",
+      "en": "social",
+      "es": "social"
+    },
+    "media.tone.federative": {
+      "pt-BR": "federativo",
+      "en": "federal",
+      "es": "federativo"
+    },
+    "media.tone.evasive": {
+      "pt-BR": "evasivo",
+      "en": "evasive",
+      "es": "evasivo"
+    },
+    "media.tone.legal": {
+      "pt-BR": "jurídico",
+      "en": "legal",
+      "es": "jurídico"
+    },
+    "media.tone.polarizing": {
+      "pt-BR": "polarizador",
+      "en": "polarizing",
+      "es": "polarizador"
+    },
+    "media.tone.administrative": {
+      "pt-BR": "administrativo",
+      "en": "administrative",
+      "es": "administrativo"
+    },
+    "media.answer.economy.transparent": {
+      "pt-BR": "Reconhecer o problema e apresentar metas transparentes.",
+      "en": "Acknowledge the problem and present transparent targets.",
+      "es": "Reconocer el problema y presentar metas transparentes."
+    },
+    "media.answer.economy.technical": {
+      "pt-BR": "Explicar medidas de juros, orçamento e investimento produtivo.",
+      "en": "Explain interest-rate, budget and productive investment measures.",
+      "es": "Explicar medidas de intereses, presupuesto e inversión productiva."
+    },
+    "media.answer.economy.aggressive": {
+      "pt-BR": "Acusar adversários de sabotarem a recuperação econômica.",
+      "en": "Accuse opponents of sabotaging the economic recovery.",
+      "es": "Acusar a adversarios de sabotear la recuperación económica."
+    },
+    "media.answer.economy.populist": {
+      "pt-BR": "Prometer alívio imediato nos preços com subsídios.",
+      "en": "Promise immediate price relief through subsidies.",
+      "es": "Prometer alivio inmediato de precios con subsidios."
+    },
+    "media.answer.corruption.ethical": {
+      "pt-BR": "Afastar suspeitos e abrir investigação pública.",
+      "en": "Remove suspects and open a public investigation.",
+      "es": "Apartar sospechosos y abrir investigación pública."
+    },
+    "media.answer.corruption.cautious": {
+      "pt-BR": "Aguardar investigação antes de qualquer punição.",
+      "en": "Wait for the investigation before any punishment.",
+      "es": "Esperar la investigación antes de cualquier sanción."
+    },
+    "media.answer.corruption.aggressive": {
+      "pt-BR": "Dizer que é perseguição política da oposição.",
+      "en": "Say it is political persecution by the opposition.",
+      "es": "Decir que es persecución política de la oposición."
+    },
+    "media.answer.corruption.institutional": {
+      "pt-BR": "Encaminhar o caso à Justiça e preservar governabilidade.",
+      "en": "Refer the case to Justice and preserve governability.",
+      "es": "Remitir el caso a la Justicia y preservar gobernabilidad."
+    },
+    "media.answer.security.firm": {
+      "pt-BR": "Anunciar operação nacional de segurança.",
+      "en": "Announce a national security operation.",
+      "es": "Anunciar una operación nacional de seguridad."
+    },
+    "media.answer.security.social": {
+      "pt-BR": "Unir segurança, educação e emprego.",
+      "en": "Combine security, education and jobs.",
+      "es": "Unir seguridad, educación y empleo."
+    },
+    "media.answer.security.federative": {
+      "pt-BR": "Convocar governadores para pacto nacional.",
+      "en": "Call governors for a national pact.",
+      "es": "Convocar gobernadores para un pacto nacional."
+    },
+    "media.answer.security.evasive": {
+      "pt-BR": "Dizer que o tema é responsabilidade dos estados.",
+      "en": "Say the topic is the responsibility of the states.",
+      "es": "Decir que el tema es responsabilidad de los estados."
+    },
+    "media.answer.institutions.dialogue": {
+      "pt-BR": "Defender diálogo público com Congresso, Judiciário e governadores.",
+      "en": "Defend public dialogue with Congress, the judiciary and governors.",
+      "es": "Defender diálogo público con Congreso, Justicia y gobernadores."
+    },
+    "media.answer.institutions.legal": {
+      "pt-BR": "Apresentar agenda de segurança jurídica e cumprimento constitucional.",
+      "en": "Present a legal-certainty and constitutional compliance agenda.",
+      "es": "Presentar agenda de seguridad jurídica y cumplimiento constitucional."
+    },
+    "media.answer.institutions.polarizing": {
+      "pt-BR": "Dizer que instituições travam a vontade popular.",
+      "en": "Say institutions block the popular will.",
+      "es": "Decir que las instituciones frenan la voluntad popular."
+    },
+    "media.answer.institutions.delivery": {
+      "pt-BR": "Conectar reformas administrativas a entregas concretas.",
+      "en": "Connect administrative reforms to concrete delivery.",
+      "es": "Conectar reformas administrativas con entregas concretas."
+    },
+    "media.headline.positive.strategy": {
+      "pt-BR": "Governo ganha fôlego após decisão estratégica",
+      "en": "Government gains momentum after strategic decision",
+      "es": "El gobierno gana impulso tras decisión estratégica"
+    },
+    "media.headline.positive.market": {
+      "pt-BR": "Mercado vê melhora no cenário político",
+      "en": "Markets see improvement in the political outlook",
+      "es": "El mercado ve mejora en el escenario político"
+    },
+    "media.headline.positive.transparent": {
+      "pt-BR": "Comunicação transparente reduz tensão pública",
+      "en": "Transparent communication reduces public tension",
+      "es": "La comunicación transparente reduce tensión pública"
+    },
+    "media.headline.warning.congress": {
+      "pt-BR": "Congresso cobra articulação do Planalto",
+      "en": "Congress demands stronger executive coordination",
+      "es": "El Congreso exige articulación del Ejecutivo"
+    },
+    "media.headline.warning.fiscal": {
+      "pt-BR": "Especialistas alertam para risco fiscal",
+      "en": "Experts warn about fiscal risk",
+      "es": "Especialistas alertan sobre riesgo fiscal"
+    },
+    "media.headline.warning.social": {
+      "pt-BR": "Redes sociais ampliam pressão sobre o governo",
+      "en": "Social media increases pressure on the government",
+      "es": "Redes sociales aumentan presión sobre el gobierno"
+    },
+    "media.headline.negative.crisis": {
+      "pt-BR": "Crise desgasta imagem do presidente",
+      "en": "Crisis erodes the president’s image",
+      "es": "La crisis desgasta la imagen del presidente"
+    },
+    "media.headline.negative.opposition": {
+      "pt-BR": "Oposição amplia pressão por investigação",
+      "en": "Opposition increases pressure for investigation",
+      "es": "La oposición aumenta presión por investigación"
+    },
+    "media.headline.negative.noise": {
+      "pt-BR": "Ruído comunicacional derruba confiança no governo",
+      "en": "Communication noise hurts trust in government",
+      "es": "Ruido comunicacional reduce confianza en el gobierno"
+    },
+    "media.action.tour.title": {
+      "pt-BR": "Turnê de entrevistas",
+      "en": "Interview tour",
+      "es": "Gira de entrevistas"
+    },
+    "media.action.tour.text": {
+      "pt-BR": "Aumenta exposição positiva e aproxima o governo do público.",
+      "en": "Increases positive exposure and brings government closer to the public.",
+      "es": "Aumenta la exposición positiva y acerca el gobierno al público."
+    },
+    "media.action.radio.title": {
+      "pt-BR": "Campanha em rádios regionais",
+      "en": "Regional radio campaign",
+      "es": "Campaña en radios regionales"
+    },
+    "media.action.radio.text": {
+      "pt-BR": "Melhora presença fora das capitais e reduz ruído político.",
+      "en": "Improves presence outside capitals and reduces political noise.",
+      "es": "Mejora presencia fuera de capitales y reduce ruido político."
+    },
+    "media.action.factcheck.title": {
+      "pt-BR": "Gabinete de checagem",
+      "en": "Fact-checking office",
+      "es": "Gabinete de verificación"
+    },
+    "media.action.factcheck.text": {
+      "pt-BR": "Combate fake news e protege imagem institucional.",
+      "en": "Fights fake news and protects the institutional image.",
+      "es": "Combate fake news y protege la imagen institucional."
+    },
+    "media.action.ad.title": {
+      "pt-BR": "Campanha publicitária nacional",
+      "en": "National advertising campaign",
+      "es": "Campaña publicitaria nacional"
+    },
+    "media.action.ad.text": {
+      "pt-BR": "Gera ganho rápido de aprovação, mas pode ser criticada como propaganda.",
+      "en": "Generates quick approval gains, but can be criticized as propaganda.",
+      "es": "Genera ganancia rápida de aprobación, pero puede ser criticada como propaganda."
+    },
+    "media.action.opendata.title": {
+      "pt-BR": "Portal de dados abertos",
+      "en": "Open data portal",
+      "es": "Portal de datos abiertos"
+    },
+    "media.action.opendata.text": {
+      "pt-BR": "Publica indicadores auditáveis e melhora credibilidade em pautas técnicas.",
+      "en": "Publishes auditable indicators and improves credibility on technical agendas.",
+      "es": "Publica indicadores auditables y mejora credibilidad en agendas técnicas."
+    },
+    "media.action.spokes.title": {
+      "pt-BR": "Treinamento de porta-vozes",
+      "en": "Spokesperson training",
+      "es": "Entrenamiento de portavoces"
+    },
+    "media.action.spokes.text": {
+      "pt-BR": "Reduz mensagens contraditórias durante crises e coletivas difíceis.",
+      "en": "Reduces contradictory messages during crises and difficult briefings.",
+      "es": "Reduce mensajes contradictorios durante crisis y ruedas difíciles."
+    },
+    "media.action.listening.title": {
+      "pt-BR": "Monitoramento social ético",
+      "en": "Ethical social listening",
+      "es": "Monitoreo social ético"
+    },
+    "media.action.listening.text": {
+      "pt-BR": "Mapeia dores reais da população sem manipulação de dados pessoais.",
+      "en": "Maps real public pain points without personal-data manipulation.",
+      "es": "Mapea dolores reales de la población sin manipular datos personales."
+    },
+    "media.action.pressroom.title": {
+      "pt-BR": "Sala de imprensa independente",
+      "en": "Independent press room",
+      "es": "Sala de prensa independiente"
+    },
+    "media.action.pressroom.text": {
+      "pt-BR": "Cria rotina de perguntas abertas, briefings técnicos e correção pública de erros.",
+      "en": "Creates open questions, technical briefings and public correction of mistakes.",
+      "es": "Crea rutina de preguntas abiertas, briefings técnicos y corrección pública de errores."
+    },
+    "worldDiplomacy.phaseName": {
+      "pt-BR": "Diplomacia mundial",
+      "en": "World diplomacy",
+      "es": "Diplomacia mundial"
+    },
+    "worldDiplomacy.overviewTitle": {
+      "pt-BR": "Diplomacia Mundial",
+      "en": "World Diplomacy",
+      "es": "Diplomacia Mundial"
+    },
+    "worldDiplomacy.doctrineTitle": {
+      "pt-BR": "Doutrina Diplomática",
+      "en": "Diplomatic Doctrine",
+      "es": "Doctrina Diplomática"
+    },
+    "worldDiplomacy.countriesTitle": {
+      "pt-BR": "Relações Internacionais com IA",
+      "en": "AI International Relations",
+      "es": "Relaciones Internacionales con IA"
+    },
+    "worldDiplomacy.blocsTitle": {
+      "pt-BR": "Blocos Globais",
+      "en": "Global Blocs",
+      "es": "Bloques Globales"
+    },
+    "worldDiplomacy.agendaTitle": {
+      "pt-BR": "Agenda Internacional",
+      "en": "International Agenda",
+      "es": "Agenda Internacional"
+    },
+    "worldDiplomacy.actionsTitle": {
+      "pt-BR": "Ações Diplomáticas",
+      "en": "Diplomatic Actions",
+      "es": "Acciones Diplomáticas"
+    },
+    "worldDiplomacy.treatiesTitle": {
+      "pt-BR": "Tratados",
+      "en": "Treaties",
+      "es": "Tratados"
+    },
+    "worldDiplomacy.historyTitle": {
+      "pt-BR": "Histórico Diplomático",
+      "en": "Diplomatic History",
+      "es": "Historial Diplomático"
+    },
+    "worldDiplomacy.health": {
+      "pt-BR": "Saúde diplomática",
+      "en": "Diplomatic health",
+      "es": "Salud diplomática"
+    },
+    "worldDiplomacy.globalTrust": {
+      "pt-BR": "Confiança global",
+      "en": "Global trust",
+      "es": "Confianza global"
+    },
+    "worldDiplomacy.softPower": {
+      "pt-BR": "Soft power",
+      "en": "Soft power",
+      "es": "Poder blando"
+    },
+    "worldDiplomacy.risk": {
+      "pt-BR": "Risco diplomático",
+      "en": "Diplomatic risk",
+      "es": "Riesgo diplomático"
+    },
+    "worldDiplomacy.globalTension": {
+      "pt-BR": "Tensão global",
+      "en": "Global tension",
+      "es": "Tensión global"
+    },
+    "worldDiplomacy.tradeWindow": {
+      "pt-BR": "Janela comercial",
+      "en": "Trade window",
+      "es": "Ventana comercial"
+    },
+    "worldDiplomacy.leverage": {
+      "pt-BR": "Alavancagem",
+      "en": "Leverage",
+      "es": "Apalancamiento"
+    },
+    "worldDiplomacy.currentDiagnosis": {
+      "pt-BR": "Diagnóstico atual",
+      "en": "Current diagnosis",
+      "es": "Diagnóstico actual"
+    },
+    "worldDiplomacy.regionalLeadership": {
+      "pt-BR": "Liderança regional",
+      "en": "Regional leadership",
+      "es": "Liderazgo regional"
+    },
+    "worldDiplomacy.neutrality": {
+      "pt-BR": "Neutralidade",
+      "en": "Neutrality",
+      "es": "Neutralidad"
+    },
+    "worldDiplomacy.blocAlignment": {
+      "pt-BR": "Alinhamento com blocos",
+      "en": "Bloc alignment",
+      "es": "Alineación con bloques"
+    },
+    "worldDiplomacy.securityRisk": {
+      "pt-BR": "Risco de segurança",
+      "en": "Security risk",
+      "es": "Riesgo de seguridad"
+    },
+    "worldDiplomacy.publicScrutiny": {
+      "pt-BR": "Escrutínio público",
+      "en": "Public scrutiny",
+      "es": "Escrutinio público"
+    },
+    "worldDiplomacy.multilateralScore": {
+      "pt-BR": "Pontuação multilateral",
+      "en": "Multilateral score",
+      "es": "Puntuación multilateral"
+    },
+    "worldDiplomacy.alignment": {
+      "pt-BR": "Alinhamento",
+      "en": "Alignment",
+      "es": "Alineación"
+    },
+    "worldDiplomacy.trade": {
+      "pt-BR": "Comércio",
+      "en": "Trade",
+      "es": "Comercio"
+    },
+    "worldDiplomacy.tension": {
+      "pt-BR": "Tensão",
+      "en": "Tension",
+      "es": "Tensión"
+    },
+    "worldDiplomacy.pressure": {
+      "pt-BR": "Pressão",
+      "en": "Pressure",
+      "es": "Presión"
+    },
+    "worldDiplomacy.opportunity": {
+      "pt-BR": "Oportunidade",
+      "en": "Opportunity",
+      "es": "Oportunidad"
+    },
+    "worldDiplomacy.volatility": {
+      "pt-BR": "Volatilidade",
+      "en": "Volatility",
+      "es": "Volatilidad"
+    },
+    "worldDiplomacy.active": {
+      "pt-BR": "Ativa",
+      "en": "Active",
+      "es": "Activa"
+    },
+    "worldDiplomacy.adopt": {
+      "pt-BR": "Adotar",
+      "en": "Adopt",
+      "es": "Adoptar"
+    },
+    "worldDiplomacy.wait": {
+      "pt-BR": "AGUARDAR",
+      "en": "WAIT",
+      "es": "ESPERAR"
+    },
+    "worldDiplomacy.deal": {
+      "pt-BR": "Acordo",
+      "en": "Deal",
+      "es": "Acuerdo"
+    },
+    "worldDiplomacy.sanction": {
+      "pt-BR": "Sanção",
+      "en": "Sanction",
+      "es": "Sanción"
+    },
+    "worldDiplomacy.noTreaties": {
+      "pt-BR": "Nenhum tratado assinado ainda.",
+      "en": "No treaty signed yet.",
+      "es": "Aún no se firmó ningún tratado."
+    },
+    "worldDiplomacy.costLine": {
+      "pt-BR": "Custo ₿ {cost} bi • PA {ap} • impacto {days} dias",
+      "en": "Cost ₿ {cost} bi • AP {ap} • impact {days} days",
+      "es": "Costo ₿ {cost} bi • PA {ap} • impacto {days} días"
+    },
+    "worldDiplomacy.cooldown": {
+      "pt-BR": "cooldown {days} dias",
+      "en": "cooldown {days} days",
+      "es": "cooldown {days} días"
+    },
+    "worldDiplomacy.countryTension": {
+      "pt-BR": "Tensão {tension}% • interesses: {interests}",
+      "en": "Tension {tension}% • interests: {interests}",
+      "es": "Tensión {tension}% • intereses: {interests}"
+    },
+    "worldDiplomacy.doctrineAlreadyActive": {
+      "pt-BR": "Essa doutrina diplomática já está ativa.",
+      "en": "This diplomatic doctrine is already active.",
+      "es": "Esta doctrina diplomática ya está activa."
+    },
+    "worldDiplomacy.doctrineChanged": {
+      "pt-BR": "Doutrina diplomática adotada: {name}.",
+      "en": "Diplomatic doctrine adopted: {name}.",
+      "es": "Doctrina diplomática adoptada: {name}."
+    },
+    "worldDiplomacy.cooldownWarning": {
+      "pt-BR": "Ação diplomática mundial ainda está em cooldown.",
+      "en": "World diplomacy action is still on cooldown.",
+      "es": "La acción diplomática mundial aún está en cooldown."
+    },
+    "worldDiplomacy.insufficientTreasury": {
+      "pt-BR": "Tesouro insuficiente para ação diplomática mundial.",
+      "en": "Insufficient treasury for world diplomacy action.",
+      "es": "Tesoro insuficiente para la acción diplomática mundial."
+    },
+    "worldDiplomacy.actionStarted": {
+      "pt-BR": "Ação de diplomacia mundial iniciada: {name}.",
+      "en": "World diplomacy action started: {name}.",
+      "es": "Acción de diplomacia mundial iniciada: {name}."
+    },
+    "worldDiplomacy.diagnosis.stable": {
+      "pt-BR": "O ambiente externo está administrável, com espaço para ganhos graduais.",
+      "en": "The external environment is manageable, with room for gradual gains.",
+      "es": "El entorno externo es administrable, con espacio para avances graduales."
+    },
+    "worldDiplomacy.diagnosis.risk": {
+      "pt-BR": "A tensão diplomática está elevada e ameaça comércio, segurança e reputação.",
+      "en": "Diplomatic tension is high and threatens trade, security and reputation.",
+      "es": "La tensión diplomática está alta y amenaza comercio, seguridad y reputación."
+    },
+    "worldDiplomacy.diagnosis.trade": {
+      "pt-BR": "O acesso comercial está fraco; exportadores e indústria cobram estratégia externa.",
+      "en": "Trade access is weak; exporters and industry demand an external strategy.",
+      "es": "El acceso comercial está débil; exportadores e industria exigen estrategia externa."
+    },
+    "worldDiplomacy.diagnosis.trust": {
+      "pt-BR": "A confiança global caiu e reduz a capacidade de mediação do país.",
+      "en": "Global trust has fallen and reduces the country’s mediation capacity.",
+      "es": "La confianza global cayó y reduce la capacidad de mediación del país."
+    },
+    "worldDiplomacy.diagnosis.strong": {
+      "pt-BR": "O país amplia influência, credibilidade e capacidade de negociação internacional.",
+      "en": "The country is expanding influence, credibility and international bargaining power.",
+      "es": "El país amplía influencia, credibilidad y capacidad de negociación internacional."
+    },
+    "worldDiplomacy.doctrine.balance.name": {
+      "pt-BR": "Multialinhamento equilibrado",
+      "en": "Balanced multi-alignment",
+      "es": "Multialineamiento equilibrado"
+    },
+    "worldDiplomacy.doctrine.balance.text": {
+      "pt-BR": "Mantém diálogo com blocos rivais e reduz dependência de um único centro de poder.",
+      "en": "Maintains dialogue with rival blocs and reduces dependence on one power center.",
+      "es": "Mantiene diálogo con bloques rivales y reduce dependencia de un único centro de poder."
+    },
+    "worldDiplomacy.doctrine.regional.name": {
+      "pt-BR": "Liderança regional",
+      "en": "Regional leadership",
+      "es": "Liderazgo regional"
+    },
+    "worldDiplomacy.doctrine.regional.text": {
+      "pt-BR": "Prioriza vizinhos, integração sul-americana e capacidade de coordenação regional.",
+      "en": "Prioritizes neighbors, South American integration and regional coordination capacity.",
+      "es": "Prioriza vecinos, integración sudamericana y capacidad de coordinación regional."
+    },
+    "worldDiplomacy.doctrine.economy.name": {
+      "pt-BR": "Pragmatismo econômico",
+      "en": "Economic pragmatism",
+      "es": "Pragmatismo económico"
+    },
+    "worldDiplomacy.doctrine.economy.text": {
+      "pt-BR": "Usa comércio, investimentos e exportações como eixo principal da política externa.",
+      "en": "Uses trade, investment and exports as the main axis of foreign policy.",
+      "es": "Usa comercio, inversiones y exportaciones como eje principal de la política exterior."
+    },
+    "worldDiplomacy.doctrine.values.name": {
+      "pt-BR": "Diplomacia por valores",
+      "en": "Values-based diplomacy",
+      "es": "Diplomacia por valores"
+    },
+    "worldDiplomacy.doctrine.values.text": {
+      "pt-BR": "Defende democracia, transparência, clima e direitos como fonte de credibilidade externa.",
+      "en": "Defends democracy, transparency, climate and rights as sources of external credibility.",
+      "es": "Defiende democracia, transparencia, clima y derechos como fuentes de credibilidad externa."
+    },
+    "worldDiplomacy.bloc.western.name": {
+      "pt-BR": "Bloco Ocidental",
+      "en": "Western Bloc",
+      "es": "Bloque Occidental"
+    },
+    "worldDiplomacy.bloc.western.text": {
+      "pt-BR": "Potências atlânticas, segurança hemisférica, tecnologia e finanças.",
+      "en": "Atlantic powers, hemispheric security, technology and finance.",
+      "es": "Potencias atlánticas, seguridad hemisférica, tecnología y finanzas."
+    },
+    "worldDiplomacy.bloc.asia.name": {
+      "pt-BR": "Ásia-Pacífico",
+      "en": "Asia-Pacific",
+      "es": "Asia-Pacífico"
+    },
+    "worldDiplomacy.bloc.asia.text": {
+      "pt-BR": "Comércio industrial, cadeias de suprimento e disputa tecnológica.",
+      "en": "Industrial trade, supply chains and technological competition.",
+      "es": "Comercio industrial, cadenas de suministro y disputa tecnológica."
+    },
+    "worldDiplomacy.bloc.europe.name": {
+      "pt-BR": "Europa institucional",
+      "en": "Institutional Europe",
+      "es": "Europa institucional"
+    },
+    "worldDiplomacy.bloc.europe.text": {
+      "pt-BR": "Regulação, clima, direitos, cooperação e mercados sofisticados.",
+      "en": "Regulation, climate, rights, cooperation and sophisticated markets.",
+      "es": "Regulación, clima, derechos, cooperación y mercados sofisticados."
+    },
+    "worldDiplomacy.bloc.regional.name": {
+      "pt-BR": "Vizinhança regional",
+      "en": "Regional neighborhood",
+      "es": "Vecindad regional"
+    },
+    "worldDiplomacy.bloc.regional.text": {
+      "pt-BR": "Integração sul-americana, fronteiras, energia e comércio regional.",
+      "en": "South American integration, borders, energy and regional trade.",
+      "es": "Integración sudamericana, fronteras, energía y comercio regional."
+    },
+    "worldDiplomacy.bloc.eurasian.name": {
+      "pt-BR": "Eurásia estratégica",
+      "en": "Strategic Eurasia",
+      "es": "Eurasia estratégica"
+    },
+    "worldDiplomacy.bloc.eurasian.text": {
+      "pt-BR": "Energia, defesa, sanções, commodities e rivalidades militares.",
+      "en": "Energy, defense, sanctions, commodities and military rivalries.",
+      "es": "Energía, defensa, sanciones, commodities y rivalidades militares."
+    },
+    "worldDiplomacy.bloc.south.name": {
+      "pt-BR": "Sul Global",
+      "en": "Global South",
+      "es": "Sur Global"
+    },
+    "worldDiplomacy.bloc.south.text": {
+      "pt-BR": "Países emergentes, cooperação técnica, alimentos, clima e desenvolvimento.",
+      "en": "Emerging countries, technical cooperation, food, climate and development.",
+      "es": "Países emergentes, cooperación técnica, alimentos, clima y desarrollo."
+    },
+    "worldDiplomacy.agenda.trade.name": {
+      "pt-BR": "Comércio e cadeias globais",
+      "en": "Trade and global chains",
+      "es": "Comercio y cadenas globales"
+    },
+    "worldDiplomacy.agenda.trade.text": {
+      "pt-BR": "Exportações, importações, acesso a mercados e acordos de suprimento.",
+      "en": "Exports, imports, market access and supply agreements.",
+      "es": "Exportaciones, importaciones, acceso a mercados y acuerdos de suministro."
+    },
+    "worldDiplomacy.agenda.climate.name": {
+      "pt-BR": "Clima e transição verde",
+      "en": "Climate and green transition",
+      "es": "Clima y transición verde"
+    },
+    "worldDiplomacy.agenda.climate.text": {
+      "pt-BR": "Credibilidade ambiental, financiamento climático e energia limpa.",
+      "en": "Environmental credibility, climate finance and clean energy.",
+      "es": "Credibilidad ambiental, financiación climática y energía limpia."
+    },
+    "worldDiplomacy.agenda.security.name": {
+      "pt-BR": "Segurança internacional",
+      "en": "International security",
+      "es": "Seguridad internacional"
+    },
+    "worldDiplomacy.agenda.security.text": {
+      "pt-BR": "Conflitos, fronteiras, defesa, crime transnacional e inteligência.",
+      "en": "Conflicts, borders, defense, transnational crime and intelligence.",
+      "es": "Conflictos, fronteras, defensa, crimen transnacional e inteligencia."
+    },
+    "worldDiplomacy.agenda.technology.name": {
+      "pt-BR": "Tecnologia e soberania digital",
+      "en": "Technology and digital sovereignty",
+      "es": "Tecnología y soberanía digital"
+    },
+    "worldDiplomacy.agenda.technology.text": {
+      "pt-BR": "Semicondutores, IA, dados, cabos, satélites e produtividade.",
+      "en": "Semiconductors, AI, data, cables, satellites and productivity.",
+      "es": "Semiconductores, IA, datos, cables, satélites y productividad."
+    },
+    "worldDiplomacy.agenda.humanitarian.name": {
+      "pt-BR": "Agenda humanitária",
+      "en": "Humanitarian agenda",
+      "es": "Agenda humanitaria"
+    },
+    "worldDiplomacy.agenda.humanitarian.text": {
+      "pt-BR": "Refugiados, ajuda emergencial, alimentos e mediação de crises.",
+      "en": "Refugees, emergency aid, food and crisis mediation.",
+      "es": "Refugiados, ayuda de emergencia, alimentos y mediación de crisis."
+    },
+    "worldDiplomacy.agenda.energy.name": {
+      "pt-BR": "Energia e commodities",
+      "en": "Energy and commodities",
+      "es": "Energía y commodities"
+    },
+    "worldDiplomacy.agenda.energy.text": {
+      "pt-BR": "Petróleo, biocombustíveis, minerais críticos e segurança energética.",
+      "en": "Oil, biofuels, critical minerals and energy security.",
+      "es": "Petróleo, biocombustibles, minerales críticos y seguridad energética."
+    },
+    "worldDiplomacy.action.un.title": {
+      "pt-BR": "Discurso na ONU",
+      "en": "UN speech",
+      "es": "Discurso en la ONU"
+    },
+    "worldDiplomacy.action.un.text": {
+      "pt-BR": "Usa a tribuna multilateral para ampliar soft power e confiança global.",
+      "en": "Uses the multilateral stage to expand soft power and global trust.",
+      "es": "Usa la tribuna multilateral para ampliar poder blando y confianza global."
+    },
+    "worldDiplomacy.action.regional.title": {
+      "pt-BR": "Cúpula sul-americana",
+      "en": "South American summit",
+      "es": "Cumbre sudamericana"
+    },
+    "worldDiplomacy.action.regional.text": {
+      "pt-BR": "Convoca líderes regionais para pactos de comércio, energia e fronteiras.",
+      "en": "Convenes regional leaders for trade, energy and border pacts.",
+      "es": "Convoca líderes regionales para pactos de comercio, energía y fronteras."
+    },
+    "worldDiplomacy.action.trade.title": {
+      "pt-BR": "Missão comercial estratégica",
+      "en": "Strategic trade mission",
+      "es": "Misión comercial estratégica"
+    },
+    "worldDiplomacy.action.trade.text": {
+      "pt-BR": "Abre mercados, atrai investimentos e melhora a posição exportadora.",
+      "en": "Opens markets, attracts investment and improves export position.",
+      "es": "Abre mercados, atrae inversiones y mejora la posición exportadora."
+    },
+    "worldDiplomacy.action.peace.title": {
+      "pt-BR": "Mediação de paz",
+      "en": "Peace mediation",
+      "es": "Mediación de paz"
+    },
+    "worldDiplomacy.action.peace.text": {
+      "pt-BR": "Oferece o país como mediador e reduz tensão internacional.",
+      "en": "Offers the country as mediator and reduces international tension.",
+      "es": "Ofrece al país como mediador y reduce tensión internacional."
+    },
+    "worldDiplomacy.action.climate.title": {
+      "pt-BR": "Coalizão climática",
+      "en": "Climate coalition",
+      "es": "Coalición climática"
+    },
+    "worldDiplomacy.action.climate.text": {
+      "pt-BR": "Organiza frente verde com financiamento, floresta, energia e indústria limpa.",
+      "en": "Builds a green front with finance, forests, energy and clean industry.",
+      "es": "Organiza frente verde con financiación, bosques, energía e industria limpia."
+    },
+    "worldDiplomacy.action.nonalign.title": {
+      "pt-BR": "Não alinhamento estratégico",
+      "en": "Strategic non-alignment",
+      "es": "No alineamiento estratégico"
+    },
+    "worldDiplomacy.action.nonalign.text": {
+      "pt-BR": "Reduz dependência de blocos rivais e preserva margem de negociação.",
+      "en": "Reduces dependence on rival blocs and preserves room to negotiate.",
+      "es": "Reduce dependencia de bloques rivales y preserva margen de negociación."
+    },
+    "worldDiplomacy.action.consular.title": {
+      "pt-BR": "Rede consular ampliada",
+      "en": "Expanded consular network",
+      "es": "Red consular ampliada"
+    },
+    "worldDiplomacy.action.consular.text": {
+      "pt-BR": "Protege cidadãos, empresas e estudantes no exterior com maior presença diplomática.",
+      "en": "Protects citizens, companies and students abroad with stronger diplomatic presence.",
+      "es": "Protege ciudadanos, empresas y estudiantes en el exterior con mayor presencia diplomática."
+    },
+    "worldDiplomacy.action.export.title": {
+      "pt-BR": "Agência estratégica de exportação",
+      "en": "Strategic export agency",
+      "es": "Agencia estratégica de exportación"
+    },
+    "worldDiplomacy.action.export.text": {
+      "pt-BR": "Coordena governo e setor produtivo para vender mais ao exterior.",
+      "en": "Coordinates government and producers to sell more abroad.",
+      "es": "Coordina gobierno y sector productivo para vender más al exterior."
     }
   },
   "localization_complete": {

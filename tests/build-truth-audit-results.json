@@ -1,9 +1,9 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "1.6.1",
-  "artifact": "DIPLOCRAFT_v1.6.1_FASE-17_ECONOMIA-PROFUNDA_build_20260618_1031.zip",
-  "source_sha256": "16afef7268ae49e56ddffa8101c4a59f3fa69d6ced3ca5d19034b4e92629ed50",
-  "generator_stdout": "Build truth verified: v1.6.1",
+  "version": "1.7.3",
+  "artifact": "DIPLOCRAFT_v1.7.3_FASE-21_IMPRENSA-MIDIA-E-OPINIAO-PUBLICA_build_20260618_1726.zip",
+  "source_sha256": "ef8e4f0e6c1a999ad16310572dc41eef07a96846b2f0b02faf2505b92ca29bdf",
+  "generator_stdout": "Build truth verified: v1.7.3",
   "generator_stderr": "",
   "checks": {
     "generator_check_passes": true,

@@ -1,7 +1,7 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "1.6.0",
-  "phase": "País e População",
+  "version": "1.7.1",
+  "phase": "Governo e Instituições",
   "static_checks": {
     "phase15_preserved": true,
     "six_setup_dimensions_present": true,

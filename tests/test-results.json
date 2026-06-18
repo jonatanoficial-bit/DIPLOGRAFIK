@@ -1,8 +1,8 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "1.6.1",
-  "phase": "Economia Profunda",
-  "generated_at": "2026-06-18T13:59:15+0000",
+  "version": "1.7.4",
+  "phase": "Diplomacia Mundial",
+  "generated_at": "2026-06-18T22:11:41+0000",
   "release_blocking": true,
   "execution_model": "independent suites + final report aggregator",
   "steps": [
@@ -34,7 +34,7 @@
     {
       "name": "node-tests",
       "passed": true,
-      "checks": 39
+      "checks": 44
     },
     {
       "name": "simulation-matrix",
@@ -115,12 +115,37 @@
       "name": "deep-economy-audit",
       "passed": true,
       "checks": 20
+    },
+    {
+      "name": "budget-tax-audit",
+      "passed": true,
+      "checks": 20
+    },
+    {
+      "name": "government-institutions-audit",
+      "passed": true,
+      "checks": 20
+    },
+    {
+      "name": "cabinet-administration-audit",
+      "passed": true,
+      "checks": 21
+    },
+    {
+      "name": "media-public-opinion-audit",
+      "passed": true,
+      "checks": 25
+    },
+    {
+      "name": "world-diplomacy-audit",
+      "passed": true,
+      "checks": 22
     }
   ],
-  "passed_steps": 22,
-  "total_steps": 22,
-  "passed_checks": 1382,
-  "total_checks": 1382,
+  "passed_steps": 27,
+  "total_steps": 27,
+  "passed_checks": 1495,
+  "total_checks": 1495,
   "balance_warnings": [],
   "passed": true
 }

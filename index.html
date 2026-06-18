@@ -161,13 +161,31 @@
 </div>
 </section>
 <section class="tab" id="tab-government">
+<div class="layout institutionTopLayout">
+<section class="panel"><h3 data-i18n="institutions.overviewTitle">Governo e Instituições</h3><div id="institutionalOverview" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="institutions.metricsTitle">Indicadores Institucionais</h3><div id="institutionalMetrics" data-i18n-final="true"></div></section>
+</div>
+<section class="panel"><h3 data-i18n="institutions.profilesTitle">Mapa das Instituições</h3><div id="institutionProfiles" data-i18n-final="true"></div></section>
+<div class="layout">
+<section class="panel"><h3 data-i18n="institutions.reformsTitle">Doutrina de Governo</h3><div id="institutionalReforms" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="institutions.actionsTitle">Ações Institucionais</h3><div class="decisionDeck" id="institutionalActions" data-i18n-final="true"></div></section>
+</div>
+<div class="layout cabinetAdminTopLayout">
+<section class="panel"><h3 data-i18n="cabinet.overviewTitle">Gabinete e Administração</h3><div id="cabinetOverview" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="cabinet.metricsTitle">Capacidade Administrativa</h3><div id="cabinetMetrics" data-i18n-final="true"></div></section>
+</div>
+<section class="panel"><h3 data-i18n="cabinet.portfoliosTitle">Mapa Ministerial</h3><div id="cabinetPortfolios" data-i18n-final="true"></div></section>
+<div class="layout cabinetAdminLayout">
+<section class="panel"><h3 data-i18n="cabinet.stylesTitle">Modelo de Gabinete</h3><div class="policyGrid" id="cabinetStyles" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="cabinet.actionsTitle">Ações Administrativas</h3><div class="decisionDeck" id="cabinetActions" data-i18n-final="true"></div></section>
+</div>
 <div class="layout">
 <section class="panel"><h3>Coalizão e Risco Institucional</h3><div id="coalitionView"></div><h3>Ações de Governo</h3><div class="decisionDeck" id="governmentActions"></div></section>
 <section class="panel"><h3>Congresso Nacional</h3><div id="congressView"></div><h3>Ministérios</h3><div id="ministries"></div></section>
 </div>
 <div class="layout">
 <section class="panel"><h3>Projetos de Lei</h3><div class="decisionDeck" id="lawProjects"></div></section>
-<section class="panel"><h3>Leis Aprovadas</h3><div id="approvedLaws"></div></section>
+<section class="panel"><h3>Leis Aprovadas</h3><div id="approvedLaws"></div><h3 data-i18n="institutions.historyTitle">Histórico Institucional</h3><div id="institutionalHistory" data-i18n-final="true"></div><h3 data-i18n="cabinet.historyTitle">Histórico do Gabinete</h3><div id="cabinetHistory" data-i18n-final="true"></div></section>
 </div>
 </section>
 <section class="tab" id="tab-economy">
@@ -179,6 +197,14 @@
 <section class="panel"><h3 data-i18n="economyDeep.fiscalRulesTitle">Regra fiscal</h3><div class="policyGrid" id="fiscalRules"></div></section>
 <section class="panel"><h3 data-i18n="economyDeep.monetaryTitle">Política monetária</h3><div class="policyGrid" id="monetaryPolicies"></div></section>
 </div>
+<div class="layout budgetTaxLayout">
+<section class="panel"><h3 data-i18n="budgetTax.overviewTitle">Orçamento e Tributação</h3><div id="budgetTaxOverview"></div></section>
+<section class="panel"><h3 data-i18n="budgetTax.taxInstrumentsTitle">Alíquotas por base tributária</h3><div id="taxInstrumentControls"></div></section>
+</div>
+<div class="layout budgetTaxLayout">
+<section class="panel"><h3 data-i18n="budgetTax.spendingRulesTitle">Regras de execução orçamentária</h3><div class="policyGrid" id="spendingRules"></div></section>
+<section class="panel"><h3 data-i18n="budgetTax.actionsTitle">Ações fiscais estruturantes</h3><div class="decisionDeck" id="budgetTaxActions"></div></section>
+</div>
 <div class="layout">
 <section class="panel"><h3 data-i18n="economyDeep.programsTitle">Programas produtivos e comércio</h3><div class="decisionDeck" id="productivePrograms"></div><h3 data-i18n="economyDeep.taxProfilesTitle">Perfis tributários</h3><div class="buttonGrid" id="taxProfiles"></div></section>
 <section class="panel"><h3 data-i18n="economyDeep.measuresTitle">Medidas Econômicas</h3><div class="decisionDeck" id="economicMeasures"></div></section>
@@ -186,6 +212,7 @@
 <div class="layout">
 <section class="panel"><h3 data-i18n="economyDeep.curveTitle">Curva Econômica</h3><canvas height="240" id="economyCanvas" width="460"></canvas></section>
 <section class="panel"><h3 data-i18n="economyDeep.historyTitle">Histórico econômico</h3><div id="deepEconomyHistory"></div></section>
+<section class="panel"><h3 data-i18n="budgetTax.historyTitle">Histórico fiscal</h3><div id="budgetTaxHistory"></div></section>
 </div>
 </section>
 <section class="tab" id="tab-population">
@@ -195,13 +222,21 @@
 <section class="panel"><h3 data-i18n="population.policiesTitle">Políticas para a População</h3><div class="decisionDeck populationPolicyGrid" id="populationPolicies" data-i18n-final="true"></div></section>
 </section>
 <section class="tab" id="tab-diplomacy">
-<div class="layout">
-<section class="panel"><h3>Relações Internacionais com IA</h3><div class="countryGrid" id="countries"></div></section>
-<section class="panel"><h3>Risco Global</h3><div id="globalRiskPanel"></div><h3>Ações Diplomáticas</h3><div class="decisionDeck" id="diplomacyActions"></div></section>
+<div class="layout worldDiplomacyTopLayout">
+<section class="panel"><h3 data-i18n="worldDiplomacy.overviewTitle">Diplomacia Mundial</h3><div id="globalRiskPanel" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="worldDiplomacy.doctrineTitle">Doutrina Diplomática</h3><div class="policyGrid" id="worldDiplomacyDoctrinePanel" data-i18n-final="true"></div></section>
+</div>
+<div class="layout worldDiplomacyGridLayout">
+<section class="panel"><h3 data-i18n="worldDiplomacy.countriesTitle">Relações Internacionais com IA</h3><div class="countryGrid" id="countries" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="worldDiplomacy.blocsTitle">Blocos Globais</h3><div id="globalBlocsPanel" data-i18n-final="true"></div></section>
+</div>
+<div class="layout worldDiplomacyAgendaLayout">
+<section class="panel"><h3 data-i18n="worldDiplomacy.agendaTitle">Agenda Internacional</h3><div id="worldAgendaPanel" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="worldDiplomacy.actionsTitle">Ações Diplomáticas</h3><div class="decisionDeck" id="diplomacyActions" data-i18n-final="true"></div></section>
 </div>
 <div class="layout">
-<section class="panel"><h3>Tratados</h3><div id="treatyPanel"></div></section>
-<section class="panel"><h3>Histórico Diplomático</h3><div id="diplomaticHistory"></div></section>
+<section class="panel"><h3 data-i18n="worldDiplomacy.treatiesTitle">Tratados</h3><div id="treatyPanel" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="worldDiplomacy.historyTitle">Histórico Diplomático</h3><div id="diplomaticHistory" data-i18n-final="true"></div></section>
 </div>
 </section>
 <section class="tab" id="tab-military">
@@ -218,13 +253,21 @@
 </section>
 <section class="tab" id="tab-projects"><div class="layout"><section class="panel"><h3>Projetos Estratégicos</h3><div class="decisionDeck" id="projectsList"></div></section><section class="panel"><h3>Fila de Execução</h3><div id="projectQueue"></div></section></div></section>
 <section class="tab" id="tab-press">
-<div class="layout">
-<section class="panel pressBox"><h3>Coletiva de Imprensa</h3><p id="pressQuestion"></p><div class="decisionDeck" id="pressAnswers"></div></section>
-<section class="panel"><h3>Opinião Pública</h3><div id="publicOpinion"></div><h3>Veículos de Mídia</h3><div id="mediaOutlets"></div></section>
+<div class="layout mediaTopLayout">
+<section class="panel pressBox"><h3 data-i18n="media.pressBriefingTitle">Coletiva de Imprensa</h3><p id="pressQuestion" data-i18n-final="true"></p><div class="decisionDeck" id="pressAnswers" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="media.opinionTitle">Opinião Pública</h3><div id="publicOpinion" data-i18n-final="true"></div><h3 data-i18n="media.narrativeTitle">Narrativa e Ruído Público</h3><div id="mediaNarrativeOverview" data-i18n-final="true"></div></section>
 </div>
-<div class="layout">
-<section class="panel"><h3>Manchetes Recentes</h3><div id="headlines"></div></section>
-<section class="panel"><h3>Ações de Comunicação</h3><div class="decisionDeck" id="mediaActions"></div></section>
+<div class="layout mediaStrategyLayout">
+<section class="panel"><h3 data-i18n="media.doctrineTitle">Doutrina de Comunicação</h3><div class="policyGrid" id="mediaDoctrinePanel" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="media.agendaTitle">Agenda Pública</h3><div id="mediaAgendaPanel" data-i18n-final="true"></div></section>
+</div>
+<div class="layout mediaOutletsLayout">
+<section class="panel"><h3 data-i18n="media.outletsTitle">Veículos de Mídia</h3><div id="mediaOutlets" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="media.headlinesTitle">Manchetes Recentes</h3><div id="headlines" data-i18n-final="true"></div></section>
+</div>
+<div class="layout mediaActionsLayout">
+<section class="panel"><h3 data-i18n="media.actionsTitle">Ações de Comunicação</h3><div class="decisionDeck" id="mediaActions" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="media.historyTitle">Histórico de Opinião Pública</h3><div id="mediaHistory" data-i18n-final="true"></div></section>
 </div>
 </section>
 <section class="tab" id="tab-elections">

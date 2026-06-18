@@ -1,13 +1,13 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "1.6.1",
-  "phase": "Economia Profunda",
-  "catalog_key_count": 1470,
+  "version": "1.7.1",
+  "phase": "Governo e Instituições",
+  "catalog_key_count": 1630,
   "scanned_user_facing_literals": 422,
   "uncovered_literals": [],
   "translation_change_ratio": {
-    "en": 0.9598639455782313,
-    "es": 0.8700680272108844
+    "en": 0.9631901840490797,
+    "es": 0.8785276073619632
   },
   "maximum_text_expansion_ratio": {
     "en": 3.0,

@@ -1,7 +1,7 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "1.6.0",
-  "phase": "País e População",
+  "version": "1.7.1",
+  "phase": "Governo e Instituições",
   "static_checks": {
     "phase_declares_save_architecture": true,
     "save_schema_is_three": true,
@@ -77,7 +77,7 @@
         },
         "manager_scroll": {
           "before": 0,
-          "after": 450
+          "after": 469
         },
         "touch_target_heights": [
           48,
@@ -168,7 +168,7 @@
         },
         "manager_scroll": {
           "before": 0,
-          "after": 672
+          "after": 665
         },
         "touch_target_heights": [
           48,

@@ -1,5 +1,5 @@
-PASS phase17_declared
-PASS official_base_preserved
+PASS deep_economy_phase_preserved
+PASS phase17_or_later_base_preserved
 PASS save_schema_three_preserved
 PASS state_factory_has_deep_economy
 PASS deep_system_has_schema

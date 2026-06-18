@@ -1,7 +1,7 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "1.6.1",
-  "phase": "Economia Profunda",
+  "version": "1.7.3",
+  "phase": "Imprensa, Mídia e Opinião Pública",
   "checks": {
     "manifest_identity": true,
     "manifest_fullscreen_fallbacks": true,
@@ -69,7 +69,7 @@
     ],
     "missing_precache": [],
     "heavy_source_precache": [],
-    "precache_count": 178,
+    "precache_count": 184,
     "pwa_asset_bytes": 848044,
     "service_worker_simulation": {
       "listeners": [
@@ -78,16 +78,16 @@
         "fetch",
         "message"
       ],
-      "current_cache": "diplocraft-shell-v1.6.1-20260618_1031",
-      "installed_count": 178,
+      "current_cache": "diplocraft-shell-v1.7.3-20260618_1726",
+      "installed_count": 184,
       "names_after_activate": [
-        "diplocraft-shell-v1.6.1-20260618_1031"
+        "diplocraft-shell-v1.7.3-20260618_1726"
       ],
       "claimed": true,
       "skipped": true,
       "version_message": {
-        "version": "1.6.1",
-        "cache": "diplocraft-shell-v1.6.1-20260618_1031"
+        "version": "1.7.3",
+        "cache": "diplocraft-shell-v1.7.3-20260618_1726"
       },
       "navigation_offline": true,
       "asset_offline": true,
@@ -95,7 +95,7 @@
       "old_cache_removed": true,
       "passed": true
     },
-    "simulation_stdout": "{\n  \"listeners\": [\n    \"install\",\n    \"activate\",\n    \"fetch\",\n    \"message\"\n  ],\n  \"current_cache\": \"diplocraft-shell-v1.6.1-20260618_1031\",\n  \"installed_count\": 178,\n  \"names_after_activate\": [\n    \"diplocraft-shell-v1.6.1-20260618_1031\"\n  ],\n  \"claimed\": true,\n  \"skipped\": true,\n  \"version_message\": {\n    \"version\": \"1.6.1\",\n    \"cache\": \"diplocraft-shell-v1.6.1-20260618_1031\"\n  },\n  \"navigation_offline\": true,\n  \"asset_offline\": true,\n  \"module_offline\": true,\n  \"old_cache_removed\": true,\n  \"passed\": true\n}\n",
+    "simulation_stdout": "{\n  \"listeners\": [\n    \"install\",\n    \"activate\",\n    \"fetch\",\n    \"message\"\n  ],\n  \"current_cache\": \"diplocraft-shell-v1.7.3-20260618_1726\",\n  \"installed_count\": 184,\n  \"names_after_activate\": [\n    \"diplocraft-shell-v1.7.3-20260618_1726\"\n  ],\n  \"claimed\": true,\n  \"skipped\": true,\n  \"version_message\": {\n    \"version\": \"1.7.3\",\n    \"cache\": \"diplocraft-shell-v1.7.3-20260618_1726\"\n  },\n  \"navigation_offline\": true,\n  \"asset_offline\": true,\n  \"module_offline\": true,\n  \"old_cache_removed\": true,\n  \"passed\": true\n}\n",
     "browser_note": "Navegação local por Playwright é bloqueada pela política administrativa do ambiente; o ciclo do worker foi validado em VM determinística, enquanto a interface continua coberta pelas suítes Playwright via harness."
   },
   "passed": true

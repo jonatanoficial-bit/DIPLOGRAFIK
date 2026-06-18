@@ -1,0 +1,67 @@
+{
+  "project": "DIPLOCRAFT",
+  "version": "1.7.3",
+  "phase": "Imprensa, Mídia e Opinião Pública",
+  "static_checks": {
+    "phase21_declared": true,
+    "official_base_preserved": true,
+    "save_schema_three_preserved": true,
+    "state_factory_has_media_public": true,
+    "media_system_has_schema": true,
+    "monthly_bridge_installed": true,
+    "ui_panels_present": true,
+    "renderer_binds_actions": true,
+    "game_actions_present": true,
+    "mobile_css_present": true,
+    "catalog_complete": true,
+    "upload_prompt_included": true,
+    "guide_included": true
+  },
+  "runtime": {
+    "returncode": 0,
+    "stdout": "{\n  \"checks\": {\n    \"default_state_present\": true,\n    \"catalog_counts\": true,\n    \"snapshot_finite\": true,\n    \"doctrine_applies\": true,\n    \"effect_bridge\": true,\n    \"headline_enriched\": true,\n    \"press_answer_integrated\": true,\n    \"history_bounded\": true,\n    \"health_score_bounded\": true,\n    \"core_loop_integration\": true,\n    \"long_run_420_days\": true\n  },\n  \"final\": {\n    \"health\": 61,\n    \"history\": 36,\n    \"monthly\": {\n      \"mood\": 20.184420141263395,\n      \"hostility\": 51.693885977947566,\n      \"credibility\": 31.404949478730913,\n      \"agendaRisk\": 39.47881747441883\n    }\n  },\n  \"passed\": true\n}\n",
+    "stderr": "",
+    "passed": true,
+    "checks": {
+      "default_state_present": true,
+      "catalog_counts": true,
+      "snapshot_finite": true,
+      "doctrine_applies": true,
+      "effect_bridge": true,
+      "headline_enriched": true,
+      "press_answer_integrated": true,
+      "history_bounded": true,
+      "health_score_bounded": true,
+      "core_loop_integration": true,
+      "long_run_420_days": true
+    },
+    "final": {
+      "health": 61,
+      "history": 36,
+      "monthly": {
+        "mood": 20.184420141263395,
+        "hostility": 51.693885977947566,
+        "credibility": 31.404949478730913,
+        "agendaRisk": 39.47881747441883
+      }
+    }
+  },
+  "checks": {
+    "phase21_declared": true,
+    "official_base_preserved": true,
+    "save_schema_three_preserved": true,
+    "state_factory_has_media_public": true,
+    "media_system_has_schema": true,
+    "monthly_bridge_installed": true,
+    "ui_panels_present": true,
+    "renderer_binds_actions": true,
+    "game_actions_present": true,
+    "mobile_css_present": true,
+    "catalog_complete": true,
+    "upload_prompt_included": true,
+    "guide_included": true,
+    "runtime_passed": true
+  },
+  "check_count": 25,
+  "passed": true
+}

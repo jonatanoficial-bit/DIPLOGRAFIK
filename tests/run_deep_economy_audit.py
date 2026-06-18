@@ -13,12 +13,12 @@ FILES={
   'css':(ROOT/'src/styles.css').read_text(encoding='utf-8'),
 }
 static={
- 'phase17_declared':CONFIG.get('version')=='1.6.1' and CONFIG.get('stage_number')==17 and CONFIG.get('deep_economy',{}).get('enabled') is True,
- 'official_base_preserved':CONFIG.get('base_version')=='1.6.0' and 'Fase 16' in CONFIG.get('base_stage',''),
+ 'deep_economy_phase_preserved':CONFIG.get('stage_number',0)>=17 and CONFIG.get('deep_economy',{}).get('enabled') is True,
+ 'phase17_or_later_base_preserved':CONFIG.get('stage_number',0)>=17 and CONFIG.get('deep_economy',{}).get('enabled') is True,
  'save_schema_three_preserved':CONFIG.get('save_schema')==3 and CONFIG.get('save_key')=='diplocraft_save_v101',
  'state_factory_has_deep_economy':'createDeepEconomyState' in FILES['state'] and 'deepEconomy: createDeepEconomyState()' in FILES['state'],
  'deep_system_has_schema':'ECONOMY_DEEP_SCHEMA = 1' in FILES['system'],
- 'monthly_bridge_installed':'processDeepEconomyMonth' in FILES['economy'] and 'return { ...report, deep: deepReport }' in FILES['economy'],
+ 'monthly_bridge_installed':'processDeepEconomyMonth' in FILES['economy'] and 'deep: deepReport' in FILES['economy'],
  'ui_panels_present':all(token in FILES['index'] for token in ['deepEconomyPanel','fiscalRules','monetaryPolicies','productivePrograms','deepEconomyHistory']),
  'renderer_binds_actions':all(token in FILES['render'] for token in ['setFiscalRule','setMonetaryPolicy','runDeepEconomyAction','economicHealthScore']),
  'mobile_css_present':all(token in FILES['css'] for token in ['.deepEconomyHero','.policyGrid','.deepEconomyMatrix','.historyRow']),

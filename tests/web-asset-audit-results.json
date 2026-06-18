@@ -1,5 +1,5 @@
 {
-  "version": "1.6.0",
+  "version": "1.7.3",
   "scenario": "all assets/runtime requests return HTTP 404 while source PNGs remain available",
   "checks": {
     "vercel_framework_static": true,

@@ -1,13 +1,13 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "1.6.1",
-  "phase": "Economia Profunda",
+  "version": "1.7.3",
+  "phase": "Imprensa, Mídia e Opinião Pública",
   "locales": [
     "pt-BR",
     "en",
     "es"
   ],
-  "catalog_key_count": 1457,
+  "catalog_key_count": 1861,
   "static_checks": {
     "three_supported_locales": true,
     "default_locale_pt_br": true,

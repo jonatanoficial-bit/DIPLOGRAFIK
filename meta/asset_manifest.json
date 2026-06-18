@@ -1,9 +1,9 @@
 {
   "generated_by": "tools/build_assets.py",
   "project": "DIPLOCRAFT",
-  "version": "1.6.1",
-  "phase": "Economia Profunda",
-  "build_stamp": "20260618_1031",
+  "version": "1.7.1",
+  "phase": "Governo e Instituições",
+  "build_stamp": "20260618_1601",
   "source_asset_count": 34,
   "runtime_variant_count": 98,
   "pwa_asset_count": 16,

@@ -1,12 +1,12 @@
-# DIPLOCRAFT — Fase 17 — Economia Profunda
+# DIPLOCRAFT — Fase 22 — Diplomacia Mundial
 
 > Arquivos de identidade são gerados de `build.config.json`.
 
-**Versão:** v1.6.1  
-**Build:** 18/06/2026 10:31 — America/Sao_Paulo  
-**Status:** DEEP_ECONOMY_VERIFIED; ainda não é a versão comercial final.  
-**Artefato esperado:** `DIPLOCRAFT_v1.6.1_FASE-17_ECONOMIA-PROFUNDA_build_20260618_1031.zip`
-**Config SHA-256:** `16afef7268ae49e56ddffa8101c4a59f3fa69d6ced3ca5d19034b4e92629ed50`
+**Versão:** v1.7.4  
+**Build:** 18/06/2026 18:12 — America/Sao_Paulo  
+**Status:** WORLD_DIPLOMACY_VERIFIED; ainda não é a versão comercial final.  
+**Artefato esperado:** `DIPLOCRAFT_v1.7.4_FASE-22_DIPLOMACIA-MUNDIAL_build_20260618_1812.zip`
+**Config SHA-256:** `c78785f5db9945c68377ed0b8d680999ab64668f4c232b9ae48e94574fa3e873`
 
 ## Executar
 

@@ -1,8 +1,8 @@
 {
-  "version": "1.6.1",
-  "stage_number": 17,
-  "status": "DEEP_ECONOMY_VERIFIED",
-  "stamp": "20260618_1031",
-  "artifact": "DIPLOCRAFT_v1.6.1_FASE-17_ECONOMIA-PROFUNDA_build_20260618_1031.zip",
-  "source_sha256": "16afef7268ae49e56ddffa8101c4a59f3fa69d6ced3ca5d19034b4e92629ed50"
+  "version": "1.7.4",
+  "stage_number": 22,
+  "status": "WORLD_DIPLOMACY_VERIFIED",
+  "stamp": "20260618_1812",
+  "artifact": "DIPLOCRAFT_v1.7.4_FASE-22_DIPLOMACIA-MUNDIAL_build_20260618_1812.zip",
+  "source_sha256": "c78785f5db9945c68377ed0b8d680999ab64668f4c232b9ae48e94574fa3e873"
 }

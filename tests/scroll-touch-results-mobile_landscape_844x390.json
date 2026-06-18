@@ -1,7 +1,7 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "1.6.1",
-  "phase": "Economia Profunda",
+  "version": "1.7.1",
+  "phase": "Governo e Instituições",
   "static_checks": {
     "scroll_module_exists": true,
     "scroll_module_loaded": true,
@@ -50,7 +50,7 @@
       "measurements": {
         "create_initial": {
           "scrollTop": 0,
-          "scrollHeight": 4976,
+          "scrollHeight": 2332,
           "clientHeight": 390,
           "overflowY": "auto",
           "touchAction": "pan-y pinch-zoom",
@@ -59,12 +59,12 @@
         },
         "first_touch_swipe": {
           "before": 0,
-          "after": 227,
+          "after": 164,
           "start": 358,
           "end": 178.6,
-          "x": 222.0
+          "x": 98.796875
         },
-        "touch_swipes_to_party_controls": 12,
+        "touch_swipes_to_party_controls": 5,
         "mobile_icons": [
           22,
           22,

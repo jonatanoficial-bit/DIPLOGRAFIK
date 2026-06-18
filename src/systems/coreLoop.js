@@ -4,7 +4,7 @@ import { processRandomEvent } from "./events.js";
 import { applyEffects, impeachmentRisk, normalizeState } from "./calculations.js";
 import { simulateElection } from "./elections.js";
 import { updateCongressPressure } from "./government.js";
-import { updateMediaCycle } from "./media.js";
+import { updateMediaCycle, processMediaPublicMonth } from "./media.js";
 import { processDiplomacyAI } from "./diplomacy.js";
 import { processSecurityCycle, calculateCoupRisk } from "./security.js";
 import { processCrisisChains, activeCrises } from "./crisis.js";
@@ -12,6 +12,9 @@ import { checkAchievements, checkMandateGoals, updateGlobalRank } from "./progre
 import { tickMonetizationCooldowns } from "./monetization.js";
 import { getDifficultyProfile } from "./governmentCreation.js";
 import { ensurePopulationState, processPopulationDay, weeklyPopulationCycle, monthlyPopulationCycle } from "./population.js";
+import { ensureInstitutionalState, processInstitutionalMonth } from "./governmentInstitutions.js";
+import { ensureCabinetState, processCabinetMonth } from "./cabinetAdministration.js";
+import { ensureWorldDiplomacyState, processWorldDiplomacyMonth } from "./worldDiplomacy.js";
 
 export const CORE_LOOP_SCHEMA = 2;
 export const TERM_DAYS = 1460;
@@ -75,6 +78,9 @@ export function ensureCoreLoopState(state) {
   normalizeGovernance(state);
   ensurePopulationState(state);
   ensureDeepEconomyState(state);
+  ensureInstitutionalState(state);
+  ensureCabinetState(state);
+  ensureWorldDiplomacyState(state);
   return state.governance;
 }
 
@@ -275,6 +281,16 @@ export function advanceDay(state, log, days = 1, options = {}) {
       const report = monthlyEconomy(state);
       monthlyGovernanceCycle(state, report, log);
       monthlyPopulationCycle(state, report, log);
+      const institutionalReport = processInstitutionalMonth(state, report);
+      const cabinetReport = processCabinetMonth(state, report);
+      const mediaReport = processMediaPublicMonth(state, report);
+      const worldDiplomacyReport = processWorldDiplomacyMonth(state, report);
+      if (state.governance?.reports?.monthly) {
+        state.governance.reports.monthly.institutions = { score: institutionalReport.institutionalScore, risk: institutionalReport.institutionalRisk, governability: institutionalReport.governability };
+        state.governance.reports.monthly.cabinet = { score: cabinetReport.administrationScore, risk: cabinetReport.executionRisk, governability: cabinetReport.governability };
+        state.governance.reports.monthly.media = { mood: mediaReport.publicMood, hostility: mediaReport.hostility, credibility: mediaReport.credibility, agendaRisk: mediaReport.agendaRisk };
+        state.governance.reports.monthly.worldDiplomacy = { health: worldDiplomacyReport.health, risk: worldDiplomacyReport.risk, trust: worldDiplomacyReport.trust, tradeWindow: worldDiplomacyReport.tradeWindow };
+      }
       if (state.month === 1) annualGovernanceCycle(state, log);
       if ([1, 4, 7, 10].includes(state.month)) quarterlyGovernanceCycle(state, log);
     }

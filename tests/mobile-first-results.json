@@ -1,7 +1,7 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "1.6.1",
-  "phase": "Economia Profunda",
+  "version": "1.7.1",
+  "phase": "Governo e Instituições",
   "execution_model": "one isolated browser process per viewport + deterministic aggregator",
   "expected_cases": [
     "phone_320x568",
@@ -97,7 +97,7 @@
         },
         "tab_scroll": {
           "saved": 0,
-          "restored": 12
+          "restored": 33
         }
       },
       "console_errors": [],
@@ -179,7 +179,7 @@
         },
         "tab_scroll": {
           "saved": 0,
-          "restored": 33
+          "restored": 2
         }
       },
       "console_errors": [],
@@ -261,7 +261,7 @@
         },
         "tab_scroll": {
           "saved": 0,
-          "restored": 2
+          "restored": 114
         }
       },
       "console_errors": [],
@@ -308,7 +308,7 @@
         "menu_button_min_height": 50,
         "create": {
           "clientHeight": 390,
-          "scrollHeight": 4972,
+          "scrollHeight": 2324,
           "overflowY": "auto"
         },
         "bottom_nav": {
@@ -343,7 +343,7 @@
         },
         "tab_scroll": {
           "saved": 0,
-          "restored": 12
+          "restored": 29
         }
       },
       "console_errors": [],
@@ -390,7 +390,7 @@
         "menu_button_min_height": 52,
         "create": {
           "clientHeight": 1024,
-          "scrollHeight": 4400,
+          "scrollHeight": 4397,
           "overflowY": "auto"
         },
         "bottom_nav": {

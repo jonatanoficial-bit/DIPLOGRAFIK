@@ -1,0 +1,457 @@
+{
+  "project": "DIPLOCRAFT",
+  "version": "1.7.1",
+  "phase": "Governo e Instituições",
+  "static_checks": {
+    "phase18_declared": true,
+    "official_base_preserved": true,
+    "save_schema_three_preserved": true,
+    "state_factory_has_budget_tax": true,
+    "budget_tax_system_has_schema": true,
+    "monthly_bridge_installed": true,
+    "ui_panels_present": true,
+    "renderer_binds_actions": true,
+    "mobile_css_present": true,
+    "tax_catalog_complete": true,
+    "history_limit_declared": true
+  },
+  "runtime": {
+    "returncode": 0,
+    "stdout": "{\n  \"checks\": {\n    \"default_state_present\": true,\n    \"snapshot_finite\": true,\n    \"controls_apply\": true,\n    \"effect_bridge\": true,\n    \"long_run_240_months\": true,\n    \"history_bounded\": true,\n    \"health_score_bounded\": true,\n    \"legacy_tax_burden_synced\": true\n  },\n  \"final\": {\n    \"debt\": 21.604583333333295,\n    \"taxBurden\": 44.77,\n    \"budgetTax\": {\n      \"schema\": 1,\n      \"activeSpendingRule\": \"investment_budget\",\n      \"taxRates\": {\n        \"incomeTax\": 23,\n        \"corporateTax\": 27,\n        \"consumptionTax\": 35,\n        \"payrollTax\": 17,\n        \"wealthTax\": 12,\n        \"greenTax\": 3\n      },\n      \"taxCompliance\": 100,\n      \"evasionRate\": 0,\n      \"administrativeCost\": 14,\n      \"spendingEfficiency\": 61.13599999999997,\n      \"mandatorySpendingRatio\": 60.09600000000046,\n      \"discretionarySpace\": 100,\n      \"capitalExecution\": 76.80000000000014,\n      \"regionalBalance\": 53.599999999999795,\n      \"fiscalTransparency\": 54,\n      \"earmarkingPressure\": 58,\n      \"budgetCredibility\": 100,\n      \"revenueMix\": {\n        \"direct\": 54,\n        \"indirect\": 34,\n        \"payroll\": 9,\n        \"green\": 2\n      },\n      \"lastSnapshot\": {\n        \"weightedRate\": 24.37,\n        \"grossRevenue\": 256.4,\n        \"primaryRevenue\": 285.5,\n        \"primaryExpense\": 101.4,\n        \"primaryBalance\": 184.1,\n        \"fiscalSpace\": 100,\n        \"taxPressure\": 37.4,\n        \"socialReturn\": 55.8,\n        \"investmentReturn\": 77.7\n      },\n      \"history\": [\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 335.2,\n          \"expense\": 100.6,\n          \"balance\": 234.6,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 334,\n          \"expense\": 100.5,\n          \"balance\": 233.5,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 332.8,\n          \"expense\": 100.4,\n          \"balance\": 232.4,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 331.4,\n          \"expense\": 100.2,\n          \"balance\": 231.2,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 330.2,\n          \"expense\": 100.1,\n          \"balance\": 230.1,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 328.8,\n          \"expense\": 100,\n          \"balance\": 228.8,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 327.5,\n          \"expense\": 99.9,\n          \"balance\": 227.6,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 326.1,\n          \"expense\": 99.8,\n          \"balance\": 226.3,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 324.7,\n          \"expense\": 99.7,\n          \"balance\": 225.1,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 323.3,\n          \"expense\": 104.4,\n          \"balance\": 218.9,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 321.8,\n          \"expense\": 104.3,\n          \"balance\": 217.5,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 320.3,\n          \"expense\": 104.2,\n          \"balance\": 216.1,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 318.8,\n          \"expense\": 104.1,\n          \"balance\": 214.7,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 317.3,\n          \"expense\": 104,\n          \"balance\": 213.4,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 315.8,\n          \"expense\": 103.9,\n          \"balance\": 212,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 314.3,\n          \"expense\": 103.7,\n          \"balance\": 210.6,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 312.7,\n          \"expense\": 103.6,\n          \"balance\": 209.1,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 311.2,\n          \"expense\": 103.5,\n          \"balance\": 207.7,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 309.7,\n          \"expense\": 103.4,\n          \"balance\": 206.3,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 308.3,\n          \"expense\": 103.3,\n          \"balance\": 205,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 306.8,\n          \"expense\": 103.2,\n          \"balance\": 203.7,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 305.4,\n          \"expense\": 103.1,\n          \"balance\": 202.4,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 304,\n          \"expense\": 102.9,\n          \"balance\": 201.1,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 302.5,\n          \"expense\": 102.8,\n          \"balance\": 199.7,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 301.1,\n          \"expense\": 102.7,\n          \"balance\": 198.4,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 299.6,\n          \"expense\": 102.6,\n          \"balance\": 197,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 298.2,\n          \"expense\": 102.5,\n          \"balance\": 195.7,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 296.7,\n          \"expense\": 102.4,\n          \"balance\": 194.3,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 295.3,\n          \"expense\": 102.2,\n          \"balance\": 193,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 293.8,\n          \"expense\": 102.1,\n          \"balance\": 191.7,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 292.4,\n          \"expense\": 102,\n          \"balance\": 190.4,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 291,\n          \"expense\": 101.9,\n          \"balance\": 189.1,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 289.6,\n          \"expense\": 101.8,\n          \"balance\": 187.9,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 288.3,\n          \"expense\": 101.7,\n          \"balance\": 186.6,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 286.9,\n          \"expense\": 101.5,\n          \"balance\": 185.4,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        },\n        {\n          \"y\": 2026,\n          \"m\": 1,\n          \"revenue\": 285.5,\n          \"expense\": 101.4,\n          \"balance\": 184.1,\n          \"compliance\": 100.7,\n          \"evasion\": -1.1,\n          \"fiscalSpace\": 100\n        }\n      ]\n    },\n    \"health\": 88\n  },\n  \"passed\": true\n}\n",
+    "stderr": "",
+    "passed": true,
+    "checks": {
+      "default_state_present": true,
+      "snapshot_finite": true,
+      "controls_apply": true,
+      "effect_bridge": true,
+      "long_run_240_months": true,
+      "history_bounded": true,
+      "health_score_bounded": true,
+      "legacy_tax_burden_synced": true
+    },
+    "final": {
+      "debt": 21.604583333333295,
+      "taxBurden": 44.77,
+      "budgetTax": {
+        "schema": 1,
+        "activeSpendingRule": "investment_budget",
+        "taxRates": {
+          "incomeTax": 23,
+          "corporateTax": 27,
+          "consumptionTax": 35,
+          "payrollTax": 17,
+          "wealthTax": 12,
+          "greenTax": 3
+        },
+        "taxCompliance": 100,
+        "evasionRate": 0,
+        "administrativeCost": 14,
+        "spendingEfficiency": 61.13599999999997,
+        "mandatorySpendingRatio": 60.09600000000046,
+        "discretionarySpace": 100,
+        "capitalExecution": 76.80000000000014,
+        "regionalBalance": 53.599999999999795,
+        "fiscalTransparency": 54,
+        "earmarkingPressure": 58,
+        "budgetCredibility": 100,
+        "revenueMix": {
+          "direct": 54,
+          "indirect": 34,
+          "payroll": 9,
+          "green": 2
+        },
+        "lastSnapshot": {
+          "weightedRate": 24.37,
+          "grossRevenue": 256.4,
+          "primaryRevenue": 285.5,
+          "primaryExpense": 101.4,
+          "primaryBalance": 184.1,
+          "fiscalSpace": 100,
+          "taxPressure": 37.4,
+          "socialReturn": 55.8,
+          "investmentReturn": 77.7
+        },
+        "history": [
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 335.2,
+            "expense": 100.6,
+            "balance": 234.6,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 334,
+            "expense": 100.5,
+            "balance": 233.5,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 332.8,
+            "expense": 100.4,
+            "balance": 232.4,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 331.4,
+            "expense": 100.2,
+            "balance": 231.2,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 330.2,
+            "expense": 100.1,
+            "balance": 230.1,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 328.8,
+            "expense": 100,
+            "balance": 228.8,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 327.5,
+            "expense": 99.9,
+            "balance": 227.6,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 326.1,
+            "expense": 99.8,
+            "balance": 226.3,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 324.7,
+            "expense": 99.7,
+            "balance": 225.1,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 323.3,
+            "expense": 104.4,
+            "balance": 218.9,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 321.8,
+            "expense": 104.3,
+            "balance": 217.5,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 320.3,
+            "expense": 104.2,
+            "balance": 216.1,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 318.8,
+            "expense": 104.1,
+            "balance": 214.7,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 317.3,
+            "expense": 104,
+            "balance": 213.4,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 315.8,
+            "expense": 103.9,
+            "balance": 212,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 314.3,
+            "expense": 103.7,
+            "balance": 210.6,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 312.7,
+            "expense": 103.6,
+            "balance": 209.1,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 311.2,
+            "expense": 103.5,
+            "balance": 207.7,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 309.7,
+            "expense": 103.4,
+            "balance": 206.3,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 308.3,
+            "expense": 103.3,
+            "balance": 205,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 306.8,
+            "expense": 103.2,
+            "balance": 203.7,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 305.4,
+            "expense": 103.1,
+            "balance": 202.4,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 304,
+            "expense": 102.9,
+            "balance": 201.1,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 302.5,
+            "expense": 102.8,
+            "balance": 199.7,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 301.1,
+            "expense": 102.7,
+            "balance": 198.4,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 299.6,
+            "expense": 102.6,
+            "balance": 197,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 298.2,
+            "expense": 102.5,
+            "balance": 195.7,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 296.7,
+            "expense": 102.4,
+            "balance": 194.3,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 295.3,
+            "expense": 102.2,
+            "balance": 193,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 293.8,
+            "expense": 102.1,
+            "balance": 191.7,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 292.4,
+            "expense": 102,
+            "balance": 190.4,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 291,
+            "expense": 101.9,
+            "balance": 189.1,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 289.6,
+            "expense": 101.8,
+            "balance": 187.9,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 288.3,
+            "expense": 101.7,
+            "balance": 186.6,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 286.9,
+            "expense": 101.5,
+            "balance": 185.4,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          },
+          {
+            "y": 2026,
+            "m": 1,
+            "revenue": 285.5,
+            "expense": 101.4,
+            "balance": 184.1,
+            "compliance": 100.7,
+            "evasion": -1.1,
+            "fiscalSpace": 100
+          }
+        ]
+      },
+      "health": 88
+    }
+  },
+  "checks": {
+    "phase18_declared": true,
+    "official_base_preserved": true,
+    "save_schema_three_preserved": true,
+    "state_factory_has_budget_tax": true,
+    "budget_tax_system_has_schema": true,
+    "monthly_bridge_installed": true,
+    "ui_panels_present": true,
+    "renderer_binds_actions": true,
+    "mobile_css_present": true,
+    "tax_catalog_complete": true,
+    "history_limit_declared": true,
+    "runtime_passed": true
+  },
+  "check_count": 20,
+  "passed": true
+}

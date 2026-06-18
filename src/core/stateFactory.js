@@ -5,6 +5,11 @@ import { AI_COUNTRIES } from "../data/diplomacyData.js";
 import { SECURITY_FORCES } from "../data/securityData.js";
 import { createPopulationState } from "../systems/population.js";
 import { createDeepEconomyState } from "../systems/economyDeep.js";
+import { createBudgetTaxState } from "../systems/budgetTax.js";
+import { createInstitutionalState } from "../systems/governmentInstitutions.js";
+import { createCabinetState } from "../systems/cabinetAdministration.js";
+import { createMediaPublicState } from "../systems/media.js";
+import { createWorldDiplomacyState } from "../systems/worldDiplomacy.js";
 
 export function createNewState(overrides = {}) {
   const base = {
@@ -47,6 +52,11 @@ export function createNewState(overrides = {}) {
     },
     population: createPopulationState(),
     deepEconomy: createDeepEconomyState(),
+    budgetTax: createBudgetTaxState(),
+    institutions: createInstitutionalState(),
+    cabinetAdministration: createCabinetState(),
+    mediaPublic: createMediaPublicState(),
+    worldDiplomacy: createWorldDiplomacyState(),
     feed: []
   };
 

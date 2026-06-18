@@ -1,17 +1,17 @@
 {
   "project": "DIPLOCRAFT",
   "product_name": "DIPLOCRAFT — Simulador Político e Geopolítico",
-  "version": "1.6.1",
-  "stage_number": 17,
-  "stage_name": "Economia Profunda",
-  "status": "DEEP_ECONOMY_VERIFIED",
+  "version": "1.7.4",
+  "stage_number": 22,
+  "stage_name": "Diplomacia Mundial",
+  "status": "WORLD_DIPLOMACY_VERIFIED",
   "date": "18/06/2026",
   "date_iso": "2026-06-18",
-  "time": "10:31",
+  "time": "18:12",
   "timezone": "America/Sao_Paulo",
-  "stamp": "20260618_1031",
-  "base_version": "1.6.0",
-  "base_stage": "Fase 16 — País e População",
+  "stamp": "20260618_1812",
+  "base_version": "1.7.3",
+  "base_stage": "Fase 21 — Imprensa, Mídia e Opinião Pública",
   "save_schema": 3,
   "save_key": "diplocraft_save_v101",
   "content_schema": 1,
@@ -27,36 +27,84 @@
     "es"
   ],
   "entrypoint": "src/game.js",
-  "summary": "Simulação econômica profunda com PIB real e nominal, política fiscal, política monetária, setor externo, investimentos, renda, custo de vida e histórico econômico conectado à população e ao Core Loop 2.0.",
-  "build_summary": "Build oficial da Fase 17 aplicada sobre a v1.6.0: economia profunda integrada à estrutura existente, sem remover sistemas anteriores, com migração aditiva e auditorias anti-quebra.",
+  "summary": "Sistema profundo de diplomacia mundial com doutrinas diplomáticas, soft power, confiança global, acesso comercial, blocos geopolíticos, agenda internacional, ações multilaterais e integração com economia, mídia, instituições e segurança.",
+  "build_summary": "Build oficial da Fase 22 aplicada sobre a v1.7.3: Diplomacia Mundial integrada de forma aditiva, preservando imprensa, gabinete, instituições, orçamento, economia profunda, país e população, saves, assets, PWA e auditorias anti-quebra.",
   "features": [
-    "PIB real e nominal com crescimento anualizado, crescimento trimestral, hiato do produto e produtividade",
-    "Política fiscal com regra ativa, receita primária, despesa primária, resultado primário, serviço da dívida e saldo fiscal",
-    "Política monetária com meta de inflação, impulso de crédito, defesa cambial, juros e inflação interligados",
-    "Setor externo com exportações, importações, câmbio, reservas internacionais e conta corrente",
-    "Economia das famílias com salário real, custo de vida, endividamento, confiança do consumidor, pobreza e segurança da classe média",
-    "Investimento privado, investimento público, confiança empresarial, informalidade e prêmio de risco",
-    "Programas produtivos e estratégias comerciais com custo, cooldown, pontos de ação e efeitos atrasados",
-    "Histórico econômico mensal e trimestral limitado para evitar crescimento infinito do save",
-    "Integração mensal com população, aprovação, estabilidade, inflação, desemprego, dívida, mercado e Core Loop 2.0",
-    "Compatibilidade preservada com saves schema 3, criação de governo, país/população, PWA, mobile, desktop e Anti-Break Core"
+    "Sistema profundo de diplomacia mundial com soft power, confiança global, acesso comercial, alavancagem negociadora, liderança regional e neutralidade",
+    "Doutrinas diplomáticas selecionáveis: multialinhamento equilibrado, liderança regional, pragmatismo econômico e diplomacia por valores",
+    "Blocos globais dinâmicos com alinhamento, comércio, tensão e risco: Ocidente, Ásia-Pacífico, Europa, Regional, Eurásia e Sul Global",
+    "Agenda internacional acompanhando comércio, clima, segurança, tecnologia, ajuda humanitária e energia",
+    "Ações diplomáticas com custo, PA, cooldown e efeito atrasado: ONU, cúpula regional, missão comercial, mediação de paz, coalizão climática, não alinhamento, rede consular e agência de exportação",
+    "Ciclo mensal de diplomacia mundial integrado a economia profunda, orçamento, instituições, gabinete, mídia, população, aprovação, estabilidade e Core Loop 2.0",
+    "Interface mobile-first na aba Diplomacia com visão mundial, doutrina, países, blocos, agenda, ações, tratados e histórico",
+    "Localização completa em PT-BR, inglês e espanhol para todos os novos textos da Fase 22",
+    "Documento UPLOAD_GIT_BASH_PROMPT_DIPLOCRAFT.txt preservado na raiz do ZIP para novas conversas com caminho oficial de upload",
+    "Compatibilidade preservada com saves schema 3, chave diplocraft_save_v101, assets existentes, PWA, rolagem e todos os sistemas até a Fase 21"
   ],
   "changelog": {
     "Adicionado": [
-      "Motor de economia profunda com PIB real/nominal, produtividade, investimento, setor externo e renda das famílias.",
-      "Regra fiscal e política monetária selecionáveis pelo jogador com efeitos reais e cooldown institucional.",
-      "Programas produtivos e comerciais com custo, pontos de ação, atraso e integração ao histórico econômico.",
-      "Painel econômico expandido com diagnóstico, saúde econômica, setor fiscal, setor externo e histórico mensal."
+      "Sistema de diplomacia mundial com soft power, confiança global, acesso comercial, alavancagem negociadora, liderança regional, neutralidade, risco de segurança e escrutínio público.",
+      "Doutrinas diplomáticas selecionáveis com efeitos reais no país e no tabuleiro internacional.",
+      "Blocos globais dinâmicos com alinhamento, comércio, tensão e risco.",
+      "Agenda internacional por temas estratégicos e ações diplomáticas com custo, PA, cooldown e impacto atrasado.",
+      "Histórico mensal de diplomacia mundial e diagnóstico estratégico integrado ao relatório mensal."
     ],
     "Corrigido": [
-      "A economia era forte como painel macro, mas ainda dependia de poucos indicadores nacionais sem setor externo detalhado.",
-      "PIB, inflação, desemprego e dívida agora têm ponte com produtividade, investimento, câmbio, reservas e custo de vida."
+      "A aba Diplomacia deixou de ser apenas lista de países/tratados e passou a funcionar como sistema estratégico profundo.",
+      "Ações diplomáticas avançadas agora possuem cooldown próprio, custo fiscal, consumo de capacidade e efeitos de médio prazo.",
+      "O risco diplomático agora considera tensão global, neutralidade, blocos, agenda internacional e credibilidade externa."
     ],
     "Preservado": [
-      "Todos os sistemas da Fase 16, incluindo população, criação de governo, Core Loop 2.0, saves schema 3, PWA, rolagem e localização."
+      "Todos os sistemas da Fase 21: imprensa e opinião pública, gabinete e administração, governo e instituições, orçamento e tributação, economia profunda, população, criação de governo, Core Loop 2.0, saves schema 3, PWA, mobile, desktop, assets, localização e documento de upload Git Bash."
     ]
   },
   "history": [
+    {
+      "version": "1.7.3",
+      "title": "Fase 21 Imprensa, Mídia e Opinião Pública",
+      "date_time": "18/06/2026 17:26",
+      "items": [
+        "Sistema profundo de imprensa, mídia e opinião pública com humor público, hostilidade, credibilidade, doutrinas, veículos, agendas e ações de comunicação.",
+        "Integração com gabinete, instituições, economia, orçamento, aprovação, estabilidade e Core Loop 2.0."
+      ]
+    },
+    {
+      "version": "1.7.2",
+      "title": "Fase 20 Gabinete e Administração",
+      "date_time": "18/06/2026 16:47",
+      "items": [
+        "Sistema profundo de gabinete e administração com saúde administrativa, governabilidade, entrega e risco de execução",
+        "Mapa de oito portfólios ministeriais: Casa Civil, Economia, Justiça, Saúde, Educação, Infraestrutura, Relações Exteriores e Planejamento",
+        "Modelos de gabinete selecionáveis: equilíbrio de coalizão, gabinete técnico, pacto federativo regional e gabinete orientado a entregas",
+        "Ações administrativas com custo, PA, cooldown e efeitos atrasados: contratos de desempenho, triagem de nomeações, sala de situação, digitalização, escritórios regionais e reforma ministerial",
+        "Ciclo mensal de coordenação, competência técnica, capacidade de entrega, execução orçamentária, carga administrativa, pressão por cargos e exposição a escândalos",
+        "Integração direta com Core Loop 2.0, governo e instituições, orçamento e tributação, economia profunda, população, aprovação, estabilidade, coalizão, corrupção e mercado"
+      ]
+    },
+    {
+      "version": "1.7.2",
+      "title": "Fase 20 Gabinete e Administração",
+      "date_time": "18/06/2026 16:47",
+      "items": [
+        "Gabinete, ministérios, coordenação, capacidade administrativa, entrega de políticas, nomeações, risco de escândalo e ações administrativas profundas."
+      ]
+    },
+    {
+      "version": "1.7.0",
+      "title": "Fase 18 Orçamento e Tributação",
+      "date_time": "18/06/2026 15:18",
+      "items": [
+        "Orçamento público, bases tributárias, conformidade, sonegação, qualidade do gasto e regras fiscais integradas à economia profunda."
+      ]
+    },
+    {
+      "version": "1.6.1",
+      "title": "Fase 17 Economia Profunda",
+      "date_time": "18/06/2026 10:31",
+      "items": [
+        "PIB real/nominal, setor externo, produtividade, investimento, renda, custo de vida e histórico econômico conectados ao país e à população."
+      ]
+    },
     {
       "version": "1.6.0",
       "title": "Fase 16 País e População",
@@ -195,8 +243,8 @@
     }
   ],
   "next_release": {
-    "version": "1.6.2",
-    "stage": "Fase 18 — Infraestrutura Nacional e Cadeias Produtivas"
+    "version": "1.7.5",
+    "stage": "Fase 23 — Defesa, Inteligência e Segurança Internacional"
   },
   "asset_paths_changed": false,
   "asset_pipeline": {
@@ -382,5 +430,80 @@
     "population_bridge": true,
     "core_loop_bridge": true,
     "audit": "tests/run_deep_economy_audit.py"
+  },
+  "budget_tax": {
+    "enabled": true,
+    "schema": 1,
+    "audit": "tests/run_budget_tax_audit.py",
+    "history_limit": 36,
+    "tax_instruments": 6,
+    "spending_rules": 4,
+    "structural_actions": 6
+  },
+  "government_institutions": {
+    "enabled": true,
+    "schema": 1,
+    "audit": "tests/run_government_institutions_audit.py",
+    "institution_profiles": 8,
+    "institutional_reforms": 4,
+    "institutional_actions": 6,
+    "protocols": 4,
+    "history_limit": 36,
+    "save_migration": "additive_schema3_preserved",
+    "legacy_bridge": true,
+    "budget_tax_bridge": true,
+    "deep_economy_bridge": true,
+    "core_loop_bridge": true
+  },
+  "release_history": [
+    {
+      "version": "1.7.2",
+      "title": "Fase 20 Gabinete e Administração",
+      "date_time": "18/06/2026 16:47",
+      "items": [
+        "Gabinete, ministérios, coordenação, capacidade administrativa, entrega de políticas, nomeações, risco de escândalo e ações administrativas profundas."
+      ]
+    }
+  ],
+  "cabinet_administration": {
+    "enabled": true,
+    "schema": 1,
+    "audit": "tests/run_cabinet_administration_audit.py",
+    "portfolios": 8,
+    "cabinet_styles": 4,
+    "administrative_actions": 6,
+    "history_limit": 36,
+    "save_migration": "additive_schema3_preserved",
+    "institution_bridge": true,
+    "budget_tax_bridge": true,
+    "deep_economy_bridge": true,
+    "core_loop_bridge": true
+  },
+  "media_public_opinion": {
+    "enabled": true,
+    "schema": 1,
+    "history_limit": 36,
+    "headline_limit": 14,
+    "outlets": 8,
+    "doctrines": 4,
+    "agendas": 6,
+    "actions": 8,
+    "monthly_core_loop_bridge": true,
+    "localized": [
+      "pt-BR",
+      "en",
+      "es"
+    ],
+    "audit": "tests/run_media_public_opinion_audit.py"
+  },
+  "world_diplomacy": {
+    "enabled": true,
+    "schema": 1,
+    "global_blocs": 6,
+    "world_agendas": 6,
+    "diplomacy_doctrines": 4,
+    "strategic_actions": 8,
+    "monthly_cycle": true,
+    "audit": "tests/run_world_diplomacy_audit.py"
   }
 }

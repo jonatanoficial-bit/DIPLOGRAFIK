@@ -1,7 +1,7 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "1.6.1",
-  "phase": "Economia Profunda",
+  "version": "1.7.1",
+  "phase": "Governo e Instituições",
   "static_checks": {
     "safe_area_css": true,
     "keyboard_css_contract": true,
@@ -89,7 +89,7 @@
         },
         "tab_scroll": {
           "saved": 0,
-          "restored": 33
+          "restored": 2
         }
       },
       "console_errors": [],

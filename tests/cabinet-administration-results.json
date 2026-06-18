@@ -1,0 +1,61 @@
+{
+  "project": "DIPLOCRAFT",
+  "version": "1.7.2",
+  "phase": "Gabinete e Administração",
+  "static_checks": {
+    "phase20_declared": true,
+    "official_base_preserved": true,
+    "save_schema_three_preserved": true,
+    "state_factory_has_cabinet": true,
+    "cabinet_system_has_schema": true,
+    "monthly_bridge_installed": true,
+    "ui_panels_present": true,
+    "renderer_binds_actions": true,
+    "game_actions_present": true,
+    "mobile_css_present": true,
+    "catalog_complete": true,
+    "upload_prompt_included": true
+  },
+  "runtime": {
+    "returncode": 0,
+    "stdout": "{\n  \"checks\": {\n    \"default_state_present\": true,\n    \"snapshot_finite\": true,\n    \"style_applies\": true,\n    \"effect_bridge\": true,\n    \"history_bounded\": true,\n    \"health_score_bounded\": true,\n    \"core_loop_integration\": true,\n    \"long_run_420_days\": true\n  },\n  \"final\": {\n    \"health\": 48,\n    \"history\": 36,\n    \"monthly\": {\n      \"score\": 44.08461629632166,\n      \"risk\": 27.144812000000037,\n      \"governability\": 44.658256565083754\n    }\n  },\n  \"passed\": true\n}\n",
+    "stderr": "",
+    "passed": true,
+    "checks": {
+      "default_state_present": true,
+      "snapshot_finite": true,
+      "style_applies": true,
+      "effect_bridge": true,
+      "history_bounded": true,
+      "health_score_bounded": true,
+      "core_loop_integration": true,
+      "long_run_420_days": true
+    },
+    "final": {
+      "health": 48,
+      "history": 36,
+      "monthly": {
+        "score": 44.08461629632166,
+        "risk": 27.144812000000037,
+        "governability": 44.658256565083754
+      }
+    }
+  },
+  "checks": {
+    "phase20_declared": true,
+    "official_base_preserved": true,
+    "save_schema_three_preserved": true,
+    "state_factory_has_cabinet": true,
+    "cabinet_system_has_schema": true,
+    "monthly_bridge_installed": true,
+    "ui_panels_present": true,
+    "renderer_binds_actions": true,
+    "game_actions_present": true,
+    "mobile_css_present": true,
+    "catalog_complete": true,
+    "upload_prompt_included": true,
+    "runtime_passed": true
+  },
+  "check_count": 21,
+  "passed": true
+}

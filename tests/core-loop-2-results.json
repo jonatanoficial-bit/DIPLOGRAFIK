@@ -1,6 +1,6 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "1.6.0",
+  "version": "1.7.1",
   "suite": "core-loop-2-audit",
   "static_checks": {
     "version_at_least_1_5_0": true,
@@ -236,20 +236,20 @@
   "check_count": 88,
   "passed_checks": 88,
   "simulation_averages": {
-    "approval": 40.056,
-    "economy": 95.367,
-    "stability": 36.233,
-    "politicalCapital": 36.207,
-    "loyalty": 49.044,
-    "globalTension": 44.776,
-    "treasury": 8534.25,
-    "gdp": 3780.5,
-    "debt": 19.011,
-    "crisis": 5.24,
-    "populationSatisfaction": 71.192,
-    "qualityOfLife": 79.145,
-    "regionalInequality": 0,
-    "poverty": 0
+    "approval": 33.56,
+    "economy": 61.706,
+    "stability": 37.196,
+    "politicalCapital": 35.656,
+    "loyalty": 50.108,
+    "globalTension": 44.926,
+    "treasury": 19141,
+    "gdp": 3397.917,
+    "debt": 62.446,
+    "crisis": 4.388,
+    "populationSatisfaction": 63.905,
+    "qualityOfLife": 71.18,
+    "regionalInequality": 19.551,
+    "poverty": 28.135
   },
   "balance_warnings": [],
   "passed": true

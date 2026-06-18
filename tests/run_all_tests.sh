@@ -40,4 +40,8 @@ python3 tests/run_core_loop_2_audit.py
 python3 tests/run_government_creation_audit.py
 python3 tests/run_population_audit.py
 python3 tests/run_deep_economy_audit.py
+python3 tests/run_budget_tax_audit.py
+python3 tests/run_government_institutions_audit.py
 python3 tests/run_quality_gate.py
+
+python3 tests/run_world_diplomacy_audit.py

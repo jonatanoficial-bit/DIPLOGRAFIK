@@ -1,9 +1,9 @@
 {
   "name": "diplocraft",
-  "version": "1.6.0",
+  "version": "1.7.4",
   "private": true,
   "type": "module",
-  "description": "DIPLOCRAFT political simulator with complete government creation, party logo selection, Core Loop 2.0, multi-slot saves and full localization",
+  "description": "DIPLOCRAFT political simulator with world diplomacy, media, cabinet, institutions, budget, economy, country/population and full localization",
   "scripts": {
     "test": "python3 tests/run_node_tests.py",
     "test:simulation": "node tests/run_simulation_matrix.mjs",
@@ -22,7 +22,11 @@
     "test:saves": "python3 tests/run_save_architecture_audit.py",
     "test:core-loop": "python3 tests/run_core_loop_2_audit.py",
     "test:government-creation": "python3 tests/run_government_creation_audit.py",
-    "test:population": "python3 tests/run_population_audit.py"
+    "test:population": "python3 tests/run_population_audit.py",
+    "test:budget-tax": "python3 tests/run_budget_tax_audit.py",
+    "test:institutions": "python3 tests/run_government_institutions_audit.py",
+    "test:cabinet": "python3 tests/run_cabinet_administration_audit.py",
+    "test:world-diplomacy": "python3 tests/run_world_diplomacy_audit.py"
   },
   "engines": {
     "node": ">=20"

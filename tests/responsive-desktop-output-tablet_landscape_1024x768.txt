@@ -1,5 +1,3 @@
 STATIC PASS 9/9
 PASS tablet_landscape_1024x768 23/23
-OVERALL PASS 32 checSTATIC PASS 9/9
-PASS tablet_landscape_1024x768 23/23
 OVERALL PASS 32 checks

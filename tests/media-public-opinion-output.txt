@@ -1,0 +1,25 @@
+PASS phase21_declared
+PASS official_base_preserved
+PASS save_schema_three_preserved
+PASS state_factory_has_media_public
+PASS media_system_has_schema
+PASS monthly_bridge_installed
+PASS ui_panels_present
+PASS renderer_binds_actions
+PASS game_actions_present
+PASS mobile_css_present
+PASS catalog_complete
+PASS upload_prompt_included
+PASS guide_included
+PASS runtime.default_state_present
+PASS runtime.catalog_counts
+PASS runtime.snapshot_finite
+PASS runtime.doctrine_applies
+PASS runtime.effect_bridge
+PASS runtime.headline_enriched
+PASS runtime.press_answer_integrated
+PASS runtime.history_bounded
+PASS runtime.health_score_bounded
+PASS runtime.core_loop_integration
+PASS runtime.long_run_420_days
+OVERALL PASS — 25 checks

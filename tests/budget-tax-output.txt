@@ -1,0 +1,20 @@
+PASS phase18_declared
+PASS official_base_preserved
+PASS save_schema_three_preserved
+PASS state_factory_has_budget_tax
+PASS budget_tax_system_has_schema
+PASS monthly_bridge_installed
+PASS ui_panels_present
+PASS renderer_binds_actions
+PASS mobile_css_present
+PASS tax_catalog_complete
+PASS history_limit_declared
+PASS runtime.default_state_present
+PASS runtime.snapshot_finite
+PASS runtime.controls_apply
+PASS runtime.effect_bridge
+PASS runtime.long_run_240_months
+PASS runtime.history_bounded
+PASS runtime.health_score_bounded
+PASS runtime.legacy_tax_burden_synced
+OVERALL PASS — 20 checks

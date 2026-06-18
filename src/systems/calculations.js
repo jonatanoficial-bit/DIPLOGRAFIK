@@ -44,6 +44,64 @@ export function normalizeState(state) {
     state.deepEconomy.monthlyHistory = Array.isArray(state.deepEconomy.monthlyHistory) ? state.deepEconomy.monthlyHistory.slice(-48) : [];
     state.deepEconomy.quarterHistory = Array.isArray(state.deepEconomy.quarterHistory) ? state.deepEconomy.quarterHistory.slice(-24) : [];
   }
+
+  if (state.budgetTax && typeof state.budgetTax === "object") {
+    const btPctKeys = ["taxCompliance","evasionRate","spendingEfficiency","mandatorySpendingRatio","discretionarySpace","capitalExecution","regionalBalance","fiscalTransparency","earmarkingPressure","budgetCredibility"];
+    for (const key of btPctKeys) state.budgetTax[key] = clamp(Number.isFinite(Number(state.budgetTax[key])) ? Number(state.budgetTax[key]) : 50, 0, 100);
+    state.budgetTax.administrativeCost = clamp(Number.isFinite(Number(state.budgetTax.administrativeCost)) ? Number(state.budgetTax.administrativeCost) : 14, 2, 35);
+    state.budgetTax.history = Array.isArray(state.budgetTax.history) ? state.budgetTax.history.slice(-36) : [];
+  }
+
+  if (state.institutions && typeof state.institutions === "object") {
+    const instPctKeys = ["ruleOfLaw","checksAndBalances","judicialIndependence","bureaucraticCapacity","regulatoryQuality","federalCoordination","transparency","oversightPressure","constitutionalTension","coalitionDiscipline","legislativeBacklog","judicialBacklog","appointmentBalance","trust","institutionalScore"];
+    for (const key of instPctKeys) state.institutions[key] = clamp(Number.isFinite(Number(state.institutions[key])) ? Number(state.institutions[key]) : 50, 0, 100);
+    state.institutions.reformMomentum = clamp(Number.isFinite(Number(state.institutions.reformMomentum)) ? Number(state.institutions.reformMomentum) : 0, -25, 25);
+    state.institutions.history = Array.isArray(state.institutions.history) ? state.institutions.history.slice(-36) : [];
+    state.institutions.institutions = Array.isArray(state.institutions.institutions) ? state.institutions.institutions.map(item => ({
+      ...item,
+      autonomy: clamp(Number.isFinite(Number(item.autonomy)) ? Number(item.autonomy) : 50, 0, 100),
+      efficiency: clamp(Number.isFinite(Number(item.efficiency)) ? Number(item.efficiency) : 50, 0, 100),
+      trust: clamp(Number.isFinite(Number(item.trust)) ? Number(item.trust) : 50, 0, 100),
+      risk: clamp(Number.isFinite(Number(item.risk)) ? Number(item.risk) : 35, 0, 100)
+    })) : [];
+  }
+
+  if (state.cabinetAdministration && typeof state.cabinetAdministration === "object") {
+    const cabPctKeys = ["cabinetCohesion","cabinetCompetence","policyCoordination","deliveryCapacity","bureaucraticEfficiency","administrativeLoad","appointmentPressure","budgetExecution","federalAlignment","scandalExposure","cabinetRisk"];
+    for (const key of cabPctKeys) state.cabinetAdministration[key] = clamp(Number.isFinite(Number(state.cabinetAdministration[key])) ? Number(state.cabinetAdministration[key]) : 50, 0, 100);
+    state.cabinetAdministration.history = Array.isArray(state.cabinetAdministration.history) ? state.cabinetAdministration.history.slice(-36) : [];
+    state.cabinetAdministration.portfolios = Array.isArray(state.cabinetAdministration.portfolios) ? state.cabinetAdministration.portfolios.map(item => ({
+      ...item,
+      performance: clamp(Number.isFinite(Number(item.performance)) ? Number(item.performance) : 50, 0, 100),
+      risk: clamp(Number.isFinite(Number(item.risk)) ? Number(item.risk) : 30, 0, 100),
+      vacancies: clamp(Number.isFinite(Number(item.vacancies)) ? Number(item.vacancies) : 0, 0, 5),
+      delivery: clamp(Number.isFinite(Number(item.delivery)) ? Number(item.delivery) : 50, 0, 100),
+      politicalCost: clamp(Number.isFinite(Number(item.politicalCost)) ? Number(item.politicalCost) : 20, 0, 100)
+    })) : [];
+  }
+
+
+  if (state.mediaPublic && typeof state.mediaPublic === "object") {
+    const mediaPctKeys = ["publicMood","trust","pressFreedom","narrativeControl","messageDiscipline","policyClarity","socialReach","regionalReach","polarization","disinformationRisk","scandalAttention","hostility","agendaPressure"];
+    for (const key of mediaPctKeys) state.mediaPublic[key] = clamp(Number.isFinite(Number(state.mediaPublic[key])) ? Number(state.mediaPublic[key]) : 50, 0, 100);
+    state.mediaPublic.history = Array.isArray(state.mediaPublic.history) ? state.mediaPublic.history.slice(-36) : [];
+    state.mediaPublic.outlets = Array.isArray(state.mediaPublic.outlets) ? state.mediaPublic.outlets.map(item => ({
+      ...item,
+      reach: clamp(Number.isFinite(Number(item.reach)) ? Number(item.reach) : 50, 0, 100),
+      trust: clamp(Number.isFinite(Number(item.trust)) ? Number(item.trust) : 50, 0, 100),
+      stance: clamp(Number.isFinite(Number(item.stance)) ? Number(item.stance) : 50, 0, 100),
+      volatility: clamp(Number.isFinite(Number(item.volatility)) ? Number(item.volatility) : 30, 0, 100),
+      pressure: clamp(Number.isFinite(Number(item.pressure)) ? Number(item.pressure) : 35, 0, 100),
+      relationship: clamp(Number.isFinite(Number(item.relationship)) ? Number(item.relationship) : 50, 0, 100)
+    })) : [];
+    state.mediaPublic.agendas = Array.isArray(state.mediaPublic.agendas) ? state.mediaPublic.agendas.map(item => ({
+      ...item,
+      pressure: clamp(Number.isFinite(Number(item.pressure)) ? Number(item.pressure) : 35, 0, 100),
+      salience: clamp(Number.isFinite(Number(item.salience)) ? Number(item.salience) : 40, 0, 100),
+      trend: clamp(Number.isFinite(Number(item.trend)) ? Number(item.trend) : 0, -25, 25)
+    })) : [];
+  }
+
 }
 
 export function voteChance(state) {

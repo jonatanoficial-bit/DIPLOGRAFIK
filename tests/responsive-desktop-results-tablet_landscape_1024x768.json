@@ -1,7 +1,7 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "1.6.1",
-  "phase": "Economia Profunda",
+  "version": "1.7.3",
+  "phase": "Imprensa, Mídia e Opinião Pública",
   "execution_model": "one isolated browser process per desktop viewport + deterministic aggregator",
   "static_checks": {
     "desktop_module_exists": true,

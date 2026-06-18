@@ -1,0 +1,20 @@
+PASS phase19_declared
+PASS official_base_preserved
+PASS save_schema_three_preserved
+PASS state_factory_has_institutions
+PASS institution_system_has_schema
+PASS monthly_bridge_installed
+PASS ui_panels_present
+PASS renderer_binds_actions
+PASS game_actions_present
+PASS mobile_css_present
+PASS catalog_complete
+PASS runtime.default_state_present
+PASS runtime.snapshot_finite
+PASS runtime.reform_applies
+PASS runtime.effect_bridge
+PASS runtime.history_bounded
+PASS runtime.health_score_bounded
+PASS runtime.core_loop_integration
+PASS runtime.long_run_420_days
+OVERALL PASS — 20 checks

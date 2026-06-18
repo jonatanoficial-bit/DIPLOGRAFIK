@@ -1,11 +1,11 @@
 {
   "generated_from": "build.config.json",
-  "source_sha256": "16afef7268ae49e56ddffa8101c4a59f3fa69d6ced3ca5d19034b4e92629ed50",
+  "source_sha256": "c78785f5db9945c68377ed0b8d680999ab64668f4c232b9ae48e94574fa3e873",
   "project": "DIPLOCRAFT",
-  "version": "1.6.1",
+  "version": "1.7.4",
   "entrypoint": "src/game.js",
-  "source_file_count": 56,
-  "loaded_module_count": 56,
+  "source_file_count": 64,
+  "loaded_module_count": 64,
   "loaded_modules": [
     "src/core/assets.js",
     "src/core/build.js",
@@ -24,6 +24,8 @@
     "src/core/storage.js",
     "src/data/assetCatalog.js",
     "src/data/avatars.js",
+    "src/data/budgetTaxData.js",
+    "src/data/cabinetAdministrationData.js",
     "src/data/content.js",
     "src/data/crisisData.js",
     "src/data/diplomacyData.js",
@@ -32,6 +34,7 @@
     "src/data/electionData.js",
     "src/data/governmentCreationData.js",
     "src/data/governmentData.js",
+    "src/data/governmentInstitutionData.js",
     "src/data/mediaData.js",
     "src/data/monetizationData.js",
     "src/data/parties.js",
@@ -40,10 +43,13 @@
     "src/data/releaseData.js",
     "src/data/securityData.js",
     "src/data/tutorialData.js",
+    "src/data/worldDiplomacyData.js",
     "src/game.js",
     "src/i18n/locales/en.js",
     "src/i18n/locales/es.js",
     "src/i18n/locales/pt-BR.js",
+    "src/systems/budgetTax.js",
+    "src/systems/cabinetAdministration.js",
     "src/systems/calculations.js",
     "src/systems/coreLoop.js",
     "src/systems/crisis.js",
@@ -54,11 +60,13 @@
     "src/systems/events.js",
     "src/systems/government.js",
     "src/systems/governmentCreation.js",
+    "src/systems/governmentInstitutions.js",
     "src/systems/media.js",
     "src/systems/monetization.js",
     "src/systems/population.js",
     "src/systems/progression.js",
     "src/systems/security.js",
+    "src/systems/worldDiplomacy.js",
     "src/ui/audio.js",
     "src/ui/feedback.js",
     "src/ui/render.js",
@@ -152,11 +160,31 @@
     },
     {
       "from": "src/core/stateFactory.js",
+      "to": "src/systems/budgetTax.js"
+    },
+    {
+      "from": "src/core/stateFactory.js",
+      "to": "src/systems/cabinetAdministration.js"
+    },
+    {
+      "from": "src/core/stateFactory.js",
       "to": "src/systems/economyDeep.js"
     },
     {
       "from": "src/core/stateFactory.js",
+      "to": "src/systems/governmentInstitutions.js"
+    },
+    {
+      "from": "src/core/stateFactory.js",
+      "to": "src/systems/media.js"
+    },
+    {
+      "from": "src/core/stateFactory.js",
       "to": "src/systems/population.js"
+    },
+    {
+      "from": "src/core/stateFactory.js",
+      "to": "src/systems/worldDiplomacy.js"
     },
     {
       "from": "src/core/storage.js",
@@ -236,6 +264,14 @@
     },
     {
       "from": "src/game.js",
+      "to": "src/data/budgetTaxData.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/data/cabinetAdministrationData.js"
+    },
+    {
+      "from": "src/game.js",
       "to": "src/data/content.js"
     },
     {
@@ -268,6 +304,10 @@
     },
     {
       "from": "src/game.js",
+      "to": "src/data/governmentInstitutionData.js"
+    },
+    {
+      "from": "src/game.js",
       "to": "src/data/mediaData.js"
     },
     {
@@ -281,6 +321,18 @@
     {
       "from": "src/game.js",
       "to": "src/data/securityData.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/data/worldDiplomacyData.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/systems/budgetTax.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/systems/cabinetAdministration.js"
     },
     {
       "from": "src/game.js",
@@ -320,6 +372,10 @@
     },
     {
       "from": "src/game.js",
+      "to": "src/systems/governmentInstitutions.js"
+    },
+    {
+      "from": "src/game.js",
       "to": "src/systems/media.js"
     },
     {
@@ -340,6 +396,10 @@
     },
     {
       "from": "src/game.js",
+      "to": "src/systems/worldDiplomacy.js"
+    },
+    {
+      "from": "src/game.js",
       "to": "src/ui/audio.js"
     },
     {
@@ -355,8 +415,28 @@
       "to": "src/ui/tutorial.js"
     },
     {
+      "from": "src/systems/budgetTax.js",
+      "to": "src/core/dom.js"
+    },
+    {
+      "from": "src/systems/budgetTax.js",
+      "to": "src/data/budgetTaxData.js"
+    },
+    {
+      "from": "src/systems/cabinetAdministration.js",
+      "to": "src/data/cabinetAdministrationData.js"
+    },
+    {
+      "from": "src/systems/cabinetAdministration.js",
+      "to": "src/systems/calculations.js"
+    },
+    {
       "from": "src/systems/calculations.js",
       "to": "src/core/dom.js"
+    },
+    {
+      "from": "src/systems/coreLoop.js",
+      "to": "src/systems/cabinetAdministration.js"
     },
     {
       "from": "src/systems/coreLoop.js",
@@ -396,6 +476,10 @@
     },
     {
       "from": "src/systems/coreLoop.js",
+      "to": "src/systems/governmentInstitutions.js"
+    },
+    {
+      "from": "src/systems/coreLoop.js",
       "to": "src/systems/media.js"
     },
     {
@@ -415,6 +499,10 @@
       "to": "src/systems/security.js"
     },
     {
+      "from": "src/systems/coreLoop.js",
+      "to": "src/systems/worldDiplomacy.js"
+    },
+    {
       "from": "src/systems/crisis.js",
       "to": "src/data/crisisData.js"
     },
@@ -429,6 +517,10 @@
     {
       "from": "src/systems/diplomacy.js",
       "to": "src/systems/calculations.js"
+    },
+    {
+      "from": "src/systems/economy.js",
+      "to": "src/systems/budgetTax.js"
     },
     {
       "from": "src/systems/economy.js",
@@ -475,6 +567,14 @@
       "to": "src/systems/calculations.js"
     },
     {
+      "from": "src/systems/governmentInstitutions.js",
+      "to": "src/core/dom.js"
+    },
+    {
+      "from": "src/systems/governmentInstitutions.js",
+      "to": "src/data/governmentInstitutionData.js"
+    },
+    {
       "from": "src/systems/media.js",
       "to": "src/data/mediaData.js"
     },
@@ -516,6 +616,14 @@
     },
     {
       "from": "src/systems/security.js",
+      "to": "src/systems/calculations.js"
+    },
+    {
+      "from": "src/systems/worldDiplomacy.js",
+      "to": "src/data/worldDiplomacyData.js"
+    },
+    {
+      "from": "src/systems/worldDiplomacy.js",
       "to": "src/systems/calculations.js"
     },
     {
@@ -560,6 +668,14 @@
     },
     {
       "from": "src/ui/render.js",
+      "to": "src/data/budgetTaxData.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/data/cabinetAdministrationData.js"
+    },
+    {
+      "from": "src/ui/render.js",
       "to": "src/data/content.js"
     },
     {
@@ -588,6 +704,10 @@
     },
     {
       "from": "src/ui/render.js",
+      "to": "src/data/governmentInstitutionData.js"
+    },
+    {
+      "from": "src/ui/render.js",
       "to": "src/data/mediaData.js"
     },
     {
@@ -609,6 +729,18 @@
     {
       "from": "src/ui/render.js",
       "to": "src/data/securityData.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/data/worldDiplomacyData.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/systems/budgetTax.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/systems/cabinetAdministration.js"
     },
     {
       "from": "src/ui/render.js",
@@ -648,6 +780,10 @@
     },
     {
       "from": "src/ui/render.js",
+      "to": "src/systems/governmentInstitutions.js"
+    },
+    {
+      "from": "src/ui/render.js",
       "to": "src/systems/media.js"
     },
     {
@@ -665,6 +801,10 @@
     {
       "from": "src/ui/render.js",
       "to": "src/systems/security.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/systems/worldDiplomacy.js"
     },
     {
       "from": "src/ui/tutorial.js",

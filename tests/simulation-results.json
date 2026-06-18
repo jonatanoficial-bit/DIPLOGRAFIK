@@ -26,16 +26,16 @@
   "invariants_checked_every_days": 30,
   "metric_bounds_observed": {
     "approval": {
-      "min": 0.10248789989979201,
+      "min": 0.9732512951782066,
       "max": 100
     },
     "economy": {
-      "min": 26.283167146992707,
+      "min": 27.62022942106956,
       "max": 100
     },
     "stability": {
-      "min": 1.3622961327999779,
-      "max": 79.4459300236679
+      "min": 6.150620581951257,
+      "max": 79.26466830648019
     },
     "influence": {
       "min": 38.16279999999972,
@@ -47,7 +47,7 @@
     },
     "media": {
       "min": 0,
-      "max": 69.4
+      "max": 78.79999999999917
     },
     "elite": {
       "min": 50,
@@ -55,7 +55,7 @@
     },
     "military": {
       "min": 52,
-      "max": 90
+      "max": 97
     },
     "diplomacy": {
       "min": 49,
@@ -82,16 +82,16 @@
       "max": 38
     },
     "security": {
-      "min": 43,
+      "min": 36,
       "max": 100
     },
     "coupRisk": {
-      "min": 15.224110187595622,
-      "max": 76.83009135986718
+      "min": 15.229064663515882,
+      "max": 76.13971336500394
     },
     "marketConfidence": {
-      "min": 0.8,
-      "max": 100
+      "min": 0.63404,
+      "max": 99.83404
     },
     "industry": {
       "min": 51,
@@ -114,12 +114,12 @@
       "max": 35
     },
     "rejection": {
-      "min": 28,
+      "min": 24,
       "max": 32
     },
     "loyalty": {
-      "min": 32.137890678952985,
-      "max": 62.55854013104791
+      "min": 32.42703149790759,
+      "max": 62.495437587753656
     },
     "govNarrative": {
       "min": 50,
@@ -127,40 +127,40 @@
     },
     "globalTension": {
       "min": 35.36829795034163,
-      "max": 52.58394290507791
+      "max": 53.70886968588262
     },
     "politicalCapital": {
       "min": 0,
-      "max": 89.20000000000002
+      "max": 87.13477787832923
     },
     "congressPressure": {
-      "min": 16.760122986085033,
-      "max": 71.71415210650876
+      "min": 16.736983228664112,
+      "max": 70.3330689545668
     },
     "tradeBalance": {
       "min": 0,
       "max": 100
     },
     "inequality": {
-      "min": 2.795612539202904,
-      "max": 55.107194140850346
+      "min": 14.459682459694637,
+      "max": 54.58909855489427
     }
   },
   "final_averages": {
-    "approval": 20.687,
-    "economy": 49.638,
-    "stability": 35.788,
-    "politicalCapital": 30.288,
-    "loyalty": 50.067,
-    "globalTension": 44.688,
-    "treasury": 3027.25,
-    "gdp": 4486,
-    "debt": 100.765,
-    "crisis": 5.445,
-    "populationSatisfaction": 60.152,
-    "qualityOfLife": 68.663,
-    "regionalInequality": 21.339,
-    "poverty": 29.68
+    "approval": 33.56,
+    "economy": 61.706,
+    "stability": 37.196,
+    "politicalCapital": 35.656,
+    "loyalty": 50.108,
+    "globalTension": 44.926,
+    "treasury": 19141,
+    "gdp": 3397.917,
+    "debt": 62.446,
+    "crisis": 4.388,
+    "populationSatisfaction": 63.905,
+    "qualityOfLife": 71.18,
+    "regionalInequality": 19.551,
+    "poverty": 28.135
   },
   "cases": [
     {
@@ -168,36 +168,36 @@
       "profile": "baseline",
       "simulated_days": 10800,
       "simulated_years": 30,
-      "duration_ms": 645,
+      "duration_ms": 1737,
       "passed": true,
       "error": null,
       "final": {
         "date": "1/1/2056",
-        "approval": 14.786643332011,
-        "economy": 35.86643444672759,
-        "stability": 35.80808941372078,
-        "politicalCapital": 30.495112082065653,
-        "loyalty": 46.65571159739243,
-        "globalTension": 45.47196835411098,
-        "treasury": 5969,
-        "gdp": 1315,
-        "debt": 40.795287712395215,
-        "crisis": 4.910000000000071,
+        "approval": 9.511253773818224,
+        "economy": 30.619889126367454,
+        "stability": 35.51178467237759,
+        "politicalCapital": 37.36563995286225,
+        "loyalty": 58.03734255837566,
+        "globalTension": 45.84298976621211,
+        "treasury": 15298,
+        "gdp": 1179,
+        "debt": 120.0488076315244,
+        "crisis": 2.74,
         "electionDays": 880,
         "treaties": 0,
         "activeOperations": 0,
         "crisisHistory": 15,
-        "populationSatisfaction": 57.907454726750885,
-        "qualityOfLife": 66.32031111159662,
-        "regionalInequality": 36.319992782690896,
-        "poverty": 43.451288987770056
+        "populationSatisfaction": 59.198836023093065,
+        "qualityOfLife": 67.5715142793825,
+        "regionalInequality": 36.68134559454535,
+        "poverty": 42.978549038125024
       },
       "messages": {
-        "total": 3879,
-        "positive": 968,
-        "negative": 1697,
-        "warning": 749,
-        "info": 465
+        "total": 3953,
+        "positive": 1306,
+        "negative": 1649,
+        "warning": 540,
+        "info": 458
       }
     },
     {
@@ -205,36 +205,36 @@
       "profile": "institutional_stress",
       "simulated_days": 10800,
       "simulated_years": 30,
-      "duration_ms": 462,
+      "duration_ms": 1421,
       "passed": true,
       "error": null,
       "final": {
         "date": "1/1/2056",
-        "approval": 13.257141785978863,
-        "economy": 32.282281771648414,
-        "stability": 32.50551661244548,
-        "politicalCapital": 32.040126813816435,
-        "loyalty": 44.431720510737556,
-        "globalTension": 45.036391399192766,
-        "treasury": 0,
-        "gdp": 2255,
-        "debt": 151.8044180173831,
-        "crisis": 6.130000000000075,
+        "approval": 14.616923935110112,
+        "economy": 41.040911705716546,
+        "stability": 38.276852147767826,
+        "politicalCapital": 33.370421130253135,
+        "loyalty": 48.30281629631175,
+        "globalTension": 46.970862661472914,
+        "treasury": 12548,
+        "gdp": 1947,
+        "debt": 75.64586387641374,
+        "crisis": 5.660000000000241,
         "electionDays": 880,
         "treaties": 0,
         "activeOperations": 0,
         "crisisHistory": 15,
-        "populationSatisfaction": 58.36333016950278,
-        "qualityOfLife": 67.30683975776098,
-        "regionalInequality": 26.925536927261597,
-        "poverty": 37.80757656855794
+        "populationSatisfaction": 57.82799268869737,
+        "qualityOfLife": 66.73283336345015,
+        "regionalInequality": 31.315247518782943,
+        "poverty": 38.214184177002366
       },
       "messages": {
-        "total": 3432,
-        "positive": 493,
-        "negative": 2007,
-        "warning": 454,
-        "info": 478
+        "total": 3387,
+        "positive": 685,
+        "negative": 1992,
+        "warning": 211,
+        "info": 499
       }
     },
     {
@@ -242,36 +242,36 @@
       "profile": "economic_boom",
       "simulated_days": 10800,
       "simulated_years": 30,
-      "duration_ms": 409,
+      "duration_ms": 1339,
       "passed": true,
       "error": null,
       "final": {
         "date": "1/1/2056",
-        "approval": 36.10954105740225,
-        "economy": 98.38165688064554,
-        "stability": 39.472798204492776,
-        "politicalCapital": 34.441322699572474,
-        "loyalty": 50.36578351689125,
-        "globalTension": 45.797116676691154,
-        "treasury": 6538,
-        "gdp": 8363,
-        "debt": 40.644142343982374,
-        "crisis": 4.83000000000001,
+        "approval": 93.51365066909443,
+        "economy": 100,
+        "stability": 39.6532532719895,
+        "politicalCapital": 42.77022371183438,
+        "loyalty": 58.00326829130597,
+        "globalTension": 45.99768578101464,
+        "treasury": 35076,
+        "gdp": 6703,
+        "debt": 31.999999999999986,
+        "crisis": 1.770000000000015,
         "electionDays": 880,
         "treaties": 0,
         "activeOperations": 0,
         "crisisHistory": 15,
-        "populationSatisfaction": 69.3428682754248,
-        "qualityOfLife": 77.93511769375462,
-        "regionalInequality": 4.0869199616250995,
-        "poverty": 1.3960821555179637
+        "populationSatisfaction": 78.08474482167193,
+        "qualityOfLife": 79.76447264763343,
+        "regionalInequality": 0,
+        "poverty": 8.76344646198769
       },
       "messages": {
-        "total": 3284,
-        "positive": 773,
-        "negative": 1707,
-        "warning": 340,
-        "info": 464
+        "total": 4006,
+        "positive": 933,
+        "negative": 2207,
+        "warning": 416,
+        "info": 450
       }
     },
     {
@@ -279,36 +279,36 @@
       "profile": "baseline",
       "simulated_days": 10800,
       "simulated_years": 30,
-      "duration_ms": 415,
+      "duration_ms": 1232,
       "passed": true,
       "error": null,
       "final": {
         "date": "1/1/2056",
-        "approval": 15.532224259232454,
-        "economy": 32.93055013072811,
-        "stability": 37.04043980983373,
-        "politicalCapital": 32.482546492796786,
-        "loyalty": 53.47672697862077,
-        "globalTension": 43.75737405770463,
-        "treasury": 21,
-        "gdp": 3669,
+        "approval": 13.286871607040585,
+        "economy": 30.565313882950218,
+        "stability": 37.92062175901405,
+        "politicalCapital": 33.22205894584864,
+        "loyalty": 48.65827292155129,
+        "globalTension": 45.300115626536986,
+        "treasury": 3789,
+        "gdp": 1269,
         "debt": 160,
-        "crisis": 5.712000000000296,
+        "crisis": 5.722000000000179,
         "electionDays": 880,
         "treaties": 0,
         "activeOperations": 0,
         "crisisHistory": 15,
-        "populationSatisfaction": 53.16514524533395,
-        "qualityOfLife": 60.831659123207956,
-        "regionalInequality": 36.17959908192758,
-        "poverty": 40.51314023407844
+        "populationSatisfaction": 51.534297084481295,
+        "qualityOfLife": 59.23836687923802,
+        "regionalInequality": 38.052573057088374,
+        "poverty": 45.86449444882408
       },
       "messages": {
-        "total": 3478,
-        "positive": 462,
-        "negative": 2019,
-        "warning": 535,
-        "info": 462
+        "total": 3172,
+        "positive": 575,
+        "negative": 1715,
+        "warning": 413,
+        "info": 469
       }
     },
     {
@@ -316,36 +316,36 @@
       "profile": "institutional_stress",
       "simulated_days": 10800,
       "simulated_years": 30,
-      "duration_ms": 409,
+      "duration_ms": 1257,
       "passed": true,
       "error": null,
       "final": {
         "date": "1/1/2056",
-        "approval": 13.710522896315153,
-        "economy": 30.38657994303245,
-        "stability": 34.348940486330754,
-        "politicalCapital": 28.353462278251428,
-        "loyalty": 54.67892113162851,
-        "globalTension": 44.29989754555015,
-        "treasury": 1340,
-        "gdp": 2565,
-        "debt": 117.64022565774033,
-        "crisis": 5.680000000000243,
+        "approval": 12.203105751533595,
+        "economy": 31.00082468416599,
+        "stability": 35.686818266975244,
+        "politicalCapital": 30.919279529141832,
+        "loyalty": 36.43018931991722,
+        "globalTension": 47.31216995702945,
+        "treasury": 12874,
+        "gdp": 1366,
+        "debt": 94.58702234835546,
+        "crisis": 5.550000000000203,
         "electionDays": 880,
         "treaties": 0,
         "activeOperations": 0,
         "crisisHistory": 15,
-        "populationSatisfaction": 60.2536651056391,
-        "qualityOfLife": 69.95874925409302,
-        "regionalInequality": 17.984586224606165,
-        "poverty": 34.76670330677967
+        "populationSatisfaction": 57.12869187964358,
+        "qualityOfLife": 66.27799278063586,
+        "regionalInequality": 25.954721055973764,
+        "poverty": 42.079433786174924
       },
       "messages": {
-        "total": 3401,
-        "positive": 537,
-        "negative": 2029,
-        "warning": 356,
-        "info": 479
+        "total": 3345,
+        "positive": 678,
+        "negative": 1940,
+        "warning": 241,
+        "info": 486
       }
     },
     {
@@ -353,36 +353,36 @@
       "profile": "economic_boom",
       "simulated_days": 10800,
       "simulated_years": 30,
-      "duration_ms": 387,
+      "duration_ms": 1227,
       "passed": true,
       "error": null,
       "final": {
         "date": "1/1/2056",
-        "approval": 39.61612421741955,
-        "economy": 98.95866756582623,
-        "stability": 36.8755413905833,
-        "politicalCapital": 32.51158201200291,
-        "loyalty": 47.214561817396294,
-        "globalTension": 42.83480085202472,
-        "treasury": 6528,
-        "gdp": 8554,
-        "debt": 43.723261882389885,
-        "crisis": 5.336000000000201,
+        "approval": 39.653255404288835,
+        "economy": 97.30924748737458,
+        "stability": 38.91232117904808,
+        "politicalCapital": 37.817091633088246,
+        "loyalty": 53.46222931962586,
+        "globalTension": 42.30676392957792,
+        "treasury": 32582,
+        "gdp": 6591,
+        "debt": 36.79999999999999,
+        "crisis": 4.742000000000196,
         "electionDays": 880,
         "treaties": 0,
         "activeOperations": 0,
         "crisisHistory": 15,
-        "populationSatisfaction": 70.36959336293334,
-        "qualityOfLife": 78.15981608863834,
+        "populationSatisfaction": 70.60135837521862,
+        "qualityOfLife": 78.2020235243773,
         "regionalInequality": 0,
-        "poverty": 0.6180213529583738
+        "poverty": 4.464804102050079
       },
       "messages": {
-        "total": 3229,
-        "positive": 727,
-        "negative": 1647,
-        "warning": 383,
-        "info": 472
+        "total": 3259,
+        "positive": 853,
+        "negative": 1661,
+        "warning": 306,
+        "info": 439
       }
     },
     {
@@ -390,36 +390,36 @@
       "profile": "baseline",
       "simulated_days": 10800,
       "simulated_years": 30,
-      "duration_ms": 393,
+      "duration_ms": 1234,
       "passed": true,
       "error": null,
       "final": {
         "date": "1/1/2056",
-        "approval": 11.138550193033534,
-        "economy": 30.202721071132217,
-        "stability": 30.332308240469573,
-        "politicalCapital": 22.509450736825627,
-        "loyalty": 47.49948804209958,
-        "globalTension": 46.02926912451448,
-        "treasury": 0,
-        "gdp": 1765,
+        "approval": 15.636709143229286,
+        "economy": 31.168293516030054,
+        "stability": 34.029835973136336,
+        "politicalCapital": 30.466800333858863,
+        "loyalty": 48.1772525448467,
+        "globalTension": 43.95617356232663,
+        "treasury": 3764,
+        "gdp": 1935,
         "debt": 160,
-        "crisis": 6.1200000000002435,
+        "crisis": 4.8520000000003245,
         "electionDays": 880,
         "treaties": 0,
         "activeOperations": 0,
         "crisisHistory": 15,
-        "populationSatisfaction": 52.635953199927705,
-        "qualityOfLife": 60.7897132670141,
-        "regionalInequality": 36.89609385731201,
-        "poverty": 45.92076692328245
+        "populationSatisfaction": 53.22353496387425,
+        "qualityOfLife": 61.12067911129922,
+        "regionalInequality": 36.5985731805399,
+        "poverty": 41.71020908725686
       },
       "messages": {
-        "total": 3423,
-        "positive": 481,
-        "negative": 1995,
-        "warning": 481,
-        "info": 466
+        "total": 3605,
+        "positive": 612,
+        "negative": 2193,
+        "warning": 320,
+        "info": 480
       }
     },
     {
@@ -427,36 +427,36 @@
       "profile": "institutional_stress",
       "simulated_days": 10800,
       "simulated_years": 30,
-      "duration_ms": 391,
+      "duration_ms": 1212,
       "passed": true,
       "error": null,
       "final": {
         "date": "1/1/2056",
-        "approval": 16.16202490174613,
-        "economy": 32.027024036372815,
-        "stability": 39.333698501746284,
-        "politicalCapital": 36.89011644899225,
-        "loyalty": 54.53511822335467,
-        "globalTension": 44.80737261089426,
-        "treasury": 3087,
-        "gdp": 2379,
-        "debt": 87.86215605669103,
-        "crisis": 4.180000000000364,
+        "approval": 19.33323988352436,
+        "economy": 39.793294157976014,
+        "stability": 37.72038368028407,
+        "politicalCapital": 37.7716685962655,
+        "loyalty": 47.100842639012775,
+        "globalTension": 43.968883935115116,
+        "treasury": 16478,
+        "gdp": 1961,
+        "debt": 5.7952755705453844,
+        "crisis": 6.000000000000272,
         "electionDays": 880,
         "treaties": 0,
         "activeOperations": 0,
         "crisisHistory": 15,
-        "populationSatisfaction": 60.6898252500867,
-        "qualityOfLife": 70.24867673970185,
-        "regionalInequality": 14.991327065507729,
-        "poverty": 35.33545647180013
+        "populationSatisfaction": 61.386559562842216,
+        "qualityOfLife": 70.81413649994754,
+        "regionalInequality": 22.38915703036719,
+        "poverty": 34.030297658357796
       },
       "messages": {
-        "total": 3613,
-        "positive": 552,
-        "negative": 2237,
-        "warning": 329,
-        "info": 495
+        "total": 3483,
+        "positive": 715,
+        "negative": 2071,
+        "warning": 200,
+        "info": 497
       }
     },
     {
@@ -464,36 +464,36 @@
       "profile": "economic_boom",
       "simulated_days": 10800,
       "simulated_years": 30,
-      "duration_ms": 395,
+      "duration_ms": 1221,
       "passed": true,
       "error": null,
       "final": {
         "date": "1/1/2056",
-        "approval": 35.79979337981761,
-        "economy": 100,
-        "stability": 27.340518436613003,
-        "politicalCapital": 12.233847119334207,
-        "loyalty": 49.846637673075634,
-        "globalTension": 45.000121104732095,
-        "treasury": 7876,
-        "gdp": 6594,
-        "debt": 33.1509946362854,
-        "crisis": 4.690000000000022,
+        "approval": 100,
+        "economy": 98.77585971489219,
+        "stability": 36.895506718948695,
+        "politicalCapital": 42.40966902856901,
+        "loyalty": 58.14998728835472,
+        "globalTension": 43.14954940525336,
+        "treasury": 36069,
+        "gdp": 6928,
+        "debt": 29.119999999999983,
+        "crisis": 0.4999999999999999,
         "electionDays": 880,
         "treaties": 0,
         "activeOperations": 0,
         "crisisHistory": 15,
-        "populationSatisfaction": 70.67160086001022,
-        "qualityOfLife": 79.21051452773928,
-        "regionalInequality": 5.972352639945797,
-        "poverty": 13.851833866535749
+        "populationSatisfaction": 80.72900680385263,
+        "qualityOfLife": 80.19497001881284,
+        "regionalInequality": 0,
+        "poverty": 11.162354138383357
       },
       "messages": {
-        "total": 4142,
-        "positive": 841,
-        "negative": 2380,
-        "warning": 456,
-        "info": 465
+        "total": 3930,
+        "positive": 942,
+        "negative": 1975,
+        "warning": 575,
+        "info": 438
       }
     },
     {
@@ -501,36 +501,36 @@
       "profile": "baseline",
       "simulated_days": 10800,
       "simulated_years": 30,
-      "duration_ms": 382,
+      "duration_ms": 1224,
       "passed": true,
       "error": null,
       "final": {
         "date": "1/1/2056",
-        "approval": 17.16382319824624,
-        "economy": 33.37218182929162,
-        "stability": 38.18459270738155,
-        "politicalCapital": 32.05332350159676,
-        "loyalty": 53.176390057742374,
-        "globalTension": 44.31187110395802,
-        "treasury": 18,
-        "gdp": 4416,
-        "debt": 160,
-        "crisis": 5.640000000000029,
+        "approval": 32.94622770783779,
+        "economy": 99.21231264971908,
+        "stability": 36.61995330615205,
+        "politicalCapital": 37.045931679720844,
+        "loyalty": 51.783232352457205,
+        "globalTension": 44.34514966473607,
+        "treasury": 10906,
+        "gdp": 2807,
+        "debt": 8.932733780654678,
+        "crisis": 6.31000000000019,
         "electionDays": 880,
         "treaties": 0,
         "activeOperations": 0,
         "crisisHistory": 15,
-        "populationSatisfaction": 50.98969898968043,
-        "qualityOfLife": 58.1240577540572,
-        "regionalInequality": 36.866724785277256,
-        "poverty": 42.47635652936366
+        "populationSatisfaction": 65.02687422219743,
+        "qualityOfLife": 73.0259705457264,
+        "regionalInequality": 30.346733450317394,
+        "poverty": 23.84780985804994
       },
       "messages": {
-        "total": 4078,
-        "positive": 532,
-        "negative": 2506,
-        "warning": 592,
-        "info": 448
+        "total": 3316,
+        "positive": 726,
+        "negative": 1847,
+        "warning": 249,
+        "info": 494
       }
     },
     {
@@ -538,36 +538,36 @@
       "profile": "institutional_stress",
       "simulated_days": 10800,
       "simulated_years": 30,
-      "duration_ms": 373,
+      "duration_ms": 1202,
       "passed": true,
       "error": null,
       "final": {
         "date": "1/1/2056",
-        "approval": 15.082147976271184,
-        "economy": 34.791354934630036,
-        "stability": 39.54516663861964,
-        "politicalCapital": 36.86792920789225,
-        "loyalty": 51.78953233027122,
-        "globalTension": 45.17796072198628,
-        "treasury": 4873,
-        "gdp": 3467,
-        "debt": 53.559879316419874,
-        "crisis": 6.410000000000344,
+        "approval": 16.133743449931707,
+        "economy": 43.1828448952735,
+        "stability": 36.1946016311917,
+        "politicalCapital": 34.040738660893474,
+        "loyalty": 42.57889322630175,
+        "globalTension": 47.014046776204644,
+        "treasury": 21962,
+        "gdp": 2354,
+        "debt": 16.499713539695204,
+        "crisis": 5.200000000000345,
         "electionDays": 880,
         "treaties": 0,
         "activeOperations": 0,
         "crisisHistory": 15,
-        "populationSatisfaction": 64.68753087928286,
-        "qualityOfLife": 75.24956031513207,
-        "regionalInequality": 5.905019254660331,
-        "poverty": 25.893138002945438
+        "populationSatisfaction": 62.92435280894334,
+        "qualityOfLife": 73.10347120498001,
+        "regionalInequality": 11.83486254636571,
+        "poverty": 30.71784620437008
       },
       "messages": {
         "total": 3670,
-        "positive": 606,
-        "negative": 2299,
-        "warning": 282,
-        "info": 483
+        "positive": 679,
+        "negative": 2298,
+        "warning": 208,
+        "info": 485
       }
     },
     {
@@ -575,36 +575,36 @@
       "profile": "economic_boom",
       "simulated_days": 10800,
       "simulated_years": 30,
-      "duration_ms": 390,
+      "duration_ms": 1162,
       "passed": true,
       "error": null,
       "final": {
         "date": "1/1/2056",
-        "approval": 19.889725131997018,
-        "economy": 36.455777598733334,
-        "stability": 38.6631225508774,
-        "politicalCapital": 32.5780245379053,
-        "loyalty": 47.130959084831474,
-        "globalTension": 43.72789803064589,
-        "treasury": 77,
-        "gdp": 8490,
-        "debt": 160,
-        "crisis": 5.700000000000119,
+        "approval": 35.884699636337324,
+        "economy": 97.80513600231258,
+        "stability": 38.925873538713255,
+        "politicalCapital": 30.670876513243705,
+        "loyalty": 50.61132814400348,
+        "globalTension": 42.94906200764306,
+        "treasury": 28346,
+        "gdp": 5735,
+        "debt": 9.919999999999968,
+        "crisis": 3.610000000000186,
         "electionDays": 880,
         "treaties": 0,
         "activeOperations": 0,
         "crisisHistory": 15,
-        "populationSatisfaction": 52.74578103065751,
-        "qualityOfLife": 59.8220469496516,
-        "regionalInequality": 33.9454658881364,
-        "poverty": 34.12990253753274
+        "populationSatisfaction": 69.19564179164756,
+        "qualityOfLife": 78.11100033643483,
+        "regionalInequality": 1.4434784362125868,
+        "poverty": 13.783701953789754
       },
       "messages": {
-        "total": 3496,
-        "positive": 490,
-        "negative": 1910,
-        "warning": 628,
-        "info": 468
+        "total": 3620,
+        "positive": 931,
+        "negative": 1915,
+        "warning": 324,
+        "info": 450
       }
     }
   ],

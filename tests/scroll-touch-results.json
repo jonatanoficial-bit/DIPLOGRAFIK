@@ -1,7 +1,7 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "1.6.1",
-  "phase": "Economia Profunda",
+  "version": "1.7.1",
+  "phase": "Governo e Instituições",
   "execution_model": "one isolated browser process per viewport + deterministic aggregator",
   "static_checks": {
     "scroll_module_exists": true,
@@ -60,11 +60,11 @@
         },
         "mouse_wheel": {
           "before": 0,
-          "after": 559
+          "after": 557
         },
         "page_down": {
-          "before": 559,
-          "after": 1038
+          "before": 557,
+          "after": 1047
         },
         "wheel_steps_to_party_controls": 7,
         "wheel_steps_to_start": 3
@@ -108,7 +108,7 @@
       "measurements": {
         "create_initial": {
           "scrollTop": 0,
-          "scrollHeight": 3998,
+          "scrollHeight": 3997,
           "clientHeight": 768,
           "overflowY": "auto",
           "touchAction": "pan-y pinch-zoom",
@@ -117,11 +117,11 @@
         },
         "mouse_wheel": {
           "before": 0,
-          "after": 563
+          "after": 576
         },
         "page_down": {
-          "before": 563,
-          "after": 1189
+          "before": 576,
+          "after": 1202
         },
         "wheel_steps_to_party_controls": 7,
         "wheel_steps_to_start": 3
@@ -174,11 +174,11 @@
         },
         "mouse_wheel": {
           "before": 0,
-          "after": 557
+          "after": 576
         },
         "page_down": {
-          "before": 557,
-          "after": 1361
+          "before": 576,
+          "after": 1376
         },
         "wheel_steps_to_party_controls": 6,
         "wheel_steps_to_start": 3
@@ -231,11 +231,11 @@
         },
         "mouse_wheel": {
           "before": 0,
-          "after": 559
+          "after": 560
         },
         "page_down": {
-          "before": 559,
-          "after": 1181
+          "before": 560,
+          "after": 1185
         },
         "wheel_steps_to_party_controls": 7,
         "wheel_steps_to_start": 3
@@ -293,7 +293,7 @@
           "end": 274.71999999999997,
           "x": 88.5
         },
-        "touch_swipes_to_party_controls": 7,
+        "touch_swipes_to_party_controls": 8,
         "mobile_icons": [
           20,
           20,
@@ -468,7 +468,7 @@
       "measurements": {
         "create_initial": {
           "scrollTop": 0,
-          "scrollHeight": 4976,
+          "scrollHeight": 2332,
           "clientHeight": 390,
           "overflowY": "auto",
           "touchAction": "pan-y pinch-zoom",
@@ -477,12 +477,12 @@
         },
         "first_touch_swipe": {
           "before": 0,
-          "after": 227,
+          "after": 164,
           "start": 358,
           "end": 178.6,
-          "x": 222.0
+          "x": 98.796875
         },
-        "touch_swipes_to_party_controls": 12,
+        "touch_swipes_to_party_controls": 5,
         "mobile_icons": [
           22,
           22,

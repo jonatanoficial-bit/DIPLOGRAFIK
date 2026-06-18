@@ -2,20 +2,20 @@
 export const BUILD = Object.freeze({
   "project": "DIPLOCRAFT",
   "productName": "DIPLOCRAFT — Simulador Político e Geopolítico",
-  "version": "1.6.1",
-  "stageNumber": 17,
-  "stageName": "Economia Profunda",
-  "stage": "Fase 17 — Economia Profunda",
-  "stageShort": "Fase 17 • Economia Profunda",
+  "version": "1.7.4",
+  "stageNumber": 22,
+  "stageName": "Diplomacia Mundial",
+  "stage": "Fase 22 — Diplomacia Mundial",
+  "stageShort": "Fase 22 • Diplomacia Mundial",
   "date": "18/06/2026",
   "dateISO": "2026-06-18",
-  "time": "10:31",
+  "time": "18:12",
   "timezone": "America/Sao_Paulo",
-  "stamp": "20260618_1031",
-  "status": "DEEP_ECONOMY_VERIFIED",
-  "artifact": "DIPLOCRAFT_v1.6.1_FASE-17_ECONOMIA-PROFUNDA_build_20260618_1031.zip",
+  "stamp": "20260618_1812",
+  "status": "WORLD_DIPLOMACY_VERIFIED",
+  "artifact": "DIPLOCRAFT_v1.7.4_FASE-22_DIPLOMACIA-MUNDIAL_build_20260618_1812.zip",
   "source": "build.config.json",
-  "sourceSHA256": "16afef7268ae49e56ddffa8101c4a59f3fa69d6ced3ca5d19034b4e92629ed50",
+  "sourceSHA256": "c78785f5db9945c68377ed0b8d680999ab64668f4c232b9ae48e94574fa3e873",
   "saveSchema": 3,
   "saveKey": "diplocraft_save_v101",
   "defaultLocale": "pt-BR",
@@ -102,7 +102,7 @@ export const BUILD = Object.freeze({
     "party_logo_cards": 12,
     "audit": "tests/run_government_creation_audit.py"
   },
-  "summary": "Simulação econômica profunda com PIB real e nominal, política fiscal, política monetária, setor externo, investimentos, renda, custo de vida e histórico econômico conectado à população e ao Core Loop 2.0."
+  "summary": "Sistema profundo de diplomacia mundial com doutrinas diplomáticas, soft power, confiança global, acesso comercial, blocos geopolíticos, agenda internacional, ações multilaterais e integração com economia, mídia, instituições e segurança."
 });
 
-export const BUILD_LABEL = "DIPLOCRAFT v1.6.1 • 18/06/2026 10:31 • Fase 17 • Economia Profunda";
+export const BUILD_LABEL = "DIPLOCRAFT v1.7.4 • 18/06/2026 18:12 • Fase 22 • Diplomacia Mundial";
