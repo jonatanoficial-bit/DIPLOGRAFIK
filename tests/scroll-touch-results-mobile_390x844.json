@@ -1,0 +1,85 @@
+{
+  "project": "DIPLOCRAFT",
+  "version": "1.6.1",
+  "phase": "Economia Profunda",
+  "static_checks": {
+    "scroll_module_exists": true,
+    "scroll_module_loaded": true,
+    "setup_scroll_owner_css": true,
+    "fixed_setup_viewport": true,
+    "desktop_scrollbar_styled": true,
+    "touch_pan_contract": true,
+    "ios_momentum_contract": true,
+    "keyboard_navigation_runtime": true,
+    "scroll_assist_runtime": true,
+    "minimum_icon_policy": true
+  },
+  "cases": [
+    {
+      "name": "mobile_390x844",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mode": "touch",
+      "checks": {
+        "scroll_runtime_installed": true,
+        "menu_is_scroll_owner": true,
+        "document_remains_app_locked": true,
+        "create_owns_vertical_scroll": true,
+        "scrollbar_gutter_is_stable": true,
+        "touch_pan_y_enabled": true,
+        "scroll_assist_visible": true,
+        "no_create_horizontal_overflow": true,
+        "real_touch_swipe_scrolls_from_avatar": true,
+        "touch_reaches_party_controls": true,
+        "touch_reaches_start_button": true,
+        "name_field_reachable": true,
+        "name_field_editable": true,
+        "party_controls_reachable": true,
+        "start_touch_target": true,
+        "back_touch_target": true,
+        "scroll_assist_tracks_progress": true,
+        "game_starts_after_scrolling": true,
+        "mobile_icons_are_legible": true,
+        "mobile_nav_touch_targets": true,
+        "game_touch_scroll_owner": true,
+        "no_page_errors": true,
+        "no_console_errors": true
+      },
+      "measurements": {
+        "create_initial": {
+          "scrollTop": 0,
+          "scrollHeight": 4527,
+          "clientHeight": 844,
+          "overflowY": "auto",
+          "touchAction": "pan-y pinch-zoom",
+          "scrollbarGutter": "stable",
+          "position": "fixed"
+        },
+        "first_touch_swipe": {
+          "before": 0,
+          "after": 256,
+          "start": 699.1875,
+          "end": 419.1875,
+          "x": 108.5
+        },
+        "touch_swipes_to_party_controls": 5,
+        "mobile_icons": [
+          22,
+          22,
+          22,
+          22,
+          22,
+          22
+        ]
+      },
+      "console_errors": [],
+      "page_errors": [],
+      "passed": true
+    }
+  ],
+  "case_count": 1,
+  "check_count": 33,
+  "passed": true
+}

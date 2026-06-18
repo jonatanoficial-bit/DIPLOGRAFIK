@@ -1,0 +1,386 @@
+{
+  "project": "DIPLOCRAFT",
+  "product_name": "DIPLOCRAFT — Simulador Político e Geopolítico",
+  "version": "1.6.1",
+  "stage_number": 17,
+  "stage_name": "Economia Profunda",
+  "status": "DEEP_ECONOMY_VERIFIED",
+  "date": "18/06/2026",
+  "date_iso": "2026-06-18",
+  "time": "10:31",
+  "timezone": "America/Sao_Paulo",
+  "stamp": "20260618_1031",
+  "base_version": "1.6.0",
+  "base_stage": "Fase 16 — País e População",
+  "save_schema": 3,
+  "save_key": "diplocraft_save_v101",
+  "content_schema": 1,
+  "default_locale": "pt-BR",
+  "supported_locales": [
+    "pt-BR",
+    "en",
+    "es"
+  ],
+  "planned_locales": [
+    "pt-BR",
+    "en",
+    "es"
+  ],
+  "entrypoint": "src/game.js",
+  "summary": "Simulação econômica profunda com PIB real e nominal, política fiscal, política monetária, setor externo, investimentos, renda, custo de vida e histórico econômico conectado à população e ao Core Loop 2.0.",
+  "build_summary": "Build oficial da Fase 17 aplicada sobre a v1.6.0: economia profunda integrada à estrutura existente, sem remover sistemas anteriores, com migração aditiva e auditorias anti-quebra.",
+  "features": [
+    "PIB real e nominal com crescimento anualizado, crescimento trimestral, hiato do produto e produtividade",
+    "Política fiscal com regra ativa, receita primária, despesa primária, resultado primário, serviço da dívida e saldo fiscal",
+    "Política monetária com meta de inflação, impulso de crédito, defesa cambial, juros e inflação interligados",
+    "Setor externo com exportações, importações, câmbio, reservas internacionais e conta corrente",
+    "Economia das famílias com salário real, custo de vida, endividamento, confiança do consumidor, pobreza e segurança da classe média",
+    "Investimento privado, investimento público, confiança empresarial, informalidade e prêmio de risco",
+    "Programas produtivos e estratégias comerciais com custo, cooldown, pontos de ação e efeitos atrasados",
+    "Histórico econômico mensal e trimestral limitado para evitar crescimento infinito do save",
+    "Integração mensal com população, aprovação, estabilidade, inflação, desemprego, dívida, mercado e Core Loop 2.0",
+    "Compatibilidade preservada com saves schema 3, criação de governo, país/população, PWA, mobile, desktop e Anti-Break Core"
+  ],
+  "changelog": {
+    "Adicionado": [
+      "Motor de economia profunda com PIB real/nominal, produtividade, investimento, setor externo e renda das famílias.",
+      "Regra fiscal e política monetária selecionáveis pelo jogador com efeitos reais e cooldown institucional.",
+      "Programas produtivos e comerciais com custo, pontos de ação, atraso e integração ao histórico econômico.",
+      "Painel econômico expandido com diagnóstico, saúde econômica, setor fiscal, setor externo e histórico mensal."
+    ],
+    "Corrigido": [
+      "A economia era forte como painel macro, mas ainda dependia de poucos indicadores nacionais sem setor externo detalhado.",
+      "PIB, inflação, desemprego e dívida agora têm ponte com produtividade, investimento, câmbio, reservas e custo de vida."
+    ],
+    "Preservado": [
+      "Todos os sistemas da Fase 16, incluindo população, criação de governo, Core Loop 2.0, saves schema 3, PWA, rolagem e localização."
+    ]
+  },
+  "history": [
+    {
+      "version": "1.6.0",
+      "title": "Fase 16 País e População",
+      "date_time": "17/06/2026 18:03",
+      "items": [
+        "País, regiões, demografia, grupos sociais, programas públicos e população integrada ao governo."
+      ]
+    },
+    {
+      "version": "1.5.1",
+      "title": "Fase 15 Criação de Governo",
+      "date_time": "17/06/2026 17:05",
+      "items": [
+        "Criação em nove etapas, cenários, dificuldade, objetivos estratégicos e 12 partidos com seleção visual."
+      ]
+    },
+    {
+      "version": "1.5.0",
+      "title": "Fase 14 Core Loop 2.0",
+      "date_time": "17/06/2026 12:56",
+      "items": [
+        "Ciclo diário, semanal, mensal, trimestral e anual, consequências atrasadas e finais reais de carreira."
+      ]
+    },
+    {
+      "version": "1.4.0",
+      "title": "Fase 13 Save Architecture",
+      "date_time": "17/06/2026 12:37",
+      "items": [
+        "Perfis, slots, backups, exportação/importação e migração segura de carreiras."
+      ]
+    },
+    {
+      "version": "1.3.4",
+      "title": "Fase 12 Localization Complete",
+      "date_time": "17/06/2026 11:33",
+      "items": [
+        "Localização editorial completa em português, inglês e espanhol com 964 chaves sincronizadas."
+      ]
+    },
+    {
+      "version": "1.3.3",
+      "title": "Fase 11 Scroll & Touch Recovery",
+      "date_time": "17/06/2026 10:52",
+      "items": [
+        "Rolagem por roda, touchpad, teclado e gesto real do dedo em PC, tablet e mobile."
+      ]
+    },
+    {
+      "version": "1.3.2",
+      "title": "Fase 10 Hotfix Assets Web",
+      "date_time": "15/06/2026 19:44",
+      "items": [
+        "Fallback automático para PNGs originais e correção da publicação de assets no Vercel."
+      ]
+    },
+    {
+      "version": "1.3.1",
+      "title": "Fase 10 I18N Core",
+      "date_time": "13/06/2026 12:50",
+      "items": [
+        "Arquitetura trilíngue para português, inglês e espanhol."
+      ]
+    },
+    {
+      "version": "1.3.0",
+      "title": "Fase 9 Responsive Desktop",
+      "date_time": "13/06/2026 12:03",
+      "items": [
+        "Sidebar responsiva, central de comandos, atalhos, densidade e ultrawide."
+      ]
+    },
+    {
+      "version": "1.2.1",
+      "title": "Fase 8 Fullscreen/PWA",
+      "date_time": "13/06/2026 11:21",
+      "items": [
+        "PWA instalável, shell offline, atualização controlada, ícones e splash screens."
+      ]
+    },
+    {
+      "version": "1.2.0",
+      "title": "Fase 7 Mobile First",
+      "date_time": "13/06/2026 10:02",
+      "items": [
+        "Navegação por toque, safe areas, teclado virtual, orientação, drawer e rolagem mobile auditada."
+      ]
+    },
+    {
+      "version": "1.1.1",
+      "title": "Fase 6 Asset Pipeline",
+      "date_time": "13/06/2026 09:07",
+      "items": [
+        "Pipeline AVIF/WebP, variantes responsivas, lazy loading e auditoria de assets."
+      ]
+    },
+    {
+      "version": "1.1.0",
+      "title": "Fase 5 Test Foundation",
+      "date_time": "12/06/2026 17:14",
+      "items": [
+        "Testes unitários, contratos, simulação de 30 anos e quality gate bloqueante."
+      ]
+    },
+    {
+      "version": "1.0.4",
+      "title": "Fase 4 Anti-Break Core",
+      "date_time": "12/06/2026 17:02",
+      "items": [
+        "Saves transacionais, snapshots, watchdog, modo seguro e diagnóstico persistente."
+      ]
+    },
+    {
+      "version": "1.0.3",
+      "title": "Fase 3 Build Truth",
+      "date_time": "12/06/2026 16:36",
+      "items": [
+        "Fonte canônica de build, hash, geração determinística e bloqueio de divergências."
+      ]
+    },
+    {
+      "version": "1.0.2",
+      "title": "Fase 2 Clean Base",
+      "date_time": "12/06/2026 16:26",
+      "items": [
+        "Base limpa, identidade consolidada, módulos órfãos removidos e assets auditados."
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "title": "Fase 1 Recovery",
+      "date_time": "12/06/2026 16:06",
+      "items": [
+        "Boot, anti-quebra, tutorial, feedback, áudio, rolagem mobile e save recuperados."
+      ]
+    }
+  ],
+  "next_release": {
+    "version": "1.6.2",
+    "stage": "Fase 18 — Infraestrutura Nacional e Cadeias Produtivas"
+  },
+  "asset_paths_changed": false,
+  "asset_pipeline": {
+    "source_assets": 34,
+    "runtime_variants": 98,
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "responsive_backgrounds": true,
+    "lazy_images": true
+  },
+  "mobile_first": {
+    "minimum_width": 320,
+    "touch_target_px": 48,
+    "portrait": true,
+    "landscape": true,
+    "visual_viewport": true,
+    "keyboard_aware": true,
+    "safe_area_aware": true,
+    "drawer_gestures": true,
+    "tab_scroll_memory": true,
+    "native_touch_scroll": true,
+    "mouse_wheel_scroll": true,
+    "visible_desktop_scrollbar": true,
+    "setup_screen_scroll_owner": true,
+    "minimum_icon_px": 20
+  },
+  "pwa": {
+    "enabled": true,
+    "display": "fullscreen",
+    "orientation": "any",
+    "offline_shell": true,
+    "controlled_updates": true,
+    "cache_runtime_assets": true,
+    "standalone_detection": true,
+    "install_prompt": true,
+    "service_worker": "sw.js",
+    "scope": "./"
+  },
+  "responsive_desktop": {
+    "minimum_desktop_width": 881,
+    "tablet_rail_max_width": 1199,
+    "content_max_width": 1800,
+    "ultrawide_supported": true,
+    "collapsible_sidebar": true,
+    "command_palette": true,
+    "keyboard_shortcuts": true,
+    "density_modes": [
+      "comfortable",
+      "compact"
+    ],
+    "persistent_preferences": true
+  },
+  "i18n": {
+    "enabled": true,
+    "default_locale": "pt-BR",
+    "supported_locales": [
+      "pt-BR",
+      "en",
+      "es"
+    ],
+    "storage_key": "diplocraft_locale_v1",
+    "hot_switch": true,
+    "save_independent": true,
+    "intl_formatting": true,
+    "dom_translation": true,
+    "legacy_fallback": false,
+    "catalog_generator": "tools/generate_i18n.py",
+    "catalog_source": "tools/i18n_seed.json",
+    "audit": "tests/run_i18n_audit.py",
+    "editorial_complete": true,
+    "exact_content_translation": true,
+    "missing_translation_registry": true,
+    "catalog_key_minimum": 1300,
+    "localization_audit": "tests/run_localization_complete_audit.py"
+  },
+  "web_asset_recovery": {
+    "enabled": true,
+    "optimized_preferred": true,
+    "source_png_fallback": true,
+    "app_root_resolution": true,
+    "service_worker_optional_precache": true,
+    "vercel_static_config": true,
+    "deployment_audit": "tests/run_web_asset_audit.py"
+  },
+  "scroll_touch_recovery": {
+    "enabled": true,
+    "scroll_screens": [
+      "menu",
+      "create"
+    ],
+    "desktop_wheel": true,
+    "touch_pan_y": true,
+    "keyboard_page_navigation": true,
+    "scroll_assist": true,
+    "scrollbar_gutter": "stable",
+    "audit": "tests/run_scroll_touch_audit.py"
+  },
+  "localization_complete": {
+    "enabled": true,
+    "editorial_languages": [
+      "pt-BR",
+      "en",
+      "es"
+    ],
+    "lexical_fallback": false,
+    "dynamic_patterns": true,
+    "runtime_missing_count_required": 0,
+    "data_literal_coverage_required": 1.0,
+    "text_expansion_audit": true,
+    "feed_canonical_messages": true,
+    "audit": "tests/run_localization_complete_audit.py"
+  },
+  "save_architecture": {
+    "enabled": true,
+    "registry_schema": 1,
+    "save_schema": 3,
+    "max_profiles": 4,
+    "slots_per_profile": 3,
+    "snapshots_per_slot": 3,
+    "manual_backups_per_slot": 5,
+    "transactional_writes": true,
+    "legacy_migration": true,
+    "export_import_checksum": true,
+    "history_limit": 60,
+    "manager_ui": true,
+    "mobile_audited": true,
+    "audit": "tests/run_save_architecture_audit.py"
+  },
+  "core_loop_2": {
+    "enabled": true,
+    "schema": 2,
+    "term_days": 1460,
+    "maximum_terms": 2,
+    "weekly_action_points": true,
+    "delayed_consequences": true,
+    "quarterly_reviews": true,
+    "annual_reports": true,
+    "automatic_stabilizers": true,
+    "real_career_outcomes": true,
+    "idle_collapse_blocking": true,
+    "audit": "tests/run_core_loop_2_audit.py"
+  },
+  "government_creation": {
+    "enabled": true,
+    "schema": 1,
+    "playable_countries": 1,
+    "political_systems": 3,
+    "leader_ideologies": 5,
+    "difficulty_levels": 4,
+    "starting_scenarios": 4,
+    "strategic_objectives": 5,
+    "party_logo_cards": 12,
+    "audit": "tests/run_government_creation_audit.py"
+  },
+  "country_population": {
+    "enabled": true,
+    "schema": 1,
+    "regions": 5,
+    "social_groups": 6,
+    "demographic_indicators": 13,
+    "population_policies": 6,
+    "weekly_social_cycle": true,
+    "monthly_demographic_cycle": true,
+    "delayed_program_results": true,
+    "regional_inequality": true,
+    "quality_of_life": true,
+    "save_migration": true,
+    "audit": "tests/run_population_audit.py"
+  },
+  "deep_economy": {
+    "enabled": true,
+    "schema": 1,
+    "fiscal_rules": 4,
+    "monetary_policies": 3,
+    "trade_strategies": 3,
+    "productive_programs": 3,
+    "monthly_history_limit": 48,
+    "quarter_history_limit": 24,
+    "save_migration": "additive_schema3_preserved",
+    "legacy_bridge": true,
+    "population_bridge": true,
+    "core_loop_bridge": true,
+    "audit": "tests/run_deep_economy_audit.py"
+  }
+}

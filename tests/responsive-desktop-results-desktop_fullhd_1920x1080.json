@@ -1,0 +1,119 @@
+{
+  "project": "DIPLOCRAFT",
+  "version": "1.6.1",
+  "phase": "Economia Profunda",
+  "execution_model": "one isolated browser process per desktop viewport + deterministic aggregator",
+  "static_checks": {
+    "desktop_module_exists": true,
+    "desktop_module_loaded": true,
+    "desktop_breakpoint_contract": true,
+    "tablet_rail_contract": true,
+    "ultrawide_contract": true,
+    "content_width_contract": true,
+    "command_palette_runtime": true,
+    "keyboard_shortcuts_runtime": true,
+    "persistent_preferences_runtime": true
+  },
+  "cases": [
+    {
+      "name": "desktop_fullhd_1920x1080",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "checks": {
+        "desktop_runtime_installed": true,
+        "desktop_breakpoint_detected": true,
+        "mobile_chrome_hidden": true,
+        "menu_no_horizontal_overflow": true,
+        "desktop_sidebar_visible": true,
+        "shell_tracks_sidebar": true,
+        "command_bar_visible_sticky": true,
+        "no_game_horizontal_overflow": true,
+        "all_navigation_items_present": true,
+        "tablet_uses_compact_rail": true,
+        "sidebar_toggle_persists": true,
+        "density_mode_persists": true,
+        "command_palette_opens": true,
+        "command_search_filters": true,
+        "command_executes_navigation": true,
+        "alt_number_shortcut": true,
+        "alt_day_shortcut": true,
+        "alt_save_shortcut": true,
+        "adaptive_column_layout": true,
+        "content_width_is_bounded": true,
+        "ultrawide_content_centered": true,
+        "sidebar_last_item_reachable": true,
+        "keyboard_focus_visible": true
+      },
+      "measurements": {
+        "side": {
+          "left": 0,
+          "right": 248,
+          "top": 0,
+          "bottom": 1080,
+          "width": 248,
+          "height": 1080
+        },
+        "shell": {
+          "left": 248,
+          "right": 1920,
+          "top": 0,
+          "bottom": 1080,
+          "width": 1672,
+          "height": 1080
+        },
+        "command_bar": {
+          "left": 272,
+          "right": 1896,
+          "top": 10,
+          "bottom": 72,
+          "width": 1624,
+          "height": 62
+        },
+        "sidebar_toggle": {
+          "before": 248,
+          "after": 96.96875,
+          "stored": "true"
+        },
+        "dashboard_layout": {
+          "first": {
+            "x": 272,
+            "y": 604,
+            "width": 948.71875,
+            "height": 529,
+            "top": 604,
+            "right": 1220.71875,
+            "bottom": 1133,
+            "left": 272
+          },
+          "second": {
+            "x": 1236.71875,
+            "y": 604,
+            "width": 659.265625,
+            "height": 529,
+            "top": 604,
+            "right": 1895.984375,
+            "bottom": 1133,
+            "left": 1236.71875
+          },
+          "two_columns": true
+        },
+        "content": {
+          "left": 272,
+          "right": 1896,
+          "top": 303,
+          "bottom": 1982.953125,
+          "width": 1624,
+          "height": 1679.953125
+        }
+      },
+      "console_errors": [],
+      "page_errors": [],
+      "passed": true
+    }
+  ],
+  "case_count": 1,
+  "check_count": 32,
+  "passed": true
+}

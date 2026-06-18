@@ -1,0 +1,107 @@
+{
+  "project": "DIPLOCRAFT",
+  "version": "1.6.1",
+  "source_assets": 34,
+  "runtime_variants": 98,
+  "pwa_assets": 16,
+  "source_total_bytes": 47794197,
+  "runtime_total_bytes_all_formats": 4465704,
+  "reduction_percent_all_formats": 90.66,
+  "profiles": {
+    "background": [
+      [
+        "desktop",
+        [
+          1280,
+          853
+        ],
+        "cover",
+        {
+          "webp": 76,
+          "avif": 48
+        }
+      ],
+      [
+        "mobile",
+        [
+          720,
+          960
+        ],
+        "cover",
+        {
+          "webp": 74,
+          "avif": 46
+        }
+      ]
+    ],
+    "character": [
+      [
+        "thumb",
+        [
+          320,
+          320
+        ],
+        "cover",
+        {
+          "webp": 82,
+          "avif": 55
+        }
+      ],
+      [
+        "display",
+        [
+          640,
+          640
+        ],
+        "cover",
+        {
+          "webp": 82,
+          "avif": 55
+        }
+      ]
+    ],
+    "card": [
+      [
+        "card",
+        [
+          768,
+          512
+        ],
+        "cover",
+        {
+          "webp": 78,
+          "avif": 50
+        }
+      ]
+    ],
+    "icon": [
+      [
+        "ui",
+        [
+          960,
+          409
+        ],
+        "contain",
+        {
+          "webp": 82,
+          "avif": 55
+        }
+      ]
+    ],
+    "party": [
+      [
+        "party",
+        [
+          360,
+          336
+        ],
+        "cover",
+        {
+          "webp": 80,
+          "avif": 52
+        }
+      ]
+    ]
+  },
+  "status": "generated"
+}

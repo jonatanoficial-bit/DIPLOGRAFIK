@@ -1,0 +1,17 @@
+{
+  "project": "DIPLOCRAFT",
+  "version": "1.1.1",
+  "phase": "Asset Pipeline",
+  "source_assets_received": 22,
+  "runtime_variants_generated": 74,
+  "formats": [
+    "avif",
+    "webp"
+  ],
+  "source_total_bytes": 46797072,
+  "runtime_total_bytes_all_formats": 4312994,
+  "reduction_percent_all_formats": 90.78,
+  "status": "verified",
+  "manifest": "meta/asset_manifest.json",
+  "audit": "tests/asset-pipeline-results.json"
+}

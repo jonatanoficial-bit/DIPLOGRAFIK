@@ -1,0 +1,27 @@
+{
+  "version": "1.6.0",
+  "scenario": "all assets/runtime requests return HTTP 404 while source PNGs remain available",
+  "checks": {
+    "vercel_framework_static": true,
+    "vercel_assets_headers": true,
+    "background_png_layer_present": true,
+    "avatar_fallback_binding_present": true,
+    "service_worker_optional_precache": true,
+    "source_pngs_exist": true,
+    "app_boots_with_runtime_404": true,
+    "background_has_source_fallback": true,
+    "background_source_requested": true,
+    "five_avatars_render": true,
+    "avatars_fall_back_to_png": true,
+    "fallback_class_applied": true,
+    "runtime_failure_was_exercised": true,
+    "hud_avatar_falls_back": true,
+    "no_page_errors": true,
+    "no_console_errors": true
+  },
+  "runtime_requests_intercepted": 15,
+  "source_requests_fulfilled": 14,
+  "page_errors": [],
+  "console_errors": [],
+  "passed": true
+}

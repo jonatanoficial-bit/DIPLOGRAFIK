@@ -1,0 +1,11 @@
+STATIC PASS 10/10
+PASS desktop_short_1024x600 23/23
+PASS desktop_1366x768 23/23
+PASS desktop_fullhd_1920x1080 23/23
+PASS tablet_mouse_1024x768 23/23
+PASS mobile_320x568 23/23
+PASS mobile_360x640 23/23
+PASS mobile_390x844 23/23
+PASS mobile_landscape_844x390 23/23
+PASS tablet_touch_768x1024 23/23
+OVERALL PASS 217 checks

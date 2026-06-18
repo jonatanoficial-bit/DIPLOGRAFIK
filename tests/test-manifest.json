@@ -1,0 +1,96 @@
+{
+  "project": "DIPLOCRAFT",
+  "version": "1.6.0",
+  "release_blocking": true,
+  "suites": [
+    "build-generator-check",
+    "asset-pipeline-audit",
+    "browser-regression",
+    "mobile-first-audit",
+    "static-audit",
+    "clean-base-audit",
+    "build-truth-audit",
+    "drift-guard",
+    "node-tests",
+    "simulation-matrix",
+    "anti-break-audit",
+    "pwa-audit",
+    "responsive-desktop-audit",
+    "i18n-audit",
+    "web-asset-recovery-audit",
+    "scroll-touch-audit",
+    "localization-complete-audit",
+    "core-loop-2-audit",
+    "country-population-audit"
+  ],
+  "mobile_profiles": [
+    "320x568 portrait",
+    "360x640 portrait",
+    "390x844 portrait",
+    "844x390 landscape",
+    "768x1024 tablet"
+  ],
+  "pwa_profiles": [
+    "localhost installability",
+    "service worker control",
+    "offline reload",
+    "controlled update contract"
+  ],
+  "desktop_profiles": [
+    "1024x768 tablet landscape",
+    "1366x768 notebook",
+    "1920x1080 Full HD",
+    "2560x1080 ultrawide"
+  ],
+  "i18n_profiles": [
+    "pt-BR",
+    "en",
+    "es",
+    "hot-switch during active game",
+    "Intl number/date formatting"
+  ],
+  "web_deployment_profiles": [
+    "Vercel static config",
+    "assets/runtime unavailable",
+    "PNG source fallback",
+    "service worker optional precache"
+  ],
+  "scroll_touch_profiles": [
+    "1024x600 short desktop mouse wheel",
+    "1366x768 desktop mouse wheel",
+    "1920x1080 desktop mouse wheel",
+    "1024x768 tablet with mouse",
+    "320x568 touch",
+    "360x640 touch",
+    "390x844 touch",
+    "844x390 landscape touch",
+    "768x1024 tablet touch"
+  ],
+  "localization_profiles": [
+    "964 catalog keys",
+    "exact dynamic content phrases",
+    "zero runtime missing translations",
+    "320x568 text expansion",
+    "hot switch during active game",
+    "canonical feed messages"
+  ],
+  "core_loop_2_profiles": [
+    "daily weekly monthly quarterly annual cadence",
+    "action capacity and policy fatigue",
+    "delayed consequences",
+    "four-year election lock and two-term limit",
+    "victory defeat impeachment rupture and fiscal collapse",
+    "30-year deterministic balance matrix",
+    "mobile tablet desktop dashboard"
+  ],
+  "population_profiles": [
+    "five Brazilian regions",
+    "six social groups",
+    "thirteen demographic indicators",
+    "six delayed public programs",
+    "320x568 touch",
+    "768x1024 tablet",
+    "1366x768 desktop",
+    "30-year deterministic population bounds"
+  ]
+}

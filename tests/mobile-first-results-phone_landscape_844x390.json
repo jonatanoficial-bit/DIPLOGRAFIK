@@ -1,0 +1,103 @@
+{
+  "project": "DIPLOCRAFT",
+  "version": "1.6.1",
+  "phase": "Economia Profunda",
+  "static_checks": {
+    "safe_area_css": true,
+    "keyboard_css_contract": true,
+    "landscape_media_query": true,
+    "minimum_320_layout": true,
+    "touch_target_policy": true,
+    "visual_viewport_runtime": true,
+    "edge_gesture_runtime": true,
+    "scroll_memory_runtime": true,
+    "focus_trap_runtime": true
+  },
+  "cases": [
+    {
+      "name": "phone_landscape_844x390",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "checks": {
+        "mobile_runtime_installed": true,
+        "orientation_detected": true,
+        "app_height_defined": true,
+        "no_menu_horizontal_overflow": true,
+        "viewport_allows_user_scaling": true,
+        "menu_touch_targets": true,
+        "menu_last_action_reachable": true,
+        "create_has_independent_scroll": true,
+        "avatar_cards_are_buttons": true,
+        "party_cards_are_buttons": true,
+        "input_prevents_ios_zoom": true,
+        "virtual_keyboard_detected": true,
+        "keyboard_state_recovers": true,
+        "sticky_start_reachable": true,
+        "game_shell_is_only_scroll_viewport": true,
+        "bottom_nav_has_six_actions": true,
+        "bottom_nav_touch_targets": true,
+        "bottom_nav_fits_width": true,
+        "quick_advance_does_not_cover_nav": true,
+        "more_opens_full_drawer": true,
+        "drawer_stays_inside_viewport": true,
+        "drawer_contains_all_tabs": true,
+        "drawer_close_restores_state": true,
+        "edge_swipe_opens_drawer": true,
+        "overlay_closes_drawer": true,
+        "mobile_section_tracks_tab": true,
+        "tab_scroll_position_restored": true,
+        "no_game_horizontal_overflow": true
+      },
+      "measurements": {
+        "menu_button_min_height": 50,
+        "create": {
+          "clientHeight": 390,
+          "scrollHeight": 4972,
+          "overflowY": "auto"
+        },
+        "bottom_nav": {
+          "x": 0,
+          "y": 328,
+          "width": 844,
+          "height": 62,
+          "top": 328,
+          "right": 844,
+          "bottom": 390,
+          "left": 0
+        },
+        "quick_advance": {
+          "x": 780,
+          "y": 262,
+          "width": 52,
+          "height": 52,
+          "top": 262,
+          "right": 832,
+          "bottom": 314,
+          "left": 780
+        },
+        "drawer": {
+          "x": 0,
+          "y": 0,
+          "width": 330,
+          "height": 390,
+          "top": 0,
+          "right": 330,
+          "bottom": 390,
+          "left": 0
+        },
+        "tab_scroll": {
+          "saved": 0,
+          "restored": 12
+        }
+      },
+      "console_errors": [],
+      "page_errors": [],
+      "passed": true
+    }
+  ],
+  "case_count": 1,
+  "check_count": 37,
+  "passed": true
+}

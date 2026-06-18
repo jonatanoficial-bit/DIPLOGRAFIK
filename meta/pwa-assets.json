@@ -1,0 +1,117 @@
+{
+  "generated_by": "tools/build_pwa_assets.py",
+  "assets": [
+    {
+      "path": "assets/pwa/apple-touch-icon-180.png",
+      "width": 180,
+      "height": 180,
+      "bytes": 2826,
+      "sha256": "ee7c6bfef6fa5cc87e072093a25cba73f52f12a911f77654003255cffdef6b3f"
+    },
+    {
+      "path": "assets/pwa/icon-128.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 1872,
+      "sha256": "2c84649e4d9bacab849e0c176a43e479f5eea7943e8ddc3375becd3a7da0f05a"
+    },
+    {
+      "path": "assets/pwa/icon-192.png",
+      "width": 192,
+      "height": 192,
+      "bytes": 3056,
+      "sha256": "6acd421a7ff8f669de910740ce365c282d39ba8aa8ce16ddec048a2c35371533"
+    },
+    {
+      "path": "assets/pwa/icon-256.png",
+      "width": 256,
+      "height": 256,
+      "bytes": 4265,
+      "sha256": "4f960520c11b6e2cb1f206224486184f2463c8262b0ed4848cbabe3a783d0e37"
+    },
+    {
+      "path": "assets/pwa/icon-384.png",
+      "width": 384,
+      "height": 384,
+      "bytes": 7571,
+      "sha256": "1e66dc72a6aa9a1cae7255ef5d95c825975c4fe084408218bed2ecec6738dd73"
+    },
+    {
+      "path": "assets/pwa/icon-512.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 11528,
+      "sha256": "0fa1397b4ea1d2a00050801046e51f1c170b9fbdefea1ce5943f7e65acda4f30"
+    },
+    {
+      "path": "assets/pwa/icon-64.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 967,
+      "sha256": "9688bb41bf947260e5ccb280c4aecd71cf96d37f4ea30de376bfbae368fa00f8"
+    },
+    {
+      "path": "assets/pwa/icon-96.png",
+      "width": 96,
+      "height": 96,
+      "bytes": 1374,
+      "sha256": "c1b1b26348f6345f3667a70537825301f653cad7568bb9efc00b1ce1979b37fa"
+    },
+    {
+      "path": "assets/pwa/icon-maskable-512.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 11415,
+      "sha256": "d79dc3055535e34d64438bd2720e55dd559d607640d18aef8810b546648fde18"
+    },
+    {
+      "path": "assets/pwa/screenshot-desktop-1280x720.png",
+      "width": 1280,
+      "height": 720,
+      "bytes": 55589,
+      "sha256": "8b9fdddc44a1c15a8a248c44fc652bd9fee57d873703c1c807efae33b3b4cb0e"
+    },
+    {
+      "path": "assets/pwa/screenshot-mobile-720x1280.png",
+      "width": 720,
+      "height": 1280,
+      "bytes": 63500,
+      "sha256": "dfed3ba8a2750d0317b44512a462822b87be82c790403cedf39b7c59a74dd4bc"
+    },
+    {
+      "path": "assets/pwa/splash-1170x2532.png",
+      "width": 1170,
+      "height": 2532,
+      "bytes": 136430,
+      "sha256": "1e9967561695650ecfe4aba63baa28f3d54b7caf9a2f669e38a57d254e139999"
+    },
+    {
+      "path": "assets/pwa/splash-1290x2796.png",
+      "width": 1290,
+      "height": 2796,
+      "bytes": 166159,
+      "sha256": "8e74060f1e49f34bab7dd9ba4635cc9dbfae952b5d1d96e67ea6e6fc421c5dfa"
+    },
+    {
+      "path": "assets/pwa/splash-1536x2048.png",
+      "width": 1536,
+      "height": 2048,
+      "bytes": 158446,
+      "sha256": "c66f6b0a6b2d714252cf446f7c808bea9b7db8c71150d6837c78cb8e6b6af667"
+    },
+    {
+      "path": "assets/pwa/splash-2048x1536.png",
+      "width": 2048,
+      "height": 1536,
+      "bytes": 153931,
+      "sha256": "056b6b90b88c400879d6463d1896da18d7b811aae39f1ce51871b94b73977935"
+    },
+    {
+      "path": "assets/pwa/splash-750x1334.png",
+      "width": 750,
+      "height": 1334,
+      "bytes": 69115,
+      "sha256": "71d69a3b700402cab39a6b8e95d0d56473c097ce7975832e4550853f5f4b81d4"
+    }
+  ]
+}

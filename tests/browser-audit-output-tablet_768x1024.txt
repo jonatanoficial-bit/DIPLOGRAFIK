@@ -1,0 +1,71 @@
+RUN tablet_768x1024
+DONE tablet_768x1024 passed=True
+[
+  {
+    "name": "tablet_768x1024",
+    "viewport": {
+      "width": 768,
+      "height": 1024,
+      "mobile": true
+    },
+    "checks": {
+      "boot_without_error": true,
+      "menu_visible": true,
+      "canonical_build_visible": true,
+      "support_layers_exist": true,
+      "document_title_generated": true,
+      "menu_background_uses_runtime_catalog": true,
+      "menu_can_reach_last_button": true,
+      "create_screen_opens": true,
+      "avatars_use_optimized_thumbnails": true,
+      "offscreen_avatars_are_lazy": true,
+      "create_scroll_enabled": true,
+      "start_button_reachable": true,
+      "game_starts": true,
+      "tutorial_auto_opens": true,
+      "all_tabs_navigate": true,
+      "tab_background_uses_runtime_catalog": true,
+      "release_identity_matches": true,
+      "release_artifact_visible": true,
+      "release_source_hash_visible": true,
+      "advance_day_changes_date": true,
+      "save_created": true,
+      "save_envelope_schema3": true,
+      "snapshot_rotation_active": true,
+      "watchdog_installed": true,
+      "health_panel_rendered": true,
+      "diagnostics_api_available": true,
+      "pending_transaction_recovered": true,
+      "transaction_recovery_keeps_game_playable": true,
+      "corrupt_save_quarantined": true,
+      "snapshot_auto_restored": true,
+      "storage_warning_visible": true,
+      "game_continues_after_recovery": true,
+      "tutorial_manual_opens": true,
+      "audio_controls_open": true,
+      "error_boundary_opens": true,
+      "incident_id_visible": true,
+      "emergency_snapshot_created": true,
+      "error_boundary_recovers_to_menu": true,
+      "manual_snapshot_restore_recorded": true,
+      "safe_mode_after_repeated_failures": true,
+      "mobile_drawer_opens": true,
+      "mobile_drawer_closes": true
+    },
+    "measurements": {
+      "menu": {
+        "clientHeight": 1024,
+        "scrollHeight": 1024,
+        "overflowY": "auto"
+      },
+      "create": {
+        "clientHeight": 1024,
+        "scrollHeight": 4410,
+        "overflowY": "auto"
+      }
+    },
+    "console_errors": [],
+    "page_errors": [],
+    "passed": true
+  }
+]

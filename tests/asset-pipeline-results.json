@@ -1,0 +1,60 @@
+{
+  "project": "DIPLOCRAFT",
+  "version": "1.6.1",
+  "phase": "Economia Profunda",
+  "checks": {
+    "registry_matches_assets_exactly": true,
+    "source_count_34": true,
+    "runtime_variant_count_98": true,
+    "pwa_asset_count_16": true,
+    "profiles_complete": true,
+    "dimensions_match_profiles": true,
+    "all_files_decode": true,
+    "all_runtime_files_within_budget": true,
+    "all_formats_total_reduction_at_least_85_percent": true,
+    "single_format_reduction_at_least_90_percent": true,
+    "catalog_contains_avif_and_webp": true,
+    "runtime_code_uses_catalog": true,
+    "responsive_background_css_enabled": true,
+    "avatar_lazy_loading_enabled": true,
+    "critical_preloads_present": true,
+    "no_direct_source_png_in_active_runtime": true,
+    "asset_path_lock_is_runtime_only": true,
+    "pipeline_reproducible_files_present": true
+  },
+  "metrics": {
+    "source_assets": 34,
+    "runtime_variants": 98,
+    "pwa_assets": 16,
+    "registered_files": 148,
+    "source_total_bytes": 47794197,
+    "runtime_total_all_formats": 4465704,
+    "webp_total_bytes": 2836014,
+    "avif_total_bytes": 1629690,
+    "all_formats_reduction_percent": 90.66,
+    "webp_reduction_percent": 94.07,
+    "avif_reduction_percent": 96.59,
+    "max_runtime_asset_bytes": 176416,
+    "profile_counts": {
+      "background/desktop/avif": 10,
+      "background/desktop/webp": 10,
+      "background/mobile/avif": 10,
+      "background/mobile/webp": 10,
+      "character/thumb/avif": 5,
+      "character/thumb/webp": 5,
+      "character/display/avif": 5,
+      "character/display/webp": 5,
+      "card/card/avif": 6,
+      "card/card/webp": 6,
+      "icon/ui/avif": 1,
+      "icon/ui/webp": 1,
+      "party/party/avif": 12,
+      "party/party/webp": 12
+    }
+  },
+  "details": {
+    "file_errors": [],
+    "budget_failures": []
+  },
+  "passed": true
+}

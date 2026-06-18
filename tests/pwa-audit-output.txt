@@ -1,0 +1,24 @@
+PASS manifest_identity
+PASS manifest_fullscreen_fallbacks
+PASS manifest_colors
+PASS manifest_icons_exist_and_match
+PASS manifest_has_any_and_maskable
+PASS manifest_screenshots_match
+PASS apple_meta_complete
+PASS pwa_ui_contract
+PASS service_worker_generated
+PASS service_worker_syntax
+PASS controlled_update_contract
+PASS offline_strategies_present
+PASS pwa_runtime_contract
+PASS precache_paths_exist
+PASS precache_excludes_png_sources
+PASS precache_has_app_shell
+PASS pwa_identity_assets_budget
+PASS service_worker_simulation_passes
+PASS simulation_precache_populated
+PASS simulation_offline_navigation
+PASS simulation_offline_assets
+PASS simulation_update_messages
+PASS simulation_old_cache_cleanup
+OVERALL PASS 23/23

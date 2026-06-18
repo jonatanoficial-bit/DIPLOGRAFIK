@@ -1,0 +1,566 @@
+{
+  "project": "DIPLOCRAFT",
+  "version": "1.6.1",
+  "phase": "Economia Profunda",
+  "execution_model": "one isolated browser process per viewport + deterministic aggregator",
+  "static_checks": {
+    "scroll_module_exists": true,
+    "scroll_module_loaded": true,
+    "setup_scroll_owner_css": true,
+    "fixed_setup_viewport": true,
+    "desktop_scrollbar_styled": true,
+    "touch_pan_contract": true,
+    "ios_momentum_contract": true,
+    "keyboard_navigation_runtime": true,
+    "scroll_assist_runtime": true,
+    "minimum_icon_policy": true
+  },
+  "cases": [
+    {
+      "name": "desktop_short_1024x600",
+      "viewport": {
+        "width": 1024,
+        "height": 600
+      },
+      "mode": "mouse",
+      "checks": {
+        "scroll_runtime_installed": true,
+        "menu_is_scroll_owner": true,
+        "document_remains_app_locked": true,
+        "create_owns_vertical_scroll": true,
+        "scrollbar_gutter_is_stable": true,
+        "touch_pan_y_enabled": true,
+        "scroll_assist_visible": true,
+        "no_create_horizontal_overflow": true,
+        "mouse_wheel_scrolls_create": true,
+        "keyboard_page_down_scrolls": true,
+        "mouse_wheel_reaches_party_controls": true,
+        "mouse_wheel_reaches_start_button": true,
+        "name_field_reachable": true,
+        "name_field_editable": true,
+        "party_controls_reachable": true,
+        "start_touch_target": true,
+        "back_touch_target": true,
+        "scroll_assist_tracks_progress": true,
+        "game_starts_after_scrolling": true,
+        "desktop_game_scroll_owner": true,
+        "desktop_scrollbar_css_present": true,
+        "no_page_errors": true,
+        "no_console_errors": true
+      },
+      "measurements": {
+        "create_initial": {
+          "scrollTop": 0,
+          "scrollHeight": 3998,
+          "clientHeight": 600,
+          "overflowY": "auto",
+          "touchAction": "pan-y pinch-zoom",
+          "scrollbarGutter": "stable",
+          "position": "fixed"
+        },
+        "mouse_wheel": {
+          "before": 0,
+          "after": 559
+        },
+        "page_down": {
+          "before": 559,
+          "after": 1038
+        },
+        "wheel_steps_to_party_controls": 7,
+        "wheel_steps_to_start": 3
+      },
+      "console_errors": [],
+      "page_errors": [],
+      "passed": true
+    },
+    {
+      "name": "desktop_1366x768",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "mouse",
+      "checks": {
+        "scroll_runtime_installed": true,
+        "menu_is_scroll_owner": true,
+        "document_remains_app_locked": true,
+        "create_owns_vertical_scroll": true,
+        "scrollbar_gutter_is_stable": true,
+        "touch_pan_y_enabled": true,
+        "scroll_assist_visible": true,
+        "no_create_horizontal_overflow": true,
+        "mouse_wheel_scrolls_create": true,
+        "keyboard_page_down_scrolls": true,
+        "mouse_wheel_reaches_party_controls": true,
+        "mouse_wheel_reaches_start_button": true,
+        "name_field_reachable": true,
+        "name_field_editable": true,
+        "party_controls_reachable": true,
+        "start_touch_target": true,
+        "back_touch_target": true,
+        "scroll_assist_tracks_progress": true,
+        "game_starts_after_scrolling": true,
+        "desktop_game_scroll_owner": true,
+        "desktop_scrollbar_css_present": true,
+        "no_page_errors": true,
+        "no_console_errors": true
+      },
+      "measurements": {
+        "create_initial": {
+          "scrollTop": 0,
+          "scrollHeight": 3998,
+          "clientHeight": 768,
+          "overflowY": "auto",
+          "touchAction": "pan-y pinch-zoom",
+          "scrollbarGutter": "stable",
+          "position": "fixed"
+        },
+        "mouse_wheel": {
+          "before": 0,
+          "after": 563
+        },
+        "page_down": {
+          "before": 563,
+          "after": 1189
+        },
+        "wheel_steps_to_party_controls": 7,
+        "wheel_steps_to_start": 3
+      },
+      "console_errors": [],
+      "page_errors": [],
+      "passed": true
+    },
+    {
+      "name": "desktop_fullhd_1920x1080",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "mode": "mouse",
+      "checks": {
+        "scroll_runtime_installed": true,
+        "menu_is_scroll_owner": true,
+        "document_remains_app_locked": true,
+        "create_owns_vertical_scroll": true,
+        "scrollbar_gutter_is_stable": true,
+        "touch_pan_y_enabled": true,
+        "scroll_assist_visible": true,
+        "no_create_horizontal_overflow": true,
+        "mouse_wheel_scrolls_create": true,
+        "keyboard_page_down_scrolls": true,
+        "mouse_wheel_reaches_party_controls": true,
+        "mouse_wheel_reaches_start_button": true,
+        "name_field_reachable": true,
+        "name_field_editable": true,
+        "party_controls_reachable": true,
+        "start_touch_target": true,
+        "back_touch_target": true,
+        "scroll_assist_tracks_progress": true,
+        "game_starts_after_scrolling": true,
+        "desktop_game_scroll_owner": true,
+        "desktop_scrollbar_css_present": true,
+        "no_page_errors": true,
+        "no_console_errors": true
+      },
+      "measurements": {
+        "create_initial": {
+          "scrollTop": 0,
+          "scrollHeight": 3997,
+          "clientHeight": 1080,
+          "overflowY": "auto",
+          "touchAction": "pan-y pinch-zoom",
+          "scrollbarGutter": "stable",
+          "position": "fixed"
+        },
+        "mouse_wheel": {
+          "before": 0,
+          "after": 557
+        },
+        "page_down": {
+          "before": 557,
+          "after": 1361
+        },
+        "wheel_steps_to_party_controls": 6,
+        "wheel_steps_to_start": 3
+      },
+      "console_errors": [],
+      "page_errors": [],
+      "passed": true
+    },
+    {
+      "name": "tablet_mouse_1024x768",
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "mode": "mouse",
+      "checks": {
+        "scroll_runtime_installed": true,
+        "menu_is_scroll_owner": true,
+        "document_remains_app_locked": true,
+        "create_owns_vertical_scroll": true,
+        "scrollbar_gutter_is_stable": true,
+        "touch_pan_y_enabled": true,
+        "scroll_assist_visible": true,
+        "no_create_horizontal_overflow": true,
+        "mouse_wheel_scrolls_create": true,
+        "keyboard_page_down_scrolls": true,
+        "mouse_wheel_reaches_party_controls": true,
+        "mouse_wheel_reaches_start_button": true,
+        "name_field_reachable": true,
+        "name_field_editable": true,
+        "party_controls_reachable": true,
+        "start_touch_target": true,
+        "back_touch_target": true,
+        "scroll_assist_tracks_progress": true,
+        "game_starts_after_scrolling": true,
+        "desktop_game_scroll_owner": true,
+        "desktop_scrollbar_css_present": true,
+        "no_page_errors": true,
+        "no_console_errors": true
+      },
+      "measurements": {
+        "create_initial": {
+          "scrollTop": 0,
+          "scrollHeight": 3998,
+          "clientHeight": 768,
+          "overflowY": "auto",
+          "touchAction": "pan-y pinch-zoom",
+          "scrollbarGutter": "stable",
+          "position": "fixed"
+        },
+        "mouse_wheel": {
+          "before": 0,
+          "after": 559
+        },
+        "page_down": {
+          "before": 559,
+          "after": 1181
+        },
+        "wheel_steps_to_party_controls": 7,
+        "wheel_steps_to_start": 3
+      },
+      "console_errors": [],
+      "page_errors": [],
+      "passed": true
+    },
+    {
+      "name": "mobile_320x568",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "mode": "touch",
+      "checks": {
+        "scroll_runtime_installed": true,
+        "menu_is_scroll_owner": true,
+        "document_remains_app_locked": true,
+        "create_owns_vertical_scroll": true,
+        "scrollbar_gutter_is_stable": true,
+        "touch_pan_y_enabled": true,
+        "scroll_assist_visible": true,
+        "no_create_horizontal_overflow": true,
+        "real_touch_swipe_scrolls_from_avatar": true,
+        "touch_reaches_party_controls": true,
+        "touch_reaches_start_button": true,
+        "name_field_reachable": true,
+        "name_field_editable": true,
+        "party_controls_reachable": true,
+        "start_touch_target": true,
+        "back_touch_target": true,
+        "scroll_assist_tracks_progress": true,
+        "game_starts_after_scrolling": true,
+        "mobile_icons_are_legible": true,
+        "mobile_nav_touch_targets": true,
+        "game_touch_scroll_owner": true,
+        "no_page_errors": true,
+        "no_console_errors": true
+      },
+      "measurements": {
+        "create_initial": {
+          "scrollTop": 0,
+          "scrollHeight": 4794,
+          "clientHeight": 568,
+          "overflowY": "auto",
+          "touchAction": "pan-y pinch-zoom",
+          "scrollbarGutter": "stable",
+          "position": "fixed"
+        },
+        "first_touch_swipe": {
+          "before": 0,
+          "after": 224,
+          "start": 536,
+          "end": 274.71999999999997,
+          "x": 88.5
+        },
+        "touch_swipes_to_party_controls": 7,
+        "mobile_icons": [
+          20,
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      "console_errors": [],
+      "page_errors": [],
+      "passed": true
+    },
+    {
+      "name": "mobile_360x640",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "mode": "touch",
+      "checks": {
+        "scroll_runtime_installed": true,
+        "menu_is_scroll_owner": true,
+        "document_remains_app_locked": true,
+        "create_owns_vertical_scroll": true,
+        "scrollbar_gutter_is_stable": true,
+        "touch_pan_y_enabled": true,
+        "scroll_assist_visible": true,
+        "no_create_horizontal_overflow": true,
+        "real_touch_swipe_scrolls_from_avatar": true,
+        "touch_reaches_party_controls": true,
+        "touch_reaches_start_button": true,
+        "name_field_reachable": true,
+        "name_field_editable": true,
+        "party_controls_reachable": true,
+        "start_touch_target": true,
+        "back_touch_target": true,
+        "scroll_assist_tracks_progress": true,
+        "game_starts_after_scrolling": true,
+        "mobile_icons_are_legible": true,
+        "mobile_nav_touch_targets": true,
+        "game_touch_scroll_owner": true,
+        "no_page_errors": true,
+        "no_console_errors": true
+      },
+      "measurements": {
+        "create_initial": {
+          "scrollTop": 0,
+          "scrollHeight": 4623,
+          "clientHeight": 640,
+          "overflowY": "auto",
+          "touchAction": "pan-y pinch-zoom",
+          "scrollbarGutter": "stable",
+          "position": "fixed"
+        },
+        "first_touch_swipe": {
+          "before": 0,
+          "after": 256,
+          "start": 608,
+          "end": 328,
+          "x": 98.5
+        },
+        "touch_swipes_to_party_controls": 7,
+        "mobile_icons": [
+          20,
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      "console_errors": [],
+      "page_errors": [],
+      "passed": true
+    },
+    {
+      "name": "mobile_390x844",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mode": "touch",
+      "checks": {
+        "scroll_runtime_installed": true,
+        "menu_is_scroll_owner": true,
+        "document_remains_app_locked": true,
+        "create_owns_vertical_scroll": true,
+        "scrollbar_gutter_is_stable": true,
+        "touch_pan_y_enabled": true,
+        "scroll_assist_visible": true,
+        "no_create_horizontal_overflow": true,
+        "real_touch_swipe_scrolls_from_avatar": true,
+        "touch_reaches_party_controls": true,
+        "touch_reaches_start_button": true,
+        "name_field_reachable": true,
+        "name_field_editable": true,
+        "party_controls_reachable": true,
+        "start_touch_target": true,
+        "back_touch_target": true,
+        "scroll_assist_tracks_progress": true,
+        "game_starts_after_scrolling": true,
+        "mobile_icons_are_legible": true,
+        "mobile_nav_touch_targets": true,
+        "game_touch_scroll_owner": true,
+        "no_page_errors": true,
+        "no_console_errors": true
+      },
+      "measurements": {
+        "create_initial": {
+          "scrollTop": 0,
+          "scrollHeight": 4527,
+          "clientHeight": 844,
+          "overflowY": "auto",
+          "touchAction": "pan-y pinch-zoom",
+          "scrollbarGutter": "stable",
+          "position": "fixed"
+        },
+        "first_touch_swipe": {
+          "before": 0,
+          "after": 256,
+          "start": 699.1875,
+          "end": 419.1875,
+          "x": 108.5
+        },
+        "touch_swipes_to_party_controls": 5,
+        "mobile_icons": [
+          22,
+          22,
+          22,
+          22,
+          22,
+          22
+        ]
+      },
+      "console_errors": [],
+      "page_errors": [],
+      "passed": true
+    },
+    {
+      "name": "mobile_landscape_844x390",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "mode": "touch",
+      "checks": {
+        "scroll_runtime_installed": true,
+        "menu_is_scroll_owner": true,
+        "document_remains_app_locked": true,
+        "create_owns_vertical_scroll": true,
+        "scrollbar_gutter_is_stable": true,
+        "touch_pan_y_enabled": true,
+        "scroll_assist_visible": true,
+        "no_create_horizontal_overflow": true,
+        "real_touch_swipe_scrolls_from_avatar": true,
+        "touch_reaches_party_controls": true,
+        "touch_reaches_start_button": true,
+        "name_field_reachable": true,
+        "name_field_editable": true,
+        "party_controls_reachable": true,
+        "start_touch_target": true,
+        "back_touch_target": true,
+        "scroll_assist_tracks_progress": true,
+        "game_starts_after_scrolling": true,
+        "mobile_icons_are_legible": true,
+        "mobile_nav_touch_targets": true,
+        "game_touch_scroll_owner": true,
+        "no_page_errors": true,
+        "no_console_errors": true
+      },
+      "measurements": {
+        "create_initial": {
+          "scrollTop": 0,
+          "scrollHeight": 4976,
+          "clientHeight": 390,
+          "overflowY": "auto",
+          "touchAction": "pan-y pinch-zoom",
+          "scrollbarGutter": "stable",
+          "position": "fixed"
+        },
+        "first_touch_swipe": {
+          "before": 0,
+          "after": 227,
+          "start": 358,
+          "end": 178.6,
+          "x": 222.0
+        },
+        "touch_swipes_to_party_controls": 12,
+        "mobile_icons": [
+          22,
+          22,
+          22,
+          22,
+          22,
+          22
+        ]
+      },
+      "console_errors": [],
+      "page_errors": [],
+      "passed": true
+    },
+    {
+      "name": "tablet_touch_768x1024",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "mode": "touch",
+      "checks": {
+        "scroll_runtime_installed": true,
+        "menu_is_scroll_owner": true,
+        "document_remains_app_locked": true,
+        "create_owns_vertical_scroll": true,
+        "scrollbar_gutter_is_stable": true,
+        "touch_pan_y_enabled": true,
+        "scroll_assist_visible": true,
+        "no_create_horizontal_overflow": true,
+        "real_touch_swipe_scrolls_from_avatar": true,
+        "touch_reaches_party_controls": true,
+        "touch_reaches_start_button": true,
+        "name_field_reachable": true,
+        "name_field_editable": true,
+        "party_controls_reachable": true,
+        "start_touch_target": true,
+        "back_touch_target": true,
+        "scroll_assist_tracks_progress": true,
+        "game_starts_after_scrolling": true,
+        "mobile_icons_are_legible": true,
+        "mobile_nav_touch_targets": true,
+        "game_touch_scroll_owner": true,
+        "no_page_errors": true,
+        "no_console_errors": true
+      },
+      "measurements": {
+        "create_initial": {
+          "scrollTop": 0,
+          "scrollHeight": 4409,
+          "clientHeight": 1024,
+          "overflowY": "auto",
+          "touchAction": "pan-y pinch-zoom",
+          "scrollbarGutter": "stable",
+          "position": "fixed"
+        },
+        "first_touch_swipe": {
+          "before": 0,
+          "after": 241,
+          "start": 661.59375,
+          "end": 381.59375,
+          "x": 203.0
+        },
+        "touch_swipes_to_party_controls": 4,
+        "mobile_icons": [
+          22,
+          22,
+          22,
+          22,
+          22,
+          22
+        ]
+      },
+      "console_errors": [],
+      "page_errors": [],
+      "passed": true
+    }
+  ],
+  "case_count": 9,
+  "check_count": 217,
+  "passed": true
+}

@@ -1,0 +1,21 @@
+DIPLOCRAFT v1.6.1 — FASE 17 ECONOMIA PROFUNDA
+Build: 18/06/2026 10:31 America/Sao_Paulo
+Status: DEEP_ECONOMY_VERIFIED
+Base oficial preservada: v1.6.0 — Fase 16 — País e População
+
+Quality gate: 22/22 suítes; 1382/1382 verificações aprovadas.
+Navegador geral: 4 resoluções; 168/168 verificações.
+Mobile dedicado: 5 perfis; 149/149 verificações.
+Desktop dedicado: 4 perfis; 101/101 verificações.
+Rolagem/toque: 9 perfis; 217/217 verificações.
+Localização completa: 56/56 verificações; 1470 chaves PT-BR/EN/ES; 0 traduções ausentes em runtime.
+Economia profunda: 20/20 verificações; simulação dedicada de 360 meses; histórico mensal/trimestral limitado.
+Simulação matriz: 12 cenários determinísticos; 30 anos cada; 129.600 dias simulados; 0 alertas de balanceamento.
+Node/runtime: 39/39 testes aprovados; 56 módulos carregados; 0 módulos órfãos.
+PWA: 23/23 verificações; cache versionado; fullscreen/mobile-first preservados.
+Assets: 34 fontes; 98 variantes runtime; 16 assets PWA; 148 arquivos registrados; redução total 90,66%.
+Save: schema 3 e chave diplocraft_save_v101 preservados.
+
+A Fase 17 foi aplicada como incremento oficial sobre a Fase 16 enviada pelo usuário. Não é build standalone, não remove sistemas anteriores e mantém assets oficiais preservados.
+
+Artefato esperado: DIPLOCRAFT_v1.6.1_FASE-17_ECONOMIA-PROFUNDA_build_20260618_1031.zip

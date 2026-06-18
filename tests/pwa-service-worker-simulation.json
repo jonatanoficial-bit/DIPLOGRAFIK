@@ -1,0 +1,24 @@
+{
+  "listeners": [
+    "install",
+    "activate",
+    "fetch",
+    "message"
+  ],
+  "current_cache": "diplocraft-shell-v1.6.1-20260618_1031",
+  "installed_count": 178,
+  "names_after_activate": [
+    "diplocraft-shell-v1.6.1-20260618_1031"
+  ],
+  "claimed": true,
+  "skipped": true,
+  "version_message": {
+    "version": "1.6.1",
+    "cache": "diplocraft-shell-v1.6.1-20260618_1031"
+  },
+  "navigation_offline": true,
+  "asset_offline": true,
+  "module_offline": true,
+  "old_cache_removed": true,
+  "passed": true
+}

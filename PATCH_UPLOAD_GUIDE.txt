@@ -1,0 +1,27 @@
+UPLOAD GUIDE
+
+Este pacote contém todos os arquivos de código corrigidos e apenas os novos assets de partidos.
+
+No GitHub, faça upload da pasta assets/parties/ para o projeto existente, sobrescrevendo ou adicionando os novos arquivos.
+Depois envie os demais arquivos do ZIP na raiz do projeto para atualizar o código.
+
+Novos assets adicionados:
+assets/parties/party_mdb_card_v1.png
+assets/parties/party_pt_card_v1.png
+assets/parties/party_pl_card_v1.png
+assets/parties/party_psd_card_v1.png
+assets/parties/party_uniao_card_v1.png
+assets/parties/party_pp_card_v1.png
+assets/parties/party_psdb_card_v1.png
+assets/parties/party_psb_card_v1.png
+assets/parties/party_republicanos_card_v1.png
+assets/parties/party_novo_card_v1.png
+assets/parties/party_pv_card_v1.png
+assets/parties/party_psol_card_v1.png
+
+Arquivos de código alterados:
+src/game.js
+src/styles.css
+VERSAO.txt
+meta/build.json
+README_PARTY_LOGO_PATCH.txt

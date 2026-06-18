@@ -1,0 +1,122 @@
+{
+  "generated_from": "build.config.json",
+  "source_sha256": "16afef7268ae49e56ddffa8101c4a59f3fa69d6ced3ca5d19034b4e92629ed50",
+  "project": "DIPLOCRAFT",
+  "version": "1.6.1",
+  "date": "18/06/2026",
+  "date_iso": "2026-06-18",
+  "time": "10:31",
+  "timezone": "America/Sao_Paulo",
+  "stamp": "20260618_1031",
+  "base": "DIPLOCRAFT v1.6.0 — Fase 16 — País e População",
+  "stage_number": 17,
+  "stage": "Fase 17 — Economia Profunda",
+  "status": "DEEP_ECONOMY_VERIFIED",
+  "artifact": "DIPLOCRAFT_v1.6.1_FASE-17_ECONOMIA-PROFUNDA_build_20260618_1031.zip",
+  "assets_folder_included": true,
+  "asset_paths_changed": false,
+  "save_schema": 3,
+  "save_key_preserved": "diplocraft_save_v101",
+  "mobile_fullscreen": true,
+  "mobile_priority": true,
+  "features": [
+    "PIB real e nominal com crescimento anualizado, crescimento trimestral, hiato do produto e produtividade",
+    "Política fiscal com regra ativa, receita primária, despesa primária, resultado primário, serviço da dívida e saldo fiscal",
+    "Política monetária com meta de inflação, impulso de crédito, defesa cambial, juros e inflação interligados",
+    "Setor externo com exportações, importações, câmbio, reservas internacionais e conta corrente",
+    "Economia das famílias com salário real, custo de vida, endividamento, confiança do consumidor, pobreza e segurança da classe média",
+    "Investimento privado, investimento público, confiança empresarial, informalidade e prêmio de risco",
+    "Programas produtivos e estratégias comerciais com custo, cooldown, pontos de ação e efeitos atrasados",
+    "Histórico econômico mensal e trimestral limitado para evitar crescimento infinito do save",
+    "Integração mensal com população, aprovação, estabilidade, inflação, desemprego, dívida, mercado e Core Loop 2.0",
+    "Compatibilidade preservada com saves schema 3, criação de governo, país/população, PWA, mobile, desktop e Anti-Break Core"
+  ],
+  "asset_pipeline": {
+    "source_assets": 34,
+    "runtime_variants": 98,
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "responsive_backgrounds": true,
+    "lazy_images": true
+  },
+  "mobile_first": {
+    "minimum_width": 320,
+    "touch_target_px": 48,
+    "portrait": true,
+    "landscape": true,
+    "visual_viewport": true,
+    "keyboard_aware": true,
+    "safe_area_aware": true,
+    "drawer_gestures": true,
+    "tab_scroll_memory": true,
+    "native_touch_scroll": true,
+    "mouse_wheel_scroll": true,
+    "visible_desktop_scrollbar": true,
+    "setup_screen_scroll_owner": true,
+    "minimum_icon_px": 20
+  },
+  "pwa": {
+    "enabled": true,
+    "display": "fullscreen",
+    "orientation": "any",
+    "offline_shell": true,
+    "controlled_updates": true,
+    "cache_runtime_assets": true,
+    "standalone_detection": true,
+    "install_prompt": true,
+    "service_worker": "sw.js",
+    "scope": "./"
+  },
+  "responsive_desktop": {
+    "minimum_desktop_width": 881,
+    "tablet_rail_max_width": 1199,
+    "content_max_width": 1800,
+    "ultrawide_supported": true,
+    "collapsible_sidebar": true,
+    "command_palette": true,
+    "keyboard_shortcuts": true,
+    "density_modes": [
+      "comfortable",
+      "compact"
+    ],
+    "persistent_preferences": true
+  },
+  "i18n": {
+    "enabled": true,
+    "default_locale": "pt-BR",
+    "supported_locales": [
+      "pt-BR",
+      "en",
+      "es"
+    ],
+    "storage_key": "diplocraft_locale_v1",
+    "hot_switch": true,
+    "save_independent": true,
+    "intl_formatting": true,
+    "dom_translation": true,
+    "legacy_fallback": false,
+    "catalog_generator": "tools/generate_i18n.py",
+    "catalog_source": "tools/i18n_seed.json",
+    "audit": "tests/run_i18n_audit.py",
+    "editorial_complete": true,
+    "exact_content_translation": true,
+    "missing_translation_registry": true,
+    "catalog_key_minimum": 1300,
+    "localization_audit": "tests/run_localization_complete_audit.py"
+  },
+  "scroll_touch_recovery": {
+    "enabled": true,
+    "scroll_screens": [
+      "menu",
+      "create"
+    ],
+    "desktop_wheel": true,
+    "touch_pan_y": true,
+    "keyboard_page_navigation": true,
+    "scroll_assist": true,
+    "scrollbar_gutter": "stable",
+    "audit": "tests/run_scroll_touch_audit.py"
+  }
+}

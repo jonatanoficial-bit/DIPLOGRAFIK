@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "unlocks": [
+    {
+      "level": 1,
+      "id": "governo-economia"
+    },
+    {
+      "level": 2,
+      "id": "imprensa-eleicoes"
+    },
+    {
+      "level": 3,
+      "id": "diplomacia"
+    },
+    {
+      "level": 4,
+      "id": "seguranca-inteligencia"
+    },
+    {
+      "level": 5,
+      "id": "crises-sistemicas"
+    }
+  ],
+  "status": "prototype-content",
+  "runtime_connected": false
+}

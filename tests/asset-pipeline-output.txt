@@ -1,0 +1,22 @@
+PASS registry_matches_assets_exactly
+PASS source_count_34
+PASS runtime_variant_count_98
+PASS pwa_asset_count_16
+PASS profiles_complete
+PASS dimensions_match_profiles
+PASS all_files_decode
+PASS all_runtime_files_within_budget
+PASS all_formats_total_reduction_at_least_85_percent
+PASS single_format_reduction_at_least_90_percent
+PASS catalog_contains_avif_and_webp
+PASS runtime_code_uses_catalog
+PASS responsive_background_css_enabled
+PASS avatar_lazy_loading_enabled
+PASS critical_preloads_present
+PASS no_direct_source_png_in_active_runtime
+PASS asset_path_lock_is_runtime_only
+PASS pipeline_reproducible_files_present
+SOURCE 45.58 MB
+RUNTIME ALL FORMATS 4.26 MB
+REDUCTION 90.66%
+OVERALL PASS

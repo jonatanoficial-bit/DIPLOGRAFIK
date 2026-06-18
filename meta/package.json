@@ -1,0 +1,12 @@
+{
+  "generated_from": "build.config.json",
+  "source_sha256": "16afef7268ae49e56ddffa8101c4a59f3fa69d6ced3ca5d19034b4e92629ed50",
+  "artifact_filename": "DIPLOCRAFT_v1.6.1_FASE-17_ECONOMIA-PROFUNDA_build_20260618_1031.zip",
+  "root_folder": "DIPLOCRAFT-v1.6.1-FASE-17-ECONOMIA-PROFUNDA",
+  "version": "1.6.1",
+  "stage": "Fase 17 — Economia Profunda",
+  "stamp": "20260618_1031",
+  "timezone": "America/Sao_Paulo",
+  "integrity_manifest": "meta/integrity.json",
+  "checksum_sidecar": "DIPLOCRAFT_v1.6.1_FASE-17_ECONOMIA-PROFUNDA_build_20260618_1031.sha256"
+}

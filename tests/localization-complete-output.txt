@@ -1,0 +1,19 @@
+PASS stage_declares_localization_complete
+PASS three_editorial_locales
+PASS catalog_key_parity
+PASS catalog_has_no_blank_values
+PASS catalog_has_editorial_scale
+PASS lexical_fallback_disabled_in_config
+PASS lexical_fallback_removed_from_runtime
+PASS exact_translation_runtime_present
+PASS missing_translation_registry_present
+PASS canonical_feed_messages_enabled
+PASS dynamic_text_final_marker_present
+PASS all_user_facing_data_literals_covered
+PASS english_editorial_change_ratio
+PASS spanish_editorial_change_ratio
+PASS text_expansion_is_bounded
+PASS save_schema_preserved
+PASS locale en (18/18) • missing 0 • overflow 0
+PASS locale es (18/18) • missing 0 • overflow 0
+OVERALL PASS — 56 checks • 1470 keys • 422 content literals

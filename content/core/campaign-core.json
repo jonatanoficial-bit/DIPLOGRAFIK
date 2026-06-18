@@ -1,0 +1,14 @@
+{
+  "id": "founding-mandate",
+  "name": "Mandato de Fundação",
+  "mode": "simulador",
+  "starting_year": 2026,
+  "chapters": [
+    "formacao-do-governo",
+    "primeiros-cem-dias",
+    "coalizao-e-orcamento",
+    "eleicao-e-legado"
+  ],
+  "status": "prototype-content",
+  "runtime_connected": false
+}

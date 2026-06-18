@@ -1,0 +1,955 @@
+{
+  "project": "DIPLOCRAFT",
+  "version": "1.6.1",
+  "phase": "Economia Profunda",
+  "static_checks": {
+    "phase16_preserved_in_current_phase": true,
+    "population_schema_one": true,
+    "five_regions_declared": true,
+    "six_social_groups_declared": true,
+    "six_population_policies": true,
+    "state_factory_includes_population": true,
+    "core_loop_runs_population_cycles": true,
+    "population_ui_tab_present": true,
+    "population_renderer_present": true,
+    "population_mobile_css_present": true,
+    "population_i18n_complete": true,
+    "save_schema_preserved": true,
+    "core_loop_2_preserved": true,
+    "simulation_matrix_passed": true,
+    "simulation_contains_population_metrics": true,
+    "simulation_population_within_targets": true
+  },
+  "runtime": [
+    {
+      "case": "mobile_320x568",
+      "checks": {
+        "career_started": true,
+        "population_navigation_available": true,
+        "population_tab_visible": true,
+        "five_region_cards": true,
+        "six_social_group_cards": true,
+        "ten_demographic_rows": true,
+        "six_policy_cards": true,
+        "overview_has_four_metrics": true,
+        "weakest_region_visible": true,
+        "regional_needs_visible": true,
+        "no_horizontal_overflow": true,
+        "population_save_schema": true,
+        "policy_available": true,
+        "policy_creates_active_program": true,
+        "policy_enters_cooldown": true,
+        "program_duration_advances": true,
+        "touch_targets_at_least_48": true,
+        "english_population_title": true,
+        "no_population_key_leak": true,
+        "no_page_errors": true,
+        "no_console_errors": true
+      },
+      "errors": [],
+      "console_errors": [],
+      "missing_translations": [
+        {
+          "source": "🏆 País Estável",
+          "count": 6,
+          "locale": "en"
+        },
+        {
+          "source": "🏆 Primeira Semana",
+          "count": 6,
+          "locale": "en"
+        },
+        {
+          "source": "2 • pre-save",
+          "count": 6,
+          "locale": "en"
+        },
+        {
+          "source": "Conquista desbloqueada: País Estável",
+          "count": 6,
+          "locale": "en"
+        },
+        {
+          "source": "Conquista desbloqueada: Primeira Semana",
+          "count": 6,
+          "locale": "en"
+        },
+        {
+          "source": "Meta de mandato concluída: Estabilidade institucional",
+          "count": 6,
+          "locale": "en"
+        },
+        {
+          "source": "— • no game date",
+          "count": 4,
+          "locale": "en"
+        },
+        {
+          "source": "— • sem data de jogo",
+          "count": 3,
+          "locale": "en"
+        },
+        {
+          "source": "Carreira 2",
+          "count": 3,
+          "locale": "en"
+        },
+        {
+          "source": "Carreira 3",
+          "count": 3,
+          "locale": "en"
+        },
+        {
+          "source": "Fechar central de carreiras",
+          "count": 3,
+          "locale": "en"
+        },
+        {
+          "source": "1 of 4 profiles",
+          "count": 2,
+          "locale": "en"
+        },
+        {
+          "source": "Fechar resultado",
+          "count": 2,
+          "locale": "en"
+        },
+        {
+          "source": "MDB • 01/01/2026",
+          "count": 2,
+          "locale": "en"
+        },
+        {
+          "source": "1 de 4 perfis",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Movimento Democrático Brasileiro",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido da Social Democracia Brasileira",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido dos Trabalhadores",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido Liberal",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido Novo",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido Social Democrático",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido Socialismo e Liberdade",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido Socialista Brasileiro",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido Verde",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Progressistas",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Republicanos",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar União Brasil",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Brazil Union",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Brazilian Democratic Movement",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Brazilian Social Democracy Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Brazilian Socialist Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Green Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Liberal Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select New Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Progressives",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Republicans",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Social Democratic Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Socialism and Liberty Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Workers' Party",
+          "count": 1,
+          "locale": "en"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case": "mobile_390x844",
+      "checks": {
+        "career_started": true,
+        "population_navigation_available": true,
+        "population_tab_visible": true,
+        "five_region_cards": true,
+        "six_social_group_cards": true,
+        "ten_demographic_rows": true,
+        "six_policy_cards": true,
+        "overview_has_four_metrics": true,
+        "weakest_region_visible": true,
+        "regional_needs_visible": true,
+        "no_horizontal_overflow": true,
+        "population_save_schema": true,
+        "policy_available": true,
+        "policy_creates_active_program": true,
+        "policy_enters_cooldown": true,
+        "program_duration_advances": true,
+        "touch_targets_at_least_48": true,
+        "english_population_title": true,
+        "no_population_key_leak": true,
+        "no_page_errors": true,
+        "no_console_errors": true
+      },
+      "errors": [],
+      "console_errors": [],
+      "missing_translations": [
+        {
+          "source": "🏆 País Estável",
+          "count": 6,
+          "locale": "en"
+        },
+        {
+          "source": "🏆 Primeira Semana",
+          "count": 6,
+          "locale": "en"
+        },
+        {
+          "source": "2 • pre-save",
+          "count": 6,
+          "locale": "en"
+        },
+        {
+          "source": "Conquista desbloqueada: País Estável",
+          "count": 6,
+          "locale": "en"
+        },
+        {
+          "source": "Conquista desbloqueada: Primeira Semana",
+          "count": 6,
+          "locale": "en"
+        },
+        {
+          "source": "Meta de mandato concluída: Estabilidade institucional",
+          "count": 6,
+          "locale": "en"
+        },
+        {
+          "source": "— • no game date",
+          "count": 4,
+          "locale": "en"
+        },
+        {
+          "source": "— • sem data de jogo",
+          "count": 3,
+          "locale": "en"
+        },
+        {
+          "source": "Carreira 2",
+          "count": 3,
+          "locale": "en"
+        },
+        {
+          "source": "Carreira 3",
+          "count": 3,
+          "locale": "en"
+        },
+        {
+          "source": "Fechar central de carreiras",
+          "count": 3,
+          "locale": "en"
+        },
+        {
+          "source": "1 of 4 profiles",
+          "count": 2,
+          "locale": "en"
+        },
+        {
+          "source": "Fechar resultado",
+          "count": 2,
+          "locale": "en"
+        },
+        {
+          "source": "MDB • 01/01/2026",
+          "count": 2,
+          "locale": "en"
+        },
+        {
+          "source": "1 de 4 perfis",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Movimento Democrático Brasileiro",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido da Social Democracia Brasileira",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido dos Trabalhadores",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido Liberal",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido Novo",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido Social Democrático",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido Socialismo e Liberdade",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido Socialista Brasileiro",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido Verde",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Progressistas",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Republicanos",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar União Brasil",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Brazil Union",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Brazilian Democratic Movement",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Brazilian Social Democracy Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Brazilian Socialist Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Green Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Liberal Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select New Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Progressives",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Republicans",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Social Democratic Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Socialism and Liberty Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Workers' Party",
+          "count": 1,
+          "locale": "en"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case": "tablet_768x1024",
+      "checks": {
+        "career_started": true,
+        "population_navigation_available": true,
+        "population_tab_visible": true,
+        "five_region_cards": true,
+        "six_social_group_cards": true,
+        "ten_demographic_rows": true,
+        "six_policy_cards": true,
+        "overview_has_four_metrics": true,
+        "weakest_region_visible": true,
+        "regional_needs_visible": true,
+        "no_horizontal_overflow": true,
+        "population_save_schema": true,
+        "policy_available": true,
+        "policy_creates_active_program": true,
+        "policy_enters_cooldown": true,
+        "program_duration_advances": true,
+        "touch_targets_at_least_48": true,
+        "english_population_title": true,
+        "no_population_key_leak": true,
+        "no_page_errors": true,
+        "no_console_errors": true
+      },
+      "errors": [],
+      "console_errors": [],
+      "missing_translations": [
+        {
+          "source": "🏆 País Estável",
+          "count": 6,
+          "locale": "en"
+        },
+        {
+          "source": "🏆 Primeira Semana",
+          "count": 6,
+          "locale": "en"
+        },
+        {
+          "source": "2 • pre-save",
+          "count": 6,
+          "locale": "en"
+        },
+        {
+          "source": "Conquista desbloqueada: País Estável",
+          "count": 6,
+          "locale": "en"
+        },
+        {
+          "source": "Conquista desbloqueada: Primeira Semana",
+          "count": 6,
+          "locale": "en"
+        },
+        {
+          "source": "Meta de mandato concluída: Estabilidade institucional",
+          "count": 6,
+          "locale": "en"
+        },
+        {
+          "source": "— • no game date",
+          "count": 4,
+          "locale": "en"
+        },
+        {
+          "source": "— • sem data de jogo",
+          "count": 3,
+          "locale": "en"
+        },
+        {
+          "source": "Carreira 2",
+          "count": 3,
+          "locale": "en"
+        },
+        {
+          "source": "Carreira 3",
+          "count": 3,
+          "locale": "en"
+        },
+        {
+          "source": "Fechar central de carreiras",
+          "count": 3,
+          "locale": "en"
+        },
+        {
+          "source": "1 of 4 profiles",
+          "count": 2,
+          "locale": "en"
+        },
+        {
+          "source": "Fechar resultado",
+          "count": 2,
+          "locale": "en"
+        },
+        {
+          "source": "MDB • 01/01/2026",
+          "count": 2,
+          "locale": "en"
+        },
+        {
+          "source": "1 de 4 perfis",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Movimento Democrático Brasileiro",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido da Social Democracia Brasileira",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido dos Trabalhadores",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido Liberal",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido Novo",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido Social Democrático",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido Socialismo e Liberdade",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido Socialista Brasileiro",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido Verde",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Progressistas",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Republicanos",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar União Brasil",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Brazil Union",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Brazilian Democratic Movement",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Brazilian Social Democracy Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Brazilian Socialist Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Green Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Liberal Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select New Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Progressives",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Republicans",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Social Democratic Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Socialism and Liberty Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Workers' Party",
+          "count": 1,
+          "locale": "en"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case": "desktop_1366x768",
+      "checks": {
+        "career_started": true,
+        "population_navigation_available": true,
+        "population_tab_visible": true,
+        "five_region_cards": true,
+        "six_social_group_cards": true,
+        "ten_demographic_rows": true,
+        "six_policy_cards": true,
+        "overview_has_four_metrics": true,
+        "weakest_region_visible": true,
+        "regional_needs_visible": true,
+        "no_horizontal_overflow": true,
+        "population_save_schema": true,
+        "policy_available": true,
+        "policy_creates_active_program": true,
+        "policy_enters_cooldown": true,
+        "program_duration_advances": true,
+        "touch_targets_at_least_48": true,
+        "english_population_title": true,
+        "no_population_key_leak": true,
+        "no_page_errors": true,
+        "no_console_errors": true
+      },
+      "errors": [],
+      "console_errors": [],
+      "missing_translations": [
+        {
+          "source": "🏆 País Estável",
+          "count": 6,
+          "locale": "en"
+        },
+        {
+          "source": "🏆 Primeira Semana",
+          "count": 6,
+          "locale": "en"
+        },
+        {
+          "source": "2 • pre-save",
+          "count": 6,
+          "locale": "en"
+        },
+        {
+          "source": "Conquista desbloqueada: País Estável",
+          "count": 6,
+          "locale": "en"
+        },
+        {
+          "source": "Conquista desbloqueada: Primeira Semana",
+          "count": 6,
+          "locale": "en"
+        },
+        {
+          "source": "Meta de mandato concluída: Estabilidade institucional",
+          "count": 6,
+          "locale": "en"
+        },
+        {
+          "source": "— • no game date",
+          "count": 4,
+          "locale": "en"
+        },
+        {
+          "source": "Densidade comfortable",
+          "count": 4,
+          "locale": "en"
+        },
+        {
+          "source": "— • sem data de jogo",
+          "count": 3,
+          "locale": "en"
+        },
+        {
+          "source": "Carreira 2",
+          "count": 3,
+          "locale": "en"
+        },
+        {
+          "source": "Carreira 3",
+          "count": 3,
+          "locale": "en"
+        },
+        {
+          "source": "Fechar central de carreiras",
+          "count": 3,
+          "locale": "en"
+        },
+        {
+          "source": "1 of 4 profiles",
+          "count": 2,
+          "locale": "en"
+        },
+        {
+          "source": "Fechar resultado",
+          "count": 2,
+          "locale": "en"
+        },
+        {
+          "source": "MDB • 01/01/2026",
+          "count": 2,
+          "locale": "en"
+        },
+        {
+          "source": "1 de 4 perfis",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Movimento Democrático Brasileiro",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido da Social Democracia Brasileira",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido dos Trabalhadores",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido Liberal",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido Novo",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido Social Democrático",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido Socialismo e Liberdade",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido Socialista Brasileiro",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Partido Verde",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Progressistas",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar Republicanos",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Selecionar União Brasil",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Brazil Union",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Brazilian Democratic Movement",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Brazilian Social Democracy Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Brazilian Socialist Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Green Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Liberal Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select New Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Progressives",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Republicans",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Social Democratic Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Socialism and Liberty Party",
+          "count": 1,
+          "locale": "en"
+        },
+        {
+          "source": "Select Workers' Party",
+          "count": 1,
+          "locale": "en"
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "checks": {
+    "phase16_preserved_in_current_phase": true,
+    "population_schema_one": true,
+    "five_regions_declared": true,
+    "six_social_groups_declared": true,
+    "six_population_policies": true,
+    "state_factory_includes_population": true,
+    "core_loop_runs_population_cycles": true,
+    "population_ui_tab_present": true,
+    "population_renderer_present": true,
+    "population_mobile_css_present": true,
+    "population_i18n_complete": true,
+    "save_schema_preserved": true,
+    "core_loop_2_preserved": true,
+    "simulation_matrix_passed": true,
+    "simulation_contains_population_metrics": true,
+    "simulation_population_within_targets": true,
+    "all_runtime_cases_passed": true
+  },
+  "check_count": 101,
+  "passed": true
+}

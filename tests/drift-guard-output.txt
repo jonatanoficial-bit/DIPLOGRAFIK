@@ -1,0 +1,7 @@
+{
+  "method": "in-memory deterministic drift simulation",
+  "canonical_matches_generated": true,
+  "tamper_detected": true,
+  "filesystem_untouched": true,
+  "passed": true
+}

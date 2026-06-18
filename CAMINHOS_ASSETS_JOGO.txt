@@ -1,0 +1,54 @@
+DIPLOCRAFT v1.6.1 — MAPA OFICIAL DE ASSETS
+Fase 17 — Economia Profunda
+Build: 18/06/2026 10:31 America/Sao_Paulo
+
+REGRA DO PROJETO
+- Em builds oficiais, todos os arquivos do jogo devem ser entregues completos.
+- A única exceção permitida para reduzir peso é a pasta assets: quando ela vier sem imagens pesadas, este TXT deve listar os caminhos exatos esperados.
+- Nesta build oficial v1.6.1, os assets da Fase 16 foram preservados dentro do ZIP e o pipeline runtime foi mantido.
+
+FONTES PRESERVADAS (não usadas diretamente pelo runtime quando há variante otimizada)
+- assets/backgrounds/*.png
+- assets/characters/*.png
+- assets/ui/cards/*.png
+- assets/icons/*.png
+
+RUNTIME OTIMIZADO
+- Fundos desktop: assets/runtime/backgrounds/<nome>--desktop.avif|webp (1280x853)
+- Fundos mobile: assets/runtime/backgrounds/<nome>--mobile.avif|webp (720x960)
+- Avatares seleção: assets/runtime/characters/<nome>--thumb.avif|webp (320x320)
+- Avatares HUD/save: assets/runtime/characters/<nome>--display.avif|webp (640x640)
+- Cartões: assets/runtime/cards/<nome>--card.avif|webp (768x512)
+- Ícones do jogo: assets/runtime/icons/icon_set_v1--ui.avif|webp (960x409)
+
+IDENTIDADE PWA / INSTALAÇÃO
+- Ícones comuns: assets/pwa/icon-64.png até assets/pwa/icon-512.png
+- Ícone maskable: assets/pwa/icon-maskable-512.png
+- Ícone Apple: assets/pwa/apple-touch-icon-180.png
+- Splash screens: assets/pwa/splash-*.png
+- Screenshots da loja/instalação: assets/pwa/screenshot-mobile-720x1280.png e screenshot-desktop-1280x720.png
+
+CATÁLOGOS E MANIFESTOS CANÔNICOS
+- src/data/assetCatalog.js
+- meta/asset_manifest.json
+- meta/pwa-assets.json
+- manifest_assets.csv
+- meta/ASSET_PATH_LOCK.json
+- manifest.webmanifest
+
+REGRA DE MANUTENÇÃO
+- Não renomear, mover ou substituir arquivos sem regenerar manifestos.
+- Não apontar o runtime diretamente para PNGs-fonte quando houver variante otimizada.
+- Toda alteração de asset deve passar pelo quality gate antes da publicação.
+
+REGERAÇÃO E AUDITORIA
+python3 tools/build_assets.py
+python3 tools/build_pwa_assets.py
+python3 tests/run_asset_pipeline_audit.py
+python3 tests/run_pwa_audit.py
+python3 tests/run_quality_gate.py
+
+STATUS FASE 17
+- Nenhuma imagem nova foi exigida pela Economia Profunda.
+- O fundo financeiro existente bg_economy_financial_center_v1 permanece como referência visual da aba Economia.
+- Total auditado: 34 assets fonte, 98 variantes runtime, 16 assets PWA, 148 arquivos registrados.

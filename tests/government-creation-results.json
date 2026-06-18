@@ -1,0 +1,114 @@
+{
+  "project": "DIPLOCRAFT",
+  "version": "1.6.0",
+  "phase": "País e População",
+  "static_checks": {
+    "phase15_preserved": true,
+    "six_setup_dimensions_present": true,
+    "party_logo_assets_count_12": true,
+    "party_runtime_catalog_count_12": true,
+    "game_uses_party_picture_markup": true,
+    "government_setup_applied": true,
+    "save_schema_preserved": true,
+    "three_locales_preserved": true
+  },
+  "runtime": [
+    {
+      "case": "mobile_320x568",
+      "checks": {
+        "nine_creation_panels": true,
+        "three_system_cards": true,
+        "five_ideologies": true,
+        "four_difficulties": true,
+        "four_scenarios": true,
+        "five_objectives": true,
+        "twelve_party_logo_cards": true,
+        "party_images_have_runtime_and_fallback_paths": true,
+        "selected_cards_have_active_state": true,
+        "summary_updates": true,
+        "dashboard_shows_setup": true,
+        "party_persisted_in_hud": true,
+        "no_horizontal_overflow": true,
+        "no_page_errors": true
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "mobile_390x844",
+      "checks": {
+        "nine_creation_panels": true,
+        "three_system_cards": true,
+        "five_ideologies": true,
+        "four_difficulties": true,
+        "four_scenarios": true,
+        "five_objectives": true,
+        "twelve_party_logo_cards": true,
+        "party_images_have_runtime_and_fallback_paths": true,
+        "selected_cards_have_active_state": true,
+        "summary_updates": true,
+        "dashboard_shows_setup": true,
+        "party_persisted_in_hud": true,
+        "no_horizontal_overflow": true,
+        "no_page_errors": true
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "tablet_768x1024",
+      "checks": {
+        "nine_creation_panels": true,
+        "three_system_cards": true,
+        "five_ideologies": true,
+        "four_difficulties": true,
+        "four_scenarios": true,
+        "five_objectives": true,
+        "twelve_party_logo_cards": true,
+        "party_images_have_runtime_and_fallback_paths": true,
+        "selected_cards_have_active_state": true,
+        "summary_updates": true,
+        "dashboard_shows_setup": true,
+        "party_persisted_in_hud": true,
+        "no_horizontal_overflow": true,
+        "no_page_errors": true
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "desktop_1366x768",
+      "checks": {
+        "nine_creation_panels": true,
+        "three_system_cards": true,
+        "five_ideologies": true,
+        "four_difficulties": true,
+        "four_scenarios": true,
+        "five_objectives": true,
+        "twelve_party_logo_cards": true,
+        "party_images_have_runtime_and_fallback_paths": true,
+        "selected_cards_have_active_state": true,
+        "summary_updates": true,
+        "dashboard_shows_setup": true,
+        "party_persisted_in_hud": true,
+        "no_horizontal_overflow": true,
+        "no_page_errors": true
+      },
+      "passed": true,
+      "errors": []
+    }
+  ],
+  "checks": {
+    "phase15_preserved": true,
+    "six_setup_dimensions_present": true,
+    "party_logo_assets_count_12": true,
+    "party_runtime_catalog_count_12": true,
+    "game_uses_party_picture_markup": true,
+    "government_setup_applied": true,
+    "save_schema_preserved": true,
+    "three_locales_preserved": true,
+    "all_runtime_cases_passed": true
+  },
+  "check_count": 65,
+  "passed": true
+}

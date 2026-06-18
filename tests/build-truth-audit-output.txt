@@ -1,0 +1,28 @@
+{
+  "project": "DIPLOCRAFT",
+  "version": "1.3.0",
+  "artifact": "DIPLOCRAFT_v1.3.0_FASE-9_RESPONSIVE-DESKTOP_build_20260613_1203.zip",
+  "source_sha256": "f9fb07026c4d2b823e6b0f223b52bcbeeedc1848ac5fc135b48cfbbb5229aa03",
+  "generator_stdout": "Build truth verified: v1.3.0",
+  "generator_stderr": "",
+  "checks": {
+    "generator_check_passes": true,
+    "semver_valid": true,
+    "stamp_matches_date_time": true,
+    "artifact_name_derived": true,
+    "source_hash_consistent": true,
+    "version_consistent": true,
+    "stage_consistent": true,
+    "status_consistent": true,
+    "runtime_generated_header": true,
+    "html_has_no_static_semver": true,
+    "html_has_no_static_build_timestamp": true,
+    "html_has_runtime_placeholders": true,
+    "changelog_current_entry": true,
+    "canonical_source_declared": true,
+    "save_compatibility_preserved": true,
+    "pwa_identity_consistent": true,
+    "pwa_cache_is_versioned": true
+  },
+  "passed": true
+}

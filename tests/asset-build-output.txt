@@ -1,0 +1,8 @@
+{
+  "source_assets": 22,
+  "runtime_variants": 74,
+  "registered_files": 96,
+  "source_mb": 44.63,
+  "runtime_all_formats_mb": 4.11,
+  "reduction_percent_all_formats": 90.78
+}

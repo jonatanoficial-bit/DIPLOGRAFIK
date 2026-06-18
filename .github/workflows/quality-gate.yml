@@ -1,0 +1,90 @@
+name: DIPLOCRAFT Quality Gate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install audit dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install beautifulsoup4 pillow pillow-avif-plugin playwright
+          python -m playwright install --with-deps chromium
+      - name: Generate and verify internationalization catalogs
+        run: |
+          python tools/generate_i18n.py
+          python tools/generate_i18n.py --check
+          python tests/run_i18n_audit.py
+          python tests/run_localization_complete_audit.py
+      - name: Rebuild and audit asset pipeline
+        run: |
+          python tools/build_assets.py
+          python tests/run_asset_pipeline_audit.py
+      - name: Verify canonical build
+        run: python tools/generate_build.py --check
+      - name: Build browser harness
+        run: python tests/build_harness.py
+      - name: Browser regression
+        env:
+          PLAYWRIGHT_USE_BUNDLED_CHROMIUM: '1'
+        run: |
+          for CASE in mobile_360x640 mobile_390x844 tablet_768x1024 desktop_1366x768; do
+            DIPLOCRAFT_BROWSER_CASE="$CASE" python tests/run_browser_audit.py > "tests/browser-audit-output-$CASE.txt"
+          done
+          python tests/aggregate_browser_audit.py
+      - name: Mobile-first audit
+        env:
+          PLAYWRIGHT_USE_BUNDLED_CHROMIUM: '1'
+        run: |
+          for CASE in phone_320x568 phone_360x640 phone_390x844 phone_landscape_844x390 tablet_768x1024; do
+            DIPLOCRAFT_MOBILE_CASE="$CASE" python tests/run_mobile_first_audit.py > "tests/mobile-first-output-$CASE.txt"
+          done
+          python tests/aggregate_mobile_audit.py
+      - name: Responsive desktop audit
+        env:
+          PLAYWRIGHT_USE_BUNDLED_CHROMIUM: '1'
+        run: |
+          for CASE in tablet_landscape_1024x768 laptop_1366x768 desktop_fullhd_1920x1080 desktop_ultrawide_2560x1080; do
+            DIPLOCRAFT_DESKTOP_CASE="$CASE" python tests/run_responsive_desktop_audit.py > "tests/responsive-desktop-output-$CASE.txt"
+          done
+          python tests/aggregate_responsive_desktop_audit.py
+      - name: Structural audits
+        run: |
+          python tests/run_static_audit.py
+          python tests/run_clean_base_audit.py
+          python tests/run_build_truth_audit.py
+          python tests/run_drift_guard_test.py
+      - name: Node tests
+        run: python tests/run_node_tests.py
+      - name: Long-term simulation
+        run: node tests/run_simulation_matrix.mjs
+      - name: Anti-break audit
+        run: python tests/run_resilience_audit.py
+      - name: PWA audit
+        run: python tests/run_pwa_audit.py
+      - name: Web asset recovery audit
+        run: python tests/run_web_asset_audit.py
+      - name: Scroll and touch audit
+        env:
+          PLAYWRIGHT_USE_BUNDLED_CHROMIUM: '1'
+        run: |
+          for CASE in desktop_short_1024x600 desktop_1366x768 desktop_fullhd_1920x1080 tablet_mouse_1024x768 mobile_320x568 mobile_360x640 mobile_390x844 mobile_landscape_844x390 tablet_touch_768x1024; do
+            DIPLOCRAFT_SCROLL_CASE="$CASE" python tests/run_scroll_touch_audit.py > "tests/scroll-touch-output-$CASE.txt"
+          done
+          python tests/aggregate_scroll_touch_audit.py
+      - name: Save architecture audit
+        env:
+          PLAYWRIGHT_USE_BUNDLED_CHROMIUM: '1'
+        run: python tests/run_save_architecture_audit.py
+      - name: Aggregate release gate
+        run: python tests/run_quality_gate.py

@@ -1,0 +1,126 @@
+{
+  "project": "DIPLOCRAFT",
+  "version": "1.6.1",
+  "phase": "Economia Profunda",
+  "generated_at": "2026-06-18T13:59:15+0000",
+  "release_blocking": true,
+  "execution_model": "independent suites + final report aggregator",
+  "steps": [
+    {
+      "name": "build-generator-check",
+      "passed": true,
+      "checks": 1
+    },
+    {
+      "name": "static-audit",
+      "passed": true,
+      "checks": 16
+    },
+    {
+      "name": "clean-base-audit",
+      "passed": true,
+      "checks": 10
+    },
+    {
+      "name": "build-truth-audit",
+      "passed": true,
+      "checks": 17
+    },
+    {
+      "name": "drift-guard",
+      "passed": true,
+      "checks": 4
+    },
+    {
+      "name": "node-tests",
+      "passed": true,
+      "checks": 39
+    },
+    {
+      "name": "simulation-matrix",
+      "passed": true,
+      "checks": 12
+    },
+    {
+      "name": "browser-regression",
+      "passed": true,
+      "checks": 168
+    },
+    {
+      "name": "anti-break-audit",
+      "passed": true,
+      "checks": 19
+    },
+    {
+      "name": "asset-pipeline-audit",
+      "passed": true,
+      "checks": 18
+    },
+    {
+      "name": "mobile-first-audit",
+      "passed": true,
+      "checks": 149
+    },
+    {
+      "name": "pwa-audit",
+      "passed": true,
+      "checks": 23
+    },
+    {
+      "name": "responsive-desktop-audit",
+      "passed": true,
+      "checks": 101
+    },
+    {
+      "name": "i18n-audit",
+      "passed": true,
+      "checks": 74
+    },
+    {
+      "name": "web-asset-recovery-audit",
+      "passed": true,
+      "checks": 16
+    },
+    {
+      "name": "scroll-touch-audit",
+      "passed": true,
+      "checks": 217
+    },
+    {
+      "name": "localization-complete-audit",
+      "passed": true,
+      "checks": 56
+    },
+    {
+      "name": "save-architecture-audit",
+      "passed": true,
+      "checks": 168
+    },
+    {
+      "name": "core-loop-2-audit",
+      "passed": true,
+      "checks": 88
+    },
+    {
+      "name": "government-creation-audit",
+      "passed": true,
+      "checks": 65
+    },
+    {
+      "name": "country-population-audit",
+      "passed": true,
+      "checks": 101
+    },
+    {
+      "name": "deep-economy-audit",
+      "passed": true,
+      "checks": 20
+    }
+  ],
+  "passed_steps": 22,
+  "total_steps": 22,
+  "passed_checks": 1382,
+  "total_checks": 1382,
+  "balance_warnings": [],
+  "passed": true
+}

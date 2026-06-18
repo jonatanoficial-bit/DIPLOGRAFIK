@@ -1,0 +1,13 @@
+PASS phase15_preserved
+PASS six_setup_dimensions_present
+PASS party_logo_assets_count_12
+PASS party_runtime_catalog_count_12
+PASS game_uses_party_picture_markup
+PASS government_setup_applied
+PASS save_schema_preserved
+PASS three_locales_preserved
+PASS mobile_320x568 (14/14)
+PASS mobile_390x844 (14/14)
+PASS tablet_768x1024 (14/14)
+PASS desktop_1366x768 (14/14)
+OVERALL PASS — 65 checks

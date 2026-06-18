@@ -1,0 +1,79 @@
+{
+  "project": "DIPLOCRAFT",
+  "version": "1.6.1",
+  "phase": "Economia Profunda",
+  "static_checks": {
+    "scroll_module_exists": true,
+    "scroll_module_loaded": true,
+    "setup_scroll_owner_css": true,
+    "fixed_setup_viewport": true,
+    "desktop_scrollbar_styled": true,
+    "touch_pan_contract": true,
+    "ios_momentum_contract": true,
+    "keyboard_navigation_runtime": true,
+    "scroll_assist_runtime": true,
+    "minimum_icon_policy": true
+  },
+  "cases": [
+    {
+      "name": "desktop_fullhd_1920x1080",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "mode": "mouse",
+      "checks": {
+        "scroll_runtime_installed": true,
+        "menu_is_scroll_owner": true,
+        "document_remains_app_locked": true,
+        "create_owns_vertical_scroll": true,
+        "scrollbar_gutter_is_stable": true,
+        "touch_pan_y_enabled": true,
+        "scroll_assist_visible": true,
+        "no_create_horizontal_overflow": true,
+        "mouse_wheel_scrolls_create": true,
+        "keyboard_page_down_scrolls": true,
+        "mouse_wheel_reaches_party_controls": true,
+        "mouse_wheel_reaches_start_button": true,
+        "name_field_reachable": true,
+        "name_field_editable": true,
+        "party_controls_reachable": true,
+        "start_touch_target": true,
+        "back_touch_target": true,
+        "scroll_assist_tracks_progress": true,
+        "game_starts_after_scrolling": true,
+        "desktop_game_scroll_owner": true,
+        "desktop_scrollbar_css_present": true,
+        "no_page_errors": true,
+        "no_console_errors": true
+      },
+      "measurements": {
+        "create_initial": {
+          "scrollTop": 0,
+          "scrollHeight": 3997,
+          "clientHeight": 1080,
+          "overflowY": "auto",
+          "touchAction": "pan-y pinch-zoom",
+          "scrollbarGutter": "stable",
+          "position": "fixed"
+        },
+        "mouse_wheel": {
+          "before": 0,
+          "after": 557
+        },
+        "page_down": {
+          "before": 557,
+          "after": 1361
+        },
+        "wheel_steps_to_party_controls": 6,
+        "wheel_steps_to_start": 3
+      },
+      "console_errors": [],
+      "page_errors": [],
+      "passed": true
+    }
+  ],
+  "case_count": 1,
+  "check_count": 33,
+  "passed": true
+}

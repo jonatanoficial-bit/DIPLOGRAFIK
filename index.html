@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="#03070b" name="theme-color"/>
+<meta content="DIPLOCRAFT" name="application-name"/>
+<meta content="yes" name="mobile-web-app-capable"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
+<meta content="DIPLOCRAFT" name="apple-mobile-web-app-title"/>
+<meta content="#03070b" name="msapplication-TileColor"/>
+<title>DIPLOCRAFT</title>
+<link href="manifest.webmanifest" rel="manifest"/>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="assets/pwa/icon-192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="assets/pwa/apple-touch-icon-180.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="assets/pwa/splash-750x1334.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image"/>
+<link href="assets/pwa/splash-1170x2532.png" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image"/>
+<link href="assets/pwa/splash-1290x2796.png" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image"/>
+<link href="assets/pwa/splash-1536x2048.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" rel="apple-touch-startup-image"/>
+<link href="assets/pwa/splash-2048x1536.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" rel="apple-touch-startup-image"/>
+<link as="image" fetchpriority="high" href="assets/runtime/backgrounds/bg_global_map_v1--mobile.webp" media="(max-width: 880px)" rel="preload"/>
+<link as="image" fetchpriority="high" href="assets/runtime/backgrounds/bg_global_map_v1--desktop.webp" media="(min-width: 881px)" rel="preload"/>
+<link href="src/styles.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="app">
+<div class="safeModeBanner" id="safeModeBanner" role="status"><b>PROTEÇÃO ATIVA</b><span></span></div>
+<div aria-live="polite" class="build-ribbon">Carregando identificação da build…</div>
+<section aria-hidden="false" class="screen active" data-scroll-screen id="menu" tabindex="-1">
+<div class="bg bg-menu"></div><div class="shade"></div>
+<main class="menu">
+<div class="seal">DC</div>
+<h1>DIPLOCRAFT</h1>
+<p>LEAD • NEGOTIATE • DOMINATE</p>
+<label class="languagePicker" for="menuLocaleSelect"><span data-i18n="language.label">Idioma</span><select data-locale-select id="menuLocaleSelect"><option value="pt-BR">Português (Brasil)</option><option value="en">English</option><option value="es">Español</option></select></label>
+<button class="gold big" data-go="create">NOVO JOGO</button>
+<button class="dark big" id="continueBtn">CONTINUAR</button>
+<button class="ghost big" id="saveManagerMenuBtn" type="button" data-i18n="save.openManager">CARREIRAS E SAVES</button>
+<button class="ghost big" id="fullscreenBtn">TELA CHEIA</button>
+<button class="ghost big" hidden id="installAppBtn" type="button">INSTALAR APP</button>
+<button class="ghost big" id="audioToggle">ÁUDIO: OFF</button>
+<button class="ghost big" id="tutorialBtn">TUTORIAL</button>
+<button class="ghost big" id="rcInfoBtn">INFO BUILD</button>
+<small id="menuBuild">Carregando informações da build…</small>
+<small class="networkStatus" id="networkStatus" role="status">VERIFICANDO REDE…</small>
+</main>
+</section>
+<section aria-hidden="true" class="screen" data-scroll-screen id="create" tabindex="-1">
+<div class="bg bg-office"></div><div class="shade"></div>
+<main class="page narrow">
+<button class="back" data-go="menu">‹</button>
+<h2 data-i18n="governmentCreation.title">CRIAR GOVERNO</h2>
+<p class="lead" data-i18n="governmentCreation.subtitle">Defina líder, sistema político, ideologia, dificuldade, cenário e objetivo estratégico da carreira.</p>
+<div aria-live="polite" class="scrollAssist" id="createScrollAssist" role="status"><span data-i18n="create.scrollHint">Role a página ou deslize para cima para preencher todos os dados.</span><b aria-hidden="true">↓</b><div aria-label="Progresso da tela de criação" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="scrollAssistBar" role="progressbar"><i></i></div></div>
+<div class="panel"><h3 data-i18n="governmentCreation.stepAvatar">1. Avatar</h3><div class="avatars" id="avatars"></div></div>
+<div class="panel"><h3 data-i18n="governmentCreation.stepName">2. Nome</h3><label class="field">♙<input autocomplete="name" enterkeyhint="next" id="leaderName" inputmode="text" maxlength="28" value="Jonatan Vale"/></label></div>
+<div class="panel"><h3 data-i18n="governmentCreation.stepCountry">3. País</h3><div class="setupGrid compact" id="countryChoices"></div></div>
+<div class="panel"><h3 data-i18n="governmentCreation.stepSystem">4. Sistema político</h3><div class="setupGrid" id="systemChoices"></div></div>
+<div class="panel"><h3 data-i18n="governmentCreation.stepIdeology">5. Ideologia do líder</h3><div class="setupGrid" id="leaderIdeologyChoices"></div></div>
+<div class="panel"><h3 data-i18n="governmentCreation.stepDifficulty">6. Dificuldade</h3><div class="setupGrid" id="difficultyChoices"></div></div>
+<div class="panel"><h3 data-i18n="governmentCreation.stepScenario">7. Cenário inicial</h3><div class="setupGrid" id="scenarioChoices"></div></div>
+<div class="panel"><h3 data-i18n="governmentCreation.stepObjective">8. Objetivo estratégico</h3><div class="setupGrid" id="objectiveChoices"></div></div>
+<div class="panel">
+<h3 data-i18n="governmentCreation.stepParty">9. Partido real do Brasil</h3>
+<div class="party-filter">
+<input aria-label="Buscar partido" autocomplete="off" enterkeyhint="search" id="partySearch" inputmode="search" placeholder="Buscar sigla, nome ou número..." type="search"/>
+<select aria-label="Filtrar por ideologia" id="ideology">
+<option value="all">Todos</option><option value="centro">Centro</option><option value="social">Social</option><option value="liberal">Liberal</option><option value="conservador">Conservador</option><option value="verde">Verde</option>
+</select>
+</div>
+<div class="parties" id="parties"></div>
+</div>
+<div class="panel setupSummaryPanel"><h3 data-i18n="governmentCreation.summaryTitle">Resumo da carreira</h3><div id="governmentSetupSummary"></div></div>
+<button class="gold wide" id="startGame" data-i18n="governmentCreation.start">COMEÇAR JORNADA ›</button>
+</main>
+</section>
+<section aria-hidden="true" class="screen" id="game">
+<div class="bg" id="gameBg"></div><div class="shade"></div>
+<div class="mobileTopBar">
+<button aria-controls="mobileDrawer" aria-expanded="false" aria-label="Abrir navegação" class="mobileIcon" id="mobileMenuBtn" type="button">☰</button>
+<div><b>DIPLOCRAFT</b><span class="mobileContextLine"><strong id="mobileSection">Início</strong><i>•</i><span id="mobileDate">--/--/----</span></span><small id="mobileBuild">build…</small></div>
+<button aria-label="Alternar tela cheia" class="mobileIcon" id="mobileFullscreen" type="button">⛶</button>
+</div>
+<div class="mobileOverlay" id="mobileOverlay"></div>
+<aside aria-hidden="true" aria-label="Navegação principal" class="side" id="mobileDrawer">
+<div class="sideTitle">
+  <div><b>DIPLOCRAFT</b><span>Comando Nacional</span></div>
+  <button aria-label="Compactar navegação lateral" aria-pressed="false" class="desktopNavToggle" id="desktopNavToggle" title="Compactar navegação" type="button">⇤</button>
+  <button aria-label="Fechar navegação" class="mobileDrawerClose" id="mobileCloseNav" type="button">×</button>
+</div>
+<div class="portrait"><img alt="Avatar" id="hudAvatar"/><b id="level">1</b></div>
+<div class="navGroup"><small>GESTÃO NACIONAL</small>
+<button class="active" data-tab="dashboard" type="button"><span class="navIcon">⌂</span><span class="navLabel">Início</span><kbd>Alt+1</kbd></button>
+<button data-tab="government" type="button"><span class="navIcon">🏛</span><span class="navLabel">Governo</span><kbd>Alt+2</kbd></button>
+<button data-tab="economy" type="button"><span class="navIcon">💰</span><span class="navLabel">Economia</span><kbd>Alt+3</kbd></button>
+<button data-tab="population" type="button"><span class="navIcon">👥</span><span class="navLabel" data-i18n="nav.population">População</span></button>
+<button data-tab="projects" type="button"><span class="navIcon">🛠</span><span class="navLabel">Projetos</span><kbd>Alt+7</kbd></button>
+<button data-tab="press" type="button"><span class="navIcon">🎙</span><span class="navLabel">Imprensa</span><kbd>Alt+8</kbd></button>
+<button data-tab="elections" type="button"><span class="navIcon">🗳</span><span class="navLabel">Eleições</span><kbd>Alt+9</kbd></button>
+</div>
+<div class="navGroup"><small>ESTRATÉGIA GLOBAL</small>
+<button data-tab="diplomacy" type="button"><span class="navIcon">🌐</span><span class="navLabel">Diplomacia</span><kbd>Alt+4</kbd></button>
+<button data-tab="military" type="button"><span class="navIcon">🛡</span><span class="navLabel">Militar</span><kbd>Alt+5</kbd></button>
+<button data-tab="intelligence" type="button"><span class="navIcon">🕵</span><span class="navLabel">Inteligência</span><kbd>Alt+6</kbd></button>
+<button data-tab="crisis" type="button"><span class="navIcon">⚡</span><span class="navLabel">Crises</span></button>
+</div>
+<div class="navGroup"><small>CARREIRA E SISTEMA</small>
+<button data-tab="progression" type="button"><span class="navIcon">⭐</span><span class="navLabel">Progresso</span></button>
+<button data-tab="store" type="button"><span class="navIcon">🛒</span><span class="navLabel">Loja</span></button>
+<button data-tab="release" type="button"><span class="navIcon">✅</span><span class="navLabel">Release</span></button>
+</div>
+<div class="sideShortcutHint"><span>Central de comandos</span><kbd>Ctrl K</kbd></div>
+</aside>
+<main class="shell" id="gameScroll" tabindex="-1">
+<header class="desktopCommandBar panel glass">
+  <div class="desktopBreadcrumb" id="desktopBreadcrumb"><span>Centro de Comando</span><b id="desktopSection">Início</b></div>
+  <div class="desktopCommandActions">
+    <label class="desktopLocale" for="gameLocaleSelect"><span data-i18n="language.label">Idioma</span><select data-locale-select id="gameLocaleSelect"><option value="pt-BR">PT-BR</option><option value="en">EN</option><option value="es">ES</option></select></label>
+    <button class="desktopTool" id="desktopCommandBtn" type="button"><span aria-hidden="true">⌕</span><span>Comandos</span><kbd>Ctrl K</kbd></button>
+    <button aria-pressed="false" class="desktopTool" id="desktopDensityBtn" type="button"><span aria-hidden="true">▤</span><span>Confortável</span></button>
+    <button class="desktopTool" id="desktopFullscreen" type="button"><span aria-hidden="true">⛶</span><span>Tela cheia</span></button>
+  </div>
+</header>
+<header class="hud panel glass">
+<div class="identity"><h2 data-i18n-skip id="hudName"></h2><p id="hudRole"></p><small id="hudParty"></small></div>
+<div><b id="dateHud"></b><span>Data</span></div>
+<div><b id="treasury"></b><span>Tesouro</span></div>
+<div><b id="politicalCapital"></b><span>Capital</span></div>
+<div><b id="prestige"></b><span>Prestígio</span></div>
+<button class="plus" id="advanceDay">+1 DIA</button>
+</header>
+<section class="control panel glass">
+<button class="dark" id="autoToggle">TEMPO: PAUSADO</button>
+<button class="dark" id="advanceWeek">+7 DIAS</button>
+<button class="dark" id="saveGame">SALVAR</button>
+<button class="dark" id="fullscreenHud">TELA CHEIA</button>
+<button class="dark" id="audioHud">ÁUDIO</button>
+<button class="dark danger" id="resetGame">RESET</button>
+<span id="nextEvent"></span>
+</section>
+<section class="tab active" id="tab-dashboard">
+<div class="grid kpi">
+<div class="stat panel"><span>Aprovação</span><b id="approvalTxt"></b><div class="bar"><i id="approvalBar"></i></div></div>
+<div class="stat panel"><span>Economia</span><b id="economyTxt"></b><div class="bar"><i id="economyBar"></i></div></div>
+<div class="stat panel"><span>Estabilidade</span><b id="stabilityTxt"></b><div class="bar"><i id="stabilityBar"></i></div></div>
+<div class="stat panel"><span>Influência</span><b id="influenceTxt"></b><div class="bar"><i id="influenceBar"></i></div></div>
+</div>
+<div class="grid kpi secondary">
+<div class="stat panel"><span>Score Comercial</span><b id="commercialScore"></b></div>
+<div class="stat panel"><span>Risco Impeachment</span><b id="impeachmentRisk"></b></div>
+</div>
+<div class="layout coreLoopLayout">
+<section class="panel"><h3 data-i18n="coreLoop.commandCycle">Ciclo de Governo</h3><div id="governanceCycle"></div></section>
+<section class="panel"><h3 data-i18n="coreLoop.pendingTitle">Consequências Pendentes</h3><div id="pendingConsequences"></div></section>
+</div>
+<div class="layout">
+<section class="panel"><h3>Sala de Situação</h3><p id="situation"></p><div class="decisionDeck" id="decisionDeck"></div></section>
+<section class="panel"><h3>Eventos Recentes</h3><div class="feed" id="feed"></div></section>
+</div>
+</section>
+<section class="tab" id="tab-government">
+<div class="layout">
+<section class="panel"><h3>Coalizão e Risco Institucional</h3><div id="coalitionView"></div><h3>Ações de Governo</h3><div class="decisionDeck" id="governmentActions"></div></section>
+<section class="panel"><h3>Congresso Nacional</h3><div id="congressView"></div><h3>Ministérios</h3><div id="ministries"></div></section>
+</div>
+<div class="layout">
+<section class="panel"><h3>Projetos de Lei</h3><div class="decisionDeck" id="lawProjects"></div></section>
+<section class="panel"><h3>Leis Aprovadas</h3><div id="approvedLaws"></div></section>
+</div>
+</section>
+<section class="tab" id="tab-economy">
+<div class="layout economyDeepTop">
+<section class="panel"><h3 data-i18n="economyDeep.reportTitle">Relatório Econômico Profundo</h3><div id="econReport"></div><h3 data-i18n="economyDeep.budgetTitle">Orçamento por área</h3><div id="budgetSliders"></div><button class="gold wide" id="applyBudget" data-i18n="economyDeep.applyBudget">APLICAR ORÇAMENTO</button></section>
+<section class="panel"><h3 data-i18n="economyDeep.realEconomyTitle">Economia real, fiscal e externa</h3><div id="deepEconomyPanel"></div><h3 data-i18n="economyDeep.sectorTitle">Setores produtivos</h3><div id="sectorReport"></div></section>
+</div>
+<div class="layout economyPolicyLayout">
+<section class="panel"><h3 data-i18n="economyDeep.fiscalRulesTitle">Regra fiscal</h3><div class="policyGrid" id="fiscalRules"></div></section>
+<section class="panel"><h3 data-i18n="economyDeep.monetaryTitle">Política monetária</h3><div class="policyGrid" id="monetaryPolicies"></div></section>
+</div>
+<div class="layout">
+<section class="panel"><h3 data-i18n="economyDeep.programsTitle">Programas produtivos e comércio</h3><div class="decisionDeck" id="productivePrograms"></div><h3 data-i18n="economyDeep.taxProfilesTitle">Perfis tributários</h3><div class="buttonGrid" id="taxProfiles"></div></section>
+<section class="panel"><h3 data-i18n="economyDeep.measuresTitle">Medidas Econômicas</h3><div class="decisionDeck" id="economicMeasures"></div></section>
+</div>
+<div class="layout">
+<section class="panel"><h3 data-i18n="economyDeep.curveTitle">Curva Econômica</h3><canvas height="240" id="economyCanvas" width="460"></canvas></section>
+<section class="panel"><h3 data-i18n="economyDeep.historyTitle">Histórico econômico</h3><div id="deepEconomyHistory"></div></section>
+</div>
+</section>
+<section class="tab" id="tab-population">
+<div class="layout populationTopLayout"><section class="panel"><h3 data-i18n="population.overviewTitle">Retrato Nacional</h3><div id="populationOverview" data-i18n-final="true"></div></section><section class="panel"><h3 data-i18n="population.demographicsTitle">Indicadores Demográficos</h3><div class="demographicGrid" id="demographicIndicators" data-i18n-final="true"></div></section></div>
+<section class="panel"><h3 data-i18n="population.regionsTitle">Regiões e Serviços Públicos</h3><div class="regionalPopulationGrid" id="regionalPopulation" data-i18n-final="true"></div></section>
+<div class="layout"><section class="panel"><h3 data-i18n="population.groupsTitle">Grupos Sociais</h3><div class="socialGroupsGrid" id="socialGroups" data-i18n-final="true"></div></section><section class="panel"><h3 data-i18n="population.programsTitle">Programas em Implantação</h3><div id="populationPrograms" data-i18n-final="true"></div></section></div>
+<section class="panel"><h3 data-i18n="population.policiesTitle">Políticas para a População</h3><div class="decisionDeck populationPolicyGrid" id="populationPolicies" data-i18n-final="true"></div></section>
+</section>
+<section class="tab" id="tab-diplomacy">
+<div class="layout">
+<section class="panel"><h3>Relações Internacionais com IA</h3><div class="countryGrid" id="countries"></div></section>
+<section class="panel"><h3>Risco Global</h3><div id="globalRiskPanel"></div><h3>Ações Diplomáticas</h3><div class="decisionDeck" id="diplomacyActions"></div></section>
+</div>
+<div class="layout">
+<section class="panel"><h3>Tratados</h3><div id="treatyPanel"></div></section>
+<section class="panel"><h3>Histórico Diplomático</h3><div id="diplomaticHistory"></div></section>
+</div>
+</section>
+<section class="tab" id="tab-military">
+<div class="layout">
+<section class="panel"><h3>Comando Militar</h3><div id="militaryReport"></div><h3>Ações Militares</h3><div class="decisionDeck" id="militaryActions"></div></section>
+<section class="panel"><h3>Risco de Segurança</h3><div id="securityRiskPanel"></div><canvas height="240" id="riskCanvas" width="460"></canvas></section>
+</div>
+</section>
+<section class="tab" id="tab-intelligence">
+<div class="layout">
+<section class="panel"><h3>Agência de Inteligência</h3><div id="intelReport"></div><h3>Operações Secretas</h3><div class="decisionDeck" id="intelOperations"></div></section>
+<section class="panel"><h3>Histórico de Operações</h3><div id="operationsHistory"></div></section>
+</div>
+</section>
+<section class="tab" id="tab-projects"><div class="layout"><section class="panel"><h3>Projetos Estratégicos</h3><div class="decisionDeck" id="projectsList"></div></section><section class="panel"><h3>Fila de Execução</h3><div id="projectQueue"></div></section></div></section>
+<section class="tab" id="tab-press">
+<div class="layout">
+<section class="panel pressBox"><h3>Coletiva de Imprensa</h3><p id="pressQuestion"></p><div class="decisionDeck" id="pressAnswers"></div></section>
+<section class="panel"><h3>Opinião Pública</h3><div id="publicOpinion"></div><h3>Veículos de Mídia</h3><div id="mediaOutlets"></div></section>
+</div>
+<div class="layout">
+<section class="panel"><h3>Manchetes Recentes</h3><div id="headlines"></div></section>
+<section class="panel"><h3>Ações de Comunicação</h3><div class="decisionDeck" id="mediaActions"></div></section>
+</div>
+</section>
+<section class="tab" id="tab-elections">
+<div class="layout">
+<section class="panel"><h3>Campanha Eleitoral</h3><div id="electionReport"></div><button class="gold wide" id="simulateElection">SIMULAR ELEIÇÃO</button></section>
+<section class="panel"><h3>Mapa Regional de Votos</h3><div id="regionalPolls"></div></section>
+</div>
+<div class="layout">
+<section class="panel"><h3>Ações de Campanha</h3><div class="decisionDeck" id="campaignActions"></div></section>
+<section class="panel"><h3>Tendência de Voto</h3><canvas height="240" id="voteCanvas" width="460"></canvas></section>
+</div>
+</section>
+<section class="tab" id="tab-crisis">
+<div class="layout">
+<section class="panel"><h3>Gabinete de Crise</h3><div id="crisisReport"></div><h3>Crises Ativas</h3><div id="activeCrises"></div></section>
+<section class="panel"><h3>Ações Emergenciais</h3><div class="decisionDeck" id="crisisActions"></div></section>
+</div>
+<div class="layout">
+<section class="panel"><h3>Histórico de Crises</h3><div id="crisisHistory"></div></section>
+<section class="panel"><h3>Mapa de Risco</h3><canvas height="240" id="crisisCanvas" width="460"></canvas></section>
+</div>
+</section>
+<section class="tab" id="tab-progression">
+<div class="layout">
+<section class="panel"><h3>Carreira do Líder</h3><div id="leaderProgress"></div><button class="gold wide" id="claimDaily">COLETAR RECOMPENSA DIÁRIA</button></section>
+<section class="panel"><h3>Ranking Global</h3><div id="globalRanking"></div><h3>Desbloqueios</h3><div id="unlocksPanel"></div></section>
+</div>
+<div class="layout">
+<section class="panel"><h3>Metas de Mandato</h3><div id="mandateGoals"></div></section>
+<section class="panel"><h3>Conquistas</h3><div id="achievementsPanel"></div></section>
+</div>
+</section>
+<section class="tab" id="tab-store">
+<div class="layout">
+<section class="panel"><h3>Loja Comercial Simulada</h3><div id="storeWallet"></div><div class="decisionDeck" id="storeItems"></div></section>
+<section class="panel"><h3>Anúncios Recompensados</h3><div class="decisionDeck" id="rewardedAds"></div><h3>Pacotes Premium Simulados</h3><div class="decisionDeck" id="premiumPacks"></div></section>
+</div>
+<div class="layout">
+<section class="panel"><h3>Histórico Comercial</h3><div id="purchaseHistory"></div></section>
+<section class="panel"><h3>Regras Comerciais</h3><div id="monetizationRules"></div></section>
+</div>
+</section>
+<section class="tab" id="tab-release">
+<div class="layout">
+<section class="panel"><h3>Identidade da Build</h3><div id="releaseSummary"></div></section>
+<section class="panel"><h3>Saúde Anti-Quebra</h3><div id="resilienceHealth"></div><div class="recoveryToolbar"><button class="dark" id="restoreLatestSave" type="button">RESTAURAR SNAPSHOT</button><button class="dark" id="safeModeToggle" type="button">ALTERNAR MODO SEGURO</button><button class="gold" id="diagnosticDownload" type="button">EXPORTAR DIAGNÓSTICO</button></div></section>
+<section class="panel"><h3 data-i18n="save.centerTitle">Central de Carreiras</h3><div id="saveArchitectureHealth"></div><div class="recoveryToolbar"><button class="gold" id="openSaveManagerRelease" type="button" data-i18n="save.manageCareers">GERENCIAR CARREIRAS</button><button class="dark" id="quickCareerBackup" type="button" data-i18n="save.quickBackup">BACKUP RÁPIDO</button><button class="ghost" id="quickCareerExport" type="button" data-i18n="save.quickExport">EXPORTAR CARREIRA</button></div></section>
+<section class="panel"><h3>Aplicativo e Offline</h3><div id="pwaHealth"></div><div class="recoveryToolbar"><button class="dark" id="installPwaRelease" type="button">INSTALAÇÃO INDISPONÍVEL</button><button class="dark" id="checkPwaUpdate" type="button">VERIFICAR ATUALIZAÇÃO</button><button class="gold" disabled id="applyPwaUpdate" type="button">SEM ATUALIZAÇÃO</button></div></section>
+</div>
+<div class="layout">
+<section class="panel"><h3>Checklist de Proteção</h3><div id="releaseChecklist"></div></section>
+<section class="panel"><h3>Testes Anti-Quebra</h3><div id="testChecklist"></div></section>
+</div>
+<section class="panel"><h3>Próximos Passos</h3><div id="nextReleaseSteps"></div></section>
+</section>
+</main>
+<nav aria-label="Navegação rápida" class="bottomNav"><button aria-label="Início" class="active" data-tab="dashboard" type="button"><b>⌂</b><span>Início</span></button><button aria-label="Governo" data-tab="government" type="button"><b>🏛</b><span>Governo</span></button><button aria-label="Economia" data-tab="economy" type="button"><b>💰</b><span>Economia</span></button><button aria-label="População" data-tab="population" type="button"><b>👥</b><span data-i18n="nav.population">População</span></button><button aria-label="Eleições" data-tab="elections" type="button"><b>🗳</b><span>Eleições</span></button><button aria-controls="mobileDrawer" aria-expanded="false" aria-label="Abrir todos os sistemas" id="mobileMoreBtn" type="button"><b>☰</b><span>Mais</span></button></nav>
+<button aria-label="Avançar um dia" class="quickAdvance" id="quickAdvance" title="Avançar um dia" type="button">+1</button>
+</section>
+
+<div aria-hidden="true" aria-labelledby="careerOutcomeTitle" aria-modal="true" class="careerOutcomeOverlay" id="careerOutcomeOverlay" role="dialog">
+<article class="careerOutcomeCard">
+<header><div><small data-i18n="coreLoop.finalResult">RESULTADO FINAL</small><h2 id="careerOutcomeTitle">Carreira concluída</h2></div><button aria-label="Fechar resultado" id="careerOutcomeClose" type="button">×</button></header>
+<div class="careerOutcomeSeal" id="careerOutcomeSeal">★</div>
+<p id="careerOutcomeReason"></p>
+<div class="careerOutcomeStats" id="careerOutcomeStats"></div>
+<footer><button class="dark" id="careerOutcomeMenu" type="button" data-i18n="coreLoop.returnMenu">VOLTAR AO MENU</button><button class="gold" id="careerOutcomeNew" type="button" data-i18n="coreLoop.newCareer">NOVA CARREIRA</button></footer>
+</article>
+</div>
+<div aria-hidden="true" aria-labelledby="commandPaletteTitle" aria-modal="true" class="commandPalette" id="commandPalette" role="dialog">
+  <article class="commandPaletteCard">
+    <header><div><small>CENTRAL DE COMANDOS</small><b id="commandPaletteTitle">Ir para um sistema ou executar uma ação</b></div><button aria-label="Fechar central de comandos" id="commandClose" type="button">×</button></header>
+    <label class="commandSearch"><span aria-hidden="true">⌕</span><input autocomplete="off" id="commandSearch" placeholder="Buscar governo, economia, salvar..." type="search"/></label>
+    <div aria-label="Resultados dos comandos" class="commandResults" id="commandResults" role="listbox"></div>
+    <footer><span><kbd>↑</kbd><kbd>↓</kbd> navegar</span><span><kbd>Enter</kbd> executar</span><span><kbd>Esc</kbd> fechar</span></footer>
+  </article>
+</div>
+<div aria-hidden="true" aria-live="polite" class="pwaUpdateBanner" id="pwaUpdateBanner" role="status"><div><b>NOVA BUILD DISPONÍVEL</b><span>Atualize quando estiver em uma tela segura. O save local será preservado.</span></div><button class="gold" disabled id="applyPwaUpdateBanner" type="button">ATUALIZAR</button><button aria-label="Fechar aviso" class="ghost" id="dismissPwaUpdate" type="button">×</button></div>
+<div aria-atomic="true" aria-live="polite" class="toastLayer" id="toastLayer"></div>
+<div aria-hidden="true" class="fxLayer" id="fxLayer"></div>
+<section aria-label="Controles de áudio" class="audioPanel" id="audioPanel">
+<b>ÁUDIO DO JOGO</b>
+<label>Volume <input id="volumeSlider" max="100" min="0" type="range" value="45"/></label>
+<label>Música <input checked="" id="musicToggle" type="checkbox"/></label>
+<label>Efeitos <input checked="" id="sfxToggle" type="checkbox"/></label>
+</section>
+<div aria-hidden="true" aria-labelledby="saveManagerTitle" aria-modal="true" class="saveManagerOverlay" id="saveManagerOverlay" role="dialog">
+<article class="saveManagerCard">
+<header class="saveManagerHeader"><div><small data-i18n="save.architectureLabel">ARQUITETURA DE CARREIRAS</small><h2 id="saveManagerTitle" data-i18n="save.managerTitle">Perfis, slots e backups</h2></div><button aria-label="Fechar central de carreiras" id="saveManagerClose" type="button">×</button></header>
+<section class="saveProfileBar">
+<label for="saveProfileSelect"><span data-i18n="save.profile">Perfil</span><select id="saveProfileSelect"></select></label>
+<div class="saveProfileActions"><button class="gold" id="saveProfileCreate" type="button" data-i18n="save.newProfile">NOVO PERFIL</button><button class="dark" id="saveProfileRename" type="button" data-i18n="save.renameProfile">RENOMEAR</button><button class="danger" id="saveProfileDelete" type="button" data-i18n="save.deleteProfile">EXCLUIR</button></div>
+<small id="saveProfileLimit"></small>
+</section>
+<div class="saveManagerHealth" id="saveManagerHealth"></div>
+<section class="saveManagerSection"><h3 data-i18n="save.careerSlots">Espaços de carreira</h3><p data-i18n="save.slotHelp">Cada perfil possui três carreiras independentes. O slot ativo recebe os autosaves.</p><div class="saveSlots" id="saveSlots"></div></section>
+<div class="saveManagerColumns">
+<section class="saveManagerSection"><h3 data-i18n="save.manualBackups">Backups manuais do slot ativo</h3><div class="saveBackups" id="saveBackups"></div></section>
+<section class="saveManagerSection"><h3 data-i18n="save.restoreHistory">Histórico de gravação e restauração</h3><div class="saveHistory" id="saveHistory"></div></section>
+</div>
+<footer class="saveManagerFooter"><button class="gold" id="importCareerBtn" type="button" data-i18n="save.importCareer">IMPORTAR CARREIRA</button><input accept="application/json,.json" hidden id="importCareerInput" type="file"/><span data-i18n="save.localOnly">Os saves ficam no aparelho. Exporte um arquivo para transferir a carreira.</span></footer>
+</article>
+</div>
+<div aria-labelledby="tutorialTitle" aria-modal="true" class="tutorialOverlay" id="tutorialOverlay" role="dialog">
+<article class="tutorialCard">
+<header class="tutorialHeader"><b id="tutorialTitle">Tutorial</b><button aria-label="Fechar tutorial" id="tutorialClose" type="button">×</button></header>
+<p id="tutorialText"></p>
+<div aria-hidden="true" class="tutorialProgress" id="tutorialProgress"></div>
+<div class="tutorialActions">
+<button class="dark" id="tutorialPrev" type="button">ANTERIOR</button>
+<button class="ghost" id="tutorialSkip" type="button">PULAR</button>
+<button class="gold" id="tutorialNext" type="button">PRÓXIMO</button>
+</div>
+</article>
+</div>
+<div aria-labelledby="errorTitle" aria-modal="true" class="errorOverlay" id="errorOverlay" role="alertdialog">
+<article class="errorCard">
+<b id="errorTitle">O jogo encontrou uma falha</b>
+<p id="errorText">Erro desconhecido.</p>
+<small id="errorIncident"></small>
+<small id="errorBuild"></small>
+<p class="recoveryInfo" id="errorRecoveryInfo">Verificando snapshots disponíveis…</p>
+<div class="errorActions recoveryGrid">
+<button class="dark" id="restoreSnapshot" type="button">RESTAURAR SNAPSHOT</button>
+<button class="dark" id="returnToMenu" type="button">VOLTAR AO MENU</button>
+<button class="ghost" id="exportDiagnostics" type="button">EXPORTAR DIAGNÓSTICO</button>
+<button class="ghost" id="safeModeRestart" type="button">REINICIAR EM MODO SEGURO</button>
+<button class="gold" id="reloadGame" type="button">RECARREGAR JOGO</button>
+</div>
+</article>
+</div>
+</div>
+<script src="src/game.js" type="module"></script>
+</body>
+</html>

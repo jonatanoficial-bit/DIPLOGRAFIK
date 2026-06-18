@@ -1,0 +1,2319 @@
+{
+  "generated_by": "tools/build_assets.py",
+  "project": "DIPLOCRAFT",
+  "version": "1.6.1",
+  "phase": "Economia Profunda",
+  "build_stamp": "20260618_1031",
+  "source_asset_count": 34,
+  "runtime_variant_count": 98,
+  "pwa_asset_count": 16,
+  "registered_file_count": 148,
+  "source_total_bytes": 47794197,
+  "runtime_total_bytes_all_formats": 4465704,
+  "all_format_reduction_ratio": 0.906564,
+  "strategy": "AVIF first, WebP fallback; responsive desktop/mobile backgrounds; lazy avatar thumbnails",
+  "assets": [
+    {
+      "path": "assets/backgrounds/bg_crisis_scene_v1.png",
+      "role": "source",
+      "category": "background",
+      "bytes": 2371598,
+      "width": 1536,
+      "height": 1024,
+      "format": "png",
+      "sha256": "13fe380cc173ca29873b6e86de46b5d75b8570c5788349680318dbcd7a586ad0",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/backgrounds/bg_dashboard_city_view_v1.png",
+      "role": "source",
+      "category": "background",
+      "bytes": 2357950,
+      "width": 1536,
+      "height": 1024,
+      "format": "png",
+      "sha256": "29c24844333edc85e4c94e9a995a42cddc109f8d76f54d3a855f5b1ef5a45d2f",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/backgrounds/bg_diplomacy_room_v1.png",
+      "role": "source",
+      "category": "background",
+      "bytes": 2461989,
+      "width": 1536,
+      "height": 1024,
+      "format": "png",
+      "sha256": "498fdd914d6f2b059bd861897e237172997d88b62f9332a0146e137332416c15",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/backgrounds/bg_economy_financial_center_v1.png",
+      "role": "source",
+      "category": "background",
+      "bytes": 2670357,
+      "width": 1536,
+      "height": 1024,
+      "format": "png",
+      "sha256": "a303e99e85206bed7c1f3621825446ae763fb324a46c6eb7fa3997f589fb8d76",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/backgrounds/bg_election_room_v1.png",
+      "role": "source",
+      "category": "background",
+      "bytes": 2297188,
+      "width": 1536,
+      "height": 1024,
+      "format": "png",
+      "sha256": "dee213c78188dab239628291f2fddf20ff8d6e62c54f5d08df19639ad8be5360",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/backgrounds/bg_global_map_v1.png",
+      "role": "source",
+      "category": "background",
+      "bytes": 2388350,
+      "width": 1536,
+      "height": 1024,
+      "format": "png",
+      "sha256": "6928a8d4ce913551c30b281379b51bc4e4a644607a29056e9efb79b08432c5a3",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/backgrounds/bg_main_menu_presidential_office_v1.png",
+      "role": "source",
+      "category": "background",
+      "bytes": 2556637,
+      "width": 1536,
+      "height": 1024,
+      "format": "png",
+      "sha256": "7a566285f31ea2a83086bc5df778f751267db80ab52808244b88a3867a6200fd",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/backgrounds/bg_military_command_center_v1.png",
+      "role": "source",
+      "category": "background",
+      "bytes": 2465183,
+      "width": 1536,
+      "height": 1024,
+      "format": "png",
+      "sha256": "a123ec38b7da4ab8e4167806b71e045b60521d833d5cd06c56cf584b3107b2df",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/backgrounds/bg_parliament_v1.png",
+      "role": "source",
+      "category": "background",
+      "bytes": 2556426,
+      "width": 1536,
+      "height": 1024,
+      "format": "png",
+      "sha256": "c756e54a6066dc2ae0471f0b7c0ca850315214f32ae984454e7ccc031421c0d4",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/backgrounds/bg_press_conference_stage_v1.png",
+      "role": "source",
+      "category": "background",
+      "bytes": 2171555,
+      "width": 1536,
+      "height": 1024,
+      "format": "png",
+      "sha256": "a8aa376e48c2f79d6ef1cca4eae4e6bcccb141609e7ac2cb2f5664cd8e1ec0ed",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/characters/char_leader_latest_v1.png",
+      "role": "source",
+      "category": "character",
+      "bytes": 1829589,
+      "width": 1254,
+      "height": 1254,
+      "format": "png",
+      "sha256": "c613cb67ec53e458a2f1e2605ce950ffae3f578caf319b10be6c833846b70d65",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/characters/char_leader_male_black_v1.png",
+      "role": "source",
+      "category": "character",
+      "bytes": 1928388,
+      "width": 1254,
+      "height": 1254,
+      "format": "png",
+      "sha256": "0685ccf08e24a29b19533fd2fbcda88f8635d580c40b600dc0fb19b1732adbb4",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/characters/char_leader_male_elder_refined_v1.png",
+      "role": "source",
+      "category": "character",
+      "bytes": 1913971,
+      "width": 1536,
+      "height": 1024,
+      "format": "png",
+      "sha256": "43b8dae323f42b9a68aa518dbec80f773dc3598466c032a1cf5d61cd359990f5",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/characters/char_leader_male_elder_v1.png",
+      "role": "source",
+      "category": "character",
+      "bytes": 2062346,
+      "width": 1254,
+      "height": 1254,
+      "format": "png",
+      "sha256": "ac4c0c49452b4f45ba225c2d1839654f885a53c1b62c96e02973014495a11dc0",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/characters/char_leader_male_white_v1.png",
+      "role": "source",
+      "category": "character",
+      "bytes": 1993133,
+      "width": 1254,
+      "height": 1254,
+      "format": "png",
+      "sha256": "07e56b6d31fc34ea2e5d9da3921f747892747489c275bdc5292ddd46eef4299c",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/icons/icon_set_v1.png",
+      "role": "source",
+      "category": "icon",
+      "bytes": 1799882,
+      "width": 1921,
+      "height": 819,
+      "format": "png",
+      "sha256": "8f8ba7021bae0e490d5680dff762512c5dbddc539a2d6571811ab42576c13d06",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/pwa/apple-touch-icon-180.png",
+      "role": "pwa",
+      "category": "pwa",
+      "profile": "install",
+      "bytes": 2826,
+      "width": 180,
+      "height": 180,
+      "format": "png",
+      "sha256": "ee7c6bfef6fa5cc87e072093a25cba73f52f12a911f77654003255cffdef6b3f",
+      "runtime": false,
+      "status": "pwa-generated"
+    },
+    {
+      "path": "assets/pwa/icon-128.png",
+      "role": "pwa",
+      "category": "pwa",
+      "profile": "install",
+      "bytes": 1872,
+      "width": 128,
+      "height": 128,
+      "format": "png",
+      "sha256": "2c84649e4d9bacab849e0c176a43e479f5eea7943e8ddc3375becd3a7da0f05a",
+      "runtime": false,
+      "status": "pwa-generated"
+    },
+    {
+      "path": "assets/pwa/icon-192.png",
+      "role": "pwa",
+      "category": "pwa",
+      "profile": "install",
+      "bytes": 3056,
+      "width": 192,
+      "height": 192,
+      "format": "png",
+      "sha256": "6acd421a7ff8f669de910740ce365c282d39ba8aa8ce16ddec048a2c35371533",
+      "runtime": false,
+      "status": "pwa-generated"
+    },
+    {
+      "path": "assets/pwa/icon-256.png",
+      "role": "pwa",
+      "category": "pwa",
+      "profile": "install",
+      "bytes": 4265,
+      "width": 256,
+      "height": 256,
+      "format": "png",
+      "sha256": "4f960520c11b6e2cb1f206224486184f2463c8262b0ed4848cbabe3a783d0e37",
+      "runtime": false,
+      "status": "pwa-generated"
+    },
+    {
+      "path": "assets/pwa/icon-384.png",
+      "role": "pwa",
+      "category": "pwa",
+      "profile": "install",
+      "bytes": 7571,
+      "width": 384,
+      "height": 384,
+      "format": "png",
+      "sha256": "1e66dc72a6aa9a1cae7255ef5d95c825975c4fe084408218bed2ecec6738dd73",
+      "runtime": false,
+      "status": "pwa-generated"
+    },
+    {
+      "path": "assets/pwa/icon-512.png",
+      "role": "pwa",
+      "category": "pwa",
+      "profile": "install",
+      "bytes": 11528,
+      "width": 512,
+      "height": 512,
+      "format": "png",
+      "sha256": "0fa1397b4ea1d2a00050801046e51f1c170b9fbdefea1ce5943f7e65acda4f30",
+      "runtime": false,
+      "status": "pwa-generated"
+    },
+    {
+      "path": "assets/pwa/icon-64.png",
+      "role": "pwa",
+      "category": "pwa",
+      "profile": "install",
+      "bytes": 967,
+      "width": 64,
+      "height": 64,
+      "format": "png",
+      "sha256": "9688bb41bf947260e5ccb280c4aecd71cf96d37f4ea30de376bfbae368fa00f8",
+      "runtime": false,
+      "status": "pwa-generated"
+    },
+    {
+      "path": "assets/pwa/icon-96.png",
+      "role": "pwa",
+      "category": "pwa",
+      "profile": "install",
+      "bytes": 1374,
+      "width": 96,
+      "height": 96,
+      "format": "png",
+      "sha256": "c1b1b26348f6345f3667a70537825301f653cad7568bb9efc00b1ce1979b37fa",
+      "runtime": false,
+      "status": "pwa-generated"
+    },
+    {
+      "path": "assets/pwa/icon-maskable-512.png",
+      "role": "pwa",
+      "category": "pwa",
+      "profile": "install",
+      "bytes": 11415,
+      "width": 512,
+      "height": 512,
+      "format": "png",
+      "sha256": "d79dc3055535e34d64438bd2720e55dd559d607640d18aef8810b546648fde18",
+      "runtime": false,
+      "status": "pwa-generated"
+    },
+    {
+      "path": "assets/pwa/screenshot-desktop-1280x720.png",
+      "role": "pwa",
+      "category": "pwa",
+      "profile": "install",
+      "bytes": 55589,
+      "width": 1280,
+      "height": 720,
+      "format": "png",
+      "sha256": "8b9fdddc44a1c15a8a248c44fc652bd9fee57d873703c1c807efae33b3b4cb0e",
+      "runtime": false,
+      "status": "pwa-generated"
+    },
+    {
+      "path": "assets/pwa/screenshot-mobile-720x1280.png",
+      "role": "pwa",
+      "category": "pwa",
+      "profile": "install",
+      "bytes": 63500,
+      "width": 720,
+      "height": 1280,
+      "format": "png",
+      "sha256": "dfed3ba8a2750d0317b44512a462822b87be82c790403cedf39b7c59a74dd4bc",
+      "runtime": false,
+      "status": "pwa-generated"
+    },
+    {
+      "path": "assets/pwa/splash-1170x2532.png",
+      "role": "pwa",
+      "category": "pwa",
+      "profile": "install",
+      "bytes": 136430,
+      "width": 1170,
+      "height": 2532,
+      "format": "png",
+      "sha256": "1e9967561695650ecfe4aba63baa28f3d54b7caf9a2f669e38a57d254e139999",
+      "runtime": false,
+      "status": "pwa-generated"
+    },
+    {
+      "path": "assets/pwa/splash-1290x2796.png",
+      "role": "pwa",
+      "category": "pwa",
+      "profile": "install",
+      "bytes": 166159,
+      "width": 1290,
+      "height": 2796,
+      "format": "png",
+      "sha256": "8e74060f1e49f34bab7dd9ba4635cc9dbfae952b5d1d96e67ea6e6fc421c5dfa",
+      "runtime": false,
+      "status": "pwa-generated"
+    },
+    {
+      "path": "assets/pwa/splash-1536x2048.png",
+      "role": "pwa",
+      "category": "pwa",
+      "profile": "install",
+      "bytes": 158446,
+      "width": 1536,
+      "height": 2048,
+      "format": "png",
+      "sha256": "c66f6b0a6b2d714252cf446f7c808bea9b7db8c71150d6837c78cb8e6b6af667",
+      "runtime": false,
+      "status": "pwa-generated"
+    },
+    {
+      "path": "assets/pwa/splash-2048x1536.png",
+      "role": "pwa",
+      "category": "pwa",
+      "profile": "install",
+      "bytes": 153931,
+      "width": 2048,
+      "height": 1536,
+      "format": "png",
+      "sha256": "056b6b90b88c400879d6463d1896da18d7b811aae39f1ce51871b94b73977935",
+      "runtime": false,
+      "status": "pwa-generated"
+    },
+    {
+      "path": "assets/pwa/splash-750x1334.png",
+      "role": "pwa",
+      "category": "pwa",
+      "profile": "install",
+      "bytes": 69115,
+      "width": 750,
+      "height": 1334,
+      "format": "png",
+      "sha256": "71d69a3b700402cab39a6b8e95d0d56473c097ce7975832e4550853f5f4b81d4",
+      "runtime": false,
+      "status": "pwa-generated"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_crisis_scene_v1--desktop.avif",
+      "role": "runtime",
+      "category": "background",
+      "profile": "desktop",
+      "bytes": 84431,
+      "width": 1280,
+      "height": 853,
+      "format": "avif",
+      "sha256": "b74b417a546a71fab82bd2e95896d710e718910925b4dd968287919142e83985",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_crisis_scene_v1--desktop.webp",
+      "role": "runtime",
+      "category": "background",
+      "profile": "desktop",
+      "bytes": 136312,
+      "width": 1280,
+      "height": 853,
+      "format": "webp",
+      "sha256": "d93519fafc1d30cf8396900f77850af1de9fc660d91a7df4009b6582400b57fa",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_crisis_scene_v1--mobile.avif",
+      "role": "runtime",
+      "category": "background",
+      "profile": "mobile",
+      "bytes": 51510,
+      "width": 720,
+      "height": 960,
+      "format": "avif",
+      "sha256": "1f60130c675343ab3bef81417549cfade406124270ad768772fc0bac9a6bab09",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_crisis_scene_v1--mobile.webp",
+      "role": "runtime",
+      "category": "background",
+      "profile": "mobile",
+      "bytes": 83944,
+      "width": 720,
+      "height": 960,
+      "format": "webp",
+      "sha256": "904ddae23fdb5457f35567b273da2c775d27fc0a89e6dafabc78f0608eada7e2",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_dashboard_city_view_v1--desktop.avif",
+      "role": "runtime",
+      "category": "background",
+      "profile": "desktop",
+      "bytes": 70858,
+      "width": 1280,
+      "height": 853,
+      "format": "avif",
+      "sha256": "b5452a4259fc9f6ccb7cce3b01ca1cb153e9db3049e4ba4a2079fad04df6875f",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_dashboard_city_view_v1--desktop.webp",
+      "role": "runtime",
+      "category": "background",
+      "profile": "desktop",
+      "bytes": 126004,
+      "width": 1280,
+      "height": 853,
+      "format": "webp",
+      "sha256": "f57227b675d6d6487cbd2c422f82233aef7d0d4cb023dd97bc4036ae7fd7294c",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_dashboard_city_view_v1--mobile.avif",
+      "role": "runtime",
+      "category": "background",
+      "profile": "mobile",
+      "bytes": 39650,
+      "width": 720,
+      "height": 960,
+      "format": "avif",
+      "sha256": "b86f282d0a89c16863d889a5105fbb45c8ff06fe61937bc84f072eb217abace3",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_dashboard_city_view_v1--mobile.webp",
+      "role": "runtime",
+      "category": "background",
+      "profile": "mobile",
+      "bytes": 73446,
+      "width": 720,
+      "height": 960,
+      "format": "webp",
+      "sha256": "65668c42bf85cb43d685c28e9f4a4a429e5839dd370e5b1331af20b478da229b",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_diplomacy_room_v1--desktop.avif",
+      "role": "runtime",
+      "category": "background",
+      "profile": "desktop",
+      "bytes": 81474,
+      "width": 1280,
+      "height": 853,
+      "format": "avif",
+      "sha256": "ed9256c7504c5f94a8330014f16e8a37c9e4907a3eb875f5fbbbe195fc78e8a8",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_diplomacy_room_v1--desktop.webp",
+      "role": "runtime",
+      "category": "background",
+      "profile": "desktop",
+      "bytes": 145670,
+      "width": 1280,
+      "height": 853,
+      "format": "webp",
+      "sha256": "5d8f114c152292f97405e76184508e1d0e57bfc7a76819caaa5af9686885d76c",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_diplomacy_room_v1--mobile.avif",
+      "role": "runtime",
+      "category": "background",
+      "profile": "mobile",
+      "bytes": 46693,
+      "width": 720,
+      "height": 960,
+      "format": "avif",
+      "sha256": "5707238c923d0ce9e24387efc815acd969f050cde5409e1fafec9cb005ab1fc3",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_diplomacy_room_v1--mobile.webp",
+      "role": "runtime",
+      "category": "background",
+      "profile": "mobile",
+      "bytes": 85470,
+      "width": 720,
+      "height": 960,
+      "format": "webp",
+      "sha256": "666b71879fd228cdfadf78e30b5898a92f2feef10e291c20a34158e81a685b63",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_economy_financial_center_v1--desktop.avif",
+      "role": "runtime",
+      "category": "background",
+      "profile": "desktop",
+      "bytes": 91772,
+      "width": 1280,
+      "height": 853,
+      "format": "avif",
+      "sha256": "213564e16d4db9a861b4320ebd54703477326d4b73c9fd1b3f716cc292262317",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_economy_financial_center_v1--desktop.webp",
+      "role": "runtime",
+      "category": "background",
+      "profile": "desktop",
+      "bytes": 169824,
+      "width": 1280,
+      "height": 853,
+      "format": "webp",
+      "sha256": "f48c1a6d523cd721a1a2e0f5d4769ebfbae2ad6b574dae0d17eb5d8df1f4caf9",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_economy_financial_center_v1--mobile.avif",
+      "role": "runtime",
+      "category": "background",
+      "profile": "mobile",
+      "bytes": 49286,
+      "width": 720,
+      "height": 960,
+      "format": "avif",
+      "sha256": "16c0258c6c870dd5d3a5d26c66fde35a40b6946dd27fe06856ce6b8387c438ef",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_economy_financial_center_v1--mobile.webp",
+      "role": "runtime",
+      "category": "background",
+      "profile": "mobile",
+      "bytes": 94268,
+      "width": 720,
+      "height": 960,
+      "format": "webp",
+      "sha256": "fbed7ae4dcd4ae1c4568b1cfa6bb6510e20dabf5bd4d876d7dc5bf7b69c15dfd",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_election_room_v1--desktop.avif",
+      "role": "runtime",
+      "category": "background",
+      "profile": "desktop",
+      "bytes": 88151,
+      "width": 1280,
+      "height": 853,
+      "format": "avif",
+      "sha256": "6d2da9cbfb268309260dcf324a53f41b7bae4736d35844383fd5d83e6547afb3",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_election_room_v1--desktop.webp",
+      "role": "runtime",
+      "category": "background",
+      "profile": "desktop",
+      "bytes": 146024,
+      "width": 1280,
+      "height": 853,
+      "format": "webp",
+      "sha256": "ad1c658a95c195f2cdf264dc287e1e939bebb19abcdb5f1986e14fd5b73bce82",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_election_room_v1--mobile.avif",
+      "role": "runtime",
+      "category": "background",
+      "profile": "mobile",
+      "bytes": 48122,
+      "width": 720,
+      "height": 960,
+      "format": "avif",
+      "sha256": "fdaab3e80c54252ec73d3670f21bc6a050c1849ad5917239751317a4745644b9",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_election_room_v1--mobile.webp",
+      "role": "runtime",
+      "category": "background",
+      "profile": "mobile",
+      "bytes": 78904,
+      "width": 720,
+      "height": 960,
+      "format": "webp",
+      "sha256": "a2abc71bc1122708ef7697d1d9863f6b3b822a50138d14da4304e302de6b6b47",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_global_map_v1--desktop.avif",
+      "role": "runtime",
+      "category": "background",
+      "profile": "desktop",
+      "bytes": 88968,
+      "width": 1280,
+      "height": 853,
+      "format": "avif",
+      "sha256": "bb8e025090a9cf2353a376afa7f1b33a1530b9bedd8e97c20864102fce1a453f",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_global_map_v1--desktop.webp",
+      "role": "runtime",
+      "category": "background",
+      "profile": "desktop",
+      "bytes": 145590,
+      "width": 1280,
+      "height": 853,
+      "format": "webp",
+      "sha256": "f684b54e89fb635cdd2a300bedf4bb434305d41aa754f2f4798e0b26cb0c9c85",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_global_map_v1--mobile.avif",
+      "role": "runtime",
+      "category": "background",
+      "profile": "mobile",
+      "bytes": 50759,
+      "width": 720,
+      "height": 960,
+      "format": "avif",
+      "sha256": "1a5574871688dd0bbe3833de0c4933b3d9da14994165eca511e1ca1391a0ac42",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_global_map_v1--mobile.webp",
+      "role": "runtime",
+      "category": "background",
+      "profile": "mobile",
+      "bytes": 84416,
+      "width": 720,
+      "height": 960,
+      "format": "webp",
+      "sha256": "cd50a5a91d65d16e63d3a9ff0da40762a0d8e40a27e928f3201fa2d98b956e82",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_main_menu_presidential_office_v1--desktop.avif",
+      "role": "runtime",
+      "category": "background",
+      "profile": "desktop",
+      "bytes": 82372,
+      "width": 1280,
+      "height": 853,
+      "format": "avif",
+      "sha256": "9887499465ba986943ae1d16f3478095093d70f053461cb590b3ff66dd26c689",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_main_menu_presidential_office_v1--desktop.webp",
+      "role": "runtime",
+      "category": "background",
+      "profile": "desktop",
+      "bytes": 155748,
+      "width": 1280,
+      "height": 853,
+      "format": "webp",
+      "sha256": "6354474f9f804e96d3a945d33de9cd7e48b0b814e93e36b69cc6af5b0c7b3bbc",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_main_menu_presidential_office_v1--mobile.avif",
+      "role": "runtime",
+      "category": "background",
+      "profile": "mobile",
+      "bytes": 44845,
+      "width": 720,
+      "height": 960,
+      "format": "avif",
+      "sha256": "21b844cd5796f528653528a672e3dc9d5ff07c5f87cb374e74cde754a9c43f51",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_main_menu_presidential_office_v1--mobile.webp",
+      "role": "runtime",
+      "category": "background",
+      "profile": "mobile",
+      "bytes": 86896,
+      "width": 720,
+      "height": 960,
+      "format": "webp",
+      "sha256": "2acd3355efb41262f19d50631a600e6ccbdf490e66bd283023e6e0372f28ea8e",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_military_command_center_v1--desktop.avif",
+      "role": "runtime",
+      "category": "background",
+      "profile": "desktop",
+      "bytes": 79965,
+      "width": 1280,
+      "height": 853,
+      "format": "avif",
+      "sha256": "76c63e53aa78e673b933781d7bf24d0b31652fb0e3f1e5e7aa90881202d9956b",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_military_command_center_v1--desktop.webp",
+      "role": "runtime",
+      "category": "background",
+      "profile": "desktop",
+      "bytes": 138020,
+      "width": 1280,
+      "height": 853,
+      "format": "webp",
+      "sha256": "1429fd5ad5abc058d0a6e3763f1f21e6a312ae353e7712f68165df5daa6637e3",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_military_command_center_v1--mobile.avif",
+      "role": "runtime",
+      "category": "background",
+      "profile": "mobile",
+      "bytes": 41346,
+      "width": 720,
+      "height": 960,
+      "format": "avif",
+      "sha256": "852123b078c356758b9d943d332b6be9da3a79398aecc012991493f14f9400d0",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_military_command_center_v1--mobile.webp",
+      "role": "runtime",
+      "category": "background",
+      "profile": "mobile",
+      "bytes": 72204,
+      "width": 720,
+      "height": 960,
+      "format": "webp",
+      "sha256": "36f52ae899d369196221eb9e8545164845ee6ce6a37bd45edc7c1cdb98726c08",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_parliament_v1--desktop.avif",
+      "role": "runtime",
+      "category": "background",
+      "profile": "desktop",
+      "bytes": 98590,
+      "width": 1280,
+      "height": 853,
+      "format": "avif",
+      "sha256": "28a237ccdccb7091e0bb0227b7e7539fe280063eb725fdfd877923ae732c97af",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_parliament_v1--desktop.webp",
+      "role": "runtime",
+      "category": "background",
+      "profile": "desktop",
+      "bytes": 176416,
+      "width": 1280,
+      "height": 853,
+      "format": "webp",
+      "sha256": "f29600c56d8dd96144aecf489129cf7b98c9c1614613c6b7cc0ed97b6308b030",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_parliament_v1--mobile.avif",
+      "role": "runtime",
+      "category": "background",
+      "profile": "mobile",
+      "bytes": 58210,
+      "width": 720,
+      "height": 960,
+      "format": "avif",
+      "sha256": "eeaa4b8d0dcd618cf2a7760d77068df266223f33a5e073fbcd7abd6e8c003666",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_parliament_v1--mobile.webp",
+      "role": "runtime",
+      "category": "background",
+      "profile": "mobile",
+      "bytes": 110056,
+      "width": 720,
+      "height": 960,
+      "format": "webp",
+      "sha256": "e8849ab2853af7e04d4c4eaa347c2bb2c4325b7abdcdcc583665a76e722987fe",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_press_conference_stage_v1--desktop.avif",
+      "role": "runtime",
+      "category": "background",
+      "profile": "desktop",
+      "bytes": 67766,
+      "width": 1280,
+      "height": 853,
+      "format": "avif",
+      "sha256": "92da9e90632c26e09bf860d27113eb0a66b957dc87732af15a00639bde914762",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_press_conference_stage_v1--desktop.webp",
+      "role": "runtime",
+      "category": "background",
+      "profile": "desktop",
+      "bytes": 110548,
+      "width": 1280,
+      "height": 853,
+      "format": "webp",
+      "sha256": "fc627c3e36e30812be0a9173da90103a9695ffce6be58ebf1302ff903e074ade",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_press_conference_stage_v1--mobile.avif",
+      "role": "runtime",
+      "category": "background",
+      "profile": "mobile",
+      "bytes": 41316,
+      "width": 720,
+      "height": 960,
+      "format": "avif",
+      "sha256": "a8cd421f8410439492f3856c51cb4315ef9b17d75fc2930a8b1acedad92e0e0c",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/backgrounds/bg_press_conference_stage_v1--mobile.webp",
+      "role": "runtime",
+      "category": "background",
+      "profile": "mobile",
+      "bytes": 71534,
+      "width": 720,
+      "height": 960,
+      "format": "webp",
+      "sha256": "07f2c10f945af962b95fff9691cc79f087408896fd2bd421383f2c2580da4ec7",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/cards/card_diplomacy_v1--card.avif",
+      "role": "runtime",
+      "category": "card",
+      "profile": "card",
+      "bytes": 23501,
+      "width": 768,
+      "height": 512,
+      "format": "avif",
+      "sha256": "588a731d26338d5e4c58dd5d785c90470f858efd56b2b5403dfce135e316aa60",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/cards/card_diplomacy_v1--card.webp",
+      "role": "runtime",
+      "category": "card",
+      "profile": "card",
+      "bytes": 39504,
+      "width": 768,
+      "height": 512,
+      "format": "webp",
+      "sha256": "e38169fe0b809a12576de1a0c044cd5aa945390e1eb51df3c8d38fa38020a830",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/cards/card_economy_v1--card.avif",
+      "role": "runtime",
+      "category": "card",
+      "profile": "card",
+      "bytes": 15546,
+      "width": 768,
+      "height": 512,
+      "format": "avif",
+      "sha256": "6e2b9ff347e100f98273f9138d44abd359b2eb22730f7528e4a7e8153c4ca48f",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/cards/card_economy_v1--card.webp",
+      "role": "runtime",
+      "category": "card",
+      "profile": "card",
+      "bytes": 25824,
+      "width": 768,
+      "height": 512,
+      "format": "webp",
+      "sha256": "c2a90acb44e5a6f404c0a97aee4e19e7272e6a4a7bf8a457084a5ea025006dbf",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/cards/card_government_v1--card.avif",
+      "role": "runtime",
+      "category": "card",
+      "profile": "card",
+      "bytes": 25783,
+      "width": 768,
+      "height": 512,
+      "format": "avif",
+      "sha256": "46234fa66d6bda6866716adf7661229cb2456adf9511be65f79ec26c34ef9e76",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/cards/card_government_v1--card.webp",
+      "role": "runtime",
+      "category": "card",
+      "profile": "card",
+      "bytes": 44766,
+      "width": 768,
+      "height": 512,
+      "format": "webp",
+      "sha256": "9c3632d6251d2ef38a975628d2c169554acfa3011a31ce9d17d71c52247eb6f1",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/cards/card_intelligence_v1--card.avif",
+      "role": "runtime",
+      "category": "card",
+      "profile": "card",
+      "bytes": 25704,
+      "width": 768,
+      "height": 512,
+      "format": "avif",
+      "sha256": "a45bb93249f7935a341032df38a2e07426b5fa5e7587d51a524a0d71b5ab2a1f",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/cards/card_intelligence_v1--card.webp",
+      "role": "runtime",
+      "category": "card",
+      "profile": "card",
+      "bytes": 44830,
+      "width": 768,
+      "height": 512,
+      "format": "webp",
+      "sha256": "2f674adcd22c02f8cc1f25db409c9250eac03b3eeda44eb68f7ef5d15cd40086",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/cards/card_military_v1--card.avif",
+      "role": "runtime",
+      "category": "card",
+      "profile": "card",
+      "bytes": 23091,
+      "width": 768,
+      "height": 512,
+      "format": "avif",
+      "sha256": "f576521a42c8f1ad443c6511d62b483abdcaf9c62d42f46d162f154a316ddb13",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/cards/card_military_v1--card.webp",
+      "role": "runtime",
+      "category": "card",
+      "profile": "card",
+      "bytes": 39458,
+      "width": 768,
+      "height": 512,
+      "format": "webp",
+      "sha256": "f11a31e46386ccd380d1e20c344ae4843148d7cf990d51e126d301f3a3c939b8",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/cards/card_projects_v1--card.avif",
+      "role": "runtime",
+      "category": "card",
+      "profile": "card",
+      "bytes": 28580,
+      "width": 768,
+      "height": 512,
+      "format": "avif",
+      "sha256": "cff9d7eda92f36c427e003f889814d632124db804918729cab06ed5fc1932d37",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/cards/card_projects_v1--card.webp",
+      "role": "runtime",
+      "category": "card",
+      "profile": "card",
+      "bytes": 48108,
+      "width": 768,
+      "height": 512,
+      "format": "webp",
+      "sha256": "6c3d875999e410f04f915f294faf023a32d183e9fa1fdf14ebc8eb62ae95dd6f",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/characters/char_leader_latest_v1--display.avif",
+      "role": "runtime",
+      "category": "character",
+      "profile": "display",
+      "bytes": 15419,
+      "width": 640,
+      "height": 640,
+      "format": "avif",
+      "sha256": "9fade975e58b3877eb1c804353512bf8e48fc709af4d4f023b66fa12f9f811d4",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/characters/char_leader_latest_v1--display.webp",
+      "role": "runtime",
+      "category": "character",
+      "profile": "display",
+      "bytes": 20576,
+      "width": 640,
+      "height": 640,
+      "format": "webp",
+      "sha256": "21fc7494d0bd837f3a7e3ceb9d117d5937daf0f399eaccc42a8eb5def1bbac48",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/characters/char_leader_latest_v1--thumb.avif",
+      "role": "runtime",
+      "category": "character",
+      "profile": "thumb",
+      "bytes": 4971,
+      "width": 320,
+      "height": 320,
+      "format": "avif",
+      "sha256": "714f40a5935a9a32c7211d1f0a4e23bf8b4dc0d44636c130375af935bfadbe99",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/characters/char_leader_latest_v1--thumb.webp",
+      "role": "runtime",
+      "category": "character",
+      "profile": "thumb",
+      "bytes": 6624,
+      "width": 320,
+      "height": 320,
+      "format": "webp",
+      "sha256": "e8337fbe998557e403db5760cfeaf27dea5789a552ef872591fc6721c279bf3c",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/characters/char_leader_male_black_v1--display.avif",
+      "role": "runtime",
+      "category": "character",
+      "profile": "display",
+      "bytes": 13082,
+      "width": 640,
+      "height": 640,
+      "format": "avif",
+      "sha256": "55895ff239efe89d80b8b25d2ebbdc1bc127177f66783235d85898e9a9cf5c74",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/characters/char_leader_male_black_v1--display.webp",
+      "role": "runtime",
+      "category": "character",
+      "profile": "display",
+      "bytes": 19332,
+      "width": 640,
+      "height": 640,
+      "format": "webp",
+      "sha256": "82f3b0d085069d89bd30329b051aa5fc8827247a0f1a1ef84ff6483d08b75890",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/characters/char_leader_male_black_v1--thumb.avif",
+      "role": "runtime",
+      "category": "character",
+      "profile": "thumb",
+      "bytes": 4140,
+      "width": 320,
+      "height": 320,
+      "format": "avif",
+      "sha256": "74471c8de3b1c04068afb03c66586e7562d6b36ecf5eaac04bb0b7f7acfde7a8",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/characters/char_leader_male_black_v1--thumb.webp",
+      "role": "runtime",
+      "category": "character",
+      "profile": "thumb",
+      "bytes": 5670,
+      "width": 320,
+      "height": 320,
+      "format": "webp",
+      "sha256": "820941d3cc8bca93b7015a059ab7984266f056759799397f256437aea77938dd",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/characters/char_leader_male_elder_refined_v1--display.avif",
+      "role": "runtime",
+      "category": "character",
+      "profile": "display",
+      "bytes": 14142,
+      "width": 640,
+      "height": 640,
+      "format": "avif",
+      "sha256": "ffc127c8758a572706bb35c92345a9ded796a9dc3e79f537ad24489065a9df78",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/characters/char_leader_male_elder_refined_v1--display.webp",
+      "role": "runtime",
+      "category": "character",
+      "profile": "display",
+      "bytes": 21476,
+      "width": 640,
+      "height": 640,
+      "format": "webp",
+      "sha256": "d5baac87d03fb69b3c37595d9a0423f73b3540713c7ff80a6bed9e2f24c43ef9",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/characters/char_leader_male_elder_refined_v1--thumb.avif",
+      "role": "runtime",
+      "category": "character",
+      "profile": "thumb",
+      "bytes": 4666,
+      "width": 320,
+      "height": 320,
+      "format": "avif",
+      "sha256": "9b0e410403e62283c91c560ebb72a01d43296c95a0871c840289f2cb29d93238",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/characters/char_leader_male_elder_refined_v1--thumb.webp",
+      "role": "runtime",
+      "category": "character",
+      "profile": "thumb",
+      "bytes": 6522,
+      "width": 320,
+      "height": 320,
+      "format": "webp",
+      "sha256": "809ce909e56f49cee942e4f062459c229c6d68ad70e5585b67f9582c37a43cba",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/characters/char_leader_male_elder_v1--display.avif",
+      "role": "runtime",
+      "category": "character",
+      "profile": "display",
+      "bytes": 15372,
+      "width": 640,
+      "height": 640,
+      "format": "avif",
+      "sha256": "e252b064a22a6e5a667726184fbd68b144ce8f789d0865f1f4d78709cb1f8c68",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/characters/char_leader_male_elder_v1--display.webp",
+      "role": "runtime",
+      "category": "character",
+      "profile": "display",
+      "bytes": 24108,
+      "width": 640,
+      "height": 640,
+      "format": "webp",
+      "sha256": "7ebc0079bee02ca092002409fd155ff1ed5ec586a484980c8b29dee44cdd45a0",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/characters/char_leader_male_elder_v1--thumb.avif",
+      "role": "runtime",
+      "category": "character",
+      "profile": "thumb",
+      "bytes": 4938,
+      "width": 320,
+      "height": 320,
+      "format": "avif",
+      "sha256": "b0bcee4c0f28a8d601e4abc1cecd13fbf75d69897d426c3cbda14e181a6c9902",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/characters/char_leader_male_elder_v1--thumb.webp",
+      "role": "runtime",
+      "category": "character",
+      "profile": "thumb",
+      "bytes": 7080,
+      "width": 320,
+      "height": 320,
+      "format": "webp",
+      "sha256": "35f048ff1af461ccbdc4575e344b151710184e5d5868a3d19468f49576e2c6da",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/characters/char_leader_male_white_v1--display.avif",
+      "role": "runtime",
+      "category": "character",
+      "profile": "display",
+      "bytes": 14787,
+      "width": 640,
+      "height": 640,
+      "format": "avif",
+      "sha256": "f562cd432d0257b0255283563802f5e2276e7b361fd322fda5cfd1eeb168ed92",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/characters/char_leader_male_white_v1--display.webp",
+      "role": "runtime",
+      "category": "character",
+      "profile": "display",
+      "bytes": 23458,
+      "width": 640,
+      "height": 640,
+      "format": "webp",
+      "sha256": "7a92afa36a145237b51229a8f809ad48691045ee9ea14f7073da7e8b215eaf40",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/characters/char_leader_male_white_v1--thumb.avif",
+      "role": "runtime",
+      "category": "character",
+      "profile": "thumb",
+      "bytes": 5226,
+      "width": 320,
+      "height": 320,
+      "format": "avif",
+      "sha256": "d6d379c680f24653a90c8fcd7e584c1a013598ae4d63095249263c1cd76a9c3a",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/characters/char_leader_male_white_v1--thumb.webp",
+      "role": "runtime",
+      "category": "character",
+      "profile": "thumb",
+      "bytes": 7524,
+      "width": 320,
+      "height": 320,
+      "format": "webp",
+      "sha256": "e7301330074e02f794094ecffdae7aa50a3be31a7c7d60dd1b8378eeb220c5d5",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/icons/icon_set_v1--ui.avif",
+      "role": "runtime",
+      "category": "icon",
+      "profile": "ui",
+      "bytes": 29698,
+      "width": 960,
+      "height": 409,
+      "format": "avif",
+      "sha256": "66b37260dd240b132dda8fdd2392969dd8f368e35ee97cdd6c357685ed4489fd",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/icons/icon_set_v1--ui.webp",
+      "role": "runtime",
+      "category": "icon",
+      "profile": "ui",
+      "bytes": 62110,
+      "width": 960,
+      "height": 409,
+      "format": "webp",
+      "sha256": "0d6107c43c7d1b4fb23790dc4828d19875733cd5f0dae5a5d887ecf26b1b419f",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/parties/party_mdb_card_v1--party.avif",
+      "role": "runtime",
+      "category": "party",
+      "profile": "party",
+      "bytes": 4462,
+      "width": 360,
+      "height": 336,
+      "format": "avif",
+      "sha256": "b991c37c0c6e8848d35bbe88ca4dcf46a4b6c5c9bbf2684d7233abd669bf5151",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/parties/party_mdb_card_v1--party.webp",
+      "role": "runtime",
+      "category": "party",
+      "profile": "party",
+      "bytes": 8480,
+      "width": 360,
+      "height": 336,
+      "format": "webp",
+      "sha256": "65af961e29d49b0291c7d66a9c770e3a78fffb12b64c8fb7a76fee20dc5c542f",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/parties/party_novo_card_v1--party.avif",
+      "role": "runtime",
+      "category": "party",
+      "profile": "party",
+      "bytes": 3955,
+      "width": 360,
+      "height": 336,
+      "format": "avif",
+      "sha256": "eee665137bc8d1190c6e38279270c4504b933ece3df2ab92c1e38888dc6083c8",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/parties/party_novo_card_v1--party.webp",
+      "role": "runtime",
+      "category": "party",
+      "profile": "party",
+      "bytes": 7700,
+      "width": 360,
+      "height": 336,
+      "format": "webp",
+      "sha256": "058bfd1a84670884d78294d88b838164ecbc9d5b7a8a17de980fcb5e9609a01b",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/parties/party_pl_card_v1--party.avif",
+      "role": "runtime",
+      "category": "party",
+      "profile": "party",
+      "bytes": 4250,
+      "width": 360,
+      "height": 336,
+      "format": "avif",
+      "sha256": "feb071a7a2f5fe146143ab2729c5ab860275569349161b84211c22e87ca78416",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/parties/party_pl_card_v1--party.webp",
+      "role": "runtime",
+      "category": "party",
+      "profile": "party",
+      "bytes": 7812,
+      "width": 360,
+      "height": 336,
+      "format": "webp",
+      "sha256": "6a74b55ab014d3b61a1c15cc81b99eab45da9d185674f12fd98499df037cdfad",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/parties/party_pp_card_v1--party.avif",
+      "role": "runtime",
+      "category": "party",
+      "profile": "party",
+      "bytes": 3479,
+      "width": 360,
+      "height": 336,
+      "format": "avif",
+      "sha256": "39768dc49739f4ff50d53c5ce61ef2dcf8d5a2607cb8e64ae39e4a3b92a80d92",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/parties/party_pp_card_v1--party.webp",
+      "role": "runtime",
+      "category": "party",
+      "profile": "party",
+      "bytes": 6000,
+      "width": 360,
+      "height": 336,
+      "format": "webp",
+      "sha256": "48ea812178926b60b4e126688f34041b2873c798a997a20c929836d69a134bcf",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/parties/party_psb_card_v1--party.avif",
+      "role": "runtime",
+      "category": "party",
+      "profile": "party",
+      "bytes": 4848,
+      "width": 360,
+      "height": 336,
+      "format": "avif",
+      "sha256": "c9f5f5494f626f78ae1488bab698e2d84834f2538fbcedbbac809fc1df399e3c",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/parties/party_psb_card_v1--party.webp",
+      "role": "runtime",
+      "category": "party",
+      "profile": "party",
+      "bytes": 8590,
+      "width": 360,
+      "height": 336,
+      "format": "webp",
+      "sha256": "4fe454643cdbb6633b9759869fe7e27ccd1c778030a5617488aac5f208add438",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/parties/party_psd_card_v1--party.avif",
+      "role": "runtime",
+      "category": "party",
+      "profile": "party",
+      "bytes": 4043,
+      "width": 360,
+      "height": 336,
+      "format": "avif",
+      "sha256": "b50e2c32a9dfc55e1e1d20c383575657f5fcc224e17fb112d69a8df63f069c45",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/parties/party_psd_card_v1--party.webp",
+      "role": "runtime",
+      "category": "party",
+      "profile": "party",
+      "bytes": 6712,
+      "width": 360,
+      "height": 336,
+      "format": "webp",
+      "sha256": "66295cbf6c79d25b0b9e9d9d5a097f4f1c6a1847d791041b3ac9402028aed3c8",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/parties/party_psdb_card_v1--party.avif",
+      "role": "runtime",
+      "category": "party",
+      "profile": "party",
+      "bytes": 5132,
+      "width": 360,
+      "height": 336,
+      "format": "avif",
+      "sha256": "5381c60a8ae7952537be17421f902ec1931754c23fb0a518c98a76d3d95d294a",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/parties/party_psdb_card_v1--party.webp",
+      "role": "runtime",
+      "category": "party",
+      "profile": "party",
+      "bytes": 8908,
+      "width": 360,
+      "height": 336,
+      "format": "webp",
+      "sha256": "8c150d4c8bc9c6bf949cd691f170d550a6eb3750c24025c50addc07673569d93",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/parties/party_psol_card_v1--party.avif",
+      "role": "runtime",
+      "category": "party",
+      "profile": "party",
+      "bytes": 4910,
+      "width": 360,
+      "height": 336,
+      "format": "avif",
+      "sha256": "58e1e679c2888d064cacfbc3068168dc1c1009f61cecc8230503a842bf889c5e",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/parties/party_psol_card_v1--party.webp",
+      "role": "runtime",
+      "category": "party",
+      "profile": "party",
+      "bytes": 7724,
+      "width": 360,
+      "height": 336,
+      "format": "webp",
+      "sha256": "d899e2852c494dc19a7eae0273802a120615030a224fb8de68fde4fa22486749",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/parties/party_pt_card_v1--party.avif",
+      "role": "runtime",
+      "category": "party",
+      "profile": "party",
+      "bytes": 4104,
+      "width": 360,
+      "height": 336,
+      "format": "avif",
+      "sha256": "42baa07cf3053684b439836e74ddc6d6ce43bf5a92ff9a0ffb95b699f5f91860",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/parties/party_pt_card_v1--party.webp",
+      "role": "runtime",
+      "category": "party",
+      "profile": "party",
+      "bytes": 7218,
+      "width": 360,
+      "height": 336,
+      "format": "webp",
+      "sha256": "90a3f2243c10c69972f4c4b8b95ed6080ca562936275a2bf55a8e48242208de9",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/parties/party_pv_card_v1--party.avif",
+      "role": "runtime",
+      "category": "party",
+      "profile": "party",
+      "bytes": 3879,
+      "width": 360,
+      "height": 336,
+      "format": "avif",
+      "sha256": "b4ece0ea56537419a2b1fd71b5e75c008d3a8d0ba2c348fe99644fcad24bcbb5",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/parties/party_pv_card_v1--party.webp",
+      "role": "runtime",
+      "category": "party",
+      "profile": "party",
+      "bytes": 6430,
+      "width": 360,
+      "height": 336,
+      "format": "webp",
+      "sha256": "c4f60bd6770f9df5af0d45c9237c01ee86628c0540dcc3a25236606b12c37e22",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/parties/party_republicanos_card_v1--party.avif",
+      "role": "runtime",
+      "category": "party",
+      "profile": "party",
+      "bytes": 5992,
+      "width": 360,
+      "height": 336,
+      "format": "avif",
+      "sha256": "02aab7b69b518525fa50d0c7412459e74b1797696ad5a565838ba48c49b5adaa",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/parties/party_republicanos_card_v1--party.webp",
+      "role": "runtime",
+      "category": "party",
+      "profile": "party",
+      "bytes": 11066,
+      "width": 360,
+      "height": 336,
+      "format": "webp",
+      "sha256": "cf80dc6ae31dc7e45cf8485628e48fa6969e1322e621bc0ac555db181aa90360",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/parties/party_uniao_card_v1--party.avif",
+      "role": "runtime",
+      "category": "party",
+      "profile": "party",
+      "bytes": 5906,
+      "width": 360,
+      "height": 336,
+      "format": "avif",
+      "sha256": "7caa992c2d847d149f688e161bd793496f253b8158ad9ad5c3bccec2a419dba8",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/runtime/parties/party_uniao_card_v1--party.webp",
+      "role": "runtime",
+      "category": "party",
+      "profile": "party",
+      "bytes": 11110,
+      "width": 360,
+      "height": 336,
+      "format": "webp",
+      "sha256": "076063035b73118fa3171d707bb3da4f34b10ff6942ce2b97172487f9625b9d6",
+      "runtime": true,
+      "status": "optimized"
+    },
+    {
+      "path": "assets/ui/cards/card_diplomacy_v1.png",
+      "role": "source",
+      "category": "card",
+      "bytes": 1790724,
+      "width": 1536,
+      "height": 1024,
+      "format": "png",
+      "sha256": "7f0c248bbb14eb1ae935078c8e6baf312a7002549ddf16f1e8a767d608582a2e",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/ui/cards/card_economy_v1.png",
+      "role": "source",
+      "category": "card",
+      "bytes": 1616384,
+      "width": 1712,
+      "height": 919,
+      "format": "png",
+      "sha256": "c8251e6f3a2e0f887441563be7afe4c2062bd4c41b462c2d7bc8499854d3445b",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/ui/cards/card_government_v1.png",
+      "role": "source",
+      "category": "card",
+      "bytes": 1890642,
+      "width": 1536,
+      "height": 1024,
+      "format": "png",
+      "sha256": "5f546b36d00e6c1293d078d7863861f7902998175690ec212028322ab33cff6f",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/ui/cards/card_intelligence_v1.png",
+      "role": "source",
+      "category": "card",
+      "bytes": 1916565,
+      "width": 1536,
+      "height": 1024,
+      "format": "png",
+      "sha256": "c9a8b837613461f7a701c914be27964aab0643b9fd2b308cd365652c384ea846",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/ui/cards/card_military_v1.png",
+      "role": "source",
+      "category": "card",
+      "bytes": 1773935,
+      "width": 1523,
+      "height": 1032,
+      "format": "png",
+      "sha256": "e26bccfb0eb8ee85f95713798569af969a2e7a3df21fec0dec9d067757fc9948",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/ui/cards/card_projects_v1.png",
+      "role": "source",
+      "category": "card",
+      "bytes": 1984280,
+      "width": 1536,
+      "height": 1024,
+      "format": "png",
+      "sha256": "9a4ccfc155fc623a21217fceabafef52589c6efae98f0447116afd9757b828ac",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/ui/parties/party_mdb_card_v1.png",
+      "role": "source",
+      "category": "party",
+      "bytes": 81893,
+      "width": 294,
+      "height": 274,
+      "format": "png",
+      "sha256": "58a4735a37d0686b756a9397d8a792a7d4a53c9fd690ad64ec53d9198eb8bacd",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/ui/parties/party_novo_card_v1.png",
+      "role": "source",
+      "category": "party",
+      "bytes": 81181,
+      "width": 294,
+      "height": 274,
+      "format": "png",
+      "sha256": "5dbccca735c6bd1018d9a98e506af41c4c660249d32429d3bcb8eac0a8426903",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/ui/parties/party_pl_card_v1.png",
+      "role": "source",
+      "category": "party",
+      "bytes": 80018,
+      "width": 294,
+      "height": 274,
+      "format": "png",
+      "sha256": "8b0b05cf28bee52fe08a528503b960d96ab1f22ef7862c99ae60604aa8a196e7",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/ui/parties/party_pp_card_v1.png",
+      "role": "source",
+      "category": "party",
+      "bytes": 75855,
+      "width": 294,
+      "height": 274,
+      "format": "png",
+      "sha256": "9575d79d363eb711c149563da2729654ba1fa746735c3269f7041c7c7d5a035c",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/ui/parties/party_psb_card_v1.png",
+      "role": "source",
+      "category": "party",
+      "bytes": 83873,
+      "width": 294,
+      "height": 274,
+      "format": "png",
+      "sha256": "f92939b74571d1b416908840549b8d8168d4bf6a5ed2e061fa3184324081a939",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/ui/parties/party_psd_card_v1.png",
+      "role": "source",
+      "category": "party",
+      "bytes": 77085,
+      "width": 294,
+      "height": 274,
+      "format": "png",
+      "sha256": "53bcedc8d82697c6b2df63d3b5f019cf4dc0f98de8217cb99c8af8c31072e7ca",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/ui/parties/party_psdb_card_v1.png",
+      "role": "source",
+      "category": "party",
+      "bytes": 86388,
+      "width": 294,
+      "height": 274,
+      "format": "png",
+      "sha256": "1a25787068689469581cff25e50c7169986a8a666e8678e55454be8c2696e994",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/ui/parties/party_psol_card_v1.png",
+      "role": "source",
+      "category": "party",
+      "bytes": 85344,
+      "width": 294,
+      "height": 274,
+      "format": "png",
+      "sha256": "2bcd5ae237f51f78f22020f72365506a546298c3ffbede504c15d7f9c3d3764e",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/ui/parties/party_pt_card_v1.png",
+      "role": "source",
+      "category": "party",
+      "bytes": 79805,
+      "width": 294,
+      "height": 274,
+      "format": "png",
+      "sha256": "c801a8effd9fee5a04b4b5226c56bd3dded3dd6dcd27aa4123cfc1b85c5c15c1",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/ui/parties/party_pv_card_v1.png",
+      "role": "source",
+      "category": "party",
+      "bytes": 79700,
+      "width": 294,
+      "height": 274,
+      "format": "png",
+      "sha256": "7ad6d4aa2e5364d4a2249c18322d5875d9301085706f5fb9b30575b60a6f7e70",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/ui/parties/party_republicanos_card_v1.png",
+      "role": "source",
+      "category": "party",
+      "bytes": 91732,
+      "width": 294,
+      "height": 274,
+      "format": "png",
+      "sha256": "fbb763fa5ed90f26f92ee05d0c6957ccd27b40a1c4e63e7ceffcfc01adff0044",
+      "runtime": false,
+      "status": "source-preserved"
+    },
+    {
+      "path": "assets/ui/parties/party_uniao_card_v1.png",
+      "role": "source",
+      "category": "party",
+      "bytes": 94251,
+      "width": 294,
+      "height": 274,
+      "format": "png",
+      "sha256": "a89ac0eb3583d304493554605671909a4b0de9f464062aaf4c78b305f6335dd1",
+      "runtime": false,
+      "status": "source-preserved"
+    }
+  ],
+  "catalog": {
+    "backgrounds": {
+      "bg_crisis_scene_v1": {
+        "source": "assets/backgrounds/bg_crisis_scene_v1.png",
+        "source_sha256": "13fe380cc173ca29873b6e86de46b5d75b8570c5788349680318dbcd7a586ad0",
+        "variants": {
+          "desktop": {
+            "avif": "assets/runtime/backgrounds/bg_crisis_scene_v1--desktop.avif",
+            "webp": "assets/runtime/backgrounds/bg_crisis_scene_v1--desktop.webp"
+          },
+          "mobile": {
+            "avif": "assets/runtime/backgrounds/bg_crisis_scene_v1--mobile.avif",
+            "webp": "assets/runtime/backgrounds/bg_crisis_scene_v1--mobile.webp"
+          }
+        }
+      },
+      "bg_dashboard_city_view_v1": {
+        "source": "assets/backgrounds/bg_dashboard_city_view_v1.png",
+        "source_sha256": "29c24844333edc85e4c94e9a995a42cddc109f8d76f54d3a855f5b1ef5a45d2f",
+        "variants": {
+          "desktop": {
+            "avif": "assets/runtime/backgrounds/bg_dashboard_city_view_v1--desktop.avif",
+            "webp": "assets/runtime/backgrounds/bg_dashboard_city_view_v1--desktop.webp"
+          },
+          "mobile": {
+            "avif": "assets/runtime/backgrounds/bg_dashboard_city_view_v1--mobile.avif",
+            "webp": "assets/runtime/backgrounds/bg_dashboard_city_view_v1--mobile.webp"
+          }
+        }
+      },
+      "bg_diplomacy_room_v1": {
+        "source": "assets/backgrounds/bg_diplomacy_room_v1.png",
+        "source_sha256": "498fdd914d6f2b059bd861897e237172997d88b62f9332a0146e137332416c15",
+        "variants": {
+          "desktop": {
+            "avif": "assets/runtime/backgrounds/bg_diplomacy_room_v1--desktop.avif",
+            "webp": "assets/runtime/backgrounds/bg_diplomacy_room_v1--desktop.webp"
+          },
+          "mobile": {
+            "avif": "assets/runtime/backgrounds/bg_diplomacy_room_v1--mobile.avif",
+            "webp": "assets/runtime/backgrounds/bg_diplomacy_room_v1--mobile.webp"
+          }
+        }
+      },
+      "bg_economy_financial_center_v1": {
+        "source": "assets/backgrounds/bg_economy_financial_center_v1.png",
+        "source_sha256": "a303e99e85206bed7c1f3621825446ae763fb324a46c6eb7fa3997f589fb8d76",
+        "variants": {
+          "desktop": {
+            "avif": "assets/runtime/backgrounds/bg_economy_financial_center_v1--desktop.avif",
+            "webp": "assets/runtime/backgrounds/bg_economy_financial_center_v1--desktop.webp"
+          },
+          "mobile": {
+            "avif": "assets/runtime/backgrounds/bg_economy_financial_center_v1--mobile.avif",
+            "webp": "assets/runtime/backgrounds/bg_economy_financial_center_v1--mobile.webp"
+          }
+        }
+      },
+      "bg_election_room_v1": {
+        "source": "assets/backgrounds/bg_election_room_v1.png",
+        "source_sha256": "dee213c78188dab239628291f2fddf20ff8d6e62c54f5d08df19639ad8be5360",
+        "variants": {
+          "desktop": {
+            "avif": "assets/runtime/backgrounds/bg_election_room_v1--desktop.avif",
+            "webp": "assets/runtime/backgrounds/bg_election_room_v1--desktop.webp"
+          },
+          "mobile": {
+            "avif": "assets/runtime/backgrounds/bg_election_room_v1--mobile.avif",
+            "webp": "assets/runtime/backgrounds/bg_election_room_v1--mobile.webp"
+          }
+        }
+      },
+      "bg_global_map_v1": {
+        "source": "assets/backgrounds/bg_global_map_v1.png",
+        "source_sha256": "6928a8d4ce913551c30b281379b51bc4e4a644607a29056e9efb79b08432c5a3",
+        "variants": {
+          "desktop": {
+            "avif": "assets/runtime/backgrounds/bg_global_map_v1--desktop.avif",
+            "webp": "assets/runtime/backgrounds/bg_global_map_v1--desktop.webp"
+          },
+          "mobile": {
+            "avif": "assets/runtime/backgrounds/bg_global_map_v1--mobile.avif",
+            "webp": "assets/runtime/backgrounds/bg_global_map_v1--mobile.webp"
+          }
+        }
+      },
+      "bg_main_menu_presidential_office_v1": {
+        "source": "assets/backgrounds/bg_main_menu_presidential_office_v1.png",
+        "source_sha256": "7a566285f31ea2a83086bc5df778f751267db80ab52808244b88a3867a6200fd",
+        "variants": {
+          "desktop": {
+            "avif": "assets/runtime/backgrounds/bg_main_menu_presidential_office_v1--desktop.avif",
+            "webp": "assets/runtime/backgrounds/bg_main_menu_presidential_office_v1--desktop.webp"
+          },
+          "mobile": {
+            "avif": "assets/runtime/backgrounds/bg_main_menu_presidential_office_v1--mobile.avif",
+            "webp": "assets/runtime/backgrounds/bg_main_menu_presidential_office_v1--mobile.webp"
+          }
+        }
+      },
+      "bg_military_command_center_v1": {
+        "source": "assets/backgrounds/bg_military_command_center_v1.png",
+        "source_sha256": "a123ec38b7da4ab8e4167806b71e045b60521d833d5cd06c56cf584b3107b2df",
+        "variants": {
+          "desktop": {
+            "avif": "assets/runtime/backgrounds/bg_military_command_center_v1--desktop.avif",
+            "webp": "assets/runtime/backgrounds/bg_military_command_center_v1--desktop.webp"
+          },
+          "mobile": {
+            "avif": "assets/runtime/backgrounds/bg_military_command_center_v1--mobile.avif",
+            "webp": "assets/runtime/backgrounds/bg_military_command_center_v1--mobile.webp"
+          }
+        }
+      },
+      "bg_parliament_v1": {
+        "source": "assets/backgrounds/bg_parliament_v1.png",
+        "source_sha256": "c756e54a6066dc2ae0471f0b7c0ca850315214f32ae984454e7ccc031421c0d4",
+        "variants": {
+          "desktop": {
+            "avif": "assets/runtime/backgrounds/bg_parliament_v1--desktop.avif",
+            "webp": "assets/runtime/backgrounds/bg_parliament_v1--desktop.webp"
+          },
+          "mobile": {
+            "avif": "assets/runtime/backgrounds/bg_parliament_v1--mobile.avif",
+            "webp": "assets/runtime/backgrounds/bg_parliament_v1--mobile.webp"
+          }
+        }
+      },
+      "bg_press_conference_stage_v1": {
+        "source": "assets/backgrounds/bg_press_conference_stage_v1.png",
+        "source_sha256": "a8aa376e48c2f79d6ef1cca4eae4e6bcccb141609e7ac2cb2f5664cd8e1ec0ed",
+        "variants": {
+          "desktop": {
+            "avif": "assets/runtime/backgrounds/bg_press_conference_stage_v1--desktop.avif",
+            "webp": "assets/runtime/backgrounds/bg_press_conference_stage_v1--desktop.webp"
+          },
+          "mobile": {
+            "avif": "assets/runtime/backgrounds/bg_press_conference_stage_v1--mobile.avif",
+            "webp": "assets/runtime/backgrounds/bg_press_conference_stage_v1--mobile.webp"
+          }
+        }
+      }
+    },
+    "characters": {
+      "char_leader_latest_v1": {
+        "source": "assets/characters/char_leader_latest_v1.png",
+        "source_sha256": "c613cb67ec53e458a2f1e2605ce950ffae3f578caf319b10be6c833846b70d65",
+        "variants": {
+          "thumb": {
+            "avif": "assets/runtime/characters/char_leader_latest_v1--thumb.avif",
+            "webp": "assets/runtime/characters/char_leader_latest_v1--thumb.webp"
+          },
+          "display": {
+            "avif": "assets/runtime/characters/char_leader_latest_v1--display.avif",
+            "webp": "assets/runtime/characters/char_leader_latest_v1--display.webp"
+          }
+        }
+      },
+      "char_leader_male_black_v1": {
+        "source": "assets/characters/char_leader_male_black_v1.png",
+        "source_sha256": "0685ccf08e24a29b19533fd2fbcda88f8635d580c40b600dc0fb19b1732adbb4",
+        "variants": {
+          "thumb": {
+            "avif": "assets/runtime/characters/char_leader_male_black_v1--thumb.avif",
+            "webp": "assets/runtime/characters/char_leader_male_black_v1--thumb.webp"
+          },
+          "display": {
+            "avif": "assets/runtime/characters/char_leader_male_black_v1--display.avif",
+            "webp": "assets/runtime/characters/char_leader_male_black_v1--display.webp"
+          }
+        }
+      },
+      "char_leader_male_elder_refined_v1": {
+        "source": "assets/characters/char_leader_male_elder_refined_v1.png",
+        "source_sha256": "43b8dae323f42b9a68aa518dbec80f773dc3598466c032a1cf5d61cd359990f5",
+        "variants": {
+          "thumb": {
+            "avif": "assets/runtime/characters/char_leader_male_elder_refined_v1--thumb.avif",
+            "webp": "assets/runtime/characters/char_leader_male_elder_refined_v1--thumb.webp"
+          },
+          "display": {
+            "avif": "assets/runtime/characters/char_leader_male_elder_refined_v1--display.avif",
+            "webp": "assets/runtime/characters/char_leader_male_elder_refined_v1--display.webp"
+          }
+        }
+      },
+      "char_leader_male_elder_v1": {
+        "source": "assets/characters/char_leader_male_elder_v1.png",
+        "source_sha256": "ac4c0c49452b4f45ba225c2d1839654f885a53c1b62c96e02973014495a11dc0",
+        "variants": {
+          "thumb": {
+            "avif": "assets/runtime/characters/char_leader_male_elder_v1--thumb.avif",
+            "webp": "assets/runtime/characters/char_leader_male_elder_v1--thumb.webp"
+          },
+          "display": {
+            "avif": "assets/runtime/characters/char_leader_male_elder_v1--display.avif",
+            "webp": "assets/runtime/characters/char_leader_male_elder_v1--display.webp"
+          }
+        }
+      },
+      "char_leader_male_white_v1": {
+        "source": "assets/characters/char_leader_male_white_v1.png",
+        "source_sha256": "07e56b6d31fc34ea2e5d9da3921f747892747489c275bdc5292ddd46eef4299c",
+        "variants": {
+          "thumb": {
+            "avif": "assets/runtime/characters/char_leader_male_white_v1--thumb.avif",
+            "webp": "assets/runtime/characters/char_leader_male_white_v1--thumb.webp"
+          },
+          "display": {
+            "avif": "assets/runtime/characters/char_leader_male_white_v1--display.avif",
+            "webp": "assets/runtime/characters/char_leader_male_white_v1--display.webp"
+          }
+        }
+      }
+    },
+    "cards": {
+      "card_diplomacy_v1": {
+        "source": "assets/ui/cards/card_diplomacy_v1.png",
+        "source_sha256": "7f0c248bbb14eb1ae935078c8e6baf312a7002549ddf16f1e8a767d608582a2e",
+        "variants": {
+          "card": {
+            "avif": "assets/runtime/cards/card_diplomacy_v1--card.avif",
+            "webp": "assets/runtime/cards/card_diplomacy_v1--card.webp"
+          }
+        }
+      },
+      "card_economy_v1": {
+        "source": "assets/ui/cards/card_economy_v1.png",
+        "source_sha256": "c8251e6f3a2e0f887441563be7afe4c2062bd4c41b462c2d7bc8499854d3445b",
+        "variants": {
+          "card": {
+            "avif": "assets/runtime/cards/card_economy_v1--card.avif",
+            "webp": "assets/runtime/cards/card_economy_v1--card.webp"
+          }
+        }
+      },
+      "card_government_v1": {
+        "source": "assets/ui/cards/card_government_v1.png",
+        "source_sha256": "5f546b36d00e6c1293d078d7863861f7902998175690ec212028322ab33cff6f",
+        "variants": {
+          "card": {
+            "avif": "assets/runtime/cards/card_government_v1--card.avif",
+            "webp": "assets/runtime/cards/card_government_v1--card.webp"
+          }
+        }
+      },
+      "card_intelligence_v1": {
+        "source": "assets/ui/cards/card_intelligence_v1.png",
+        "source_sha256": "c9a8b837613461f7a701c914be27964aab0643b9fd2b308cd365652c384ea846",
+        "variants": {
+          "card": {
+            "avif": "assets/runtime/cards/card_intelligence_v1--card.avif",
+            "webp": "assets/runtime/cards/card_intelligence_v1--card.webp"
+          }
+        }
+      },
+      "card_military_v1": {
+        "source": "assets/ui/cards/card_military_v1.png",
+        "source_sha256": "e26bccfb0eb8ee85f95713798569af969a2e7a3df21fec0dec9d067757fc9948",
+        "variants": {
+          "card": {
+            "avif": "assets/runtime/cards/card_military_v1--card.avif",
+            "webp": "assets/runtime/cards/card_military_v1--card.webp"
+          }
+        }
+      },
+      "card_projects_v1": {
+        "source": "assets/ui/cards/card_projects_v1.png",
+        "source_sha256": "9a4ccfc155fc623a21217fceabafef52589c6efae98f0447116afd9757b828ac",
+        "variants": {
+          "card": {
+            "avif": "assets/runtime/cards/card_projects_v1--card.avif",
+            "webp": "assets/runtime/cards/card_projects_v1--card.webp"
+          }
+        }
+      }
+    },
+    "icons": {
+      "icon_set_v1": {
+        "source": "assets/icons/icon_set_v1.png",
+        "source_sha256": "8f8ba7021bae0e490d5680dff762512c5dbddc539a2d6571811ab42576c13d06",
+        "variants": {
+          "ui": {
+            "avif": "assets/runtime/icons/icon_set_v1--ui.avif",
+            "webp": "assets/runtime/icons/icon_set_v1--ui.webp"
+          }
+        }
+      }
+    },
+    "parties": {
+      "party_mdb_card_v1": {
+        "source": "assets/ui/parties/party_mdb_card_v1.png",
+        "source_sha256": "58a4735a37d0686b756a9397d8a792a7d4a53c9fd690ad64ec53d9198eb8bacd",
+        "variants": {
+          "party": {
+            "avif": "assets/runtime/parties/party_mdb_card_v1--party.avif",
+            "webp": "assets/runtime/parties/party_mdb_card_v1--party.webp"
+          }
+        }
+      },
+      "party_novo_card_v1": {
+        "source": "assets/ui/parties/party_novo_card_v1.png",
+        "source_sha256": "5dbccca735c6bd1018d9a98e506af41c4c660249d32429d3bcb8eac0a8426903",
+        "variants": {
+          "party": {
+            "avif": "assets/runtime/parties/party_novo_card_v1--party.avif",
+            "webp": "assets/runtime/parties/party_novo_card_v1--party.webp"
+          }
+        }
+      },
+      "party_pl_card_v1": {
+        "source": "assets/ui/parties/party_pl_card_v1.png",
+        "source_sha256": "8b0b05cf28bee52fe08a528503b960d96ab1f22ef7862c99ae60604aa8a196e7",
+        "variants": {
+          "party": {
+            "avif": "assets/runtime/parties/party_pl_card_v1--party.avif",
+            "webp": "assets/runtime/parties/party_pl_card_v1--party.webp"
+          }
+        }
+      },
+      "party_pp_card_v1": {
+        "source": "assets/ui/parties/party_pp_card_v1.png",
+        "source_sha256": "9575d79d363eb711c149563da2729654ba1fa746735c3269f7041c7c7d5a035c",
+        "variants": {
+          "party": {
+            "avif": "assets/runtime/parties/party_pp_card_v1--party.avif",
+            "webp": "assets/runtime/parties/party_pp_card_v1--party.webp"
+          }
+        }
+      },
+      "party_psb_card_v1": {
+        "source": "assets/ui/parties/party_psb_card_v1.png",
+        "source_sha256": "f92939b74571d1b416908840549b8d8168d4bf6a5ed2e061fa3184324081a939",
+        "variants": {
+          "party": {
+            "avif": "assets/runtime/parties/party_psb_card_v1--party.avif",
+            "webp": "assets/runtime/parties/party_psb_card_v1--party.webp"
+          }
+        }
+      },
+      "party_psd_card_v1": {
+        "source": "assets/ui/parties/party_psd_card_v1.png",
+        "source_sha256": "53bcedc8d82697c6b2df63d3b5f019cf4dc0f98de8217cb99c8af8c31072e7ca",
+        "variants": {
+          "party": {
+            "avif": "assets/runtime/parties/party_psd_card_v1--party.avif",
+            "webp": "assets/runtime/parties/party_psd_card_v1--party.webp"
+          }
+        }
+      },
+      "party_psdb_card_v1": {
+        "source": "assets/ui/parties/party_psdb_card_v1.png",
+        "source_sha256": "1a25787068689469581cff25e50c7169986a8a666e8678e55454be8c2696e994",
+        "variants": {
+          "party": {
+            "avif": "assets/runtime/parties/party_psdb_card_v1--party.avif",
+            "webp": "assets/runtime/parties/party_psdb_card_v1--party.webp"
+          }
+        }
+      },
+      "party_psol_card_v1": {
+        "source": "assets/ui/parties/party_psol_card_v1.png",
+        "source_sha256": "2bcd5ae237f51f78f22020f72365506a546298c3ffbede504c15d7f9c3d3764e",
+        "variants": {
+          "party": {
+            "avif": "assets/runtime/parties/party_psol_card_v1--party.avif",
+            "webp": "assets/runtime/parties/party_psol_card_v1--party.webp"
+          }
+        }
+      },
+      "party_pt_card_v1": {
+        "source": "assets/ui/parties/party_pt_card_v1.png",
+        "source_sha256": "c801a8effd9fee5a04b4b5226c56bd3dded3dd6dcd27aa4123cfc1b85c5c15c1",
+        "variants": {
+          "party": {
+            "avif": "assets/runtime/parties/party_pt_card_v1--party.avif",
+            "webp": "assets/runtime/parties/party_pt_card_v1--party.webp"
+          }
+        }
+      },
+      "party_pv_card_v1": {
+        "source": "assets/ui/parties/party_pv_card_v1.png",
+        "source_sha256": "7ad6d4aa2e5364d4a2249c18322d5875d9301085706f5fb9b30575b60a6f7e70",
+        "variants": {
+          "party": {
+            "avif": "assets/runtime/parties/party_pv_card_v1--party.avif",
+            "webp": "assets/runtime/parties/party_pv_card_v1--party.webp"
+          }
+        }
+      },
+      "party_republicanos_card_v1": {
+        "source": "assets/ui/parties/party_republicanos_card_v1.png",
+        "source_sha256": "fbb763fa5ed90f26f92ee05d0c6957ccd27b40a1c4e63e7ceffcfc01adff0044",
+        "variants": {
+          "party": {
+            "avif": "assets/runtime/parties/party_republicanos_card_v1--party.avif",
+            "webp": "assets/runtime/parties/party_republicanos_card_v1--party.webp"
+          }
+        }
+      },
+      "party_uniao_card_v1": {
+        "source": "assets/ui/parties/party_uniao_card_v1.png",
+        "source_sha256": "a89ac0eb3583d304493554605671909a4b0de9f464062aaf4c78b305f6335dd1",
+        "variants": {
+          "party": {
+            "avif": "assets/runtime/parties/party_uniao_card_v1--party.avif",
+            "webp": "assets/runtime/parties/party_uniao_card_v1--party.webp"
+          }
+        }
+      }
+    }
+  }
+}

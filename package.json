@@ -1,0 +1,30 @@
+{
+  "name": "diplocraft",
+  "version": "1.6.0",
+  "private": true,
+  "type": "module",
+  "description": "DIPLOCRAFT political simulator with complete government creation, party logo selection, Core Loop 2.0, multi-slot saves and full localization",
+  "scripts": {
+    "test": "python3 tests/run_node_tests.py",
+    "test:simulation": "node tests/run_simulation_matrix.mjs",
+    "test:gate": "python3 tests/run_quality_gate.py",
+    "test:all": "bash tests/run_all_tests.sh",
+    "assets:build": "python3 tools/build_assets.py",
+    "assets:audit": "python3 tests/run_asset_pipeline_audit.py",
+    "test:mobile": "python3 tests/run_mobile_first_audit.py",
+    "pwa:assets": "python3 tools/build_pwa_assets.py",
+    "pwa:audit": "python3 tests/run_pwa_audit.py",
+    "test:desktop": "python3 tests/run_responsive_desktop_audit.py",
+    "i18n:build": "python3 tools/generate_i18n.py",
+    "i18n:audit": "python3 tests/run_i18n_audit.py",
+    "test:scroll": "python3 tests/run_scroll_touch_audit.py",
+    "i18n:complete-audit": "python3 tests/run_localization_complete_audit.py",
+    "test:saves": "python3 tests/run_save_architecture_audit.py",
+    "test:core-loop": "python3 tests/run_core_loop_2_audit.py",
+    "test:government-creation": "python3 tests/run_government_creation_audit.py",
+    "test:population": "python3 tests/run_population_audit.py"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

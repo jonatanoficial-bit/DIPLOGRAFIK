@@ -1,0 +1,3 @@
+STATIC PASS 9/9
+PASS desktop_ultrawide_2560x1080 23/23
+OVERALL PASS 32 checks

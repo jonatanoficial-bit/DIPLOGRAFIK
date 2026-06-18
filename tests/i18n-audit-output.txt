@@ -1,0 +1,24 @@
+PASS three_supported_locales
+PASS default_locale_pt_br
+PASS catalog_key_parity
+PASS catalog_has_no_blanks
+PASS required_core_keys_present
+PASS catalog_scale_is_localization_complete
+PASS generated_catalogs_match_source
+PASS metadata_matches_seed
+PASS runtime_supports_hot_switch
+PASS runtime_persists_locale_separately
+PASS runtime_updates_html_lang
+PASS runtime_uses_intl_formatting
+PASS runtime_restores_canonical_text
+PASS lexical_fallback_removed
+PASS menu_and_game_selectors_exist
+PASS game_installs_i18n_before_render
+PASS save_schema_preserved
+PASS locale_catalogs_in_pwa_precache
+PASS i18n_runtime_in_pwa_precache
+PASS no_fixed_pt_number_formatting
+PASS locale pt-BR (17/17)
+PASS locale en (17/17)
+PASS locale es (17/17)
+OVERALL PASS — 74 checks

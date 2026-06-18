@@ -1,0 +1,54 @@
+{
+  "generated_from": "build.config.json",
+  "source_sha256": "16afef7268ae49e56ddffa8101c4a59f3fa69d6ced3ca5d19034b4e92629ed50",
+  "canonical_name": "DIPLOCRAFT",
+  "product_type": "political-geopolitical-simulator",
+  "edition": "International Development Build",
+  "current_version": "1.6.1",
+  "current_phase": 17,
+  "current_stage": "Fase 17 — Economia Profunda",
+  "default_language": "pt-BR",
+  "supported_languages": [
+    "pt-BR",
+    "en",
+    "es"
+  ],
+  "planned_languages": [
+    "pt-BR",
+    "en",
+    "es"
+  ],
+  "i18n": {
+    "enabled": true,
+    "default_locale": "pt-BR",
+    "supported_locales": [
+      "pt-BR",
+      "en",
+      "es"
+    ],
+    "storage_key": "diplocraft_locale_v1",
+    "hot_switch": true,
+    "save_independent": true,
+    "intl_formatting": true,
+    "dom_translation": true,
+    "legacy_fallback": false,
+    "catalog_generator": "tools/generate_i18n.py",
+    "catalog_source": "tools/i18n_seed.json",
+    "audit": "tests/run_i18n_audit.py",
+    "editorial_complete": true,
+    "exact_content_translation": true,
+    "missing_translation_registry": true,
+    "catalog_key_minimum": 1300,
+    "localization_audit": "tests/run_localization_complete_audit.py"
+  },
+  "platform_priority": [
+    "mobile",
+    "tablet",
+    "desktop"
+  ],
+  "entrypoint": "src/game.js",
+  "canonical_build_source": "build.config.json",
+  "generated_runtime_build": "src/core/build.js",
+  "pwa_manifest": "manifest.webmanifest",
+  "service_worker": "sw.js"
+}

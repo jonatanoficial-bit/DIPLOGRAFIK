@@ -1,0 +1,102 @@
+{
+  "project": "DIPLOCRAFT",
+  "version": "1.6.1",
+  "phase": "Economia Profunda",
+  "checks": {
+    "manifest_identity": true,
+    "manifest_fullscreen_fallbacks": true,
+    "manifest_colors": true,
+    "manifest_icons_exist_and_match": true,
+    "manifest_has_any_and_maskable": true,
+    "manifest_screenshots_match": true,
+    "apple_meta_complete": true,
+    "pwa_ui_contract": true,
+    "service_worker_generated": true,
+    "service_worker_syntax": true,
+    "controlled_update_contract": true,
+    "offline_strategies_present": true,
+    "pwa_runtime_contract": true,
+    "precache_paths_exist": true,
+    "precache_excludes_png_sources": true,
+    "precache_has_app_shell": true,
+    "pwa_identity_assets_budget": true,
+    "service_worker_simulation_passes": true,
+    "simulation_precache_populated": true,
+    "simulation_offline_navigation": true,
+    "simulation_offline_assets": true,
+    "simulation_update_messages": true,
+    "simulation_old_cache_cleanup": true
+  },
+  "details": {
+    "icons": [
+      {
+        "path": "assets/pwa/icon-192.png",
+        "declared": "192x192",
+        "actual": "192x192",
+        "exists": true,
+        "purpose": "any"
+      },
+      {
+        "path": "assets/pwa/icon-512.png",
+        "declared": "512x512",
+        "actual": "512x512",
+        "exists": true,
+        "purpose": "any"
+      },
+      {
+        "path": "assets/pwa/icon-maskable-512.png",
+        "declared": "512x512",
+        "actual": "512x512",
+        "exists": true,
+        "purpose": "maskable"
+      }
+    ],
+    "screenshots": [
+      {
+        "path": "assets/pwa/screenshot-mobile-720x1280.png",
+        "declared": "720x1280",
+        "actual": "720x1280",
+        "exists": true,
+        "form_factor": "narrow"
+      },
+      {
+        "path": "assets/pwa/screenshot-desktop-1280x720.png",
+        "declared": "1280x720",
+        "actual": "1280x720",
+        "exists": true,
+        "form_factor": "wide"
+      }
+    ],
+    "missing_precache": [],
+    "heavy_source_precache": [],
+    "precache_count": 178,
+    "pwa_asset_bytes": 848044,
+    "service_worker_simulation": {
+      "listeners": [
+        "install",
+        "activate",
+        "fetch",
+        "message"
+      ],
+      "current_cache": "diplocraft-shell-v1.6.1-20260618_1031",
+      "installed_count": 178,
+      "names_after_activate": [
+        "diplocraft-shell-v1.6.1-20260618_1031"
+      ],
+      "claimed": true,
+      "skipped": true,
+      "version_message": {
+        "version": "1.6.1",
+        "cache": "diplocraft-shell-v1.6.1-20260618_1031"
+      },
+      "navigation_offline": true,
+      "asset_offline": true,
+      "module_offline": true,
+      "old_cache_removed": true,
+      "passed": true
+    },
+    "simulation_stdout": "{\n  \"listeners\": [\n    \"install\",\n    \"activate\",\n    \"fetch\",\n    \"message\"\n  ],\n  \"current_cache\": \"diplocraft-shell-v1.6.1-20260618_1031\",\n  \"installed_count\": 178,\n  \"names_after_activate\": [\n    \"diplocraft-shell-v1.6.1-20260618_1031\"\n  ],\n  \"claimed\": true,\n  \"skipped\": true,\n  \"version_message\": {\n    \"version\": \"1.6.1\",\n    \"cache\": \"diplocraft-shell-v1.6.1-20260618_1031\"\n  },\n  \"navigation_offline\": true,\n  \"asset_offline\": true,\n  \"module_offline\": true,\n  \"old_cache_removed\": true,\n  \"passed\": true\n}\n",
+    "browser_note": "Navegação local por Playwright é bloqueada pela política administrativa do ambiente; o ciclo do worker foi validado em VM determinística, enquanto a interface continua coberta pelas suítes Playwright via harness."
+  },
+  "passed": true
+}

@@ -1,0 +1,3 @@
+STATIC PASS 10/10
+PASS mobile_landscape_844x390 23/23
+OVERALL PASS 33 checks

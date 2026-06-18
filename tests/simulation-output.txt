@@ -1,0 +1,18 @@
+DIPLOCRAFT simulation matrix
+Cases: 12
+Years per case: 30
+Total simulated days: 129600
+Structural invariants passed: true
+Balance warnings: 0
+PASS seed=11 profile=baseline final=1/1/2056 duration=645ms
+PASS seed=29 profile=institutional_stress final=1/1/2056 duration=462ms
+PASS seed=47 profile=economic_boom final=1/1/2056 duration=409ms
+PASS seed=83 profile=baseline final=1/1/2056 duration=415ms
+PASS seed=101 profile=institutional_stress final=1/1/2056 duration=409ms
+PASS seed=211 profile=economic_boom final=1/1/2056 duration=387ms
+PASS seed=307 profile=baseline final=1/1/2056 duration=393ms
+PASS seed=509 profile=institutional_stress final=1/1/2056 duration=391ms
+PASS seed=701 profile=economic_boom final=1/1/2056 duration=395ms
+PASS seed=907 profile=baseline final=1/1/2056 duration=382ms
+PASS seed=1201 profile=institutional_stress final=1/1/2056 duration=373ms
+PASS seed=2026 profile=economic_boom final=1/1/2056 duration=390ms

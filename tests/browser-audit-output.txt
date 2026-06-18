@@ -1,0 +1,5 @@
+PASS mobile_360x640 42/42
+PASS mobile_390x844 42/42
+PASS tablet_768x1024 42/42
+PASS desktop_1366x768 42/42
+OVERALL PASS 4/4 cases; 168 checks

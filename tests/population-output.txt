@@ -1,0 +1,21 @@
+PASS phase16_preserved_in_current_phase
+PASS population_schema_one
+PASS five_regions_declared
+PASS six_social_groups_declared
+PASS six_population_policies
+PASS state_factory_includes_population
+PASS core_loop_runs_population_cycles
+PASS population_ui_tab_present
+PASS population_renderer_present
+PASS population_mobile_css_present
+PASS population_i18n_complete
+PASS save_schema_preserved
+PASS core_loop_2_preserved
+PASS simulation_matrix_passed
+PASS simulation_contains_population_metrics
+PASS simulation_population_within_targets
+PASS mobile_320x568 (21/21)
+PASS mobile_390x844 (21/21)
+PASS tablet_768x1024 (21/21)
+PASS desktop_1366x768 (21/21)
+OVERALL PASS — 101 checks

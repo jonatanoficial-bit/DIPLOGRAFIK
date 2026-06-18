@@ -1,0 +1,28 @@
+{
+  "generated_from": "build.config.json",
+  "source_sha256": "16afef7268ae49e56ddffa8101c4a59f3fa69d6ced3ca5d19034b4e92629ed50",
+  "id": "diplocraft-core",
+  "name": "DIPLOCRAFT Core",
+  "version": "1.6.1",
+  "build": "20260618_1031",
+  "content_schema": 1,
+  "default_locale": "pt-BR",
+  "supported_locales": [
+    "pt-BR",
+    "en",
+    "es"
+  ],
+  "runtime_entry": "src/game.js",
+  "mode": "political-geopolitical-simulator",
+  "domains": [
+    "government",
+    "economy",
+    "elections",
+    "media",
+    "diplomacy",
+    "security",
+    "crises",
+    "progression"
+  ],
+  "status": "economia-profunda"
+}

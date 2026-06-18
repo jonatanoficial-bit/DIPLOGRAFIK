@@ -1,0 +1,690 @@
+{
+  "generated_from": "build.config.json",
+  "source_sha256": "16afef7268ae49e56ddffa8101c4a59f3fa69d6ced3ca5d19034b4e92629ed50",
+  "project": "DIPLOCRAFT",
+  "version": "1.6.1",
+  "entrypoint": "src/game.js",
+  "source_file_count": 56,
+  "loaded_module_count": 56,
+  "loaded_modules": [
+    "src/core/assets.js",
+    "src/core/build.js",
+    "src/core/desktop.js",
+    "src/core/dom.js",
+    "src/core/errorBoundary.js",
+    "src/core/fullscreen.js",
+    "src/core/i18n.js",
+    "src/core/mobile.js",
+    "src/core/pwa.js",
+    "src/core/resilience.js",
+    "src/core/router.js",
+    "src/core/saveManager.js",
+    "src/core/scrollExperience.js",
+    "src/core/stateFactory.js",
+    "src/core/storage.js",
+    "src/data/assetCatalog.js",
+    "src/data/avatars.js",
+    "src/data/content.js",
+    "src/data/crisisData.js",
+    "src/data/diplomacyData.js",
+    "src/data/economyData.js",
+    "src/data/economyDeepData.js",
+    "src/data/electionData.js",
+    "src/data/governmentCreationData.js",
+    "src/data/governmentData.js",
+    "src/data/mediaData.js",
+    "src/data/monetizationData.js",
+    "src/data/parties.js",
+    "src/data/populationData.js",
+    "src/data/progressionData.js",
+    "src/data/releaseData.js",
+    "src/data/securityData.js",
+    "src/data/tutorialData.js",
+    "src/game.js",
+    "src/i18n/locales/en.js",
+    "src/i18n/locales/es.js",
+    "src/i18n/locales/pt-BR.js",
+    "src/systems/calculations.js",
+    "src/systems/coreLoop.js",
+    "src/systems/crisis.js",
+    "src/systems/diplomacy.js",
+    "src/systems/economy.js",
+    "src/systems/economyDeep.js",
+    "src/systems/elections.js",
+    "src/systems/events.js",
+    "src/systems/government.js",
+    "src/systems/governmentCreation.js",
+    "src/systems/media.js",
+    "src/systems/monetization.js",
+    "src/systems/population.js",
+    "src/systems/progression.js",
+    "src/systems/security.js",
+    "src/ui/audio.js",
+    "src/ui/feedback.js",
+    "src/ui/render.js",
+    "src/ui/tutorial.js"
+  ],
+  "orphan_modules": [],
+  "edges": [
+    {
+      "from": "src/core/assets.js",
+      "to": "src/data/assetCatalog.js"
+    },
+    {
+      "from": "src/core/desktop.js",
+      "to": "src/core/i18n.js"
+    },
+    {
+      "from": "src/core/errorBoundary.js",
+      "to": "src/core/i18n.js"
+    },
+    {
+      "from": "src/core/errorBoundary.js",
+      "to": "src/core/resilience.js"
+    },
+    {
+      "from": "src/core/i18n.js",
+      "to": "src/i18n/locales/en.js"
+    },
+    {
+      "from": "src/core/i18n.js",
+      "to": "src/i18n/locales/es.js"
+    },
+    {
+      "from": "src/core/i18n.js",
+      "to": "src/i18n/locales/pt-BR.js"
+    },
+    {
+      "from": "src/core/pwa.js",
+      "to": "src/core/build.js"
+    },
+    {
+      "from": "src/core/pwa.js",
+      "to": "src/core/i18n.js"
+    },
+    {
+      "from": "src/core/resilience.js",
+      "to": "src/core/build.js"
+    },
+    {
+      "from": "src/core/resilience.js",
+      "to": "src/core/storage.js"
+    },
+    {
+      "from": "src/core/router.js",
+      "to": "src/core/assets.js"
+    },
+    {
+      "from": "src/core/router.js",
+      "to": "src/core/dom.js"
+    },
+    {
+      "from": "src/core/saveManager.js",
+      "to": "src/core/build.js"
+    },
+    {
+      "from": "src/core/saveManager.js",
+      "to": "src/core/i18n.js"
+    },
+    {
+      "from": "src/core/saveManager.js",
+      "to": "src/core/storage.js"
+    },
+    {
+      "from": "src/core/stateFactory.js",
+      "to": "src/core/build.js"
+    },
+    {
+      "from": "src/core/stateFactory.js",
+      "to": "src/data/avatars.js"
+    },
+    {
+      "from": "src/core/stateFactory.js",
+      "to": "src/data/diplomacyData.js"
+    },
+    {
+      "from": "src/core/stateFactory.js",
+      "to": "src/data/governmentData.js"
+    },
+    {
+      "from": "src/core/stateFactory.js",
+      "to": "src/data/securityData.js"
+    },
+    {
+      "from": "src/core/stateFactory.js",
+      "to": "src/systems/economyDeep.js"
+    },
+    {
+      "from": "src/core/stateFactory.js",
+      "to": "src/systems/population.js"
+    },
+    {
+      "from": "src/core/storage.js",
+      "to": "src/core/build.js"
+    },
+    {
+      "from": "src/data/avatars.js",
+      "to": "src/data/assetCatalog.js"
+    },
+    {
+      "from": "src/data/releaseData.js",
+      "to": "src/core/build.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/core/assets.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/core/build.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/core/desktop.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/core/dom.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/core/errorBoundary.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/core/fullscreen.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/core/i18n.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/core/mobile.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/core/pwa.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/core/resilience.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/core/router.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/core/saveManager.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/core/scrollExperience.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/core/stateFactory.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/core/storage.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/data/avatars.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/data/content.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/data/crisisData.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/data/diplomacyData.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/data/economyData.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/data/economyDeepData.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/data/electionData.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/data/governmentCreationData.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/data/governmentData.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/data/mediaData.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/data/parties.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/data/populationData.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/data/securityData.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/systems/calculations.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/systems/coreLoop.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/systems/crisis.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/systems/diplomacy.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/systems/economy.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/systems/economyDeep.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/systems/elections.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/systems/government.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/systems/governmentCreation.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/systems/media.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/systems/monetization.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/systems/population.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/systems/progression.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/systems/security.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/ui/audio.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/ui/feedback.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/ui/render.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/ui/tutorial.js"
+    },
+    {
+      "from": "src/systems/calculations.js",
+      "to": "src/core/dom.js"
+    },
+    {
+      "from": "src/systems/coreLoop.js",
+      "to": "src/systems/calculations.js"
+    },
+    {
+      "from": "src/systems/coreLoop.js",
+      "to": "src/systems/crisis.js"
+    },
+    {
+      "from": "src/systems/coreLoop.js",
+      "to": "src/systems/diplomacy.js"
+    },
+    {
+      "from": "src/systems/coreLoop.js",
+      "to": "src/systems/economy.js"
+    },
+    {
+      "from": "src/systems/coreLoop.js",
+      "to": "src/systems/economyDeep.js"
+    },
+    {
+      "from": "src/systems/coreLoop.js",
+      "to": "src/systems/elections.js"
+    },
+    {
+      "from": "src/systems/coreLoop.js",
+      "to": "src/systems/events.js"
+    },
+    {
+      "from": "src/systems/coreLoop.js",
+      "to": "src/systems/government.js"
+    },
+    {
+      "from": "src/systems/coreLoop.js",
+      "to": "src/systems/governmentCreation.js"
+    },
+    {
+      "from": "src/systems/coreLoop.js",
+      "to": "src/systems/media.js"
+    },
+    {
+      "from": "src/systems/coreLoop.js",
+      "to": "src/systems/monetization.js"
+    },
+    {
+      "from": "src/systems/coreLoop.js",
+      "to": "src/systems/population.js"
+    },
+    {
+      "from": "src/systems/coreLoop.js",
+      "to": "src/systems/progression.js"
+    },
+    {
+      "from": "src/systems/coreLoop.js",
+      "to": "src/systems/security.js"
+    },
+    {
+      "from": "src/systems/crisis.js",
+      "to": "src/data/crisisData.js"
+    },
+    {
+      "from": "src/systems/crisis.js",
+      "to": "src/systems/calculations.js"
+    },
+    {
+      "from": "src/systems/diplomacy.js",
+      "to": "src/data/diplomacyData.js"
+    },
+    {
+      "from": "src/systems/diplomacy.js",
+      "to": "src/systems/calculations.js"
+    },
+    {
+      "from": "src/systems/economy.js",
+      "to": "src/systems/calculations.js"
+    },
+    {
+      "from": "src/systems/economy.js",
+      "to": "src/systems/economyDeep.js"
+    },
+    {
+      "from": "src/systems/economyDeep.js",
+      "to": "src/data/economyDeepData.js"
+    },
+    {
+      "from": "src/systems/economyDeep.js",
+      "to": "src/systems/calculations.js"
+    },
+    {
+      "from": "src/systems/elections.js",
+      "to": "src/data/electionData.js"
+    },
+    {
+      "from": "src/systems/elections.js",
+      "to": "src/systems/calculations.js"
+    },
+    {
+      "from": "src/systems/events.js",
+      "to": "src/data/content.js"
+    },
+    {
+      "from": "src/systems/events.js",
+      "to": "src/systems/calculations.js"
+    },
+    {
+      "from": "src/systems/government.js",
+      "to": "src/systems/calculations.js"
+    },
+    {
+      "from": "src/systems/governmentCreation.js",
+      "to": "src/data/governmentCreationData.js"
+    },
+    {
+      "from": "src/systems/governmentCreation.js",
+      "to": "src/systems/calculations.js"
+    },
+    {
+      "from": "src/systems/media.js",
+      "to": "src/data/mediaData.js"
+    },
+    {
+      "from": "src/systems/media.js",
+      "to": "src/systems/calculations.js"
+    },
+    {
+      "from": "src/systems/monetization.js",
+      "to": "src/data/monetizationData.js"
+    },
+    {
+      "from": "src/systems/monetization.js",
+      "to": "src/systems/calculations.js"
+    },
+    {
+      "from": "src/systems/monetization.js",
+      "to": "src/systems/progression.js"
+    },
+    {
+      "from": "src/systems/population.js",
+      "to": "src/data/populationData.js"
+    },
+    {
+      "from": "src/systems/population.js",
+      "to": "src/systems/calculations.js"
+    },
+    {
+      "from": "src/systems/progression.js",
+      "to": "src/data/progressionData.js"
+    },
+    {
+      "from": "src/systems/progression.js",
+      "to": "src/systems/calculations.js"
+    },
+    {
+      "from": "src/systems/security.js",
+      "to": "src/data/securityData.js"
+    },
+    {
+      "from": "src/systems/security.js",
+      "to": "src/systems/calculations.js"
+    },
+    {
+      "from": "src/ui/feedback.js",
+      "to": "src/core/dom.js"
+    },
+    {
+      "from": "src/ui/feedback.js",
+      "to": "src/core/i18n.js"
+    },
+    {
+      "from": "src/ui/feedback.js",
+      "to": "src/ui/audio.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/core/assets.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/core/build.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/core/dom.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/core/i18n.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/core/pwa.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/core/resilience.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/core/storage.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/data/content.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/data/crisisData.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/data/diplomacyData.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/data/economyData.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/data/economyDeepData.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/data/electionData.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/data/governmentData.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/data/mediaData.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/data/monetizationData.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/data/populationData.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/data/progressionData.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/data/releaseData.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/data/securityData.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/systems/calculations.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/systems/coreLoop.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/systems/crisis.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/systems/diplomacy.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/systems/economy.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/systems/economyDeep.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/systems/elections.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/systems/government.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/systems/governmentCreation.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/systems/media.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/systems/monetization.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/systems/population.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/systems/progression.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/systems/security.js"
+    },
+    {
+      "from": "src/ui/tutorial.js",
+      "to": "src/core/dom.js"
+    },
+    {
+      "from": "src/ui/tutorial.js",
+      "to": "src/core/i18n.js"
+    },
+    {
+      "from": "src/ui/tutorial.js",
+      "to": "src/core/router.js"
+    },
+    {
+      "from": "src/ui/tutorial.js",
+      "to": "src/data/tutorialData.js"
+    },
+    {
+      "from": "src/ui/tutorial.js",
+      "to": "src/ui/feedback.js"
+    }
+  ]
+}
