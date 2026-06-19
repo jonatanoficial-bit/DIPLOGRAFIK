@@ -49,6 +49,13 @@ export const TUTORIAL_STEPS = [
     focus: "#crisisActions"
   },
   {
+    id: "scenario_tutorial",
+    title: "Cenários guiados",
+    text: "Na aba Progresso você encontra pacotes de cenário, trilhas de tutorial e missões de onboarding para aprender sistemas avançados sem quebrar a carreira.",
+    tab: "progression",
+    focus: "#scenarioTutorialOverview"
+  },
+  {
     id: "finish",
     title: "Primeiro mandato iniciado",
     text: "Agora avance dias, salve o jogo e tente sobreviver até a próxima eleição. O objetivo é manter poder, estabilidade e influência global.",

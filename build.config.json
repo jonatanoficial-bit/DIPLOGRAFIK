@@ -1,17 +1,17 @@
 {
   "project": "DIPLOCRAFT",
   "product_name": "DIPLOCRAFT — Simulador Político e Geopolítico",
-  "version": "1.7.4",
-  "stage_number": 22,
-  "stage_name": "Diplomacia Mundial",
-  "status": "WORLD_DIPLOMACY_VERIFIED",
-  "date": "18/06/2026",
-  "date_iso": "2026-06-18",
-  "time": "18:12",
+  "version": "2.0.0",
+  "stage_number": 29,
+  "stage_name": "GOLD V2 INTERNACIONAL",
+  "status": "GOLD_V2_INTERNATIONAL_VERIFIED",
+  "date": "19/06/2026",
+  "date_iso": "2026-06-19",
+  "time": "18:54",
   "timezone": "America/Sao_Paulo",
-  "stamp": "20260618_1812",
-  "base_version": "1.7.3",
-  "base_stage": "Fase 21 — Imprensa, Mídia e Opinião Pública",
+  "stamp": "20260619_1854",
+  "base_version": "1.8.0",
+  "base_stage": "Fase 28 — Gold Master e Publicação Comercial",
   "save_schema": 3,
   "save_key": "diplocraft_save_v101",
   "content_schema": 1,
@@ -27,38 +27,74 @@
     "es"
   ],
   "entrypoint": "src/game.js",
-  "summary": "Sistema profundo de diplomacia mundial com doutrinas diplomáticas, soft power, confiança global, acesso comercial, blocos geopolíticos, agenda internacional, ações multilaterais e integração com economia, mídia, instituições e segurança.",
-  "build_summary": "Build oficial da Fase 22 aplicada sobre a v1.7.3: Diplomacia Mundial integrada de forma aditiva, preservando imprensa, gabinete, instituições, orçamento, economia profunda, país e população, saves, assets, PWA e auditorias anti-quebra.",
+  "summary": "Gold v2.0 Internacional com localização reforçada, mercados globais, compliance multirregional, suporte, loja, comunidade, telemetria segura e operação global integrada ao Gold Master, Alpha/Beta, PWA, saves, mobile e Core Loop 2.0.",
+  "build_summary": "Build oficial da Fase 29 aplicada sobre a v1.8.0: Gold v2.0 Internacional integrado de forma aditiva, preservando todos os sistemas anteriores, assets, saves, PWA, mobile-first, auditorias anti-quebra e documento de upload Git Bash.",
   "features": [
-    "Sistema profundo de diplomacia mundial com soft power, confiança global, acesso comercial, alavancagem negociadora, liderança regional e neutralidade",
-    "Doutrinas diplomáticas selecionáveis: multialinhamento equilibrado, liderança regional, pragmatismo econômico e diplomacia por valores",
-    "Blocos globais dinâmicos com alinhamento, comércio, tensão e risco: Ocidente, Ásia-Pacífico, Europa, Regional, Eurásia e Sul Global",
-    "Agenda internacional acompanhando comércio, clima, segurança, tecnologia, ajuda humanitária e energia",
-    "Ações diplomáticas com custo, PA, cooldown e efeito atrasado: ONU, cúpula regional, missão comercial, mediação de paz, coalizão climática, não alinhamento, rede consular e agência de exportação",
-    "Ciclo mensal de diplomacia mundial integrado a economia profunda, orçamento, instituições, gabinete, mídia, população, aprovação, estabilidade e Core Loop 2.0",
-    "Interface mobile-first na aba Diplomacia com visão mundial, doutrina, países, blocos, agenda, ações, tratados e histórico",
-    "Localização completa em PT-BR, inglês e espanhol para todos os novos textos da Fase 22",
-    "Documento UPLOAD_GIT_BASH_PROMPT_DIPLOCRAFT.txt preservado na raiz do ZIP para novas conversas com caminho oficial de upload",
-    "Compatibilidade preservada com saves schema 3, chave diplocraft_save_v101, assets existentes, PWA, rolagem e todos os sistemas até a Fase 21"
+    "Sistema persistente internationalLaunch com migração aditiva e histórico limitado.",
+    "Quatro mercados internacionais selecionáveis: América Latina, América do Norte, Europa e Sul Global.",
+    "Oito gates internacionais: localização, compliance, suporte, loja, aderência cultural, privacidade, monetização responsável e operação global.",
+    "Oito ações internacionais com custo, PA, cooldown e efeitos atrasados.",
+    "Pontuação global calculada por aderência de mercado, prontidão operacional, saúde sistêmica e risco internacional.",
+    "Integração mensal com Gold Master, Alpha/Beta, tutorial, mídia, diplomacia, PWA, saves, mobile, economia, crises, eleições e Core Loop 2.0.",
+    "Interface ampliada na aba Release com Gold v2.0 Internacional sem remover Alpha/Beta ou Gold Master.",
+    "Documento UPLOAD_GIT_BASH_PROMPT_DIPLOCRAFT.txt preservado na raiz do ZIP com caminho oficial de upload."
   ],
   "changelog": {
-    "Adicionado": [
-      "Sistema de diplomacia mundial com soft power, confiança global, acesso comercial, alavancagem negociadora, liderança regional, neutralidade, risco de segurança e escrutínio público.",
-      "Doutrinas diplomáticas selecionáveis com efeitos reais no país e no tabuleiro internacional.",
-      "Blocos globais dinâmicos com alinhamento, comércio, tensão e risco.",
-      "Agenda internacional por temas estratégicos e ações diplomáticas com custo, PA, cooldown e impacto atrasado.",
-      "Histórico mensal de diplomacia mundial e diagnóstico estratégico integrado ao relatório mensal."
+    "Gold v2.0 Internacional": [
+      "Novo estado persistente internationalLaunch com migração aditiva.",
+      "Mercados internacionais, gates globais e ações de publicação internacional conectados à aba Release.",
+      "Pontuação global calculada com market fit, prontidão operacional, compliance, privacidade, suporte e risco internacional."
     ],
-    "Corrigido": [
-      "A aba Diplomacia deixou de ser apenas lista de países/tratados e passou a funcionar como sistema estratégico profundo.",
-      "Ações diplomáticas avançadas agora possuem cooldown próprio, custo fiscal, consumo de capacidade e efeitos de médio prazo.",
-      "O risco diplomático agora considera tensão global, neutralidade, blocos, agenda internacional e credibilidade externa."
+    "Publicação global": [
+      "Ações de localização, matriz legal, loja multirregional, suporte, comunidade, press kit, preços e sala global de lançamento.",
+      "Histórico mensal internacional com score, gates, risco, aderência de mercado e operação global."
     ],
-    "Preservado": [
-      "Todos os sistemas da Fase 21: imprensa e opinião pública, gabinete e administração, governo e instituições, orçamento e tributação, economia profunda, população, criação de governo, Core Loop 2.0, saves schema 3, PWA, mobile, desktop, assets, localização e documento de upload Git Bash."
+    "Integrações": [
+      "Integração mensal com Gold Master, Alpha/Beta, PWA, saves, mobile, localização, tutorial, mídia, diplomacia e Core Loop 2.0.",
+      "Preservação do documento de upload Git Bash e da estrutura oficial completa."
     ]
   },
   "history": [
+    {
+      "version": "1.8.0",
+      "title": "Fase 28 Gold Master e Publicação Comercial",
+      "date_time": "19/06/2026 16:42",
+      "items": [
+        "Gold Master, certificação final, pacote de loja, compliance, suporte, rollback, telemetria segura, plano de lançamento e gates comerciais."
+      ]
+    },
+    {
+      "version": "1.7.9",
+      "title": "Fase 27 Alpha/Beta Comercial",
+      "date_time": "19/06/2026 15:12",
+      "items": [
+        "Alpha/Beta comercial, readiness técnico/jogável/comercial, canais de teste, marcos de publicação, QA, telemetria, PWA/offline e Gold readiness."
+      ]
+    },
+    {
+      "version": "1.7.8",
+      "title": "Fase 26 Cenários, Tutorial e Onboarding",
+      "date_time": "19/06/2026 12:39",
+      "items": [
+        "Cenários guiados, tutorial avançado, onboarding por missões, trilhas de aprendizado, retenção e replayabilidade."
+      ]
+    },
+    {
+      "version": "1.7.5",
+      "title": "Fase 23 Defesa, Inteligência e Segurança Internacional",
+      "date_time": "18/06/2026 19:05",
+      "items": [
+        "Defesa nacional, inteligência estratégica, cibersegurança, fronteiras, dissuasão, prontidão e segurança internacional integradas à diplomacia mundial."
+      ]
+    },
+    {
+      "version": "1.7.4",
+      "title": "Fase 22 Diplomacia Mundial",
+      "date_time": "18/06/2026 18:12",
+      "items": [
+        "Diplomacia mundial, blocos globais, agendas internacionais, doutrinas diplomáticas, ações multilaterais, histórico e integração com economia, mídia e instituições."
+      ]
+    },
     {
       "version": "1.7.3",
       "title": "Fase 21 Imprensa, Mídia e Opinião Pública",
@@ -120,131 +156,11 @@
       "items": [
         "Criação em nove etapas, cenários, dificuldade, objetivos estratégicos e 12 partidos com seleção visual."
       ]
-    },
-    {
-      "version": "1.5.0",
-      "title": "Fase 14 Core Loop 2.0",
-      "date_time": "17/06/2026 12:56",
-      "items": [
-        "Ciclo diário, semanal, mensal, trimestral e anual, consequências atrasadas e finais reais de carreira."
-      ]
-    },
-    {
-      "version": "1.4.0",
-      "title": "Fase 13 Save Architecture",
-      "date_time": "17/06/2026 12:37",
-      "items": [
-        "Perfis, slots, backups, exportação/importação e migração segura de carreiras."
-      ]
-    },
-    {
-      "version": "1.3.4",
-      "title": "Fase 12 Localization Complete",
-      "date_time": "17/06/2026 11:33",
-      "items": [
-        "Localização editorial completa em português, inglês e espanhol com 964 chaves sincronizadas."
-      ]
-    },
-    {
-      "version": "1.3.3",
-      "title": "Fase 11 Scroll & Touch Recovery",
-      "date_time": "17/06/2026 10:52",
-      "items": [
-        "Rolagem por roda, touchpad, teclado e gesto real do dedo em PC, tablet e mobile."
-      ]
-    },
-    {
-      "version": "1.3.2",
-      "title": "Fase 10 Hotfix Assets Web",
-      "date_time": "15/06/2026 19:44",
-      "items": [
-        "Fallback automático para PNGs originais e correção da publicação de assets no Vercel."
-      ]
-    },
-    {
-      "version": "1.3.1",
-      "title": "Fase 10 I18N Core",
-      "date_time": "13/06/2026 12:50",
-      "items": [
-        "Arquitetura trilíngue para português, inglês e espanhol."
-      ]
-    },
-    {
-      "version": "1.3.0",
-      "title": "Fase 9 Responsive Desktop",
-      "date_time": "13/06/2026 12:03",
-      "items": [
-        "Sidebar responsiva, central de comandos, atalhos, densidade e ultrawide."
-      ]
-    },
-    {
-      "version": "1.2.1",
-      "title": "Fase 8 Fullscreen/PWA",
-      "date_time": "13/06/2026 11:21",
-      "items": [
-        "PWA instalável, shell offline, atualização controlada, ícones e splash screens."
-      ]
-    },
-    {
-      "version": "1.2.0",
-      "title": "Fase 7 Mobile First",
-      "date_time": "13/06/2026 10:02",
-      "items": [
-        "Navegação por toque, safe areas, teclado virtual, orientação, drawer e rolagem mobile auditada."
-      ]
-    },
-    {
-      "version": "1.1.1",
-      "title": "Fase 6 Asset Pipeline",
-      "date_time": "13/06/2026 09:07",
-      "items": [
-        "Pipeline AVIF/WebP, variantes responsivas, lazy loading e auditoria de assets."
-      ]
-    },
-    {
-      "version": "1.1.0",
-      "title": "Fase 5 Test Foundation",
-      "date_time": "12/06/2026 17:14",
-      "items": [
-        "Testes unitários, contratos, simulação de 30 anos e quality gate bloqueante."
-      ]
-    },
-    {
-      "version": "1.0.4",
-      "title": "Fase 4 Anti-Break Core",
-      "date_time": "12/06/2026 17:02",
-      "items": [
-        "Saves transacionais, snapshots, watchdog, modo seguro e diagnóstico persistente."
-      ]
-    },
-    {
-      "version": "1.0.3",
-      "title": "Fase 3 Build Truth",
-      "date_time": "12/06/2026 16:36",
-      "items": [
-        "Fonte canônica de build, hash, geração determinística e bloqueio de divergências."
-      ]
-    },
-    {
-      "version": "1.0.2",
-      "title": "Fase 2 Clean Base",
-      "date_time": "12/06/2026 16:26",
-      "items": [
-        "Base limpa, identidade consolidada, módulos órfãos removidos e assets auditados."
-      ]
-    },
-    {
-      "version": "1.0.1",
-      "title": "Fase 1 Recovery",
-      "date_time": "12/06/2026 16:06",
-      "items": [
-        "Boot, anti-quebra, tutorial, feedback, áudio, rolagem mobile e save recuperados."
-      ]
     }
   ],
   "next_release": {
-    "version": "1.7.5",
-    "stage": "Fase 23 — Defesa, Inteligência e Segurança Internacional"
+    "version": "2.0.1",
+    "stage": "Hotfix pós-publicação internacional e telemetria real"
   },
   "asset_paths_changed": false,
   "asset_pipeline": {
@@ -457,11 +373,27 @@
   },
   "release_history": [
     {
+      "version": "1.7.7",
+      "title": "Fase 25 Eleições, Carreira e Legado",
+      "date_time": "18/06/2026 20:31",
+      "items": [
+        "Sistema profundo de eleições, campanhas, carreira política, legado, segmentos eleitorais, compliance e registro de resultados."
+      ]
+    },
+    {
       "version": "1.7.2",
       "title": "Fase 20 Gabinete e Administração",
       "date_time": "18/06/2026 16:47",
       "items": [
         "Gabinete, ministérios, coordenação, capacidade administrativa, entrega de políticas, nomeações, risco de escândalo e ações administrativas profundas."
+      ]
+    },
+    {
+      "version": "1.7.7",
+      "title": "Fase 25 Eleições, Carreira e Legado",
+      "date_time": "18/06/2026 20:31",
+      "items": [
+        "Sistema profundo de eleições, campanhas e carreira política com estratégia eleitoral, segmentos do eleitorado, máquina de campanha, compliance, segundo turno, histórico mensal, registro de resultados, carreira/legado e integração com mídia, crises, diplomacia, defesa, economia, orçamento, população e Core Loop 2.0."
       ]
     }
   ],
@@ -505,5 +437,126 @@
     "strategic_actions": 8,
     "monthly_cycle": true,
     "audit": "tests/run_world_diplomacy_audit.py"
+  },
+  "defense_intelligence": {
+    "enabled": true,
+    "schema": 1,
+    "audit": "tests/run_defense_intelligence_audit.py",
+    "branches": 6,
+    "intelligence_desks": 6,
+    "doctrines": 4,
+    "actions": 8,
+    "history_limit": 36,
+    "monthly_core_loop_bridge": true,
+    "world_diplomacy_bridge": true,
+    "media_bridge": true,
+    "budget_tax_bridge": true,
+    "cabinet_bridge": true,
+    "security_legacy_bridge": true,
+    "localized": [
+      "pt-BR",
+      "en",
+      "es"
+    ]
+  },
+  "national_crisis": {
+    "enabled": true,
+    "schema": 1,
+    "audit": "tests/run_national_crisis_audit.py",
+    "domains": 6,
+    "protocols": 4,
+    "actions": 8,
+    "scenarios": 4,
+    "history_limit": 36,
+    "monthly_core_loop_bridge": true,
+    "defense_intelligence_bridge": true,
+    "world_diplomacy_bridge": true,
+    "media_bridge": true,
+    "cabinet_bridge": true,
+    "institution_bridge": true,
+    "localized": [
+      "pt-BR",
+      "en",
+      "es"
+    ]
+  },
+  "base": "DIPLOCRAFT v1.7.7 — Fase 25 — Eleições, Carreira e Legado",
+  "electoral_career": {
+    "enabled": true,
+    "schema": 1,
+    "audit": "tests/run_electoral_career_audit.py",
+    "strategies": 4,
+    "segments": 6,
+    "actions": 8,
+    "milestones": 4,
+    "history_limit": 36,
+    "monthly_core_loop_bridge": true,
+    "election_result_registry": true,
+    "media_bridge": true,
+    "national_crisis_bridge": true,
+    "economy_bridge": true,
+    "population_bridge": true,
+    "localized": [
+      "pt-BR",
+      "en",
+      "es"
+    ]
+  },
+  "scenario_tutorial": {
+    "enabled": true,
+    "schema": 1,
+    "audit": "tests/run_scenario_tutorial_audit.py",
+    "scenario_packs": 4,
+    "tutorial_tracks": 4,
+    "onboarding_missions": 8,
+    "actions": 8,
+    "history_limit": 36,
+    "monthly_core_loop_bridge": true,
+    "mission_progression": true,
+    "retention_bridge": true,
+    "localized": [
+      "pt-BR",
+      "en",
+      "es"
+    ]
+  },
+  "alpha_beta": {
+    "enabled": true,
+    "schema": 1,
+    "audit": "tests/run_alpha_beta_audit.py",
+    "channels": 4,
+    "milestones": 8,
+    "actions": 8,
+    "history_limit": 36,
+    "monthly_core_loop_bridge": true,
+    "release_tab_bridge": true,
+    "pwa_bridge": true,
+    "save_migration_bridge": true,
+    "localization_bridge": true,
+    "balance_bridge": true,
+    "localized": [
+      "pt-BR",
+      "en",
+      "es"
+    ]
+  },
+  "gold_master": {
+    "enabled": true,
+    "schema": 1,
+    "audit": "tests/run_gold_master_audit.py",
+    "tracks": 4,
+    "gates": 8,
+    "actions": 8,
+    "history_limit": 36,
+    "monthly_core_loop_bridge": true,
+    "alpha_beta_bridge": true,
+    "pwa_bridge": true,
+    "save_migration_bridge": true,
+    "store_compliance_bridge": true,
+    "localized": [
+      "pt-BR",
+      "en",
+      "es"
+    ]
   }
 }

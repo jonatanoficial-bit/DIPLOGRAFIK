@@ -10,6 +10,13 @@ import { createInstitutionalState } from "../systems/governmentInstitutions.js";
 import { createCabinetState } from "../systems/cabinetAdministration.js";
 import { createMediaPublicState } from "../systems/media.js";
 import { createWorldDiplomacyState } from "../systems/worldDiplomacy.js";
+import { createDefenseIntelligenceState } from "../systems/defenseIntelligence.js";
+import { createNationalCrisisState } from "../systems/nationalCrisis.js";
+import { createElectoralCareerState } from "../systems/electoralCareer.js";
+import { createScenarioTutorialState } from "../systems/scenarioTutorial.js";
+import { createAlphaBetaState } from "../systems/alphaBeta.js";
+import { createGoldMasterState } from "../systems/goldMaster.js";
+import { createInternationalLaunchState } from "../systems/internationalLaunch.js";
 
 export function createNewState(overrides = {}) {
   const base = {
@@ -57,6 +64,13 @@ export function createNewState(overrides = {}) {
     cabinetAdministration: createCabinetState(),
     mediaPublic: createMediaPublicState(),
     worldDiplomacy: createWorldDiplomacyState(),
+    defenseIntelligence: createDefenseIntelligenceState(),
+    nationalCrisis: createNationalCrisisState(),
+    electoralCareer: createElectoralCareerState(),
+    scenarioTutorial: createScenarioTutorialState(),
+    alphaBeta: createAlphaBetaState(),
+    goldMaster: createGoldMasterState(),
+    internationalLaunch: createInternationalLaunchState(),
     feed: []
   };
 

@@ -16,16 +16,30 @@ import { ensureInstitutionalState, calculateInstitutionalSnapshot, institutional
 import { ensureCabinetState, calculateCabinetSnapshot, cabinetHealthScore } from "../systems/cabinetAdministration.js";
 import { MEDIA_OUTLETS, MEDIA_ACTIONS, PRESS_BRIEFINGS, MEDIA_DOCTRINES, MEDIA_AGENDAS } from "../data/mediaData.js";
 import { GLOBAL_BLOCS, WORLD_AGENDAS, DIPLOMACY_DOCTRINES, WORLD_DIPLOMACY_ACTIONS } from "../data/worldDiplomacyData.js";
+import { DEFENSE_BRANCHES, INTELLIGENCE_DESKS, DEFENSE_DOCTRINES, DEFENSE_INTELLIGENCE_ACTIONS } from "../data/defenseIntelligenceData.js";
 import { publicMood, mediaHostility, ensureMediaPublicState, calculateMediaSnapshot, mediaHealthScore } from "../systems/media.js";
 import { CAMPAIGN_ACTIONS } from "../data/electionData.js";
+import { ELECTORAL_STRATEGIES, ELECTORAL_SEGMENTS, ELECTORAL_CAREER_ACTIONS, CAREER_LEGACY_MILESTONES } from "../data/electoralCareerData.js";
+import { SCENARIO_PACKS, TUTORIAL_TRACKS_ADVANCED, ONBOARDING_MISSIONS, SCENARIO_TUTORIAL_ACTIONS } from "../data/scenarioTutorialData.js";
+import { BETA_CHANNELS, BETA_MILESTONES, ALPHA_BETA_ACTIONS } from "../data/alphaBetaData.js";
+import { GOLD_RELEASE_TRACKS, GOLD_CERTIFICATION_GATES, GOLD_MASTER_ACTIONS } from "../data/goldMasterData.js";
+import { INTERNATIONAL_MARKETS, INTERNATIONAL_GATES, INTERNATIONAL_LAUNCH_ACTIONS } from "../data/internationalLaunchData.js";
 import { TREATIES, DIPLOMACY_ACTIONS } from "../data/diplomacyData.js";
 import { relationStatus, globalRisk } from "../systems/diplomacy.js";
 import { ensureWorldDiplomacyState, calculateWorldDiplomacySnapshot, worldDiplomacyHealthScore } from "../systems/worldDiplomacy.js";
+import { ensureDefenseIntelligenceState, calculateDefenseIntelligenceSnapshot, defenseHealthScore } from "../systems/defenseIntelligence.js";
 import { MILITARY_ACTIONS, INTEL_OPERATIONS, SECURITY_FORCES } from "../data/securityData.js";
 import { calculateCoupRisk, calculateInternalThreat } from "../systems/security.js";
 import { CRISIS_ACTIONS } from "../data/crisisData.js";
+import { CRISIS_DOMAINS, CRISIS_PROTOCOLS, NATIONAL_CRISIS_ACTIONS } from "../data/nationalCrisisData.js";
 import { POPULATION_POLICIES, NEED_KEYS } from "../data/populationData.js";
 import { activeCrises, crisisSeverity } from "../systems/crisis.js";
+import { ensureNationalCrisisState, calculateNationalCrisisSnapshot, nationalCrisisHealthScore } from "../systems/nationalCrisis.js";
+import { ensureElectoralCareerState, calculateElectoralSnapshot, electoralHealthScore } from "../systems/electoralCareer.js";
+import { ensureScenarioTutorialState, calculateScenarioTutorialSnapshot, scenarioTutorialHealthScore } from "../systems/scenarioTutorial.js";
+import { ensureAlphaBetaState, calculateAlphaBetaSnapshot, alphaBetaHealthScore, readAlphaBetaMetric } from "../systems/alphaBeta.js";
+import { ensureGoldMasterState, calculateGoldMasterSnapshot, readGoldMetric } from "../systems/goldMaster.js";
+import { ensureInternationalLaunchState, calculateInternationalLaunchSnapshot, readInternationalMetric } from "../systems/internationalLaunch.js";
 import { ACHIEVEMENTS, UNLOCKS } from "../data/progressionData.js";
 import { xpToNext } from "../systems/progression.js";
 import { STORE_ITEMS, REWARDED_ADS, PREMIUM_PACKS, MONETIZATION_RULES } from "../data/monetizationData.js";
@@ -515,38 +529,71 @@ function renderDiplomacy(state, actions) {
 
 
 function renderMilitary(state, actions) {
+  const defense = ensureDefenseIntelligenceState(state);
+  const snapshot = calculateDefenseIntelligenceSnapshot(state);
+  const activeDoctrine = DEFENSE_DOCTRINES.find(item => item.id === defense.activeDoctrine) || DEFENSE_DOCTRINES[0];
   setHTML("militaryReport", `
-    ${metric("Poder militar", state.military)}
-    ${metric("Segurança interna", state.security || 52)}
-    ${metric("Lealdade", state.loyalty)}
-    ${metric("Risco de golpe", calculateCoupRisk(state), calculateCoupRisk(state) > 55)}
-    <p>${state.loyalty < 35 ? "Risco de insubordinação militar." : "Comando sob controle."}</p>
+    <div data-i18n-final="true">
+      <div class="mediaHero defenseHero">
+        <div><span>${t("defense.health")}</span><b>${defenseHealthScore(state)}/100</b><small>${t(activeDoctrine.nameKey)}</small></div>
+        <div><span>${t("defense.readiness")}</span><b>${Math.round(snapshot.branchReadiness)}%</b><small>${t("defense.logistics")}: ${Math.round(snapshot.logistics)}%</small></div>
+        <div><span>${t("defense.deterrence")}</span><b>${Math.round(defense.deterrence)}%</b><small>${t("defense.autonomy")}: ${Math.round(defense.strategicAutonomy)}%</small></div>
+        <div><span>${t("defense.strategicRisk")}</span><b class="${snapshot.strategicRisk>65?"neg":"pos"}">${Math.round(snapshot.strategicRisk)}%</b><small>${t("defense.escalationRisk")}: ${Math.round(snapshot.escalationRisk)}%</small></div>
+      </div>
+      <div class="institutionAlert ${defense.lastDiagnosis?.severity || "info"}"><b>${t("defense.currentDiagnosis")}</b><span>${t(defense.lastDiagnosis?.messageKey || "defense.diagnosis.stable")}</span></div>
+    </div>
   `);
 
   setHTML("securityRiskPanel", `
-    ${metric("Ameaça interna", calculateInternalThreat(state), calculateInternalThreat(state) > 60)}
-    ${metric("Crise nacional", (state.crisis || 0) * 10, state.crisis > 5)}
-    ${metric("Estabilidade", state.stability)}
-    ${metric("Inteligência", state.intelligence)}
+    <div data-i18n-final="true">
+      ${metric(t("defense.internalThreat"), calculateInternalThreat(state), calculateInternalThreat(state) > 60)}
+      ${metric(t("defense.coupRisk"), calculateCoupRisk(state), calculateCoupRisk(state) > 55)}
+      ${metric(t("defense.threatLevel"), defense.threatLevel, defense.threatLevel > 65)}
+      ${metric(t("defense.operationalRisk"), defense.operationalRisk, defense.operationalRisk > 65)}
+      ${metric(t("defense.cyberResilience"), defense.cyberResilience, defense.cyberResilience < 38)}
+      ${metric(t("defense.borderControl"), defense.borderControl, defense.borderControl < 38)}
+    </div>
   `);
+
+  setHTML("defenseDoctrinePanel", `<div data-i18n-final="true" class="policyGridInner">${DEFENSE_DOCTRINES.map(item => `<article class="policyTile ${item.id===defense.activeDoctrine?"active":""}"><h4>${t(item.nameKey)}</h4><p>${t(item.textKey)}</p><button class="dark" data-defense-doctrine="${item.id}" ${item.id===defense.activeDoctrine?"disabled":""}>${item.id===defense.activeDoctrine?t("defense.active"):t("defense.adopt")}</button></article>`).join("")}</div>`);
+  bind("[data-defense-doctrine]", btn => actions.setDefenseDoctrine(btn.dataset.defenseDoctrine));
+
+  setHTML("defenseBranches", `<div data-i18n-final="true" class="cabinetPortfolioGrid defenseBranchGrid">${defense.branches.map(branch => { const profile = DEFENSE_BRANCHES.find(item => item.id === branch.id) || branch; return `<article class="cabinetCard"><header><span>${profile.icon || "◆"}</span><div><b>${t(profile.nameKey)}</b><small>${t(profile.textKey)}</small></div></header>${metric(t("defense.readiness"), branch.readiness, branch.readiness < 38)}${metric(t("defense.logistics"), branch.logistics, branch.logistics < 38)}${metric(t("defense.modernization"), branch.modernization, branch.modernization < 38)}${metric(t("defense.pressure"), branch.pressure, branch.pressure > 66)}</article>`; }).join("")}</div>`);
 
   setHTML("militaryActions", MILITARY_ACTIONS.map(a => `<article class="decision"><h4>${a.title}</h4><p>${a.text}</p><button data-military-action="${a.id}">${a.cost ? "₿ "+a.cost+" bi" : "EXECUTAR"}</button></article>`).join(""));
   bind("[data-military-action]", btn => actions.runMilitaryAction(btn.dataset.militaryAction));
+
+  setHTML("defenseActions", `<div data-i18n-final="true" class="decisionDeckInner">${DEFENSE_INTELLIGENCE_ACTIONS.filter(action => action.kind === "defense").map(action => { const key=`defense:intelligence:action:${action.id}`; const cooldown=Number(state.cooldowns?.[key]||0); const disabled=cooldown>0 || Number(state.treasury||0)<Number(action.cost||0) || state.careerStatus!=="active"; return `<article class="decision"><h4>${t(action.titleKey)}</h4><p>${t(action.textKey)}</p><small>${t("defense.costLine", { cost:action.cost, ap:action.actionPoints, days:action.lagDays||45 })}${cooldown?` • ${t("defense.cooldown", { days:cooldown })}`:""}</small><button data-defense-action="${action.id}" ${disabled?"disabled":""}>${cooldown?t("defense.wait"):t("defense.execute")}</button></article>`; }).join("")}</div>`);
+  bind("[data-defense-action]", btn => actions.runDefenseIntelligenceAction(btn.dataset.defenseAction));
 }
 
 
 function renderIntelligence(state, actions) {
+  const defense = ensureDefenseIntelligenceState(state);
+  const snapshot = calculateDefenseIntelligenceSnapshot(state);
   setHTML("intelReport", `
-    ${metric("Capacidade", state.intelligence)}
-    ${metric("Risco escândalo", state.corruption + (100-state.media)/6, true)}
-    ${metric("Pressão da elite", state.elite)}
-    ${metric("Ameaça interna", calculateInternalThreat(state), calculateInternalThreat(state) > 60)}
+    <div data-i18n-final="true">
+      ${metric(t("defense.intelCoverage"), defense.intelCoverage, defense.intelCoverage < 38)}
+      ${metric(t("defense.counterIntel"), defense.counterIntel, defense.counterIntel < 38)}
+      ${metric(t("defense.intelligenceEdge"), snapshot.intelligenceEdge, snapshot.intelligenceEdge < 38)}
+      ${metric(t("defense.cyberResilience"), defense.cyberResilience, defense.cyberResilience < 38)}
+      ${metric(t("defense.scandalRisk"), state.corruption + (100-state.media)/6, true)}
+      ${metric(t("defense.internalThreat"), calculateInternalThreat(state), calculateInternalThreat(state) > 60)}
+    </div>
   `);
+
+  setHTML("intelligenceNetworkPanel", `<div data-i18n-final="true" class="deepEconomyMatrix defenseIntelMatrix"><article><b>${t("defense.network")}</b><span>${t("defense.coverage")}: ${Math.round(defense.intelCoverage)}%</span><span>${t("defense.counterIntel")}: ${Math.round(defense.counterIntel)}%</span><span>${t("defense.threatLevel")}: ${Math.round(defense.threatLevel)}%</span></article><article><b>${t("defense.strategicForecast")}</b><span>${t("defense.externalPressure")}: ${Math.round(snapshot.externalPressure)}%</span><span>${t("defense.internalPressure")}: ${Math.round(snapshot.internalPressure)}%</span><span>${t("defense.readinessGap")}: ${Math.round(snapshot.readinessGap)}%</span></article></div>`);
+
+  setHTML("intelligenceDesks", `<div data-i18n-final="true" class="cabinetPortfolioGrid defenseDeskGrid">${defense.desks.map(desk => { const profile = INTELLIGENCE_DESKS.find(item => item.id === desk.id) || desk; return `<article class="cabinetCard"><header><span>${profile.icon || "◆"}</span><div><b>${t(profile.nameKey)}</b><small>${t(profile.textKey)}</small></div></header>${metric(t("defense.coverage"), desk.coverage, desk.coverage < 38)}${metric(t("defense.reliability"), desk.reliability, desk.reliability < 38)}${metric(t("defense.risk"), desk.risk, desk.risk > 66)}</article>`; }).join("")}</div>`);
 
   setHTML("intelOperations", INTEL_OPERATIONS.map(o => `<article class="decision"><h4>${o.title}</h4><p>${o.text}</p><small>Risco operacional ${o.risk}%</small><button data-intel-operation="${o.id}">${o.cost ? "₿ "+o.cost+" bi" : "EXECUTAR"}</button></article>`).join(""));
   bind("[data-intel-operation]", btn => actions.runIntelOperation(btn.dataset.intelOperation));
 
-  setHTML("operationsHistory", (state.activeOperations || []).map(o => `<div class="feedItem ${o.result === "sucesso" ? "positive" : "negative"}"><b>${o.title}</b><br>${o.result} • ${String(o.day).padStart(2,"0")}/${String(o.month).padStart(2,"0")}/${o.year}</div>`).join("") || "<p>Nenhuma operação executada ainda.</p>");
+  setHTML("defenseIntelActions", `<div data-i18n-final="true" class="decisionDeckInner">${DEFENSE_INTELLIGENCE_ACTIONS.filter(action => action.kind === "intelligence").map(action => { const key=`defense:intelligence:action:${action.id}`; const cooldown=Number(state.cooldowns?.[key]||0); const disabled=cooldown>0 || Number(state.treasury||0)<Number(action.cost||0) || state.careerStatus!=="active"; return `<article class="decision"><h4>${t(action.titleKey)}</h4><p>${t(action.textKey)}</p><small>${t("defense.costLine", { cost:action.cost, ap:action.actionPoints, days:action.lagDays||45 })}${cooldown?` • ${t("defense.cooldown", { days:cooldown })}`:""}</small><button data-defense-action="${action.id}" ${disabled?"disabled":""}>${cooldown?t("defense.wait"):t("defense.execute")}</button></article>`; }).join("")}</div>`);
+  bind("[data-defense-action]", btn => actions.runDefenseIntelligenceAction(btn.dataset.defenseAction));
+
+  setHTML("operationsHistory", (state.activeOperations || []).map(o => `<div class="feedItem ${o.result === "sucesso" ? "positive" : "negative"}"><b>${o.title}</b><br>${o.result} • ${String(o.day).padStart(2,"0")}/${String(o.month).padStart(2,"0")}/${o.year}</div>`).join("") || `<p>${t("defense.noLegacyOperations")}</p>`);
+  setHTML("defenseIntelHistory", `<div data-i18n-final="true">${defense.incidents.length ? defense.incidents.map(item => `<div class="feedItem ${item.severity}"><b>${t(item.titleKey)}</b><br>${t(item.textKey)} • ${String(item.day).padStart(2,"0")}/${String(item.month).padStart(2,"0")}/${item.year}</div>`).join("") : `<p>${t("defense.noIncidents")}</p>`}${defense.history.length ? `<hr><h4>${t("defense.historyTitle")}</h4>${defense.history.slice(-8).reverse().map(item => `<div class="historyRow"><b>${String(item.m).padStart(2,"0")}/${item.y}</b><span>${t("defense.health")}: ${Number(item.health).toFixed(1)}%</span><span>${t("defense.strategicRisk")}: ${Number(item.risk).toFixed(1)}%</span><span>${t("defense.intelligenceEdge")}: ${Number(item.intelligence).toFixed(1)}%</span></div>`).join("")}`:""}</div>`);
 }
 
 function renderProjects(state, actions) {
@@ -616,55 +663,95 @@ function renderElections(state, actions) {
   const poll = nationalPoll(state);
   const opponent = mainOpponent(state);
   const regions = regionalPolls(state);
+  const electoral = ensureElectoralCareerState(state);
+  const snapshot = calculateElectoralSnapshot(state);
+  const activeStrategy = ELECTORAL_STRATEGIES.find(item => item.id === electoral.activeStrategy) || ELECTORAL_STRATEGIES[0];
+  const totalDays = Number(state.governance?.termDay || 1);
 
   setHTML("electionReport", `
-    <div class="econHero">
-      <div><span>Governo</span><b>${Math.round(poll.incumbent)}%</b></div>
-      <div><span>Oposição</span><b>${Math.round(poll.opposition)}%</b></div>
-      <div><span>Adversário</span><b>${opponent.name}</b></div>
+    <div data-i18n-final="true">
+      <div class="econHero electoralHero">
+        <div><span>${t("electoral.projectedFirstRound")}</span><b>${Math.round(snapshot.projectedFirstRound)}%</b><small>${t("electoral.government")}</small></div>
+        <div><span>${t("electoral.victoryPath")}</span><b>${Math.round(snapshot.victoryPath)}%</b><small>${t(activeStrategy.nameKey)}</small></div>
+        <div><span>${t("electoral.runoffRisk")}</span><b class="${snapshot.runoffChance>60?"neg":"pos"}">${Math.round(snapshot.runoffChance)}%</b><small>${t("electoral.opponent")}: ${opponent.name}</small></div>
+      </div>
+      ${metric(t("electoral.campaignMachinery"), snapshot.machinery, snapshot.machinery < 42)}
+      ${metric(t("electoral.complianceRisk"), snapshot.complianceRisk, snapshot.complianceRisk > 62)}
+      ${metric(t("electoral.mandateLegacy"), snapshot.legacy, snapshot.legacy < 42)}
+      <p><b>${t("electoral.daysToElection")}</b> ${state.electionDays}</p>
+      <div class="institutionAlert ${electoral.lastDiagnosis?.severity || "info"}"><b>${t("electoral.currentDiagnosis")}</b><span>${t(electoral.lastDiagnosis?.messageKey || "electoral.diagnosis.stable")}</span></div>
+      ${state.lastElection ? `<div class="feedItem info"><b>${t("electoral.lastElection")}</b><br>${state.lastElection.incumbentVote}% ${t("electoral.government")} x ${state.lastElection.opponentVote}% ${state.lastElection.opponent}</div>` : ""}
     </div>
-    ${metric("Campanha", state.campaign)}
-    ${metric("Rejeição", state.rejection || 30, (state.rejection || 30) > 45)}
-    ${metric("Chance nacional", voteChance(state))}
-    <p><b>Dias para eleição:</b> ${state.electionDays}</p>
-    ${state.lastElection ? `<div class="feedItem info"><b>Última eleição</b><br>${state.lastElection.incumbentVote}% governo x ${state.lastElection.opponentVote}% ${state.lastElection.opponent}</div>` : ""}
   `);
 
-  setHTML("regionalPolls", regions.map(r => `
-    <div class="sector">
-      <b>${r.name}</b>
-      ${miniBar(r.incumbent)}
-      <small>peso eleitoral ${r.voters}% • governo ${Math.round(r.incumbent)}%</small>
-    </div>
-  `).join(""));
+  setHTML("regionalPolls", regions.map(r => {
+    const machine = (electoral.regions || []).find(item => item.id === r.id) || {};
+    return `<div class="sector" data-i18n-final="true"><b>${r.name}</b>${miniBar(r.incumbent)}<small>${t("electoral.regionLine", { voters:r.voters, vote:Math.round(r.incumbent), machine:Math.round(machine.machine || 0) })}</small></div>`;
+  }).join(""));
 
-  setHTML("campaignActions", CAMPAIGN_ACTIONS.map(a => `<article class="decision"><h4>${a.title}</h4><p>${a.text}</p><button data-campaign="${a.id}">${a.cost ? "₿ "+a.cost+" bi" : "EXECUTAR"}</button></article>`).join(""));
+  setHTML("electoralStrategyPanel", `<div data-i18n-final="true" class="policyGridInner">${ELECTORAL_STRATEGIES.map(item => `<article class="policyTile ${item.id===electoral.activeStrategy?"active":""}"><h4>${t(item.nameKey)}</h4><p>${t(item.textKey)}</p><button class="dark" data-electoral-strategy="${item.id}" ${item.id===electoral.activeStrategy?"disabled":""}>${item.id===electoral.activeStrategy?t("electoral.active"):t("electoral.adopt")}</button></article>`).join("")}</div>`);
+  bind("[data-electoral-strategy]", btn => actions.setElectoralStrategy(btn.dataset.electoralStrategy));
+
+  setHTML("electoralMachinePanel", `<div data-i18n-final="true" class="institutionMetricGrid">
+    ${metric(t("electoral.fund"), electoral.campaignFund, electoral.campaignFund < 35)}
+    ${metric(t("electoral.volunteers"), electoral.volunteerNetwork, electoral.volunteerNetwork < 35)}
+    ${metric(t("electoral.groundGame"), electoral.groundGame, electoral.groundGame < 38)}
+    ${metric(t("electoral.digital"), electoral.digitalMobilization, electoral.digitalMobilization < 38)}
+    ${metric(t("electoral.coalitionEndorsements"), electoral.coalitionEndorsements, electoral.coalitionEndorsements < 38)}
+    ${metric(t("electoral.partyUnity"), electoral.partyUnity, electoral.partyUnity < 38)}
+    ${metric(t("electoral.debatePreparedness"), electoral.debatePreparedness, electoral.debatePreparedness < 38)}
+    ${metric(t("electoral.undecided"), electoral.undecidedVoters, electoral.undecidedVoters > 28)}
+  </div>`);
+
+  setHTML("electoralSegmentsPanel", `<div data-i18n-final="true" class="mediaAgendaGrid">${(electoral.segments || ELECTORAL_SEGMENTS).map(seg => `<article class="mediaAgendaCard"><header><span>${seg.icon || "◆"}</span><div><b>${t(seg.nameKey)}</b><small>${t(seg.textKey)}</small></div></header>${metric(t("electoral.support"), seg.support, seg.support < 42)}${metric(t("electoral.volatility"), seg.volatility, seg.volatility > 45)}</article>`).join("")}</div>`);
+
+  setHTML("electoralActions", `<div data-i18n-final="true" class="decisionDeckInner">${ELECTORAL_CAREER_ACTIONS.map(a => { const key=`electoral:action:${a.id}`; const cooldown=Number(state.cooldowns?.[key]||0); const disabled=cooldown>0 || Number(state.treasury||0)<Number(a.cost||0) || state.careerStatus!=="active"; return `<article class="decision"><h4>${t(a.titleKey)}</h4><p>${t(a.textKey)}</p><small>${t("electoral.costLine", { cost:a.cost||0, ap:a.actionPoints||1, days:a.lagDays||20 })}${cooldown?` • ${t("electoral.cooldown", { days:cooldown })}`:""}</small><button data-electoral-action="${a.id}" ${disabled?"disabled":""}>${cooldown?t("electoral.wait"):t("action.execute")}</button></article>`; }).join("")}</div>`);
+  bind("[data-electoral-action]", btn => actions.runElectoralCareerAction(btn.dataset.electoralAction));
+
+  setHTML("careerTimelinePanel", `<div data-i18n-final="true" class="deepEconomyMatrix">${CAREER_LEGACY_MILESTONES.map(item => { const reached = totalDays >= item.day; return `<article class="${reached?"positive":""}"><b>${t(item.nameKey)}</b><span>${t(item.textKey)}</span><span>${reached?t("electoral.reached"):t("electoral.remaining", { days:Math.max(0,item.day-totalDays) })}</span></article>`; }).join("")}</div>`);
+
+  setHTML("campaignActions", CAMPAIGN_ACTIONS.map(a => `<article class="decision"><h4>${translateText(a.title)}</h4><p>${translateText(a.text)}</p><button data-campaign="${a.id}">${a.cost ? "₿ "+a.cost+" bi" : t("action.execute")}</button></article>`).join(""));
   bind("[data-campaign]", btn => actions.runCampaignAction(btn.dataset.campaign));
+
+  setHTML("electoralHistory", `<div data-i18n-final="true">${electoral.history.length ? electoral.history.slice(-8).reverse().map(item => `<div class="historyRow"><b>${String(item.m).padStart(2,"0")}/${item.y}</b><span>${t("electoral.health")}: ${Number(item.health).toFixed(0)}</span><span>${t("electoral.victoryPath")}: ${Number(item.victory).toFixed(1)}%</span><span>${t("electoral.projectedFirstRound")}: ${Number(item.first).toFixed(1)}%</span><span>${t("electoral.complianceRisk")}: ${Number(item.compliance).toFixed(1)}%</span></div>`).join("") : `<p>${t("electoral.noHistory")}</p>`}</div>`);
 }
 
 
 function renderCrisis(state, actions) {
   const active = activeCrises(state);
+  const national = ensureNationalCrisisState(state);
+  const snapshot = calculateNationalCrisisSnapshot(state);
+  const protocol = CRISIS_PROTOCOLS.find(item => item.id === national.activeProtocol) || CRISIS_PROTOCOLS[0];
   setHTML("crisisReport", `
-    ${metric("Nível nacional", (state.crisis || 0) * 10, state.crisis > 5)}
-    ${metric("Severidade máxima", crisisSeverity(state), crisisSeverity(state) > 60)}
-    ${metric("Estabilidade", state.stability, state.stability < 40)}
-    ${metric("Aprovação", state.approval, state.approval < 40)}
-    <p><b>Status:</b> ${state.crisis > 6 ? "crise nacional grave" : state.crisis > 3 ? "alerta elevado" : "controlado"}</p>
+    ${metric(t("nationalCrisis.nationalLevel"), (state.crisis || 0) * 10, state.crisis > 5)}
+    ${metric(t("nationalCrisis.maxSeverity"), crisisSeverity(state), crisisSeverity(state) > 60)}
+    ${metric(t("nationalCrisis.compoundRisk"), national.compoundRisk, national.compoundRisk > 65)}
+    ${metric(t("nationalCrisis.readiness"), national.nationalReadiness, national.nationalReadiness < 45)}
+    ${metric(t("nationalCrisis.recoveryCapacity"), national.recoveryCapacity, national.recoveryCapacity < 42)}
+    <div class="institutionAlert ${national.lastDiagnosis?.severity || "info"}"><b>${t("nationalCrisis.currentDiagnosis")}</b><span>${t(national.lastDiagnosis?.messageKey || "nationalCrisis.diagnosis.stable")}</span></div>
   `);
 
   setHTML("activeCrises", active.map(c => `
     <div class="sector">
-      <b>${c.title}</b>
+      <b>${translateText(c.title)}</b>
       ${miniBar(c.level * 25, c.level >= 3)}
-      <small>nível ${c.level}/4 • cooldown ${c.cooldown || 0} dias</small>
+      <small>${t("nationalCrisis.chainStatus", { level:c.level, cooldown:c.cooldown || 0 })}</small>
     </div>
-  `).join("") || "<p>Nenhuma crise encadeada ativa.</p>");
+  `).join("") || `<p>${t("nationalCrisis.noActiveChains")}</p>`);
 
-  setHTML("crisisActions", CRISIS_ACTIONS.map(a => `<article class="decision"><h4>${a.title}</h4><p>${a.text}</p><button data-crisis-action="${a.id}">${a.cost ? "₿ "+a.cost+" bi" : "EXECUTAR"}</button></article>`).join(""));
+  setHTML("nationalCrisisProtocolPanel", `<div data-i18n-final="true" class="policyGridInner">${CRISIS_PROTOCOLS.map(item => `<article class="policyTile ${item.id===national.activeProtocol?"active":""}"><h4>${t(item.nameKey)}</h4><p>${t(item.textKey)}</p><button class="dark" data-national-crisis-protocol="${item.id}" ${item.id===national.activeProtocol?"disabled":""}>${item.id===national.activeProtocol?t("nationalCrisis.active"):t("nationalCrisis.adopt")}</button></article>`).join("")}</div>`);
+  bind("[data-national-crisis-protocol]", btn => actions.setNationalCrisisProtocol(btn.dataset.nationalCrisisProtocol));
+
+  setHTML("nationalCrisisDomainPanel", `<div data-i18n-final="true" class="mediaAgendaGrid">${(national.domains || CRISIS_DOMAINS).map(domain => `<article class="mediaAgendaCard"><header><span>${domain.icon || "◆"}</span><div><b>${t(domain.nameKey)}</b><small>${t(domain.textKey)}</small></div></header>${metric(t("nationalCrisis.pressure"), domain.pressure, domain.pressure>66)}${metric(t("nationalCrisis.trend"), Math.max(0, 50 + Number(domain.trend || 0) * 2), Math.abs(Number(domain.trend || 0))>6)}<small>${t("nationalCrisis.trendValue", { trend:Number(domain.trend || 0).toFixed(1) })}</small></article>`).join("")}</div>`);
+
+  setHTML("nationalCrisisScenarioPanel", `<div data-i18n-final="true" class="deepEconomyMatrix">${(national.scenarios || []).map(item => `<article><b>${t(item.nameKey)}</b><span>${t(item.textKey)}</span><span>${t("nationalCrisis.risk")}: ${Math.round(item.risk || 0)}%</span><span>${item.active?t("nationalCrisis.scenarioActive"):t("nationalCrisis.scenarioControlled")}</span></article>`).join("")}</div>`);
+
+  setHTML("nationalCrisisActions", `<div data-i18n-final="true" class="decisionDeckInner">${[...CRISIS_ACTIONS.map(a => ({...a, legacy:true})), ...NATIONAL_CRISIS_ACTIONS].map(a => { const key=a.legacy?a.id:`national:crisis:action:${a.id}`; const cooldown=Number(state.cooldowns?.[key]||0); const disabled=cooldown>0 || Number(state.treasury||0)<Number(a.cost||0) || state.careerStatus!=="active"; return `<article class="decision"><h4>${a.titleKey?t(a.titleKey):translateText(a.title)}</h4><p>${a.textKey?t(a.textKey):translateText(a.text)}</p><small>${t("nationalCrisis.costLine", { cost:a.cost||0, ap:a.actionPoints||1, days:a.lagDays||20 })}${cooldown?` • ${t("nationalCrisis.cooldown", { days:cooldown })}`:""}</small><button ${a.legacy?`data-crisis-action="${a.id}"`:`data-national-crisis-action="${a.id}"`} ${disabled?"disabled":""}>${cooldown?t("nationalCrisis.wait"):t("action.execute")}</button></article>`; }).join("")}</div>`);
   bind("[data-crisis-action]", btn => actions.runCrisisAction(btn.dataset.crisisAction));
+  bind("[data-national-crisis-action]", btn => actions.runNationalCrisisAction(btn.dataset.nationalCrisisAction));
 
-  setHTML("crisisHistory", (state.crisisHistory || []).map(h => `<div class="feedItem warning"><b>${h.chainTitle} — ${h.stageTitle}</b><br>${h.text}<br><small>${String(h.day).padStart(2,"0")}/${String(h.month).padStart(2,"0")}/${h.year}</small></div>`).join("") || "<p>Nenhum histórico de crise ainda.</p>");
+  setHTML("crisisHistory", (state.crisisHistory || []).map(h => `<div class="feedItem warning"><b>${translateText(h.chainTitle)} — ${translateText(h.stageTitle)}</b><br>${translateText(h.text)}<br><small>${String(h.day).padStart(2,"0")}/${String(h.month).padStart(2,"0")}/${h.year}</small></div>`).join("") || `<p>${t("nationalCrisis.noHistory")}</p>`);
+  setHTML("nationalCrisisHistory", national.history.length ? national.history.slice(-8).reverse().map(item => `<div class="historyRow"><b>${String(item.m).padStart(2,"0")}/${item.y}</b><span>${t("nationalCrisis.health")}: ${Number(item.health).toFixed(0)}</span><span>${t("nationalCrisis.compoundRisk")}: ${Number(item.compound).toFixed(1)}%</span><span>${t("nationalCrisis.readiness")}: ${Number(item.readiness).toFixed(1)}%</span><span>${t("nationalCrisis.activeScenarios")}: ${item.active}</span></div>`).join("") : `<p>${t("nationalCrisis.noMonthlyHistory")}</p>`);
 }
 
 function renderProgression(state, actions) {
@@ -700,6 +787,41 @@ function renderProgression(state, actions) {
   setHTML("achievementsPanel", ACHIEVEMENTS.map(a => `<div class="sector ${state.achievements && state.achievements[a.id] ? "goalDone" : ""}"><b>${state.achievements && state.achievements[a.id] ? "🏆 " : "▫ "}${a.title}</b><small>${a.text}</small></div>`).join(""));
 
   setHTML("unlocksPanel", UNLOCKS.map(u => `<div class="sector ${state.unlocked && state.unlocked[u.id] ? "goalDone" : ""}"><b>${state.unlocked && state.unlocked[u.id] ? "🔓 " : "🔒 "}${u.title}</b><small>nível ${u.level}</small></div>`).join(""));
+  renderScenarioTutorial(state, actions);
+}
+
+function renderScenarioTutorial(state, actions) {
+  const tutorial = ensureScenarioTutorialState(state);
+  const snapshot = calculateScenarioTutorialSnapshot(state);
+  const activePack = SCENARIO_PACKS.find(item => item.id === tutorial.activeScenario) || SCENARIO_PACKS[0];
+  const activeTrack = TUTORIAL_TRACKS_ADVANCED.find(item => item.id === tutorial.activeTrack) || TUTORIAL_TRACKS_ADVANCED[0];
+  setHTML("scenarioTutorialOverview", `
+    <div data-i18n-final="true">
+      <div class="scenarioHero">
+        <div><span>${t("scenario.health")}</span><b>${scenarioTutorialHealthScore(state)}/100</b><small>${t(activePack.nameKey)}</small></div>
+        <div><span>${t("scenario.readiness")}</span><b>${Math.round(snapshot.readiness)}%</b><small>${t(activeTrack.nameKey)}</small></div>
+        <div><span>${t("scenario.mastery")}</span><b>${Math.round(snapshot.masteryIndex)}%</b><small>${t("scenario.missionsDone", { done:snapshot.missionDone, total:snapshot.missionTotal })}</small></div>
+        <div><span>${t("scenario.risk")}</span><b class="${snapshot.onboardingRisk>62?"neg":"pos"}">${Math.round(snapshot.onboardingRisk)}%</b><small>${t("scenario.pressure")}: ${Math.round(tutorial.scenarioPressure)}%</small></div>
+      </div>
+      <div class="institutionAlert ${tutorial.lastDiagnosis?.severity || "info"}"><b>${t("scenario.currentDiagnosis")}</b><span>${t(tutorial.lastDiagnosis?.messageKey || "scenario.diagnosis.stable")}</span></div>
+    </div>
+  `);
+  setHTML("scenarioMetricsPanel", `<div data-i18n-final="true" class="scenarioMetricGrid">
+    ${metric(t("scenario.tutorialDepth"), tutorial.tutorialDepth)}
+    ${metric(t("scenario.playerGuidance"), tutorial.playerGuidance)}
+    ${metric(t("scenario.decisionClarity"), tutorial.decisionClarity)}
+    ${metric(t("scenario.coachingTrust"), tutorial.coachingTrust)}
+    ${metric(t("scenario.learningMomentum"), tutorial.learningMomentum)}
+    ${metric(t("scenario.replayability"), tutorial.replayability)}
+  </div>`);
+  setHTML("scenarioPackPanel", `<div data-i18n-final="true" class="policyGridInner">${SCENARIO_PACKS.map(pack => `<article class="policyTile ${pack.id===tutorial.activeScenario?"active":""}"><h4>${pack.icon || "◆"} ${t(pack.nameKey)}</h4><p>${t(pack.textKey)}</p><small>${t("scenario.difficulty", { value:pack.difficulty })}</small><button class="dark" data-scenario-pack="${pack.id}" ${pack.id===tutorial.activeScenario?"disabled":""}>${pack.id===tutorial.activeScenario?t("scenario.active"):t("scenario.adopt")}</button></article>`).join("")}</div>`);
+  bind("[data-scenario-pack]", btn => actions.setScenarioPack(btn.dataset.scenarioPack));
+  setHTML("tutorialTrackPanel", `<div data-i18n-final="true" class="policyGridInner">${TUTORIAL_TRACKS_ADVANCED.map(track => `<article class="policyTile ${track.id===tutorial.activeTrack?"active":""}"><h4>${t(track.nameKey)}</h4><p>${t(track.textKey)}</p><button class="dark" data-tutorial-track="${track.id}" ${track.id===tutorial.activeTrack?"disabled":""}>${track.id===tutorial.activeTrack?t("scenario.active"):t("scenario.adopt")}</button></article>`).join("")}</div>`);
+  bind("[data-tutorial-track]", btn => actions.setTutorialTrack(btn.dataset.tutorialTrack));
+  setHTML("onboardingMissionPanel", `<div data-i18n-final="true" class="missionGrid">${ONBOARDING_MISSIONS.map(mission => { const progress = (tutorial.missions || []).find(item => item.id === mission.id) || { progress:0, done:false }; return `<article class="missionCard ${progress.done?"goalDone":""}"><header><span>${progress.done?"✓":mission.icon}</span><div><b>${t(mission.nameKey)}</b><small>${t(mission.textKey)}</small></div></header>${miniBar(progress.done?100:progress.progress)}<small>${Math.round(progress.done?100:progress.progress)}%</small></article>`; }).join("")}</div>`);
+  setHTML("scenarioTutorialActions", `<div data-i18n-final="true" class="decisionDeckInner">${SCENARIO_TUTORIAL_ACTIONS.map(action => { const key=`scenario:tutorial:action:${action.id}`; const cooldown=Number(state.cooldowns?.[key]||0); const disabled=cooldown>0 || Number(state.treasury||0)<Number(action.cost||0) || state.careerStatus!=="active"; return `<article class="decision"><h4>${t(action.titleKey)}</h4><p>${t(action.textKey)}</p><small>${t("scenario.costLine", { cost:action.cost||0, ap:action.actionPoints||1, days:action.lagDays||14 })}${cooldown?` • ${t("scenario.cooldown", { days:cooldown })}`:""}</small><button data-scenario-tutorial-action="${action.id}" ${disabled?"disabled":""}>${cooldown?t("scenario.wait"):t("action.execute")}</button></article>`; }).join("")}</div>`);
+  bind("[data-scenario-tutorial-action]", btn => actions.runScenarioTutorialAction(btn.dataset.scenarioTutorialAction));
+  setHTML("scenarioTutorialHistory", (tutorial.history || []).slice(-8).reverse().map(item => `<div class="historyRow"><b>${String(item.m).padStart(2,"0")}/${item.y}</b><span>${t("scenario.health")}: ${Number(item.health).toFixed(0)}</span><span>${t("scenario.readiness")}: ${Number(item.readiness).toFixed(1)}%</span><span>${t("scenario.missions")}: ${item.missions}</span></div>`).join("") || `<p>${t("scenario.noHistory")}</p>`);
 }
 
 function renderStore(state, actions) {
@@ -753,10 +875,91 @@ function renderRelease(state, actions) {
       <div><span>Status</span><b class="pos">${BUILD.status}</b></div>
       <div><span>Build</span><b>${BUILD.date} ${BUILD.time}</b></div>
     </div>
-    <p class="legalNote">${BUILD.summary}</p>
+    <p class="legalNote">${t("release.summary.current")}</p>
+    <div class="sector"><b data-i18n-final="true">${t("release16.regions.title")}</b><small data-i18n-final="true">${t("release.summary.current")}</small></div>
     <div class="sector"><b>Pacote oficial</b><small>${BUILD.artifact}</small></div>
     <div class="sector"><b>Fonte canônica</b><small>${BUILD.source} • SHA-256 ${BUILD.sourceSHA256}</small></div>
   `);
+
+  const alphaBeta = ensureAlphaBetaState(state);
+  const alphaSnapshot = calculateAlphaBetaSnapshot(state);
+  const activeChannel = BETA_CHANNELS.find(item => item.id === alphaBeta.activeChannel) || BETA_CHANNELS[0];
+  setHTML("alphaBetaOverview", `
+    <div class="healthBadge ${alphaSnapshot.publicationRisk > 58 ? "degraded" : alphaSnapshot.goldReadiness > 80 ? "" : "safe"}">${t(alphaBeta.lastGate?.messageKey || "alphaBeta.gate.progress")}</div>
+    <div class="econHero">
+      <div><span>${t("alphaBeta.goldReadiness")}</span><b>${Math.round(alphaSnapshot.goldReadiness)}%</b></div>
+      <div><span>${t("alphaBeta.gates")}</span><b>${alphaSnapshot.gatesPassed}/${alphaSnapshot.totalGates}</b></div>
+      <div><span>${t("alphaBeta.channel")}</span><b>${t(activeChannel.nameKey)}</b></div>
+    </div>
+    ${metric(t("alphaBeta.technical"), alphaSnapshot.technicalReadiness, alphaSnapshot.technicalReadiness < 70)}
+    ${metric(t("alphaBeta.gameplay"), alphaSnapshot.gameplayReadiness, alphaSnapshot.gameplayReadiness < 68)}
+    ${metric(t("alphaBeta.commercial"), alphaSnapshot.commercialReadiness, alphaSnapshot.commercialReadiness < 65)}
+    ${metric(t("alphaBeta.publicationRisk"), alphaSnapshot.publicationRisk, alphaSnapshot.publicationRisk > 55)}
+  `);
+  setHTML("alphaBetaMilestones", BETA_MILESTONES.map(item => {
+    const value = readAlphaBetaMetric(state, item.metric);
+    const done = value >= item.target;
+    return `<div class="sector ${done ? "goalDone" : ""}"><b>${done ? "✓" : item.icon} ${t(item.nameKey)}</b><small>${t(item.textKey)} • ${Math.round(value)}/${item.target}</small></div>`;
+  }).join(""));
+  setHTML("alphaBetaChannels", BETA_CHANNELS.map(channel => `<button class="policyCard ${channel.id === alphaBeta.activeChannel ? "active" : ""}" data-beta-channel="${channel.id}"><b>${channel.icon} ${t(channel.nameKey)}</b><small>${t(channel.textKey)}</small></button>`).join(""));
+  bind("[data-beta-channel]", btn => actions.setBetaChannel(btn.dataset.betaChannel));
+  setHTML("alphaBetaActions", ALPHA_BETA_ACTIONS.map(action => `<article class="decision"><h4>${t(action.titleKey)}</h4><p>${t(action.textKey)}</p><button data-alpha-beta-action="${action.id}">₿ ${action.cost} • ${action.actionPoints} PA</button></article>`).join(""));
+  bind("[data-alpha-beta-action]", btn => actions.runAlphaBetaAction(btn.dataset.alphaBetaAction));
+  setHTML("alphaBetaHistory", (alphaBeta.history || []).slice(-8).reverse().map(item => `<div class="feedItem info"><b>${String(item.m).padStart(2,"0")}/${item.y}</b><br>${t("alphaBeta.historyLine", { health: Math.round(item.health), gates: item.gates, risk: Math.round(item.risk) })}</div>`).join("") || `<p>${t("alphaBeta.noHistory")}</p>`);
+
+  const gold = ensureGoldMasterState(state);
+  const goldSnapshot = calculateGoldMasterSnapshot(state);
+  const activeGoldTrack = GOLD_RELEASE_TRACKS.find(item => item.id === gold.activeTrack) || GOLD_RELEASE_TRACKS[0];
+  setHTML("goldMasterOverview", `
+    <div class="healthBadge ${goldSnapshot.launchRisk > 58 ? "degraded" : goldSnapshot.goldScore >= 86 ? "" : "safe"}">${t(gold.lastGate?.messageKey || "gold.gate.progress")}</div>
+    <div class="econHero">
+      <div><span>${t("gold.score")}</span><b>${Math.round(goldSnapshot.goldScore)}%</b></div>
+      <div><span>${t("gold.gates")}</span><b>${goldSnapshot.gatesPassed}/${goldSnapshot.totalGates}</b></div>
+      <div><span>${t("gold.track")}</span><b>${t(activeGoldTrack.nameKey)}</b></div>
+    </div>
+    ${metric(t("gold.certification"), goldSnapshot.certification, goldSnapshot.certification < 76)}
+    ${metric(t("gold.publishing"), goldSnapshot.publishing, goldSnapshot.publishing < 70)}
+    ${metric(t("gold.sustainability"), goldSnapshot.sustainability, goldSnapshot.sustainability < 68)}
+    ${metric(t("gold.launchRisk"), goldSnapshot.launchRisk, goldSnapshot.launchRisk > 52)}
+  `);
+  setHTML("goldMasterGates", GOLD_CERTIFICATION_GATES.map(item => {
+    const value = readGoldMetric(state, item.metric);
+    const done = value >= item.target;
+    return `<div class="sector ${done ? "goalDone" : ""}"><b>${done ? "✓" : item.icon} ${t(item.nameKey)}</b><small>${t(item.textKey)} • ${Math.round(value)}/${item.target}</small></div>`;
+  }).join(""));
+  setHTML("goldMasterTracks", GOLD_RELEASE_TRACKS.map(track => `<button class="policyCard ${track.id === gold.activeTrack ? "active" : ""}" data-gold-track="${track.id}"><b>${track.icon} ${t(track.nameKey)}</b><small>${t(track.textKey)}</small></button>`).join(""));
+  bind("[data-gold-track]", btn => actions.setGoldReleaseTrack(btn.dataset.goldTrack));
+  setHTML("goldMasterActions", GOLD_MASTER_ACTIONS.map(action => `<article class="decision"><h4>${t(action.titleKey)}</h4><p>${t(action.textKey)}</p><button data-gold-action="${action.id}">₿ ${action.cost} • ${action.actionPoints} PA</button></article>`).join(""));
+  bind("[data-gold-action]", btn => actions.runGoldMasterAction(btn.dataset.goldAction));
+  setHTML("goldMasterHistory", (gold.history || []).slice(-8).reverse().map(item => `<div class="feedItem info"><b>${String(item.m).padStart(2,"0")}/${item.y}</b><br>${t("gold.historyLine", { score: Math.round(item.score), gates: item.gates, risk: Math.round(item.risk) })}</div>`).join("") || `<p>${t("gold.noHistory")}</p>`);
+
+
+
+  const intl = ensureInternationalLaunchState(state);
+  const intlSnapshot = calculateInternationalLaunchSnapshot(state);
+  const activeMarket = INTERNATIONAL_MARKETS.find(item => item.id === intl.activeMarket) || INTERNATIONAL_MARKETS[0];
+  setHTML("internationalLaunchOverview", `
+    <div class="healthBadge ${intlSnapshot.internationalRisk > 58 ? "degraded" : intlSnapshot.globalScore >= 88 ? "" : "safe"}">${t(intl.lastGate?.messageKey || "intl.gate.progress")}</div>
+    <div class="econHero">
+      <div><span>${t("intl.globalScore")}</span><b>${Math.round(intlSnapshot.globalScore)}%</b></div>
+      <div><span>${t("intl.gates")}</span><b>${intlSnapshot.gatesPassed}/${intlSnapshot.totalGates}</b></div>
+      <div><span>${t("intl.market")}</span><b>${t(activeMarket.nameKey)}</b></div>
+    </div>
+    ${metric(t("intl.marketFit"), intlSnapshot.marketFit, intlSnapshot.marketFit < 74)}
+    ${metric(t("intl.operationalReadiness"), intlSnapshot.operationalReadiness, intlSnapshot.operationalReadiness < 76)}
+    ${metric(t("intl.systemicHealth"), intlSnapshot.systemicHealth, intlSnapshot.systemicHealth < 70)}
+    ${metric(t("intl.internationalRisk"), intlSnapshot.internationalRisk, intlSnapshot.internationalRisk > 52)}
+  `);
+  setHTML("internationalLaunchGates", INTERNATIONAL_GATES.map(item => {
+    const value = readInternationalMetric(state, item.metric);
+    const done = value >= item.target;
+    return `<div class="sector ${done ? "goalDone" : ""}"><b>${done ? "✓" : item.icon} ${t(item.nameKey)}</b><small>${t(item.textKey)} • ${Math.round(value)}/${item.target}</small></div>`;
+  }).join(""));
+  setHTML("internationalLaunchMarkets", INTERNATIONAL_MARKETS.map(market => `<button class="policyCard ${market.id === intl.activeMarket ? "active" : ""}" data-international-market="${market.id}"><b>${market.icon} ${t(market.nameKey)}</b><small>${t(market.textKey)}</small></button>`).join(""));
+  bind("[data-international-market]", btn => actions.setInternationalMarket(btn.dataset.internationalMarket));
+  setHTML("internationalLaunchActions", INTERNATIONAL_LAUNCH_ACTIONS.map(action => `<article class="decision"><h4>${t(action.titleKey)}</h4><p>${t(action.textKey)}</p><button data-international-action="${action.id}">₿ ${action.cost} • ${action.actionPoints} PA</button></article>`).join(""));
+  bind("[data-international-action]", btn => actions.runInternationalLaunchAction(btn.dataset.internationalAction));
+  setHTML("internationalLaunchHistory", (intl.history || []).slice(-8).reverse().map(item => `<div class="feedItem info"><b>${String(item.m).padStart(2,"0")}/${item.y}</b><br>${t("intl.historyLine", { score: Math.round(item.score), gates: item.gates, risk: Math.round(item.risk) })}</div>`).join("") || `<p>${t("intl.noHistory")}</p>`);
 
   const pwa = getPWAStatus();
   const pwaMode = pwa.standalone ? "Aplicativo instalado" : pwa.supported ? "Navegador compatível" : "PWA indisponível";
@@ -803,16 +1006,16 @@ function renderRelease(state, actions) {
   `);
 
   setHTML("releaseChecklist", RELEASE_CHECKLIST.map(item => `<div class="sector goalDone">
-    <b>✓ ${item.title}</b>
-    <small>${item.detail}</small>
+    <b>✓ ${t(item.titleKey)}</b>
+    <small>${t(item.detailKey)}</small>
   </div>`).join(""));
 
   setHTML("testChecklist", TEST_CHECKLIST.map((item, i) => `<div class="sector">
-    <b>${String(i+1).padStart(2,"0")}</b> ${item}
+    <b>${String(i+1).padStart(2,"0")}</b> ${t(item.textKey)}
   </div>`).join(""));
 
   setHTML("nextReleaseSteps", NEXT_RELEASE_STEPS.map((item, i) => `<div class="feedItem info">
-    <b>Passo ${i+1}</b><br>${item}
+    <b data-i18n-final="true">${t("release.step")} ${i+1}</b><br><span data-i18n-final="true">${t(item.textKey)}</span>
   </div>`).join(""));
 }
 

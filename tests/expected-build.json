@@ -1,8 +1,8 @@
 {
-  "version": "1.7.4",
-  "stage_number": 22,
-  "status": "WORLD_DIPLOMACY_VERIFIED",
-  "stamp": "20260618_1812",
-  "artifact": "DIPLOCRAFT_v1.7.4_FASE-22_DIPLOMACIA-MUNDIAL_build_20260618_1812.zip",
-  "source_sha256": "c78785f5db9945c68377ed0b8d680999ab64668f4c232b9ae48e94574fa3e873"
+  "version": "2.0.0",
+  "stage_number": 29,
+  "status": "GOLD_V2_INTERNATIONAL_VERIFIED",
+  "stamp": "20260619_1854",
+  "artifact": "DIPLOCRAFT_v2.0.0_FASE-29_GOLD-V2-INTERNACIONAL_build_20260619_1854.zip",
+  "source_sha256": "59de07af832167c50b4f3fadb1be3827a7033754efb7041d930498a3ee71923f"
 }

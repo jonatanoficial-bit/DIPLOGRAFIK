@@ -1,6 +1,6 @@
 {
   "generated_by": "tools/build_assets.py",
-  "version": "1.7.1",
+  "version": "1.8.0",
   "policy": "Runtime paths are immutable inside this build. Source PNGs are provenance only.",
   "locked_paths": [
     "assets/runtime/backgrounds/bg_crisis_scene_v1--desktop.avif",

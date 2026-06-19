@@ -1,9 +1,9 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "1.7.3",
-  "artifact": "DIPLOCRAFT_v1.7.3_FASE-21_IMPRENSA-MIDIA-E-OPINIAO-PUBLICA_build_20260618_1726.zip",
-  "source_sha256": "ef8e4f0e6c1a999ad16310572dc41eef07a96846b2f0b02faf2505b92ca29bdf",
-  "generator_stdout": "Build truth verified: v1.7.3",
+  "version": "2.0.0",
+  "artifact": "DIPLOCRAFT_v2.0.0_FASE-29_GOLD-V2-INTERNACIONAL_build_20260619_1854.zip",
+  "source_sha256": "59de07af832167c50b4f3fadb1be3827a7033754efb7041d930498a3ee71923f",
+  "generator_stdout": "Build truth verified: v2.0.0",
   "generator_stderr": "",
   "checks": {
     "generator_check_passes": true,

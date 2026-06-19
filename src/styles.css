@@ -2436,3 +2436,40 @@ body.save-manager-open{overflow:hidden}.danger{background:linear-gradient(#451c2
 .mediaMetricGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.mediaAgendaGrid,.mediaOutletGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.mediaAgendaCard,.mediaOutletCard{border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:12px;background:rgba(0,0,0,.22)}.mediaAgendaCard header,.mediaOutletCard header{display:flex;gap:10px;align-items:flex-start;margin-bottom:8px}.mediaAgendaCard header>span,.mediaOutletCard header>span{width:34px;height:34px;display:grid;place-items:center;border-radius:12px;background:rgba(233,193,111,.14)}.mediaAgendaCard b,.mediaOutletCard b{display:block;color:#fff}.mediaAgendaCard small,.mediaOutletCard small{color:var(--muted);line-height:1.35}.mediaActionsLayout .decisionDeckInner{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.mediaStrategyLayout .policyGridInner{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
 @media (max-width: 880px){.mediaHero{grid-template-columns:repeat(2,minmax(0,1fr))}.mediaMetricGrid,.mediaAgendaGrid,.mediaOutletGrid,.mediaActionsLayout .decisionDeckInner,.mediaStrategyLayout .policyGridInner{grid-template-columns:1fr}.mediaTopLayout,.mediaStrategyLayout,.mediaOutletsLayout,.mediaActionsLayout{gap:10px}.mediaAgendaCard,.mediaOutletCard{padding:10px}.pressBox #pressQuestion{font-size:.94rem}}
 @media (max-height: 430px) and (orientation: landscape){.mediaHero{grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}.mediaHero>div{padding:8px}.mediaHero b{font-size:1.06rem}.mediaAgendaGrid,.mediaOutletGrid,.mediaActionsLayout .decisionDeckInner,.mediaStrategyLayout .policyGridInner{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.mediaAgendaCard,.mediaOutletCard{padding:8px}.mediaMetricGrid{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}}
+
+/* Phase 23 — Defense, intelligence and international security */
+.defenseTopLayout,
+.defenseDoctrineLayout,
+.intelligenceTopLayout,
+.intelligenceActionLayout,
+.intelligenceHistoryLayout {
+  align-items: stretch;
+}
+.defenseHero > div {
+  min-width: min(100%, 12rem);
+}
+.defenseBranchGrid,
+.defenseDeskGrid {
+  grid-template-columns: repeat(auto-fit, minmax(13.5rem, 1fr));
+}
+.defenseIntelMatrix article {
+  min-height: 8rem;
+}
+@media (max-width: 520px) {
+  .defenseBranchGrid,
+  .defenseDeskGrid {
+    grid-template-columns: 1fr;
+  }
+  .defenseHero {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+/* Phase 26 — Scenarios, Tutorial and Onboarding */
+.scenarioHero{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:12px}
+.scenarioHero>div{padding:12px;border:1px solid rgba(126,214,255,.24);border-radius:16px;background:linear-gradient(180deg,rgba(126,214,255,.10),rgba(255,255,255,.025));box-shadow:0 10px 28px rgba(0,0,0,.16)}
+.scenarioHero span,.scenarioHero small{display:block;color:var(--muted);font-size:.78rem;line-height:1.25}.scenarioHero b{display:block;font-size:1.38rem;color:#bfeaff;margin:3px 0}.scenarioHero .neg{color:#ff6b6b}.scenarioHero .pos{color:#76e3a0}
+.scenarioMetricGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.missionGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.missionCard{border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:12px;background:rgba(0,0,0,.22)}.missionCard header{display:flex;gap:10px;align-items:flex-start;margin-bottom:8px}.missionCard header>span{width:34px;height:34px;display:grid;place-items:center;border-radius:12px;background:rgba(126,214,255,.14)}.missionCard b{display:block;color:#fff}.missionCard small{color:var(--muted);line-height:1.35}.scenarioTutorialLayout .policyGridInner,.scenarioTutorialActions .decisionDeckInner{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (max-width: 880px){.scenarioHero{grid-template-columns:repeat(2,minmax(0,1fr))}.scenarioMetricGrid,.missionGrid,.scenarioTutorialLayout .policyGridInner,#scenarioTutorialActions .decisionDeckInner{grid-template-columns:1fr}.scenarioTutorialTopLayout,.scenarioTutorialLayout{gap:10px}.missionCard{padding:10px}}
+@media (max-height: 430px) and (orientation: landscape){.scenarioHero{grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}.scenarioHero>div{padding:8px}.scenarioHero b{font-size:1.05rem}.missionGrid,.scenarioTutorialLayout .policyGridInner,#scenarioTutorialActions .decisionDeckInner{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.missionCard{padding:8px}.scenarioMetricGrid{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}}

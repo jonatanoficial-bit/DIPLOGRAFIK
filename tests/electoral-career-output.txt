@@ -1,0 +1,24 @@
+PASS data_file_exists
+PASS system_file_exists
+PASS state_factory_includes_electoral_career
+PASS core_loop_processes_monthly
+PASS core_loop_registers_election_result
+PASS game_actions_include_strategy
+PASS game_actions_include_action_runner
+PASS render_imports_snapshot
+PASS render_has_strategy_panel
+PASS render_has_segments_panel
+PASS render_has_history_panel
+PASS index_has_electoral_panels
+PASS i18n_seed_has_phase_keys
+PASS build_config_phase25
+PASS package_script_registered
+PASS guide_exists
+PASS known_issues_exists
+PASS upload_prompt_preserved
+PASS strategy_count_4
+PASS action_count_8
+PASS segment_count_6
+PASS save_schema_preserved
+PASS no_standalone_marker
+OVERALL PASS 23/23 checks

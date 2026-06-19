@@ -23,13 +23,13 @@ export function setupTutorial(renderCallback) {
 }
 
 export function startTutorial(force = false) {
-  if (!force && localStorage.getItem("diplocraft_tutorial_done_v083") === "1") return;
+  if (!force && localStorage.getItem("diplocraft_tutorial_done_v178") === "1") return;
   index = 0;
   openStep();
 }
 
 export function maybeAutoTutorial() {
-  if (localStorage.getItem("diplocraft_tutorial_done_v083") !== "1") {
+  if (localStorage.getItem("diplocraft_tutorial_done_v178") !== "1") {
     setTimeout(() => startTutorial(false), 600);
   }
 }
@@ -56,7 +56,7 @@ function openStep() {
 
 function nextStep() {
   if (index >= TUTORIAL_STEPS.length - 1) {
-    localStorage.setItem("diplocraft_tutorial_done_v083", "1");
+    localStorage.setItem("diplocraft_tutorial_done_v178", "1");
     feedback("Tutorial concluído. Boa sorte no mandato.", "positive");
     closeTutorial();
     return;

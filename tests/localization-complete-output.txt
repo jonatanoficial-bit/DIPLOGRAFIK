@@ -16,4 +16,4 @@ PASS text_expansion_is_bounded
 PASS save_schema_preserved
 PASS locale en (18/18) • missing 0 • overflow 0
 PASS locale es (18/18) • missing 0 • overflow 0
-OVERALL PASS — 56 checks • 1630 keys • 422 content literals
+OVERALL PASS — 56 checks • 2605 keys • 413 content literals

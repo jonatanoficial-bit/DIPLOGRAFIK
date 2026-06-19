@@ -1,7 +1,7 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "1.7.1",
-  "phase": "Governo e Instituições",
+  "version": "1.8.0",
+  "phase": "GOLD MASTER E PUBLICAÇÃO COMERCIAL",
   "static_checks": {
     "safe_area_css": true,
     "keyboard_css_contract": true,
@@ -54,7 +54,7 @@
         "menu_button_min_height": 50,
         "create": {
           "clientHeight": 568,
-          "scrollHeight": 4789,
+          "scrollHeight": 4791,
           "overflowY": "auto"
         },
         "bottom_nav": {
@@ -89,7 +89,7 @@
         },
         "tab_scroll": {
           "saved": 0,
-          "restored": 33
+          "restored": 12
         }
       },
       "console_errors": [],

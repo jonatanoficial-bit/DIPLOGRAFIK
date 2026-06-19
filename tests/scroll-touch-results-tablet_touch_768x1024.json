@@ -1,7 +1,7 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "1.7.0",
-  "phase": "Orçamento e Tributação",
+  "version": "1.8.0",
+  "phase": "GOLD MASTER E PUBLICAÇÃO COMERCIAL",
   "static_checks": {
     "scroll_module_exists": true,
     "scroll_module_loaded": true,

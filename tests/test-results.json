@@ -1,8 +1,8 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "1.7.4",
-  "phase": "Diplomacia Mundial",
-  "generated_at": "2026-06-18T22:11:41+0000",
+  "version": "2.0.0",
+  "phase": "GOLD V2 INTERNACIONAL",
+  "generated_at": "2026-06-19T19:16:22+0000",
   "release_blocking": true,
   "execution_model": "independent suites + final report aggregator",
   "steps": [
@@ -34,12 +34,12 @@
     {
       "name": "node-tests",
       "passed": true,
-      "checks": 44
+      "checks": 69
     },
     {
       "name": "simulation-matrix",
       "passed": true,
-      "checks": 12
+      "checks": 11
     },
     {
       "name": "browser-regression",
@@ -140,12 +140,47 @@
       "name": "world-diplomacy-audit",
       "passed": true,
       "checks": 22
+    },
+    {
+      "name": "defense-intelligence-audit",
+      "passed": true,
+      "checks": 24
+    },
+    {
+      "name": "national-crisis-audit",
+      "passed": true,
+      "checks": 22
+    },
+    {
+      "name": "electoral-career-audit",
+      "passed": true,
+      "checks": 23
+    },
+    {
+      "name": "scenario-tutorial-audit",
+      "passed": true,
+      "checks": 24
+    },
+    {
+      "name": "alpha-beta-audit",
+      "passed": true,
+      "checks": 22
+    },
+    {
+      "name": "gold-master-audit",
+      "passed": true,
+      "checks": 22
+    },
+    {
+      "name": "international-launch-audit",
+      "passed": true,
+      "checks": 22
     }
   ],
-  "passed_steps": 27,
-  "total_steps": 27,
-  "passed_checks": 1495,
-  "total_checks": 1495,
+  "passed_steps": 34,
+  "total_steps": 34,
+  "passed_checks": 1678,
+  "total_checks": 1678,
   "balance_warnings": [],
   "passed": true
 }

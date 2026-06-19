@@ -1,0 +1,33 @@
+{
+  "project": "DIPLOCRAFT",
+  "version": "1.7.5",
+  "phase": "Defesa, Inteligência e Segurança Internacional",
+  "check_count": 24,
+  "checks": {
+    "version_is_phase_23": true,
+    "status_verified": true,
+    "base_is_phase_22": true,
+    "save_schema_preserved": true,
+    "upload_prompt_present": true,
+    "data_module_exists": true,
+    "system_module_exists": true,
+    "state_factory_integrates_defense": true,
+    "core_loop_monthly_cycle_integrates_defense": true,
+    "game_actions_bound": true,
+    "render_has_defense_panels": true,
+    "index_has_defense_sections": true,
+    "four_doctrines_defined": true,
+    "six_branches_defined": true,
+    "six_intelligence_desks_defined": true,
+    "eight_actions_defined": true,
+    "incidents_defined": true,
+    "defense_i18n_pt_en_es": true,
+    "package_script_added": true,
+    "quality_gate_mentions_phase_23": true,
+    "previous_phase_guides_preserved": true,
+    "phase_23_guides_added": true,
+    "no_asset_paths_changed": true,
+    "config_declares_defense_intelligence": true
+  },
+  "passed": true
+}

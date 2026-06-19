@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "check_count": 22,
+  "checks": {
+    "data_file_exists": true,
+    "system_file_exists": true,
+    "state_factory_includes_alpha_beta": true,
+    "core_loop_processes_monthly": true,
+    "game_actions_include_channel": true,
+    "game_actions_include_action_runner": true,
+    "render_imports_snapshot": true,
+    "render_has_overview_panel": true,
+    "render_has_actions_panel": true,
+    "index_has_release_panels": true,
+    "i18n_seed_has_phase_keys": true,
+    "build_config_phase27": true,
+    "package_script_registered": true,
+    "guide_exists": true,
+    "known_issues_exists": true,
+    "upload_prompt_preserved": true,
+    "channel_count_4": true,
+    "milestone_count_8": true,
+    "action_count_8": true,
+    "node_test_exists": true,
+    "save_schema_preserved": true,
+    "no_standalone_marker": true
+  }
+}

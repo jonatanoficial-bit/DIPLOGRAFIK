@@ -1,7 +1,7 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "1.7.1",
-  "phase": "Governo e Instituições",
+  "version": "1.8.0",
+  "phase": "GOLD MASTER E PUBLICAÇÃO COMERCIAL",
   "static_checks": {
     "scroll_module_exists": true,
     "scroll_module_loaded": true,
@@ -50,7 +50,7 @@
       "measurements": {
         "create_initial": {
           "scrollTop": 0,
-          "scrollHeight": 3997,
+          "scrollHeight": 3998,
           "clientHeight": 768,
           "overflowY": "auto",
           "touchAction": "pan-y pinch-zoom",
@@ -59,11 +59,11 @@
         },
         "mouse_wheel": {
           "before": 0,
-          "after": 576
+          "after": 556
         },
         "page_down": {
-          "before": 576,
-          "after": 1202
+          "before": 556,
+          "after": 1165
         },
         "wheel_steps_to_party_controls": 7,
         "wheel_steps_to_start": 3

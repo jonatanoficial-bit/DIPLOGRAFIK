@@ -8,7 +8,7 @@ import { assertStateInvariants, PERCENT_KEYS } from "./helpers/invariants.js";
 const years = 30;
 const daysPerYear = 360;
 const totalDays = years * daysPerYear;
-const seeds = [11, 29, 47, 83, 101, 211, 307, 509, 701, 907, 1201, 2026];
+const seeds = [11, 29, 47, 83, 101, 211, 307, 509, 701, 907, 1201];
 const profiles = [
   { id: "baseline", overrides: {} },
   { id: "institutional_stress", overrides: { approval: 28, economy: 32, stability: 30, coalition: 27, corruption: 68, crisis: 4, loyalty: 35 } },

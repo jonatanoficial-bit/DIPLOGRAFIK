@@ -5,16 +5,16 @@
     "fetch",
     "message"
   ],
-  "current_cache": "diplocraft-shell-v1.7.3-20260618_1726",
-  "installed_count": 184,
+  "current_cache": "diplocraft-shell-v1.8.0-20260619_1642",
+  "installed_count": 198,
   "names_after_activate": [
-    "diplocraft-shell-v1.7.3-20260618_1726"
+    "diplocraft-shell-v1.8.0-20260619_1642"
   ],
   "claimed": true,
   "skipped": true,
   "version_message": {
-    "version": "1.7.3",
-    "cache": "diplocraft-shell-v1.7.3-20260618_1726"
+    "version": "1.8.0",
+    "cache": "diplocraft-shell-v1.8.0-20260619_1642"
   },
   "navigation_offline": true,
   "asset_offline": true,

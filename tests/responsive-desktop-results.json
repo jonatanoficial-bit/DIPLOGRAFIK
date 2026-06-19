@@ -1,7 +1,7 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "1.7.1",
-  "phase": "Governo e Instituições",
+  "version": "1.8.0",
+  "phase": "GOLD MASTER E PUBLICAÇÃO COMERCIAL",
   "execution_model": "one isolated browser process per desktop viewport + deterministic aggregator",
   "expected_cases": [
     "tablet_landscape_1024x768",
@@ -171,7 +171,7 @@
         },
         "sidebar_toggle": {
           "before": 248,
-          "after": 86.75,
+          "after": 88.65625,
           "stored": "true"
         },
         "dashboard_layout": {
@@ -268,28 +268,28 @@
         },
         "sidebar_toggle": {
           "before": 248,
-          "after": 86.75,
+          "after": 88.671875,
           "stored": "true"
         },
         "dashboard_layout": {
           "first": {
             "x": 272,
-            "y": 604,
+            "y": 598,
             "width": 948.71875,
             "height": 529,
-            "top": 604,
+            "top": 598,
             "right": 1220.71875,
-            "bottom": 1133,
+            "bottom": 1127,
             "left": 272
           },
           "second": {
             "x": 1236.71875,
-            "y": 604,
+            "y": 598,
             "width": 659.265625,
             "height": 529,
-            "top": 604,
+            "top": 598,
             "right": 1895.984375,
-            "bottom": 1133,
+            "bottom": 1127,
             "left": 1236.71875
           },
           "two_columns": true
@@ -297,8 +297,8 @@
         "content": {
           "left": 272,
           "right": 1896,
-          "top": 303,
-          "bottom": 1982.953125,
+          "top": 297,
+          "bottom": 1976.953125,
           "width": 1624,
           "height": 1679.953125
         }
@@ -365,28 +365,28 @@
         },
         "sidebar_toggle": {
           "before": 248,
-          "after": 86.75,
+          "after": 97,
           "stored": "true"
         },
         "dashboard_layout": {
           "first": {
             "x": 504,
-            "y": 604,
+            "y": 598,
             "width": 1052.546875,
             "height": 529,
-            "top": 604,
+            "top": 598,
             "right": 1556.546875,
-            "bottom": 1133,
+            "bottom": 1127,
             "left": 504
           },
           "second": {
             "x": 1572.546875,
-            "y": 604,
+            "y": 598,
             "width": 731.4375,
             "height": 529,
-            "top": 604,
+            "top": 598,
             "right": 2303.984375,
-            "bottom": 1133,
+            "bottom": 1127,
             "left": 1572.546875
           },
           "two_columns": true
@@ -394,8 +394,8 @@
         "content": {
           "left": 504,
           "right": 2304,
-          "top": 303,
-          "bottom": 1982.953125,
+          "top": 297,
+          "bottom": 1976.953125,
           "width": 1800,
           "height": 1679.953125
         },

@@ -42,6 +42,14 @@ python3 tests/run_population_audit.py
 python3 tests/run_deep_economy_audit.py
 python3 tests/run_budget_tax_audit.py
 python3 tests/run_government_institutions_audit.py
-python3 tests/run_quality_gate.py
-
+python3 tests/run_cabinet_administration_audit.py
+python3 tests/run_media_public_opinion_audit.py
 python3 tests/run_world_diplomacy_audit.py
+python3 tests/run_defense_intelligence_audit.py
+python3 tests/run_national_crisis_audit.py
+python3 tests/run_electoral_career_audit.py
+python3 tests/run_scenario_tutorial_audit.py
+python3 tests/run_alpha_beta_audit.py
+python3 tests/run_gold_master_audit.py
+python3 tests/run_international_launch_audit.py
+python3 tests/run_quality_gate.py

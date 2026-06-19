@@ -1,3 +1,1 @@
-STATIC PASS 9/9
-PASS phone_landscape_844x390 28/28
-OVERALL PASS 37 checks
+RUN phone_landscape_844x390

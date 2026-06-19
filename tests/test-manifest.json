@@ -1,6 +1,6 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "1.7.0",
+  "version": "1.7.8",
   "release_blocking": true,
   "suites": [
     "build-generator-check",
@@ -22,7 +22,8 @@
     "localization-complete-audit",
     "core-loop-2-audit",
     "country-population-audit",
-    "budget-tax-audit"
+    "budget-tax-audit",
+    "scenario-tutorial-audit"
   ],
   "mobile_profiles": [
     "320x568 portrait",
@@ -100,5 +101,12 @@
     "six structural actions",
     "36-month bounded fiscal history",
     "long-run integration with deep economy"
+  ],
+  "scenario_tutorial_profiles": [
+    "guided scenario packs",
+    "tutorial tracks",
+    "onboarding missions",
+    "mobile progression panel",
+    "save migration"
   ]
 }

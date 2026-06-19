@@ -1,0 +1,23 @@
+PASS data_file_exists
+PASS system_file_exists
+PASS state_factory_includes_national_crisis
+PASS core_loop_processes_monthly
+PASS game_actions_include_protocol
+PASS game_actions_include_action_runner
+PASS render_imports_system
+PASS render_has_protocol_panel
+PASS render_has_domain_panel
+PASS render_has_scenario_panel
+PASS index_has_upload_prompt
+PASS index_has_crisis_panels
+PASS i18n_seed_has_phase_keys
+PASS build_config_phase24
+PASS package_script_registered
+PASS guide_exists
+PASS known_issues_exists
+PASS protocol_count_4
+PASS action_count_8
+PASS scenario_count_4
+PASS save_schema_preserved
+PASS no_standalone_marker
+OVERALL PASS 22/22 checks

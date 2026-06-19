@@ -2,20 +2,20 @@
 export const BUILD = Object.freeze({
   "project": "DIPLOCRAFT",
   "productName": "DIPLOCRAFT — Simulador Político e Geopolítico",
-  "version": "1.7.4",
-  "stageNumber": 22,
-  "stageName": "Diplomacia Mundial",
-  "stage": "Fase 22 — Diplomacia Mundial",
-  "stageShort": "Fase 22 • Diplomacia Mundial",
-  "date": "18/06/2026",
-  "dateISO": "2026-06-18",
-  "time": "18:12",
+  "version": "2.0.0",
+  "stageNumber": 29,
+  "stageName": "GOLD V2 INTERNACIONAL",
+  "stage": "Fase 29 — GOLD V2 INTERNACIONAL",
+  "stageShort": "Fase 29 • GOLD V2 INTERNACIONAL",
+  "date": "19/06/2026",
+  "dateISO": "2026-06-19",
+  "time": "18:54",
   "timezone": "America/Sao_Paulo",
-  "stamp": "20260618_1812",
-  "status": "WORLD_DIPLOMACY_VERIFIED",
-  "artifact": "DIPLOCRAFT_v1.7.4_FASE-22_DIPLOMACIA-MUNDIAL_build_20260618_1812.zip",
+  "stamp": "20260619_1854",
+  "status": "GOLD_V2_INTERNATIONAL_VERIFIED",
+  "artifact": "DIPLOCRAFT_v2.0.0_FASE-29_GOLD-V2-INTERNACIONAL_build_20260619_1854.zip",
   "source": "build.config.json",
-  "sourceSHA256": "c78785f5db9945c68377ed0b8d680999ab64668f4c232b9ae48e94574fa3e873",
+  "sourceSHA256": "59de07af832167c50b4f3fadb1be3827a7033754efb7041d930498a3ee71923f",
   "saveSchema": 3,
   "saveKey": "diplocraft_save_v101",
   "defaultLocale": "pt-BR",
@@ -102,7 +102,7 @@ export const BUILD = Object.freeze({
     "party_logo_cards": 12,
     "audit": "tests/run_government_creation_audit.py"
   },
-  "summary": "Sistema profundo de diplomacia mundial com doutrinas diplomáticas, soft power, confiança global, acesso comercial, blocos geopolíticos, agenda internacional, ações multilaterais e integração com economia, mídia, instituições e segurança."
+  "summary": "Gold v2.0 Internacional com localização reforçada, mercados globais, compliance multirregional, suporte, loja, comunidade, telemetria segura e operação global integrada ao Gold Master, Alpha/Beta, PWA, saves, mobile e Core Loop 2.0."
 });
 
-export const BUILD_LABEL = "DIPLOCRAFT v1.7.4 • 18/06/2026 18:12 • Fase 22 • Diplomacia Mundial";
+export const BUILD_LABEL = "DIPLOCRAFT v2.0.0 • 19/06/2026 18:54 • Fase 29 • GOLD V2 INTERNACIONAL";

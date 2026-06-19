@@ -1,12 +1,12 @@
 {
   "generated_from": "build.config.json",
-  "source_sha256": "c78785f5db9945c68377ed0b8d680999ab64668f4c232b9ae48e94574fa3e873",
+  "source_sha256": "59de07af832167c50b4f3fadb1be3827a7033754efb7041d930498a3ee71923f",
   "canonical_name": "DIPLOCRAFT",
   "product_type": "political-geopolitical-simulator",
   "edition": "International Development Build",
-  "current_version": "1.7.4",
-  "current_phase": 22,
-  "current_stage": "Fase 22 — Diplomacia Mundial",
+  "current_version": "2.0.0",
+  "current_phase": 29,
+  "current_stage": "Fase 29 — GOLD V2 INTERNACIONAL",
   "default_language": "pt-BR",
   "supported_languages": [
     "pt-BR",

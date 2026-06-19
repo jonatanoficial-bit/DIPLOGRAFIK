@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "check_count": 22,
+  "checks": {
+    "data_file_exists": true,
+    "system_file_exists": true,
+    "state_factory_includes_national_crisis": true,
+    "core_loop_processes_monthly": true,
+    "game_actions_include_protocol": true,
+    "game_actions_include_action_runner": true,
+    "render_imports_system": true,
+    "render_has_protocol_panel": true,
+    "render_has_domain_panel": true,
+    "render_has_scenario_panel": true,
+    "index_has_upload_prompt": true,
+    "index_has_crisis_panels": true,
+    "i18n_seed_has_phase_keys": true,
+    "build_config_phase24": true,
+    "package_script_registered": true,
+    "guide_exists": true,
+    "known_issues_exists": true,
+    "protocol_count_4": true,
+    "action_count_8": true,
+    "scenario_count_4": true,
+    "save_schema_preserved": true,
+    "no_standalone_marker": true
+  }
+}

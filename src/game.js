@@ -25,6 +25,13 @@ import { CABINET_STYLES, CABINET_ACTIONS } from "./data/cabinetAdministrationDat
 import { GOVERNMENT_ACTIONS, LAW_PROJECTS } from "./data/governmentData.js";
 import { MEDIA_ACTIONS, PRESS_BRIEFINGS, MEDIA_DOCTRINES } from "./data/mediaData.js";
 import { WORLD_DIPLOMACY_ACTIONS, DIPLOMACY_DOCTRINES } from "./data/worldDiplomacyData.js";
+import { DEFENSE_DOCTRINES, DEFENSE_INTELLIGENCE_ACTIONS } from "./data/defenseIntelligenceData.js";
+import { CRISIS_PROTOCOLS, NATIONAL_CRISIS_ACTIONS } from "./data/nationalCrisisData.js";
+import { ELECTORAL_STRATEGIES, ELECTORAL_CAREER_ACTIONS } from "./data/electoralCareerData.js";
+import { SCENARIO_PACKS, TUTORIAL_TRACKS_ADVANCED, SCENARIO_TUTORIAL_ACTIONS } from "./data/scenarioTutorialData.js";
+import { BETA_CHANNELS, ALPHA_BETA_ACTIONS } from "./data/alphaBetaData.js";
+import { GOLD_RELEASE_TRACKS, GOLD_MASTER_ACTIONS } from "./data/goldMasterData.js";
+import { INTERNATIONAL_MARKETS, INTERNATIONAL_LAUNCH_ACTIONS } from "./data/internationalLaunchData.js";
 import { CAMPAIGN_ACTIONS } from "./data/electionData.js";
 import { TREATIES, DIPLOMACY_ACTIONS } from "./data/diplomacyData.js";
 import { MILITARY_ACTIONS, INTEL_OPERATIONS } from "./data/securityData.js";
@@ -43,6 +50,13 @@ import { voteLaw as processLawVote } from "./systems/government.js";
 import { answerPressQuestion, ensureMediaPublicState, setMediaDoctrine as setGovernmentMediaDoctrine, applyMediaPublicEffects } from "./systems/media.js";
 import { ensureDiplomacyState, countryReaction, applyTreaty, diplomaticAction } from "./systems/diplomacy.js";
 import { ensureWorldDiplomacyState, setWorldDiplomacyDoctrine as setWorldDiplomacyDoctrineSystem, applyWorldDiplomacyEffects } from "./systems/worldDiplomacy.js";
+import { ensureDefenseIntelligenceState, setDefenseDoctrine as setDefenseDoctrineSystem, applyDefenseIntelligenceEffects } from "./systems/defenseIntelligence.js";
+import { ensureNationalCrisisState, setNationalCrisisProtocol as setNationalCrisisProtocolSystem, applyNationalCrisisEffects } from "./systems/nationalCrisis.js";
+import { ensureElectoralCareerState, setElectoralStrategy as setElectoralStrategySystem, applyElectoralCareerEffects } from "./systems/electoralCareer.js";
+import { ensureScenarioTutorialState, setScenarioPack as setScenarioPackSystem, setTutorialTrack as setTutorialTrackSystem, applyScenarioTutorialEffects } from "./systems/scenarioTutorial.js";
+import { ensureAlphaBetaState, setBetaChannel as setBetaChannelSystem, applyAlphaBetaEffects } from "./systems/alphaBeta.js";
+import { ensureGoldMasterState, setGoldTrack as setGoldTrackSystem, applyGoldMasterEffects } from "./systems/goldMaster.js";
+import { ensureInternationalLaunchState, setInternationalMarket as setInternationalMarketSystem, applyInternationalLaunchEffects } from "./systems/internationalLaunch.js";
 import { ensureSecurityState, runMilitaryAction as processMilitaryAction, runIntelOperation as processIntelOperation } from "./systems/security.js";
 import { ensureCrisisState, runCrisisAction as processCrisisAction } from "./systems/crisis.js";
 import { ensureProgressionState, addXP, checkAchievements, checkMandateGoals, updateGlobalRank, claimDailyReward } from "./systems/progression.js";
@@ -104,6 +118,13 @@ function applyRecoveredState(restored) {
   ensureCabinetState(state);
   ensureMediaPublicState(state);
   ensureWorldDiplomacyState(state);
+  ensureDefenseIntelligenceState(state);
+  ensureNationalCrisisState(state);
+  ensureElectoralCareerState(state);
+  ensureScenarioTutorialState(state);
+  ensureAlphaBetaState(state);
+  ensureGoldMasterState(state);
+  ensureInternationalLaunchState(state);
   updateGlobalRank(state);
   renderGame("snapshot-restored");
   updateMobileChrome();
@@ -323,6 +344,35 @@ const actions = {
     log(t("worldDiplomacy.actionStarted", { name: t(action.titleKey) }), "positive");
     renderGame("world-diplomacy-action");
   },
+  setDefenseDoctrine(id) {
+    const doctrine = DEFENSE_DOCTRINES.find(item => item.id === id);
+    if (!doctrine) return renderGame();
+    if (state.defenseIntelligence?.activeDoctrine === id) { log(t("defense.doctrineAlreadyActive"), "info"); return renderGame(); }
+    if (!consumeActionCapacity(state, 1, log, t(doctrine.nameKey))) return renderGame();
+    const selected = setDefenseDoctrineSystem(state, id);
+    const legacyEffects = applyDefenseIntelligenceEffects(state, selected.effects || {});
+    applyEffects(state, legacyEffects);
+    state.cooldowns[`defense:doctrine:${id}`] = 30;
+    addXP(state, 6, log);
+    log(t("defense.doctrineChanged", { name: t(selected.nameKey) }), "positive");
+    renderGame("defense-doctrine");
+  },
+  runDefenseIntelligenceAction(id) {
+    const action = DEFENSE_INTELLIGENCE_ACTIONS.find(item => item.id === id);
+    if (!action) return renderGame();
+    const cooldownKey = `defense:intelligence:action:${id}`;
+    if (Number(state.cooldowns?.[cooldownKey] || 0) > 0) { log(t("defense.cooldownWarning"), "warning"); return renderGame(); }
+    if (Number(state.treasury || 0) < Number(action.cost || 0)) { log(t("defense.insufficientTreasury"), "negative"); return renderGame(); }
+    if (!consumeActionCapacity(state, action.actionPoints || 1, log, t(action.titleKey))) return renderGame();
+    state.treasury -= Number(action.cost || 0);
+    const legacyEffects = applyDefenseIntelligenceEffects(state, action.effects || {});
+    applyEffects(state, legacyEffects);
+    scheduleActionConsequence(state, { id: `defense-intelligence-${id}`, title: t(action.titleKey), effects: legacyEffects, lagDays: action.lagDays || 45 }, t("defense.phaseName"));
+    state.cooldowns[cooldownKey] = Number(action.cooldown || 70);
+    addXP(state, 9, log);
+    log(t("defense.actionStarted", { name: t(action.titleKey) }), "positive");
+    renderGame("defense-intelligence-action");
+  },
   runCampaignAction(id) {
     const action = CAMPAIGN_ACTIONS.find(a => a.id === id);
     if (!action) return;
@@ -367,6 +417,198 @@ const actions = {
     processIntelOperation(state, operation, log);
     state.cooldowns[id] = operation.cooldown || 8;
     renderGame();
+  },
+
+  setNationalCrisisProtocol(id) {
+    const protocol = CRISIS_PROTOCOLS.find(item => item.id === id);
+    if (!protocol) return renderGame();
+    if (state.nationalCrisis?.activeProtocol === id) { log(t("nationalCrisis.protocolAlreadyActive"), "info"); return renderGame(); }
+    if (!consumeActionCapacity(state, 1, log, t(protocol.nameKey))) return renderGame();
+    const selected = setNationalCrisisProtocolSystem(state, id);
+    const legacyEffects = applyNationalCrisisEffects(state, selected.effects || {});
+    applyEffects(state, legacyEffects);
+    state.cooldowns[`national:crisis:protocol:${id}`] = 30;
+    addXP(state, 7, log);
+    log(t("nationalCrisis.protocolChanged", { name: t(selected.nameKey) }), "positive");
+    renderGame("national-crisis-protocol");
+  },
+  runNationalCrisisAction(id) {
+    const action = NATIONAL_CRISIS_ACTIONS.find(item => item.id === id);
+    if (!action) return renderGame();
+    const cooldownKey = `national:crisis:action:${id}`;
+    if (Number(state.cooldowns?.[cooldownKey] || 0) > 0) { log(t("nationalCrisis.cooldownWarning"), "warning"); return renderGame(); }
+    if (Number(state.treasury || 0) < Number(action.cost || 0)) { log(t("nationalCrisis.insufficientTreasury"), "negative"); return renderGame(); }
+    if (!consumeActionCapacity(state, action.actionPoints || 1, log, t(action.titleKey))) return renderGame();
+    state.treasury -= Number(action.cost || 0);
+    const legacyEffects = applyNationalCrisisEffects(state, action.effects || {});
+    applyEffects(state, legacyEffects);
+    scheduleActionConsequence(state, { id: `national-crisis-${id}`, title: t(action.titleKey), effects: legacyEffects, lagDays: action.lagDays || 30 }, t("nationalCrisis.phaseName"));
+    state.cooldowns[cooldownKey] = Number(action.cooldown || 55);
+    addXP(state, 10, log);
+    log(t("nationalCrisis.actionStarted", { name: t(action.titleKey) }), "positive");
+    renderGame("national-crisis-action");
+  },
+  setElectoralStrategy(id) {
+    const strategy = ELECTORAL_STRATEGIES.find(item => item.id === id);
+    if (!strategy) return renderGame();
+    if (state.electoralCareer?.activeStrategy === id) { log(t("electoral.strategyAlreadyActive"), "info"); return renderGame(); }
+    if (!consumeActionCapacity(state, 1, log, t(strategy.nameKey))) return renderGame();
+    const selected = setElectoralStrategySystem(state, id);
+    const legacyEffects = applyElectoralCareerEffects(state, selected.effects || {});
+    applyEffects(state, legacyEffects);
+    state.cooldowns[`electoral:strategy:${id}`] = 30;
+    addXP(state, 6, log);
+    log(t("electoral.strategyChanged", { name: t(selected.nameKey) }), "positive");
+    renderGame("electoral-strategy");
+  },
+  runElectoralCareerAction(id) {
+    const action = ELECTORAL_CAREER_ACTIONS.find(item => item.id === id);
+    if (!action) return renderGame();
+    const cooldownKey = `electoral:action:${id}`;
+    if (Number(state.cooldowns?.[cooldownKey] || 0) > 0) { log(t("electoral.cooldownWarning"), "warning"); return renderGame(); }
+    if (Number(state.treasury || 0) < Number(action.cost || 0)) { log(t("electoral.insufficientTreasury"), "negative"); return renderGame(); }
+    if (!consumeActionCapacity(state, action.actionPoints || 1, log, t(action.titleKey))) return renderGame();
+    state.treasury -= Number(action.cost || 0);
+    const legacyEffects = applyElectoralCareerEffects(state, action.effects || {});
+    applyEffects(state, legacyEffects);
+    scheduleActionConsequence(state, { id: `electoral-${id}`, title: t(action.titleKey), effects: legacyEffects, lagDays: action.lagDays || 20 }, t("electoral.phaseName"));
+    state.cooldowns[cooldownKey] = Number(action.cooldown || 45);
+    addXP(state, 9, log);
+    log(t("electoral.actionStarted", { name: t(action.titleKey) }), "positive");
+    renderGame("electoral-action");
+  },
+  setScenarioPack(id) {
+    const pack = SCENARIO_PACKS.find(item => item.id === id);
+    if (!pack) return renderGame();
+    if (state.scenarioTutorial?.activeScenario === id) { log(t("scenario.packAlreadyActive"), "info"); return renderGame(); }
+    if (!consumeActionCapacity(state, 1, log, t(pack.nameKey))) return renderGame();
+    const selected = setScenarioPackSystem(state, id);
+    const legacyEffects = applyScenarioTutorialEffects(state, selected.effects || {});
+    applyEffects(state, legacyEffects);
+    state.cooldowns[`scenario:pack:${id}`] = 30;
+    addXP(state, 6, log);
+    log(t("scenario.packChanged", { name: t(selected.nameKey) }), "positive");
+    renderGame("scenario-pack");
+  },
+  setTutorialTrack(id) {
+    const track = TUTORIAL_TRACKS_ADVANCED.find(item => item.id === id);
+    if (!track) return renderGame();
+    if (state.scenarioTutorial?.activeTrack === id) { log(t("scenario.trackAlreadyActive"), "info"); return renderGame(); }
+    if (!consumeActionCapacity(state, 1, log, t(track.nameKey))) return renderGame();
+    const selected = setTutorialTrackSystem(state, id);
+    const legacyEffects = applyScenarioTutorialEffects(state, selected.effects || {});
+    applyEffects(state, legacyEffects);
+    state.cooldowns[`scenario:track:${id}`] = 21;
+    addXP(state, 6, log);
+    log(t("scenario.trackChanged", { name: t(selected.nameKey) }), "positive");
+    renderGame("tutorial-track");
+  },
+  runScenarioTutorialAction(id) {
+    const action = SCENARIO_TUTORIAL_ACTIONS.find(item => item.id === id);
+    if (!action) return renderGame();
+    const cooldownKey = `scenario:tutorial:action:${id}`;
+    if (Number(state.cooldowns?.[cooldownKey] || 0) > 0) { log(t("scenario.cooldownWarning"), "warning"); return renderGame(); }
+    if (Number(state.treasury || 0) < Number(action.cost || 0)) { log(t("scenario.insufficientTreasury"), "negative"); return renderGame(); }
+    if (!consumeActionCapacity(state, action.actionPoints || 1, log, t(action.titleKey))) return renderGame();
+    state.treasury -= Number(action.cost || 0);
+    const legacyEffects = applyScenarioTutorialEffects(state, action.effects || {});
+    applyEffects(state, legacyEffects);
+    scheduleActionConsequence(state, { id: `scenario-tutorial-${id}`, title: t(action.titleKey), effects: legacyEffects, lagDays: action.lagDays || 14 }, t("scenario.phaseName"));
+    state.cooldowns[cooldownKey] = Number(action.cooldown || 30);
+    addXP(state, 10, log);
+    log(t("scenario.actionStarted", { name: t(action.titleKey) }), "positive");
+    renderGame("scenario-tutorial-action");
+  },
+
+  setBetaChannel(id) {
+    const channel = BETA_CHANNELS.find(item => item.id === id);
+    if (!channel) return renderGame();
+    if (state.alphaBeta?.activeChannel === id) { log(t("alphaBeta.channelAlreadyActive"), "info"); return renderGame(); }
+    if (!consumeActionCapacity(state, 1, log, t(channel.nameKey))) return renderGame();
+    const selected = setBetaChannelSystem(state, id);
+    const legacyEffects = applyAlphaBetaEffects(state, selected.effects || {});
+    applyEffects(state, legacyEffects);
+    state.cooldowns[`alpha:beta:channel:${id}`] = 21;
+    addXP(state, 7, log);
+    log(t("alphaBeta.channelChanged", { name: t(selected.nameKey) }), "positive");
+    renderGame("alpha-beta-channel");
+  },
+  runAlphaBetaAction(id) {
+    const action = ALPHA_BETA_ACTIONS.find(item => item.id === id);
+    if (!action) return renderGame();
+    const cooldownKey = `alpha:beta:action:${id}`;
+    if (Number(state.cooldowns?.[cooldownKey] || 0) > 0) { log(t("alphaBeta.cooldownWarning"), "warning"); return renderGame(); }
+    if (Number(state.treasury || 0) < Number(action.cost || 0)) { log(t("alphaBeta.insufficientTreasury"), "negative"); return renderGame(); }
+    if (!consumeActionCapacity(state, action.actionPoints || 1, log, t(action.titleKey))) return renderGame();
+    state.treasury -= Number(action.cost || 0);
+    const legacyEffects = applyAlphaBetaEffects(state, action.effects || {});
+    applyEffects(state, legacyEffects);
+    scheduleActionConsequence(state, { id: `alpha-beta-${id}`, title: t(action.titleKey), effects: legacyEffects, lagDays: action.lagDays || 14 }, t("alphaBeta.phaseName"));
+    state.cooldowns[cooldownKey] = Number(action.cooldown || 28);
+    addXP(state, 11, log);
+    log(t("alphaBeta.actionStarted", { name: t(action.titleKey) }), "positive");
+    renderGame("alpha-beta-action");
+  },
+
+  setGoldReleaseTrack(id) {
+    const track = GOLD_RELEASE_TRACKS.find(item => item.id === id);
+    if (!track) return renderGame();
+    if (state.goldMaster?.activeTrack === id) { log(t("gold.trackAlreadyActive"), "info"); return renderGame(); }
+    if (!consumeActionCapacity(state, 1, log, t(track.nameKey))) return renderGame();
+    const selected = setGoldTrackSystem(state, id);
+    const legacyEffects = applyGoldMasterEffects(state, selected.effects || {});
+    applyEffects(state, legacyEffects);
+    state.cooldowns[`gold:track:${id}`] = 21;
+    addXP(state, 8, log);
+    log(t("gold.trackChanged", { name: t(selected.nameKey) }), "positive");
+    renderGame("gold-track");
+  },
+  runGoldMasterAction(id) {
+    const action = GOLD_MASTER_ACTIONS.find(item => item.id === id);
+    if (!action) return renderGame();
+    const cooldownKey = `gold:action:${id}`;
+    if (Number(state.cooldowns?.[cooldownKey] || 0) > 0) { log(t("gold.cooldownWarning"), "warning"); return renderGame(); }
+    if (Number(state.treasury || 0) < Number(action.cost || 0)) { log(t("gold.insufficientTreasury"), "negative"); return renderGame(); }
+    if (!consumeActionCapacity(state, action.actionPoints || 1, log, t(action.titleKey))) return renderGame();
+    state.treasury -= Number(action.cost || 0);
+    const legacyEffects = applyGoldMasterEffects(state, action.effects || {});
+    applyEffects(state, legacyEffects);
+    scheduleActionConsequence(state, { id: `gold-master-${id}`, title: t(action.titleKey), effects: legacyEffects, lagDays: action.lagDays || 10 }, t("gold.phaseName"));
+    state.cooldowns[cooldownKey] = Number(action.cooldown || 18);
+    addXP(state, 12, log);
+    log(t("gold.actionStarted", { name: t(action.titleKey) }), "positive");
+    renderGame("gold-master-action");
+  },
+
+
+  setInternationalMarket(id) {
+    const market = INTERNATIONAL_MARKETS.find(item => item.id === id);
+    if (!market) return renderGame();
+    if (state.internationalLaunch?.activeMarket === id) { log(t("intl.marketAlreadyActive"), "info"); return renderGame(); }
+    if (!consumeActionCapacity(state, 1, log, t(market.nameKey))) return renderGame();
+    const selected = setInternationalMarketSystem(state, id);
+    const legacyEffects = applyInternationalLaunchEffects(state, selected.effects || {});
+    applyEffects(state, legacyEffects);
+    state.cooldowns[`international:market:${id}`] = 21;
+    addXP(state, 9, log);
+    log(t("intl.marketChanged", { name: t(selected.nameKey) }), "positive");
+    renderGame("international-market");
+  },
+  runInternationalLaunchAction(id) {
+    const action = INTERNATIONAL_LAUNCH_ACTIONS.find(item => item.id === id);
+    if (!action) return renderGame();
+    const cooldownKey = `international:action:${id}`;
+    if (Number(state.cooldowns?.[cooldownKey] || 0) > 0) { log(t("intl.cooldownWarning"), "warning"); return renderGame(); }
+    if (Number(state.treasury || 0) < Number(action.cost || 0)) { log(t("intl.insufficientTreasury"), "negative"); return renderGame(); }
+    if (!consumeActionCapacity(state, action.actionPoints || 1, log, t(action.titleKey))) return renderGame();
+    state.treasury -= Number(action.cost || 0);
+    const legacyEffects = applyInternationalLaunchEffects(state, action.effects || {});
+    applyEffects(state, legacyEffects);
+    scheduleActionConsequence(state, { id: `international-launch-${id}`, title: t(action.titleKey), effects: legacyEffects, lagDays: action.lagDays || 10 }, t("intl.phaseName"));
+    state.cooldowns[cooldownKey] = Number(action.cooldown || 20);
+    addXP(state, 12, log);
+    log(t("intl.actionStarted", { name: t(action.titleKey) }), "positive");
+    renderGame("international-launch-action");
   },
   runCrisisAction(id) {
     const action = CRISIS_ACTIONS.find(a => a.id === id);
@@ -510,6 +752,13 @@ function executeTimedAction(item, id, label = "Decisão") {
   ensureCabinetState(state);
   ensureMediaPublicState(state);
   ensureWorldDiplomacyState(state);
+  ensureDefenseIntelligenceState(state);
+  ensureNationalCrisisState(state);
+  ensureElectoralCareerState(state);
+  ensureScenarioTutorialState(state);
+  ensureAlphaBetaState(state);
+  ensureGoldMasterState(state);
+  ensureInternationalLaunchState(state);
   updateGlobalRank(state);
   renderGame();
   applyTheme();
@@ -613,6 +862,13 @@ function startGame() {
   ensureCabinetState(state);
   ensureMediaPublicState(state);
   ensureWorldDiplomacyState(state);
+  ensureDefenseIntelligenceState(state);
+  ensureNationalCrisisState(state);
+  ensureElectoralCareerState(state);
+  ensureScenarioTutorialState(state);
+  ensureAlphaBetaState(state);
+  ensureGoldMasterState(state);
+  ensureInternationalLaunchState(state);
   updateGlobalRank(state);
   log("Tutorial de posse disponível no menu inicial.", "info");
   showScreen("game");

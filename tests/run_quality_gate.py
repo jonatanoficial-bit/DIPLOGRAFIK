@@ -47,6 +47,13 @@ government_institutions = read_json('tests/government-institutions-results.json'
 cabinet_administration = read_json('tests/cabinet-administration-results.json')
 media_public_opinion = read_json('tests/media-public-opinion-results.json')
 world_diplomacy = read_json('tests/world-diplomacy-results.json')
+defense_intelligence = read_json('tests/defense-intelligence-results.json')
+national_crisis = read_json('tests/national-crisis-results.json')
+electoral_career = read_json('tests/electoral-career-results.json')
+scenario_tutorial = read_json('tests/scenario-tutorial-results.json')
+alpha_beta = read_json('tests/alpha-beta-results.json')
+gold_master = read_json('tests/gold-master-results.json')
+international_launch = read_json('tests/international-launch-results.json')
 
 browser_passed = isinstance(browser,list) and len(browser)==4 and all(item.get('passed') for item in browser)
 browser_checks = sum(len(item.get('checks',{})) for item in browser or [])
@@ -78,6 +85,13 @@ steps = [
     {'name':'cabinet-administration-audit','passed':bool(cabinet_administration and cabinet_administration.get('passed')),'checks':int((cabinet_administration or {}).get('check_count') or 0)},
     {'name':'media-public-opinion-audit','passed':bool(media_public_opinion and media_public_opinion.get('passed')),'checks':int((media_public_opinion or {}).get('check_count') or 0)},
     {'name':'world-diplomacy-audit','passed':bool(world_diplomacy and world_diplomacy.get('passed')),'checks':int((world_diplomacy or {}).get('check_count') or 0)},
+    {'name':'defense-intelligence-audit','passed':bool(defense_intelligence and defense_intelligence.get('passed')),'checks':int((defense_intelligence or {}).get('check_count') or 0)},
+    {'name':'national-crisis-audit','passed':bool(national_crisis and national_crisis.get('passed')),'checks':int((national_crisis or {}).get('check_count') or 0)},
+    {'name':'electoral-career-audit','passed':bool(electoral_career and electoral_career.get('passed')),'checks':int((electoral_career or {}).get('check_count') or 0)},
+    {'name':'scenario-tutorial-audit','passed':bool(scenario_tutorial and scenario_tutorial.get('passed')),'checks':int((scenario_tutorial or {}).get('check_count') or 0)},
+    {'name':'alpha-beta-audit','passed':bool(alpha_beta and alpha_beta.get('passed')),'checks':int((alpha_beta or {}).get('check_count') or 0)},
+    {'name':'gold-master-audit','passed':bool(gold_master and gold_master.get('passed')),'checks':int((gold_master or {}).get('check_count') or 0)},
+    {'name':'international-launch-audit','passed':bool(international_launch and international_launch.get('passed')),'checks':int((international_launch or {}).get('check_count') or 0)},
 ]
 report = {
     'project':config.get('project') if config else None,

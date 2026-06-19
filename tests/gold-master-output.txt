@@ -1,0 +1,23 @@
+PASS data_file_exists
+PASS system_file_exists
+PASS state_factory_includes_gold_master
+PASS core_loop_processes_monthly
+PASS game_actions_include_track
+PASS game_actions_include_action_runner
+PASS render_imports_snapshot
+PASS render_has_overview_panel
+PASS render_has_actions_panel
+PASS index_has_release_panels
+PASS i18n_seed_has_phase_keys
+PASS build_config_phase28
+PASS package_script_registered
+PASS guide_exists
+PASS known_issues_exists
+PASS upload_prompt_preserved
+PASS track_count_4
+PASS gate_count_8
+PASS action_count_8
+PASS node_test_exists
+PASS save_schema_preserved
+PASS no_standalone_marker
+OVERALL PASS 22/22 checks

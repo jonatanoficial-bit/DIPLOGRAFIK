@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "check_count": 23,
+  "checks": {
+    "data_file_exists": true,
+    "system_file_exists": true,
+    "state_factory_includes_electoral_career": true,
+    "core_loop_processes_monthly": true,
+    "core_loop_registers_election_result": true,
+    "game_actions_include_strategy": true,
+    "game_actions_include_action_runner": true,
+    "render_imports_snapshot": true,
+    "render_has_strategy_panel": true,
+    "render_has_segments_panel": true,
+    "render_has_history_panel": true,
+    "index_has_electoral_panels": true,
+    "i18n_seed_has_phase_keys": true,
+    "build_config_phase25": true,
+    "package_script_registered": true,
+    "guide_exists": true,
+    "known_issues_exists": true,
+    "upload_prompt_preserved": true,
+    "strategy_count_4": true,
+    "action_count_8": true,
+    "segment_count_6": true,
+    "save_schema_preserved": true,
+    "no_standalone_marker": true
+  }
+}

@@ -240,14 +240,28 @@
 </div>
 </section>
 <section class="tab" id="tab-military">
-<div class="layout">
-<section class="panel"><h3>Comando Militar</h3><div id="militaryReport"></div><h3>Ações Militares</h3><div class="decisionDeck" id="militaryActions"></div></section>
-<section class="panel"><h3>Risco de Segurança</h3><div id="securityRiskPanel"></div><canvas height="240" id="riskCanvas" width="460"></canvas></section>
+<div class="layout defenseTopLayout">
+<section class="panel"><h3 data-i18n="defense.commandTitle">Comando de Defesa</h3><div id="militaryReport" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="defense.riskTitle">Risco de Segurança</h3><div id="securityRiskPanel" data-i18n-final="true"></div><canvas height="240" id="riskCanvas" width="460"></canvas></section>
 </div>
+<div class="layout defenseDoctrineLayout">
+<section class="panel"><h3 data-i18n="defense.doctrineTitle">Doutrina de Defesa</h3><div class="policyGrid" id="defenseDoctrinePanel" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="defense.actionsTitle">Ações de Defesa</h3><div class="decisionDeck" id="defenseActions" data-i18n-final="true"></div></section>
+</div>
+<section class="panel"><h3 data-i18n="defense.branchesTitle">Forças, fronteiras e prontidão</h3><div id="defenseBranches" data-i18n-final="true"></div></section>
+<section class="panel"><h3>Comando Militar Legado</h3><div class="decisionDeck" id="militaryActions"></div></section>
 </section>
 <section class="tab" id="tab-intelligence">
-<div class="layout">
-<section class="panel"><h3>Agência de Inteligência</h3><div id="intelReport"></div><h3>Operações Secretas</h3><div class="decisionDeck" id="intelOperations"></div></section>
+<div class="layout intelligenceTopLayout">
+<section class="panel"><h3 data-i18n="defense.intelAgencyTitle">Agência de Inteligência</h3><div id="intelReport" data-i18n-final="true"></div><h3 data-i18n="defense.networkTitle">Rede Integrada</h3><div id="intelligenceNetworkPanel" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="defense.desksTitle">Mesas de Inteligência</h3><div id="intelligenceDesks" data-i18n-final="true"></div></section>
+</div>
+<div class="layout intelligenceActionLayout">
+<section class="panel"><h3 data-i18n="defense.intelActionsTitle">Ações de Inteligência Avançada</h3><div class="decisionDeck" id="defenseIntelActions" data-i18n-final="true"></div></section>
+<section class="panel"><h3>Operações Secretas Legadas</h3><div class="decisionDeck" id="intelOperations"></div></section>
+</div>
+<div class="layout intelligenceHistoryLayout">
+<section class="panel"><h3 data-i18n="defense.historyTitle">Histórico de Defesa e Inteligência</h3><div id="defenseIntelHistory" data-i18n-final="true"></div></section>
 <section class="panel"><h3>Histórico de Operações</h3><div id="operationsHistory"></div></section>
 </div>
 </section>
@@ -272,22 +286,37 @@
 </section>
 <section class="tab" id="tab-elections">
 <div class="layout">
-<section class="panel"><h3>Campanha Eleitoral</h3><div id="electionReport"></div><button class="gold wide" id="simulateElection">SIMULAR ELEIÇÃO</button></section>
-<section class="panel"><h3>Mapa Regional de Votos</h3><div id="regionalPolls"></div></section>
+<section class="panel"><h3 data-i18n="electoral.overviewTitle">Campanha Eleitoral</h3><div id="electionReport" data-i18n-final="true"></div><button class="gold wide" id="simulateElection" data-i18n="electoral.simulateElection">SIMULAR ELEIÇÃO</button></section>
+<section class="panel"><h3 data-i18n="electoral.regionalPollsTitle">Pesquisas Regionais</h3><div id="regionalPolls" data-i18n-final="true"></div></section>
 </div>
 <div class="layout">
-<section class="panel"><h3>Ações de Campanha</h3><div class="decisionDeck" id="campaignActions"></div></section>
-<section class="panel"><h3>Tendência de Voto</h3><canvas height="240" id="voteCanvas" width="460"></canvas></section>
+<section class="panel"><h3 data-i18n="electoral.strategyTitle">Estratégia Eleitoral</h3><div class="policyGrid" id="electoralStrategyPanel" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="electoral.machineTitle">Máquina de Campanha</h3><div id="electoralMachinePanel" data-i18n-final="true"></div></section>
 </div>
+<div class="layout">
+<section class="panel"><h3 data-i18n="electoral.segmentsTitle">Segmentos do Eleitorado</h3><div id="electoralSegmentsPanel" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="electoral.timelineTitle">Carreira e Legado</h3><div id="careerTimelinePanel" data-i18n-final="true"></div></section>
+</div>
+<section class="panel"><h3 data-i18n="electoral.actionsTitle">Ações eleitorais estruturantes</h3><div class="decisionDeck" id="electoralActions" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="electoral.legacyActionsTitle">Ações de Campanha Legadas</h3><div class="decisionDeck" id="campaignActions" data-i18n-final="true"></div></section>
+<div class="layout"><section class="panel"><h3 data-i18n="electoral.historyTitle">Histórico eleitoral</h3><div id="electoralHistory" data-i18n-final="true"></div></section><section class="panel"><h3>Tendência de Voto</h3><canvas height="240" id="voteCanvas" width="460"></canvas></section></div>
 </section>
 <section class="tab" id="tab-crisis">
 <div class="layout">
-<section class="panel"><h3>Gabinete de Crise</h3><div id="crisisReport"></div><h3>Crises Ativas</h3><div id="activeCrises"></div></section>
-<section class="panel"><h3>Ações Emergenciais</h3><div class="decisionDeck" id="crisisActions"></div></section>
+<section class="panel"><h3 data-i18n="nationalCrisis.officeTitle">Gabinete Nacional de Crise</h3><div id="crisisReport" data-i18n-final="true"></div><h3 data-i18n="nationalCrisis.activeChainsTitle">Crises Ativas</h3><div id="activeCrises" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="nationalCrisis.protocolTitle">Protocolo de Resposta</h3><div class="policyGrid" id="nationalCrisisProtocolPanel" data-i18n-final="true"></div></section>
 </div>
 <div class="layout">
-<section class="panel"><h3>Histórico de Crises</h3><div id="crisisHistory"></div></section>
-<section class="panel"><h3>Mapa de Risco</h3><canvas height="240" id="crisisCanvas" width="460"></canvas></section>
+<section class="panel"><h3 data-i18n="nationalCrisis.domainsTitle">Domínios de Risco</h3><div id="nationalCrisisDomainPanel" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="nationalCrisis.scenariosTitle">Cenários Críticos</h3><div id="nationalCrisisScenarioPanel" data-i18n-final="true"></div></section>
+</div>
+<div class="layout">
+<section class="panel"><h3 data-i18n="nationalCrisis.actionsTitle">Ações Emergenciais e Estruturais</h3><div class="decisionDeck" id="nationalCrisisActions" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="nationalCrisis.riskMapTitle">Mapa de Risco</h3><canvas height="240" id="crisisCanvas" width="460"></canvas></section>
+</div>
+<div class="layout">
+<section class="panel"><h3 data-i18n="nationalCrisis.chainHistoryTitle">Histórico de Crises</h3><div id="crisisHistory" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="nationalCrisis.monthlyHistoryTitle">Histórico Nacional Mensal</h3><div id="nationalCrisisHistory" data-i18n-final="true"></div></section>
 </div>
 </section>
 <section class="tab" id="tab-progression">
@@ -299,6 +328,19 @@
 <section class="panel"><h3>Metas de Mandato</h3><div id="mandateGoals"></div></section>
 <section class="panel"><h3>Conquistas</h3><div id="achievementsPanel"></div></section>
 </div>
+<div class="layout scenarioTutorialTopLayout">
+<section class="panel"><h3 data-i18n="scenario.overviewTitle">Cenários e Tutorial</h3><div id="scenarioTutorialOverview" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="scenario.metricsTitle">Maturidade do Jogador</h3><div id="scenarioMetricsPanel" data-i18n-final="true"></div></section>
+</div>
+<div class="layout scenarioTutorialLayout">
+<section class="panel"><h3 data-i18n="scenario.packTitle">Pacotes de Cenário</h3><div class="policyGrid" id="scenarioPackPanel" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="scenario.trackTitle">Trilhas de Tutorial</h3><div class="policyGrid" id="tutorialTrackPanel" data-i18n-final="true"></div></section>
+</div>
+<div class="layout scenarioTutorialLayout">
+<section class="panel"><h3 data-i18n="scenario.missionsTitle">Missões de Onboarding</h3><div id="onboardingMissionPanel" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="scenario.actionsTitle">Ações de Aprendizado</h3><div class="decisionDeck" id="scenarioTutorialActions" data-i18n-final="true"></div></section>
+</div>
+<section class="panel"><h3 data-i18n="scenario.historyTitle">Histórico de Aprendizado</h3><div id="scenarioTutorialHistory" data-i18n-final="true"></div></section>
 </section>
 <section class="tab" id="tab-store">
 <div class="layout">
@@ -313,14 +355,24 @@
 <section class="tab" id="tab-release">
 <div class="layout">
 <section class="panel"><h3>Identidade da Build</h3><div id="releaseSummary"></div></section>
+<section class="panel"><h3 data-i18n="alphaBeta.releaseTitle">Alpha/Beta Comercial</h3><div id="alphaBetaOverview" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="gold.releaseTitle">Gold Master Comercial</h3><div id="goldMasterOverview" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="intl.releaseTitle">Gold v2.0 Internacional</h3><div id="internationalLaunchOverview" data-i18n-final="true"></div></section>
 <section class="panel"><h3>Saúde Anti-Quebra</h3><div id="resilienceHealth"></div><div class="recoveryToolbar"><button class="dark" id="restoreLatestSave" type="button">RESTAURAR SNAPSHOT</button><button class="dark" id="safeModeToggle" type="button">ALTERNAR MODO SEGURO</button><button class="gold" id="diagnosticDownload" type="button">EXPORTAR DIAGNÓSTICO</button></div></section>
 <section class="panel"><h3 data-i18n="save.centerTitle">Central de Carreiras</h3><div id="saveArchitectureHealth"></div><div class="recoveryToolbar"><button class="gold" id="openSaveManagerRelease" type="button" data-i18n="save.manageCareers">GERENCIAR CARREIRAS</button><button class="dark" id="quickCareerBackup" type="button" data-i18n="save.quickBackup">BACKUP RÁPIDO</button><button class="ghost" id="quickCareerExport" type="button" data-i18n="save.quickExport">EXPORTAR CARREIRA</button></div></section>
 <section class="panel"><h3>Aplicativo e Offline</h3><div id="pwaHealth"></div><div class="recoveryToolbar"><button class="dark" id="installPwaRelease" type="button">INSTALAÇÃO INDISPONÍVEL</button><button class="dark" id="checkPwaUpdate" type="button">VERIFICAR ATUALIZAÇÃO</button><button class="gold" disabled id="applyPwaUpdate" type="button">SEM ATUALIZAÇÃO</button></div></section>
 </div>
 <div class="layout">
+<section class="panel"><h3 data-i18n="alphaBeta.milestonesTitle">Marcos Alpha/Beta</h3><div id="alphaBetaMilestones" data-i18n-final="true"></div></section>
+<section class="panel"><h3 data-i18n="alphaBeta.channelsTitle">Canal de Teste</h3><div class="policyGrid" id="alphaBetaChannels" data-i18n-final="true"></div></section>
 <section class="panel"><h3>Checklist de Proteção</h3><div id="releaseChecklist"></div></section>
 <section class="panel"><h3>Testes Anti-Quebra</h3><div id="testChecklist"></div></section>
 </div>
+<div class="layout"><section class="panel"><h3 data-i18n="alphaBeta.actionsTitle">Ações de Alpha/Beta</h3><div class="decisionDeck" id="alphaBetaActions" data-i18n-final="true"></div></section><section class="panel"><h3 data-i18n="alphaBeta.historyTitle">Histórico de Prontidão</h3><div id="alphaBetaHistory" data-i18n-final="true"></div></section></div>
+<div class="layout"><section class="panel"><h3 data-i18n="gold.gatesTitle">Gates Gold Master</h3><div id="goldMasterGates" data-i18n-final="true"></div></section><section class="panel"><h3 data-i18n="gold.tracksTitle">Trilha de Publicação</h3><div class="policyGrid" id="goldMasterTracks" data-i18n-final="true"></div></section></div>
+<div class="layout"><section class="panel"><h3 data-i18n="gold.actionsTitle">Ações Gold Master</h3><div class="decisionDeck" id="goldMasterActions" data-i18n-final="true"></div></section><section class="panel"><h3 data-i18n="gold.historyTitle">Histórico Gold</h3><div id="goldMasterHistory" data-i18n-final="true"></div></section></div>
+<div class="layout"><section class="panel"><h3 data-i18n="intl.gatesTitle">Gates Internacionais</h3><div id="internationalLaunchGates" data-i18n-final="true"></div></section><section class="panel"><h3 data-i18n="intl.marketsTitle">Mercado de Lançamento</h3><div class="policyGrid" id="internationalLaunchMarkets" data-i18n-final="true"></div></section></div>
+<div class="layout"><section class="panel"><h3 data-i18n="intl.actionsTitle">Ações Internacionais</h3><div class="decisionDeck" id="internationalLaunchActions" data-i18n-final="true"></div></section><section class="panel"><h3 data-i18n="intl.historyTitle">Histórico Internacional</h3><div id="internationalLaunchHistory" data-i18n-final="true"></div></section></div>
 <section class="panel"><h3>Próximos Passos</h3><div id="nextReleaseSteps"></div></section>
 </section>
 </main>

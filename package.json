@@ -1,9 +1,9 @@
 {
   "name": "diplocraft",
-  "version": "1.7.4",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
-  "description": "DIPLOCRAFT political simulator with world diplomacy, media, cabinet, institutions, budget, economy, country/population and full localization",
+  "description": "DIPLOCRAFT political simulator Gold v2.0 international release with global markets, compliance, localization, commercial launch operations and full simulation stack",
   "scripts": {
     "test": "python3 tests/run_node_tests.py",
     "test:simulation": "node tests/run_simulation_matrix.mjs",
@@ -26,7 +26,14 @@
     "test:budget-tax": "python3 tests/run_budget_tax_audit.py",
     "test:institutions": "python3 tests/run_government_institutions_audit.py",
     "test:cabinet": "python3 tests/run_cabinet_administration_audit.py",
-    "test:world-diplomacy": "python3 tests/run_world_diplomacy_audit.py"
+    "test:world-diplomacy": "python3 tests/run_world_diplomacy_audit.py",
+    "test:defense-intelligence": "python3 tests/run_defense_intelligence_audit.py",
+    "test:national-crisis": "python3 tests/run_national_crisis_audit.py",
+    "test:electoral-career": "python3 tests/run_electoral_career_audit.py",
+    "test:scenario-tutorial": "python3 tests/run_scenario_tutorial_audit.py",
+    "test:alpha-beta": "python3 tests/run_alpha_beta_audit.py",
+    "test:gold-master": "python3 tests/run_gold_master_audit.py",
+    "test:international-launch": "python3 tests/run_international_launch_audit.py"
   },
   "engines": {
     "node": ">=20"

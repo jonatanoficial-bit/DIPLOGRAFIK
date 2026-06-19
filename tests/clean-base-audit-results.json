@@ -1,6 +1,6 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "1.7.3",
+  "version": "1.8.0",
   "checks": {
     "no_active_contamination": true,
     "all_json_valid": true,
@@ -44,8 +44,8 @@
     ],
     "legacy_files_present": [],
     "dependency_graph": {
-      "source_file_count": 62,
-      "loaded_module_count": 62,
+      "source_file_count": 76,
+      "loaded_module_count": 76,
       "orphan_modules": []
     }
   },

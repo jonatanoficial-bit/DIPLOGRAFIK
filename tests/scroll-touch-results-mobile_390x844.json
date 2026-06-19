@@ -1,7 +1,7 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "1.7.1",
-  "phase": "Governo e Instituições",
+  "version": "1.8.0",
+  "phase": "GOLD MASTER E PUBLICAÇÃO COMERCIAL",
   "static_checks": {
     "scroll_module_exists": true,
     "scroll_module_loaded": true,
@@ -59,7 +59,7 @@
         },
         "first_touch_swipe": {
           "before": 0,
-          "after": 256,
+          "after": 259,
           "start": 699.1875,
           "end": 419.1875,
           "x": 108.5

@@ -8,7 +8,12 @@ export function voteChance(state) {
     state.stability * 0.12 +
     state.media * 0.12 +
     state.campaign * 0.18 +
-    state.prestige * 0.06 -
+    state.prestige * 0.06 +
+    ((state.electoralCareer?.groundGame || 50) - 50) * 0.045 +
+    ((state.electoralCareer?.digitalMobilization || 50) - 50) * 0.035 +
+    ((state.electoralCareer?.coalitionEndorsements || 50) - 50) * 0.032 +
+    ((state.electoralCareer?.careerMomentum || 50) - 50) * 0.040 -
+    ((state.electoralCareer?.ethicsRisk || 25) - 25) * 0.030 -
     (state.rejection || 30) * 0.12 -
     state.corruption * 0.08 -
     state.crisis * 1.8

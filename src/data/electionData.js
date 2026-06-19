@@ -1,3 +1,5 @@
+export const nationalRegionId = id => id;
+
 export const REGIONS = [
   { id:"norte", name:"Norte", voters:8, leaning:"regional", approvalBias:2, economyWeight:0.18 },
   { id:"nordeste", name:"Nordeste", voters:27, leaning:"social", approvalBias:5, economyWeight:0.16 },

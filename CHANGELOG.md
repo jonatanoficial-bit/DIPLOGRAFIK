@@ -1,21 +1,34 @@
 # Changelog — DIPLOCRAFT
 
-## v1.7.4 — Fase 22 — Diplomacia Mundial — 18/06/2026 18:12
+## v2.0.0 — Fase 29 — GOLD V2 INTERNACIONAL — 19/06/2026 18:54
 
-### Adicionado
-- Sistema de diplomacia mundial com soft power, confiança global, acesso comercial, alavancagem negociadora, liderança regional, neutralidade, risco de segurança e escrutínio público.
-- Doutrinas diplomáticas selecionáveis com efeitos reais no país e no tabuleiro internacional.
-- Blocos globais dinâmicos com alinhamento, comércio, tensão e risco.
-- Agenda internacional por temas estratégicos e ações diplomáticas com custo, PA, cooldown e impacto atrasado.
-- Histórico mensal de diplomacia mundial e diagnóstico estratégico integrado ao relatório mensal.
+### Gold v2.0 Internacional
+- Novo estado persistente internationalLaunch com migração aditiva.
+- Mercados internacionais, gates globais e ações de publicação internacional conectados à aba Release.
+- Pontuação global calculada com market fit, prontidão operacional, compliance, privacidade, suporte e risco internacional.
 
-### Corrigido
-- A aba Diplomacia deixou de ser apenas lista de países/tratados e passou a funcionar como sistema estratégico profundo.
-- Ações diplomáticas avançadas agora possuem cooldown próprio, custo fiscal, consumo de capacidade e efeitos de médio prazo.
-- O risco diplomático agora considera tensão global, neutralidade, blocos, agenda internacional e credibilidade externa.
+### Publicação global
+- Ações de localização, matriz legal, loja multirregional, suporte, comunidade, press kit, preços e sala global de lançamento.
+- Histórico mensal internacional com score, gates, risco, aderência de mercado e operação global.
 
-### Preservado
-- Todos os sistemas da Fase 21: imprensa e opinião pública, gabinete e administração, governo e instituições, orçamento e tributação, economia profunda, população, criação de governo, Core Loop 2.0, saves schema 3, PWA, mobile, desktop, assets, localização e documento de upload Git Bash.
+### Integrações
+- Integração mensal com Gold Master, Alpha/Beta, PWA, saves, mobile, localização, tutorial, mídia, diplomacia e Core Loop 2.0.
+- Preservação do documento de upload Git Bash e da estrutura oficial completa.
+
+## v1.8.0 — Fase 28 Gold Master e Publicação Comercial — 19/06/2026 16:42
+- Gold Master, certificação final, pacote de loja, compliance, suporte, rollback, telemetria segura, plano de lançamento e gates comerciais.
+
+## v1.7.9 — Fase 27 Alpha/Beta Comercial — 19/06/2026 15:12
+- Alpha/Beta comercial, readiness técnico/jogável/comercial, canais de teste, marcos de publicação, QA, telemetria, PWA/offline e Gold readiness.
+
+## v1.7.8 — Fase 26 Cenários, Tutorial e Onboarding — 19/06/2026 12:39
+- Cenários guiados, tutorial avançado, onboarding por missões, trilhas de aprendizado, retenção e replayabilidade.
+
+## v1.7.5 — Fase 23 Defesa, Inteligência e Segurança Internacional — 18/06/2026 19:05
+- Defesa nacional, inteligência estratégica, cibersegurança, fronteiras, dissuasão, prontidão e segurança internacional integradas à diplomacia mundial.
+
+## v1.7.4 — Fase 22 Diplomacia Mundial — 18/06/2026 18:12
+- Diplomacia mundial, blocos globais, agendas internacionais, doutrinas diplomáticas, ações multilaterais, histórico e integração com economia, mídia e instituições.
 
 ## v1.7.3 — Fase 21 Imprensa, Mídia e Opinião Pública — 18/06/2026 17:26
 - Sistema profundo de imprensa, mídia e opinião pública com humor público, hostilidade, credibilidade, doutrinas, veículos, agendas e ações de comunicação.
@@ -43,48 +56,3 @@
 
 ## v1.5.1 — Fase 15 Criação de Governo — 17/06/2026 17:05
 - Criação em nove etapas, cenários, dificuldade, objetivos estratégicos e 12 partidos com seleção visual.
-
-## v1.5.0 — Fase 14 Core Loop 2.0 — 17/06/2026 12:56
-- Ciclo diário, semanal, mensal, trimestral e anual, consequências atrasadas e finais reais de carreira.
-
-## v1.4.0 — Fase 13 Save Architecture — 17/06/2026 12:37
-- Perfis, slots, backups, exportação/importação e migração segura de carreiras.
-
-## v1.3.4 — Fase 12 Localization Complete — 17/06/2026 11:33
-- Localização editorial completa em português, inglês e espanhol com 964 chaves sincronizadas.
-
-## v1.3.3 — Fase 11 Scroll & Touch Recovery — 17/06/2026 10:52
-- Rolagem por roda, touchpad, teclado e gesto real do dedo em PC, tablet e mobile.
-
-## v1.3.2 — Fase 10 Hotfix Assets Web — 15/06/2026 19:44
-- Fallback automático para PNGs originais e correção da publicação de assets no Vercel.
-
-## v1.3.1 — Fase 10 I18N Core — 13/06/2026 12:50
-- Arquitetura trilíngue para português, inglês e espanhol.
-
-## v1.3.0 — Fase 9 Responsive Desktop — 13/06/2026 12:03
-- Sidebar responsiva, central de comandos, atalhos, densidade e ultrawide.
-
-## v1.2.1 — Fase 8 Fullscreen/PWA — 13/06/2026 11:21
-- PWA instalável, shell offline, atualização controlada, ícones e splash screens.
-
-## v1.2.0 — Fase 7 Mobile First — 13/06/2026 10:02
-- Navegação por toque, safe areas, teclado virtual, orientação, drawer e rolagem mobile auditada.
-
-## v1.1.1 — Fase 6 Asset Pipeline — 13/06/2026 09:07
-- Pipeline AVIF/WebP, variantes responsivas, lazy loading e auditoria de assets.
-
-## v1.1.0 — Fase 5 Test Foundation — 12/06/2026 17:14
-- Testes unitários, contratos, simulação de 30 anos e quality gate bloqueante.
-
-## v1.0.4 — Fase 4 Anti-Break Core — 12/06/2026 17:02
-- Saves transacionais, snapshots, watchdog, modo seguro e diagnóstico persistente.
-
-## v1.0.3 — Fase 3 Build Truth — 12/06/2026 16:36
-- Fonte canônica de build, hash, geração determinística e bloqueio de divergências.
-
-## v1.0.2 — Fase 2 Clean Base — 12/06/2026 16:26
-- Base limpa, identidade consolidada, módulos órfãos removidos e assets auditados.
-
-## v1.0.1 — Fase 1 Recovery — 12/06/2026 16:06
-- Boot, anti-quebra, tutorial, feedback, áudio, rolagem mobile e save recuperados.

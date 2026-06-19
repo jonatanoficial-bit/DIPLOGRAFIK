@@ -1,13 +1,13 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "1.7.1",
-  "phase": "Governo e Instituições",
-  "catalog_key_count": 1630,
-  "scanned_user_facing_literals": 422,
+  "version": "2.0.0",
+  "phase": "GOLD V2 INTERNACIONAL",
+  "catalog_key_count": 2605,
+  "scanned_user_facing_literals": 413,
   "uncovered_literals": [],
   "translation_change_ratio": {
-    "en": 0.9631901840490797,
-    "es": 0.8785276073619632
+    "en": 0.9708253358925144,
+    "es": 0.8879078694817658
   },
   "maximum_text_expansion_ratio": {
     "en": 3.0,

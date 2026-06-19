@@ -1,18 +1,17 @@
 DIPLOCRAFT simulation matrix
-Cases: 12
+Cases: 11
 Years per case: 30
-Total simulated days: 129600
+Total simulated days: 118800
 Structural invariants passed: true
 Balance warnings: 0
-PASS seed=11 profile=baseline final=1/1/2056 duration=1737ms
-PASS seed=29 profile=institutional_stress final=1/1/2056 duration=1421ms
-PASS seed=47 profile=economic_boom final=1/1/2056 duration=1339ms
-PASS seed=83 profile=baseline final=1/1/2056 duration=1232ms
-PASS seed=101 profile=institutional_stress final=1/1/2056 duration=1257ms
-PASS seed=211 profile=economic_boom final=1/1/2056 duration=1227ms
-PASS seed=307 profile=baseline final=1/1/2056 duration=1234ms
-PASS seed=509 profile=institutional_stress final=1/1/2056 duration=1212ms
-PASS seed=701 profile=economic_boom final=1/1/2056 duration=1221ms
-PASS seed=907 profile=baseline final=1/1/2056 duration=1224ms
-PASS seed=1201 profile=institutional_stress final=1/1/2056 duration=1202ms
-PASS seed=2026 profile=economic_boom final=1/1/2056 duration=1162ms
+PASS seed=11 profile=baseline final=1/1/2056 duration=3931ms
+PASS seed=29 profile=institutional_stress final=1/1/2056 duration=3326ms
+PASS seed=47 profile=economic_boom final=1/1/2056 duration=3156ms
+PASS seed=83 profile=baseline final=1/1/2056 duration=3071ms
+PASS seed=101 profile=institutional_stress final=1/1/2056 duration=3001ms
+PASS seed=211 profile=economic_boom final=1/1/2056 duration=2875ms
+PASS seed=307 profile=baseline final=1/1/2056 duration=2979ms
+PASS seed=509 profile=institutional_stress final=1/1/2056 duration=2923ms
+PASS seed=701 profile=economic_boom final=1/1/2056 duration=2990ms
+PASS seed=907 profile=baseline final=1/1/2056 duration=3112ms
+PASS seed=1201 profile=institutional_stress final=1/1/2056 duration=3004ms

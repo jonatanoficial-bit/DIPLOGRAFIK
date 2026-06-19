@@ -58,3 +58,9 @@ FASE 18 v1.7.0 — Orçamento e Tributação:
 - Nenhum caminho de asset foi alterado.
 - Nenhuma imagem nova obrigatória foi adicionada.
 - Todos os fundos, ícones, partidos e assets runtime da Fase 17 permanecem preservados.
+
+
+Fase 25 v1.7.7 — Eleições, Carreira e Legado: não adicionou novos assets obrigatórios; todos os caminhos da pasta assets foram preservados.
+
+
+Fase 27 Alpha/Beta Comercial: nenhum caminho de asset foi alterado; novos painéis usam CSS/HTML existentes e não exigem imagens novas.

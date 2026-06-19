@@ -1,34 +1,31 @@
-PROMPT PARA NOVA CONVERSA — UPLOAD GIT BASH DO DIPLOCRAFT
+DIPLOCRAFT — CAMINHOS OFICIAIS PARA UPLOAD VIA GIT BASH
 
-Projeto: DIPLOCRAFT
-Pasta local Windows:
+Use este documento em qualquer nova conversa com ChatGPT para continuar o upload do projeto.
+
+Pasta local no Windows:
 C:\Users\jonat\Desktop\GAME\¨2026\DIPLOCRAFT
 
 Caminho equivalente no Git Bash:
-/c/Users/jonat/Desktop/GAME/¨2026/DIPLOCRAFT
-
-Comando correto para entrar na pasta:
 cd "/c/Users/jonat/Desktop/GAME/¨2026/DIPLOCRAFT"
 
 Repositório GitHub:
 https://github.com/jonatanoficial-bit/DIPLOGRAFIK.git
 
-REGRA IMPORTANTE:
-Nunca rodar git init, git add, git commit ou git push em /c/Users/jonat.
-Primeiro entrar na pasta correta do jogo, conferir com pwd e ls, e somente depois executar os comandos Git.
+Procedimento seguro:
+1. Baixar e extrair o ZIP oficial completo da fase dentro da pasta DIPLOCRAFT.
+2. Garantir que index.html, src, assets, tests, README.md e CHANGELOG.md fiquem diretamente dentro de DIPLOCRAFT, sem pasta duplicada por dentro.
+3. Abrir Git Bash e rodar:
+   cd "/c/Users/jonat/Desktop/GAME/¨2026/DIPLOCRAFT"
+   pwd
+   ls
+4. Confirmar que o terminal está em /c/Users/jonat/Desktop/GAME/¨2026/DIPLOCRAFT.
+5. Só depois rodar:
+   git status
+   git add -A
+   git commit -m "Fase XX vX.X.X Nome da Fase"
+   git push -u origin main
+6. Se o push for rejeitado por histórico remoto, usar:
+   git fetch origin main
+   git push --force-with-lease -u origin main
 
-Comandos base:
-cd "/c/Users/jonat/Desktop/GAME/¨2026/DIPLOCRAFT"
-pwd
-ls
-git status
-git add -A
-git commit -m "Fase XX vX.X.X nome da fase"
-git push -u origin main
-
-Se o GitHub recusar por já existir conteúdo remoto e esta pasta local for a build oficial completa atual:
-git fetch origin main
-git push --force-with-lease -u origin main
-
-Se ainda recusar por stale info, usar apenas quando tiver certeza de que a pasta local é a build oficial completa:
-git push --force -u origin main
+Nunca rodar git init, git add ou git push dentro de /c/Users/jonat.

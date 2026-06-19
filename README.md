@@ -1,12 +1,12 @@
-# DIPLOCRAFT — Fase 22 — Diplomacia Mundial
+# DIPLOCRAFT — Fase 29 — GOLD V2 INTERNACIONAL
 
 > Arquivos de identidade são gerados de `build.config.json`.
 
-**Versão:** v1.7.4  
-**Build:** 18/06/2026 18:12 — America/Sao_Paulo  
-**Status:** WORLD_DIPLOMACY_VERIFIED; ainda não é a versão comercial final.  
-**Artefato esperado:** `DIPLOCRAFT_v1.7.4_FASE-22_DIPLOMACIA-MUNDIAL_build_20260618_1812.zip`
-**Config SHA-256:** `c78785f5db9945c68377ed0b8d680999ab64668f4c232b9ae48e94574fa3e873`
+**Versão:** v2.0.0  
+**Build:** 19/06/2026 18:54 — America/Sao_Paulo  
+**Status:** GOLD_V2_INTERNATIONAL_VERIFIED; ainda não é a versão comercial final.  
+**Artefato esperado:** `DIPLOCRAFT_v2.0.0_FASE-29_GOLD-V2-INTERNACIONAL_build_20260619_1854.zip`
+**Config SHA-256:** `59de07af832167c50b4f3fadb1be3827a7033754efb7041d930498a3ee71923f`
 
 ## Executar
 

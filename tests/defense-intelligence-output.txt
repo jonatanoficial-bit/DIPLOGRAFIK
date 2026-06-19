@@ -1,0 +1,25 @@
+PASS version_is_phase_23
+PASS status_verified
+PASS base_is_phase_22
+PASS save_schema_preserved
+PASS upload_prompt_present
+PASS data_module_exists
+PASS system_module_exists
+PASS state_factory_integrates_defense
+PASS core_loop_monthly_cycle_integrates_defense
+PASS game_actions_bound
+PASS render_has_defense_panels
+PASS index_has_defense_sections
+PASS four_doctrines_defined
+PASS six_branches_defined
+PASS six_intelligence_desks_defined
+PASS eight_actions_defined
+PASS incidents_defined
+PASS defense_i18n_pt_en_es
+PASS package_script_added
+PASS quality_gate_mentions_phase_23
+PASS previous_phase_guides_preserved
+PASS phase_23_guides_added
+PASS no_asset_paths_changed
+PASS config_declares_defense_intelligence
+OVERALL PASS 24/24 checks

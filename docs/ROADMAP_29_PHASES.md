@@ -29,7 +29,7 @@ A Fase 11 foi inserida após um defeito real de usabilidade encontrado na public
 25. Mídia e Sociedade.  
 26. Eleições e Carreira.  
 27. Cenários e Tutorial.  
-28. Alpha/Beta.  
-29. Gold v2.0.0.
+28. Gold Master e Publicação Comercial.  
+29. Gold v2.0.0 Internacional. ✅ concluída na Fase 29 v2.0.0
 
 Cada fase gera ZIP integral, versão/data/hora visíveis, auditoria, integridade e instruções de rollback.

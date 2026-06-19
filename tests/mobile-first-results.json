@@ -1,7 +1,7 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "1.7.1",
-  "phase": "Governo e Instituições",
+  "version": "1.8.0",
+  "phase": "GOLD MASTER E PUBLICAÇÃO COMERCIAL",
   "execution_model": "one isolated browser process per viewport + deterministic aggregator",
   "expected_cases": [
     "phone_320x568",
@@ -62,7 +62,7 @@
         "menu_button_min_height": 50,
         "create": {
           "clientHeight": 568,
-          "scrollHeight": 4789,
+          "scrollHeight": 4791,
           "overflowY": "auto"
         },
         "bottom_nav": {
@@ -97,7 +97,7 @@
         },
         "tab_scroll": {
           "saved": 0,
-          "restored": 33
+          "restored": 12
         }
       },
       "console_errors": [],
@@ -144,7 +144,7 @@
         "menu_button_min_height": 50,
         "create": {
           "clientHeight": 640,
-          "scrollHeight": 4619,
+          "scrollHeight": 4621,
           "overflowY": "auto"
         },
         "bottom_nav": {
@@ -179,7 +179,7 @@
         },
         "tab_scroll": {
           "saved": 0,
-          "restored": 2
+          "restored": 12
         }
       },
       "console_errors": [],
@@ -261,7 +261,7 @@
         },
         "tab_scroll": {
           "saved": 0,
-          "restored": 114
+          "restored": 12
         }
       },
       "console_errors": [],
@@ -308,7 +308,7 @@
         "menu_button_min_height": 50,
         "create": {
           "clientHeight": 390,
-          "scrollHeight": 2324,
+          "scrollHeight": 2329,
           "overflowY": "auto"
         },
         "bottom_nav": {
@@ -343,7 +343,7 @@
         },
         "tab_scroll": {
           "saved": 0,
-          "restored": 29
+          "restored": 12
         }
       },
       "console_errors": [],
@@ -390,7 +390,7 @@
         "menu_button_min_height": 52,
         "create": {
           "clientHeight": 1024,
-          "scrollHeight": 4397,
+          "scrollHeight": 4406,
           "overflowY": "auto"
         },
         "bottom_nav": {

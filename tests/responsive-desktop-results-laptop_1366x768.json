@@ -1,7 +1,7 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "1.7.3",
-  "phase": "Imprensa, Mídia e Opinião Pública",
+  "version": "1.8.0",
+  "phase": "GOLD MASTER E PUBLICAÇÃO COMERCIAL",
   "execution_model": "one isolated browser process per desktop viewport + deterministic aggregator",
   "static_checks": {
     "desktop_module_exists": true,
@@ -73,7 +73,7 @@
         },
         "sidebar_toggle": {
           "before": 248,
-          "after": 86.75,
+          "after": 88.65625,
           "stored": "true"
         },
         "dashboard_layout": {

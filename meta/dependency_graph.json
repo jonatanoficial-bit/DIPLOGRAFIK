@@ -1,11 +1,11 @@
 {
   "generated_from": "build.config.json",
-  "source_sha256": "c78785f5db9945c68377ed0b8d680999ab64668f4c232b9ae48e94574fa3e873",
+  "source_sha256": "59de07af832167c50b4f3fadb1be3827a7033754efb7041d930498a3ee71923f",
   "project": "DIPLOCRAFT",
-  "version": "1.7.4",
+  "version": "2.0.0",
   "entrypoint": "src/game.js",
-  "source_file_count": 64,
-  "loaded_module_count": 64,
+  "source_file_count": 78,
+  "loaded_module_count": 78,
   "loaded_modules": [
     "src/core/assets.js",
     "src/core/build.js",
@@ -22,25 +22,32 @@
     "src/core/scrollExperience.js",
     "src/core/stateFactory.js",
     "src/core/storage.js",
+    "src/data/alphaBetaData.js",
     "src/data/assetCatalog.js",
     "src/data/avatars.js",
     "src/data/budgetTaxData.js",
     "src/data/cabinetAdministrationData.js",
     "src/data/content.js",
     "src/data/crisisData.js",
+    "src/data/defenseIntelligenceData.js",
     "src/data/diplomacyData.js",
     "src/data/economyData.js",
     "src/data/economyDeepData.js",
     "src/data/electionData.js",
+    "src/data/electoralCareerData.js",
+    "src/data/goldMasterData.js",
     "src/data/governmentCreationData.js",
     "src/data/governmentData.js",
     "src/data/governmentInstitutionData.js",
+    "src/data/internationalLaunchData.js",
     "src/data/mediaData.js",
     "src/data/monetizationData.js",
+    "src/data/nationalCrisisData.js",
     "src/data/parties.js",
     "src/data/populationData.js",
     "src/data/progressionData.js",
     "src/data/releaseData.js",
+    "src/data/scenarioTutorialData.js",
     "src/data/securityData.js",
     "src/data/tutorialData.js",
     "src/data/worldDiplomacyData.js",
@@ -48,23 +55,30 @@
     "src/i18n/locales/en.js",
     "src/i18n/locales/es.js",
     "src/i18n/locales/pt-BR.js",
+    "src/systems/alphaBeta.js",
     "src/systems/budgetTax.js",
     "src/systems/cabinetAdministration.js",
     "src/systems/calculations.js",
     "src/systems/coreLoop.js",
     "src/systems/crisis.js",
+    "src/systems/defenseIntelligence.js",
     "src/systems/diplomacy.js",
     "src/systems/economy.js",
     "src/systems/economyDeep.js",
     "src/systems/elections.js",
+    "src/systems/electoralCareer.js",
     "src/systems/events.js",
+    "src/systems/goldMaster.js",
     "src/systems/government.js",
     "src/systems/governmentCreation.js",
     "src/systems/governmentInstitutions.js",
+    "src/systems/internationalLaunch.js",
     "src/systems/media.js",
     "src/systems/monetization.js",
+    "src/systems/nationalCrisis.js",
     "src/systems/population.js",
     "src/systems/progression.js",
+    "src/systems/scenarioTutorial.js",
     "src/systems/security.js",
     "src/systems/worldDiplomacy.js",
     "src/ui/audio.js",
@@ -160,6 +174,10 @@
     },
     {
       "from": "src/core/stateFactory.js",
+      "to": "src/systems/alphaBeta.js"
+    },
+    {
+      "from": "src/core/stateFactory.js",
       "to": "src/systems/budgetTax.js"
     },
     {
@@ -168,7 +186,19 @@
     },
     {
       "from": "src/core/stateFactory.js",
+      "to": "src/systems/defenseIntelligence.js"
+    },
+    {
+      "from": "src/core/stateFactory.js",
       "to": "src/systems/economyDeep.js"
+    },
+    {
+      "from": "src/core/stateFactory.js",
+      "to": "src/systems/electoralCareer.js"
+    },
+    {
+      "from": "src/core/stateFactory.js",
+      "to": "src/systems/goldMaster.js"
     },
     {
       "from": "src/core/stateFactory.js",
@@ -176,11 +206,23 @@
     },
     {
       "from": "src/core/stateFactory.js",
+      "to": "src/systems/internationalLaunch.js"
+    },
+    {
+      "from": "src/core/stateFactory.js",
       "to": "src/systems/media.js"
     },
     {
       "from": "src/core/stateFactory.js",
+      "to": "src/systems/nationalCrisis.js"
+    },
+    {
+      "from": "src/core/stateFactory.js",
       "to": "src/systems/population.js"
+    },
+    {
+      "from": "src/core/stateFactory.js",
+      "to": "src/systems/scenarioTutorial.js"
     },
     {
       "from": "src/core/stateFactory.js",
@@ -260,6 +302,10 @@
     },
     {
       "from": "src/game.js",
+      "to": "src/data/alphaBetaData.js"
+    },
+    {
+      "from": "src/game.js",
       "to": "src/data/avatars.js"
     },
     {
@@ -280,6 +326,10 @@
     },
     {
       "from": "src/game.js",
+      "to": "src/data/defenseIntelligenceData.js"
+    },
+    {
+      "from": "src/game.js",
       "to": "src/data/diplomacyData.js"
     },
     {
@@ -296,6 +346,14 @@
     },
     {
       "from": "src/game.js",
+      "to": "src/data/electoralCareerData.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/data/goldMasterData.js"
+    },
+    {
+      "from": "src/game.js",
       "to": "src/data/governmentCreationData.js"
     },
     {
@@ -308,7 +366,15 @@
     },
     {
       "from": "src/game.js",
+      "to": "src/data/internationalLaunchData.js"
+    },
+    {
+      "from": "src/game.js",
       "to": "src/data/mediaData.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/data/nationalCrisisData.js"
     },
     {
       "from": "src/game.js",
@@ -320,11 +386,19 @@
     },
     {
       "from": "src/game.js",
+      "to": "src/data/scenarioTutorialData.js"
+    },
+    {
+      "from": "src/game.js",
       "to": "src/data/securityData.js"
     },
     {
       "from": "src/game.js",
       "to": "src/data/worldDiplomacyData.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/systems/alphaBeta.js"
     },
     {
       "from": "src/game.js",
@@ -348,6 +422,10 @@
     },
     {
       "from": "src/game.js",
+      "to": "src/systems/defenseIntelligence.js"
+    },
+    {
+      "from": "src/game.js",
       "to": "src/systems/diplomacy.js"
     },
     {
@@ -364,6 +442,14 @@
     },
     {
       "from": "src/game.js",
+      "to": "src/systems/electoralCareer.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/systems/goldMaster.js"
+    },
+    {
+      "from": "src/game.js",
       "to": "src/systems/government.js"
     },
     {
@@ -376,6 +462,10 @@
     },
     {
       "from": "src/game.js",
+      "to": "src/systems/internationalLaunch.js"
+    },
+    {
+      "from": "src/game.js",
       "to": "src/systems/media.js"
     },
     {
@@ -384,11 +474,19 @@
     },
     {
       "from": "src/game.js",
+      "to": "src/systems/nationalCrisis.js"
+    },
+    {
+      "from": "src/game.js",
       "to": "src/systems/population.js"
     },
     {
       "from": "src/game.js",
       "to": "src/systems/progression.js"
+    },
+    {
+      "from": "src/game.js",
+      "to": "src/systems/scenarioTutorial.js"
     },
     {
       "from": "src/game.js",
@@ -415,6 +513,46 @@
       "to": "src/ui/tutorial.js"
     },
     {
+      "from": "src/systems/alphaBeta.js",
+      "to": "src/core/dom.js"
+    },
+    {
+      "from": "src/systems/alphaBeta.js",
+      "to": "src/data/alphaBetaData.js"
+    },
+    {
+      "from": "src/systems/alphaBeta.js",
+      "to": "src/systems/budgetTax.js"
+    },
+    {
+      "from": "src/systems/alphaBeta.js",
+      "to": "src/systems/defenseIntelligence.js"
+    },
+    {
+      "from": "src/systems/alphaBeta.js",
+      "to": "src/systems/economyDeep.js"
+    },
+    {
+      "from": "src/systems/alphaBeta.js",
+      "to": "src/systems/electoralCareer.js"
+    },
+    {
+      "from": "src/systems/alphaBeta.js",
+      "to": "src/systems/media.js"
+    },
+    {
+      "from": "src/systems/alphaBeta.js",
+      "to": "src/systems/nationalCrisis.js"
+    },
+    {
+      "from": "src/systems/alphaBeta.js",
+      "to": "src/systems/scenarioTutorial.js"
+    },
+    {
+      "from": "src/systems/alphaBeta.js",
+      "to": "src/systems/worldDiplomacy.js"
+    },
+    {
       "from": "src/systems/budgetTax.js",
       "to": "src/core/dom.js"
     },
@@ -436,6 +574,10 @@
     },
     {
       "from": "src/systems/coreLoop.js",
+      "to": "src/systems/alphaBeta.js"
+    },
+    {
+      "from": "src/systems/coreLoop.js",
       "to": "src/systems/cabinetAdministration.js"
     },
     {
@@ -445,6 +587,10 @@
     {
       "from": "src/systems/coreLoop.js",
       "to": "src/systems/crisis.js"
+    },
+    {
+      "from": "src/systems/coreLoop.js",
+      "to": "src/systems/defenseIntelligence.js"
     },
     {
       "from": "src/systems/coreLoop.js",
@@ -464,7 +610,15 @@
     },
     {
       "from": "src/systems/coreLoop.js",
+      "to": "src/systems/electoralCareer.js"
+    },
+    {
+      "from": "src/systems/coreLoop.js",
       "to": "src/systems/events.js"
+    },
+    {
+      "from": "src/systems/coreLoop.js",
+      "to": "src/systems/goldMaster.js"
     },
     {
       "from": "src/systems/coreLoop.js",
@@ -480,6 +634,10 @@
     },
     {
       "from": "src/systems/coreLoop.js",
+      "to": "src/systems/internationalLaunch.js"
+    },
+    {
+      "from": "src/systems/coreLoop.js",
       "to": "src/systems/media.js"
     },
     {
@@ -488,11 +646,19 @@
     },
     {
       "from": "src/systems/coreLoop.js",
+      "to": "src/systems/nationalCrisis.js"
+    },
+    {
+      "from": "src/systems/coreLoop.js",
       "to": "src/systems/population.js"
     },
     {
       "from": "src/systems/coreLoop.js",
       "to": "src/systems/progression.js"
+    },
+    {
+      "from": "src/systems/coreLoop.js",
+      "to": "src/systems/scenarioTutorial.js"
     },
     {
       "from": "src/systems/coreLoop.js",
@@ -508,6 +674,14 @@
     },
     {
       "from": "src/systems/crisis.js",
+      "to": "src/systems/calculations.js"
+    },
+    {
+      "from": "src/systems/defenseIntelligence.js",
+      "to": "src/data/defenseIntelligenceData.js"
+    },
+    {
+      "from": "src/systems/defenseIntelligence.js",
       "to": "src/systems/calculations.js"
     },
     {
@@ -547,12 +721,68 @@
       "to": "src/systems/calculations.js"
     },
     {
+      "from": "src/systems/electoralCareer.js",
+      "to": "src/core/dom.js"
+    },
+    {
+      "from": "src/systems/electoralCareer.js",
+      "to": "src/data/electionData.js"
+    },
+    {
+      "from": "src/systems/electoralCareer.js",
+      "to": "src/data/electoralCareerData.js"
+    },
+    {
+      "from": "src/systems/electoralCareer.js",
+      "to": "src/systems/elections.js"
+    },
+    {
       "from": "src/systems/events.js",
       "to": "src/data/content.js"
     },
     {
       "from": "src/systems/events.js",
       "to": "src/systems/calculations.js"
+    },
+    {
+      "from": "src/systems/goldMaster.js",
+      "to": "src/core/dom.js"
+    },
+    {
+      "from": "src/systems/goldMaster.js",
+      "to": "src/data/goldMasterData.js"
+    },
+    {
+      "from": "src/systems/goldMaster.js",
+      "to": "src/systems/alphaBeta.js"
+    },
+    {
+      "from": "src/systems/goldMaster.js",
+      "to": "src/systems/defenseIntelligence.js"
+    },
+    {
+      "from": "src/systems/goldMaster.js",
+      "to": "src/systems/economyDeep.js"
+    },
+    {
+      "from": "src/systems/goldMaster.js",
+      "to": "src/systems/electoralCareer.js"
+    },
+    {
+      "from": "src/systems/goldMaster.js",
+      "to": "src/systems/media.js"
+    },
+    {
+      "from": "src/systems/goldMaster.js",
+      "to": "src/systems/nationalCrisis.js"
+    },
+    {
+      "from": "src/systems/goldMaster.js",
+      "to": "src/systems/scenarioTutorial.js"
+    },
+    {
+      "from": "src/systems/goldMaster.js",
+      "to": "src/systems/worldDiplomacy.js"
     },
     {
       "from": "src/systems/government.js",
@@ -575,6 +805,34 @@
       "to": "src/data/governmentInstitutionData.js"
     },
     {
+      "from": "src/systems/internationalLaunch.js",
+      "to": "src/core/dom.js"
+    },
+    {
+      "from": "src/systems/internationalLaunch.js",
+      "to": "src/data/internationalLaunchData.js"
+    },
+    {
+      "from": "src/systems/internationalLaunch.js",
+      "to": "src/systems/alphaBeta.js"
+    },
+    {
+      "from": "src/systems/internationalLaunch.js",
+      "to": "src/systems/goldMaster.js"
+    },
+    {
+      "from": "src/systems/internationalLaunch.js",
+      "to": "src/systems/media.js"
+    },
+    {
+      "from": "src/systems/internationalLaunch.js",
+      "to": "src/systems/scenarioTutorial.js"
+    },
+    {
+      "from": "src/systems/internationalLaunch.js",
+      "to": "src/systems/worldDiplomacy.js"
+    },
+    {
       "from": "src/systems/media.js",
       "to": "src/data/mediaData.js"
     },
@@ -595,6 +853,14 @@
       "to": "src/systems/progression.js"
     },
     {
+      "from": "src/systems/nationalCrisis.js",
+      "to": "src/core/dom.js"
+    },
+    {
+      "from": "src/systems/nationalCrisis.js",
+      "to": "src/data/nationalCrisisData.js"
+    },
+    {
       "from": "src/systems/population.js",
       "to": "src/data/populationData.js"
     },
@@ -609,6 +875,14 @@
     {
       "from": "src/systems/progression.js",
       "to": "src/systems/calculations.js"
+    },
+    {
+      "from": "src/systems/scenarioTutorial.js",
+      "to": "src/core/dom.js"
+    },
+    {
+      "from": "src/systems/scenarioTutorial.js",
+      "to": "src/data/scenarioTutorialData.js"
     },
     {
       "from": "src/systems/security.js",
@@ -668,6 +942,10 @@
     },
     {
       "from": "src/ui/render.js",
+      "to": "src/data/alphaBetaData.js"
+    },
+    {
+      "from": "src/ui/render.js",
       "to": "src/data/budgetTaxData.js"
     },
     {
@@ -681,6 +959,10 @@
     {
       "from": "src/ui/render.js",
       "to": "src/data/crisisData.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/data/defenseIntelligenceData.js"
     },
     {
       "from": "src/ui/render.js",
@@ -700,6 +982,14 @@
     },
     {
       "from": "src/ui/render.js",
+      "to": "src/data/electoralCareerData.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/data/goldMasterData.js"
+    },
+    {
+      "from": "src/ui/render.js",
       "to": "src/data/governmentData.js"
     },
     {
@@ -708,11 +998,19 @@
     },
     {
       "from": "src/ui/render.js",
+      "to": "src/data/internationalLaunchData.js"
+    },
+    {
+      "from": "src/ui/render.js",
       "to": "src/data/mediaData.js"
     },
     {
       "from": "src/ui/render.js",
       "to": "src/data/monetizationData.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/data/nationalCrisisData.js"
     },
     {
       "from": "src/ui/render.js",
@@ -728,11 +1026,19 @@
     },
     {
       "from": "src/ui/render.js",
+      "to": "src/data/scenarioTutorialData.js"
+    },
+    {
+      "from": "src/ui/render.js",
       "to": "src/data/securityData.js"
     },
     {
       "from": "src/ui/render.js",
       "to": "src/data/worldDiplomacyData.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/systems/alphaBeta.js"
     },
     {
       "from": "src/ui/render.js",
@@ -756,6 +1062,10 @@
     },
     {
       "from": "src/ui/render.js",
+      "to": "src/systems/defenseIntelligence.js"
+    },
+    {
+      "from": "src/ui/render.js",
       "to": "src/systems/diplomacy.js"
     },
     {
@@ -772,6 +1082,14 @@
     },
     {
       "from": "src/ui/render.js",
+      "to": "src/systems/electoralCareer.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/systems/goldMaster.js"
+    },
+    {
+      "from": "src/ui/render.js",
       "to": "src/systems/government.js"
     },
     {
@@ -784,6 +1102,10 @@
     },
     {
       "from": "src/ui/render.js",
+      "to": "src/systems/internationalLaunch.js"
+    },
+    {
+      "from": "src/ui/render.js",
       "to": "src/systems/media.js"
     },
     {
@@ -792,11 +1114,19 @@
     },
     {
       "from": "src/ui/render.js",
+      "to": "src/systems/nationalCrisis.js"
+    },
+    {
+      "from": "src/ui/render.js",
       "to": "src/systems/population.js"
     },
     {
       "from": "src/ui/render.js",
       "to": "src/systems/progression.js"
+    },
+    {
+      "from": "src/ui/render.js",
+      "to": "src/systems/scenarioTutorial.js"
     },
     {
       "from": "src/ui/render.js",

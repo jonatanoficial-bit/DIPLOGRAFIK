@@ -9790,6 +9790,3246 @@
       "pt-BR": "Coordena governo e setor produtivo para vender mais ao exterior.",
       "en": "Coordinates government and producers to sell more abroad.",
       "es": "Coordina gobierno y sector productivo para vender más al exterior."
+    },
+    "defense.phaseName": {
+      "pt-BR": "Defesa e Inteligência",
+      "en": "Defense and Intelligence",
+      "es": "Defensa e Inteligencia"
+    },
+    "defense.commandTitle": {
+      "pt-BR": "Comando de Defesa",
+      "en": "Defense command",
+      "es": "Comando de defensa"
+    },
+    "defense.riskTitle": {
+      "pt-BR": "Risco de Segurança",
+      "en": "Security risk",
+      "es": "Riesgo de seguridad"
+    },
+    "defense.doctrineTitle": {
+      "pt-BR": "Doutrina de Defesa",
+      "en": "Defense doctrine",
+      "es": "Doctrina de defensa"
+    },
+    "defense.actionsTitle": {
+      "pt-BR": "Ações de Defesa",
+      "en": "Defense actions",
+      "es": "Acciones de defensa"
+    },
+    "defense.branchesTitle": {
+      "pt-BR": "Forças, fronteiras e prontidão",
+      "en": "Forces, borders and readiness",
+      "es": "Fuerzas, fronteras y preparación"
+    },
+    "defense.intelAgencyTitle": {
+      "pt-BR": "Agência de Inteligência",
+      "en": "Intelligence agency",
+      "es": "Agencia de inteligencia"
+    },
+    "defense.networkTitle": {
+      "pt-BR": "Rede Integrada",
+      "en": "Integrated network",
+      "es": "Red integrada"
+    },
+    "defense.desksTitle": {
+      "pt-BR": "Mesas de Inteligência",
+      "en": "Intelligence desks",
+      "es": "Mesas de inteligencia"
+    },
+    "defense.intelActionsTitle": {
+      "pt-BR": "Ações de Inteligência Avançada",
+      "en": "Advanced intelligence actions",
+      "es": "Acciones de inteligencia avanzada"
+    },
+    "defense.historyTitle": {
+      "pt-BR": "Histórico de Defesa e Inteligência",
+      "en": "Defense and intelligence history",
+      "es": "Historial de defensa e inteligencia"
+    },
+    "defense.health": {
+      "pt-BR": "Saúde de defesa",
+      "en": "Defense health",
+      "es": "Salud de defensa"
+    },
+    "defense.readiness": {
+      "pt-BR": "Prontidão",
+      "en": "Readiness",
+      "es": "Preparación"
+    },
+    "defense.logistics": {
+      "pt-BR": "Logística",
+      "en": "Logistics",
+      "es": "Logística"
+    },
+    "defense.modernization": {
+      "pt-BR": "Modernização",
+      "en": "Modernization",
+      "es": "Modernización"
+    },
+    "defense.deterrence": {
+      "pt-BR": "Dissuasão",
+      "en": "Deterrence",
+      "es": "Disuasión"
+    },
+    "defense.autonomy": {
+      "pt-BR": "Autonomia estratégica",
+      "en": "Strategic autonomy",
+      "es": "Autonomía estratégica"
+    },
+    "defense.strategicRisk": {
+      "pt-BR": "Risco estratégico",
+      "en": "Strategic risk",
+      "es": "Riesgo estratégico"
+    },
+    "defense.escalationRisk": {
+      "pt-BR": "Risco de escalada",
+      "en": "Escalation risk",
+      "es": "Riesgo de escalada"
+    },
+    "defense.currentDiagnosis": {
+      "pt-BR": "Diagnóstico atual",
+      "en": "Current diagnosis",
+      "es": "Diagnóstico actual"
+    },
+    "defense.internalThreat": {
+      "pt-BR": "Ameaça interna",
+      "en": "Internal threat",
+      "es": "Amenaza interna"
+    },
+    "defense.coupRisk": {
+      "pt-BR": "Risco de ruptura",
+      "en": "Breakdown risk",
+      "es": "Riesgo de ruptura"
+    },
+    "defense.threatLevel": {
+      "pt-BR": "Nível de ameaça",
+      "en": "Threat level",
+      "es": "Nivel de amenaza"
+    },
+    "defense.operationalRisk": {
+      "pt-BR": "Risco operacional",
+      "en": "Operational risk",
+      "es": "Riesgo operativo"
+    },
+    "defense.cyberResilience": {
+      "pt-BR": "Resiliência cibernética",
+      "en": "Cyber resilience",
+      "es": "Resiliencia cibernética"
+    },
+    "defense.borderControl": {
+      "pt-BR": "Controle de fronteiras",
+      "en": "Border control",
+      "es": "Control de fronteras"
+    },
+    "defense.pressure": {
+      "pt-BR": "Pressão",
+      "en": "Pressure",
+      "es": "Presión"
+    },
+    "defense.intelCoverage": {
+      "pt-BR": "Cobertura de inteligência",
+      "en": "Intelligence coverage",
+      "es": "Cobertura de inteligencia"
+    },
+    "defense.counterIntel": {
+      "pt-BR": "Contrainteligência",
+      "en": "Counterintelligence",
+      "es": "Contrainteligencia"
+    },
+    "defense.intelligenceEdge": {
+      "pt-BR": "Vantagem informacional",
+      "en": "Intelligence edge",
+      "es": "Ventaja informacional"
+    },
+    "defense.scandalRisk": {
+      "pt-BR": "Risco de escândalo",
+      "en": "Scandal risk",
+      "es": "Riesgo de escándalo"
+    },
+    "defense.network": {
+      "pt-BR": "Rede nacional de inteligência",
+      "en": "National intelligence network",
+      "es": "Red nacional de inteligencia"
+    },
+    "defense.coverage": {
+      "pt-BR": "Cobertura",
+      "en": "Coverage",
+      "es": "Cobertura"
+    },
+    "defense.strategicForecast": {
+      "pt-BR": "Previsão estratégica",
+      "en": "Strategic forecast",
+      "es": "Pronóstico estratégico"
+    },
+    "defense.externalPressure": {
+      "pt-BR": "Pressão externa",
+      "en": "External pressure",
+      "es": "Presión externa"
+    },
+    "defense.internalPressure": {
+      "pt-BR": "Pressão interna",
+      "en": "Internal pressure",
+      "es": "Presión interna"
+    },
+    "defense.readinessGap": {
+      "pt-BR": "Lacuna de prontidão",
+      "en": "Readiness gap",
+      "es": "Brecha de preparación"
+    },
+    "defense.reliability": {
+      "pt-BR": "Confiabilidade",
+      "en": "Reliability",
+      "es": "Confiabilidad"
+    },
+    "defense.risk": {
+      "pt-BR": "Risco",
+      "en": "Risk",
+      "es": "Riesgo"
+    },
+    "defense.active": {
+      "pt-BR": "Ativa",
+      "en": "Active",
+      "es": "Activa"
+    },
+    "defense.adopt": {
+      "pt-BR": "Adotar",
+      "en": "Adopt",
+      "es": "Adoptar"
+    },
+    "defense.execute": {
+      "pt-BR": "Executar",
+      "en": "Execute",
+      "es": "Ejecutar"
+    },
+    "defense.wait": {
+      "pt-BR": "Aguardar",
+      "en": "Wait",
+      "es": "Esperar"
+    },
+    "defense.cooldown": {
+      "pt-BR": "{days} dias de espera",
+      "en": "{days} days waiting",
+      "es": "{days} días de espera"
+    },
+    "defense.costLine": {
+      "pt-BR": "Custo ₿ {cost} bi • {ap} PA • impacto em {days} dias",
+      "en": "Cost ₿ {cost} bi • {ap} AP • impact in {days} days",
+      "es": "Costo ₿ {cost} bi • {ap} PA • impacto en {days} días"
+    },
+    "defense.cooldownWarning": {
+      "pt-BR": "A estrutura ainda está em cooldown operacional.",
+      "en": "The structure is still under operational cooldown.",
+      "es": "La estructura aún está en enfriamiento operativo."
+    },
+    "defense.insufficientTreasury": {
+      "pt-BR": "Tesouro insuficiente para a ação de defesa e inteligência.",
+      "en": "Insufficient treasury for the defense and intelligence action.",
+      "es": "Tesoro insuficiente para la acción de defensa e inteligencia."
+    },
+    "defense.doctrineAlreadyActive": {
+      "pt-BR": "Esta doutrina de defesa já está ativa.",
+      "en": "This defense doctrine is already active.",
+      "es": "Esta doctrina de defensa ya está activa."
+    },
+    "defense.doctrineChanged": {
+      "pt-BR": "Doutrina de defesa alterada para {name}.",
+      "en": "Defense doctrine changed to {name}.",
+      "es": "Doctrina de defensa cambiada a {name}."
+    },
+    "defense.actionStarted": {
+      "pt-BR": "Ação de defesa e inteligência iniciada: {name}.",
+      "en": "Defense and intelligence action started: {name}.",
+      "es": "Acción de defensa e inteligencia iniciada: {name}."
+    },
+    "defense.noLegacyOperations": {
+      "pt-BR": "Nenhuma operação secreta legada executada ainda.",
+      "en": "No legacy covert operation has been executed yet.",
+      "es": "Ninguna operación secreta heredada ejecutada todavía."
+    },
+    "defense.noIncidents": {
+      "pt-BR": "Nenhum incidente de defesa registrado.",
+      "en": "No defense incident recorded.",
+      "es": "Ningún incidente de defensa registrado."
+    },
+    "defense.diagnosis.stable": {
+      "pt-BR": "Sistema de defesa sob controle, com riscos monitorados.",
+      "en": "Defense system under control, with monitored risks.",
+      "es": "Sistema de defensa bajo control, con riesgos monitoreados."
+    },
+    "defense.diagnosis.risk": {
+      "pt-BR": "Risco estratégico elevado: tensão externa, lacunas internas ou baixa prontidão exigem resposta.",
+      "en": "High strategic risk: external tension, internal gaps or low readiness demand a response.",
+      "es": "Riesgo estratégico elevado: tensión externa, brechas internas o baja preparación exigen respuesta."
+    },
+    "defense.diagnosis.cyber": {
+      "pt-BR": "Resiliência cibernética frágil: infraestrutura digital vulnerável a sabotagem e vazamentos.",
+      "en": "Weak cyber resilience: digital infrastructure is vulnerable to sabotage and leaks.",
+      "es": "Resiliencia cibernética frágil: infraestructura digital vulnerable a sabotaje y filtraciones."
+    },
+    "defense.diagnosis.readiness": {
+      "pt-BR": "Lacuna de prontidão relevante: logística, modernização ou treinamento estão abaixo do necessário.",
+      "en": "Relevant readiness gap: logistics, modernization or training are below what is needed.",
+      "es": "Brecha de preparación relevante: logística, modernización o entrenamiento están por debajo de lo necesario."
+    },
+    "defense.diagnosis.strong": {
+      "pt-BR": "Defesa integrada forte: dissuasão, inteligência e prontidão sustentam a estabilidade.",
+      "en": "Strong integrated defense: deterrence, intelligence and readiness support stability.",
+      "es": "Defensa integrada fuerte: disuasión, inteligencia y preparación sostienen la estabilidad."
+    },
+    "defense.branch.army.name": {
+      "pt-BR": "Exército",
+      "en": "Army",
+      "es": "Ejército"
+    },
+    "defense.branch.army.text": {
+      "pt-BR": "Força terrestre, mobilização, logística nacional e presença territorial.",
+      "en": "Land force, mobilization, national logistics and territorial presence.",
+      "es": "Fuerza terrestre, movilización, logística nacional y presencia territorial."
+    },
+    "defense.branch.navy.name": {
+      "pt-BR": "Marinha",
+      "en": "Navy",
+      "es": "Armada"
+    },
+    "defense.branch.navy.text": {
+      "pt-BR": "Proteção marítima, rotas comerciais, costa e recursos estratégicos.",
+      "en": "Maritime protection, trade routes, coast and strategic resources.",
+      "es": "Protección marítima, rutas comerciales, costa y recursos estratégicos."
+    },
+    "defense.branch.air.name": {
+      "pt-BR": "Aeronáutica e Espaço",
+      "en": "Air force and space",
+      "es": "Aeronáutica y espacio"
+    },
+    "defense.branch.air.text": {
+      "pt-BR": "Superioridade aérea, defesa aeroespacial, transporte e vigilância.",
+      "en": "Air superiority, aerospace defense, transport and surveillance.",
+      "es": "Superioridad aérea, defensa aeroespacial, transporte y vigilancia."
+    },
+    "defense.branch.cyber.name": {
+      "pt-BR": "Comando Cibernético",
+      "en": "Cyber command",
+      "es": "Comando cibernético"
+    },
+    "defense.branch.cyber.text": {
+      "pt-BR": "Proteção digital, sensores, resposta a ataques e soberania tecnológica.",
+      "en": "Digital protection, sensors, attack response and technological sovereignty.",
+      "es": "Protección digital, sensores, respuesta a ataques y soberanía tecnológica."
+    },
+    "defense.branch.border.name": {
+      "pt-BR": "Guarda de Fronteiras",
+      "en": "Border guard",
+      "es": "Guardia de fronteras"
+    },
+    "defense.branch.border.text": {
+      "pt-BR": "Fronteiras, crime transnacional, contrabando e resposta regional.",
+      "en": "Borders, transnational crime, smuggling and regional response.",
+      "es": "Fronteras, crimen transnacional, contrabando y respuesta regional."
+    },
+    "defense.branch.civil.name": {
+      "pt-BR": "Defesa Civil",
+      "en": "Civil defense",
+      "es": "Defensa civil"
+    },
+    "defense.branch.civil.text": {
+      "pt-BR": "Desastres, emergência climática, logística humanitária e proteção da população.",
+      "en": "Disasters, climate emergency, humanitarian logistics and population protection.",
+      "es": "Desastres, emergencia climática, logística humanitaria y protección de la población."
+    },
+    "defense.desk.domestic.name": {
+      "pt-BR": "Contraameaças internas",
+      "en": "Domestic counter-threats",
+      "es": "Contraamenazas internas"
+    },
+    "defense.desk.domestic.text": {
+      "pt-BR": "Mapeia radicalização, crime organizado, sabotagem e risco institucional.",
+      "en": "Maps radicalization, organized crime, sabotage and institutional risk.",
+      "es": "Mapea radicalización, crimen organizado, sabotaje y riesgo institucional."
+    },
+    "defense.desk.foreign.name": {
+      "pt-BR": "Análise externa",
+      "en": "Foreign analysis",
+      "es": "Análisis externo"
+    },
+    "defense.desk.foreign.text": {
+      "pt-BR": "Avalia movimentos de potências, sanções, alianças e pressões diplomáticas.",
+      "en": "Assesses moves by powers, sanctions, alliances and diplomatic pressure.",
+      "es": "Evalúa movimientos de potencias, sanciones, alianzas y presiones diplomáticas."
+    },
+    "defense.desk.cyber.name": {
+      "pt-BR": "Inteligência cibernética",
+      "en": "Cyber intelligence",
+      "es": "Inteligencia cibernética"
+    },
+    "defense.desk.cyber.text": {
+      "pt-BR": "Detecta ataques digitais, campanhas coordenadas e vazamentos sensíveis.",
+      "en": "Detects digital attacks, coordinated campaigns and sensitive leaks.",
+      "es": "Detecta ataques digitales, campañas coordinadas y filtraciones sensibles."
+    },
+    "defense.desk.financial.name": {
+      "pt-BR": "Inteligência financeira",
+      "en": "Financial intelligence",
+      "es": "Inteligencia financiera"
+    },
+    "defense.desk.financial.text": {
+      "pt-BR": "Rastreia fluxos ilícitos, financiamento de crise e redes de corrupção.",
+      "en": "Tracks illicit flows, crisis funding and corruption networks.",
+      "es": "Rastrea flujos ilícitos, financiación de crisis y redes de corrupción."
+    },
+    "defense.desk.crisis.name": {
+      "pt-BR": "Monitor de crises",
+      "en": "Crisis watch",
+      "es": "Monitor de crisis"
+    },
+    "defense.desk.crisis.text": {
+      "pt-BR": "Antecipa desastres, protestos, colapsos logísticos e efeitos em cadeia.",
+      "en": "Anticipates disasters, protests, logistics collapse and chain effects.",
+      "es": "Anticipa desastres, protestas, colapsos logísticos y efectos en cadena."
+    },
+    "defense.desk.strategic.name": {
+      "pt-BR": "Previsão estratégica",
+      "en": "Strategic forecasting",
+      "es": "Pronóstico estratégico"
+    },
+    "defense.desk.strategic.text": {
+      "pt-BR": "Transforma dados de governo e mundo em cenários e alertas de longo prazo.",
+      "en": "Turns government and world data into scenarios and long-term alerts.",
+      "es": "Convierte datos de gobierno y mundo en escenarios y alertas de largo plazo."
+    },
+    "defense.doctrine.deterrence.name": {
+      "pt-BR": "Dissuasão equilibrada",
+      "en": "Balanced deterrence",
+      "es": "Disuasión equilibrada"
+    },
+    "defense.doctrine.deterrence.text": {
+      "pt-BR": "Prioriza prontidão, lealdade e capacidade de resposta sem escalar conflitos desnecessários.",
+      "en": "Prioritizes readiness, loyalty and response capacity without unnecessary escalation.",
+      "es": "Prioriza preparación, lealtad y capacidad de respuesta sin escalar conflictos innecesarios."
+    },
+    "defense.doctrine.integrated.name": {
+      "pt-BR": "Segurança integrada",
+      "en": "Integrated security",
+      "es": "Seguridad integrada"
+    },
+    "defense.doctrine.integrated.text": {
+      "pt-BR": "Integra fronteiras, polícia, defesa civil e inteligência para reduzir ameaças internas.",
+      "en": "Integrates borders, police, civil defense and intelligence to reduce internal threats.",
+      "es": "Integra fronteras, policía, defensa civil e inteligencia para reducir amenazas internas."
+    },
+    "defense.doctrine.cyber.name": {
+      "pt-BR": "Soberania cibernética",
+      "en": "Cyber sovereignty",
+      "es": "Soberanía cibernética"
+    },
+    "defense.doctrine.cyber.text": {
+      "pt-BR": "Fortalece proteção digital, contrainteligência e independência tecnológica.",
+      "en": "Strengthens digital protection, counterintelligence and technological independence.",
+      "es": "Fortalece protección digital, contrainteligencia e independencia tecnológica."
+    },
+    "defense.doctrine.peace.name": {
+      "pt-BR": "Projeção de paz",
+      "en": "Peacekeeping projection",
+      "es": "Proyección de paz"
+    },
+    "defense.doctrine.peace.text": {
+      "pt-BR": "Usa defesa e missões internacionais para ampliar prestígio, diplomacia e liderança regional.",
+      "en": "Uses defense and international missions to expand prestige, diplomacy and regional leadership.",
+      "es": "Usa defensa y misiones internacionales para ampliar prestigio, diplomacia y liderazgo regional."
+    },
+    "defense.action.wargame.title": {
+      "pt-BR": "Exercício conjunto nacional",
+      "en": "National joint exercise",
+      "es": "Ejercicio conjunto nacional"
+    },
+    "defense.action.wargame.text": {
+      "pt-BR": "Simula crises simultâneas e melhora prontidão, logística e dissuasão.",
+      "en": "Simulates simultaneous crises and improves readiness, logistics and deterrence.",
+      "es": "Simula crisis simultáneas y mejora preparación, logística y disuasión."
+    },
+    "defense.action.border.title": {
+      "pt-BR": "Comando integrado de fronteiras",
+      "en": "Integrated border command",
+      "es": "Comando integrado de fronteras"
+    },
+    "defense.action.border.text": {
+      "pt-BR": "Conecta defesa, polícia, inteligência e diplomacia regional nas fronteiras.",
+      "en": "Connects defense, police, intelligence and regional diplomacy at the borders.",
+      "es": "Conecta defensa, policía, inteligencia y diplomacia regional en las fronteras."
+    },
+    "defense.action.cyber.title": {
+      "pt-BR": "Escudo cibernético nacional",
+      "en": "National cyber shield",
+      "es": "Escudo cibernético nacional"
+    },
+    "defense.action.cyber.text": {
+      "pt-BR": "Reforça infraestrutura crítica contra ataques, sabotagem e vazamentos.",
+      "en": "Reinforces critical infrastructure against attacks, sabotage and leaks.",
+      "es": "Refuerza infraestructura crítica contra ataques, sabotaje y filtraciones."
+    },
+    "defense.action.fusion.title": {
+      "pt-BR": "Centro de fusão de inteligência",
+      "en": "Intelligence fusion center",
+      "es": "Centro de fusión de inteligencia"
+    },
+    "defense.action.fusion.text": {
+      "pt-BR": "Unifica dados de órgãos civis e militares com filtros antiabuso.",
+      "en": "Unifies civilian and military agency data with anti-abuse filters.",
+      "es": "Unifica datos de organismos civiles y militares con filtros antiabuso."
+    },
+    "defense.action.disinfo.title": {
+      "pt-BR": "Célula contra desinformação",
+      "en": "Counter-disinformation cell",
+      "es": "Célula contra desinformación"
+    },
+    "defense.action.disinfo.text": {
+      "pt-BR": "Identifica campanhas coordenadas sem reduzir liberdade de imprensa.",
+      "en": "Identifies coordinated campaigns without reducing press freedom.",
+      "es": "Identifica campañas coordinadas sin reducir libertad de prensa."
+    },
+    "defense.action.industry.title": {
+      "pt-BR": "Programa de indústria de defesa",
+      "en": "Defense industry program",
+      "es": "Programa de industria de defensa"
+    },
+    "defense.action.industry.text": {
+      "pt-BR": "Aumenta autonomia estratégica, tecnologia e capacidade produtiva nacional.",
+      "en": "Increases strategic autonomy, technology and national production capacity.",
+      "es": "Aumenta autonomía estratégica, tecnología y capacidad productiva nacional."
+    },
+    "defense.action.disaster.title": {
+      "pt-BR": "Rede nacional de resposta a desastres",
+      "en": "National disaster response network",
+      "es": "Red nacional de respuesta a desastres"
+    },
+    "defense.action.disaster.text": {
+      "pt-BR": "Integra defesa civil, logística e serviços públicos para crises climáticas e humanitárias.",
+      "en": "Integrates civil defense, logistics and public services for climate and humanitarian crises.",
+      "es": "Integra defensa civil, logística y servicios públicos para crisis climáticas y humanitarias."
+    },
+    "defense.action.peacekeeping.title": {
+      "pt-BR": "Missão internacional de paz",
+      "en": "International peacekeeping mission",
+      "es": "Misión internacional de paz"
+    },
+    "defense.action.peacekeeping.text": {
+      "pt-BR": "Envia missão controlada para elevar prestígio, diplomacia e liderança regional.",
+      "en": "Sends a controlled mission to raise prestige, diplomacy and regional leadership.",
+      "es": "Envía una misión controlada para elevar prestigio, diplomacia y liderazgo regional."
+    },
+    "defense.incident.cyber.title": {
+      "pt-BR": "Sondagem cibernética externa",
+      "en": "External cyber probing",
+      "es": "Sondeo cibernético externo"
+    },
+    "defense.incident.cyber.text": {
+      "pt-BR": "Sistemas críticos detectam tentativa de acesso coordenado.",
+      "en": "Critical systems detect a coordinated access attempt.",
+      "es": "Sistemas críticos detectan intento de acceso coordinado."
+    },
+    "defense.incident.border.title": {
+      "pt-BR": "Pressão em fronteira sensível",
+      "en": "Pressure on sensitive border",
+      "es": "Presión en frontera sensible"
+    },
+    "defense.incident.border.text": {
+      "pt-BR": "A tensão regional exige vigilância sem escalada precipitada.",
+      "en": "Regional tension requires vigilance without hasty escalation.",
+      "es": "La tensión regional exige vigilancia sin escalada precipitada."
+    },
+    "defense.incident.success.title": {
+      "pt-BR": "Alerta preventivo bem-sucedido",
+      "en": "Successful preventive alert",
+      "es": "Alerta preventivo exitoso"
+    },
+    "defense.incident.success.text": {
+      "pt-BR": "A inteligência antecipa ameaça e reduz custo político da resposta.",
+      "en": "Intelligence anticipates a threat and reduces the political cost of response.",
+      "es": "La inteligencia anticipa una amenaza y reduce el costo político de la respuesta."
+    },
+    "defense.incident.supply.title": {
+      "pt-BR": "Gargalo logístico de defesa",
+      "en": "Defense logistics bottleneck",
+      "es": "Cuello de botella logístico de defensa"
+    },
+    "defense.incident.supply.text": {
+      "pt-BR": "Manutenção, peças e transporte limitam a prontidão operacional.",
+      "en": "Maintenance, parts and transport limit operational readiness.",
+      "es": "Mantenimiento, piezas y transporte limitan la preparación operativa."
+    },
+    "defense.incident.joint.title": {
+      "pt-BR": "Coordenação conjunta eficiente",
+      "en": "Efficient joint coordination",
+      "es": "Coordinación conjunta eficiente"
+    },
+    "defense.incident.joint.text": {
+      "pt-BR": "Forças e órgãos civis respondem juntos sem conflito de comando.",
+      "en": "Forces and civilian agencies respond together without command conflict.",
+      "es": "Fuerzas y organismos civiles responden juntos sin conflicto de mando."
+    },
+    "Sistema profundo de diplomacia mundial com doutrinas diplomáticas, soft power, confiança global, acesso comercial, blocos geopolíticos, agenda internacional, ações multilaterais e integração com economia, mídia, instituições e segurança.": {
+      "pt-BR": "Sistema profundo de diplomacia mundial com doutrinas diplomáticas, soft power, confiança global, acesso comercial, blocos geopolíticos, agenda internacional, ações multilaterais e integração com economia, mídia, instituições e segurança.",
+      "en": "Deep world diplomacy system with diplomatic doctrines, soft power, global trust, trade access, geopolitical blocs, international agenda, multilateral actions and integration with economy, media, institutions and security.",
+      "es": "Sistema profundo de diplomacia mundial con doctrinas diplomáticas, poder blando, confianza global, acceso comercial, bloques geopolíticos, agenda internacional, acciones multilaterales e integración con economía, medios, instituciones y seguridad."
+    },
+    "direitos": {
+      "pt-BR": "direitos",
+      "en": "rights",
+      "es": "derechos"
+    },
+    "mercosul": {
+      "pt-BR": "mercosul",
+      "en": "mercosur",
+      "es": "mercosur"
+    },
+    "regionalReach": {
+      "pt-BR": "regionalReach",
+      "en": "regional reach",
+      "es": "alcance regional"
+    },
+    "Fase 23 aprofunda defesa, inteligência, fronteiras, cibersegurança, dissuasão, prontidão operacional e segurança internacional sem remover os sistemas anteriores.": {
+      "pt-BR": "Fase 23 aprofunda defesa, inteligência, fronteiras, cibersegurança, dissuasão, prontidão operacional e segurança internacional sem remover os sistemas anteriores.",
+      "en": "Phase 23 deepens defense, intelligence, borders, cybersecurity, deterrence, operational readiness and international security without removing previous systems.",
+      "es": "La Fase 23 profundiza defensa, inteligencia, fronteras, ciberseguridad, disuasión, preparación operativa y seguridad internacional sin eliminar sistemas anteriores."
+    },
+    "Comando Militar Legado": {
+      "pt-BR": "Comando Militar Legado",
+      "en": "Legacy Military Command",
+      "es": "Comando Militar Heredado"
+    },
+    "Operações Secretas Legadas": {
+      "pt-BR": "Operações Secretas Legadas",
+      "en": "Legacy Secret Operations",
+      "es": "Operaciones Secretas Heredadas"
+    },
+    "nationalCrisis.phaseName": {
+      "pt-BR": "Gestão nacional de crise",
+      "en": "National crisis management",
+      "es": "Gestión nacional de crisis"
+    },
+    "nationalCrisis.officeTitle": {
+      "pt-BR": "Gabinete Nacional de Crise",
+      "en": "National Crisis Office",
+      "es": "Gabinete Nacional de Crisis"
+    },
+    "nationalCrisis.activeChainsTitle": {
+      "pt-BR": "Crises Ativas",
+      "en": "Active crisis chains",
+      "es": "Crisis activas"
+    },
+    "nationalCrisis.protocolTitle": {
+      "pt-BR": "Protocolo de Resposta",
+      "en": "Response protocol",
+      "es": "Protocolo de respuesta"
+    },
+    "nationalCrisis.domainsTitle": {
+      "pt-BR": "Domínios de Risco",
+      "en": "Risk domains",
+      "es": "Dominios de riesgo"
+    },
+    "nationalCrisis.scenariosTitle": {
+      "pt-BR": "Cenários Críticos",
+      "en": "Critical scenarios",
+      "es": "Escenarios críticos"
+    },
+    "nationalCrisis.actionsTitle": {
+      "pt-BR": "Ações Emergenciais e Estruturais",
+      "en": "Emergency and structural actions",
+      "es": "Acciones de emergencia y estructurales"
+    },
+    "nationalCrisis.riskMapTitle": {
+      "pt-BR": "Mapa de Risco",
+      "en": "Risk map",
+      "es": "Mapa de riesgo"
+    },
+    "nationalCrisis.chainHistoryTitle": {
+      "pt-BR": "Histórico de Crises",
+      "en": "Crisis chain history",
+      "es": "Historial de crisis"
+    },
+    "nationalCrisis.monthlyHistoryTitle": {
+      "pt-BR": "Histórico Nacional Mensal",
+      "en": "Monthly national history",
+      "es": "Historial nacional mensual"
+    },
+    "nationalCrisis.nationalLevel": {
+      "pt-BR": "Nível nacional",
+      "en": "National level",
+      "es": "Nivel nacional"
+    },
+    "nationalCrisis.maxSeverity": {
+      "pt-BR": "Severidade máxima",
+      "en": "Maximum severity",
+      "es": "Severidad máxima"
+    },
+    "nationalCrisis.compoundRisk": {
+      "pt-BR": "Risco composto",
+      "en": "Compound risk",
+      "es": "Riesgo compuesto"
+    },
+    "nationalCrisis.readiness": {
+      "pt-BR": "Prontidão",
+      "en": "Readiness",
+      "es": "Preparación"
+    },
+    "nationalCrisis.recoveryCapacity": {
+      "pt-BR": "Capacidade de recuperação",
+      "en": "Recovery capacity",
+      "es": "Capacidad de recuperación"
+    },
+    "nationalCrisis.currentDiagnosis": {
+      "pt-BR": "Diagnóstico atual",
+      "en": "Current diagnosis",
+      "es": "Diagnóstico actual"
+    },
+    "nationalCrisis.chainStatus": {
+      "pt-BR": "nível {level}/4 • cooldown {cooldown} dias",
+      "en": "level {level}/4 • cooldown {cooldown} days",
+      "es": "nivel {level}/4 • enfriamiento {cooldown} días"
+    },
+    "nationalCrisis.noActiveChains": {
+      "pt-BR": "Nenhuma crise encadeada ativa.",
+      "en": "No active crisis chain.",
+      "es": "Ninguna crisis encadenada activa."
+    },
+    "nationalCrisis.active": {
+      "pt-BR": "Ativo",
+      "en": "Active",
+      "es": "Activo"
+    },
+    "nationalCrisis.adopt": {
+      "pt-BR": "Adotar",
+      "en": "Adopt",
+      "es": "Adoptar"
+    },
+    "nationalCrisis.pressure": {
+      "pt-BR": "Pressão",
+      "en": "Pressure",
+      "es": "Presión"
+    },
+    "nationalCrisis.trend": {
+      "pt-BR": "Tendência",
+      "en": "Trend",
+      "es": "Tendencia"
+    },
+    "nationalCrisis.trendValue": {
+      "pt-BR": "tendência: {trend}",
+      "en": "trend: {trend}",
+      "es": "tendencia: {trend}"
+    },
+    "nationalCrisis.risk": {
+      "pt-BR": "Risco",
+      "en": "Risk",
+      "es": "Riesgo"
+    },
+    "nationalCrisis.scenarioActive": {
+      "pt-BR": "cenário ativo",
+      "en": "scenario active",
+      "es": "escenario activo"
+    },
+    "nationalCrisis.scenarioControlled": {
+      "pt-BR": "controlado",
+      "en": "controlled",
+      "es": "controlado"
+    },
+    "nationalCrisis.costLine": {
+      "pt-BR": "₿ {cost} bi • {ap} PA • impacto em {days} dias",
+      "en": "₿ {cost} bi • {ap} AP • impact in {days} days",
+      "es": "₿ {cost} bi • {ap} PA • impacto en {days} días"
+    },
+    "nationalCrisis.cooldown": {
+      "pt-BR": "cooldown {days} dias",
+      "en": "cooldown {days} days",
+      "es": "enfriamiento {days} días"
+    },
+    "nationalCrisis.wait": {
+      "pt-BR": "AGUARDAR",
+      "en": "WAIT",
+      "es": "ESPERAR"
+    },
+    "nationalCrisis.noHistory": {
+      "pt-BR": "Nenhum histórico de crise ainda.",
+      "en": "No crisis history yet.",
+      "es": "Aún no hay historial de crisis."
+    },
+    "nationalCrisis.health": {
+      "pt-BR": "Saúde",
+      "en": "Health",
+      "es": "Salud"
+    },
+    "nationalCrisis.activeScenarios": {
+      "pt-BR": "Cenários ativos",
+      "en": "Active scenarios",
+      "es": "Escenarios activos"
+    },
+    "nationalCrisis.noMonthlyHistory": {
+      "pt-BR": "Nenhum histórico nacional mensal ainda.",
+      "en": "No monthly national history yet.",
+      "es": "Aún no hay historial nacional mensual."
+    },
+    "nationalCrisis.protocolAlreadyActive": {
+      "pt-BR": "Este protocolo de crise já está ativo.",
+      "en": "This crisis protocol is already active.",
+      "es": "Este protocolo de crisis ya está activo."
+    },
+    "nationalCrisis.protocolChanged": {
+      "pt-BR": "Protocolo de crise alterado: {name}.",
+      "en": "Crisis protocol changed: {name}.",
+      "es": "Protocolo de crisis cambiado: {name}."
+    },
+    "nationalCrisis.cooldownWarning": {
+      "pt-BR": "Ação nacional de crise ainda está em cooldown.",
+      "en": "National crisis action is still on cooldown.",
+      "es": "La acción nacional de crisis aún está en enfriamiento."
+    },
+    "nationalCrisis.insufficientTreasury": {
+      "pt-BR": "Tesouro insuficiente para esta ação nacional de crise.",
+      "en": "Insufficient treasury for this national crisis action.",
+      "es": "Tesoro insuficiente para esta acción nacional de crisis."
+    },
+    "nationalCrisis.actionStarted": {
+      "pt-BR": "Ação nacional de crise iniciada: {name}.",
+      "en": "National crisis action started: {name}.",
+      "es": "Acción nacional de crisis iniciada: {name}."
+    },
+    "nationalCrisis.diagnosis.stable": {
+      "pt-BR": "Sistema nacional sob controle, com monitoramento preventivo ativo.",
+      "en": "National system under control, with active preventive monitoring.",
+      "es": "Sistema nacional bajo control, con monitoreo preventivo activo."
+    },
+    "nationalCrisis.diagnosis.compound": {
+      "pt-BR": "Riscos simultâneos podem formar uma crise nacional composta.",
+      "en": "Simultaneous risks may form a compound national crisis.",
+      "es": "Riesgos simultáneos pueden formar una crisis nacional compuesta."
+    },
+    "nationalCrisis.diagnosis.acceleration": {
+      "pt-BR": "A velocidade de escalada está acima da capacidade de resposta.",
+      "en": "Escalation velocity is above response capacity.",
+      "es": "La velocidad de escalada supera la capacidad de respuesta."
+    },
+    "nationalCrisis.diagnosis.multi": {
+      "pt-BR": "Dois ou mais cenários críticos pressionam o governo ao mesmo tempo.",
+      "en": "Two or more critical scenarios are pressuring the government at once.",
+      "es": "Dos o más escenarios críticos presionan al gobierno a la vez."
+    },
+    "nationalCrisis.diagnosis.recovery": {
+      "pt-BR": "A capacidade de recuperação está reduzindo o risco nacional.",
+      "en": "Recovery capacity is reducing national risk.",
+      "es": "La capacidad de recuperación está reduciendo el riesgo nacional."
+    },
+    "nationalCrisis.domain.social.name": {
+      "pt-BR": "Social",
+      "en": "Social",
+      "es": "Social"
+    },
+    "nationalCrisis.domain.social.text": {
+      "pt-BR": "Pressão sobre famílias, renda, serviços e coesão social.",
+      "en": "Pressure on families, income, services and social cohesion.",
+      "es": "Presión sobre familias, ingresos, servicios y cohesión social."
+    },
+    "nationalCrisis.domain.economic.name": {
+      "pt-BR": "Econômico",
+      "en": "Economic",
+      "es": "Económico"
+    },
+    "nationalCrisis.domain.economic.text": {
+      "pt-BR": "Inflação, desemprego, dívida, confiança e capacidade fiscal.",
+      "en": "Inflation, unemployment, debt, confidence and fiscal capacity.",
+      "es": "Inflación, desempleo, deuda, confianza y capacidad fiscal."
+    },
+    "nationalCrisis.domain.institutional.name": {
+      "pt-BR": "Institucional",
+      "en": "Institutional",
+      "es": "Institucional"
+    },
+    "nationalCrisis.domain.institutional.text": {
+      "pt-BR": "Congresso, Justiça, órgãos de controle, governabilidade e confiança legal.",
+      "en": "Congress, courts, oversight bodies, governability and legal trust.",
+      "es": "Congreso, justicia, órganos de control, gobernabilidad y confianza legal."
+    },
+    "nationalCrisis.domain.security.name": {
+      "pt-BR": "Segurança",
+      "en": "Security",
+      "es": "Seguridad"
+    },
+    "nationalCrisis.domain.security.text": {
+      "pt-BR": "Ordem pública, fronteiras, inteligência, cibersegurança e risco de ruptura.",
+      "en": "Public order, borders, intelligence, cybersecurity and rupture risk.",
+      "es": "Orden público, fronteras, inteligencia, ciberseguridad y riesgo de ruptura."
+    },
+    "nationalCrisis.domain.communication.name": {
+      "pt-BR": "Comunicação",
+      "en": "Communication",
+      "es": "Comunicación"
+    },
+    "nationalCrisis.domain.communication.text": {
+      "pt-BR": "Narrativa pública, mídia, boatos, rejeição e credibilidade institucional.",
+      "en": "Public narrative, media, rumors, rejection and institutional credibility.",
+      "es": "Narrativa pública, medios, rumores, rechazo y credibilidad institucional."
+    },
+    "nationalCrisis.domain.external.name": {
+      "pt-BR": "Externo",
+      "en": "External",
+      "es": "Externo"
+    },
+    "nationalCrisis.domain.external.text": {
+      "pt-BR": "Tensão global, comércio, diplomacia, sanções e isolamento estratégico.",
+      "en": "Global tension, trade, diplomacy, sanctions and strategic isolation.",
+      "es": "Tensión global, comercio, diplomacia, sanciones y aislamiento estratégico."
+    },
+    "nationalCrisis.protocol.preventive.name": {
+      "pt-BR": "Estado preventivo",
+      "en": "Preventive state",
+      "es": "Estado preventivo"
+    },
+    "nationalCrisis.protocol.preventive.text": {
+      "pt-BR": "Mantém sala de alerta, leitura antecipada de riscos e coordenação leve.",
+      "en": "Maintains an alert room, early risk reading and light coordination.",
+      "es": "Mantiene sala de alerta, lectura temprana de riesgos y coordinación ligera."
+    },
+    "nationalCrisis.protocol.social.name": {
+      "pt-BR": "Estabilização social",
+      "en": "Social stabilization",
+      "es": "Estabilización social"
+    },
+    "nationalCrisis.protocol.social.text": {
+      "pt-BR": "Prioriza famílias vulneráveis, custo de vida e pacificação das ruas.",
+      "en": "Prioritizes vulnerable families, cost of living and street pacification.",
+      "es": "Prioriza familias vulnerables, costo de vida y pacificación de las calles."
+    },
+    "nationalCrisis.protocol.institutional.name": {
+      "pt-BR": "Pacto institucional",
+      "en": "Institutional pact",
+      "es": "Pacto institucional"
+    },
+    "nationalCrisis.protocol.institutional.text": {
+      "pt-BR": "Constrói ponte entre poderes, governadores e órgãos de controle.",
+      "en": "Builds bridges between branches, governors and oversight bodies.",
+      "es": "Construye puentes entre poderes, gobernadores y órganos de control."
+    },
+    "nationalCrisis.protocol.security.name": {
+      "pt-BR": "Prontidão de segurança",
+      "en": "Security readiness",
+      "es": "Preparación de seguridad"
+    },
+    "nationalCrisis.protocol.security.text": {
+      "pt-BR": "Reforça continuidade operacional, inteligência, fronteiras e ciberdefesa.",
+      "en": "Reinforces operational continuity, intelligence, borders and cyber defense.",
+      "es": "Refuerza continuidad operativa, inteligencia, fronteras y ciberdefensa."
+    },
+    "nationalCrisis.action.warning.title": {
+      "pt-BR": "Sala nacional de alerta",
+      "en": "National alert room",
+      "es": "Sala nacional de alerta"
+    },
+    "nationalCrisis.action.warning.text": {
+      "pt-BR": "Centraliza dados de risco e antecipa pontos de ruptura antes da escalada.",
+      "en": "Centralizes risk data and anticipates rupture points before escalation.",
+      "es": "Centraliza datos de riesgo y anticipa puntos de ruptura antes de la escalada."
+    },
+    "nationalCrisis.action.command.title": {
+      "pt-BR": "Centro de comando único",
+      "en": "Single command center",
+      "es": "Centro de comando único"
+    },
+    "nationalCrisis.action.command.text": {
+      "pt-BR": "Integra ministérios, governadores e agências críticas em uma cadeia de decisão.",
+      "en": "Integrates ministries, governors and critical agencies into one decision chain.",
+      "es": "Integra ministerios, gobernadores y agencias críticas en una cadena de decisión."
+    },
+    "nationalCrisis.action.social.title": {
+      "pt-BR": "Pacote de amortecimento social",
+      "en": "Social buffer package",
+      "es": "Paquete de amortiguación social"
+    },
+    "nationalCrisis.action.social.text": {
+      "pt-BR": "Protege famílias, alimentação, renda e serviços essenciais durante a turbulência.",
+      "en": "Protects families, food, income and essential services during turbulence.",
+      "es": "Protege familias, alimentos, ingresos y servicios esenciales durante la turbulencia."
+    },
+    "nationalCrisis.action.info.title": {
+      "pt-BR": "Célula pública de informação",
+      "en": "Public information cell",
+      "es": "Célula pública de información"
+    },
+    "nationalCrisis.action.info.text": {
+      "pt-BR": "Combate boatos, organiza comunicados e preserva credibilidade institucional.",
+      "en": "Counters rumors, organizes statements and preserves institutional credibility.",
+      "es": "Combate rumores, organiza comunicados y preserva credibilidad institucional."
+    },
+    "nationalCrisis.action.legal.title": {
+      "pt-BR": "Plano de continuidade legal",
+      "en": "Legal continuity plan",
+      "es": "Plan de continuidad legal"
+    },
+    "nationalCrisis.action.legal.text": {
+      "pt-BR": "Garante decisões juridicamente sólidas mesmo sob tensão entre poderes.",
+      "en": "Ensures legally sound decisions even under tension between branches.",
+      "es": "Garantiza decisiones jurídicamente sólidas incluso bajo tensión entre poderes."
+    },
+    "nationalCrisis.action.supply.title": {
+      "pt-BR": "Corredores críticos de abastecimento",
+      "en": "Critical supply corridors",
+      "es": "Corredores críticos de abastecimiento"
+    },
+    "nationalCrisis.action.supply.text": {
+      "pt-BR": "Protege logística de alimentos, energia, saúde e insumos industriais.",
+      "en": "Protects logistics for food, energy, health and industrial inputs.",
+      "es": "Protege logística de alimentos, energía, salud e insumos industriales."
+    },
+    "nationalCrisis.action.cyber.title": {
+      "pt-BR": "Exercício de resiliência cibernética",
+      "en": "Cyber resilience drill",
+      "es": "Ejercicio de resiliencia cibernética"
+    },
+    "nationalCrisis.action.cyber.text": {
+      "pt-BR": "Testa continuidade digital do Estado contra ataques e falhas sistêmicas.",
+      "en": "Tests state digital continuity against attacks and systemic failures.",
+      "es": "Prueba la continuidad digital del Estado contra ataques y fallas sistémicas."
+    },
+    "nationalCrisis.action.compact.title": {
+      "pt-BR": "Pacto nacional de recuperação",
+      "en": "National recovery compact",
+      "es": "Pacto nacional de recuperación"
+    },
+    "nationalCrisis.action.compact.text": {
+      "pt-BR": "Une governo, Congresso, governadores e sociedade para sair de crises compostas.",
+      "en": "Unites government, Congress, governors and society to exit compound crises.",
+      "es": "Une gobierno, Congreso, gobernadores y sociedad para salir de crisis compuestas."
+    },
+    "nationalCrisis.scenario.cost.name": {
+      "pt-BR": "Custo de vida",
+      "en": "Cost of living",
+      "es": "Costo de vida"
+    },
+    "nationalCrisis.scenario.cost.text": {
+      "pt-BR": "Inflação e renda pressionam famílias e podem gerar mobilização nacional.",
+      "en": "Inflation and income pressure households and may trigger national mobilization.",
+      "es": "Inflación e ingresos presionan hogares y pueden provocar movilización nacional."
+    },
+    "nationalCrisis.scenario.deadlock.name": {
+      "pt-BR": "Impasse institucional",
+      "en": "Institutional deadlock",
+      "es": "Impasse institucional"
+    },
+    "nationalCrisis.scenario.deadlock.text": {
+      "pt-BR": "Conflitos entre governo, Congresso e órgãos de controle travam decisões.",
+      "en": "Conflicts between government, Congress and oversight bodies block decisions.",
+      "es": "Conflictos entre gobierno, Congreso y órganos de control bloquean decisiones."
+    },
+    "nationalCrisis.scenario.border.name": {
+      "pt-BR": "Efeito externo e cibernético",
+      "en": "External and cyber spillover",
+      "es": "Efecto externo y cibernético"
+    },
+    "nationalCrisis.scenario.border.text": {
+      "pt-BR": "Tensão internacional contamina fronteiras, comércio, inteligência e sistemas digitais.",
+      "en": "International tension spills into borders, trade, intelligence and digital systems.",
+      "es": "La tensión internacional afecta fronteras, comercio, inteligencia y sistemas digitales."
+    },
+    "nationalCrisis.scenario.trust.name": {
+      "pt-BR": "Colapso de confiança",
+      "en": "Trust collapse",
+      "es": "Colapso de confianza"
+    },
+    "nationalCrisis.scenario.trust.text": {
+      "pt-BR": "Aprovação baixa, mídia hostil e boatos reduzem autoridade do governo.",
+      "en": "Low approval, hostile media and rumors reduce government authority.",
+      "es": "Baja aprobación, medios hostiles y rumores reducen la autoridad del gobierno."
+    },
+    "electoral.phaseName": {
+      "pt-BR": "Eleições, Carreira e Legado",
+      "en": "Elections, Career and Legacy",
+      "es": "Elecciones, Carrera y Legado"
+    },
+    "electoral.overviewTitle": {
+      "pt-BR": "Campanha Eleitoral",
+      "en": "Electoral Campaign",
+      "es": "Campaña Electoral"
+    },
+    "electoral.regionalPollsTitle": {
+      "pt-BR": "Pesquisas Regionais",
+      "en": "Regional polls",
+      "es": "Encuestas regionales"
+    },
+    "electoral.strategyTitle": {
+      "pt-BR": "Estratégia Eleitoral",
+      "en": "Electoral strategy",
+      "es": "Estrategia electoral"
+    },
+    "electoral.machineTitle": {
+      "pt-BR": "Máquina de Campanha",
+      "en": "Campaign machine",
+      "es": "Maquinaria de campaña"
+    },
+    "electoral.segmentsTitle": {
+      "pt-BR": "Segmentos do Eleitorado",
+      "en": "Voter segments",
+      "es": "Segmentos del electorado"
+    },
+    "electoral.timelineTitle": {
+      "pt-BR": "Carreira e Legado",
+      "en": "Career and legacy",
+      "es": "Carrera y legado"
+    },
+    "electoral.actionsTitle": {
+      "pt-BR": "Ações eleitorais estruturantes",
+      "en": "Structural electoral actions",
+      "es": "Acciones electorales estructurales"
+    },
+    "electoral.legacyActionsTitle": {
+      "pt-BR": "Ações de Campanha Legadas",
+      "en": "Legacy campaign actions",
+      "es": "Acciones de campaña heredadas"
+    },
+    "electoral.historyTitle": {
+      "pt-BR": "Histórico eleitoral",
+      "en": "Electoral history",
+      "es": "Historial electoral"
+    },
+    "electoral.simulateElection": {
+      "pt-BR": "SIMULAR ELEIÇÃO",
+      "en": "SIMULATE ELECTION",
+      "es": "SIMULAR ELECCIÓN"
+    },
+    "electoral.projectedFirstRound": {
+      "pt-BR": "Projeção 1º turno",
+      "en": "First-round projection",
+      "es": "Proyección 1ª vuelta"
+    },
+    "electoral.victoryPath": {
+      "pt-BR": "Caminho de vitória",
+      "en": "Path to victory",
+      "es": "Ruta de victoria"
+    },
+    "electoral.runoffRisk": {
+      "pt-BR": "Risco de segundo turno",
+      "en": "Runoff risk",
+      "es": "Riesgo de segunda vuelta"
+    },
+    "electoral.government": {
+      "pt-BR": "Governo",
+      "en": "Government",
+      "es": "Gobierno"
+    },
+    "electoral.opponent": {
+      "pt-BR": "Adversário",
+      "en": "Opponent",
+      "es": "Adversario"
+    },
+    "electoral.campaignMachinery": {
+      "pt-BR": "Máquina eleitoral",
+      "en": "Electoral machinery",
+      "es": "Maquinaria electoral"
+    },
+    "electoral.complianceRisk": {
+      "pt-BR": "Risco de compliance",
+      "en": "Compliance risk",
+      "es": "Riesgo de cumplimiento"
+    },
+    "electoral.mandateLegacy": {
+      "pt-BR": "Legado do mandato",
+      "en": "Mandate legacy",
+      "es": "Legado del mandato"
+    },
+    "electoral.daysToElection": {
+      "pt-BR": "Dias para eleição:",
+      "en": "Days to election:",
+      "es": "Días para la elección:"
+    },
+    "electoral.currentDiagnosis": {
+      "pt-BR": "Diagnóstico eleitoral",
+      "en": "Electoral diagnosis",
+      "es": "Diagnóstico electoral"
+    },
+    "electoral.lastElection": {
+      "pt-BR": "Última eleição",
+      "en": "Last election",
+      "es": "Última elección"
+    },
+    "electoral.regionLine": {
+      "pt-BR": "peso eleitoral {voters}% • governo {vote}% • máquina {machine}%",
+      "en": "electoral weight {voters}% • government {vote}% • machine {machine}%",
+      "es": "peso electoral {voters}% • gobierno {vote}% • maquinaria {machine}%"
+    },
+    "electoral.active": {
+      "pt-BR": "Ativa",
+      "en": "Active",
+      "es": "Activa"
+    },
+    "electoral.adopt": {
+      "pt-BR": "ADOTAR",
+      "en": "ADOPT",
+      "es": "ADOPTAR"
+    },
+    "electoral.fund": {
+      "pt-BR": "Fundo eleitoral",
+      "en": "Campaign fund",
+      "es": "Fondo electoral"
+    },
+    "electoral.volunteers": {
+      "pt-BR": "Voluntariado",
+      "en": "Volunteer network",
+      "es": "Voluntariado"
+    },
+    "electoral.groundGame": {
+      "pt-BR": "Estrutura territorial",
+      "en": "Ground game",
+      "es": "Estructura territorial"
+    },
+    "electoral.digital": {
+      "pt-BR": "Mobilização digital",
+      "en": "Digital mobilization",
+      "es": "Movilización digital"
+    },
+    "electoral.coalitionEndorsements": {
+      "pt-BR": "Endossos de coalizão",
+      "en": "Coalition endorsements",
+      "es": "Respaldos de coalición"
+    },
+    "electoral.partyUnity": {
+      "pt-BR": "Unidade partidária",
+      "en": "Party unity",
+      "es": "Unidad partidaria"
+    },
+    "electoral.debatePreparedness": {
+      "pt-BR": "Preparo para debates",
+      "en": "Debate preparedness",
+      "es": "Preparación para debates"
+    },
+    "electoral.undecided": {
+      "pt-BR": "Indecisos",
+      "en": "Undecided voters",
+      "es": "Indecisos"
+    },
+    "electoral.support": {
+      "pt-BR": "Apoio",
+      "en": "Support",
+      "es": "Apoyo"
+    },
+    "electoral.volatility": {
+      "pt-BR": "Volatilidade",
+      "en": "Volatility",
+      "es": "Volatilidad"
+    },
+    "electoral.costLine": {
+      "pt-BR": "Custo ₿ {cost} bi • PA {ap} • efeito em {days} dias",
+      "en": "Cost ₿ {cost} bn • AP {ap} • effect in {days} days",
+      "es": "Costo ₿ {cost} mil M • PA {ap} • efecto en {days} días"
+    },
+    "electoral.cooldown": {
+      "pt-BR": "cooldown {days} dias",
+      "en": "cooldown {days} days",
+      "es": "recarga {days} días"
+    },
+    "electoral.wait": {
+      "pt-BR": "AGUARDAR",
+      "en": "WAIT",
+      "es": "ESPERAR"
+    },
+    "electoral.noHistory": {
+      "pt-BR": "Nenhum fechamento eleitoral registrado ainda.",
+      "en": "No electoral monthly close recorded yet.",
+      "es": "Aún no hay cierre electoral mensual registrado."
+    },
+    "electoral.health": {
+      "pt-BR": "Saúde eleitoral",
+      "en": "Electoral health",
+      "es": "Salud electoral"
+    },
+    "electoral.strategyAlreadyActive": {
+      "pt-BR": "Essa estratégia eleitoral já está ativa.",
+      "en": "This electoral strategy is already active.",
+      "es": "Esta estrategia electoral ya está activa."
+    },
+    "electoral.strategyChanged": {
+      "pt-BR": "Estratégia eleitoral alterada: {name}.",
+      "en": "Electoral strategy changed: {name}.",
+      "es": "Estrategia electoral modificada: {name}."
+    },
+    "electoral.cooldownWarning": {
+      "pt-BR": "Ação eleitoral ainda está em cooldown.",
+      "en": "Electoral action is still on cooldown.",
+      "es": "La acción electoral aún está en recarga."
+    },
+    "electoral.insufficientTreasury": {
+      "pt-BR": "Tesouro insuficiente para a ação eleitoral.",
+      "en": "Not enough treasury for the electoral action.",
+      "es": "Tesoro insuficiente para la acción electoral."
+    },
+    "electoral.actionStarted": {
+      "pt-BR": "Ação eleitoral iniciada: {name}.",
+      "en": "Electoral action started: {name}.",
+      "es": "Acción electoral iniciada: {name}."
+    },
+    "electoral.reached": {
+      "pt-BR": "marco alcançado",
+      "en": "milestone reached",
+      "es": "hito alcanzado"
+    },
+    "electoral.remaining": {
+      "pt-BR": "faltam {days} dias",
+      "en": "{days} days remaining",
+      "es": "faltan {days} días"
+    },
+    "electoral.diagnosis.stable": {
+      "pt-BR": "Disputa sob controle, mas dependente da economia e da comunicação.",
+      "en": "The race is under control, but depends on the economy and communication.",
+      "es": "La disputa está bajo control, pero depende de la economía y la comunicación."
+    },
+    "electoral.diagnosis.compliance": {
+      "pt-BR": "Risco jurídico e ético ameaça a campanha.",
+      "en": "Legal and ethical risk threatens the campaign.",
+      "es": "El riesgo jurídico y ético amenaza la campaña."
+    },
+    "electoral.diagnosis.risk": {
+      "pt-BR": "Caminho de vitória frágil; a oposição pode virar a disputa.",
+      "en": "Fragile path to victory; the opposition can flip the race.",
+      "es": "Ruta de victoria frágil; la oposición puede revertir la disputa."
+    },
+    "electoral.diagnosis.runoff": {
+      "pt-BR": "Cenário provável de segundo turno exige alianças e preparo.",
+      "en": "Likely runoff scenario requires alliances and preparation.",
+      "es": "Escenario probable de segunda vuelta exige alianzas y preparación."
+    },
+    "electoral.diagnosis.advantage": {
+      "pt-BR": "Vantagem consolidada com unidade partidária e narrativa favorável.",
+      "en": "Advantage consolidated with party unity and favorable narrative.",
+      "es": "Ventaja consolidada con unidad partidaria y narrativa favorable."
+    },
+    "electoral.strategy.moderate.name": {
+      "pt-BR": "Frente ampla moderada",
+      "en": "Moderate broad front",
+      "es": "Frente amplia moderada"
+    },
+    "electoral.strategy.moderate.text": {
+      "pt-BR": "Busca centro político, baixa rejeição e alianças estáveis.",
+      "en": "Seeks the political center, lower rejection and stable alliances.",
+      "es": "Busca el centro político, menor rechazo y alianzas estables."
+    },
+    "electoral.strategy.popular.name": {
+      "pt-BR": "Mobilização popular",
+      "en": "Popular mobilization",
+      "es": "Movilización popular"
+    },
+    "electoral.strategy.popular.text": {
+      "pt-BR": "Fortalece rua, base social e voluntariado territorial.",
+      "en": "Strengthens street presence, social base and territorial volunteers.",
+      "es": "Fortalece calle, base social y voluntariado territorial."
+    },
+    "electoral.strategy.data.name": {
+      "pt-BR": "Campanha orientada por dados",
+      "en": "Data-driven campaign",
+      "es": "Campaña orientada por datos"
+    },
+    "electoral.strategy.data.text": {
+      "pt-BR": "Prioriza pesquisas, microsegmentação, digital e preparo técnico.",
+      "en": "Prioritizes polling, microtargeting, digital work and technical preparation.",
+      "es": "Prioriza encuestas, microsegmentación, digital y preparación técnica."
+    },
+    "electoral.strategy.legacy.name": {
+      "pt-BR": "Legado institucional",
+      "en": "Institutional legacy",
+      "es": "Legado institucional"
+    },
+    "electoral.strategy.legacy.text": {
+      "pt-BR": "Converte entregas do mandato em capital eleitoral e continuidade.",
+      "en": "Turns government delivery into electoral capital and continuity.",
+      "es": "Convierte entregas del mandato en capital electoral y continuidad."
+    },
+    "electoral.segment.workers.name": {
+      "pt-BR": "Trabalhadores",
+      "en": "Workers",
+      "es": "Trabajadores"
+    },
+    "electoral.segment.workers.text": {
+      "pt-BR": "Renda, emprego e proteção social pesam neste grupo.",
+      "en": "Income, jobs and social protection weigh heavily in this group.",
+      "es": "Renta, empleo y protección social pesan en este grupo."
+    },
+    "electoral.segment.middle.name": {
+      "pt-BR": "Classe média urbana",
+      "en": "Urban middle class",
+      "es": "Clase media urbana"
+    },
+    "electoral.segment.middle.text": {
+      "pt-BR": "Custo de vida, serviços públicos e estabilidade definem o humor.",
+      "en": "Cost of living, public services and stability shape its mood.",
+      "es": "Costo de vida, servicios públicos y estabilidad definen su ánimo."
+    },
+    "electoral.segment.business.name": {
+      "pt-BR": "Empresariado",
+      "en": "Business sector",
+      "es": "Empresariado"
+    },
+    "electoral.segment.business.text": {
+      "pt-BR": "Confiança, crédito, impostos e previsibilidade importam mais.",
+      "en": "Confidence, credit, taxes and predictability matter most.",
+      "es": "Confianza, crédito, impuestos y previsibilidad importan más."
+    },
+    "electoral.segment.youth.name": {
+      "pt-BR": "Juventude conectada",
+      "en": "Connected youth",
+      "es": "Juventud conectada"
+    },
+    "electoral.segment.youth.text": {
+      "pt-BR": "Digital, educação, futuro e autenticidade pesam no voto.",
+      "en": "Digital reach, education, future and authenticity influence the vote.",
+      "es": "Digital, educación, futuro y autenticidad pesan en el voto."
+    },
+    "electoral.segment.rural.name": {
+      "pt-BR": "Interior e agro",
+      "en": "Rural and agribusiness",
+      "es": "Interior y agro"
+    },
+    "electoral.segment.rural.text": {
+      "pt-BR": "Infraestrutura, crédito rural, segurança e logística definem apoio.",
+      "en": "Infrastructure, rural credit, security and logistics define support.",
+      "es": "Infraestructura, crédito rural, seguridad y logística definen apoyo."
+    },
+    "electoral.segment.security.name": {
+      "pt-BR": "Eleitores de segurança",
+      "en": "Security voters",
+      "es": "Electores de seguridad"
+    },
+    "electoral.segment.security.text": {
+      "pt-BR": "Ordem pública, fronteiras e inteligência impactam a preferência.",
+      "en": "Public order, borders and intelligence shape preference.",
+      "es": "Orden público, fronteras e inteligencia impactan la preferencia."
+    },
+    "electoral.action.polling.title": {
+      "pt-BR": "Laboratório nacional de pesquisas",
+      "en": "National polling lab",
+      "es": "Laboratorio nacional de encuestas"
+    },
+    "electoral.action.polling.text": {
+      "pt-BR": "Melhora leitura de segmentos, reduz erro estratégico e aumenta mobilização digital.",
+      "en": "Improves segment reading, reduces strategic error and increases digital mobilization.",
+      "es": "Mejora lectura de segmentos, reduce error estratégico y aumenta movilización digital."
+    },
+    "electoral.action.field.title": {
+      "pt-BR": "Comitês regionais de campo",
+      "en": "Regional field offices",
+      "es": "Comités regionales de campo"
+    },
+    "electoral.action.field.text": {
+      "pt-BR": "Organiza bases locais, voluntários, caravanas e presença em regiões decisivas.",
+      "en": "Organizes local bases, volunteers, caravans and presence in decisive regions.",
+      "es": "Organiza bases locales, voluntarios, caravanas y presencia en regiones decisivas."
+    },
+    "electoral.action.convention.title": {
+      "pt-BR": "Convenção de coalizão",
+      "en": "Coalition convention",
+      "es": "Convención de coalición"
+    },
+    "electoral.action.convention.text": {
+      "pt-BR": "Une partidos aliados, reduz ruído interno e amplia endossos eleitorais.",
+      "en": "Unites allied parties, reduces internal noise and expands electoral endorsements.",
+      "es": "Une partidos aliados, reduce ruido interno y amplía respaldos electorales."
+    },
+    "electoral.action.compliance.title": {
+      "pt-BR": "Sala de compliance eleitoral",
+      "en": "Electoral compliance war room",
+      "es": "Sala de cumplimiento electoral"
+    },
+    "electoral.action.compliance.text": {
+      "pt-BR": "Reduz risco jurídico, protege prestação de contas e neutraliza escândalos.",
+      "en": "Reduces legal risk, protects accounting and neutralizes scandals.",
+      "es": "Reduce riesgo jurídico, protege rendición de cuentas y neutraliza escándalos."
+    },
+    "electoral.action.debate.title": {
+      "pt-BR": "Treinamento intensivo de debates",
+      "en": "Intensive debate bootcamp",
+      "es": "Entrenamiento intensivo de debates"
+    },
+    "electoral.action.debate.text": {
+      "pt-BR": "Prepara respostas, narrativa, dados e controle emocional para debates decisivos.",
+      "en": "Prepares answers, narrative, data and emotional control for decisive debates.",
+      "es": "Prepara respuestas, narrativa, datos y control emocional para debates decisivos."
+    },
+    "electoral.action.donor.title": {
+      "pt-BR": "Rodada de confiança com doadores",
+      "en": "Donor confidence round",
+      "es": "Ronda de confianza con donantes"
+    },
+    "electoral.action.donor.text": {
+      "pt-BR": "Aumenta fundo de campanha e apoio empresarial, mas eleva exposição ética.",
+      "en": "Increases campaign funding and business support, but raises ethical exposure.",
+      "es": "Aumenta fondos y apoyo empresarial, pero eleva exposición ética."
+    },
+    "electoral.action.undecided.title": {
+      "pt-BR": "Caravana de escuta dos indecisos",
+      "en": "Undecided listening tour",
+      "es": "Caravana de escucha a indecisos"
+    },
+    "electoral.action.undecided.text": {
+      "pt-BR": "Vai a territórios vulneráveis, reduz rejeição e converte eleitores voláteis.",
+      "en": "Visits vulnerable territories, reduces rejection and converts volatile voters.",
+      "es": "Va a territorios vulnerables, reduce rechazo y convierte electores volátiles."
+    },
+    "electoral.action.legacy.title": {
+      "pt-BR": "Lançamento da plataforma de legado",
+      "en": "Legacy platform launch",
+      "es": "Lanzamiento de plataforma de legado"
+    },
+    "electoral.action.legacy.text": {
+      "pt-BR": "Transforma entregas do governo em proposta de continuidade e futuro.",
+      "en": "Turns government delivery into a continuity and future platform.",
+      "es": "Transforma entregas del gobierno en propuesta de continuidad y futuro."
+    },
+    "electoral.milestone.first100.name": {
+      "pt-BR": "100 dias",
+      "en": "First 100 days",
+      "es": "100 días"
+    },
+    "electoral.milestone.first100.text": {
+      "pt-BR": "A narrativa inicial do governo começa a formar memória eleitoral.",
+      "en": "The initial government narrative begins shaping electoral memory.",
+      "es": "La narrativa inicial del gobierno empieza a formar memoria electoral."
+    },
+    "electoral.milestone.midterm.name": {
+      "pt-BR": "Meio de mandato",
+      "en": "Midterm",
+      "es": "Mitad del mandato"
+    },
+    "electoral.milestone.midterm.text": {
+      "pt-BR": "A sociedade passa a comparar promessas, economia e entregas.",
+      "en": "Society starts comparing promises, economy and delivery.",
+      "es": "La sociedad empieza a comparar promesas, economía y entregas."
+    },
+    "electoral.milestone.window.name": {
+      "pt-BR": "Janela eleitoral",
+      "en": "Campaign window",
+      "es": "Ventana electoral"
+    },
+    "electoral.milestone.window.text": {
+      "pt-BR": "Alianças, pesquisas e máquina territorial entram em fase decisiva.",
+      "en": "Alliances, polls and territorial machinery enter the decisive phase.",
+      "es": "Alianzas, encuestas y maquinaria territorial entran en fase decisiva."
+    },
+    "electoral.milestone.election.name": {
+      "pt-BR": "Eleição oficial",
+      "en": "Official election",
+      "es": "Elección oficial"
+    },
+    "electoral.milestone.election.text": {
+      "pt-BR": "Resultado define renovação de mandato, transição ou conclusão da carreira.",
+      "en": "The result defines mandate renewal, transition or career conclusion.",
+      "es": "El resultado define renovación del mandato, transición o cierre de carrera."
+    },
+    "build.summary.v1_7_7": {
+      "pt-BR": "Sistema profundo de eleições, campanhas e carreira política com estratégia eleitoral, segmentos do eleitorado, máquina de campanha, compliance, segundo turno, histórico mensal, registro de resultados, carreira/legado e integração com mídia, crises, diplomacia, defesa, economia, orçamento, população e Core Loop 2.0.",
+      "en": "Deep election, campaign career and political legacy system with strategy, voter segments, campaign machinery, compliance, runoff risk, monthly history and result registry.",
+      "es": "Sistema profundo de elecciones, carrera de campaña y legado político con estrategia, segmentos, maquinaria, cumplimiento, riesgo de segunda vuelta, historial mensual y registro de resultados."
+    },
+    "scenario.phaseName": {
+      "pt-BR": "Cenários e Tutorial",
+      "en": "Scenarios and Tutorial",
+      "es": "Escenarios y Tutorial"
+    },
+    "scenario.overviewTitle": {
+      "pt-BR": "Cenários e Tutorial",
+      "en": "Scenarios and Tutorial",
+      "es": "Escenarios y Tutorial"
+    },
+    "scenario.metricsTitle": {
+      "pt-BR": "Maturidade do Jogador",
+      "en": "Player Maturity",
+      "es": "Madurez del jugador"
+    },
+    "scenario.packTitle": {
+      "pt-BR": "Pacotes de Cenário",
+      "en": "Scenario Packs",
+      "es": "Paquetes de escenario"
+    },
+    "scenario.trackTitle": {
+      "pt-BR": "Trilhas de Tutorial",
+      "en": "Tutorial Tracks",
+      "es": "Rutas de tutorial"
+    },
+    "scenario.missionsTitle": {
+      "pt-BR": "Missões de Onboarding",
+      "en": "Onboarding Missions",
+      "es": "Misiones de incorporación"
+    },
+    "scenario.actionsTitle": {
+      "pt-BR": "Ações de Aprendizado",
+      "en": "Learning Actions",
+      "es": "Acciones de aprendizaje"
+    },
+    "scenario.historyTitle": {
+      "pt-BR": "Histórico de Aprendizado",
+      "en": "Learning History",
+      "es": "Historial de aprendizaje"
+    },
+    "scenario.health": {
+      "pt-BR": "Saúde do onboarding",
+      "en": "Onboarding health",
+      "es": "Salud de incorporación"
+    },
+    "scenario.readiness": {
+      "pt-BR": "Prontidão",
+      "en": "Readiness",
+      "es": "Preparación"
+    },
+    "scenario.mastery": {
+      "pt-BR": "Domínio",
+      "en": "Mastery",
+      "es": "Dominio"
+    },
+    "scenario.risk": {
+      "pt-BR": "Risco de abandono",
+      "en": "Drop-off risk",
+      "es": "Riesgo de abandono"
+    },
+    "scenario.pressure": {
+      "pt-BR": "Pressão",
+      "en": "Pressure",
+      "es": "Presión"
+    },
+    "scenario.currentDiagnosis": {
+      "pt-BR": "Diagnóstico atual",
+      "en": "Current diagnosis",
+      "es": "Diagnóstico actual"
+    },
+    "scenario.tutorialDepth": {
+      "pt-BR": "Profundidade do tutorial",
+      "en": "Tutorial depth",
+      "es": "Profundidad del tutorial"
+    },
+    "scenario.playerGuidance": {
+      "pt-BR": "Orientação do jogador",
+      "en": "Player guidance",
+      "es": "Orientación del jugador"
+    },
+    "scenario.decisionClarity": {
+      "pt-BR": "Clareza decisória",
+      "en": "Decision clarity",
+      "es": "Claridad de decisión"
+    },
+    "scenario.coachingTrust": {
+      "pt-BR": "Confiança no mentor",
+      "en": "Mentor trust",
+      "es": "Confianza en el mentor"
+    },
+    "scenario.learningMomentum": {
+      "pt-BR": "Ritmo de aprendizado",
+      "en": "Learning momentum",
+      "es": "Ritmo de aprendizaje"
+    },
+    "scenario.replayability": {
+      "pt-BR": "Replayabilidade",
+      "en": "Replayability",
+      "es": "Rejugabilidad"
+    },
+    "scenario.active": {
+      "pt-BR": "Ativo",
+      "en": "Active",
+      "es": "Activo"
+    },
+    "scenario.adopt": {
+      "pt-BR": "Adotar",
+      "en": "Adopt",
+      "es": "Adoptar"
+    },
+    "scenario.wait": {
+      "pt-BR": "Aguarde",
+      "en": "Wait",
+      "es": "Espera"
+    },
+    "scenario.missions": {
+      "pt-BR": "Missões",
+      "en": "Missions",
+      "es": "Misiones"
+    },
+    "scenario.noHistory": {
+      "pt-BR": "Nenhum ciclo de aprendizado registrado ainda.",
+      "en": "No learning cycle recorded yet.",
+      "es": "Aún no hay ciclos de aprendizaje registrados."
+    },
+    "scenario.packAlreadyActive": {
+      "pt-BR": "Este pacote de cenário já está ativo.",
+      "en": "This scenario pack is already active.",
+      "es": "Este paquete de escenario ya está activo."
+    },
+    "scenario.trackAlreadyActive": {
+      "pt-BR": "Esta trilha de tutorial já está ativa.",
+      "en": "This tutorial track is already active.",
+      "es": "Esta ruta de tutorial ya está activa."
+    },
+    "scenario.cooldownWarning": {
+      "pt-BR": "Ação de aprendizado ainda está em cooldown.",
+      "en": "Learning action is still on cooldown.",
+      "es": "La acción de aprendizaje aún está en enfriamiento."
+    },
+    "scenario.insufficientTreasury": {
+      "pt-BR": "Tesouro insuficiente para executar o treinamento.",
+      "en": "Insufficient treasury for this training.",
+      "es": "Tesoro insuficiente para ejecutar el entrenamiento."
+    },
+    "scenario.packChanged": {
+      "pt-BR": "Pacote de cenário adotado: {name}.",
+      "en": "Scenario pack adopted: {name}.",
+      "es": "Paquete de escenario adoptado: {name}."
+    },
+    "scenario.trackChanged": {
+      "pt-BR": "Trilha de tutorial adotada: {name}.",
+      "en": "Tutorial track adopted: {name}.",
+      "es": "Ruta de tutorial adoptada: {name}."
+    },
+    "scenario.actionStarted": {
+      "pt-BR": "Ação de aprendizado iniciada: {name}.",
+      "en": "Learning action started: {name}.",
+      "es": "Acción de aprendizaje iniciada: {name}."
+    },
+    "scenario.costLine": {
+      "pt-BR": "Custo ₿ {cost} bi • PA {ap} • efeito em {days} dias",
+      "en": "Cost ₿ {cost} bn • AP {ap} • effect in {days} days",
+      "es": "Costo ₿ {cost} mil M • PA {ap} • efecto en {days} días"
+    },
+    "scenario.cooldown": {
+      "pt-BR": "cooldown {days} dias",
+      "en": "cooldown {days} days",
+      "es": "enfriamiento {days} días"
+    },
+    "scenario.missionsDone": {
+      "pt-BR": "{done}/{total} missões",
+      "en": "{done}/{total} missions",
+      "es": "{done}/{total} misiones"
+    },
+    "scenario.difficulty": {
+      "pt-BR": "Dificuldade {value}/3",
+      "en": "Difficulty {value}/3",
+      "es": "Dificultad {value}/3"
+    },
+    "scenario.diagnosis.stable": {
+      "pt-BR": "Onboarding estável: o jogador tem orientação suficiente para continuar.",
+      "en": "Stable onboarding: the player has enough guidance to continue.",
+      "es": "Incorporación estable: el jugador tiene orientación suficiente para continuar."
+    },
+    "scenario.diagnosis.risk": {
+      "pt-BR": "Risco alto: pressão e complexidade podem gerar abandono da carreira.",
+      "en": "High risk: pressure and complexity may cause campaign drop-off.",
+      "es": "Riesgo alto: presión y complejidad pueden provocar abandono de la carrera."
+    },
+    "scenario.diagnosis.guidance": {
+      "pt-BR": "Orientação baixa: recomenda-se ativar trilhas guiadas antes de avançar muitos dias.",
+      "en": "Low guidance: activate guided tracks before advancing many days.",
+      "es": "Orientación baja: activa rutas guiadas antes de avanzar muchos días."
+    },
+    "scenario.diagnosis.mastery": {
+      "pt-BR": "Domínio avançado: a maioria das missões foi concluída.",
+      "en": "Advanced mastery: most missions have been completed.",
+      "es": "Dominio avanzado: la mayoría de las misiones fue completada."
+    },
+    "scenario.diagnosis.learning": {
+      "pt-BR": "Aprendizado acelerado: o cenário está gerando boa retenção.",
+      "en": "Accelerated learning: the scenario is producing strong retention.",
+      "es": "Aprendizaje acelerado: el escenario genera buena retención."
+    },
+    "scenario.pack.balanced.name": {
+      "pt-BR": "Governo guiado equilibrado",
+      "en": "Balanced Guided Government",
+      "es": "Gobierno guiado equilibrado"
+    },
+    "scenario.pack.balanced.text": {
+      "pt-BR": "Introduz todos os sistemas sem pressão artificial.",
+      "en": "Introduces every system without artificial pressure.",
+      "es": "Introduce todos los sistemas sin presión artificial."
+    },
+    "scenario.pack.economic.name": {
+      "pt-BR": "Estresse econômico",
+      "en": "Economic Stress",
+      "es": "Estrés económico"
+    },
+    "scenario.pack.economic.text": {
+      "pt-BR": "Força o jogador a aprender orçamento, tributos, inflação e desemprego.",
+      "en": "Forces the player to learn budget, taxes, inflation and unemployment.",
+      "es": "Obliga al jugador a aprender presupuesto, impuestos, inflación y desempleo."
+    },
+    "scenario.pack.institutional.name": {
+      "pt-BR": "Reconstrução institucional",
+      "en": "Institutional Rebuild",
+      "es": "Reconstrucción institucional"
+    },
+    "scenario.pack.institutional.text": {
+      "pt-BR": "Ensina Congresso, Judiciário, gabinete e risco de governabilidade.",
+      "en": "Teaches Congress, judiciary, cabinet and governability risk.",
+      "es": "Enseña Congreso, justicia, gabinete y riesgo de gobernabilidad."
+    },
+    "scenario.pack.global.name": {
+      "pt-BR": "Tensão global",
+      "en": "Global Tension",
+      "es": "Tensión global"
+    },
+    "scenario.pack.global.text": {
+      "pt-BR": "Treina diplomacia, defesa, inteligência e gestão de risco externo.",
+      "en": "Trains diplomacy, defense, intelligence and external risk management.",
+      "es": "Entrena diplomacia, defensa, inteligencia y gestión de riesgo externo."
+    },
+    "scenario.track.guided.name": {
+      "pt-BR": "Primeiro mandato guiado",
+      "en": "Guided First Term",
+      "es": "Primer mandato guiado"
+    },
+    "scenario.track.guided.text": {
+      "pt-BR": "Explica prioridades de curto prazo e evita paralisia decisória.",
+      "en": "Explains short-term priorities and prevents decision paralysis.",
+      "es": "Explica prioridades de corto plazo y evita la parálisis decisoria."
+    },
+    "scenario.track.fiscal.name": {
+      "pt-BR": "Comandante fiscal",
+      "en": "Fiscal Commander",
+      "es": "Comandante fiscal"
+    },
+    "scenario.track.fiscal.text": {
+      "pt-BR": "Foca em orçamento, credibilidade fiscal, dívida e execução.",
+      "en": "Focuses on budget, fiscal credibility, debt and execution.",
+      "es": "Se centra en presupuesto, credibilidad fiscal, deuda y ejecución."
+    },
+    "scenario.track.crisis.name": {
+      "pt-BR": "Comandante de crise",
+      "en": "Crisis Commander",
+      "es": "Comandante de crisis"
+    },
+    "scenario.track.crisis.text": {
+      "pt-BR": "Ensina leitura de riscos, resposta rápida e recuperação nacional.",
+      "en": "Teaches risk reading, fast response and national recovery.",
+      "es": "Enseña lectura de riesgos, respuesta rápida y recuperación nacional."
+    },
+    "scenario.track.election.name": {
+      "pt-BR": "Especialista eleitoral",
+      "en": "Election Specialist",
+      "es": "Especialista electoral"
+    },
+    "scenario.track.election.text": {
+      "pt-BR": "Conecta aprovação, mídia, campanha, regiões e legado político.",
+      "en": "Links approval, media, campaign, regions and political legacy.",
+      "es": "Conecta aprobación, medios, campaña, regiones y legado político."
+    },
+    "scenario.mission.firstDecision.name": {
+      "pt-BR": "Primeira decisão estratégica",
+      "en": "First Strategic Decision",
+      "es": "Primera decisión estratégica"
+    },
+    "scenario.mission.firstDecision.text": {
+      "pt-BR": "Gaste PA com uma decisão ou política pública.",
+      "en": "Spend AP on a decision or public policy.",
+      "es": "Gasta PA en una decisión o política pública."
+    },
+    "scenario.mission.budget.name": {
+      "pt-BR": "Equilibrar credibilidade fiscal",
+      "en": "Balance Fiscal Credibility",
+      "es": "Equilibrar credibilidad fiscal"
+    },
+    "scenario.mission.budget.text": {
+      "pt-BR": "Mantenha credibilidade fiscal acima de 55.",
+      "en": "Keep fiscal credibility above 55.",
+      "es": "Mantén la credibilidad fiscal por encima de 55."
+    },
+    "scenario.mission.crisis.name": {
+      "pt-BR": "Controlar crise nacional",
+      "en": "Control National Crisis",
+      "es": "Controlar crisis nacional"
+    },
+    "scenario.mission.crisis.text": {
+      "pt-BR": "Mantenha o nível de crise até 3.",
+      "en": "Keep crisis level at 3 or below.",
+      "es": "Mantén el nivel de crisis en 3 o menos."
+    },
+    "scenario.mission.institutions.name": {
+      "pt-BR": "Estabilizar instituições",
+      "en": "Stabilize Institutions",
+      "es": "Estabilizar instituciones"
+    },
+    "scenario.mission.institutions.text": {
+      "pt-BR": "Leve estabilidade nacional a 60.",
+      "en": "Raise national stability to 60.",
+      "es": "Lleva la estabilidad nacional a 60."
+    },
+    "scenario.mission.media.name": {
+      "pt-BR": "Coletiva responsável",
+      "en": "Responsible Briefing",
+      "es": "Rueda responsable"
+    },
+    "scenario.mission.media.text": {
+      "pt-BR": "Mantenha mídia ou narrativa acima de 52.",
+      "en": "Keep media or narrative above 52.",
+      "es": "Mantén medios o narrativa por encima de 52."
+    },
+    "scenario.mission.world.name": {
+      "pt-BR": "Presença internacional",
+      "en": "International Presence",
+      "es": "Presencia internacional"
+    },
+    "scenario.mission.world.text": {
+      "pt-BR": "Leve influência global a 55.",
+      "en": "Raise global influence to 55.",
+      "es": "Lleva la influencia global a 55."
+    },
+    "scenario.mission.election.name": {
+      "pt-BR": "Caminho eleitoral",
+      "en": "Election Path",
+      "es": "Camino electoral"
+    },
+    "scenario.mission.election.text": {
+      "pt-BR": "Leve campanha a 50 antes da eleição.",
+      "en": "Raise campaign to 50 before the election.",
+      "es": "Lleva la campaña a 50 antes de la elección."
+    },
+    "scenario.mission.legacy.name": {
+      "pt-BR": "Legado visível",
+      "en": "Visible Legacy",
+      "es": "Legado visible"
+    },
+    "scenario.mission.legacy.text": {
+      "pt-BR": "Leve prestígio a 55.",
+      "en": "Raise prestige to 55.",
+      "es": "Lleva prestigio a 55."
+    },
+    "scenario.action.briefing.title": {
+      "pt-BR": "Briefing decisório",
+      "en": "Decision Briefing",
+      "es": "Briefing decisorio"
+    },
+    "scenario.action.briefing.text": {
+      "pt-BR": "Uma simulação orientada que explica efeitos diretos, atrasados e riscos.",
+      "en": "A guided simulation explaining direct effects, delayed effects and risks.",
+      "es": "Una simulación guiada que explica efectos directos, retrasados y riesgos."
+    },
+    "scenario.action.rehearsal.title": {
+      "pt-BR": "Ensaio de cenário",
+      "en": "Scenario Rehearsal",
+      "es": "Ensayo de escenario"
+    },
+    "scenario.action.rehearsal.text": {
+      "pt-BR": "Repassa um cenário crítico antes de avançar o calendário.",
+      "en": "Rehearses a critical scenario before advancing the calendar.",
+      "es": "Repasa un escenario crítico antes de avanzar el calendario."
+    },
+    "scenario.action.risk.title": {
+      "pt-BR": "Exercício de risco",
+      "en": "Risk Drill",
+      "es": "Ejercicio de riesgo"
+    },
+    "scenario.action.risk.text": {
+      "pt-BR": "Treina leitura de crise, pressão pública e recuperação.",
+      "en": "Trains crisis reading, public pressure and recovery.",
+      "es": "Entrena lectura de crisis, presión pública y recuperación."
+    },
+    "scenario.action.fiscal.title": {
+      "pt-BR": "Laboratório fiscal",
+      "en": "Fiscal Tutorial Lab",
+      "es": "Laboratorio fiscal"
+    },
+    "scenario.action.fiscal.text": {
+      "pt-BR": "Ensina relação entre dívida, imposto, gasto e crescimento.",
+      "en": "Teaches the relationship between debt, tax, spending and growth.",
+      "es": "Enseña la relación entre deuda, impuesto, gasto y crecimiento."
+    },
+    "scenario.action.diplomacy.title": {
+      "pt-BR": "Simulação diplomática",
+      "en": "Diplomatic Simulation",
+      "es": "Simulación diplomática"
+    },
+    "scenario.action.diplomacy.text": {
+      "pt-BR": "Treina negociações, blocos globais e risco externo.",
+      "en": "Trains negotiations, global blocs and external risk.",
+      "es": "Entrena negociaciones, bloques globales y riesgo externo."
+    },
+    "scenario.action.campaign.title": {
+      "pt-BR": "Escola de campanha",
+      "en": "Campaign School",
+      "es": "Escuela de campaña"
+    },
+    "scenario.action.campaign.text": {
+      "pt-BR": "Explica campanha, rejeição, base regional e segundo turno.",
+      "en": "Explains campaign, rejection, regional base and runoff.",
+      "es": "Explica campaña, rechazo, base regional y segunda vuelta."
+    },
+    "scenario.action.mentor.title": {
+      "pt-BR": "Revisão do mentor",
+      "en": "Mentor Review",
+      "es": "Revisión del mentor"
+    },
+    "scenario.action.mentor.text": {
+      "pt-BR": "Resume a situação do mandato e recomenda foco estratégico.",
+      "en": "Summarizes the term and recommends strategic focus.",
+      "es": "Resume el mandato y recomienda enfoque estratégico."
+    },
+    "scenario.action.archive.title": {
+      "pt-BR": "Arquivo de cenários",
+      "en": "Scenario Archive",
+      "es": "Archivo de escenarios"
+    },
+    "scenario.action.archive.text": {
+      "pt-BR": "Cria memória de aprendizado para aumentar replayabilidade.",
+      "en": "Creates learning memory to increase replayability.",
+      "es": "Crea memoria de aprendizaje para aumentar rejugabilidad."
+    },
+    "Cenários guiados": {
+      "pt-BR": "Cenários guiados",
+      "en": "Guided scenarios",
+      "es": "Escenarios guiados"
+    },
+    "Na aba Progresso você encontra pacotes de cenário, trilhas de tutorial e missões de onboarding para aprender sistemas avançados sem quebrar a carreira.": {
+      "pt-BR": "Na aba Progresso você encontra pacotes de cenário, trilhas de tutorial e missões de onboarding para aprender sistemas avançados sem quebrar a carreira.",
+      "en": "In the Progress tab you will find scenario packs, tutorial tracks and onboarding missions to learn advanced systems without breaking the career.",
+      "es": "En la pestaña Progreso encontrarás paquetes de escenario, rutas de tutorial y misiones de incorporación para aprender sistemas avanzados sin romper la carrera."
+    },
+    "alphaBeta.phaseName": {
+      "pt-BR": "Alpha/Beta Comercial",
+      "en": "Commercial Alpha/Beta",
+      "es": "Alpha/Beta comercial"
+    },
+    "alphaBeta.releaseTitle": {
+      "pt-BR": "Alpha/Beta Comercial",
+      "en": "Commercial Alpha/Beta",
+      "es": "Alpha/Beta comercial"
+    },
+    "alphaBeta.milestonesTitle": {
+      "pt-BR": "Marcos Alpha/Beta",
+      "en": "Alpha/Beta Milestones",
+      "es": "Hitos Alpha/Beta"
+    },
+    "alphaBeta.channelsTitle": {
+      "pt-BR": "Canal de teste",
+      "en": "Test channel",
+      "es": "Canal de prueba"
+    },
+    "alphaBeta.actionsTitle": {
+      "pt-BR": "Ações de Alpha/Beta",
+      "en": "Alpha/Beta actions",
+      "es": "Acciones de Alpha/Beta"
+    },
+    "alphaBeta.historyTitle": {
+      "pt-BR": "Histórico de prontidão",
+      "en": "Readiness history",
+      "es": "Historial de preparación"
+    },
+    "alphaBeta.goldReadiness": {
+      "pt-BR": "Prontidão Gold",
+      "en": "Gold readiness",
+      "es": "Preparación Gold"
+    },
+    "alphaBeta.gates": {
+      "pt-BR": "Gates",
+      "en": "Gates",
+      "es": "Gates"
+    },
+    "alphaBeta.channel": {
+      "pt-BR": "Canal",
+      "en": "Channel",
+      "es": "Canal"
+    },
+    "alphaBeta.technical": {
+      "pt-BR": "Prontidão técnica",
+      "en": "Technical readiness",
+      "es": "Preparación técnica"
+    },
+    "alphaBeta.gameplay": {
+      "pt-BR": "Prontidão jogável",
+      "en": "Gameplay readiness",
+      "es": "Preparación jugable"
+    },
+    "alphaBeta.commercial": {
+      "pt-BR": "Prontidão comercial",
+      "en": "Commercial readiness",
+      "es": "Preparación comercial"
+    },
+    "alphaBeta.publicationRisk": {
+      "pt-BR": "Risco público",
+      "en": "Public risk",
+      "es": "Riesgo público"
+    },
+    "alphaBeta.noHistory": {
+      "pt-BR": "O histórico de Alpha/Beta será criado nos próximos fechamentos mensais.",
+      "en": "Alpha/Beta history will be created in the next monthly closings.",
+      "es": "El historial Alpha/Beta se creará en los próximos cierres mensuales."
+    },
+    "alphaBeta.historyLine": {
+      "pt-BR": "Saúde {health}% • gates {gates} • risco {risk}%",
+      "en": "Health {health}% • gates {gates} • risk {risk}%",
+      "es": "Salud {health}% • gates {gates} • riesgo {risk}%"
+    },
+    "alphaBeta.channelAlreadyActive": {
+      "pt-BR": "Este canal Alpha/Beta já está ativo.",
+      "en": "This Alpha/Beta channel is already active.",
+      "es": "Este canal Alpha/Beta ya está activo."
+    },
+    "alphaBeta.channelChanged": {
+      "pt-BR": "Canal Alpha/Beta alterado: {name}.",
+      "en": "Alpha/Beta channel changed: {name}.",
+      "es": "Canal Alpha/Beta cambiado: {name}."
+    },
+    "alphaBeta.cooldownWarning": {
+      "pt-BR": "Esta ação de Alpha/Beta ainda está em cooldown.",
+      "en": "This Alpha/Beta action is still on cooldown.",
+      "es": "Esta acción Alpha/Beta aún está en cooldown."
+    },
+    "alphaBeta.insufficientTreasury": {
+      "pt-BR": "Tesouro insuficiente para esta ação de Alpha/Beta.",
+      "en": "Not enough treasury for this Alpha/Beta action.",
+      "es": "Tesoro insuficiente para esta acción Alpha/Beta."
+    },
+    "alphaBeta.actionStarted": {
+      "pt-BR": "Ação Alpha/Beta iniciada: {name}.",
+      "en": "Alpha/Beta action started: {name}.",
+      "es": "Acción Alpha/Beta iniciada: {name}."
+    },
+    "alphaBeta.gate.progress": {
+      "pt-BR": "Build em progresso controlado para Alpha/Beta.",
+      "en": "Build progressing under Alpha/Beta control.",
+      "es": "Build en progreso controlado para Alpha/Beta."
+    },
+    "alphaBeta.gate.blocked": {
+      "pt-BR": "Risco público alto: segure a publicação.",
+      "en": "High public risk: hold publication.",
+      "es": "Riesgo público alto: detén la publicación."
+    },
+    "alphaBeta.gate.rc": {
+      "pt-BR": "Release candidate recomendado para homologação.",
+      "en": "Release candidate recommended for validation.",
+      "es": "Release candidate recomendado para homologación."
+    },
+    "alphaBeta.gate.technical": {
+      "pt-BR": "Reforce estabilidade técnica antes de ampliar o beta.",
+      "en": "Strengthen technical stability before expanding beta.",
+      "es": "Refuerza la estabilidad técnica antes de ampliar la beta."
+    },
+    "alphaBeta.gate.balance": {
+      "pt-BR": "Reforce balanceamento e jogabilidade antes do RC.",
+      "en": "Improve balance and gameplay before RC.",
+      "es": "Refuerza balance y jugabilidad antes del RC."
+    },
+    "alphaBeta.channel.internal.name": {
+      "pt-BR": "Alpha interno",
+      "en": "Internal alpha",
+      "es": "Alpha interno"
+    },
+    "alphaBeta.channel.internal.text": {
+      "pt-BR": "Ciclo seguro para validar boot, saves e regressões antes de expor jogadores.",
+      "en": "Safe cycle to validate boot, saves, and regressions before exposing players.",
+      "es": "Ciclo seguro para validar arranque, guardados y regresiones antes de exponer jugadores."
+    },
+    "alphaBeta.channel.closed.name": {
+      "pt-BR": "Beta fechado",
+      "en": "Closed beta",
+      "es": "Beta cerrada"
+    },
+    "alphaBeta.channel.closed.text": {
+      "pt-BR": "Coleta feedback real com grupo controlado e risco público moderado.",
+      "en": "Collects real feedback with a controlled group and moderate public risk.",
+      "es": "Recoge feedback real con grupo controlado y riesgo público moderado."
+    },
+    "alphaBeta.channel.device.name": {
+      "pt-BR": "Laboratório de dispositivos",
+      "en": "Device lab",
+      "es": "Laboratorio de dispositivos"
+    },
+    "alphaBeta.channel.device.text": {
+      "pt-BR": "Prioriza celular real, PWA, paisagem/retrato, cache e performance.",
+      "en": "Prioritizes real phones, PWA, landscape/portrait, cache, and performance.",
+      "es": "Prioriza móviles reales, PWA, horizontal/vertical, caché y rendimiento."
+    },
+    "alphaBeta.channel.rc.name": {
+      "pt-BR": "Release candidate",
+      "en": "Release candidate",
+      "es": "Release candidate"
+    },
+    "alphaBeta.channel.rc.text": {
+      "pt-BR": "Congela escopo e foca apenas bloqueadores, Gold readiness e publicação.",
+      "en": "Freezes scope and focuses only on blockers, Gold readiness, and publishing.",
+      "es": "Congela alcance y enfoca solo bloqueadores, preparación Gold y publicación."
+    },
+    "alphaBeta.milestone.boot.name": {
+      "pt-BR": "Boot e regressão",
+      "en": "Boot and regression",
+      "es": "Arranque y regresión"
+    },
+    "alphaBeta.milestone.boot.text": {
+      "pt-BR": "Entrada, HUD, navegação e sistemas centrais sem erro.",
+      "en": "Entry, HUD, navigation, and core systems without errors.",
+      "es": "Entrada, HUD, navegación y sistemas centrales sin errores."
+    },
+    "alphaBeta.milestone.mobile.name": {
+      "pt-BR": "Mobile real",
+      "en": "Real mobile",
+      "es": "Móvil real"
+    },
+    "alphaBeta.milestone.mobile.text": {
+      "pt-BR": "Toque, rolagem, layout e orientação auditados para celular.",
+      "en": "Touch, scroll, layout, and orientation audited for phones.",
+      "es": "Toque, scroll, diseño y orientación auditados para móvil."
+    },
+    "alphaBeta.milestone.saves.name": {
+      "pt-BR": "Saves e migração",
+      "en": "Saves and migration",
+      "es": "Guardados y migración"
+    },
+    "alphaBeta.milestone.saves.text": {
+      "pt-BR": "Carreiras antigas, slots, backups e exportação preservados.",
+      "en": "Old careers, slots, backups, and exports preserved.",
+      "es": "Carreras antiguas, slots, copias y exportación preservados."
+    },
+    "alphaBeta.milestone.balance.name": {
+      "pt-BR": "Balanceamento sistêmico",
+      "en": "Systemic balance",
+      "es": "Balance sistémico"
+    },
+    "alphaBeta.milestone.balance.text": {
+      "pt-BR": "Economia, crise, eleição e diplomacia sem exploit dominante.",
+      "en": "Economy, crisis, election, and diplomacy without dominant exploit.",
+      "es": "Economía, crisis, elección y diplomacia sin exploit dominante."
+    },
+    "alphaBeta.milestone.localization.name": {
+      "pt-BR": "Localização internacional",
+      "en": "International localization",
+      "es": "Localización internacional"
+    },
+    "alphaBeta.milestone.localization.text": {
+      "pt-BR": "PT-BR, inglês e espanhol completos e coerentes.",
+      "en": "PT-BR, English, and Spanish complete and coherent.",
+      "es": "PT-BR, inglés y español completos y coherentes."
+    },
+    "alphaBeta.milestone.offline.name": {
+      "pt-BR": "PWA e offline",
+      "en": "PWA and offline",
+      "es": "PWA y offline"
+    },
+    "alphaBeta.milestone.offline.text": {
+      "pt-BR": "Instalação, cache, fallback e atualização controlada.",
+      "en": "Install, cache, fallback, and controlled updates.",
+      "es": "Instalación, caché, fallback y actualización controlada."
+    },
+    "alphaBeta.milestone.feedback.name": {
+      "pt-BR": "Feedback de beta",
+      "en": "Beta feedback",
+      "es": "Feedback beta"
+    },
+    "alphaBeta.milestone.feedback.text": {
+      "pt-BR": "Sinais reais de jogadores, telemetria e correções priorizadas.",
+      "en": "Real player signals, telemetry, and prioritized fixes.",
+      "es": "Señales reales de jugadores, telemetría y correcciones priorizadas."
+    },
+    "alphaBeta.milestone.gold.name": {
+      "pt-BR": "Gate Gold",
+      "en": "Gold gate",
+      "es": "Gate Gold"
+    },
+    "alphaBeta.milestone.gold.text": {
+      "pt-BR": "Prontidão final para a próxima fase Gold v2.0.0.",
+      "en": "Final readiness for the next Gold v2.0.0 phase.",
+      "es": "Preparación final para la próxima fase Gold v2.0.0."
+    },
+    "alphaBeta.action.device.title": {
+      "pt-BR": "Matriz de dispositivos",
+      "en": "Device matrix",
+      "es": "Matriz de dispositivos"
+    },
+    "alphaBeta.action.device.text": {
+      "pt-BR": "Executa bateria de testes mobile, tablet, desktop e PWA instalada.",
+      "en": "Runs a test battery on mobile, tablet, desktop, and installed PWA.",
+      "es": "Ejecuta pruebas en móvil, tablet, escritorio y PWA instalada."
+    },
+    "alphaBeta.action.save.title": {
+      "pt-BR": "Ensaio de migração de saves",
+      "en": "Save migration drill",
+      "es": "Ensayo de migración de guardados"
+    },
+    "alphaBeta.action.save.text": {
+      "pt-BR": "Força cenários de importação, backup e restauração para evitar perda de carreira.",
+      "en": "Stress-tests import, backup, and restore scenarios to avoid career loss.",
+      "es": "Prueba importación, copia y restauración para evitar pérdida de carrera."
+    },
+    "alphaBeta.action.balance.title": {
+      "pt-BR": "Sprint de balanceamento",
+      "en": "Balance sprint",
+      "es": "Sprint de balance"
+    },
+    "alphaBeta.action.balance.text": {
+      "pt-BR": "Ajusta impactos sistêmicos e reduz loops dominantes antes do beta amplo.",
+      "en": "Tunes systemic impacts and reduces dominant loops before broader beta.",
+      "es": "Ajusta impactos sistémicos y reduce bucles dominantes antes de ampliar beta."
+    },
+    "alphaBeta.action.localization.title": {
+      "pt-BR": "Passada final de localização",
+      "en": "Final localization pass",
+      "es": "Revisión final de localización"
+    },
+    "alphaBeta.action.localization.text": {
+      "pt-BR": "Revisa expansão de texto, chaves dinâmicas e coerência editorial trilíngue.",
+      "en": "Reviews text expansion, dynamic keys, and trilingual editorial coherence.",
+      "es": "Revisa expansión de texto, claves dinámicas y coherencia trilingüe."
+    },
+    "alphaBeta.action.pwa.title": {
+      "pt-BR": "Drill PWA/offline",
+      "en": "PWA/offline drill",
+      "es": "Drill PWA/offline"
+    },
+    "alphaBeta.action.pwa.text": {
+      "pt-BR": "Valida instalação, cache, atualização e carregamento sem internet.",
+      "en": "Validates install, cache, update, and loading without internet.",
+      "es": "Valida instalación, caché, actualización y carga sin internet."
+    },
+    "alphaBeta.action.closed.title": {
+      "pt-BR": "Sessão de beta fechado",
+      "en": "Closed beta session",
+      "es": "Sesión beta cerrada"
+    },
+    "alphaBeta.action.closed.text": {
+      "pt-BR": "Simula onda controlada de jogadores e coleta sinais de usabilidade.",
+      "en": "Simulates a controlled player wave and gathers usability signals.",
+      "es": "Simula ola controlada de jugadores y recoge señales de usabilidad."
+    },
+    "alphaBeta.action.telemetry.title": {
+      "pt-BR": "Revisão de telemetria",
+      "en": "Telemetry review",
+      "es": "Revisión de telemetría"
+    },
+    "alphaBeta.action.telemetry.text": {
+      "pt-BR": "Organiza diagnóstico, eventos críticos e ranking de bugs sem expor dados sensíveis.",
+      "en": "Organizes diagnostics, critical events, and bug ranking without exposing sensitive data.",
+      "es": "Organiza diagnóstico, eventos críticos y ranking de bugs sin exponer datos sensibles."
+    },
+    "alphaBeta.action.board.title": {
+      "pt-BR": "Comitê Gold readiness",
+      "en": "Gold readiness board",
+      "es": "Comité Gold readiness"
+    },
+    "alphaBeta.action.board.text": {
+      "pt-BR": "Congela escopo, revisa bloqueadores e prepara a transição para Gold.",
+      "en": "Freezes scope, reviews blockers, and prepares transition to Gold.",
+      "es": "Congela alcance, revisa bloqueadores y prepara transición a Gold."
+    },
+    "gold.phaseName": {
+      "pt-BR": "Gold Master",
+      "en": "Gold Master",
+      "es": "Gold Master"
+    },
+    "gold.releaseTitle": {
+      "pt-BR": "Gold Master Comercial",
+      "en": "Commercial Gold Master",
+      "es": "Gold Master Comercial"
+    },
+    "gold.score": {
+      "pt-BR": "Pontuação Gold",
+      "en": "Gold score",
+      "es": "Puntuación Gold"
+    },
+    "gold.gates": {
+      "pt-BR": "Gates",
+      "en": "Gates",
+      "es": "Gates"
+    },
+    "gold.track": {
+      "pt-BR": "Trilha",
+      "en": "Track",
+      "es": "Ruta"
+    },
+    "gold.certification": {
+      "pt-BR": "Certificação",
+      "en": "Certification",
+      "es": "Certificación"
+    },
+    "gold.publishing": {
+      "pt-BR": "Publicação",
+      "en": "Publishing",
+      "es": "Publicación"
+    },
+    "gold.sustainability": {
+      "pt-BR": "Sustentação",
+      "en": "Sustainability",
+      "es": "Sostenibilidad"
+    },
+    "gold.launchRisk": {
+      "pt-BR": "Risco de lançamento",
+      "en": "Launch risk",
+      "es": "Riesgo de lanzamiento"
+    },
+    "gold.gatesTitle": {
+      "pt-BR": "Gates Gold Master",
+      "en": "Gold Master gates",
+      "es": "Gates Gold Master"
+    },
+    "gold.tracksTitle": {
+      "pt-BR": "Trilha de Publicação",
+      "en": "Publishing track",
+      "es": "Ruta de publicación"
+    },
+    "gold.actionsTitle": {
+      "pt-BR": "Ações Gold Master",
+      "en": "Gold Master actions",
+      "es": "Acciones Gold Master"
+    },
+    "gold.historyTitle": {
+      "pt-BR": "Histórico Gold",
+      "en": "Gold history",
+      "es": "Historial Gold"
+    },
+    "gold.noHistory": {
+      "pt-BR": "Nenhum histórico Gold ainda.",
+      "en": "No Gold history yet.",
+      "es": "Aún no hay historial Gold."
+    },
+    "gold.historyLine": {
+      "pt-BR": "Gold {score}% • gates {gates}/8 • risco {risk}%",
+      "en": "Gold {score}% • gates {gates}/8 • risk {risk}%",
+      "es": "Gold {score}% • gates {gates}/8 • riesgo {risk}%"
+    },
+    "gold.gate.progress": {
+      "pt-BR": "Gold em preparação operacional.",
+      "en": "Gold is in operational preparation.",
+      "es": "Gold en preparación operativa."
+    },
+    "gold.gate.blocked": {
+      "pt-BR": "Publicação bloqueada por risco elevado.",
+      "en": "Publishing blocked by elevated risk.",
+      "es": "Publicación bloqueada por riesgo elevado."
+    },
+    "gold.gate.gold": {
+      "pt-BR": "Gold Master pronto para distribuição controlada.",
+      "en": "Gold Master is ready for controlled distribution.",
+      "es": "Gold Master listo para distribución controlada."
+    },
+    "gold.gate.certification": {
+      "pt-BR": "Certificação técnica ainda precisa de reforço.",
+      "en": "Technical certification still needs reinforcement.",
+      "es": "La certificación técnica aún necesita refuerzo."
+    },
+    "gold.gate.publishing": {
+      "pt-BR": "Pacote comercial e operação ainda precisam amadurecer.",
+      "en": "Commercial package and operations still need maturity.",
+      "es": "El paquete comercial y la operación aún deben madurar."
+    },
+    "gold.trackAlreadyActive": {
+      "pt-BR": "Essa trilha Gold já está ativa.",
+      "en": "This Gold track is already active.",
+      "es": "Esta ruta Gold ya está activa."
+    },
+    "gold.trackChanged": {
+      "pt-BR": "Trilha Gold adotada: {name}.",
+      "en": "Gold track adopted: {name}.",
+      "es": "Ruta Gold adoptada: {name}."
+    },
+    "gold.cooldownWarning": {
+      "pt-BR": "Ação Gold Master ainda está em cooldown.",
+      "en": "Gold Master action is still on cooldown.",
+      "es": "La acción Gold Master aún está en cooldown."
+    },
+    "gold.insufficientTreasury": {
+      "pt-BR": "Tesouro insuficiente para ação Gold Master.",
+      "en": "Insufficient treasury for Gold Master action.",
+      "es": "Tesoro insuficiente para acción Gold Master."
+    },
+    "gold.actionStarted": {
+      "pt-BR": "Ação Gold Master iniciada: {name}.",
+      "en": "Gold Master action started: {name}.",
+      "es": "Acción Gold Master iniciada: {name}."
+    },
+    "gold.track.candidate.name": {
+      "pt-BR": "Candidato Gold",
+      "en": "Gold candidate",
+      "es": "Candidato Gold"
+    },
+    "gold.track.candidate.text": {
+      "pt-BR": "Trava versão candidata, auditoria final e corte de build.",
+      "en": "Locks candidate version, final audit and build cut.",
+      "es": "Bloquea versión candidata, auditoría final y corte de build."
+    },
+    "gold.track.store.name": {
+      "pt-BR": "Pacote de loja",
+      "en": "Store package",
+      "es": "Paquete de tienda"
+    },
+    "gold.track.store.text": {
+      "pt-BR": "Prepara descrição, metadados, imagens, compliance e páginas de publicação.",
+      "en": "Prepares description, metadata, images, compliance and publishing pages.",
+      "es": "Prepara descripción, metadatos, imágenes, compliance y páginas de publicación."
+    },
+    "gold.track.pwa.name": {
+      "pt-BR": "Distribuição PWA",
+      "en": "PWA distribution",
+      "es": "Distribución PWA"
+    },
+    "gold.track.pwa.text": {
+      "pt-BR": "Foca instalação, cache, atualização controlada e fallback offline.",
+      "en": "Focuses installation, cache, controlled update and offline fallback.",
+      "es": "Enfoca instalación, caché, actualización controlada y fallback offline."
+    },
+    "gold.track.launch.name": {
+      "pt-BR": "Operação de lançamento",
+      "en": "Launch operations",
+      "es": "Operación de lanzamiento"
+    },
+    "gold.track.launch.text": {
+      "pt-BR": "Organiza suporte, monitoramento, comunicação e sala de hotfix.",
+      "en": "Organizes support, monitoring, communication and hotfix room.",
+      "es": "Organiza soporte, monitoreo, comunicación y sala de hotfix."
+    },
+    "gold.gate.integrity.name": {
+      "pt-BR": "Integridade final",
+      "en": "Final integrity",
+      "es": "Integridad final"
+    },
+    "gold.gate.integrity.text": {
+      "pt-BR": "Build, dependências e arquivos críticos sem divergência.",
+      "en": "Build, dependencies and critical files without drift.",
+      "es": "Build, dependencias y archivos críticos sin divergencia."
+    },
+    "gold.gate.saves.name": {
+      "pt-BR": "Migração de saves",
+      "en": "Save migration",
+      "es": "Migración de partidas"
+    },
+    "gold.gate.saves.text": {
+      "pt-BR": "Carreiras antigas carregam, exportam e voltam sem perda.",
+      "en": "Old careers load, export and return without loss.",
+      "es": "Carreras antiguas cargan, exportan y vuelven sin pérdida."
+    },
+    "gold.gate.mobile.name": {
+      "pt-BR": "Mobile certificado",
+      "en": "Certified mobile",
+      "es": "Mobile certificado"
+    },
+    "gold.gate.mobile.text": {
+      "pt-BR": "Celular em retrato e paisagem mantém toque, rolagem e leitura.",
+      "en": "Phone in portrait and landscape keeps touch, scrolling and readability.",
+      "es": "Celular en retrato y paisaje mantiene toque, scroll y lectura."
+    },
+    "gold.gate.pwa.name": {
+      "pt-BR": "PWA/offline",
+      "en": "PWA/offline",
+      "es": "PWA/offline"
+    },
+    "gold.gate.pwa.text": {
+      "pt-BR": "Instalação, cache e atualização controlada protegidos.",
+      "en": "Installation, cache and controlled update protected.",
+      "es": "Instalación, caché y actualización controlada protegidos."
+    },
+    "gold.gate.localization.name": {
+      "pt-BR": "Localização completa",
+      "en": "Complete localization",
+      "es": "Localización completa"
+    },
+    "gold.gate.localization.text": {
+      "pt-BR": "PT-BR, EN e ES sem chaves ausentes.",
+      "en": "PT-BR, EN and ES without missing keys.",
+      "es": "PT-BR, EN y ES sin claves faltantes."
+    },
+    "gold.gate.balance.name": {
+      "pt-BR": "Balanceamento",
+      "en": "Balancing",
+      "es": "Balance"
+    },
+    "gold.gate.balance.text": {
+      "pt-BR": "Economia, crises, eleições e carreira sem abuso crítico.",
+      "en": "Economy, crises, elections and career without critical exploit.",
+      "es": "Economía, crisis, elecciones y carrera sin abuso crítico."
+    },
+    "gold.gate.privacy.name": {
+      "pt-BR": "Privacidade e telemetria",
+      "en": "Privacy and telemetry",
+      "es": "Privacidad y telemetría"
+    },
+    "gold.gate.privacy.text": {
+      "pt-BR": "Dados simulados, consentimento e diagnóstico protegidos.",
+      "en": "Simulated data, consent and diagnostics protected.",
+      "es": "Datos simulados, consentimiento y diagnóstico protegidos."
+    },
+    "gold.gate.operations.name": {
+      "pt-BR": "Operação pós-lançamento",
+      "en": "Post-launch operations",
+      "es": "Operación postlanzamiento"
+    },
+    "gold.gate.operations.text": {
+      "pt-BR": "Suporte, rollback e hotfix prontos para produção.",
+      "en": "Support, rollback and hotfix ready for production.",
+      "es": "Soporte, rollback y hotfix listos para producción."
+    },
+    "gold.action.regression.title": {
+      "pt-BR": "Regressão final multiplataforma",
+      "en": "Final multiplatform regression",
+      "es": "Regresión final multiplataforma"
+    },
+    "gold.action.regression.text": {
+      "pt-BR": "Executa varredura final em mobile, tablet, desktop, PWA, saves e rolagem.",
+      "en": "Runs final sweep on mobile, tablet, desktop, PWA, saves and scrolling.",
+      "es": "Ejecuta revisión final en mobile, tablet, desktop, PWA, partidas y scroll."
+    },
+    "gold.action.store.title": {
+      "pt-BR": "Pacote de loja comercial",
+      "en": "Commercial store package",
+      "es": "Paquete de tienda comercial"
+    },
+    "gold.action.store.text": {
+      "pt-BR": "Prepara textos de loja, screenshots, ícones, promessas comerciais e materiais de publicação.",
+      "en": "Prepares store texts, screenshots, icons, commercial promises and publishing materials.",
+      "es": "Prepara textos de tienda, capturas, íconos, promesas comerciales y materiales de publicación."
+    },
+    "gold.action.privacy.title": {
+      "pt-BR": "Pacote de privacidade",
+      "en": "Privacy package",
+      "es": "Paquete de privacidad"
+    },
+    "gold.action.privacy.text": {
+      "pt-BR": "Reforça avisos, telemetria simulada, diagnóstico local e segurança de exportação.",
+      "en": "Reinforces notices, simulated telemetry, local diagnostics and export safety.",
+      "es": "Refuerza avisos, telemetría simulada, diagnóstico local y seguridad de exportación."
+    },
+    "gold.action.comms.title": {
+      "pt-BR": "Plano de comunicação de lançamento",
+      "en": "Launch communication plan",
+      "es": "Plan de comunicación de lanzamiento"
+    },
+    "gold.action.comms.text": {
+      "pt-BR": "Organiza anúncio, notas de versão, roteiro de teste público e mensagem comercial.",
+      "en": "Organizes announcement, release notes, public test route and commercial message.",
+      "es": "Organiza anuncio, notas de versión, ruta de prueba pública y mensaje comercial."
+    },
+    "gold.action.support.title": {
+      "pt-BR": "Playbook de suporte",
+      "en": "Support playbook",
+      "es": "Playbook de soporte"
+    },
+    "gold.action.support.text": {
+      "pt-BR": "Cria protocolo de atendimento, FAQ, rollback e triagem de falhas críticas.",
+      "en": "Creates support protocol, FAQ, rollback and critical failure triage.",
+      "es": "Crea protocolo de soporte, FAQ, rollback y triage de fallas críticas."
+    },
+    "gold.action.analytics.title": {
+      "pt-BR": "Linha de base analítica",
+      "en": "Analytics baseline",
+      "es": "Línea base analítica"
+    },
+    "gold.action.analytics.text": {
+      "pt-BR": "Define indicadores de retenção, crash-free, instalação e satisfação sem coleta real sensível.",
+      "en": "Defines retention, crash-free, installation and satisfaction indicators without real sensitive collection.",
+      "es": "Define indicadores de retención, crash-free, instalación y satisfacción sin recolección real sensible."
+    },
+    "gold.action.cut.title": {
+      "pt-BR": "Corte Gold Master",
+      "en": "Gold Master cut",
+      "es": "Corte Gold Master"
+    },
+    "gold.action.cut.text": {
+      "pt-BR": "Congela pacote candidato, valida integridade e prepara distribuição controlada.",
+      "en": "Freezes candidate package, validates integrity and prepares controlled distribution.",
+      "es": "Congela paquete candidato, valida integridad y prepara distribución controlada."
+    },
+    "gold.action.hotfix.title": {
+      "pt-BR": "Sala de hotfix pós-lançamento",
+      "en": "Post-launch hotfix room",
+      "es": "Sala de hotfix postlanzamiento"
+    },
+    "gold.action.hotfix.text": {
+      "pt-BR": "Monta resposta rápida para bugs críticos, saves, PWA e compatibilidade mobile.",
+      "en": "Builds quick response for critical bugs, saves, PWA and mobile compatibility.",
+      "es": "Monta respuesta rápida para bugs críticos, partidas, PWA y compatibilidad mobile."
+    },
+    "release.literal.buildTruth": {
+      "pt-BR": "Build Truth",
+      "en": "Build Truth",
+      "es": "Build Truth"
+    },
+    "release.literal.fullZip": {
+      "pt-BR": "ZIP completo oficial",
+      "en": "Official complete ZIP",
+      "es": "ZIP completo oficial"
+    },
+    "release.literal.fullZipDetail": {
+      "pt-BR": "A entrega preserva todos os arquivos do jogo e não usa pacote standalone ou parcial.",
+      "en": "The delivery preserves all game files and does not use a standalone or partial package.",
+      "es": "La entrega preserva todos los archivos del juego y no usa paquete standalone ni parcial."
+    },
+    "release.literal.saves": {
+      "pt-BR": "Saves preservados",
+      "en": "Preserved saves",
+      "es": "Partidas preservadas"
+    },
+    "release.literal.savesDetail": {
+      "pt-BR": "Schema 3 e chave diplocraft_save_v101 mantidos com migração aditiva.",
+      "en": "Schema 3 and key diplocraft_save_v101 kept with additive migration.",
+      "es": "Schema 3 y clave diplocraft_save_v101 mantenidos con migración aditiva."
+    },
+    "release.literal.mobile": {
+      "pt-BR": "Mobile/PWA",
+      "en": "Mobile/PWA",
+      "es": "Mobile/PWA"
+    },
+    "release.literal.mobileDetail": {
+      "pt-BR": "Fullscreen, rolagem, PWA e cache offline continuam protegidos por auditoria.",
+      "en": "Fullscreen, scrolling, PWA and offline cache remain protected by audit.",
+      "es": "Pantalla completa, scroll, PWA y caché offline siguen protegidos por auditoría."
+    },
+    "release.literal.trilingual": {
+      "pt-BR": "Trilíngue",
+      "en": "Trilingual",
+      "es": "Trilingüe"
+    },
+    "release.literal.trilingualDetail": {
+      "pt-BR": "PT-BR, inglês e espanhol continuam completos para textos novos e antigos.",
+      "en": "PT-BR, English and Spanish remain complete for new and old texts.",
+      "es": "PT-BR, inglés y español siguen completos para textos nuevos y antiguos."
+    },
+    "release.literal.alphaDetail": {
+      "pt-BR": "Gates de readiness, canais de teste, marcos de publicação e ações de QA integrados à aba Release.",
+      "en": "Readiness gates, test channels, publishing milestones and QA actions integrated into the Release tab.",
+      "es": "Gates de readiness, canales de prueba, hitos de publicación y acciones de QA integrados en la pestaña Release."
+    },
+    "release.literal.alphaAudit": {
+      "pt-BR": "Auditoria Alpha/Beta",
+      "en": "Alpha/Beta audit",
+      "es": "Auditoría Alpha/Beta"
+    },
+    "release.literal.alphaAuditDetail": {
+      "pt-BR": "Canais, milestones, ações, render, i18n, save schema e build config validados.",
+      "en": "Channels, milestones, actions, rendering, i18n, save schema and build config validated.",
+      "es": "Canales, milestones, acciones, render, i18n, save schema y build config validados."
+    },
+    "release.literal.test1": {
+      "pt-BR": "Executar criação de governo, ciclo mensal e ações de Alpha/Beta sem quebrar saves antigos.",
+      "en": "Run government creation, monthly cycle and Alpha/Beta actions without breaking old saves.",
+      "es": "Ejecutar creación de gobierno, ciclo mensual y acciones Alpha/Beta sin romper partidas antiguas."
+    },
+    "release.literal.test2": {
+      "pt-BR": "Validar Release em celular 320 px, mobile landscape, tablet, desktop e PWA instalada.",
+      "en": "Validate Release on 320 px phone, mobile landscape, tablet, desktop and installed PWA.",
+      "es": "Validar Release en celular 320 px, mobile landscape, tablet, desktop y PWA instalada."
+    },
+    "release.literal.test3": {
+      "pt-BR": "Simular 30 anos confirmando limites, histórico e estabilidade de indicadores.",
+      "en": "Simulate 30 years confirming bounds, history and indicator stability.",
+      "es": "Simular 30 años confirmando límites, historial y estabilidad de indicadores."
+    },
+    "release.literal.test4": {
+      "pt-BR": "Conferir que nenhum asset teve caminho alterado e que CAMINHOS_ASSETS_JOGO.txt permanece na raiz.",
+      "en": "Check that no asset path changed and CAMINHOS_ASSETS_JOGO.txt remains at the root.",
+      "es": "Comprobar que ninguna ruta de asset cambió y que CAMINHOS_ASSETS_JOGO.txt permanece en la raíz."
+    },
+    "release.literal.test5": {
+      "pt-BR": "Alternar português, inglês e espanhol sem chaves ausentes.",
+      "en": "Switch Portuguese, English and Spanish without missing keys.",
+      "es": "Alternar portugués, inglés y español sin claves ausentes."
+    },
+    "release.literal.test6": {
+      "pt-BR": "Verificar GitHub/Vercel após publicação e remover service worker antigo caso o navegador mantenha cache.",
+      "en": "Check GitHub/Vercel after publishing and remove the old service worker if the browser keeps cache.",
+      "es": "Verificar GitHub/Vercel después de publicar y quitar el service worker antiguo si el navegador mantiene caché."
+    },
+    "release.literal.next1": {
+      "pt-BR": "Fase 28/Gold: congelar escopo e eliminar apenas bloqueadores críticos.",
+      "en": "Phase 28/Gold: freeze scope and eliminate only critical blockers.",
+      "es": "Fase 28/Gold: congelar alcance y eliminar solo bloqueadores críticos."
+    },
+    "release.literal.next2": {
+      "pt-BR": "Executar homologação manual real em Android, iOS, desktop, tablet e PWA instalada.",
+      "en": "Run real manual approval on Android, iOS, desktop, tablet and installed PWA.",
+      "es": "Ejecutar homologación manual real en Android, iOS, desktop, tablet y PWA instalada."
+    },
+    "release.literal.next3": {
+      "pt-BR": "Gerar checklist de publicação comercial e selo v2.0.0 quando todos os gates Alpha/Beta atingirem prontidão.",
+      "en": "Generate commercial publishing checklist and v2.0.0 seal when all Alpha/Beta gates reach readiness.",
+      "es": "Generar checklist de publicación comercial y sello v2.0.0 cuando todos los gates Alpha/Beta alcancen readiness."
+    },
+    "release.literal.next4": {
+      "pt-BR": "Manter ZIP completo oficial e documento de upload Git Bash na raiz.",
+      "en": "Keep the official complete ZIP and Git Bash upload document at the root.",
+      "es": "Mantener ZIP completo oficial y documento de upload Git Bash en la raíz."
+    },
+    "release.literal.summaryGold": {
+      "pt-BR": "Sistema Gold Master e publicação comercial com certificação final, pacote de loja, compliance, suporte, rollback, telemetria segura, plano de lançamento, gates de distribuição e integração com Alpha/Beta, PWA, saves, mobile, localização, balanceamento, economia, crises, eleições e Core Loop 2.0.",
+      "en": "Gold Master and commercial publishing system with final certification, store package, compliance, support, rollback, secure telemetry, launch plan, distribution gates and integration with Alpha/Beta, PWA, saves, mobile, localization, balance, economy, crises, elections and Core Loop 2.0.",
+      "es": "Sistema Gold Master y publicación comercial con certificación final, paquete de tienda, compliance, soporte, rollback, telemetría segura, plan de lanzamiento, gates de distribución e integración con Alpha/Beta, PWA, partidas, mobile, localización, balance, economía, crisis, elecciones y Core Loop 2.0."
+    },
+    "release.literal.check.buildTruth": {
+      "pt-BR": "✓ Build Truth",
+      "en": "✓ Build Truth",
+      "es": "✓ Build Truth"
+    },
+    "release.literal.check.mobile": {
+      "pt-BR": "✓ Mobile/PWA",
+      "en": "✓ Mobile/PWA",
+      "es": "✓ Mobile/PWA"
+    },
+    "release.literal.check.saves": {
+      "pt-BR": "✓ Saves preservados",
+      "en": "✓ Preserved saves",
+      "es": "✓ Partidas preservadas"
+    },
+    "release.literal.check.trilingual": {
+      "pt-BR": "✓ Trilíngue",
+      "en": "✓ Trilingual",
+      "es": "✓ Trilingüe"
+    },
+    "release.literal.check.fullZip": {
+      "pt-BR": "✓ ZIP completo oficial",
+      "en": "✓ Official complete ZIP",
+      "es": "✓ ZIP completo oficial"
+    },
+    "release.literal.passo": {
+      "pt-BR": "Passo",
+      "en": "Step",
+      "es": "Paso"
+    },
+    "release.summary.current": {
+      "pt-BR": "Gold v2.0 Internacional com localização reforçada, mercados globais, compliance multirregional, suporte, loja, comunidade, telemetria segura e operação global integrada ao Gold Master, Alpha/Beta, PWA, saves, mobile e Core Loop 2.0.",
+      "en": "Gold v2.0 International with reinforced localization, global markets, multi-region compliance, support, store, community, secure telemetry and global operations integrated with Gold Master, Alpha/Beta, PWA, saves, mobile and Core Loop 2.0.",
+      "es": "Gold v2.0 Internacional con localización reforzada, mercados globales, compliance multirregional, soporte, tienda, comunidad, telemetría segura y operación global integrada con Gold Master, Alpha/Beta, PWA, partidas, mobile y Core Loop 2.0."
+    },
+    "release.step": {
+      "pt-BR": "Passo",
+      "en": "Step",
+      "es": "Paso"
+    },
+    "release.check.buildTruth.title": {
+      "pt-BR": "Build Truth",
+      "en": "Build Truth",
+      "es": "Build Truth"
+    },
+    "release.check.buildTruth.detail": {
+      "pt-BR": "Versão, cache, módulos, testes e pacote derivam da fonte canônica da build 1.8.0.",
+      "en": "Version, cache, modules, tests and package derive from the canonical build 1.8.0 source.",
+      "es": "Versión, caché, módulos, pruebas y paquete derivan de la fuente canónica de la build 1.8.0."
+    },
+    "release.check.fullZip.title": {
+      "pt-BR": "ZIP completo oficial",
+      "en": "Official complete ZIP",
+      "es": "ZIP completo oficial"
+    },
+    "release.check.fullZip.detail": {
+      "pt-BR": "A entrega preserva todos os arquivos do jogo e não usa pacote standalone ou parcial.",
+      "en": "The delivery preserves all game files and does not use a standalone or partial package.",
+      "es": "La entrega preserva todos los archivos del juego y no usa paquete standalone ni parcial."
+    },
+    "release.check.saves.title": {
+      "pt-BR": "Saves preservados",
+      "en": "Preserved saves",
+      "es": "Partidas preservadas"
+    },
+    "release.check.saves.detail": {
+      "pt-BR": "Schema 3 e chave diplocraft_save_v101 mantidos com migração aditiva.",
+      "en": "Schema 3 and key diplocraft_save_v101 kept with additive migration.",
+      "es": "Schema 3 y clave diplocraft_save_v101 mantenidos con migración aditiva."
+    },
+    "release.check.mobile.title": {
+      "pt-BR": "Mobile/PWA",
+      "en": "Mobile/PWA",
+      "es": "Mobile/PWA"
+    },
+    "release.check.mobile.detail": {
+      "pt-BR": "Fullscreen, rolagem, PWA e cache offline continuam protegidos por auditoria.",
+      "en": "Fullscreen, scrolling, PWA and offline cache remain protected by audit.",
+      "es": "Pantalla completa, scroll, PWA y caché offline siguen protegidos por auditoría."
+    },
+    "release.check.i18n.title": {
+      "pt-BR": "Trilíngue",
+      "en": "Trilingual",
+      "es": "Trilingüe"
+    },
+    "release.check.i18n.detail": {
+      "pt-BR": "PT-BR, inglês e espanhol continuam completos para textos novos e antigos.",
+      "en": "PT-BR, English and Spanish remain complete for new and old texts.",
+      "es": "PT-BR, inglés y español siguen completos para textos nuevos y antiguos."
+    },
+    "release.check.alphaBeta.title": {
+      "pt-BR": "Alpha/Beta Comercial",
+      "en": "Commercial Alpha/Beta",
+      "es": "Alpha/Beta Comercial"
+    },
+    "release.check.alphaBeta.detail": {
+      "pt-BR": "Gates de readiness, canais de teste, marcos de publicação e ações de QA integrados à aba Release.",
+      "en": "Readiness gates, test channels, publishing milestones and QA actions integrated into the Release tab.",
+      "es": "Gates de readiness, canales de prueba, hitos de publicación y acciones de QA integrados en la pestaña Release."
+    },
+    "release.check.gold.title": {
+      "pt-BR": "Gold Master Comercial",
+      "en": "Commercial Gold Master",
+      "es": "Gold Master Comercial"
+    },
+    "release.check.gold.detail": {
+      "pt-BR": "Certificação final, pacote de loja, suporte, rollback e operação de lançamento integrados à aba Release.",
+      "en": "Final certification, store package, support, rollback and launch operations integrated into the Release tab.",
+      "es": "Certificación final, paquete de tienda, soporte, rollback y operación de lanzamiento integrados en la pestaña Release."
+    },
+    "release.test.goldAudit": {
+      "pt-BR": "Executar auditoria Gold Master, gates de loja, suporte, compliance e operação de lançamento.",
+      "en": "Run Gold Master audit, store gates, support, compliance and launch operations.",
+      "es": "Ejecutar auditoría Gold Master, gates de tienda, soporte, compliance y operación de lanzamiento."
+    },
+    "release.test.governmentCycle": {
+      "pt-BR": "Executar criação de governo, ciclo mensal e ações de Alpha/Beta/Gold sem quebrar saves antigos.",
+      "en": "Run government creation, monthly cycle and Alpha/Beta/Gold actions without breaking old saves.",
+      "es": "Ejecutar creación de gobierno, ciclo mensual y acciones Alpha/Beta/Gold sin romper partidas antiguas."
+    },
+    "release.test.releaseDevices": {
+      "pt-BR": "Validar Release em celular 320 px, mobile landscape, tablet, desktop e PWA instalada.",
+      "en": "Validate Release on 320 px phone, mobile landscape, tablet, desktop and installed PWA.",
+      "es": "Validar Release en celular 320 px, mobile landscape, tablet, desktop y PWA instalada."
+    },
+    "release.test.simulation": {
+      "pt-BR": "Simular 30 anos confirmando limites, histórico e estabilidade de indicadores.",
+      "en": "Simulate 30 years confirming bounds, history and indicator stability.",
+      "es": "Simular 30 años confirmando límites, historial y estabilidad de indicadores."
+    },
+    "release.test.assets": {
+      "pt-BR": "Conferir que nenhum asset teve caminho alterado e que CAMINHOS_ASSETS_JOGO.txt permanece na raiz.",
+      "en": "Check that no asset path changed and CAMINHOS_ASSETS_JOGO.txt remains at the root.",
+      "es": "Comprobar que ninguna ruta de asset cambió y que CAMINHOS_ASSETS_JOGO.txt permanece en la raíz."
+    },
+    "release.test.languages": {
+      "pt-BR": "Alternar português, inglês e espanhol sem chaves ausentes.",
+      "en": "Switch Portuguese, English and Spanish without missing keys.",
+      "es": "Alternar portugués, inglés y español sin claves ausentes."
+    },
+    "release.test.githubVercel": {
+      "pt-BR": "Verificar GitHub/Vercel após publicação e remover service worker antigo caso o navegador mantenha cache.",
+      "en": "Check GitHub/Vercel after publishing and remove the old service worker if the browser keeps cache.",
+      "es": "Verificar GitHub/Vercel después de publicar y quitar el service worker antiguo si el navegador mantiene caché."
+    },
+    "release.next.goldScope": {
+      "pt-BR": "Congelar escopo Gold Master e eliminar apenas bloqueadores críticos.",
+      "en": "Freeze Gold Master scope and eliminate only critical blockers.",
+      "es": "Congelar alcance Gold Master y eliminar solo bloqueadores críticos."
+    },
+    "release.next.manualApproval": {
+      "pt-BR": "Executar homologação manual real em Android, iOS, desktop, tablet e PWA instalada.",
+      "en": "Run real manual approval on Android, iOS, desktop, tablet and installed PWA.",
+      "es": "Ejecutar homologación manual real en Android, iOS, desktop, tablet y PWA instalada."
+    },
+    "release.next.v2Seal": {
+      "pt-BR": "Gerar selo comercial v2.0.0 quando todos os gates Gold Master atingirem prontidão.",
+      "en": "Generate commercial v2.0.0 seal when all Gold Master gates reach readiness.",
+      "es": "Generar sello comercial v2.0.0 cuando todos los gates Gold Master alcancen readiness."
+    },
+    "release.next.keepZip": {
+      "pt-BR": "Manter ZIP completo oficial e documento de upload Git Bash na raiz.",
+      "en": "Keep the official complete ZIP and Git Bash upload document at the root.",
+      "es": "Mantener ZIP completo oficial y documento de upload Git Bash en la raíz."
+    },
+    "intl.phaseName": {
+      "pt-BR": "Gold v2.0 Internacional",
+      "en": "Gold v2.0 International",
+      "es": "Gold v2.0 Internacional"
+    },
+    "intl.releaseTitle": {
+      "pt-BR": "Gold v2.0 Internacional",
+      "en": "Gold v2.0 International",
+      "es": "Gold v2.0 Internacional"
+    },
+    "intl.globalScore": {
+      "pt-BR": "Pontuação global",
+      "en": "Global score",
+      "es": "Puntuación global"
+    },
+    "intl.gates": {
+      "pt-BR": "Gates",
+      "en": "Gates",
+      "es": "Gates"
+    },
+    "intl.market": {
+      "pt-BR": "Mercado",
+      "en": "Market",
+      "es": "Mercado"
+    },
+    "intl.marketFit": {
+      "pt-BR": "Aderência de mercado",
+      "en": "Market fit",
+      "es": "Ajuste de mercado"
+    },
+    "intl.operationalReadiness": {
+      "pt-BR": "Prontidão operacional",
+      "en": "Operational readiness",
+      "es": "Preparación operacional"
+    },
+    "intl.systemicHealth": {
+      "pt-BR": "Saúde sistêmica",
+      "en": "Systemic health",
+      "es": "Salud sistémica"
+    },
+    "intl.internationalRisk": {
+      "pt-BR": "Risco internacional",
+      "en": "International risk",
+      "es": "Riesgo internacional"
+    },
+    "intl.gatesTitle": {
+      "pt-BR": "Gates internacionais",
+      "en": "International gates",
+      "es": "Gates internacionales"
+    },
+    "intl.marketsTitle": {
+      "pt-BR": "Mercado de lançamento",
+      "en": "Launch market",
+      "es": "Mercado de lanzamiento"
+    },
+    "intl.actionsTitle": {
+      "pt-BR": "Ações internacionais",
+      "en": "International actions",
+      "es": "Acciones internacionales"
+    },
+    "intl.historyTitle": {
+      "pt-BR": "Histórico internacional",
+      "en": "International history",
+      "es": "Historial internacional"
+    },
+    "intl.noHistory": {
+      "pt-BR": "Nenhum histórico internacional ainda.",
+      "en": "No international history yet.",
+      "es": "Aún no hay historial internacional."
+    },
+    "intl.historyLine": {
+      "pt-BR": "Score {score}% • gates {gates} • risco {risk}%",
+      "en": "Score {score}% • gates {gates} • risk {risk}%",
+      "es": "Score {score}% • gates {gates} • riesgo {risk}%"
+    },
+    "intl.gate.progress": {
+      "pt-BR": "Expansão internacional em preparação.",
+      "en": "International expansion in preparation.",
+      "es": "Expansión internacional en preparación."
+    },
+    "intl.gate.blocked": {
+      "pt-BR": "Risco internacional elevado: não publicar globalmente ainda.",
+      "en": "High international risk: do not publish globally yet.",
+      "es": "Riesgo internacional alto: aún no publicar globalmente."
+    },
+    "intl.gate.global": {
+      "pt-BR": "Gold v2.0 pronto para publicação internacional.",
+      "en": "Gold v2.0 ready for international publishing.",
+      "es": "Gold v2.0 listo para publicación internacional."
+    },
+    "intl.gate.operations": {
+      "pt-BR": "Operação global ainda precisa amadurecer.",
+      "en": "Global operations still need maturity.",
+      "es": "La operación global aún necesita madurar."
+    },
+    "intl.gate.marketFit": {
+      "pt-BR": "Aderência cultural e de mercado abaixo do ideal.",
+      "en": "Cultural and market fit below target.",
+      "es": "Ajuste cultural y de mercado por debajo del objetivo."
+    },
+    "intl.marketAlreadyActive": {
+      "pt-BR": "Este mercado já está ativo.",
+      "en": "This market is already active.",
+      "es": "Este mercado ya está activo."
+    },
+    "intl.marketChanged": {
+      "pt-BR": "Mercado internacional alterado para {name}.",
+      "en": "International market changed to {name}.",
+      "es": "Mercado internacional cambiado a {name}."
+    },
+    "intl.cooldownWarning": {
+      "pt-BR": "Ação internacional ainda está em cooldown.",
+      "en": "International action is still on cooldown.",
+      "es": "La acción internacional aún está en enfriamiento."
+    },
+    "intl.insufficientTreasury": {
+      "pt-BR": "Tesouro insuficiente para esta ação internacional.",
+      "en": "Insufficient treasury for this international action.",
+      "es": "Tesoro insuficiente para esta acción internacional."
+    },
+    "intl.actionStarted": {
+      "pt-BR": "Ação internacional iniciada: {name}.",
+      "en": "International action started: {name}.",
+      "es": "Acción internacional iniciada: {name}."
+    },
+    "intl.market.latam.name": {
+      "pt-BR": "América Latina",
+      "en": "Latin America",
+      "es": "América Latina"
+    },
+    "intl.market.latam.text": {
+      "pt-BR": "Prioriza proximidade cultural, baixo atrito de localização e comunidade regional.",
+      "en": "Prioritizes cultural proximity, low localization friction and regional community.",
+      "es": "Prioriza proximidad cultural, baja fricción de localización y comunidad regional."
+    },
+    "intl.market.na.name": {
+      "pt-BR": "América do Norte",
+      "en": "North America",
+      "es": "América del Norte"
+    },
+    "intl.market.na.text": {
+      "pt-BR": "Foco em loja, monetização, reviews públicos e padrões de privacidade.",
+      "en": "Focus on store, monetization, public reviews and privacy standards.",
+      "es": "Enfoque en tienda, monetización, reseñas públicas y estándares de privacidad."
+    },
+    "intl.market.eu.name": {
+      "pt-BR": "Europa",
+      "en": "Europe",
+      "es": "Europa"
+    },
+    "intl.market.eu.text": {
+      "pt-BR": "Reforça compliance, privacidade, acessibilidade e critérios de qualidade.",
+      "en": "Strengthens compliance, privacy, accessibility and quality criteria.",
+      "es": "Refuerza compliance, privacidad, accesibilidad y criterios de calidad."
+    },
+    "intl.market.south.name": {
+      "pt-BR": "Sul Global",
+      "en": "Global South",
+      "es": "Sur Global"
+    },
+    "intl.market.south.text": {
+      "pt-BR": "Amplia alcance, adaptação cultural e suporte para mercados emergentes.",
+      "en": "Expands reach, cultural adaptation and support for emerging markets.",
+      "es": "Amplía alcance, adaptación cultural y soporte para mercados emergentes."
+    },
+    "intl.gate.localization.name": {
+      "pt-BR": "Localização internacional",
+      "en": "International localization",
+      "es": "Localización internacional"
+    },
+    "intl.gate.localization.text": {
+      "pt-BR": "Textos, termos e experiência entendíveis fora do Brasil.",
+      "en": "Texts, terms and experience are understandable outside Brazil.",
+      "es": "Textos, términos y experiencia comprensibles fuera de Brasil."
+    },
+    "intl.gate.compliance.name": {
+      "pt-BR": "Compliance multirregional",
+      "en": "Multi-region compliance",
+      "es": "Compliance multirregional"
+    },
+    "intl.gate.compliance.text": {
+      "pt-BR": "Privacidade, loja, suporte e transparência prontos para múltiplas regiões.",
+      "en": "Privacy, store, support and transparency ready for multiple regions.",
+      "es": "Privacidad, tienda, soporte y transparencia listos para múltiples regiones."
+    },
+    "intl.gate.support.name": {
+      "pt-BR": "Suporte global",
+      "en": "Global support",
+      "es": "Soporte global"
+    },
+    "intl.gate.support.text": {
+      "pt-BR": "Procedimentos de suporte, FAQ, hotfix e triagem internacional.",
+      "en": "Support, FAQ, hotfix and international triage procedures.",
+      "es": "Procedimientos de soporte, FAQ, hotfix y triaje internacional."
+    },
+    "intl.gate.store.name": {
+      "pt-BR": "Presença em loja",
+      "en": "Store presence",
+      "es": "Presencia en tienda"
+    },
+    "intl.gate.store.text": {
+      "pt-BR": "Página comercial, screenshots, descrição, metadados e distribuição.",
+      "en": "Commercial page, screenshots, description, metadata and distribution.",
+      "es": "Página comercial, capturas, descripción, metadatos y distribución."
+    },
+    "intl.gate.culture.name": {
+      "pt-BR": "Aderência cultural",
+      "en": "Cultural fit",
+      "es": "Ajuste cultural"
+    },
+    "intl.gate.culture.text": {
+      "pt-BR": "Evita ruído cultural e melhora onboarding em outros países.",
+      "en": "Avoids cultural friction and improves onboarding in other countries.",
+      "es": "Evita ruido cultural y mejora onboarding en otros países."
+    },
+    "intl.gate.privacy.name": {
+      "pt-BR": "Privacidade internacional",
+      "en": "International privacy",
+      "es": "Privacidad internacional"
+    },
+    "intl.gate.privacy.text": {
+      "pt-BR": "Telemetria segura, consentimento e dados locais preservados.",
+      "en": "Safe telemetry, consent and local data preserved.",
+      "es": "Telemetría segura, consentimiento y datos locales preservados."
+    },
+    "intl.gate.monetization.name": {
+      "pt-BR": "Monetização responsável",
+      "en": "Responsible monetization",
+      "es": "Monetización responsable"
+    },
+    "intl.gate.monetization.text": {
+      "pt-BR": "Preços e pacotes adequados sem quebrar a simulação.",
+      "en": "Pricing and packs fit without breaking the simulation.",
+      "es": "Precios y paquetes adecuados sin romper la simulación."
+    },
+    "intl.gate.operations.name": {
+      "pt-BR": "Operação global",
+      "en": "Global operations",
+      "es": "Operación global"
+    },
+    "intl.gate.operations.text": {
+      "pt-BR": "Sala de lançamento, rollback, suporte e monitoramento internacional.",
+      "en": "Launch room, rollback, support and international monitoring.",
+      "es": "Sala de lanzamiento, rollback, soporte y monitoreo internacional."
+    },
+    "intl.action.locale.title": {
+      "pt-BR": "Revisão de localização",
+      "en": "Localization review",
+      "es": "Revisión de localización"
+    },
+    "intl.action.locale.text": {
+      "pt-BR": "Refina PT-BR, inglês e espanhol para reduzir ambiguidade em mercados externos.",
+      "en": "Refines PT-BR, English and Spanish to reduce ambiguity in external markets.",
+      "es": "Refina PT-BR, inglés y español para reducir ambigüedad en mercados externos."
+    },
+    "intl.action.legal.title": {
+      "pt-BR": "Matriz legal e privacidade",
+      "en": "Legal and privacy matrix",
+      "es": "Matriz legal y privacidad"
+    },
+    "intl.action.legal.text": {
+      "pt-BR": "Organiza compliance, privacidade, telemetria e políticas por região.",
+      "en": "Organizes compliance, privacy, telemetry and policies by region.",
+      "es": "Organiza compliance, privacidad, telemetría y políticas por región."
+    },
+    "intl.action.store.title": {
+      "pt-BR": "Pacote multirregional de loja",
+      "en": "Multi-region store package",
+      "es": "Paquete multirregional de tienda"
+    },
+    "intl.action.store.text": {
+      "pt-BR": "Prepara descrição, screenshots, metadados e publicação PWA internacional.",
+      "en": "Prepares description, screenshots, metadata and international PWA publishing.",
+      "es": "Prepara descripción, capturas, metadatos y publicación PWA internacional."
+    },
+    "intl.action.support.title": {
+      "pt-BR": "Playbooks de suporte",
+      "en": "Support playbooks",
+      "es": "Playbooks de soporte"
+    },
+    "intl.action.support.text": {
+      "pt-BR": "Cria protocolos de resposta, hotfix e triagem para jogadores internacionais.",
+      "en": "Creates response, hotfix and triage protocols for international players.",
+      "es": "Crea protocolos de respuesta, hotfix y triaje para jugadores internacionales."
+    },
+    "intl.action.community.title": {
+      "pt-BR": "Embaixadores de comunidade",
+      "en": "Community ambassadors",
+      "es": "Embajadores de comunidad"
+    },
+    "intl.action.community.text": {
+      "pt-BR": "Forma ponte de feedback, idioma e cultura com públicos de outros países.",
+      "en": "Builds feedback, language and cultural bridges with audiences abroad.",
+      "es": "Crea puentes de feedback, idioma y cultura con públicos de otros países."
+    },
+    "intl.action.press.title": {
+      "pt-BR": "Press kit internacional",
+      "en": "International press kit",
+      "es": "Press kit internacional"
+    },
+    "intl.action.press.text": {
+      "pt-BR": "Empacota mensagens, vídeos curtos, imagens e pontos fortes para imprensa global.",
+      "en": "Packages messages, short videos, images and strengths for global press.",
+      "es": "Empaqueta mensajes, videos cortos, imágenes y fortalezas para prensa global."
+    },
+    "intl.action.pricing.title": {
+      "pt-BR": "Localização de preços",
+      "en": "Pricing localization",
+      "es": "Localización de precios"
+    },
+    "intl.action.pricing.text": {
+      "pt-BR": "Ajusta percepção de valor, pacotes e comunicação comercial por mercado.",
+      "en": "Adjusts value perception, packs and commercial communication by market.",
+      "es": "Ajusta percepción de valor, paquetes y comunicación comercial por mercado."
+    },
+    "intl.action.ops.title": {
+      "pt-BR": "Sala global de lançamento",
+      "en": "Global launch room",
+      "es": "Sala global de lanzamiento"
+    },
+    "intl.action.ops.text": {
+      "pt-BR": "Coordena release, rollback, suporte, comunicação e monitoramento internacional.",
+      "en": "Coordinates release, rollback, support, communication and international monitoring.",
+      "es": "Coordina release, rollback, soporte, comunicación y monitoreo internacional."
     }
   },
   "localization_complete": {

@@ -15,6 +15,13 @@ import { ensurePopulationState, processPopulationDay, weeklyPopulationCycle, mon
 import { ensureInstitutionalState, processInstitutionalMonth } from "./governmentInstitutions.js";
 import { ensureCabinetState, processCabinetMonth } from "./cabinetAdministration.js";
 import { ensureWorldDiplomacyState, processWorldDiplomacyMonth } from "./worldDiplomacy.js";
+import { ensureDefenseIntelligenceState, processDefenseIntelligenceMonth } from "./defenseIntelligence.js";
+import { ensureNationalCrisisState, processNationalCrisisMonth } from "./nationalCrisis.js";
+import { ensureElectoralCareerState, processElectoralCareerMonth, registerElectionResult } from "./electoralCareer.js";
+import { ensureScenarioTutorialState, processScenarioTutorialMonth } from "./scenarioTutorial.js";
+import { ensureAlphaBetaState, processAlphaBetaMonth } from "./alphaBeta.js";
+import { ensureGoldMasterState, processGoldMasterMonth } from "./goldMaster.js";
+import { ensureInternationalLaunchState, processInternationalLaunchMonth } from "./internationalLaunch.js";
 
 export const CORE_LOOP_SCHEMA = 2;
 export const TERM_DAYS = 1460;
@@ -81,6 +88,13 @@ export function ensureCoreLoopState(state) {
   ensureInstitutionalState(state);
   ensureCabinetState(state);
   ensureWorldDiplomacyState(state);
+  ensureDefenseIntelligenceState(state);
+  ensureNationalCrisisState(state);
+  ensureElectoralCareerState(state);
+  ensureScenarioTutorialState(state);
+  ensureAlphaBetaState(state);
+  ensureGoldMasterState(state);
+  ensureInternationalLaunchState(state);
   return state.governance;
 }
 
@@ -194,6 +208,7 @@ export function holdElection(state, log, options = {}) {
   }
 
   const won = simulateElection(state, log);
+  registerElectionResult(state, { ...(state.lastElection || {}), won });
   if (won) {
     gov.termNumber += 1;
     gov.termDay = 0;
@@ -285,11 +300,25 @@ export function advanceDay(state, log, days = 1, options = {}) {
       const cabinetReport = processCabinetMonth(state, report);
       const mediaReport = processMediaPublicMonth(state, report);
       const worldDiplomacyReport = processWorldDiplomacyMonth(state, report);
+      const defenseIntelligenceReport = processDefenseIntelligenceMonth(state, report);
+      const nationalCrisisReport = processNationalCrisisMonth(state, report);
+      const electoralCareerReport = processElectoralCareerMonth(state, report);
+      const scenarioTutorialReport = processScenarioTutorialMonth(state, report);
+      const alphaBetaReport = processAlphaBetaMonth(state, report);
+      const goldMasterReport = processGoldMasterMonth(state, report);
+      const internationalLaunchReport = processInternationalLaunchMonth(state, report);
       if (state.governance?.reports?.monthly) {
         state.governance.reports.monthly.institutions = { score: institutionalReport.institutionalScore, risk: institutionalReport.institutionalRisk, governability: institutionalReport.governability };
         state.governance.reports.monthly.cabinet = { score: cabinetReport.administrationScore, risk: cabinetReport.executionRisk, governability: cabinetReport.governability };
         state.governance.reports.monthly.media = { mood: mediaReport.publicMood, hostility: mediaReport.hostility, credibility: mediaReport.credibility, agendaRisk: mediaReport.agendaRisk };
         state.governance.reports.monthly.worldDiplomacy = { health: worldDiplomacyReport.health, risk: worldDiplomacyReport.risk, trust: worldDiplomacyReport.trust, tradeWindow: worldDiplomacyReport.tradeWindow };
+        state.governance.reports.monthly.defenseIntelligence = { health: defenseIntelligenceReport.health, risk: defenseIntelligenceReport.risk, readiness: defenseIntelligenceReport.readiness, intelligenceEdge: defenseIntelligenceReport.intelligenceEdge };
+        state.governance.reports.monthly.nationalCrisis = { health: nationalCrisisReport.health, compound: nationalCrisisReport.compound, readiness: nationalCrisisReport.readiness, recovery: nationalCrisisReport.recovery, activeScenarios: nationalCrisisReport.activeScenarios };
+        state.governance.reports.monthly.electoralCareer = { health: electoralCareerReport.health, victory: electoralCareerReport.victory, first: electoralCareerReport.first, runoff: electoralCareerReport.runoff, compliance: electoralCareerReport.compliance, legacy: electoralCareerReport.legacy };
+        state.governance.reports.monthly.scenarioTutorial = { health: scenarioTutorialReport.health, readiness: scenarioTutorialReport.readiness, mastery: scenarioTutorialReport.mastery, onboardingRisk: scenarioTutorialReport.onboardingRisk, missions: scenarioTutorialReport.missions };
+        state.governance.reports.monthly.alphaBeta = { health: alphaBetaReport.health, technical: alphaBetaReport.technical, gameplay: alphaBetaReport.gameplay, commercial: alphaBetaReport.commercial, risk: alphaBetaReport.risk, gates: alphaBetaReport.gates };
+        state.governance.reports.monthly.goldMaster = { score: goldMasterReport.score, gates: goldMasterReport.gates, risk: goldMasterReport.risk, publishing: goldMasterReport.publishing, certification: goldMasterReport.certification };
+        state.governance.reports.monthly.internationalLaunch = { score: internationalLaunchReport.score, gates: internationalLaunchReport.gates, risk: internationalLaunchReport.risk, fit: internationalLaunchReport.fit, ops: internationalLaunchReport.ops };
       }
       if (state.month === 1) annualGovernanceCycle(state, log);
       if ([1, 4, 7, 10].includes(state.month)) quarterlyGovernanceCycle(state, log);
