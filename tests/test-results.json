@@ -1,8 +1,8 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "2.0.0",
-  "phase": "GOLD V2 INTERNACIONAL",
-  "generated_at": "2026-06-19T19:16:22+0000",
+  "version": "2.0.1",
+  "phase": "TEMA DE FUNDO OFICIAL",
+  "generated_at": "2026-06-19T21:21:35+0000",
   "release_blocking": true,
   "execution_model": "independent suites + final report aggregator",
   "steps": [

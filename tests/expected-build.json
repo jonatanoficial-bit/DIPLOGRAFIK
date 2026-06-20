@@ -1,8 +1,8 @@
 {
-  "version": "2.0.0",
+  "version": "2.0.1",
   "stage_number": 29,
-  "status": "GOLD_V2_INTERNATIONAL_VERIFIED",
-  "stamp": "20260619_1854",
-  "artifact": "DIPLOCRAFT_v2.0.0_FASE-29_GOLD-V2-INTERNACIONAL_build_20260619_1854.zip",
-  "source_sha256": "59de07af832167c50b4f3fadb1be3827a7033754efb7041d930498a3ee71923f"
+  "status": "GOLD_V2_AUDIO_THEME_VERIFIED",
+  "stamp": "20260619_1916",
+  "artifact": "DIPLOCRAFT_v2.0.1_FASE-29_TEMA-DE-FUNDO-OFICIAL_build_20260619_1916.zip",
+  "source_sha256": "41a88abc499d0d75e8d30c3e5775e8f4942d7b1df6a867de63a88e7ed228bed6"
 }

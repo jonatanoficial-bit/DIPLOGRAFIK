@@ -1,0 +1,9 @@
+PASS audio-file-present
+PASS audio-sha-manifest
+PASS audio-engine-htmlaudio-webaudio
+PASS audio-loop
+PASS audio-controls-preserved
+PASS audio-fallback-synth
+PASS pwa-precache-audio
+PASS save-schema-preserved
+OVERALL PASS 8/8 checks

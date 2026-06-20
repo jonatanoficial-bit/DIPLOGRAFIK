@@ -2,20 +2,20 @@
 export const BUILD = Object.freeze({
   "project": "DIPLOCRAFT",
   "productName": "DIPLOCRAFT — Simulador Político e Geopolítico",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "stageNumber": 29,
-  "stageName": "GOLD V2 INTERNACIONAL",
-  "stage": "Fase 29 — GOLD V2 INTERNACIONAL",
-  "stageShort": "Fase 29 • GOLD V2 INTERNACIONAL",
+  "stageName": "TEMA DE FUNDO OFICIAL",
+  "stage": "Fase 29 — TEMA DE FUNDO OFICIAL",
+  "stageShort": "Fase 29 • TEMA DE FUNDO OFICIAL",
   "date": "19/06/2026",
   "dateISO": "2026-06-19",
-  "time": "18:54",
+  "time": "19:16",
   "timezone": "America/Sao_Paulo",
-  "stamp": "20260619_1854",
-  "status": "GOLD_V2_INTERNATIONAL_VERIFIED",
-  "artifact": "DIPLOCRAFT_v2.0.0_FASE-29_GOLD-V2-INTERNACIONAL_build_20260619_1854.zip",
+  "stamp": "20260619_1916",
+  "status": "GOLD_V2_AUDIO_THEME_VERIFIED",
+  "artifact": "DIPLOCRAFT_v2.0.1_FASE-29_TEMA-DE-FUNDO-OFICIAL_build_20260619_1916.zip",
   "source": "build.config.json",
-  "sourceSHA256": "59de07af832167c50b4f3fadb1be3827a7033754efb7041d930498a3ee71923f",
+  "sourceSHA256": "41a88abc499d0d75e8d30c3e5775e8f4942d7b1df6a867de63a88e7ed228bed6",
   "saveSchema": 3,
   "saveKey": "diplocraft_save_v101",
   "defaultLocale": "pt-BR",
@@ -102,7 +102,20 @@ export const BUILD = Object.freeze({
     "party_logo_cards": 12,
     "audit": "tests/run_government_creation_audit.py"
   },
-  "summary": "Gold v2.0 Internacional com localização reforçada, mercados globais, compliance multirregional, suporte, loja, comunidade, telemetria segura e operação global integrada ao Gold Master, Alpha/Beta, PWA, saves, mobile e Core Loop 2.0."
+  "audio": {
+    "enabled": true,
+    "theme": "assets/audio/diplografik_theme_v1.mp3",
+    "source_uploaded_name": "Diprografik tema.mp3",
+    "loop": true,
+    "user_activation_required": true,
+    "fallback": "synth oscillator",
+    "controls": [
+      "volume",
+      "music",
+      "sfx"
+    ]
+  },
+  "summary": "Hotfix oficial de áudio com o tema instrumental Diprografik integrado como música de fundo em loop, mantendo fallback sintético, controle de volume, música, efeitos, PWA/offline, mobile-first e todos os sistemas da Gold v2.0 Internacional."
 });
 
-export const BUILD_LABEL = "DIPLOCRAFT v2.0.0 • 19/06/2026 18:54 • Fase 29 • GOLD V2 INTERNACIONAL";
+export const BUILD_LABEL = "DIPLOCRAFT v2.0.1 • 19/06/2026 19:16 • Fase 29 • TEMA DE FUNDO OFICIAL";

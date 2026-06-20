@@ -1,18 +1,18 @@
 {
   "generated_from": "build.config.json",
-  "source_sha256": "59de07af832167c50b4f3fadb1be3827a7033754efb7041d930498a3ee71923f",
+  "source_sha256": "41a88abc499d0d75e8d30c3e5775e8f4942d7b1df6a867de63a88e7ed228bed6",
   "project": "DIPLOCRAFT",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "date": "19/06/2026",
   "date_iso": "2026-06-19",
-  "time": "18:54",
+  "time": "19:16",
   "timezone": "America/Sao_Paulo",
-  "stamp": "20260619_1854",
-  "base": "DIPLOCRAFT v1.8.0 — Fase 28 — Gold Master e Publicação Comercial",
+  "stamp": "20260619_1916",
+  "base": "DIPLOCRAFT v2.0.0 — Fase 29 — Gold v2.0 Internacional",
   "stage_number": 29,
-  "stage": "Fase 29 — GOLD V2 INTERNACIONAL",
-  "status": "GOLD_V2_INTERNATIONAL_VERIFIED",
-  "artifact": "DIPLOCRAFT_v2.0.0_FASE-29_GOLD-V2-INTERNACIONAL_build_20260619_1854.zip",
+  "stage": "Fase 29 — TEMA DE FUNDO OFICIAL",
+  "status": "GOLD_V2_AUDIO_THEME_VERIFIED",
+  "artifact": "DIPLOCRAFT_v2.0.1_FASE-29_TEMA-DE-FUNDO-OFICIAL_build_20260619_1916.zip",
   "assets_folder_included": true,
   "asset_paths_changed": false,
   "save_schema": 3,
@@ -20,6 +20,8 @@
   "mobile_fullscreen": true,
   "mobile_priority": true,
   "features": [
+    "Tema de fundo oficial Diprografik integrado como MP3 em assets/audio/diplografik_theme_v1.mp3, com loop e controle pelo botão ÁUDIO.",
+    "Fallback sintético preservado caso o navegador bloqueie ou falhe ao carregar o MP3.",
     "Sistema persistente internationalLaunch com migração aditiva e histórico limitado.",
     "Quatro mercados internacionais selecionáveis: América Latina, América do Norte, Europa e Sul Global.",
     "Oito gates internacionais: localização, compliance, suporte, loja, aderência cultural, privacidade, monetização responsável e operação global.",
@@ -116,5 +118,18 @@
     "scroll_assist": true,
     "scrollbar_gutter": "stable",
     "audit": "tests/run_scroll_touch_audit.py"
+  },
+  "audio": {
+    "enabled": true,
+    "theme": "assets/audio/diplografik_theme_v1.mp3",
+    "source_uploaded_name": "Diprografik tema.mp3",
+    "loop": true,
+    "user_activation_required": true,
+    "fallback": "synth oscillator",
+    "controls": [
+      "volume",
+      "music",
+      "sfx"
+    ]
   }
 }

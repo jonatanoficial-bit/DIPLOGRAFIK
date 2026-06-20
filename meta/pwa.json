@@ -1,12 +1,13 @@
 {
   "generated_from": "build.config.json",
-  "source_sha256": "59de07af832167c50b4f3fadb1be3827a7033754efb7041d930498a3ee71923f",
-  "version": "2.0.0",
+  "source_sha256": "41a88abc499d0d75e8d30c3e5775e8f4942d7b1df6a867de63a88e7ed228bed6",
+  "version": "2.0.1",
   "service_worker": "sw.js",
-  "cache_name": "diplocraft-shell-v2.0.0-20260619_1854",
-  "precache_count": 200,
+  "cache_name": "diplocraft-shell-v2.0.1-20260619_1916",
+  "precache_count": 201,
   "precache": [
     "404.html",
+    "assets/audio/diplografik_theme_v1.mp3",
     "assets/pwa/apple-touch-icon-180.png",
     "assets/pwa/icon-128.png",
     "assets/pwa/icon-192.png",
@@ -209,5 +210,18 @@
   ],
   "offline_navigation_fallback": "index.html",
   "controlled_updates": true,
-  "manifest": "manifest.webmanifest"
+  "manifest": "manifest.webmanifest",
+  "audio": {
+    "enabled": true,
+    "theme": "assets/audio/diplografik_theme_v1.mp3",
+    "source_uploaded_name": "Diprografik tema.mp3",
+    "loop": true,
+    "user_activation_required": true,
+    "fallback": "synth oscillator",
+    "controls": [
+      "volume",
+      "music",
+      "sfx"
+    ]
+  }
 }

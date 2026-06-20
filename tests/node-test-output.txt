@@ -2,423 +2,423 @@ TAP version 13
 # Subtest: all gameplay collections are non-empty and have unique identifiers
 ok 1 - all gameplay collections are non-empty and have unique identifiers
   ---
-  duration_ms: 3.356298
+  duration_ms: 5.836984
   type: 'test'
   ...
 # Subtest: cost and cooldown fields never use invalid negative values
 ok 2 - cost and cooldown fields never use invalid negative values
   ---
-  duration_ms: 0.403116
+  duration_ms: 0.468767
   type: 'test'
   ...
 # Subtest: ten deterministic years complete without invalid state in balance simulation mode
 ok 3 - ten deterministic years complete without invalid state in balance simulation mode
   ---
-  duration_ms: 2114.031915
+  duration_ms: 4273.401131
   type: 'test'
   ...
 # Subtest: weekly cycle replenishes strategic action capacity
 ok 4 - weekly cycle replenishes strategic action capacity
   ---
-  duration_ms: 8.291322
+  duration_ms: 15.334923
   type: 'test'
   ...
 # Subtest: delayed consequences mature on the scheduled day
 ok 5 - delayed consequences mature on the scheduled day
   ---
-  duration_ms: 4.782679
+  duration_ms: 5.490286
   type: 'test'
   ...
 # Subtest: official election remains locked before the final thirty days
 ok 6 - official election remains locked before the final thirty days
   ---
-  duration_ms: 1.279974
+  duration_ms: 1.772586
   type: 'test'
   ...
 # Subtest: career outcomes stop normal time progression
 ok 7 - career outcomes stop normal time progression
   ---
-  duration_ms: 1.662951
+  duration_ms: 2.066317
   type: 'test'
   ...
 # Subtest: default architecture exposes one profile with three slots
 ok 8 - default architecture exposes one profile with three slots
   ---
-  duration_ms: 2.938714
+  duration_ms: 8.453701
   type: 'test'
   ...
 # Subtest: different slots keep independent careers
 ok 9 - different slots keep independent careers
   ---
-  duration_ms: 11.174838
+  duration_ms: 18.319329
   type: 'test'
   ...
 # Subtest: four profiles are allowed and the fifth is blocked
 ok 10 - four profiles are allowed and the fifth is blocked
   ---
-  duration_ms: 1.279513
+  duration_ms: 2.604361
   type: 'test'
   ...
 # Subtest: manual backups are created, restored and deleted
 ok 11 - manual backups are created, restored and deleted
   ---
-  duration_ms: 6.443592
+  duration_ms: 10.268769
   type: 'test'
   ...
 # Subtest: export and import transfer a career to another slot
 ok 12 - export and import transfer a career to another slot
   ---
-  duration_ms: 10.046434
+  duration_ms: 20.400609
   type: 'test'
   ...
 # Subtest: tampered export is rejected by checksum
 ok 13 - tampered export is rejected by checksum
   ---
-  duration_ms: 4.523405
+  duration_ms: 11.54901
   type: 'test'
   ...
 # Subtest: legacy direct save is migrated into default profile and slot
 ok 14 - legacy direct save is migrated into default profile and slot
   ---
-  duration_ms: 1.374495
+  duration_ms: 2.560099
   type: 'test'
   ...
 # Subtest: clearing one slot does not remove another career
 ok 15 - clearing one slot does not remove another career
   ---
-  duration_ms: 3.470837
+  duration_ms: 7.19869
   type: 'test'
   ...
 # Subtest: registry history records save, backup, export and restore actions
 ok 16 - registry history records save, backup, export and restore actions
   ---
-  duration_ms: 5.854559
+  duration_ms: 11.322282
   type: 'test'
   ...
 # [DIPLOCRAFT STORAGE] Save corrompido isolado diplocraft_save_v101__profile-1__slot-1 SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
 #     at JSON.parse (<anonymous>)
-#     at parseEnvelope (file:///mnt/data/DIPLOCRAFT-v2.0.0-FASE-29-GOLD-V2-INTERNACIONAL/src/core/storage.js:593:51)
-#     at Module.loadGame (file:///mnt/data/DIPLOCRAFT-v2.0.0-FASE-29-GOLD-V2-INTERNACIONAL/src/core/storage.js:154:20)
-#     at TestContext.<anonymous> (file:///mnt/data/DIPLOCRAFT-v2.0.0-FASE-29-GOLD-V2-INTERNACIONAL/tests/integration/storage.test.js:60:28)
+#     at parseEnvelope (file:///mnt/data/diplocraft_audio_work/DIPLOCRAFT-v2.0.0-FASE-29-GOLD-V2-INTERNACIONAL/src/core/storage.js:593:51)
+#     at Module.loadGame (file:///mnt/data/diplocraft_audio_work/DIPLOCRAFT-v2.0.0-FASE-29-GOLD-V2-INTERNACIONAL/src/core/storage.js:154:20)
+#     at TestContext.<anonymous> (file:///mnt/data/diplocraft_audio_work/DIPLOCRAFT-v2.0.0-FASE-29-GOLD-V2-INTERNACIONAL/tests/integration/storage.test.js:60:28)
 #     at Test.runInAsyncScope (node:async_hooks:214:14)
 #     at Test.run (node:internal/test_runner/test:1047:25)
 #     at async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
 # Subtest: save and load round-trip uses schema 3 scoped envelope
 ok 17 - save and load round-trip uses schema 3 scoped envelope
   ---
-  duration_ms: 10.103008
+  duration_ms: 23.132204
   type: 'test'
   ...
 # Subtest: pending transaction is promoted inside the active slot
 ok 18 - pending transaction is promoted inside the active slot
   ---
-  duration_ms: 3.826373
+  duration_ms: 8.994789
   type: 'test'
   ...
 # Subtest: corrupt primary is quarantined and same-slot snapshot is restored
 ok 19 - corrupt primary is quarantined and same-slot snapshot is restored
   ---
-  duration_ms: 6.948049
+  duration_ms: 13.250601
   type: 'test'
   ...
 # Subtest: alpha beta state migrates additively and keeps bounded history
 ok 20 - alpha beta state migrates additively and keeps bounded history
   ---
-  duration_ms: 2.77029
+  duration_ms: 6.00135
   type: 'test'
   ...
 # Subtest: alpha beta snapshot improves with high readiness values
 ok 21 - alpha beta snapshot improves with high readiness values
   ---
-  duration_ms: 5.690572
+  duration_ms: 10.986544
   type: 'test'
   ...
 # Subtest: channel and action effects adjust readiness without swallowing legacy effects
 ok 22 - channel and action effects adjust readiness without swallowing legacy effects
   ---
-  duration_ms: 2.851876
+  duration_ms: 3.481593
   type: 'test'
   ...
 # Subtest: monthly alpha beta cycle remains finite and bounded
 ok 23 - monthly alpha beta cycle remains finite and bounded
   ---
-  duration_ms: 62.186255
+  duration_ms: 144.43255
   type: 'test'
   ...
 # Subtest: budget and tax state is created and bounded
 ok 24 - budget and tax state is created and bounded
   ---
-  duration_ms: 3.434944
+  duration_ms: 6.69554
   type: 'test'
   ...
 # Subtest: budget rule and fiscal actions affect snapshot without invalid values
 ok 25 - budget rule and fiscal actions affect snapshot without invalid values
   ---
-  duration_ms: 1.814706
+  duration_ms: 3.49016
   type: 'test'
   ...
 # Subtest: normalizeState contains invalid and extreme metrics
 ok 26 - normalizeState contains invalid and extreme metrics
   ---
-  duration_ms: 3.659255
+  duration_ms: 6.611474
   type: 'test'
   ...
 # Subtest: applyEffects never leaves bounded metrics outside their contracts
 ok 27 - applyEffects never leaves bounded metrics outside their contracts
   ---
-  duration_ms: 1.086447
+  duration_ms: 1.894296
   type: 'test'
   ...
 # Subtest: risk and commercial score remain finite
 ok 28 - risk and commercial score remain finite
   ---
-  duration_ms: 0.719015
+  duration_ms: 1.257088
   type: 'test'
   ...
 # Subtest: deep economy state migrates additively and preserves legacy fields
 ok 29 - deep economy state migrates additively and preserves legacy fields
   ---
-  duration_ms: 2.732624
+  duration_ms: 5.278005
   type: 'test'
   ...
 # Subtest: deep economy monthly cycle remains finite and history is bounded
 ok 30 - deep economy monthly cycle remains finite and history is bounded
   ---
-  duration_ms: 22.543785
+  duration_ms: 49.304795
   type: 'test'
   ...
 # Subtest: fiscal and monetary policies change the economic stance without phantom fields
 ok 31 - fiscal and monetary policies change the economic stance without phantom fields
   ---
-  duration_ms: 1.157303
+  duration_ms: 2.560418
   type: 'test'
   ...
 # Subtest: deep economy snapshot reacts differently to fiscal stress and boom conditions
 ok 32 - deep economy snapshot reacts differently to fiscal stress and boom conditions
   ---
-  duration_ms: 0.893612
+  duration_ms: 2.106059
   type: 'test'
   ...
 # Subtest: defense intelligence state initializes full strategic structure
 ok 33 - defense intelligence state initializes full strategic structure
   ---
-  duration_ms: 2.692365
+  duration_ms: 8.341555
   type: 'test'
   ...
 # Subtest: doctrine and actions alter defense metrics safely
 ok 34 - doctrine and actions alter defense metrics safely
   ---
-  duration_ms: 1.278182
+  duration_ms: 3.531138
   type: 'test'
   ...
 # Subtest: monthly cycle keeps histories bounded and metrics normalized
 ok 35 - monthly cycle keeps histories bounded and metrics normalized
   ---
-  duration_ms: 18.160012
+  duration_ms: 40.631471
   type: 'test'
   ...
 # Subtest: same treaty with same country can only be signed once
 ok 36 - same treaty with same country can only be signed once
   ---
-  duration_ms: 3.268427
+  duration_ms: 7.218468
   type: 'test'
   ...
 # Subtest: defense treaty affects the canonical global tension field
 ok 37 - defense treaty affects the canonical global tension field
   ---
-  duration_ms: 0.870348
+  duration_ms: 2.042158
   type: 'test'
   ...
 # Subtest: austerity changes publicSpending instead of creating a phantom field
 ok 38 - austerity changes publicSpending instead of creating a phantom field
   ---
-  duration_ms: 3.401784
+  duration_ms: 6.632607
   type: 'test'
   ...
 # Subtest: monthly economy report and mutation remain finite
 ok 39 - monthly economy report and mutation remain finite
   ---
-  duration_ms: 3.117494
+  duration_ms: 6.35163
   type: 'test'
   ...
 # Subtest: electoral career state migrates additively and keeps bounded history
 ok 40 - electoral career state migrates additively and keeps bounded history
   ---
-  duration_ms: 2.9732
+  duration_ms: 5.186977
   type: 'test'
   ...
 # Subtest: electoral snapshot reacts to strong campaign machine
 ok 41 - electoral snapshot reacts to strong campaign machine
   ---
-  duration_ms: 1.579167
+  duration_ms: 2.982115
   type: 'test'
   ...
 # Subtest: strategy and actions adjust electoral fields without phantom legacy effects
 ok 42 - strategy and actions adjust electoral fields without phantom legacy effects
   ---
-  duration_ms: 0.896397
+  duration_ms: 1.796506
   type: 'test'
   ...
 # Subtest: monthly electoral cycle remains finite and result registry is bounded
 ok 43 - monthly electoral cycle remains finite and result registry is bounded
   ---
-  duration_ms: 12.312899
+  duration_ms: 20.782091
   type: 'test'
   ...
 # Subtest: gold master state migrates additively and keeps bounded history
 ok 44 - gold master state migrates additively and keeps bounded history
   ---
-  duration_ms: 2.605596
+  duration_ms: 4.926876
   type: 'test'
   ...
 # Subtest: gold master data exposes full launch structure
 ok 45 - gold master data exposes full launch structure
   ---
-  duration_ms: 0.104485
+  duration_ms: 0.253427
   type: 'test'
   ...
 # Subtest: gold snapshot improves under strong publication readiness
 ok 46 - gold snapshot improves under strong publication readiness
   ---
-  duration_ms: 8.991097
+  duration_ms: 16.525394
   type: 'test'
   ...
 # Subtest: track and effects alter gold metrics safely
 ok 47 - track and effects alter gold metrics safely
   ---
-  duration_ms: 3.0541
+  duration_ms: 5.713587
   type: 'test'
   ...
 # Subtest: monthly gold cycle remains finite and bounded
 ok 48 - monthly gold cycle remains finite and bounded
   ---
-  duration_ms: 73.037265
+  duration_ms: 174.505538
   type: 'test'
   ...
 # Subtest: Fase 19 initializes institutional state and bounded snapshot
 ok 49 - Fase 19 initializes institutional state and bounded snapshot
   ---
-  duration_ms: 3.032478
+  duration_ms: 6.280659
   type: 'test'
   ...
 # Subtest: Fase 19 reforms and effects bridge safely to other systems
 ok 50 - Fase 19 reforms and effects bridge safely to other systems
   ---
-  duration_ms: 0.765803
+  duration_ms: 1.697462
   type: 'test'
   ...
 # Subtest: Fase 19 monthly processing remains finite and history bounded
 ok 51 - Fase 19 monthly processing remains finite and history bounded
   ---
-  duration_ms: 14.317339
+  duration_ms: 25.579943
   type: 'test'
   ...
 # Subtest: an approved law cannot be farmed repeatedly
 ok 52 - an approved law cannot be farmed repeatedly
   ---
-  duration_ms: 2.983615
+  duration_ms: 6.96095
   type: 'test'
   ...
 # Subtest: voting power is bounded
 ok 53 - voting power is bounded
   ---
-  duration_ms: 1.071496
+  duration_ms: 3.460754
   type: 'test'
   ...
 # Subtest: international launch state migrates additively and keeps bounded history
 ok 54 - international launch state migrates additively and keeps bounded history
   ---
-  duration_ms: 2.784792
+  duration_ms: 6.691328
   type: 'test'
   ...
 # Subtest: international launch data exposes complete global release structure
 ok 55 - international launch data exposes complete global release structure
   ---
-  duration_ms: 0.105295
+  duration_ms: 0.23121
   type: 'test'
   ...
 # Subtest: global launch snapshot improves under mature international readiness
 ok 56 - global launch snapshot improves under mature international readiness
   ---
-  duration_ms: 12.765578
+  duration_ms: 26.486048
   type: 'test'
   ...
 # Subtest: market and effects alter international metrics safely
 ok 57 - market and effects alter international metrics safely
   ---
-  duration_ms: 5.865471
+  duration_ms: 10.478676
   type: 'test'
   ...
 # Subtest: monthly international cycle remains finite and bounded
 ok 58 - monthly international cycle remains finite and bounded
   ---
-  duration_ms: 110.075742
+  duration_ms: 254.969846
   type: 'test'
   ...
 # Subtest: population state starts with complete regional and social structure
 ok 59 - population state starts with complete regional and social structure
   ---
-  duration_ms: 0.842867
+  duration_ms: 1.819911
   type: 'test'
   ...
 # Subtest: population migration repairs partial and invalid legacy state
 ok 60 - population migration repairs partial and invalid legacy state
   ---
-  duration_ms: 2.284591
+  duration_ms: 4.637407
   type: 'test'
   ...
 # Subtest: public program targets vulnerable regions and matures without duplication
 ok 61 - public program targets vulnerable regions and matures without duplication
   ---
-  duration_ms: 2.041111
+  duration_ms: 3.888265
   type: 'test'
   ...
 # Subtest: weekly and monthly population cycles remain bounded and affect government
 ok 62 - weekly and monthly population cycles remain bounded and affect government
   ---
-  duration_ms: 1.612357
+  duration_ms: 3.236802
   type: 'test'
   ...
 # Subtest: scenario tutorial state migrates additively and bounds history
 ok 63 - scenario tutorial state migrates additively and bounds history
   ---
-  duration_ms: 3.2839
+  duration_ms: 6.352846
   type: 'test'
   ...
 # Subtest: scenario packs and tutorial tracks produce finite readiness
 ok 64 - scenario packs and tutorial tracks produce finite readiness
   ---
-  duration_ms: 1.232364
+  duration_ms: 2.720594
   type: 'test'
   ...
 # Subtest: scenario effects bridge only legacy keys back to global state
 ok 65 - scenario effects bridge only legacy keys back to global state
   ---
-  duration_ms: 1.176301
+  duration_ms: 2.551374
   type: 'test'
   ...
 # Subtest: monthly scenario tutorial cycle completes missions without invalid values
 ok 66 - monthly scenario tutorial cycle completes missions without invalid values
   ---
-  duration_ms: 4.072878
+  duration_ms: 8.853082
   type: 'test'
   ...
 # Subtest: successful intelligence operation charges exactly one cost
 ok 67 - successful intelligence operation charges exactly one cost
   ---
-  duration_ms: 4.109202
+  duration_ms: 6.866982
   type: 'test'
   ...
 # Subtest: failed intelligence operation also charges exactly one cost
 ok 68 - failed intelligence operation also charges exactly one cost
   ---
-  duration_ms: 0.823389
+  duration_ms: 2.567151
   type: 'test'
   ...
 # Subtest: security risk functions are bounded
 ok 69 - security risk functions are bounded
   ---
-  duration_ms: 0.725414
+  duration_ms: 1.641915
   type: 'test'
   ...
 1..69
@@ -429,5 +429,5 @@ ok 69 - security risk functions are bounded
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 5968.135922
+# duration_ms 9734.211917
 

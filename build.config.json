@@ -1,17 +1,17 @@
 {
   "project": "DIPLOCRAFT",
   "product_name": "DIPLOCRAFT — Simulador Político e Geopolítico",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "stage_number": 29,
-  "stage_name": "GOLD V2 INTERNACIONAL",
-  "status": "GOLD_V2_INTERNATIONAL_VERIFIED",
+  "stage_name": "TEMA DE FUNDO OFICIAL",
+  "status": "GOLD_V2_AUDIO_THEME_VERIFIED",
   "date": "19/06/2026",
   "date_iso": "2026-06-19",
-  "time": "18:54",
+  "time": "19:16",
   "timezone": "America/Sao_Paulo",
-  "stamp": "20260619_1854",
-  "base_version": "1.8.0",
-  "base_stage": "Fase 28 — Gold Master e Publicação Comercial",
+  "stamp": "20260619_1916",
+  "base_version": "2.0.0",
+  "base_stage": "Fase 29 — Gold v2.0 Internacional",
   "save_schema": 3,
   "save_key": "diplocraft_save_v101",
   "content_schema": 1,
@@ -27,9 +27,11 @@
     "es"
   ],
   "entrypoint": "src/game.js",
-  "summary": "Gold v2.0 Internacional com localização reforçada, mercados globais, compliance multirregional, suporte, loja, comunidade, telemetria segura e operação global integrada ao Gold Master, Alpha/Beta, PWA, saves, mobile e Core Loop 2.0.",
-  "build_summary": "Build oficial da Fase 29 aplicada sobre a v1.8.0: Gold v2.0 Internacional integrado de forma aditiva, preservando todos os sistemas anteriores, assets, saves, PWA, mobile-first, auditorias anti-quebra e documento de upload Git Bash.",
+  "summary": "Hotfix oficial de áudio com o tema instrumental Diprografik integrado como música de fundo em loop, mantendo fallback sintético, controle de volume, música, efeitos, PWA/offline, mobile-first e todos os sistemas da Gold v2.0 Internacional.",
+  "build_summary": "Build oficial v2.0.1 aplicada sobre a v2.0.0: tema de fundo oficial em MP3 inserido em assets/audio, controlado pelo painel de áudio existente e preservando todos os sistemas, saves, assets, PWA, mobile e auditorias anti-quebra.",
   "features": [
+    "Tema de fundo oficial Diprografik integrado como MP3 em assets/audio/diplografik_theme_v1.mp3, com loop e controle pelo botão ÁUDIO.",
+    "Fallback sintético preservado caso o navegador bloqueie ou falhe ao carregar o MP3.",
     "Sistema persistente internationalLaunch com migração aditiva e histórico limitado.",
     "Quatro mercados internacionais selecionáveis: América Latina, América do Norte, Europa e Sul Global.",
     "Oito gates internacionais: localização, compliance, suporte, loja, aderência cultural, privacidade, monetização responsável e operação global.",
@@ -52,9 +54,22 @@
     "Integrações": [
       "Integração mensal com Gold Master, Alpha/Beta, PWA, saves, mobile, localização, tutorial, mídia, diplomacia e Core Loop 2.0.",
       "Preservação do documento de upload Git Bash e da estrutura oficial completa."
+    ],
+    "Hotfix Tema de Fundo Oficial": [
+      "Adicionado arquivo assets/audio/diplografik_theme_v1.mp3 a partir do MP3 enviado pelo usuário.",
+      "Audio engine atualizado para usar HTMLAudioElement + Web Audio API com loop, volume central e fallback sintético.",
+      "Service worker e manifestos atualizados para preservar o tema em cache/offline."
     ]
   },
   "history": [
+    {
+      "version": "2.0.0",
+      "title": "Fase 29 Gold v2.0 Internacional",
+      "date_time": "19/06/2026 18:54",
+      "items": [
+        "Gold v2.0 Internacional, mercados globais, gates internacionais e operação comercial global."
+      ]
+    },
     {
       "version": "1.8.0",
       "title": "Fase 28 Gold Master e Publicação Comercial",
@@ -159,7 +174,7 @@
     }
   ],
   "next_release": {
-    "version": "2.0.1",
+    "version": "2.0.2",
     "stage": "Hotfix pós-publicação internacional e telemetria real"
   },
   "asset_paths_changed": false,
@@ -557,6 +572,20 @@
       "pt-BR",
       "en",
       "es"
+    ]
+  },
+  "manifest_description": "Simulador de governo, economia, eleições, diplomacia, segurança, crises e tema oficial de fundo.",
+  "audio": {
+    "enabled": true,
+    "theme": "assets/audio/diplografik_theme_v1.mp3",
+    "source_uploaded_name": "Diprografik tema.mp3",
+    "loop": true,
+    "user_activation_required": true,
+    "fallback": "synth oscillator",
+    "controls": [
+      "volume",
+      "music",
+      "sfx"
     ]
   }
 }

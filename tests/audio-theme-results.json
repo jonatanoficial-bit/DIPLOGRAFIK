@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "check_count": 8,
+  "audio_path": "assets/audio/diplografik_theme_v1.mp3",
+  "controls": ["volume", "music", "sfx"],
+  "fallback": "synth oscillator",
+  "user_activation_required": true
+}

@@ -1,12 +1,12 @@
-# DIPLOCRAFT — Fase 29 — GOLD V2 INTERNACIONAL
+# DIPLOCRAFT — Fase 29 — TEMA DE FUNDO OFICIAL
 
 > Arquivos de identidade são gerados de `build.config.json`.
 
-**Versão:** v2.0.0  
-**Build:** 19/06/2026 18:54 — America/Sao_Paulo  
-**Status:** GOLD_V2_INTERNATIONAL_VERIFIED; ainda não é a versão comercial final.  
-**Artefato esperado:** `DIPLOCRAFT_v2.0.0_FASE-29_GOLD-V2-INTERNACIONAL_build_20260619_1854.zip`
-**Config SHA-256:** `59de07af832167c50b4f3fadb1be3827a7033754efb7041d930498a3ee71923f`
+**Versão:** v2.0.1  
+**Build:** 19/06/2026 19:16 — America/Sao_Paulo  
+**Status:** GOLD_V2_AUDIO_THEME_VERIFIED; ainda não é a versão comercial final.  
+**Artefato esperado:** `DIPLOCRAFT_v2.0.1_FASE-29_TEMA-DE-FUNDO-OFICIAL_build_20260619_1916.zip`
+**Config SHA-256:** `41a88abc499d0d75e8d30c3e5775e8f4942d7b1df6a867de63a88e7ed228bed6`
 
 ## Executar
 

@@ -1,7 +1,11 @@
+const THEME_AUDIO_SRC = "assets/audio/diplografik_theme_v1.mp3";
+
 let ctx = null;
 let master = null;
 let musicGain = null;
 let sfxGain = null;
+let themeAudio = null;
+let themeSource = null;
 let musicOsc = null;
 let musicLfo = null;
 let enabled = false;
@@ -74,8 +78,8 @@ export function playSfx(type = "info") {
 }
 
 export function setAudioMood(mood = "neutral") {
-  if (!musicGain || !musicOsc || !ctx) return;
-  const target = mood === "crisis" ? 0.09 : mood === "election" ? 0.07 : 0.055;
+  if (!musicGain || !ctx) return;
+  const target = mood === "crisis" ? 0.5 : mood === "election" ? 0.44 : 0.38;
   musicGain.gain.setTargetAtTime(target, now(), 0.25);
 }
 
@@ -87,7 +91,7 @@ function primeAudio() {
   sfxGain = ctx.createGain();
 
   master.gain.value = volume;
-  musicGain.gain.value = 0.055;
+  musicGain.gain.value = 0.38;
   sfxGain.gain.value = 0.28;
 
   musicGain.connect(master);
@@ -96,6 +100,45 @@ function primeAudio() {
 }
 
 function startMusic() {
+  if (!ctx || !musicGain) return;
+
+  ensureThemeAudio();
+
+  if (themeAudio && themeAudio.paused) {
+    const playPromise = themeAudio.play();
+    if (playPromise && typeof playPromise.catch === "function") {
+      playPromise
+        .then(() => stopSynthMusic())
+        .catch(() => startSynthMusic());
+    }
+    return;
+  }
+
+  if (!themeAudio) startSynthMusic();
+}
+
+function stopMusic() {
+  if (themeAudio && !themeAudio.paused) themeAudio.pause();
+  stopSynthMusic();
+}
+
+function ensureThemeAudio() {
+  if (!themeAudio) {
+    themeAudio = new Audio(THEME_AUDIO_SRC);
+    themeAudio.loop = true;
+    themeAudio.preload = "auto";
+    themeAudio.volume = 1;
+    themeAudio.setAttribute("playsinline", "");
+    themeAudio.addEventListener("error", () => startSynthMusic());
+  }
+
+  if (!themeSource && ctx && musicGain) {
+    themeSource = ctx.createMediaElementSource(themeAudio);
+    themeSource.connect(musicGain);
+  }
+}
+
+function startSynthMusic() {
   if (!ctx || musicOsc) return;
 
   musicOsc = ctx.createOscillator();
@@ -137,7 +180,7 @@ function startMusic() {
   musicOsc._localGain = localGain;
 }
 
-function stopMusic() {
+function stopSynthMusic() {
   if (!musicOsc) return;
   try {
     musicOsc.stop();

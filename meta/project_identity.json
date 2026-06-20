@@ -1,12 +1,12 @@
 {
   "generated_from": "build.config.json",
-  "source_sha256": "59de07af832167c50b4f3fadb1be3827a7033754efb7041d930498a3ee71923f",
+  "source_sha256": "41a88abc499d0d75e8d30c3e5775e8f4942d7b1df6a867de63a88e7ed228bed6",
   "canonical_name": "DIPLOCRAFT",
   "product_type": "political-geopolitical-simulator",
   "edition": "International Development Build",
-  "current_version": "2.0.0",
+  "current_version": "2.0.1",
   "current_phase": 29,
-  "current_stage": "Fase 29 — GOLD V2 INTERNACIONAL",
+  "current_stage": "Fase 29 — TEMA DE FUNDO OFICIAL",
   "default_language": "pt-BR",
   "supported_languages": [
     "pt-BR",

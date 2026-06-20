@@ -1,12 +1,12 @@
 {
   "project": "DIPLOCRAFT",
-  "version": "2.0.0",
-  "build": "20260619_1854",
+  "version": "2.0.1",
+  "build": "20260619_1916",
   "algorithm": "SHA-256",
   "integrity_file_excluded": true,
-  "file_count": 540,
-  "total_bytes": 57893366,
-  "root_hash": "1bafc36d739fc39e60ea8a005bd2c83157d3965bcb84ecdf20e533a73d20120b",
+  "file_count": 547,
+  "total_bytes": 62522504,
+  "root_hash": "6d93b28d75e0e46d6a3e86171f9362b202f73e6630282adc4f054949e93e9de2",
   "files": [
     {
       "path": ".github/workflows/quality-gate.yml",
@@ -22,6 +22,11 @@
       "path": "ALPHA_BETA_COMMERCIAL_GUIDE.md",
       "bytes": 900,
       "sha256": "e4e24559f2d8e322c91b6112c4c4e3c965631eff40584b587bb6411b452ec5db"
+    },
+    {
+      "path": "AUDIO_THEME_GUIDE.md",
+      "bytes": 529,
+      "sha256": "3422ed02312a3b19e46cd8782dc414b9b39946919517af33d5319a8107584137"
     },
     {
       "path": "AUDIT_REPORT_v1.1.1.md",
@@ -139,14 +144,19 @@
       "sha256": "bfb82b4f4fcd61113abbc2e93c6f6c00d380abbc4ea090e0e1d483676c47fd14"
     },
     {
+      "path": "AUDIT_REPORT_v2.0.1.md",
+      "bytes": 853,
+      "sha256": "18ae8bb80202835c2c756d769b440299a5a03ac5527a2bdc8ad9e6d4e2d1e66f"
+    },
+    {
       "path": "BUDGET_TAX_GUIDE.md",
       "bytes": 929,
       "sha256": "a1ba19c37281494da9bb0cad75e60507414a7b68f2f8a6c45ba258a03208403d"
     },
     {
       "path": "BUILD_SUMMARY.txt",
-      "bytes": 648,
-      "sha256": "2b5c6af657de145f15136af4fdcc42e1b3056982d872055132aec61ac51f47d7"
+      "bytes": 643,
+      "sha256": "beee44b0456a1ae276800d314660ad26480011067c5b49b2a354f708779a6604"
     },
     {
       "path": "CABINET_ADMINISTRATION_GUIDE.md",
@@ -160,8 +170,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 4446,
-      "sha256": "552f1101b3e640a0a8feba2c860f8b79ef9f00492f6222a656232c615cf60c35"
+      "bytes": 4942,
+      "sha256": "d529e0a857e3b0d2a3e7f9d829145b441b68f978de1a733d7bd32e7e4cfb5658"
     },
     {
       "path": "CORE_LOOP_2_GUIDE.md",
@@ -314,6 +324,11 @@
       "sha256": "591394e815a445da91a43088046fa0b77a02524f16bee47e22433b27c4efdefa"
     },
     {
+      "path": "KNOWN_ISSUES_PHASE_29_1.md",
+      "bytes": 368,
+      "sha256": "079028e280e45f9d0d3c1816c04f760cecaa5e2d84390c3fcf9abd2ee795edad"
+    },
+    {
       "path": "KNOWN_ISSUES_PHASE_5.md",
       "bytes": 1099,
       "sha256": "538f7b1d11b04c957790e0af573ba969441bcb64adbd57095a68488a6e8760f5"
@@ -370,13 +385,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 945,
-      "sha256": "2072049fd1be21d7edc33b06f66428d3115d4b7317b209bf925adff41a1cf5f4"
+      "bytes": 943,
+      "sha256": "fa181793fc71769900e98d4481a001bd76f23d6df99301ae117ebb179f645214"
     },
     {
       "path": "ROLLBACK_INSTRUCTIONS.md",
-      "bytes": 444,
-      "sha256": "de02c62a2aae620ff2380f392d37f35a39b8139b9accfcbcab13e25c4aac49ad"
+      "bytes": 431,
+      "sha256": "13c118fbf45fbb79c039a3c959e95d743b0cf74ebd218e545e80ae55a431ae1b"
     },
     {
       "path": "SAVE_ARCHITECTURE_GUIDE.md",
@@ -400,8 +415,8 @@
     },
     {
       "path": "VERSAO.txt",
-      "bytes": 414,
-      "sha256": "e05f604483cccb27ebfb49e024a8c4c717fd194735b341eaf1d66c9fbefae64c"
+      "bytes": 466,
+      "sha256": "f4650f9bdae587e9b5101158c1d21311494624e1519c0b74a15cca2aa25648bf"
     },
     {
       "path": "WORLD_DIPLOMACY_GUIDE.md",
@@ -412,6 +427,11 @@
       "path": "apply_phase15.py",
       "bytes": 61769,
       "sha256": "6c064da63faf36f6e15a39c18309e793044e846c9912c23e68b2e779d36d035b"
+    },
+    {
+      "path": "assets/audio/diplografik_theme_v1.mp3",
+      "bytes": 4592670,
+      "sha256": "e03bb707127e7ded478de846d524bdbe0bd21dde621722246432e5f1cc4001a7"
     },
     {
       "path": "assets/backgrounds/bg_crisis_scene_v1.png",
@@ -1155,8 +1175,8 @@
     },
     {
       "path": "build.config.json",
-      "bytes": 18567,
-      "sha256": "59de07af832167c50b4f3fadb1be3827a7033754efb7041d930498a3ee71923f"
+      "bytes": 19842,
+      "sha256": "41a88abc499d0d75e8d30c3e5775e8f4942d7b1df6a867de63a88e7ed228bed6"
     },
     {
       "path": "content/core/campaign-core.json",
@@ -1170,8 +1190,8 @@
     },
     {
       "path": "content/manifest.json",
-      "bytes": 616,
-      "sha256": "8a5fb75660eae297bb11d97f04605ce75ff230f79663307816c466923759de9d"
+      "bytes": 920,
+      "sha256": "6d131d239c8f396adcf3864a33c5a2d163272c47788a5c3ffcb4142973a9ea69"
     },
     {
       "path": "docs/ARCHITECTURE.md",
@@ -1285,28 +1305,28 @@
     },
     {
       "path": "index.html",
-      "bytes": 43476,
-      "sha256": "187ea26f2aa445eae0bc60135734e1dcecdc24b08e1768ac7833137648678b19"
+      "bytes": 43615,
+      "sha256": "7ad6c61a1457fc8adb09eee71ea86a2ec9ac117825be7f1aa327941e57cde423"
     },
     {
       "path": "manifest.webmanifest",
-      "bytes": 1615,
-      "sha256": "c1cb854346c31b1de8d42f34f70a17bd41fdbbcd2c78b98c647397da88f8e93b"
+      "bytes": 1638,
+      "sha256": "84370c7eda6e9e24b6d0ad08676331e357b3106836b65e43baa9388314012258"
     },
     {
       "path": "manifest_assets.csv",
-      "bytes": 25393,
-      "sha256": "2bde2be954869afe98b1773167ac61a35525e7a3e813c9de2feb38c5f679916d"
+      "bytes": 25547,
+      "sha256": "71d646160260f7ca2085bb0f94c23e4ab7d64137331027243816746c938e2603"
     },
     {
       "path": "meta/ASSET_PATH_LOCK.json",
-      "bytes": 6769,
-      "sha256": "c6f5cb0643306838ad4e68f55354e9b47841914cf99365e889a5e300f0eadce7"
+      "bytes": 6966,
+      "sha256": "bd73ae7609e030fdc90e5de0ff5df533652b652472cd70470a78188569420719"
     },
     {
       "path": "meta/asset_audit.json",
-      "bytes": 1552,
-      "sha256": "dffa5d84dc1dbac2ce097cb9a39bf2334b8697aa6ed4b7357653def0429a02b4"
+      "bytes": 1749,
+      "sha256": "3289b0d9828b9420b0b45d2713eb4019cebd955f33105ae487eee92bd41b5256"
     },
     {
       "path": "meta/asset_intake_report.json",
@@ -1315,18 +1335,18 @@
     },
     {
       "path": "meta/asset_manifest.json",
-      "bytes": 74761,
-      "sha256": "e8e6c0be28a46180e1ef30ada31a0075cfe1e0d805e654f89ca1c2bef5101229"
+      "bytes": 75003,
+      "sha256": "9eaffbb1e7f98ddeba096b70d4e2515124e3fc286ee25c5aa9f74443f84cc301"
     },
     {
       "path": "meta/build.json",
-      "bytes": 4031,
-      "sha256": "1fb7b0d784f54400a041894059ddfa69afb5bee84f3fc16f2863c9e6cc79bf3c"
+      "bytes": 4554,
+      "sha256": "8dfc1b5d2af4b6c670251e2e055a82a3c78ea48125b324c93f29be9d58afb393"
     },
     {
       "path": "meta/dependency_graph.json",
       "bytes": 27014,
-      "sha256": "f284d8cd625985a390a98841283190f29acd6c2817628082103e06e2412904dc"
+      "sha256": "82626994047ae7a9ae19dee303da9004471c353ec66a657366c234ac91da8ad9"
     },
     {
       "path": "meta/i18n.json",
@@ -1336,7 +1356,7 @@
     {
       "path": "meta/package.json",
       "bytes": 577,
-      "sha256": "8a561904b74ccd113348519ee0e456e78fa5bf799f2b6e2fd81278559aadb7ae"
+      "sha256": "6aac9155099d0f9dd1492a11d88b0fd085e5133e1f583c90beea331d33c1ee62"
     },
     {
       "path": "meta/partidos_brasil.json",
@@ -1346,7 +1366,7 @@
     {
       "path": "meta/project_identity.json",
       "bytes": 1484,
-      "sha256": "2fe0f70a75c7ca3d00e5fcb11bcd57d0ee0b86a561229b581fd92c7babc09762"
+      "sha256": "165dbc578d4db1f2a56af188dbe1efd3c875ddc45070f59bde962b92dd498df2"
     },
     {
       "path": "meta/pwa-assets.json",
@@ -1355,13 +1375,13 @@
     },
     {
       "path": "meta/pwa.json",
-      "bytes": 10329,
-      "sha256": "152ee256f68c9dbda65c4def8e7cb9a3ebb6a95699df55e7c02aa9fc212de13e"
+      "bytes": 10678,
+      "sha256": "2ac35dba5b42b9f889cae5309b9a4d57bc119862830c6de206f600fc119a728f"
     },
     {
       "path": "package.json",
-      "bytes": 2235,
-      "sha256": "06a1694b99d991bb210763deecdfd5d40b8a6ebc859292e5ff01d290130e1b59"
+      "bytes": 2217,
+      "sha256": "9f4d850fd0cc15103d421fff1a69f54e782737cb7b6f8915b9b473cd2875f642"
     },
     {
       "path": "src/core/assets.js",
@@ -1370,8 +1390,8 @@
     },
     {
       "path": "src/core/build.js",
-      "bytes": 3436,
-      "sha256": "22bf9579091e59d6115ac9ad3d7a6caf7fce01d5300f8a9a8482004ba57f1b58"
+      "bytes": 3744,
+      "sha256": "341273353979876404992dfd4863e7dfa669a25eec9989bd1d967034e606394a"
     },
     {
       "path": "src/core/desktop.js",
@@ -1605,8 +1625,8 @@
     },
     {
       "path": "src/styles.css",
-      "bytes": 96946,
-      "sha256": "ced00a1fb0548692edc1378e2cb1ee75b8d83d0dc0bde0d6fde83615964f4f5e"
+      "bytes": 97063,
+      "sha256": "e87c8daff36b4f09a644cdb22f2c5f5b294323ac5b02b9eca9fedf55d567dd5b"
     },
     {
       "path": "src/systems/alphaBeta.js",
@@ -1740,8 +1760,8 @@
     },
     {
       "path": "src/ui/audio.js",
-      "bytes": 5669,
-      "sha256": "eab645803756757a84f1f78412a4f33fbe1f78abaaaf8ba9b91288c6f12d1405"
+      "bytes": 6724,
+      "sha256": "570e5c16525de41fc16423f563fd71712503c63a2e010e44a6b08173613d1be6"
     },
     {
       "path": "src/ui/feedback.js",
@@ -1760,8 +1780,8 @@
     },
     {
       "path": "sw.js",
-      "bytes": 13132,
-      "sha256": "31c07e5608f04c81f700e6796c3915aa94ae86577c26b8c41e0630495465b67e"
+      "bytes": 13220,
+      "sha256": "4b3b8d050caca18ab8345da2792f37816260a5c18a042da0384a04e3b08d9659"
     },
     {
       "path": "tests/aggregate_browser_audit.py",
@@ -1807,6 +1827,16 @@
       "path": "tests/asset-pipeline-results.json",
       "bytes": 1871,
       "sha256": "803acbad7801601c1d08b2552dd185fb9fc791c6a4da3f16afc3255ad51d1447"
+    },
+    {
+      "path": "tests/audio-theme-output.txt",
+      "bytes": 232,
+      "sha256": "35213470f81035d219a4cdf2dc726fc1002649768b3e8a9146e06d84960ad1ef"
+    },
+    {
+      "path": "tests/audio-theme-results.json",
+      "bytes": 210,
+      "sha256": "f7f8a2252ce3690167380aeb053b6b7dfae6205da2179d118b75596e0edb495e"
     },
     {
       "path": "tests/browser-audit-output-desktop_1366x768.txt",
@@ -1965,8 +1995,8 @@
     },
     {
       "path": "tests/expected-build.json",
-      "bytes": 297,
-      "sha256": "2b97f85e9c66d9c8b7a8b1b8cb6b857c30eb02d15b4ede3e8b664b1a8b17d1e6"
+      "bytes": 295,
+      "sha256": "9739dcf0005042fb8ec618eca5a74b7a1bf94bf17ff81b8d6efeb4d82b22e31a"
     },
     {
       "path": "tests/gold-master-output.txt",
@@ -2140,13 +2170,13 @@
     },
     {
       "path": "tests/node-test-output.txt",
-      "bytes": 13854,
-      "sha256": "6a3b8f92a4cc5ef156fce4767aee27c787f3f334b173ad0e0f7c7098cf2c9760"
+      "bytes": 13928,
+      "sha256": "594d4b1f6391315b63d31ba4a9dc387998d91aa7f97b10a8f42ae56dfad0ce23"
     },
     {
       "path": "tests/node-test-results.json",
-      "bytes": 15261,
-      "sha256": "6d0d0e44777e5baa19a6146a6b0e08fb936da0a796bb2a9695670a90218bc3bd"
+      "bytes": 15335,
+      "sha256": "2849e0aa72743beaeba0529614b6a94770ade283edd57b8cc9827a2b4ca61ff7"
     },
     {
       "path": "tests/population-output.txt",
@@ -2576,7 +2606,7 @@
     {
       "path": "tests/test-results.json",
       "bytes": 3502,
-      "sha256": "925ef35af2772e9397684e2c0fba30a9cda71ec51b46e5c85c58b55a8c6b4a4b"
+      "sha256": "d7fd7d59271c694bd578c97833bae82e516278ba5b84f67190d3b6061bdee888"
     },
     {
       "path": "tests/unit/alpha-beta.test.js",
@@ -2669,6 +2699,11 @@
       "sha256": "19617a95b078ec94615e5422761a8a3dca941ce65890012543f56be47a394537"
     },
     {
+      "path": "tools/__pycache__/generate_build.cpython-313.pyc",
+      "bytes": 28246,
+      "sha256": "4e0098b51e52266ae5418047e4e60064fbbc22e1b184e675f5fb181461230fba"
+    },
+    {
       "path": "tools/build_assets.py",
       "bytes": 9363,
       "sha256": "4542763201840cf661e1567a4cd7b167ed1e4a52f186de2a659296bddcb135b6"
@@ -2680,8 +2715,8 @@
     },
     {
       "path": "tools/generate_build.py",
-      "bytes": 16603,
-      "sha256": "5994f30dd933d0e93d460adc609321757ab4fcc9b3f820a40d33919faee46856"
+      "bytes": 17006,
+      "sha256": "bf39923d818a622dfc16d2f83567440b4cdc04fe388801f521f688fdc94608f3"
     },
     {
       "path": "tools/generate_i18n.py",

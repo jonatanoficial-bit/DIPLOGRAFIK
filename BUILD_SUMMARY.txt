@@ -1,10 +1,10 @@
 AUTO-GENERATED from build.config.json
-DIPLOCRAFT v2.0.0
-Fase 29 — GOLD V2 INTERNACIONAL
-Build 19/06/2026 18:54 America/Sao_Paulo
-Status GOLD_V2_INTERNATIONAL_VERIFIED
-Artefato DIPLOCRAFT_v2.0.0_FASE-29_GOLD-V2-INTERNACIONAL_build_20260619_1854.zip
-Config SHA-256 59de07af832167c50b4f3fadb1be3827a7033754efb7041d930498a3ee71923f
+DIPLOCRAFT v2.0.1
+Fase 29 — TEMA DE FUNDO OFICIAL
+Build 19/06/2026 19:16 America/Sao_Paulo
+Status GOLD_V2_AUDIO_THEME_VERIFIED
+Artefato DIPLOCRAFT_v2.0.1_FASE-29_TEMA-DE-FUNDO-OFICIAL_build_20260619_1916.zip
+Config SHA-256 41a88abc499d0d75e8d30c3e5775e8f4942d7b1df6a867de63a88e7ed228bed6
 
-Build oficial da Fase 29 aplicada sobre a v1.8.0: Gold v2.0 Internacional integrado de forma aditiva, preservando todos os sistemas anteriores, assets, saves, PWA, mobile-first, auditorias anti-quebra e documento de upload Git Bash.
-Próxima fase: v2.0.1 — Hotfix pós-publicação internacional e telemetria real.
+Build oficial v2.0.1 aplicada sobre a v2.0.0: tema de fundo oficial em MP3 inserido em assets/audio, controlado pelo painel de áudio existente e preservando todos os sistemas, saves, assets, PWA, mobile e auditorias anti-quebra.
+Próxima fase: v2.0.2 — Hotfix pós-publicação internacional e telemetria real.

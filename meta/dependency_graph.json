@@ -1,8 +1,8 @@
 {
   "generated_from": "build.config.json",
-  "source_sha256": "59de07af832167c50b4f3fadb1be3827a7033754efb7041d930498a3ee71923f",
+  "source_sha256": "41a88abc499d0d75e8d30c3e5775e8f4942d7b1df6a867de63a88e7ed228bed6",
   "project": "DIPLOCRAFT",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "entrypoint": "src/game.js",
   "source_file_count": 78,
   "loaded_module_count": 78,

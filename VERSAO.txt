@@ -1,11 +1,12 @@
 AUTO-GENERATED — NÃO EDITAR MANUALMENTE
 Fonte: build.config.json
-Fonte SHA-256: 59de07af832167c50b4f3fadb1be3827a7033754efb7041d930498a3ee71923f
+Fonte SHA-256: 41a88abc499d0d75e8d30c3e5775e8f4942d7b1df6a867de63a88e7ed228bed6
 
 DIPLOCRAFT
-Versão: v2.0.0
-Fase: 29 — GOLD V2 INTERNACIONAL
-Build: 19/06/2026 18:54 (America/Sao_Paulo)
-Status: GOLD_V2_INTERNATIONAL_VERIFIED
-Artefato: DIPLOCRAFT_v2.0.0_FASE-29_GOLD-V2-INTERNACIONAL_build_20260619_1854.zip
+Versão: v2.0.1
+Fase: 29 — TEMA DE FUNDO OFICIAL
+Build: 19/06/2026 19:16 (America/Sao_Paulo)
+Status: GOLD_V2_AUDIO_THEME_VERIFIED
+Artefato: DIPLOCRAFT_v2.0.1_FASE-29_TEMA-DE-FUNDO-OFICIAL_build_20260619_1916.zip
 Save schema: 3 (diplocraft_save_v101)
+Áudio oficial: assets/audio/diplografik_theme_v1.mp3

@@ -101,5 +101,11 @@
     "assets/runtime/parties/party_republicanos_card_v1--party.webp",
     "assets/runtime/parties/party_uniao_card_v1--party.avif",
     "assets/runtime/parties/party_uniao_card_v1--party.webp"
-  ]
+  ],
+  "audio_theme": {
+    "path": "assets/audio/diplografik_theme_v1.mp3",
+    "sha256": "e03bb707127e7ded478de846d524bdbe0bd21dde621722246432e5f1cc4001a7",
+    "bytes": 4592670,
+    "loop": true
+  }
 }

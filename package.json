@@ -1,9 +1,9 @@
 {
   "name": "diplocraft",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "private": true,
   "type": "module",
-  "description": "DIPLOCRAFT political simulator Gold v2.0 international release with global markets, compliance, localization, commercial launch operations and full simulation stack",
+  "description": "DIPLOCRAFT Gold v2.0 international release with official background theme audio, global markets, compliance, localization and full simulation stack",
   "scripts": {
     "test": "python3 tests/run_node_tests.py",
     "test:simulation": "node tests/run_simulation_matrix.mjs",

@@ -1902,7 +1902,8 @@
       "sha256": "a89ac0eb3583d304493554605671909a4b0de9f464062aaf4c78b305f6335dd1",
       "runtime": false,
       "status": "source-preserved"
-    }
+    },
+    "assets/audio/diplografik_theme_v1.mp3"
   ],
   "catalog": {
     "backgrounds": {
@@ -2315,5 +2316,11 @@
         }
       }
     }
+  },
+  "audio_theme": {
+    "path": "assets/audio/diplografik_theme_v1.mp3",
+    "sha256": "e03bb707127e7ded478de846d524bdbe0bd21dde621722246432e5f1cc4001a7",
+    "bytes": 4592670,
+    "loop": true
   }
 }

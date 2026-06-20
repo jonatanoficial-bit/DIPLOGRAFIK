@@ -1,6 +1,6 @@
 # Changelog — DIPLOCRAFT
 
-## v2.0.0 — Fase 29 — GOLD V2 INTERNACIONAL — 19/06/2026 18:54
+## v2.0.1 — Fase 29 — TEMA DE FUNDO OFICIAL — 19/06/2026 19:16
 
 ### Gold v2.0 Internacional
 - Novo estado persistente internationalLaunch com migração aditiva.
@@ -14,6 +14,14 @@
 ### Integrações
 - Integração mensal com Gold Master, Alpha/Beta, PWA, saves, mobile, localização, tutorial, mídia, diplomacia e Core Loop 2.0.
 - Preservação do documento de upload Git Bash e da estrutura oficial completa.
+
+### Hotfix Tema de Fundo Oficial
+- Adicionado arquivo assets/audio/diplografik_theme_v1.mp3 a partir do MP3 enviado pelo usuário.
+- Audio engine atualizado para usar HTMLAudioElement + Web Audio API com loop, volume central e fallback sintético.
+- Service worker e manifestos atualizados para preservar o tema em cache/offline.
+
+## v2.0.0 — Fase 29 Gold v2.0 Internacional — 19/06/2026 18:54
+- Gold v2.0 Internacional, mercados globais, gates internacionais e operação comercial global.
 
 ## v1.8.0 — Fase 28 Gold Master e Publicação Comercial — 19/06/2026 16:42
 - Gold Master, certificação final, pacote de loja, compliance, suporte, rollback, telemetria segura, plano de lançamento e gates comerciais.
